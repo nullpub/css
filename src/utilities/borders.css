@@ -115,6 +115,22 @@ Use border size classes to get borders on any element.
   }
 }
 
+@each $color
+  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
+{
+  @each $break in (sm, md, lg) {
+    @media (--$(break)) {
+      .bc-$(break)-$(color),
+      .thm-$(break)-$(color) {
+        border-color: var(--color-$(color));
+      }
+      .bc-$(break)-$(color)-contrast {
+        border-color: var(--color-$(color)-contrast);
+      }
+    }
+  }
+}
+
 /**
  * Border Radius 50% and sized
  */

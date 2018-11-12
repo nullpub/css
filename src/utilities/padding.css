@@ -1,5 +1,5 @@
-@import "../variables/breakpoints";
-@import "../variables/sizes";
+@import '../variables/breakpoints';
+@import '../variables/sizes';
 
 @for $size from 0 to 7 {
   .pt-$(size),
@@ -18,7 +18,9 @@
   .pa-$(size) {
     padding-left: var(--size-$(size));
   }
+}
 
+@for $size from 0 to 7 {
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .pt-$(break)-$(size),

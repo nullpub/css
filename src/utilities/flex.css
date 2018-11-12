@@ -14,7 +14,11 @@
       flex-grow: $grow;
       flex-shrink: $shrink;
     }
+  }
+}
 
+@for $grow from 0 to 5 {
+  @for $shrink from 0 to 5 {
     @each $break in (sm, md, lg) {
       @media (--$(break)) {
         .fs-$(break)-$(grow)-$(shrink) {
@@ -65,9 +69,11 @@
     flex-direction: $direction;
   }
   .fd-$(direction)-reverse {
-    flex-direction: $(direction)-reverse;
+    flex-direction: $direction-reverse;
   }
+}
 
+@each $direction in (row, column) {
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .fd-$(break)-$(direction) {
@@ -96,7 +102,9 @@
   .fd-column-reverse.fg-$(size) *:not(:last-child) {
     margin-top: var(--size-$(size));
   }
+}
 
+@for $size from 0 to 7 {
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .fd-$(break)-row.fg-$(size) *:not(:last-child) {

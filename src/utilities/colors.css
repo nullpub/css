@@ -1,4 +1,4 @@
-@import "../variables/colors";
+@import '../variables/colors';
 
 @each $color
   in (base, light, dark, link, primary, secondary, accent, info, warning, error)
@@ -10,5 +10,22 @@
   .bg-$(color),
   .thm-$(color) {
     background-color: var(--color-$(color)-contrast);
+  }
+}
+
+@each $color
+  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
+{
+  @each $break in (sm, md, lg) {
+    @media (--$(break)) {
+      .fg-$(break)-$(color),
+      .thm-$(break)-$(color) {
+        color: var(--color-$(color));
+      }
+      .bg-$(break)-$(color),
+      .thm-$(break)-$(color) {
+        background-color: var(--color-$(color)-contrast);
+      }
+    }
   }
 }

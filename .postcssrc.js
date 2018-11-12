@@ -16,16 +16,16 @@ module.exports = {
       project: 'nll css',
       dest: 'docs/index.html',
       showCode: false
-    }),
-    require('cssnano')({
-      preset: [
-        'default',
-        {
-          discardComments: {
-            removeAll: true
-          }
-        }
-      ]
     })
+    // require('cssnano')({
+    //   preset: [
+    //     'default',
+    //     {
+    //       discardComments: {
+    //         removeAll: true
+    //       }
+    //     }
+    //   ]
+    // })
   ]
 };

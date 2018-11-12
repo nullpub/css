@@ -18,7 +18,9 @@
   .ma-$(size) {
     margin-left: var(--size-$(size));
   }
+}
 
+@for $size from 0 to 7 {
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .mt-$(break)-$(size),
@@ -45,19 +47,19 @@
  * Percentage Margins
  */
 @each $fudge in (25, 50, 75) {
-  .mt-$(fudge)pct {
+  .mt-$(fudge)p {
     /* prettier-ignore */
     margin-top: -$(fudge)%;
   }
-  .mr-$(fudge)pct {
+  .mr-$(fudge)p {
     /* prettier-ignore */
     margin-right: -$(fudge)%;
   }
-  .mb-$(fudge)pct {
+  .mb-$(fudge)p {
     /* prettier-ignore */
     margin-bottom: -$(fudge)%;
   }
-  .ml-$(fudge)pct {
+  .ml-$(fudge)p {
     /* prettier-ignore */
     margin-left: -$(fudge)%;
   }
