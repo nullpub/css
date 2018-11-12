@@ -64,11 +64,17 @@
   .fd-$(direction) {
     flex-direction: $direction;
   }
+  .fd-$(direction)-reverse {
+    flex-direction: $(direction)-reverse;
+  }
 
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .fd-$(break)-$(direction) {
         flex-direction: $direction;
+      }
+      .fd-$(break)-$(direction)-reverse {
+        flex-direction: $(direction)-reverse;
       }
     }
   }
@@ -79,10 +85,10 @@
  */
 @for $size from 0 to 7 {
   .fd-row.fg-$(size) *:not(:last-child) {
-    margin-bottom: var(--size-$(size));
+    margin-right: var(--size-$(size));
   }
   .fd-column.fg-$(size) *:not(:last-child) {
-    margin-right: var(--size-$(size));
+    margin-bottom: var(--size-$(size));
   }
 
   @each $break in (sm, md, lg) {
@@ -91,7 +97,13 @@
         margin-bottom: var(--size-$(size));
       }
       .fd-$(break)-column.fg-$(size) *:not(:last-child) {
-        margin-right: var(--size-$(size));
+        margin-bottom: var(--size-$(size));
+      }
+      .fd-$(break)-row-reverse.fg-$(size) *:not(:last-child) {
+        margin-left: var(--size-$(size));
+      }
+      .fd-$(break)-column-reverse.fg-$(size) *:not(:last-child) {
+        margin-top: var(--size-$(size));
       }
     }
   }
