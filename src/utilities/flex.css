@@ -69,7 +69,7 @@
     flex-direction: $direction;
   }
   .fd-$(direction)-reverse {
-    flex-direction: $direction-reverse;
+    flex-direction: $(direction)-reverse;
   }
 }
 
