@@ -108,7 +108,7 @@
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .fd-$(break)-row.fg-$(size) *:not(:last-child) {
-        margin-bottom: var(--size-$(size));
+        margin-right: var(--size-$(size));
       }
       .fd-$(break)-column.fg-$(size) *:not(:last-child) {
         margin-bottom: var(--size-$(size));
