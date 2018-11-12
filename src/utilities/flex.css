@@ -1,11 +1,4 @@
 /**
- * Display Flex Class
- */
-.d-flex {
-  display: flex;
-}
-
-/**
  * Flex size grow/shrink classes
  */
 @for $grow from 0 to 5 {
@@ -66,9 +59,11 @@
  */
 @each $direction in (row, column) {
   .fd-$(direction) {
+    display: flex;
     flex-direction: $direction;
   }
   .fd-$(direction)-reverse {
+    display: flex;
     flex-direction: $(direction)-reverse;
   }
 }
@@ -77,9 +72,11 @@
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .fd-$(break)-$(direction) {
+        display: flex;
         flex-direction: $direction;
       }
       .fd-$(break)-$(direction)-reverse {
+        display: flex;
         flex-direction: $(direction)-reverse;
       }
     }
