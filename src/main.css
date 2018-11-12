@@ -2,10 +2,21 @@
 Utility CSS
 */
 
+/*
+ * Vendors
+ */
+@import './vendors/bootstrap-reboot';
+
+/*
+ * Variables
+ */
 @import './variables/breakpoints';
 @import './variables/colors';
 @import './variables/sizes';
 
+/*
+ * Utilities
+ */
 @import './utilities/borders';
 @import './utilities/colors';
 @import './utilities/flex';

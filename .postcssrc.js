@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     require('postcss-import')(),
+    require('postcss-import-url')(),
     require('postcss-for')(),
     require('postcss-each')(),
     require('postcss-simple-vars')(),
@@ -17,6 +18,15 @@ module.exports = {
       dest: 'docs/index.html',
       showCode: false
     }),
-    require('cssnano')()
+    require('cssnano')({
+      preset: [
+        'default',
+        {
+          discardComments: {
+            removeAll: true
+          }
+        }
+      ]
+    })
   ]
 };

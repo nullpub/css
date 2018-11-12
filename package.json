@@ -30,6 +30,7 @@
     "postcss-each": "^0.10.0",
     "postcss-for": "^2.1.1",
     "postcss-import": "^12.0.1",
+    "postcss-import-url": "^3.0.4",
     "postcss-simple-vars": "^5.0.1",
     "postcss-style-guide": "^0.14.0"
   }
