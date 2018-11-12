@@ -90,6 +90,12 @@
   .fd-column.fg-$(size) *:not(:last-child) {
     margin-bottom: var(--size-$(size));
   }
+  .fd-row-reverse.fg-$(size) *:not(:last-child) {
+    margin-left: var(--size-$(size));
+  }
+  .fd-column-reverse.fg-$(size) *:not(:last-child) {
+    margin-top: var(--size-$(size));
+  }
 
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
