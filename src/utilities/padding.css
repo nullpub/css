@@ -1,0 +1,42 @@
+@import "../variables/breakpoints";
+@import "../variables/sizes";
+
+@for $size from 0 to 7 {
+  .pt-$(size),
+  .pa-$(size) {
+    padding-top: var(--size-$(size));
+  }
+  .pr-$(size),
+  .pa-$(size) {
+    padding-right: var(--size-$(size));
+  }
+  .pb-$(size),
+  .pa-$(size) {
+    padding-bottom: var(--size-$(size));
+  }
+  .pl-$(size),
+  .pa-$(size) {
+    padding-left: var(--size-$(size));
+  }
+
+  @each $break in (sm, md, lg) {
+    @media (--$(break)) {
+      .pt-$(break)-$(size),
+      .pa-$(break)-$(size) {
+        padding-top: var(--size-$(size));
+      }
+      .pr-$(break)-$(size),
+      .pa-$(break)-$(size) {
+        padding-right: var(--size-$(size));
+      }
+      .pb-$(break)-$(size),
+      .pa-$(break)-$(size) {
+        padding-bottom: var(--size-$(size));
+      }
+      .pl-$(break)-$(size),
+      .pa-$(break)-$(size) {
+        padding-left: var(--size-$(size));
+      }
+    }
+  }
+}

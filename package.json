@@ -1,0 +1,36 @@
+{
+  "name": "@nll/css",
+  "version": "1.0.0",
+  "description": "A bunch of css utility classes",
+  "main": "dist/main.css",
+  "scripts": {
+    "start": "postcss src/main.css -o dist/main.css -w",
+    "build": "postcss src/main.css -o dist/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullpub/css.git"
+  },
+  "keywords": [
+    "css",
+    "postcss",
+    "utility"
+  ],
+  "author": "Brandon Blaylock (brandon@null.pub)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/nullpub/css/issues"
+  },
+  "homepage": "https://github.com/nullpub/css#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "postcss-cli": "^6.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-each": "^0.10.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-simple-vars": "^5.0.1",
+    "postcss-style-guide": "^0.14.0"
+  }
+}

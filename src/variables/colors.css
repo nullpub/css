@@ -1,0 +1,26 @@
+/**
+ * Colors
+ */
+
+:root {
+  --color-base: #111111;
+  --color-base-contrast: #ffffff;
+  --color-light: #111111;
+  --color-light-contrast: #f4f4f4;
+  --color-dark: #f4f4f4;
+  --color-dark-contrast: #111111;
+  --color-link: #357edd;
+  --color-link-contrast: #ffffff;
+  --color-primary: #eeeeee;
+  --color-primary-contrast: #5e2ca5;
+  --color-secondary: #eeeeee;
+  --color-secondary-contrast: #a463f2;
+  --color-accent: #555555;
+  --color-accent-contrast: #ffb700;
+  --color-info: #f4f4f4;
+  --color-info-contrast: #357edd;
+  --color-warning: #ff4136;
+  --color-warning-contrast: #ffd700;
+  --color-error: #ff4136;
+  --color-error-contrast: #ffdfdf;
+}

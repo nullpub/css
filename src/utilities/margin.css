@@ -1,0 +1,64 @@
+@import "../variables/breakpoints";
+@import "../variables/sizes";
+
+@for $size from 0 to 7 {
+  .mt-$(size),
+  .ma-$(size) {
+    margin-top: var(--size-$(size));
+  }
+  .mr-$(size),
+  .ma-$(size) {
+    margin-right: var(--size-$(size));
+  }
+  .mb-$(size),
+  .ma-$(size) {
+    margin-bottom: var(--size-$(size));
+  }
+  .ml-$(size),
+  .ma-$(size) {
+    margin-left: var(--size-$(size));
+  }
+
+  @each $break in (sm, md, lg) {
+    @media (--$(break)) {
+      .mt-$(break)-$(size),
+      .ma-$(break)-$(size) {
+        margin-top: var(--size-$(size));
+      }
+      .mr-$(break)-$(size),
+      .ma-$(break)-$(size) {
+        margin-right: var(--size-$(size));
+      }
+      .mb-$(break)-$(size),
+      .ma-$(break)-$(size) {
+        margin-bottom: var(--size-$(size));
+      }
+      .ml-$(break)-$(size),
+      .ma-$(break)-$(size) {
+        margin-left: var(--size-$(size));
+      }
+    }
+  }
+}
+
+/**
+ * Percentage Margins
+ */
+@each $fudge in (25, 50, 75) {
+  .mt-$(fudge)pct {
+    // prettier-ignore
+    margin-top: -$(fudge)%;
+  }
+  .mr-$(fudge)pct {
+    // prettier-ignore
+    margin-right: -$(fudge)%;
+  }
+  .mb-$(fudge)pct {
+    // prettier-ignore
+    margin-bottom: -$(fudge)%;
+  }
+  .ml-$(fudge)pct {
+    // prettier-ignore
+    margin-left: -$(fudge)%;
+  }
+}

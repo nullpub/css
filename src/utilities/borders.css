@@ -1,0 +1,153 @@
+/*
+@styleguide
+
+@title Border Sizes
+
+## Description
+
+Use border size classes to get borders on any element.
+
+### Border Size Pattern
+
+`.b{a|t|r|b|l}-{0-7}`
+
+### Border Size Breakpoint Pattern
+
+`.b{a|t|r|b|l}-{sm|md|lg}-{0-7}`
+
+#### Examples
+
+<div class="ba-1">Border Size 1</div>
+
+    <div class="ba-1">Border Size 1</div>
+
+<div class="ba-4">Border Size 4</div>
+
+    <div class="ba-4">Border Size 4</div>
+
+<div class="ba-7">Border Size 7</div>
+
+    <div class="ba-7">Border Size 7</div>
+
+<div class="ba-sm-1">Border Size 1 on small screens and up</div>
+
+    <div class="ba-sm-1">Border Size 1 on small screens and up</div>
+
+<div class="ba-md-4">Border Size 4 on medium screens and up</div>
+
+    <div class="ba-md-4">Border Size 4 on medium screens and up</div>
+
+<div class="ba-lg-7">Border Size 7 on large screens and up</div>
+
+    <div class="ba-lg-7">Border Size 7 on large screens and up</div>
+*/
+@for $size from 0 to 7 {
+  .bt-$(size),
+  .ba-$(size) {
+    border-style: solid;
+    border-top-width: var(--size-$(size));
+  }
+  .br-$(size),
+  .ba-$(size) {
+    border-style: solid;
+    border-right-width: var(--size-$(size));
+  }
+  .bb-$(size),
+  .ba-$(size) {
+    border-style: solid;
+    border-bottom-width: var(--size-$(size));
+  }
+  .bl-$(size),
+  .ba-$(size) {
+    border-style: solid;
+    border-left-width: var(--size-$(size));
+  }
+
+  @each $break in (sm, md, lg) {
+    @media (--$(break)) {
+      .bt-$(break)-$(size),
+      .ba-$(break)-$(size) {
+        border-style: solid;
+        border-top-width: var(--size-$(size));
+      }
+      .br-$(break)-$(size),
+      .ba-$(break)-$(size) {
+        border-style: solid;
+        border-right-width: var(--size-$(size));
+      }
+      .bb-$(break)-$(size),
+      .ba-$(break)-$(size) {
+        border-style: solid;
+        border-bottom-width: var(--size-$(size));
+      }
+      .bl-$(break)-$(size),
+      .ba-$(break)-$(size) {
+        border-style: solid;
+        border-left-width: var(--size-$(size));
+      }
+    }
+  }
+}
+
+/**
+ * Border Styles
+ */
+@each $style
+  in (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset)
+{
+  .bs-$(style) {
+    border-style: $(style);
+  }
+}
+
+/**
+ * Border Colors
+ */
+@each $color
+  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
+{
+  .bc-$(color),
+  .thm-$(color) {
+    border-color: var(--color-$(color));
+  }
+  .bc-$(color)-contrast {
+    border-color: var(--color-$(color)-contrast);
+  }
+}
+
+/**
+ * Border Radius 50% and sized
+ */
+.ra-c {
+  border-radius: var(--radius-circle);
+}
+.rtl-c {
+  border-top-left-radius: var(--radius-circle);
+}
+.rtr-c {
+  border-top-right-radius: var(--radius-circle);
+}
+.rbl-c {
+  border-bottom-left-radius: var(--radius-circle);
+}
+.rbr-c {
+  border-bottom-right-radius: var(--radius-circle);
+}
+
+@for $radius from 0 to 3 {
+  .ra-$(radius) {
+    border-radius: var(--radius-$(radius));
+  }
+  .rtl-$(radius) {
+    border-top-left-radius: var(--radius-$(radius));
+  }
+  .rtr-$(radius) {
+    border-top-right-radius: var(--radius-$(radius));
+  }
+  .rbl-$(radius) {
+    border-bottom-left-radius: var(--radius-$(radius));
+  }
+  .rbr-$(radius) {
+    border-bottom-right-radius: var(--radius-$(radius));
+  }
+}

@@ -1,0 +1,14 @@
+@import "../variables/colors";
+
+@each $color
+  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
+{
+  .fg-$(color),
+  .thm-$(color) {
+    color: var(--color-$(color));
+  }
+  .bg-$(color),
+  .thm-$(color) {
+    background-color: var(--color-$(color)-contrast);
+  }
+}
