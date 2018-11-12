@@ -1,6 +1,6 @@
 {
   "name": "@nll/css",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A bunch of css utility classes",
   "main": "dist/main.css",
   "scripts": {
