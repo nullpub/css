@@ -6,7 +6,8 @@
   "scripts": {
     "start": "postcss src/main.css -o dist/main.css -w",
     "build": "postcss src/main.css -o dist/main.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
