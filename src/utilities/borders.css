@@ -1,90 +1,68 @@
-/*
-@styleguide
+:root {
+  --border-size-base: var(--size-base);
+  --border-size-0: calc(var(--border-size-base) * 0);
+  --border-size-1: calc(var(--border-size-base) * 1);
+  --border-size-2: calc(var(--border-size-base) * 2);
+  --border-size-3: calc(var(--border-size-base) * 4);
+  --border-size-4: calc(var(--border-size-base) * 8);
+  --border-size-5: calc(var(--border-size-base) * 16);
+  --border-size-6: calc(var(--border-size-base) * 32);
+  --border-size-7: calc(var(--border-size-base) * 64);
+}
 
-@title Border Sizes
+:root {
+  --border-radius-circle: 50%;
+  --border-radius-base: 0.25rem;
+  --border-radius-0: calc(var(--border-radius-base) * 0);
+  --border-radius-1: calc(var(--border-radius-base) * 1);
+  --border-radius-2: calc(var(--border-radius-base) * 2);
+  --border-radius-3: calc(var(--border-radius-base) * 4);
+}
 
-## Description
-
-Use border size classes to get borders on any element.
-
-### Border Size Pattern
-
-`.b{a|t|r|b|l}-{0-7}`
-
-### Border Size Breakpoint Pattern
-
-`.b{a|t|r|b|l}-{sm|md|lg}-{0-7}`
-
-#### Examples
-
-<div class="ba-1">Border Size 1</div>
-
-    <div class="ba-1">Border Size 1</div>
-
-<div class="ba-4">Border Size 4</div>
-
-    <div class="ba-4">Border Size 4</div>
-
-<div class="ba-7">Border Size 7</div>
-
-    <div class="ba-7">Border Size 7</div>
-
-<div class="ba-sm-1">Border Size 1 on small screens and up</div>
-
-    <div class="ba-sm-1">Border Size 1 on small screens and up</div>
-
-<div class="ba-md-4">Border Size 4 on medium screens and up</div>
-
-    <div class="ba-md-4">Border Size 4 on medium screens and up</div>
-
-<div class="ba-lg-7">Border Size 7 on large screens and up</div>
-
-    <div class="ba-lg-7">Border Size 7 on large screens and up</div>
-*/
 @for $size from 0 to 7 {
   .bt-$(size),
   .ba-$(size) {
     border-style: solid;
-    border-top-width: var(--size-$(size));
+    border-top-width: var(--border-size-$(size));
   }
   .br-$(size),
   .ba-$(size) {
     border-style: solid;
-    border-right-width: var(--size-$(size));
+    border-right-width: var(--border-size-$(size));
   }
   .bb-$(size),
   .ba-$(size) {
     border-style: solid;
-    border-bottom-width: var(--size-$(size));
+    border-bottom-width: var(--border-size-$(size));
   }
   .bl-$(size),
   .ba-$(size) {
     border-style: solid;
-    border-left-width: var(--size-$(size));
+    border-left-width: var(--border-size-$(size));
   }
+}
 
-  @each $break in (sm, md, lg) {
-    @media (--$(break)) {
-      .bt-$(break)-$(size),
-      .ba-$(break)-$(size) {
-        border-style: solid;
-        border-top-width: var(--size-$(size));
-      }
-      .br-$(break)-$(size),
-      .ba-$(break)-$(size) {
-        border-style: solid;
-        border-right-width: var(--size-$(size));
-      }
-      .bb-$(break)-$(size),
-      .ba-$(break)-$(size) {
-        border-style: solid;
-        border-bottom-width: var(--size-$(size));
-      }
-      .bl-$(break)-$(size),
-      .ba-$(break)-$(size) {
-        border-style: solid;
-        border-left-width: var(--size-$(size));
-      }
+@each $break, $size in (sm, md, lg), (0, 1, 2, 3, 4, 5, 6, 7) {
+  @media (--$(break)) {
+    .bt-$(break)-$(size),
+    .ba-$(break)-$(size) {
+      border-style: solid;
+      border-top-width: var(--border-size-$(size));
+    }
+    .br-$(break)-$(size),
+    .ba-$(break)-$(size) {
+      border-style: solid;
+      border-right-width: var(--border-size-$(size));
+    }
+    .bb-$(break)-$(size),
+    .ba-$(break)-$(size) {
+      border-style: solid;
+      border-bottom-width: var(--border-size-$(size));
+    }
+    .bl-$(break)-$(size),
+    .ba-$(break)-$(size) {
+      border-style: solid;
+      border-left-width: var(--border-size-$(size));
     }
   }
 }
@@ -92,9 +70,7 @@ Use border size classes to get borders on any element.
 /**
  * Border Styles
  */
-@each $style
-  in (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset)
-{
+@each $style in (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset) {
   .bs-$(style) {
     border-style: $(style);
   }
@@ -103,11 +79,9 @@ Use border size classes to get borders on any element.
 /**
  * Border Colors
  */
-@each $color
-  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
-{
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   .bc-$(color),
-  .thm-$(color) {
+  .tc-$(color) {
     border-color: var(--color-$(color));
   }
   .bc-$(color)-contrast {
@@ -115,13 +89,20 @@ Use border size classes to get borders on any element.
   }
 }
 
-@each $color
-  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
-{
-  @each $break in (sm, md, lg) {
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+    .bc-$(color)-$(psuedo):$(psuedo),
+    .tc-$(color)-$(psuedo):$(psuedo) {
+      border-color: var(--color-$(color));
+    }
+  }
+}
+
+@each $break in (sm, md, lg) {
+  @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
     @media (--$(break)) {
       .bc-$(break)-$(color),
-      .thm-$(break)-$(color) {
+      .tc-$(break)-$(color) {
         border-color: var(--color-$(color));
       }
       .bc-$(break)-$(color)-contrast {
@@ -135,35 +116,35 @@ Use border size classes to get borders on any element.
  * Border Radius 50% and sized
  */
 .ra-c {
-  border-radius: var(--radius-circle);
+  border-radius: var(--border-radius-circle);
 }
 .rtl-c {
-  border-top-left-radius: var(--radius-circle);
+  border-top-left-radius: var(--border-radius-circle);
 }
 .rtr-c {
-  border-top-right-radius: var(--radius-circle);
+  border-top-right-radius: var(--border-radius-circle);
 }
 .rbl-c {
-  border-bottom-left-radius: var(--radius-circle);
+  border-bottom-left-radius: var(--border-radius-circle);
 }
 .rbr-c {
-  border-bottom-right-radius: var(--radius-circle);
+  border-bottom-right-radius: var(--border-radius-circle);
 }
 
 @for $radius from 0 to 3 {
   .ra-$(radius) {
-    border-radius: var(--radius-$(radius));
+    border-radius: var(--border-radius-$(radius));
   }
   .rtl-$(radius) {
-    border-top-left-radius: var(--radius-$(radius));
+    border-top-left-radius: var(--border-radius-$(radius));
   }
   .rtr-$(radius) {
-    border-top-right-radius: var(--radius-$(radius));
+    border-top-right-radius: var(--border-radius-$(radius));
   }
   .rbl-$(radius) {
-    border-bottom-left-radius: var(--radius-$(radius));
+    border-bottom-left-radius: var(--border-radius-$(radius));
   }
   .rbr-$(radius) {
-    border-bottom-right-radius: var(--radius-$(radius));
+    border-bottom-right-radius: var(--border-radius-$(radius));
   }
 }

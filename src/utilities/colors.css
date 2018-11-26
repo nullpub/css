@@ -1,30 +1,58 @@
 @import '../variables/colors';
 
-@each $color
-  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
-{
+/**
+ * Colors
+ */
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   .fg-$(color),
-  .thm-$(color) {
+  .tc-$(color) {
     color: var(--color-$(color));
   }
   .bg-$(color),
-  .thm-$(color) {
+  .tc-$(color) {
     background-color: var(--color-$(color)-contrast);
   }
 }
 
-@each $color
-  in (base, light, dark, link, primary, secondary, accent, info, warning, error)
-{
-  @each $break in (sm, md, lg) {
-    @media (--$(break)) {
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+    .fg-$(color)-$(psuedo):$(psuedo),
+    .tc-$(color)-$(psuedo):$(psuedo) {
+      color: var(--color-$(color));
+    }
+    .bg-$(color)-$(psuedo):$(psuedo),
+    .tc-$(color)-$(psuedo):$(psuedo) {
+      background-color: var(--color-$(color)-contrast);
+    }
+  }
+}
+
+/**
+ * Colors on Breakpoint
+ *
+ * I'm really not sure how needed these are
+ */
+@each $break in (sm, md, lg) {
+  @media (--$(break)) {
+    @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
       .fg-$(break)-$(color),
-      .thm-$(break)-$(color) {
+      .tc-$(break)-$(color) {
         color: var(--color-$(color));
       }
       .bg-$(break)-$(color),
-      .thm-$(break)-$(color) {
+      .tc-$(break)-$(color) {
         background-color: var(--color-$(color)-contrast);
+      }
+
+      @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+        .fg-$(break)-$(color)-$(psuedo):$(psuedo),
+        .tc-$(break)-$(color)-$(psuedo):$(psuedo) {
+          color: var(--color-$(color));
+        }
+        .bg-$(break)-$(color)-$(psuedo):$(psuedo),
+        .tc-$(break)-$(color)-$(psuedo):$(psuedo) {
+          background-color: var(--color-$(color)-contrast);
+        }
       }
     }
   }

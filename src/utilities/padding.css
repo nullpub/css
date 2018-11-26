@@ -1,22 +1,31 @@
-@import '../variables/breakpoints';
-@import '../variables/sizes';
+:root {
+  --padding-size-base: var(--size-base);
+  --padding-size-0: calc(var(--padding-size-base) * 0);
+  --padding-size-1: calc(var(--padding-size-base) * 1);
+  --padding-size-2: calc(var(--padding-size-base) * 2);
+  --padding-size-3: calc(var(--padding-size-base) * 4);
+  --padding-size-4: calc(var(--padding-size-base) * 8);
+  --padding-size-5: calc(var(--padding-size-base) * 16);
+  --padding-size-6: calc(var(--padding-size-base) * 32);
+  --padding-size-7: calc(var(--padding-size-base) * 64);
+}
 
 @for $size from 0 to 7 {
   .pt-$(size),
   .pa-$(size) {
-    padding-top: var(--size-$(size));
+    padding-top: var(--padding-size-$(size));
   }
   .pr-$(size),
   .pa-$(size) {
-    padding-right: var(--size-$(size));
+    padding-right: var(--padding-size-$(size));
   }
   .pb-$(size),
   .pa-$(size) {
-    padding-bottom: var(--size-$(size));
+    padding-bottom: var(--padding-size-$(size));
   }
   .pl-$(size),
   .pa-$(size) {
-    padding-left: var(--size-$(size));
+    padding-left: var(--padding-size-$(size));
   }
 }
 
@@ -25,19 +34,19 @@
     @media (--$(break)) {
       .pt-$(break)-$(size),
       .pa-$(break)-$(size) {
-        padding-top: var(--size-$(size));
+        padding-top: var(--padding-size-$(size));
       }
       .pr-$(break)-$(size),
       .pa-$(break)-$(size) {
-        padding-right: var(--size-$(size));
+        padding-right: var(--padding-size-$(size));
       }
       .pb-$(break)-$(size),
       .pa-$(break)-$(size) {
-        padding-bottom: var(--size-$(size));
+        padding-bottom: var(--padding-size-$(size));
       }
       .pl-$(break)-$(size),
       .pa-$(break)-$(size) {
-        padding-left: var(--size-$(size));
+        padding-left: var(--padding-size-$(size));
       }
     }
   }

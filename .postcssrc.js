@@ -8,24 +8,24 @@ module.exports = {
       browsers: ['last 2 versions'],
       features: {
         customProperties: {
-          preserve: true
-        }
-      }
+          preserve: true,
+        },
+      },
     }),
     require('postcss-style-guide')({
       project: 'nll css',
       dest: 'docs/index.html',
-      showCode: false
+      showCode: false,
     }),
     require('cssnano')({
       preset: [
         'default',
         {
           discardComments: {
-            removeAll: true
-          }
-        }
-      ]
-    })
-  ]
+            removeAll: true,
+          },
+        },
+      ],
+    }),
+  ],
 };

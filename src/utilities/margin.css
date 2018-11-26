@@ -1,22 +1,31 @@
-@import '../variables/breakpoints';
-@import '../variables/sizes';
+:root {
+  --margin-size-base: var(--size-base);
+  --margin-size-0: calc(var(--margin-size-base) * 0);
+  --margin-size-1: calc(var(--margin-size-base) * 1);
+  --margin-size-2: calc(var(--margin-size-base) * 2);
+  --margin-size-3: calc(var(--margin-size-base) * 4);
+  --margin-size-4: calc(var(--margin-size-base) * 8);
+  --margin-size-5: calc(var(--margin-size-base) * 16);
+  --margin-size-6: calc(var(--margin-size-base) * 32);
+  --margin-size-7: calc(var(--margin-size-base) * 64);
+}
 
 @for $size from 0 to 7 {
   .mt-$(size),
   .ma-$(size) {
-    margin-top: var(--size-$(size));
+    margin-top: var(--margin-size-$(size));
   }
   .mr-$(size),
   .ma-$(size) {
-    margin-right: var(--size-$(size));
+    margin-right: var(--margin-size-$(size));
   }
   .mb-$(size),
   .ma-$(size) {
-    margin-bottom: var(--size-$(size));
+    margin-bottom: var(--margin-size-$(size));
   }
   .ml-$(size),
   .ma-$(size) {
-    margin-left: var(--size-$(size));
+    margin-left: var(--margin-size-$(size));
   }
 }
 
@@ -25,19 +34,19 @@
     @media (--$(break)) {
       .mt-$(break)-$(size),
       .ma-$(break)-$(size) {
-        margin-top: var(--size-$(size));
+        margin-top: var(--margin-size-$(size));
       }
       .mr-$(break)-$(size),
       .ma-$(break)-$(size) {
-        margin-right: var(--size-$(size));
+        margin-right: var(--margin-size-$(size));
       }
       .mb-$(break)-$(size),
       .ma-$(break)-$(size) {
-        margin-bottom: var(--size-$(size));
+        margin-bottom: var(--margin-size-$(size));
       }
       .ml-$(break)-$(size),
       .ma-$(break)-$(size) {
-        margin-left: var(--size-$(size));
+        margin-left: var(--margin-size-$(size));
       }
     }
   }
@@ -47,19 +56,37 @@
  * Percentage Margins
  */
 @each $fudge in (25, 50, 75) {
+  /* Positive Percentage Margins */
   .mt-$(fudge)p {
     /* prettier-ignore */
-    margin-top: -$(fudge)%;
+    margin-top: $(fudge)%;
   }
   .mr-$(fudge)p {
     /* prettier-ignore */
-    margin-right: -$(fudge)%;
+    margin-right: $(fudge)%;
   }
   .mb-$(fudge)p {
     /* prettier-ignore */
-    margin-bottom: -$(fudge)%;
+    margin-bottom: $(fudge)%;
   }
   .ml-$(fudge)p {
+    /* prettier-ignore */
+    margin-left: $(fudge)%;
+  }
+  /* Negative Percentage Margins */
+  .mtm-$(fudge)p {
+    /* prettier-ignore */
+    margin-top: -$(fudge)%;
+  }
+  .mrm-$(fudge)p {
+    /* prettier-ignore */
+    margin-right: -$(fudge)%;
+  }
+  .mbm-$(fudge)p {
+    /* prettier-ignore */
+    margin-bottom: -$(fudge)%;
+  }
+  .mlm-$(fudge)p {
     /* prettier-ignore */
     margin-left: -$(fudge)%;
   }

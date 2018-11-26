@@ -22,3 +22,4 @@ Utility CSS
 @import './utilities/flex';
 @import './utilities/margin';
 @import './utilities/padding';
+@import './utilities/typography.css';

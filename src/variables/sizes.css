@@ -7,18 +7,9 @@
   --size-0: calc(var(--size-base) * 0);
   --size-1: calc(var(--size-base) * 1);
   --size-2: calc(var(--size-base) * 2);
-  --size-3: calc(var(--size-base) * 3);
-  --size-4: calc(var(--size-base) * 4);
-  --size-5: calc(var(--size-base) * 5);
-  --size-6: calc(var(--size-base) * 6);
-  --size-7: calc(var(--size-base) * 7);
-}
-
-:root {
-  --radius-circle: 50%;
-  --radius-base: 0.25rem;
-  --radius-0: calc(var(--radius-base) * 0);
-  --radius-1: calc(var(--radius-base) * 1);
-  --radius-2: calc(var(--radius-base) * 2);
-  --radius-3: calc(var(--radius-base) * 3);
+  --size-3: calc(var(--size-base) * 4);
+  --size-4: calc(var(--size-base) * 8);
+  --size-5: calc(var(--size-base) * 16);
+  --size-6: calc(var(--size-base) * 32);
+  --size-7: calc(var(--size-base) * 64);
 }
