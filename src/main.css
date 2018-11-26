@@ -13,6 +13,7 @@ Utility CSS
 @import './variables/breakpoints';
 @import './variables/colors';
 @import './variables/sizes';
+@import './variables/typography';
 
 /*
  * Utilities
@@ -23,4 +24,3 @@ Utility CSS
 @import './utilities/flex';
 @import './utilities/margin';
 @import './utilities/padding';
-@import './utilities/typography';

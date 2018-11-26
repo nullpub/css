@@ -1,4 +1,6 @@
-@import './margin.css'; /* Flex gaps rely on margin sizes */
+@import '../variables/breakpoints.css';
+@import '../variables/sizes.css';
+@import './margin.css';
 
 /**
  * Flex size grow/shrink classes

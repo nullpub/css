@@ -1,3 +1,6 @@
+@import '../variables/breakpoints.css';
+@import '../variables/sizes.css';
+
 :root {
   --padding-size-base: var(--size-base);
   --padding-size-0: calc(var(--padding-size-base) * 0);
