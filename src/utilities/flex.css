@@ -1,3 +1,5 @@
+@import './margin.css'; /* Flex gaps rely on margin sizes */
+
 /**
  * Flex size grow/shrink classes
  */
@@ -87,38 +89,38 @@
  * Flex direction gaps
  */
 @for $size from 0 to 7 {
-  .fd-row.fg-$(size) *:not(:last-child) {
-    margin-right: var(--size-$(size));
+  .fd-row.fg-$(size) > *:not(:last-child) {
+    margin-right: var(--margin-size-$(size));
   }
-  .fd-column.fg-$(size) *:not(:last-child) {
-    margin-bottom: var(--size-$(size));
+  .fd-column.fg-$(size) > *:not(:last-child) {
+    margin-bottom: var(--margin-size-$(size));
   }
-  .fd-row-reverse.fg-$(size) *:not(:last-child) {
-    margin-left: var(--size-$(size));
+  .fd-row-reverse.fg-$(size) > *:not(:last-child) {
+    margin-left: var(--margin-size-$(size));
   }
-  .fd-column-reverse.fg-$(size) *:not(:last-child) {
-    margin-top: var(--size-$(size));
+  .fd-column-reverse.fg-$(size) > *:not(:last-child) {
+    margin-top: var(--margin-size-$(size));
   }
 }
 
 @each $break in (sm, md, lg) {
-  @media (--$(break)) {
-    @for $size from 0 to 7 {
-      .fd-$(break)-row.fg-$(size) *:not(:last-child) {
+  @for $size from 0 to 7 {
+    @media (--$(break)) {
+      .fd-$(break)-row.fg-$(size) > *:not(:last-child) {
         margin: 0;
-        margin-right: var(--size-$(size));
+        margin-right: var(--margin-size-$(size));
       }
-      .fd-$(break)-column.fg-$(size) *:not(:last-child) {
+      .fd-$(break)-column.fg-$(size) > *:not(:last-child) {
         margin: 0;
-        margin-bottom: var(--size-$(size));
+        margin-bottom: var(--margin-size-$(size));
       }
-      .fd-$(break)-row-reverse.fg-$(size) *:not(:last-child) {
+      .fd-$(break)-row-reverse.fg-$(size) > *:not(:last-child) {
         margin: 0;
-        margin-left: var(--size-$(size));
+        margin-left: var(--margin-size-$(size));
       }
-      .fd-$(break)-column-reverse.fg-$(size) *:not(:last-child) {
+      .fd-$(break)-column-reverse.fg-$(size) > *:not(:last-child) {
         margin: 0;
-        margin-top: var(--size-$(size));
+        margin-top: var(--margin-size-$(size));
       }
     }
   }
