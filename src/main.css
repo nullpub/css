@@ -19,7 +19,8 @@ Utility CSS
  */
 @import './utilities/borders';
 @import './utilities/colors';
+@import './utilities/display';
 @import './utilities/flex';
 @import './utilities/margin';
 @import './utilities/padding';
-@import './utilities/typography.css';
+@import './utilities/typography';

@@ -1,0 +1,21 @@
+/**
+ * Displays
+ */
+@each $display
+  in (inline, block, contents, flex, grid, inline-block, inline-flex, inline-grid, inline-table, none, initial, inherit)
+{
+  .d-$(display) {
+    display: $(display);
+  }
+}
+
+@each $break in (sm, md, lg) {
+  /* prettier-ignore */
+  @each $display in (inline, block, contents, flex, grid, inline-block, inline-flex, inline-grid, inline-table, none, initial, inherit) {
+    @media (--$(break)) {
+      .d-$(break)-$(display) {
+        display: $(display);
+      }
+    }
+  }
+}

@@ -7,9 +7,7 @@ module.exports = {
     require('postcss-cssnext')({
       browsers: ['last 2 versions'],
       features: {
-        customProperties: {
-          preserve: true,
-        },
+        customProperties: false,
       },
     }),
     require('postcss-style-guide')({
