@@ -13,6 +13,7 @@ Utility CSS
 @import './variables/breakpoints';
 @import './variables/colors';
 @import './variables/sizes';
+@import './variables/transitions';
 @import './variables/typography';
 
 /*
