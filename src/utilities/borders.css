@@ -21,21 +21,25 @@
 
 @for $size from 0 to 7 {
   .bt-$(size),
+  .by-$(size),
   .ba-$(size) {
     border-style: solid;
     border-top-width: var(--border-size-$(size));
   }
   .br-$(size),
+  .bx-$(size),
   .ba-$(size) {
     border-style: solid;
     border-right-width: var(--border-size-$(size));
   }
   .bb-$(size),
+  .by-$(size),
   .ba-$(size) {
     border-style: solid;
     border-bottom-width: var(--border-size-$(size));
   }
   .bl-$(size),
+  .bx-$(size),
   .ba-$(size) {
     border-style: solid;
     border-left-width: var(--border-size-$(size));
@@ -45,21 +49,25 @@
 @each $break, $size in (sm, md, lg), (0, 1, 2, 3, 4, 5, 6, 7) {
   @media (--$(break)) {
     .bt-$(break)-$(size),
+    .by-$(break)-$(size),
     .ba-$(break)-$(size) {
       border-style: solid;
       border-top-width: var(--border-size-$(size));
     }
     .br-$(break)-$(size),
+    .bx-$(break)-$(size),
     .ba-$(break)-$(size) {
       border-style: solid;
       border-right-width: var(--border-size-$(size));
     }
     .bb-$(break)-$(size),
+    .by-$(break)-$(size),
     .ba-$(break)-$(size) {
       border-style: solid;
       border-bottom-width: var(--border-size-$(size));
     }
     .bl-$(break)-$(size),
+    .bx-$(break)-$(size),
     .ba-$(break)-$(size) {
       border-style: solid;
       border-left-width: var(--border-size-$(size));
@@ -118,16 +126,24 @@
 .ra-c {
   border-radius: var(--border-radius-circle);
 }
-.rtl-c {
+.rtl-c,
+.rt-c,
+.rl-c {
   border-top-left-radius: var(--border-radius-circle);
 }
-.rtr-c {
+.rtr-c,
+.rt-c,
+.rr-c {
   border-top-right-radius: var(--border-radius-circle);
 }
-.rbl-c {
+.rbl-c,
+.rb-c,
+.rl-c {
   border-bottom-left-radius: var(--border-radius-circle);
 }
-.rbr-c {
+.rbr-c,
+.rb-c,
+.rr-c {
   border-bottom-right-radius: var(--border-radius-circle);
 }
 
@@ -135,16 +151,24 @@
   .ra-$(radius) {
     border-radius: var(--border-radius-$(radius));
   }
-  .rtl-$(radius) {
+  .rtl-$(radius),
+  .rt-$(radius),
+  .rl-$(radius) {
     border-top-left-radius: var(--border-radius-$(radius));
   }
-  .rtr-$(radius) {
+  .rtr-$(radius),
+  .rt-$(radius),
+  .rr-$(radius) {
     border-top-right-radius: var(--border-radius-$(radius));
   }
-  .rbl-$(radius) {
+  .rbl-$(radius),
+  .rb-$(radius),
+  .rl-$(radius) {
     border-bottom-left-radius: var(--border-radius-$(radius));
   }
-  .rbr-$(radius) {
+  .rbr-$(radius),
+  .rb-$(radius),
+  .rr-$(radius) {
     border-bottom-right-radius: var(--border-radius-$(radius));
   }
 }

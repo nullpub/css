@@ -12,18 +12,22 @@
 
 @for $size from 0 to 7 {
   .mt-$(size),
+  .my-$(size),
   .ma-$(size) {
     margin-top: var(--margin-size-$(size));
   }
   .mr-$(size),
+  .mx-$(size),
   .ma-$(size) {
     margin-right: var(--margin-size-$(size));
   }
   .mb-$(size),
+  .my-$(size),
   .ma-$(size) {
     margin-bottom: var(--margin-size-$(size));
   }
   .ml-$(size),
+  .mx-$(size),
   .ma-$(size) {
     margin-left: var(--margin-size-$(size));
   }
@@ -33,18 +37,22 @@
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
       .mt-$(break)-$(size),
+      .my-$(break)-$(size),
       .ma-$(break)-$(size) {
         margin-top: var(--margin-size-$(size));
       }
       .mr-$(break)-$(size),
+      .mx-$(break)-$(size),
       .ma-$(break)-$(size) {
         margin-right: var(--margin-size-$(size));
       }
       .mb-$(break)-$(size),
+      .my-$(break)-$(size),
       .ma-$(break)-$(size) {
         margin-bottom: var(--margin-size-$(size));
       }
       .ml-$(break)-$(size),
+      .mx-$(break)-$(size),
       .ma-$(break)-$(size) {
         margin-left: var(--margin-size-$(size));
       }
