@@ -1,0 +1,20 @@
+@import '../variables/breakpoints';
+
+/**
+ * Text Align
+ */
+@each $align in (left, right, center, justify, initial, inherit) {
+  .ta-$(align) {
+    text-align: $(align);
+  }
+}
+
+@each $break in (sm, md, lg) {
+  @each $align in (left, right, center, justify, initial, inherit) {
+    @media (--$(break)) {
+      .ta-$(break)-$(align) {
+        text-align: $(align);
+      }
+    }
+  }
+}
