@@ -30,32 +30,38 @@
 /**
  * Flex basis classes
  */
-.fb-auto {
-  flex-basis: auto;
+@each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
+  .fb-$(basis) {
+    flex-basis: $(basis);
+  }
 }
-.fb-fill {
-  flex-basis: fill;
+
+@each $basis in (20, 25, 30, 50) {
+  .fb-$(basis) {
+    /* prettier-ignore */
+    flex-basis: $(basis)%;
+  }
 }
-.fb-max-content {
-  flex-basis: max-content;
+
+@each $break in (sm, md, lg) {
+  @each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
+    @media (--$(break)) {
+      .fb-$(break)-$(basis) {
+        flex-basis: $(basis);
+      }
+    }
+  }
 }
-.fb-min-content {
-  flex-basis: min-content;
-}
-.fb-fit-content {
-  flex-basis: fit-content;
-}
-.fb-content {
-  flex-basis: content;
-}
-.fb-inherit {
-  flex-basis: inherit;
-}
-.fb-initial {
-  flex-basis: initial;
-}
-.fb-unset {
-  flex-basis: unset;
+
+@each $break in (sm, md, lg) {
+  @each $basis in (20, 25, 33.3, 50) {
+    @media (--$(break)) {
+      .fb-$(break)-$(basis) {
+        /* prettier-ignore */
+        flex-basis: $(basis)%;
+      }
+    }
+  }
 }
 
 /**
