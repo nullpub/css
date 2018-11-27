@@ -14,7 +14,7 @@
 .flex-sm-c2r > *,
 .flex-md-c2r > *,
 .flex-lg-c2r > * {
-  @extend fs-1-1;
+  @extend .fs-1-1;
 }
 
 @each $break in (sm, md, lg) {
