@@ -15,7 +15,7 @@
 .flex-md-c2r > *,
 .flex-lg-c2r > * {
   @extend .fs-1-1;
-  @extend .fb-0;
+  @extend .fb-auto;
 }
 
 @each $break in (sm, md, lg) {
@@ -26,7 +26,7 @@
       @extend .js-stretch;
     }
     .flex-$(break)-c2r > * {
-      @extend .fb-auto;
+      @extend .fb-0;
     }
   }
 }
