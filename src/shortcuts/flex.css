@@ -11,6 +11,12 @@
   @extend .jc-flex-start;
 }
 
+.flex-sm-c2r > *,
+.flex-md-c2r > *,
+.flex-lg-c2r > * {
+  @extend fs-1-1;
+}
+
 @each $break in (sm, md, lg) {
   @media (--$(break)) {
     .flex-$(break)-c2r {
