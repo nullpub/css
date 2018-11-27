@@ -36,7 +36,7 @@
   }
 }
 
-@each $basis in (20, 25, 30, 50) {
+@each $basis in (0, 20, 25, 30, 50) {
   .fb-$(basis) {
     /* prettier-ignore */
     flex-basis: $(basis)%;
@@ -54,7 +54,7 @@
 }
 
 @each $break in (sm, md, lg) {
-  @each $basis in (20, 25, 30, 50) {
+  @each $basis in (0, 20, 25, 30, 50) {
     @media (--$(break)) {
       .fb-$(break)-$(basis) {
         /* prettier-ignore */
