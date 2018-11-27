@@ -129,6 +129,26 @@
 }
 
 /**
+ * Flex Wrap
+ */
+
+@each $wrap in (nowrap, wrap, wrap-reverse, inherit, initial, unset) {
+  .fw-$(wrap) {
+    flex-wrap: $(wrap);
+  }
+}
+
+@each $break in (sm, md, lg) {
+  @each $wrap in (nowrap, wrap, wrap-reverse, inherit, initial, unset) {
+    @media (--$(break)) {
+      .fw-$(break)-$(wrap) {
+        flex-wrap: $(wrap);
+      }
+    }
+  }
+}
+
+/**
  * Align items
  */
 @each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
