@@ -96,9 +96,6 @@
   .tc-$(color) {
     border-color: var(--color-$(color));
   }
-  .bc-$(color)-contrast {
-    border-color: var(--color-$(color)-contrast);
-  }
 }
 
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
@@ -110,16 +107,21 @@
   }
 }
 
-@each $break in (sm, md, lg) {
-  @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-    @media (--$(break)) {
-      .bc-$(break)-$(color),
-      .tc-$(break)-$(color) {
-        border-color: var(--color-$(color));
-      }
-      .bc-$(break)-$(color)-contrast {
-        border-color: var(--color-$(color)-contrast);
-      }
+/**
+ * Border Reverse Colors
+ */
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  .bcr-$(color),
+  .tcr-$(color) {
+    border-color: var(--color-$(color)-contrast);
+  }
+}
+
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+    .bcr-$(color)-$(psuedo):$(psuedo),
+    .tcr-$(color)-$(psuedo):$(psuedo) {
+      border-color: var(--color-$(color)-contrast);
     }
   }
 }

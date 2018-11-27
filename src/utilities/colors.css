@@ -29,32 +29,28 @@
 }
 
 /**
- * Colors on Breakpoint
- *
- * I'm really not sure how needed these are
+ * Reverse Colors
  */
-@each $break in (sm, md, lg) {
-  @media (--$(break)) {
-    @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-      .fg-$(break)-$(color),
-      .tc-$(break)-$(color) {
-        color: var(--color-$(color));
-      }
-      .bg-$(break)-$(color),
-      .tc-$(break)-$(color) {
-        background-color: var(--color-$(color)-contrast);
-      }
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  .fgr-$(color),
+  .tcr-$(color) {
+    color: var(--color-$(color)-contrast);
+  }
+  .bgr-$(color),
+  .tcr-$(color) {
+    background-color: var(--color-$(color));
+  }
+}
 
-      @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
-        .fg-$(break)-$(color)-$(psuedo):$(psuedo),
-        .tc-$(break)-$(color)-$(psuedo):$(psuedo) {
-          color: var(--color-$(color));
-        }
-        .bg-$(break)-$(color)-$(psuedo):$(psuedo),
-        .tc-$(break)-$(color)-$(psuedo):$(psuedo) {
-          background-color: var(--color-$(color)-contrast);
-        }
-      }
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+    .fgr-$(color)-$(psuedo):$(psuedo),
+    .tcr-$(color)-$(psuedo):$(psuedo) {
+      color: var(--color-$(color)-contrast);
+    }
+    .bgr-$(color)-$(psuedo):$(psuedo),
+    .tcr-$(color)-$(psuedo):$(psuedo) {
+      background-color: var(--color-$(color));
     }
   }
 }
