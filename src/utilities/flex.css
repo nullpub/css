@@ -127,3 +127,43 @@
     }
   }
 }
+
+/**
+ * Align items
+ */
+@each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
+  .ai-$(align) {
+    align-items: $(align);
+  }
+}
+
+@each $break in (sm, md, lg) {
+  @each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
+    @media (--$(break)) {
+      .ai-$(break)-$(align) {
+        align-items: $(align);
+      }
+    }
+  }
+}
+
+/**
+ * Justify content
+ */
+/* prettier-ignore */
+@each $justify in (center, start, end, flex-start, flex-end, left, right, space-between, space-around, space-evenly, stretch, inherit, initial, unset) {
+  .jc-$(justify) {
+    justify-content: $(justify);
+  }
+}
+
+@each $break in (sm, md, lg) {
+  /* prettier-ignore */
+  @each $justify in (center, start, end, flex-start, flex-end, left, right, space-between, space-around, space-evenly, stretch, inherit, initial, unset) {
+    @media (--$(break)) {
+      .jc-$(justify) {
+        justify-content: $(justify);
+      }
+    }
+  }
+}
