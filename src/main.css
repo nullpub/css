@@ -16,6 +16,11 @@ Utility CSS
 @import './variables/transitions';
 @import './variables/typography';
 
+/**
+ * Shortcuts - Before Utilities so Utilities can override
+ */
+@import './shortcuts/flex';
+
 /*
  * Utilities
  */
@@ -25,8 +30,3 @@ Utility CSS
 @import './utilities/flex';
 @import './utilities/margin';
 @import './utilities/padding';
-
-/**
- * Shortcuts
- */
-@import './shortcuts/flex';
