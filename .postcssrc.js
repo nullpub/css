@@ -4,6 +4,7 @@ module.exports = {
     require('postcss-for')(),
     require('postcss-each')(),
     require('postcss-simple-vars')(),
+    require('postcss-extend-rule')(),
     require('postcss-cssnext')({
       browsers: ['last 2 versions'],
       features: {

@@ -1,0 +1,18 @@
+@import '../utilities/flex';
+
+/**
+ * A shortcut to flex column on small screens and row on others
+ */
+.flex-column-sm-row {
+  @extend .fd-column;
+  @extend .ai-stretch;
+  @extend .jc-flex-start;
+}
+
+@media (--sm) {
+  .flex-column-sm-row {
+    @extend .fd-sm-row;
+    @extend .ai-sm-flex-start;
+    @extend .js-stretch;
+  }
+}
