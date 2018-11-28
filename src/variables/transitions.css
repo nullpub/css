@@ -1,6 +1,3 @@
 :root {
-  --transition-0: all 0 ease-in-out;
-  --transition-1: all 150ms ease-in-out;
-  --transition-2: all 300ms ease-in-out;
-  --transition-3: all 450ms ease-in-out;
+  --transition-tc: color 150ms ease-in-out, background-color 150ms ease-in-out, border-color 150ms ease-in-out;
 }
