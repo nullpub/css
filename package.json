@@ -5,7 +5,16 @@
   "main": "dist/main.css",
   "scripts": {
     "start": "postcss src/main.css -o dist/main.css -w",
-    "build": "postcss src/main.css -o dist/main.css",
+    "build": "concurrently --no-color \"npm:build:*\"",
+    "build:main": "postcss src/main.css -o dist/main.css",
+    "build:utilities:borders": "postcss src/utilities/borders.css -o dist/borders.css",
+    "build:utilities:colors": "postcss src/utilities/colors.css -o dist/colors.css",
+    "build:utilities:display": "postcss src/utilities/display.css -o dist/display.css",
+    "build:utilities:flex": "postcss src/utilities/flex.css -o dist/flex.css",
+    "build:utilities:font": "postcss src/utilities/font.css -o dist/font.css",
+    "build:utilities:margin": "postcss src/utilities/margin.css -o dist/margin.css",
+    "build:utilities:padding": "postcss src/utilities/padding.css -o dist/padding.css",
+    "build:utilities:text": "postcss src/utilities/text.css -o dist/text.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
   },
@@ -26,6 +35,7 @@
   "homepage": "https://github.com/nullpub/css#readme",
   "devDependencies": {
     "bootstrap": "^4.1.3",
+    "concurrently": "^4.1.0",
     "cssnano": "^4.1.7",
     "postcss-cli": "^6.0.1",
     "postcss-cssnext": "^3.1.0",
