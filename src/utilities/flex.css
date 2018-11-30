@@ -7,7 +7,7 @@
  */
 @for $grow from 0 to 5 {
   @for $shrink from 0 to 5 {
-    .fs-$(grow)-$(shrink) {
+    .fls-$(grow)-$(shrink) {
       flex-grow: $grow;
       flex-shrink: $shrink;
     }
@@ -18,7 +18,7 @@
   @for $shrink from 0 to 5 {
     @each $break in (sm, md, lg) {
       @media (--$(break)) {
-        .fs-$(break)-$(grow)-$(shrink) {
+        .fls-$(break)-$(grow)-$(shrink) {
           flex-grow: $grow;
           flex-shrink: $shrink;
         }
@@ -31,13 +31,13 @@
  * Flex basis classes
  */
 @each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
-  .fb-$(basis) {
+  .flb-$(basis) {
     flex-basis: $(basis);
   }
 }
 
 @each $basis in (0, 20, 25, 30, 50) {
-  .fb-$(basis) {
+  .flb-$(basis) {
     /* prettier-ignore */
     flex-basis: $(basis)%;
   }
@@ -46,7 +46,7 @@
 @each $break in (sm, md, lg) {
   @each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
     @media (--$(break)) {
-      .fb-$(break)-$(basis) {
+      .flb-$(break)-$(basis) {
         flex-basis: $(basis);
       }
     }
@@ -56,7 +56,7 @@
 @each $break in (sm, md, lg) {
   @each $basis in (0, 20, 25, 30, 50) {
     @media (--$(break)) {
-      .fb-$(break)-$(basis) {
+      .flb-$(break)-$(basis) {
         /* prettier-ignore */
         flex-basis: $(basis)%;
       }
@@ -68,11 +68,11 @@
  * Flex direction classes
  */
 @each $direction in (row, column) {
-  .fd-$(direction) {
+  .fld-$(direction) {
     display: flex;
     flex-direction: $direction;
   }
-  .fd-$(direction)-reverse {
+  .fld-$(direction)-reverse {
     display: flex;
     flex-direction: $(direction)-reverse;
   }
@@ -81,11 +81,11 @@
 @each $direction in (row, column) {
   @each $break in (sm, md, lg) {
     @media (--$(break)) {
-      .fd-$(break)-$(direction) {
+      .fld-$(break)-$(direction) {
         display: flex;
         flex-direction: $direction;
       }
-      .fd-$(break)-$(direction)-reverse {
+      .fld-$(break)-$(direction)-reverse {
         display: flex;
         flex-direction: $(direction)-reverse;
       }
@@ -97,16 +97,16 @@
  * Flex direction gaps
  */
 @for $size from 0 to 7 {
-  .fd-row.fg-$(size) > *:not(:last-child) {
+  .fld-row.flg-$(size) > *:not(:last-child) {
     margin-right: var(--margin-size-$(size));
   }
-  .fd-column.fg-$(size) > *:not(:last-child) {
+  .fld-column.flg-$(size) > *:not(:last-child) {
     margin-bottom: var(--margin-size-$(size));
   }
-  .fd-row-reverse.fg-$(size) > *:not(:last-child) {
+  .fld-row-reverse.flg-$(size) > *:not(:last-child) {
     margin-left: var(--margin-size-$(size));
   }
-  .fd-column-reverse.fg-$(size) > *:not(:last-child) {
+  .fld-column-reverse.flg-$(size) > *:not(:last-child) {
     margin-top: var(--margin-size-$(size));
   }
 }
@@ -114,19 +114,19 @@
 @each $break in (sm, md, lg) {
   @for $size from 0 to 7 {
     @media (--$(break)) {
-      .fd-$(break)-row.fg-$(size) > *:not(:last-child) {
+      .fld-$(break)-row.flg-$(size) > *:not(:last-child) {
         margin: 0;
         margin-right: var(--margin-size-$(size));
       }
-      .fd-$(break)-column.fg-$(size) > *:not(:last-child) {
+      .fld-$(break)-column.flg-$(size) > *:not(:last-child) {
         margin: 0;
         margin-bottom: var(--margin-size-$(size));
       }
-      .fd-$(break)-row-reverse.fg-$(size) > *:not(:last-child) {
+      .fld-$(break)-row-reverse.flg-$(size) > *:not(:last-child) {
         margin: 0;
         margin-left: var(--margin-size-$(size));
       }
-      .fd-$(break)-column-reverse.fg-$(size) > *:not(:last-child) {
+      .fld-$(break)-column-reverse.flg-$(size) > *:not(:last-child) {
         margin: 0;
         margin-top: var(--margin-size-$(size));
       }
@@ -139,7 +139,7 @@
  */
 
 @each $wrap in (nowrap, wrap, wrap-reverse, inherit, initial, unset) {
-  .fw-$(wrap) {
+  .flw-$(wrap) {
     flex-wrap: $(wrap);
   }
 }
@@ -147,7 +147,7 @@
 @each $break in (sm, md, lg) {
   @each $wrap in (nowrap, wrap, wrap-reverse, inherit, initial, unset) {
     @media (--$(break)) {
-      .fw-$(break)-$(wrap) {
+      .flw-$(break)-$(wrap) {
         flex-wrap: $(wrap);
       }
     }
