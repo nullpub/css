@@ -1,5 +1,5 @@
 :root {
-  --margin-size-base: var(--size-base);
+  --margin-size-base: var(--fill-size);
   --margin-size-0: calc(var(--margin-size-base) * 0);
   --margin-size-1: calc(var(--margin-size-base) * 1);
   --margin-size-2: calc(var(--margin-size-base) * 2);

@@ -2,7 +2,7 @@
 @import '../variables/sizes.css';
 
 :root {
-  --padding-size-base: var(--size-base);
+  --padding-size-base: var(--fill-size);
   --padding-size-0: calc(var(--padding-size-base) * 0);
   --padding-size-1: calc(var(--padding-size-base) * 1);
   --padding-size-2: calc(var(--padding-size-base) * 2);

@@ -2,11 +2,11 @@
  * Break points
  */
 :root {
-  --breakpoint-sm: 768px;
-  --breakpoint-md: 992px;
-  --breakpoint-lg: 1200px;
+  --breakpoint-sm: 50em;
+  --breakpoint-md: 70em;
+  --breakpoint-lg: 90em;
 }
 
-@custom-media --sm (width >= 768px);
-@custom-media --md (width >= 992px);
-@custom-media --lg (width >= 1200px);
+@custom-media --sm (width >= 50em);
+@custom-media --md (width >= 70em);
+@custom-media --lg (width >= 90em);

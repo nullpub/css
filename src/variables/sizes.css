@@ -3,13 +3,8 @@
  */
 
 :root {
-  --size-base: 1px;
-  --size-0: calc(var(--size-base) * 0);
-  --size-1: calc(var(--size-base) * 1);
-  --size-2: calc(var(--size-base) * 2);
-  --size-3: calc(var(--size-base) * 4);
-  --size-4: calc(var(--size-base) * 8);
-  --size-5: calc(var(--size-base) * 16);
-  --size-6: calc(var(--size-base) * 32);
-  --size-7: calc(var(--size-base) * 64);
+  --size: 1.2rem;
+  --font-size: calc(var(--size) / 1);
+  --fill-size: calc(var(--size) / 18);
+  --radius-size: calc(var(--size) / 6);
 }
