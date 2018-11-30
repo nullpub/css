@@ -93,7 +93,7 @@
  */
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   .bc-$(color),
-  .tc-$(color) {
+  .ct-$(color) {
     border-color: var(--color-$(color));
   }
 }
@@ -101,7 +101,7 @@
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
     .bc-$(color)-$(psuedo):$(psuedo),
-    .tc-$(color)-$(psuedo):$(psuedo) {
+    .ct-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color));
     }
   }
@@ -112,7 +112,7 @@
  */
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   .bcr-$(color),
-  .tcr-$(color) {
+  .ctr-$(color) {
     border-color: var(--color-$(color)-contrast);
   }
 }
@@ -120,7 +120,7 @@
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
     .bcr-$(color)-$(psuedo):$(psuedo),
-    .tcr-$(color)-$(psuedo):$(psuedo) {
+    .ctr-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color)-contrast);
     }
   }
@@ -129,52 +129,52 @@
 /**
  * Border Radius 50% and sized
  */
-.ra-c {
+.bra-c {
   border-radius: var(--border-radius-circle);
 }
-.rtl-c,
-.rt-c,
-.rl-c {
+.brtl-c,
+.brt-c,
+.brl-c {
   border-top-left-radius: var(--border-radius-circle);
 }
-.rtr-c,
-.rt-c,
-.rr-c {
+.brtr-c,
+.brt-c,
+.brr-c {
   border-top-right-radius: var(--border-radius-circle);
 }
-.rbl-c,
-.rb-c,
-.rl-c {
+.brbl-c,
+.brb-c,
+.brl-c {
   border-bottom-left-radius: var(--border-radius-circle);
 }
-.rbr-c,
-.rb-c,
-.rr-c {
+.brbr-c,
+.brb-c,
+.brr-c {
   border-bottom-right-radius: var(--border-radius-circle);
 }
 
 @for $radius from 0 to 3 {
-  .ra-$(radius) {
+  .bra-$(radius) {
     border-radius: var(--border-radius-$(radius));
   }
-  .rtl-$(radius),
-  .rt-$(radius),
-  .rl-$(radius) {
+  .brtl-$(radius),
+  .brt-$(radius),
+  .brl-$(radius) {
     border-top-left-radius: var(--border-radius-$(radius));
   }
-  .rtr-$(radius),
-  .rt-$(radius),
-  .rr-$(radius) {
+  .brtr-$(radius),
+  .brt-$(radius),
+  .brr-$(radius) {
     border-top-right-radius: var(--border-radius-$(radius));
   }
-  .rbl-$(radius),
-  .rb-$(radius),
-  .rl-$(radius) {
+  .brbl-$(radius),
+  .brb-$(radius),
+  .brl-$(radius) {
     border-bottom-left-radius: var(--border-radius-$(radius));
   }
-  .rbr-$(radius),
-  .rb-$(radius),
-  .rr-$(radius) {
+  .brbr-$(radius),
+  .brb-$(radius),
+  .brr-$(radius) {
     border-bottom-right-radius: var(--border-radius-$(radius));
   }
 }

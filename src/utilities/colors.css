@@ -4,24 +4,24 @@
  * Colors
  */
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  .fg-$(color),
-  .tc-$(color) {
+  .cf-$(color),
+  .ct-$(color) {
     color: var(--color-$(color));
   }
-  .bg-$(color),
-  .tc-$(color) {
+  .cb-$(color),
+  .ct-$(color) {
     background-color: var(--color-$(color)-contrast);
   }
 }
 
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
-    .fg-$(color)-$(psuedo):$(psuedo),
-    .tc-$(color)-$(psuedo):$(psuedo) {
+    .cf-$(color)-$(psuedo):$(psuedo),
+    .ct-$(color)-$(psuedo):$(psuedo) {
       color: var(--color-$(color));
     }
-    .bg-$(color)-$(psuedo):$(psuedo),
-    .tc-$(color)-$(psuedo):$(psuedo) {
+    .cb-$(color)-$(psuedo):$(psuedo),
+    .ct-$(color)-$(psuedo):$(psuedo) {
       background-color: var(--color-$(color)-contrast);
     }
   }
@@ -31,24 +31,24 @@
  * Reverse Colors
  */
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  .fgr-$(color),
-  .tcr-$(color) {
+  .cfr-$(color),
+  .ctr-$(color) {
     color: var(--color-$(color)-contrast);
   }
-  .bgr-$(color),
-  .tcr-$(color) {
+  .cbr-$(color),
+  .ctr-$(color) {
     background-color: var(--color-$(color));
   }
 }
 
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
-    .fgr-$(color)-$(psuedo):$(psuedo),
-    .tcr-$(color)-$(psuedo):$(psuedo) {
+    .cfr-$(color)-$(psuedo):$(psuedo),
+    .ctr-$(color)-$(psuedo):$(psuedo) {
       color: var(--color-$(color)-contrast);
     }
-    .bgr-$(color)-$(psuedo):$(psuedo),
-    .tcr-$(color)-$(psuedo):$(psuedo) {
+    .cbr-$(color)-$(psuedo):$(psuedo),
+    .ctr-$(color)-$(psuedo):$(psuedo) {
       background-color: var(--color-$(color));
     }
   }

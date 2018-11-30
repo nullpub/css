@@ -5,7 +5,7 @@
   "main": "dist/main.css",
   "scripts": {
     "start": "postcss src/main.css -o dist/main.css -w",
-    "build": "concurrently --no-color \"npm:build:*\"",
+    "build": "concurrently --no-color \"npm:build:*\" && npm run gzip",
     "build:main": "postcss src/main.css -o dist/main.css",
     "build:utilities:borders": "postcss src/utilities/borders.css -o dist/borders.css",
     "build:utilities:colors": "postcss src/utilities/colors.css -o dist/colors.css",
@@ -15,6 +15,7 @@
     "build:utilities:margin": "postcss src/utilities/margin.css -o dist/margin.css",
     "build:utilities:padding": "postcss src/utilities/padding.css -o dist/padding.css",
     "build:utilities:text": "postcss src/utilities/text.css -o dist/text.css",
+    "gzip": "gzip -k -f dist/*.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
   },
