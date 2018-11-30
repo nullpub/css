@@ -27,25 +27,25 @@
   .bt-$(size),
   .by-$(size),
   .ba-$(size) {
-    border-style: solid;
+    border-top-style: solid;
     border-top-width: var(--border-size-$(size));
   }
   .br-$(size),
   .bx-$(size),
   .ba-$(size) {
-    border-style: solid;
+    border-right-style: solid;
     border-right-width: var(--border-size-$(size));
   }
   .bb-$(size),
   .by-$(size),
   .ba-$(size) {
-    border-style: solid;
+    border-bottom-style: solid;
     border-bottom-width: var(--border-size-$(size));
   }
   .bl-$(size),
   .bx-$(size),
   .ba-$(size) {
-    border-style: solid;
+    border-left-style: solid;
     border-left-width: var(--border-size-$(size));
   }
 }
@@ -55,25 +55,25 @@
     .bt-$(break)-$(size),
     .by-$(break)-$(size),
     .ba-$(break)-$(size) {
-      border-style: solid;
+      border-top-style: solid;
       border-top-width: var(--border-size-$(size));
     }
     .br-$(break)-$(size),
     .bx-$(break)-$(size),
     .ba-$(break)-$(size) {
-      border-style: solid;
+      border-right-style: solid;
       border-right-width: var(--border-size-$(size));
     }
     .bb-$(break)-$(size),
     .by-$(break)-$(size),
     .ba-$(break)-$(size) {
-      border-style: solid;
+      border-bottom-style: solid;
       border-bottom-width: var(--border-size-$(size));
     }
     .bl-$(break)-$(size),
     .bx-$(break)-$(size),
     .ba-$(break)-$(size) {
-      border-style: solid;
+      border-left-style: solid;
       border-left-width: var(--border-size-$(size));
     }
   }

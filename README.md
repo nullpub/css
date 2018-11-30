@@ -39,7 +39,7 @@ The classes follow the following patterns:
 
 `.<PREFIX>[SELECTOR][-BREAKPOINT]-[VALUE]`
 
-For example,`.pl-sm-2` will apply left padding after the small breakpoint of value 2.```
+For example,`.pl-sm-2` will apply left padding after the small breakpoint of value 2.
 
 All values are defined by custom `:root` properties. Care has been taken to scale both padding, margins, borders, and font size together.
 
