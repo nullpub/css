@@ -1,0 +1,34 @@
+@import '../variables/typography.css';
+
+/**
+ * Font Step Classes
+ */
+.fs-0 {
+  font-size: var(--font-size-0);
+}
+
+@for $step from 1 to 5 {
+  .fsu-$(step) {
+    font-size: var(--font-size-up-$(step));
+  }
+  .fsd-$(step) {
+    font-size: var(--font-size-down-$(step));
+  }
+}
+
+@each $break in (sm, md, lg) {
+  .fs-$(break)-0 {
+    font-size: var(--font-size-0);
+  }
+
+  @for $step from 1 to 5 {
+    @media (--$(break)) {
+      .fsu-$(break)-$(step) {
+        font-size: var(--font-size-up-$(step));
+      }
+      .fsd-$(break)-$(step) {
+        font-size: var(--font-size-down-$(step));
+      }
+    }
+  }
+}
