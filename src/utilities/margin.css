@@ -2,15 +2,14 @@
 @import '../variables/sizes';
 
 :root {
-  --margin-size-base: var(--fill-size);
-  --margin-size-0: calc(var(--margin-size-base) * 0);
-  --margin-size-1: calc(var(--margin-size-base) * 1);
-  --margin-size-2: calc(var(--margin-size-base) * 2);
-  --margin-size-3: calc(var(--margin-size-base) * 4);
-  --margin-size-4: calc(var(--margin-size-base) * 8);
-  --margin-size-5: calc(var(--margin-size-base) * 16);
-  --margin-size-6: calc(var(--margin-size-base) * 32);
-  --margin-size-7: calc(var(--margin-size-base) * 64);
+  --margin-size-0: calc(var(--fill-size) * 0);
+  --margin-size-1: calc(var(--fill-size) * 1);
+  --margin-size-2: calc(var(--fill-size) * 2);
+  --margin-size-3: calc(var(--fill-size) * 4);
+  --margin-size-4: calc(var(--fill-size) * 8);
+  --margin-size-5: calc(var(--fill-size) * 16);
+  --margin-size-6: calc(var(--fill-size) * 32);
+  --margin-size-7: calc(var(--fill-size) * 64);
 }
 
 @for $size from 0 to 7 {
