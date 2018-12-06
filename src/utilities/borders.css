@@ -50,7 +50,7 @@
   }
 }
 
-@each $break, $size in (sm, md, lg) {
+@each $break in (sm, md, lg) {
   @each $size in (0, 1, 2, 3, 4, 5, 6, 7) {
     @media (--$(break)) {
       .bt-$(break)-$(size),
@@ -101,21 +101,21 @@
 }
 
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  .bcr-$(color),
+  .ctr-$(color) {
+    border-color: var(--color-$(color)-contrast);
+  }
+}
+
+/**
+ * Border Colors On Psuedo Classes
+ */
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
     .bc-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color));
     }
-  }
-}
-
-/**
- * Border Reverse Colors
- */
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  .bcr-$(color),
-  .ctr-$(color) {
-    border-color: var(--color-$(color)-contrast);
   }
 }
 

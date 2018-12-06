@@ -15,6 +15,20 @@
 }
 
 @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+  .cfr-$(color),
+  .ctr-$(color) {
+    color: var(--color-$(color)-contrast);
+  }
+  .cbr-$(color),
+  .ctr-$(color) {
+    background-color: var(--color-$(color));
+  }
+}
+
+/**
+ * Reverse Colors on Psuedo Classes
+ */
+@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
     .cf-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
@@ -24,20 +38,6 @@
     .ct-$(color)-$(psuedo):$(psuedo) {
       background-color: var(--color-$(color)-contrast);
     }
-  }
-}
-
-/**
- * Reverse Colors
- */
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  .cfr-$(color),
-  .ctr-$(color) {
-    color: var(--color-$(color)-contrast);
-  }
-  .cbr-$(color),
-  .ctr-$(color) {
-    background-color: var(--color-$(color));
   }
 }
 
