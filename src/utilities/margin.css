@@ -65,7 +65,7 @@
 /**
  * Percentage Margins
  */
-@each $fudge in (25, 50, 75) {
+@each $fudge in (10, 20, 25, 40, 50, 60, 75, 80) {
   /* Positive Percentage Margins */
   .mt-$(fudge)p {
     /* prettier-ignore */
