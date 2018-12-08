@@ -3,8 +3,8 @@
  */
 
 :root {
-  --size: 16px;
+  --size: 1.2rem;
   --font-size: calc(var(--size) / 1);
   --fill-size: calc(var(--size) / 18);
-  --radius-size: calc(var(--size) / 6);
+  --radius-size: calc(var(--size) / 8);
 }

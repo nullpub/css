@@ -1,4 +1,5 @@
-@import '../utilities/flex';
+@import '../utilities/flex/flex.css';
+@import '../utilities/flex/flex-breakpoint.css';
 
 /**
  * A shortcut to flex column on $(break) screens and row on others

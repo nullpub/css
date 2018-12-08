@@ -11,8 +11,8 @@ Utility CSS
 @import './variables/transitions.css';
 
 /*
- * Utilities
- */
+  * Utilities
+  */
 @import './utilities/border/border.css';
 @import './utilities/color/color.css';
 @import './utilities/display/display.css';
@@ -22,11 +22,3 @@ Utility CSS
 @import './utilities/padding/padding.css';
 @import './utilities/shadow/shadow.css';
 @import './utilities/text/text.css';
-
-@import './utilities/border/border-breakpoint.css';
-@import './utilities/display/display-breakpoint.css';
-@import './utilities/flex/flex-breakpoint.css';
-@import './utilities/font/font-breakpoint.css';
-@import './utilities/margin/margin-breakpoint.css';
-@import './utilities/padding/padding-breakpoint.css';
-@import './utilities/text/text-breakpoint.css';

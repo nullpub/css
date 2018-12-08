@@ -1,14 +1,8 @@
-@import '../variables/breakpoints';
+@import '../../variables/breakpoints';
 
 /**
- * Text Align
+ * Text align on breakpoint
  */
-@each $align in (left, right, center, justify, initial, inherit) {
-  .ta-$(align) {
-    text-align: $(align);
-  }
-}
-
 @each $break in (sm, md, lg) {
   @each $align in (left, right, center, justify, initial, inherit) {
     @media (--$(break)) {

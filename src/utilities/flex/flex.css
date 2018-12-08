@@ -1,0 +1,91 @@
+@import '../../variables/sizes.css';
+
+@import '../margin/margin-sizes.css';
+
+/**
+ * Flex size grow/shrink classes
+ */
+@for $grow from 0 to 5 {
+  @for $shrink from 0 to 5 {
+    .fls-$(grow)-$(shrink) {
+      flex-grow: $grow;
+      flex-shrink: $shrink;
+    }
+  }
+}
+
+/**
+ * Flex basis classes
+ */
+@each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
+  .flb-$(basis) {
+    flex-basis: $(basis);
+  }
+}
+
+@each $basis in (0, 20, 25, 30, 50) {
+  .flb-$(basis) {
+    /* prettier-ignore */
+    flex-basis: $(basis)%;
+  }
+}
+
+/**
+ * Flex direction classes
+ */
+@each $direction in (row, column) {
+  .fld-$(direction) {
+    display: flex;
+    flex-direction: $direction;
+  }
+  .fld-$(direction)-reverse {
+    display: flex;
+    flex-direction: $(direction)-reverse;
+  }
+}
+
+/**
+ * Flex direction gaps
+ */
+@for $size from 0 to 7 {
+  .fld-row.flg-$(size) > *:not(:last-child) {
+    margin-right: var(--margin-size-$(size));
+  }
+  .fld-column.flg-$(size) > *:not(:last-child) {
+    margin-bottom: var(--margin-size-$(size));
+  }
+  .fld-row-reverse.flg-$(size) > *:not(:last-child) {
+    margin-left: var(--margin-size-$(size));
+  }
+  .fld-column-reverse.flg-$(size) > *:not(:last-child) {
+    margin-top: var(--margin-size-$(size));
+  }
+}
+
+/**
+ * Flex Wrap
+ */
+@each $wrap in (nowrap, wrap, wrap-reverse, inherit, initial, unset) {
+  .flw-$(wrap) {
+    flex-wrap: $(wrap);
+  }
+}
+
+/**
+ * Align items
+ */
+@each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
+  .ai-$(align) {
+    align-items: $(align);
+  }
+}
+
+/**
+ * Justify content
+ */
+/* prettier-ignore */
+@each $justify in (center, start, end, flex-start, flex-end, left, right, space-between, space-around, space-evenly, stretch, inherit, initial, unset) {
+  .jc-$(justify) {
+    justify-content: $(justify);
+  }
+}

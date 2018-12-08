@@ -1,16 +1,4 @@
-@import '../variables/breakpoints.css';
-@import '../variables/sizes.css';
-
-:root {
-  --padding-size-0: calc(var(--fill-size) * 0);
-  --padding-size-1: calc(var(--fill-size) * 1);
-  --padding-size-2: calc(var(--fill-size) * 2);
-  --padding-size-3: calc(var(--fill-size) * 4);
-  --padding-size-4: calc(var(--fill-size) * 8);
-  --padding-size-5: calc(var(--fill-size) * 16);
-  --padding-size-6: calc(var(--fill-size) * 32);
-  --padding-size-7: calc(var(--fill-size) * 64);
-}
+@import './padding-sizes.css';
 
 @for $size from 0 to 7 {
   .pt-$(size),

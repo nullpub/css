@@ -1,17 +1,4 @@
-@import '../variables/breakpoints.css';
-
-/**
- * Displays
- *
- * Candidate for removal
- */
-@each $display
-  in (inline, block, contents, flex, grid, inline-block, inline-flex, inline-grid, inline-table, none, initial, inherit)
-{
-  .d-$(display) {
-    display: $(display);
-  }
-}
+@import '../../variables/breakpoints.css';
 
 @each $break in (sm, md, lg) {
   /* prettier-ignore */

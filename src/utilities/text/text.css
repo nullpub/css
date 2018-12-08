@@ -1,0 +1,8 @@
+/**
+ * Text Align
+ */
+@each $align in (left, right, center, justify, initial, inherit) {
+  .ta-$(align) {
+    text-align: $(align);
+  }
+}

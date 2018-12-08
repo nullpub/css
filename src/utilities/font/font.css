@@ -1,0 +1,35 @@
+@import '../../variables/breakpoints';
+
+@import './font-sizes';
+
+/**
+ * Font size
+ */
+.fs-0 {
+  font-size: var(--font-size-0);
+}
+
+@for $step from 1 to 5 {
+  .fsu-$(step) {
+    font-size: var(--font-size-up-$(step));
+  }
+  .fsd-$(step) {
+    font-size: var(--font-size-down-$(step));
+  }
+}
+
+/**
+* Font weight
+*/
+.fw-0 {
+  font-weight: var(--font-weight-0);
+}
+
+@for $step from 1 to 3 {
+  .fwu-$(step) {
+    font-weight: var(--font-weight-up-$(step));
+  }
+  .fwd-$(step) {
+    font-weight: var(--font-weight-down-$(step));
+  }
+}

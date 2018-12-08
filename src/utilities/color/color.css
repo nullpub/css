@@ -1,4 +1,4 @@
-@import '../variables/colors.css';
+@import '../../variables/colors.css';
 
 /**
  * Colors
@@ -12,9 +12,6 @@
   .ct-$(color) {
     background-color: var(--color-$(color)-contrast);
   }
-}
-
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
   .cfr-$(color),
   .ctr-$(color) {
     color: var(--color-$(color)-contrast);
@@ -26,10 +23,10 @@
 }
 
 /**
- * Reverse Colors on Psuedo Classes
+ * Color themes with psuedo selectors
  */
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+@each $psuedo in (required, invalid, read-only, hover, focus) {
+  @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
     .cf-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
       color: var(--color-$(color));
@@ -38,11 +35,6 @@
     .ct-$(color)-$(psuedo):$(psuedo) {
       background-color: var(--color-$(color)-contrast);
     }
-  }
-}
-
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
     .cfr-$(color)-$(psuedo):$(psuedo),
     .ctr-$(color)-$(psuedo):$(psuedo) {
       color: var(--color-$(color)-contrast);
