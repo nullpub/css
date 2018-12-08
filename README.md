@@ -1,9 +1,11 @@
 # Minimal CSS Utility Classes
 
-This project exists because I found other "atmomic" or "functional" css libraries to be lacking. The goals of this project are as follows:
+This project exists because I found other "atomic" or "functional" css libraries to be lacking. The goals of this project are as follows:
 
 - Provide themeable and highly reusable classes for layout and themes
 - Provide a sensible api that follows a simple pattern
+
+Please note that this project is still unstable and the api, dist targets, and class prefixes are constantly shifting.
 
 ## Utility Classes
 
