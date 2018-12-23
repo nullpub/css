@@ -6,6 +6,7 @@
   "scripts": {
     "start": "postcss src/main.css -o dist/main.css -w",
     "build": "concurrently --no-color \"npm:build:*\" && npm run gzip",
+    "build:fluid": "postcss src/fluid.css -o dist/fluid.css",
     "build:main": "postcss src/main.css -o dist/main.css",
     "build:minimal": "postcss src/minimal.css -o dist/minimal.css",
     "build:shortcuts:flex": "postcss src/shortcuts/flex.css -o dist/shortcuts-flex.css",

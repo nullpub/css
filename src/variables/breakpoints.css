@@ -3,10 +3,10 @@
  */
 :root {
   --breakpoint-sm: 50em;
-  --breakpoint-md: 70em;
+  --breakpoint-md: 75em;
   --breakpoint-lg: 90em;
 }
 
 @custom-media --sm (width >= 50em);
-@custom-media --md (width >= 70em);
+@custom-media --md (width >= 75em);
 @custom-media --lg (width >= 90em);

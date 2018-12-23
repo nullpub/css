@@ -1,0 +1,29 @@
+@import './minimal.css';
+
+/* Font sizing */
+body {
+  font-size: var(--font-size);
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* Base sizing (small to medium) */
+:root {
+  --size: 18px;
+}
+
+/* Fluid size from medium to large */
+@media (min-width: 800px) and (max-width: 1200px) {
+  :root {
+    --size: calc(18px + 6 * (100vw - 50rem) / (1200 - 800));
+  }
+}
+
+/* Size from large up */
+@media (min-width: 1200px) {
+  :root {
+    --size: 24px;
+  }
+}
