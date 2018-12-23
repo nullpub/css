@@ -1,9 +1,8 @@
-@import './minimal.css';
+@import '../variables/sizes.css';
 
 /* Font sizing */
 body {
   font-size: var(--font-size);
-  font-family: 'Lato', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;

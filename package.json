@@ -6,10 +6,11 @@
   "scripts": {
     "start": "postcss src/main.css -o dist/main.css -w",
     "build": "concurrently --no-color \"npm:build:*\" && npm run gzip",
-    "build:fluid": "postcss src/fluid.css -o dist/fluid.css",
     "build:main": "postcss src/main.css -o dist/main.css",
     "build:minimal": "postcss src/minimal.css -o dist/minimal.css",
-    "build:shortcuts:flex": "postcss src/shortcuts/flex.css -o dist/shortcuts-flex.css",
+    "build:reset": "postcss src/reset.css -o dist/reset.css",
+    "build:tools:flex": "postcss src/tools/flex.css -o dist/tools/flex.css",
+    "build:tools:fluid": "postcss src/tools/fluid.css -o dist/tools/fluid.css",
     "gzip": "gzip -k -f dist/*.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
