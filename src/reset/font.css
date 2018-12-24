@@ -31,8 +31,7 @@ h5 {
 }
 
 h6 {
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-up-1);
+  font-size: var(--font-size-up-1);
 }
 
 /**
@@ -45,12 +44,12 @@ span {
 
 p,
 li {
-  font-size: var(--font-size-down-1);
+  font-size: var(--font-size-0);
   font-weight: var(--font-weight-down-1);
 }
 
 small {
-  font-size: var(--font-size-down-4);
+  font-size: var(--font-size-down-2);
   font-weight: var(--font-weight-down-1);
 }
 

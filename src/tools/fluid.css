@@ -13,18 +13,17 @@ body {
  *
  * For font size from 16px to 24px from 800px to 1200px width
  *
- * m = (24px - 18px) / (1200px - 800px)
- *   = 6px / 400px
- *   = 0.015px
+ * m = (24px - 16px) / (1200px - 800px)
+ *   = 8px / 400px
+ *   = 0.02px
  *
  * b = y - mx
  *
- * b = 18 - (0.015 * 800)
- *   = 18 - 12
- *   = 4
+ * b = 16 - (0.02 * 800)
+ *   = 16 - 16
+ *   = 0
  *
- * font-size = 0.015px * 100vw + 4px
- *           = 1.5vw + 4px!
+ * font-size = 0.02px * 100vw
  */
 
 /* Size Calculations */
@@ -32,7 +31,7 @@ body {
   --size: var(--size-minimum);
 
   /** Edit these values **/
-  --size-minimum: 18px;
+  --size-minimum: 16px;
   --size-maximum: 24px;
   --width-minimum: 800; /* Actually px units but could be any */
   --width-maximum: 1200; /* Actually px units but could be any */
@@ -42,7 +41,7 @@ body {
   --size-intercept: calc(var(--size-minimum) - (var(--size-slope) * var(--width-minimum)));
   --size-line: calc(var(--size-slope) * 100vw - var(--size-intercept));
   */
-  --size-line: calc(4px + 1.5vw);
+  --size-line: calc(0.02px * 1.5vw);
 }
 
 /* Fluid size from medium to large (Be sure to update from --width variables) */
