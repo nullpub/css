@@ -14,7 +14,7 @@ body {
  * Useful linear functions
  * y = mx + b
  * m = (y2 - y1) / (x2 - x1)
- * y = ((y2 - y1) / (x2 - x1)) * 100vw + (
+ * y = ((y2 - y1) / (x2 - x1)) * 100vw + b
  *
  * For font size from 16px to 24px from 800px to 1200px width
  *

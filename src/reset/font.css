@@ -1,6 +1,10 @@
+@import '../variables/colors.css';
 @import '../utilities/font/font-sizes.css';
 @import '../utilities/margin/margin-sizes.css';
 
+/**
+ * Header tag styling
+ */
 h1 {
   font-size: var(--font-size-up-5);
   font-weight: var(--font-weight-up-1);
@@ -31,11 +35,22 @@ h6 {
   font-weight: var(--font-weight-up-1);
 }
 
+/**
+ * Paragraph and small tag styling
+ */
+p {
+  font-size: var(--font-size-down-1);
+  font-weight: var(--font-weight-down-1);
+}
+
 small {
   font-size: var(--font-size-down-4);
   font-weight: var(--font-weight-down-1);
 }
 
+/**
+ * Input and button styling
+ */
 input,
 button {
   font-size: inherit;
@@ -44,4 +59,13 @@ button {
 
 input {
   border: 0;
+}
+
+/**
+ * Anchor tag styling
+ */
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  background-color: var(--color-link-contrast);
 }
