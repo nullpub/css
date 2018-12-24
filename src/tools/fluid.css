@@ -7,7 +7,7 @@ body {
 
 /* Base sizing (small to medium) */
 :root {
-  --size: 16px;
+  --size: 18px;
 }
 
 /**
@@ -18,24 +18,24 @@ body {
  *
  * For font size from 16px to 24px from 800px to 1200px width
  *
- * m = (24px - 16px) / (1200px - 800px)
- *   = 8px / 400px
- *   = 0.02px
+ * m = (24px - 18px) / (1200px - 800px)
+ *   = 6px / 400px
+ *   = 0.015px
  *
  * b = y - mx
  *
- * b = 16 - (0.02 * 800)
- *   = 16 - 16
- *   = 0!
+ * b = 18 - (0.015 * 800)
+ *   = 18 - 12
+ *   = 4
  *
- * font-size = 0.02px * 100vw
- *           = 2vw!
+ * font-size = 0.02px * 100vw + 4px
+ *           = 2vw + 4px!
  */
 
 /* Fluid size from medium to large */
 @media (min-width: 800px) and (max-width: 1200px) {
   :root {
-    --size: calc(2vw);
+    --size: calc(2vw + 4px);
   }
 }
 
