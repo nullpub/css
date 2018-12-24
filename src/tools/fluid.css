@@ -41,7 +41,7 @@ body {
   --size-intercept: calc(var(--size-minimum) - (var(--size-slope) * var(--width-minimum)));
   --size-line: calc(var(--size-slope) * 100vw - var(--size-intercept));
   */
-  --size-line: calc(0.02px * 100vw);
+  --size-line: calc(0.02 * 100vw);
 }
 
 /* Fluid size from medium to large (Be sure to update from --width variables) */
