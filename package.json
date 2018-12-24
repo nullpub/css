@@ -4,13 +4,13 @@
   "description": "A bunch of css utility classes",
   "main": "dist/main.css",
   "scripts": {
-    "start": "postcss src/main.css -o dist/main.css -w",
-    "build": "concurrently --no-color \"npm:build:*\" && npm run gzip",
-    "build:main": "postcss src/main.css -o dist/main.css",
+    "start": "postcss src/full.css -o dist/full.css -w",
+    "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
+    "build:full": "postcss src/full.css -o dist/full.css",
     "build:minimal": "postcss src/minimal.css -o dist/minimal.css",
-    "build:reset": "postcss src/reset.css -o dist/reset.css",
     "build:tools:flex": "postcss src/tools/flex.css -o dist/tools/flex.css",
     "build:tools:fluid": "postcss src/tools/fluid.css -o dist/tools/fluid.css",
+    "clean": "rm -rf dist",
     "gzip": "gzip -k -f dist/*.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"

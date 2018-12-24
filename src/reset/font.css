@@ -1,0 +1,47 @@
+@import '../utilities/font/font-sizes.css';
+@import '../utilities/margin/margin-sizes.css';
+
+h1 {
+  font-size: var(--font-size-up-5);
+  font-weight: var(--font-weight-up-1);
+}
+
+h2 {
+  font-size: var(--font-size-up-4);
+  font-weight: var(--font-weight-up-1);
+}
+
+h3 {
+  font-size: var(--font-size-up-3);
+  font-weight: var(--font-weight-up-1);
+}
+
+h4 {
+  font-size: var(--font-size-up-2);
+  font-weight: var(--font-weight-up-1);
+}
+
+h5 {
+  font-size: var(--font-size-up-1);
+  font-weight: var(--font-weight-up-1);
+}
+
+h6 {
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-up-1);
+}
+
+small {
+  font-size: var(--font-size-down-4);
+  font-weight: var(--font-weight-down-1);
+}
+
+input,
+button {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input {
+  border: 0;
+}
