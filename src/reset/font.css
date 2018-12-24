@@ -38,7 +38,13 @@ h6 {
 /**
  * Paragraph and small tag styling
  */
-p {
+span {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p,
+li {
   font-size: var(--font-size-down-1);
   font-weight: var(--font-weight-down-1);
 }
@@ -67,5 +73,4 @@ input {
 a {
   text-decoration: none;
   color: var(--color-link);
-  background-color: var(--color-link-contrast);
 }
