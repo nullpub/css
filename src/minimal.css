@@ -6,6 +6,7 @@
  * Reset
  */
 @import './reset/meyer.css';
+@import './reset/body.css';
 @import './reset/font.css';
 
 /*
