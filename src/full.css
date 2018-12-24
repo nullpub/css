@@ -5,6 +5,7 @@
 /**
  * Reset
  */
+@import './reset/body.css';
 @import './reset/meyer.css';
 @import './reset/font.css';
 
