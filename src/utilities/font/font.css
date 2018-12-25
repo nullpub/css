@@ -33,3 +33,10 @@
     font-weight: var(--font-weight-down-$(step));
   }
 }
+
+/**
+ * Font family
+ */
+@each $family in (serif, sans-serif, monospace, cursive, fantasy, system-ui, inherit, initial, unset) {
+  .ff-$(family): $(family);
+}
