@@ -38,5 +38,7 @@
  * Font family
  */
 @each $family in (serif, sans-serif, monospace, cursive, fantasy, system-ui, inherit, initial, unset) {
-  .ff-$(family): $(family);
+  .ff-$(family) {
+    font-family: $(family);
+  }
 }
