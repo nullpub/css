@@ -18,8 +18,8 @@
 @import './variables/transitions.css';
 
 /*
-  * Utilities
-  */
+* Utilities
+*/
 @import './utilities/border/border.css';
 @import './utilities/color/color.css';
 @import './utilities/display/display.css';
