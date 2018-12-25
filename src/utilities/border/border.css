@@ -2,30 +2,30 @@
 
 @import './border-sizes.css';
 
-@for $size from 0 to 7 {
-  .bwt-$(size),
-  .bwy-$(size),
-  .bwa-$(size) {
+@for $width from 0 to 7 {
+  .bwt-$(width),
+  .bwy-$(width),
+  .bwa-$(width) {
     border-top-style: solid;
-    border-top-width: var(--border-size-$(size));
+    border-top-width: var(--border-size-$(width));
   }
-  .bwr-$(size),
-  .bwx-$(size),
-  .bwa-$(size) {
+  .bwr-$(width),
+  .bwx-$(width),
+  .bwa-$(width) {
     border-right-style: solid;
-    border-right-width: var(--border-size-$(size));
+    border-right-width: var(--border-size-$(width));
   }
-  .bwb-$(size),
-  .bwy-$(size),
-  .bwa-$(size) {
+  .bwb-$(width),
+  .bwy-$(width),
+  .bwa-$(width) {
     border-bottom-style: solid;
-    border-bottom-width: var(--border-size-$(size));
+    border-bottom-width: var(--border-size-$(width));
   }
-  .bwl-$(size),
-  .bwx-$(size),
-  .bwa-$(size) {
+  .bwl-$(width),
+  .bwx-$(width),
+  .bwa-$(width) {
     border-left-style: solid;
-    border-left-width: var(--border-size-$(size));
+    border-left-width: var(--border-size-$(width));
   }
 }
 

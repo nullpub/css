@@ -26,6 +26,9 @@
 /**
  * Utilities
  */
+@import './utilities/color/color.css';
+@import './utilities/shadow/shadow.css';
+
 @import './utilities/flex/flex.css';
 @import './utilities/flex/flex-breakpoint.css';
 
@@ -46,6 +49,3 @@
 
 @import './utilities/padding/padding.css';
 @import './utilities/padding/padding-breakpoint.css';
-
-@import './utilities/color/color.css';
-@import './utilities/shadow/shadow.css';
