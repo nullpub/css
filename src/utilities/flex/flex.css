@@ -75,7 +75,7 @@
  * Align items
  */
 @each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
-  .ai-$(align) {
+  .flai-$(align) {
     align-items: $(align);
   }
 }
@@ -85,7 +85,27 @@
  */
 /* prettier-ignore */
 @each $justify in (center, start, end, flex-start, flex-end, left, right, space-between, space-around, space-evenly, stretch, inherit, initial, unset) {
-  .jc-$(justify) {
+  .fljc-$(justify) {
     justify-content: $(justify);
+  }
+}
+
+/**
+ * Align self
+ */
+/* prettier-ignore */
+@each $align in (auto, normal, stretch, center, start, end, flex-start, flex-end, self-start, self-end, left, right, baseline, inherit, initial, unset) {
+  .flas-$(align) {
+    align-self: $(align);
+  }
+}
+
+/**
+ * Justify self
+ */
+/* prettier-ignore */
+@each $align in (auto, normal, stretch, center, start, end, flex-start, flex-end, self-start, self-end, left, right, baseline, inherit, initial, unset) {
+  .fljs-$(align) {
+    justify-self: $(align);
   }
 }
