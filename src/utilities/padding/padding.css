@@ -22,30 +22,3 @@
     padding-left: var(--padding-size-$(size));
   }
 }
-
-@for $size from 0 to 7 {
-  @each $break in (sm, md, lg) {
-    @media (--$(break)) {
-      .pt-$(break)-$(size),
-      .py-$(break)-$(size),
-      .pa-$(break)-$(size) {
-        padding-top: var(--padding-size-$(size));
-      }
-      .pr-$(break)-$(size),
-      .px-$(break)-$(size),
-      .pa-$(break)-$(size) {
-        padding-right: var(--padding-size-$(size));
-      }
-      .pb-$(break)-$(size),
-      .py-$(break)-$(size),
-      .pa-$(break)-$(size) {
-        padding-bottom: var(--padding-size-$(size));
-      }
-      .pl-$(break)-$(size),
-      .px-$(break)-$(size),
-      .pa-$(break)-$(size) {
-        padding-left: var(--padding-size-$(size));
-      }
-    }
-  }
-}

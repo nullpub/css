@@ -99,13 +99,3 @@
     align-self: $(align);
   }
 }
-
-/**
- * Justify self
- */
-/* prettier-ignore */
-@each $align in (auto, normal, stretch, center, start, end, flex-start, flex-end, self-start, self-end, left, right, baseline, inherit, initial, unset) {
-  .fljs-$(align) {
-    justify-self: $(align);
-  }
-}
