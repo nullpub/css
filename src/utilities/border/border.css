@@ -59,7 +59,7 @@
  * Border Colors On Psuedo Classes
  */
 @each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
-  @each $psuedo in (required, invalid, focus, disabled, hover) {
+  @each $psuedo in (hover, required, invalid, focus, disabled) {
     .bc-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color));
@@ -68,7 +68,7 @@
 }
 
 @each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
-  @each $psuedo in (required, invalid, focus, disabled, hover) {
+  @each $psuedo in (hover, required, invalid, focus, disabled) {
     .bcr-$(color)-$(psuedo):$(psuedo),
     .ctr-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color)-contrast);
