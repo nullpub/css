@@ -25,7 +25,7 @@
 /**
  * Color themes with psuedo selectors
  */
-@each $psuedo in (required, invalid, focus, disabled, hover) {
+@each $psuedo in (hover, required, invalid, focus, disabled) {
   @each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
     .cf-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
