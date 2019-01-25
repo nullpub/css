@@ -41,14 +41,14 @@
 /**
  * Border Colors
  */
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+@each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
   .bc-$(color),
   .ct-$(color) {
     border-color: var(--color-$(color));
   }
 }
 
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+@each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
   .bcr-$(color),
   .ctr-$(color) {
     border-color: var(--color-$(color)-contrast);
@@ -58,8 +58,8 @@
 /**
  * Border Colors On Psuedo Classes
  */
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+@each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
+  @each $psuedo in (required, invalid, focus, disabled, hover) {
     .bc-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color));
@@ -67,8 +67,8 @@
   }
 }
 
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
-  @each $psuedo in (hover, active, focus, required, valid, invalid, read-only) {
+@each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
+  @each $psuedo in (required, invalid, focus, disabled, hover) {
     .bcr-$(color)-$(psuedo):$(psuedo),
     .ctr-$(color)-$(psuedo):$(psuedo) {
       border-color: var(--color-$(color)-contrast);

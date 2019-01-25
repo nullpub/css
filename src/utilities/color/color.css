@@ -3,7 +3,7 @@
 /**
  * Colors
  */
-@each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+@each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
   .cf-$(color),
   .ct-$(color) {
     color: var(--color-$(color));
@@ -25,8 +25,8 @@
 /**
  * Color themes with psuedo selectors
  */
-@each $psuedo in (required, invalid, read-only, hover, focus) {
-  @each $color in (base, light, dark, link, primary, secondary, accent, info, warning, error) {
+@each $psuedo in (required, invalid, focus, disabled, hover) {
+  @each $color in (base, link, primary, secondary, light, dark, focus, required, invalid, disabled, error) {
     .cf-$(color)-$(psuedo):$(psuedo),
     .ct-$(color)-$(psuedo):$(psuedo) {
       color: var(--color-$(color));

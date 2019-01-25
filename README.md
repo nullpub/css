@@ -9,3 +9,11 @@ This project exists because I found other atomic/functional css libraries to be 
 - Provide themeable and highly reusable classes for layout and themes.
 - Provide a sensible api that follows a simple pattern.
 - Not just mobile first, but all viewports should look good if best practices are followed. This means the library must breakpoint well and be highly customizable for multiple typographies and designes.
+
+# CHANGELOG
+
+### 6.0.0
+
+- Changed color pairings to better track form input states instead of the bootstrap-centric schemes
+- Updated borders and color classes to map to the new pairings
+- Changed psuedo class selections to be slimmer
