@@ -4,8 +4,8 @@
  * Text align on breakpoint
  */
 @each $break in (sm, md, lg) {
-  @each $align in (left, right, center, justify, initial, inherit) {
-    @media (--$(break)) {
+  @media (--$(break)) {
+    @each $align in (left, right, center, justify, initial, inherit) {
       .ta-$(break)-$(align) {
         text-align: $(align);
       }
