@@ -11,11 +11,6 @@ module.exports = {
         customProperties: false,
       },
     }),
-    // require('postcss-style-guide')({
-    //   project: 'nll css',
-    //   dest: 'docs/index.html',
-    //   showCode: false,
-    // }),
     require('cssnano')({
       preset: [
         'default',

@@ -37,6 +37,8 @@ body {
   --width-maximum: 1200; /* Actually px units but could be any */
 
   /*
+  Unfortunately this parameterization fails
+
   --size-slope: calc((var(--size-maximum) - var(--size-minimum)) / (var(--width-maximum) - (var(--width-minimum))));
   --size-intercept: calc(var(--size-minimum) - (var(--size-slope) * var(--width-minimum)));
   --size-line: calc(var(--size-slope) * 100vw - var(--size-intercept));

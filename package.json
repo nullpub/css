@@ -2,7 +2,10 @@
   "name": "@nll/css",
   "version": "6.0.1",
   "description": "A bunch of css utility classes",
-  "main": "dist/main.css",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "start": "postcss src/full.css -o dist/full.css -w",
     "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
@@ -13,7 +16,7 @@
     "clean": "rm -rf dist",
     "gzip": "gzip -k -f dist/*.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
