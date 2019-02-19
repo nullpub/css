@@ -2,17 +2,13 @@
 
 ## [Documentation](https://css.null.pub)
 
-This project exists because I found other atomic/functional css libraries to be lacking. The goals of this project are as follows:
+Another CSS utility library.
 
-- Provide themeable and highly reusable classes for layout and themes.
-- Provide a sensible api that follows a simple pattern.
-- Not just mobile first, but all viewports should look good if best practices are followed. This means the library must breakpoint well and be highly customizable for multiple typographies and designes.
-- Not just mobile first, but all viewports should look good if best practices are followed. This means the library must breakpoint well and be highly customizable for multiple typographies and designs.
-
-# CHANGELOG
-
-### 6.0.0
-
-- Changed color pairings to better track form input states instead of the bootstrap-centric schemes
-- Updated borders and color classes to map to the new pairings
-- Changed psuedo class selections to be slimmer
+- CSS variables for everything
+- Cascaded sizing (padding, margin, gaps, shadow, font size) from a single css variable
+- Probably the best flex utility classes out there
+- Color themes for primary, secondary, and accent colors and utility themes based on form input state
+- Simple breakpoints for all layout classes
+- Small builds (7-15kB gzipped)
+- Typographic scales
+- Modular source (for custom builds)
