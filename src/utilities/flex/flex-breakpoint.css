@@ -3,52 +3,41 @@
 
 @import '../margin/margin-sizes.css';
 
-/**
- * Flex size grow/shrink classes on breakpoint
- */
+
 @each $break in (sm, md, lg) {
-  @for $grow from 0 to 5 {
-    @for $shrink from 0 to 5 {
-      @media (--$(break)) {
+  @media (--$(break)) {
+    /**
+    * Flex size grow/shrink classes on breakpoint
+    */
+    @for $grow from 0 to 5 {
+      @for $shrink from 0 to 5 {
         .fls-$(break)-$(grow)-$(shrink) {
           flex-grow: $grow;
           flex-shrink: $shrink;
         }
       }
     }
-  }
-}
 
-/**
- * Flex basis classes on breakpoint
- */
-@each $break in (sm, md, lg) {
-  @each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
-    @media (--$(break)) {
+    /**
+    * Flex basis classes on breakpoint
+    */
+    @each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
       .flb-$(break)-$(basis) {
         flex-basis: $(basis);
       }
     }
-  }
-}
-
-@each $break in (sm, md, lg) {
-  @each $basis in (0, 20, 25, 30, 50) {
-    @media (--$(break)) {
+    @each $basis in (0, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90) {
       .flb-$(break)-$(basis) {
         /* prettier-ignore */
         flex-basis: $(basis)%;
       }
     }
-  }
-}
+    
 
-/**
- * Flex direction classes on breakpoint
- */
-@each $break in (sm, md, lg) {
-  @each $direction in (row, column) {
-    @media (--$(break)) {
+    /**
+    * Flex direction classes on breakpoint
+    */
+    @each $direction in (row, column) {
       .fld-$(break)-$(direction) {
         display: flex;
         flex-direction: $direction;
@@ -58,15 +47,11 @@
         flex-direction: $(direction)-reverse;
       }
     }
-  }
-}
 
-/**
- * Flex direction gaps on breakpoint
- */
-@each $break in (sm, md, lg) {
-  @for $size from 0 to 7 {
-    @media (--$(break)) {
+    /**
+    * Flex direction gaps on breakpoint
+    */
+    @for $size from 0 to 7 {
       .fld-$(break)-row.flg-$(size) > *:not(:last-child) {
         margin: 0;
         margin-right: var(--margin-size-$(size));
@@ -84,5 +69,35 @@
         margin-top: var(--margin-size-$(size));
       }
     }
+
+    /**
+    * Align items
+    */
+    @each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
+      .flai-$(break)-$(align) {
+        align-items: $(align);
+      }
+    }
+
+    /**
+    * Justify content
+    */
+    /* prettier-ignore */
+    @each $justify in (center, start, end, flex-start, flex-end, left, right, space-between, space-around, space-evenly, stretch, inherit, initial, unset) {
+      .fljc-$(break)-$(justify) {
+        justify-content: $(justify);
+      }
+    }
+    
+    /**
+    * Align self
+    */
+    /* prettier-ignore */
+    @each $align in (auto, normal, stretch, center, start, end, flex-start, flex-end, self-start, self-end, left, right, baseline, inherit, initial, unset) {
+      .flas-$(break)-$(align) {
+        align-self: $(align);
+      }
+    }
+
   }
 }
