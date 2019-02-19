@@ -1,17 +1,17 @@
 @import '../../variables/breakpoints';
-
 @import './font-sizes';
 
-/**
- * Font size on breakpoint
- */
 @each $break in (sm, md, lg) {
-  .fs-$(break)-0 {
-    font-size: var(--font-size-0);
-  }
+  @media (--$(break)) {
 
-  @for $step from 1 to 5 {
-    @media (--$(break)) {
+    /**
+    * Font size on breakpoint
+    */
+    .fs-$(break)-0 {
+      font-size: var(--font-size-0);
+    }
+
+    @for $step from 1 to 5 {
       .fsu-$(break)-$(step) {
         font-size: var(--font-size-up-$(step));
       }
@@ -19,19 +19,15 @@
         font-size: var(--font-size-down-$(step));
       }
     }
-  }
-}
 
-/**
-* Font weight on breakpoint
-*/
-@each $break in (sm, md, lg) {
-  .fw-$(break)-0 {
-    font-weight: var(--font-weight-0);
-  }
+    /**
+      * Font weight on breakpoint
+      */
+    .fw-$(break)-0 {
+      font-weight: var(--font-weight-0);
+    }
 
-  @for $step from 1 to 3 {
-    @media (--$(break)) {
+    @for $step from 1 to 3 {
       .fwu-$(break)-$(step) {
         font-weight: var(--font-weight-up-$(step));
       }
@@ -39,5 +35,6 @@
         font-weight: var(--font-weight-down-$(step));
       }
     }
+
   }
 }

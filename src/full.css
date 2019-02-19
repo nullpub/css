@@ -18,11 +18,6 @@
 @import './variables/transitions.css';
 
 /**
- * Tools
- */
-@import './tools/flex.css';
-
-/**
  * Utilities
  */
 @import './utilities/color/color.css';

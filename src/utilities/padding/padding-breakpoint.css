@@ -3,8 +3,8 @@
 @import './padding-sizes.css';
 
 @each $break in (sm, md, lg) {
-  @for $size from 0 to 7 {
-    @media (--$(break)) {
+  @media (--$(break)) {
+    @for $size from 0 to 7 {
       .pt-$(break)-$(size),
       .py-$(break)-$(size),
       .pa-$(break)-$(size) {

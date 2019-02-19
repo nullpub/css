@@ -5,6 +5,7 @@ module.exports = {
     require('postcss-each')(),
     require('postcss-simple-vars')(),
     require('postcss-extend-rule')(),
+    require('css-mqpacker')(),
     require('postcss-cssnext')({
       browsers: ['last 2 versions'],
       features: {
