@@ -57,7 +57,8 @@ small {
  * Input and button styling
  */
 input,
-button {
+button,
+select {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -72,4 +73,13 @@ input {
 a {
   text-decoration: none;
   color: var(--color-link);
+}
+
+/* Bold and Italics */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: var(--font-weight-up-2);
 }
