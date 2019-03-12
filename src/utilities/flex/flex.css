@@ -17,6 +17,7 @@
 /**
  * Flex basis classes
  */
+/* prettier-ignore */
 @each $basis in (auto, fill, max-content, min-content, fit-content, content, inherit, initial, unset) {
   .flb-$(basis) {
     flex-basis: $(basis);
@@ -65,6 +66,7 @@
 /**
  * Flex Wrap
  */
+/* prettier-ignore */
 @each $wrap in (nowrap, wrap, wrap-reverse, inherit, initial, unset) {
   .flw-$(wrap) {
     flex-wrap: $(wrap);
@@ -74,6 +76,7 @@
 /**
  * Align items
  */
+/* prettier-ignore */
 @each $align in (stretch, center, flex-start, flex-end, baseline, initial, inherit) {
   .flai-$(align) {
     align-items: $(align);
