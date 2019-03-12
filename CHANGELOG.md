@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.5.0](https://github.com/nullpub/css/compare/v6.4.0...v6.5.0) (2019-03-12)
+
+
+### Bug Fixes
+
+* **body:** remove overscroll default from body reset ([cb95c54](https://github.com/nullpub/css/commit/cb95c54))
+
+
+### Features
+
+* **flex:** added breakpoints for flex gaps ([a561b3f](https://github.com/nullpub/css/commit/a561b3f))
+* **form:** added form reset for select and some custom reset sizing ([00769d4](https://github.com/nullpub/css/commit/00769d4))
+* **reset:** added bold and italics to strong/em tags ([ccde2b5](https://github.com/nullpub/css/commit/ccde2b5))
+* **width:** added width classes for percentage and line length ([8f4b7f4](https://github.com/nullpub/css/commit/8f4b7f4))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # 6.4.0 (2019-02-19)
 
 
