@@ -1,0 +1,17 @@
+/* Fix for select font-size to match input */
+select {
+  font-size: 100%;
+}
+
+/* Fix for file input colors */
+input[type='file'] {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+/* Fix for webkit button renders */
+::-webkit-inner-spin-button,
+::-webkit-clear-butto {
+  height: 1em;
+}
