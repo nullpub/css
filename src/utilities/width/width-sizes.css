@@ -1,0 +1,11 @@
+/**
+ * Line Lengths Scale
+ * Used to set width on text containers like p, small, h1, etc
+ */
+:root {
+  --width-line-length-0: 30ch;
+  --width-line-length-1: 40ch;
+  --width-line-length-2: 50ch;
+  --width-line-length-3: 60ch;
+  --width-line-length-4: 60ch;
+}

@@ -1,0 +1,33 @@
+@import './width-sizes.css';
+
+/**
+ * Percentage Widths
+ */
+/* prettier-ignore */
+@each $size in (10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100) {
+  .w-$(size)p {
+    width: $(size);
+  }
+  .wmin-$(size)p {
+    min-width: $(size);
+  }
+  .wmax-$(size)p {
+    max-width: $(size);
+  }
+}
+
+/**
+ * Line Length Widths
+ */
+/* prettier-ignore */
+@for $size from 0 to 4 {
+  .w-$(size)ll {
+    width: var(--width-line-length-$(size));;
+  }
+  .wmin-$(size)ll {
+    min-width: var(--width-line-length-$(size));;
+  }
+  .wmax-$(size)ll {
+    max-width: var(--width-line-length-$(size));;
+  }
+}

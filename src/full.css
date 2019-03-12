@@ -44,3 +44,6 @@
 
 @import './utilities/padding/padding.css';
 @import './utilities/padding/padding-breakpoint.css';
+
+@import './utilities//width//width.css';
+@import './utilities//width//width-breakpoint.css';

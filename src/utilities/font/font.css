@@ -37,6 +37,7 @@
 /**
  * Font family
  */
+/* prettier-ignore */
 @each $family in (serif, sans-serif, monospace, cursive, fantasy, system-ui, inherit, initial, unset) {
   .ff-$(family) {
     font-family: $(family);
