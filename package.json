@@ -11,6 +11,8 @@
     "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
     "build:full": "postcss src/full.css -o dist/full.css",
     "build:minimal": "postcss src/minimal.css -o dist/minimal.css",
+    "build:full-no-reset": "postcss src/full-no-reset.css -o dist/full-no-reset.css",
+    "build:minimal-no-reset": "postcss src/minimal-no-reset.css -o dist/minimal-no-reset.css",
     "build:tools:flex": "postcss src/tools/flex.css -o dist/tools/flex.css",
     "build:tools:fluid": "postcss src/tools/fluid.css -o dist/tools/fluid.css",
     "clean": "rm -rf dist",
@@ -37,15 +39,15 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.7",
-    "postcss-cli": "^6.0.1",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^6.1.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-each": "^0.10.0",
     "postcss-extend-rule": "^2.0.0",
     "postcss-for": "^2.1.1",
     "postcss-import": "^12.0.1",
-    "postcss-simple-vars": "^5.0.1",
+    "postcss-simple-vars": "^5.0.2",
     "postcss-style-guide": "^0.14.0",
-    "standard-version": "^5.0.0"
+    "standard-version": "^5.0.2"
   }
 }
