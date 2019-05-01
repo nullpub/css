@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.6.0](https://github.com/nullpub/css/compare/v6.5.0...v6.6.0) (2019-05-01)
+
+
+### Features
+
+* **no-reset:** added full and minimal builds without resets ([2d52a14](https://github.com/nullpub/css/commit/2d52a14))
+
+
+
 # [6.5.0](https://github.com/nullpub/css/compare/v6.4.0...v6.5.0) (2019-03-12)
 
 
