@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.6.1](https://github.com/nullpub/css/compare/v6.6.0...v6.6.1) (2019-05-03)
+
+
+### Bug Fixes
+
+* **width:** add percentage to width percentage classes ([d91f907](https://github.com/nullpub/css/commit/d91f907))
+
+
+
 # [6.6.0](https://github.com/nullpub/css/compare/v6.5.0...v6.6.0) (2019-05-01)
 
 
