@@ -10,13 +10,13 @@
     /* prettier-ignore */
     @each $size in (10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100) {
       .w-$(break)-$(size)p {
-        width: $(size);
+        width: $(size)%;
       }
       .wmin-$(break)-$(size)p {
-        min-width: $(size);
+        min-width: $(size)%;
       }
       .wmax-$(break)-$(size)p {
-        max-width: $(size);
+        max-width: $(size)%;
       }
     }
 
@@ -26,13 +26,13 @@
     /* prettier-ignore */
     @for $size from 0 to 4 {
       .w-$(break)-$(size)ll {
-        width: var(--width-line-length-$(size));;
+        width: var(--width-line-length-$(size));
       }
       .wmin-$(break)-$(size)ll {
-        min-width: var(--width-line-length-$(size));;
+        min-width: var(--width-line-length-$(size));
       }
       .wmax-$(break)-$(size)ll {
-        max-width: var(--width-line-length-$(size));;
+        max-width: var(--width-line-length-$(size));
       }
     }
   }
