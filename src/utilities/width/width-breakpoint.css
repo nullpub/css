@@ -36,4 +36,20 @@
       }
     }
   }
+
+  /**
+  * Custom Widths
+  */
+  /* prettier-ignore */
+  @for $size from 0 to 3 {
+    .w-$(break)-$(size)c {
+      width: var(--width-$(size));
+    }
+    .wmin-$(break)-$(size)c {
+      min-width: var(--width-$(size));
+    }
+    .wmax-$(break)-$(size)c {
+      max-width: var(--width-$(size));
+    }
+  }
 }

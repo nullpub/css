@@ -31,3 +31,19 @@
     max-width: var(--width-line-length-$(size));
   }
 }
+
+/**
+ * Custom Widths
+ */
+/* prettier-ignore */
+@for $size from 0 to 3 {
+  .w-$(size)c {
+    width: var(--width-$(size));
+  }
+  .wmin-$(size)c {
+    min-width: var(--width-$(size));
+  }
+  .wmax-$(size)c {
+    max-width: var(--width-$(size));
+  }
+}

@@ -4,8 +4,18 @@
  */
 :root {
   --width-line-length-0: 30ch;
-  --width-line-length-1: 40ch;
-  --width-line-length-2: 50ch;
-  --width-line-length-3: 60ch;
-  --width-line-length-4: 60ch;
+  --width-line-length-1: 50ch;
+  --width-line-length-2: 70ch;
+  --width-line-length-3: 90ch;
+  --width-line-length-4: 120ch;
+}
+
+/**
+ * Custom widths
+ */
+:root {
+  --width-0: 400px;
+  --width-1: 600px;
+  --width-2: 960px;
+  --width-3: 1200px;
 }
