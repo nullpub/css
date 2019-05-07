@@ -1,0 +1,10 @@
+@import '../variables/breakpoints.scss';
+
+/**
+ * Breakpoint CSS Variables
+ */
+:root {
+  @each $label, $value in $breakpoints {
+    --#{$breakpoint-prefix}-#{$label}: #{$value};
+  }
+}

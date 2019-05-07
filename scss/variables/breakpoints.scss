@@ -1,0 +1,9 @@
+/**
+ * Breakpoint SCSS Variables
+ */
+$breakpoint-prefix: 'breakpoint' !default;
+$breakpoints: (
+  'sm': 50em,
+  'md': 75em,
+  'lg': 90em,
+) !default;

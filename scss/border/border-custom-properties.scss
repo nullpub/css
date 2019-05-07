@@ -1,0 +1,23 @@
+@import '../variables/sizes.scss';
+
+@import './border-variables.scss';
+
+/**
+* Border Width CSS Variables
+*/
+:root {
+  @each $index, $multiplier in $border-width-multipliers {
+    --#{$border-width-prefix}-#{$index}: calc(
+      var(--#{$fill-size-prefix}) * #{$multiplier}
+    );
+  }
+}
+
+:root {
+  --border-radius-circle: 50%;
+  @each $index, $multiplier in $border-radius-multipliers {
+    --#{$border-radius-prefix}-#{$index}: calc(
+      var(--#{$radius-size-prefix}) * #{$multiplier}
+    );
+  }
+}

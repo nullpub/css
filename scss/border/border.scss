@@ -1,0 +1,132 @@
+@import '../variables/colors.scss';
+
+@import './border-variables.scss';
+
+@each $index, $width in $border-width-multipliers {
+  .bwt-#{$index},
+  .bwy-#{$index},
+  .bwa-#{$index} {
+    border-top-style: solid;
+    border-top-width: var(--#{$border-width-prefix}-#{$index});
+  }
+  .bwr-#{$index},
+  .bwx-#{$index},
+  .bwa-#{$index} {
+    border-right-style: solid;
+    border-right-width: var(--#{$border-width-prefix}-#{$index});
+  }
+  .bwb-#{$index},
+  .bwy-#{$index},
+  .bwa-#{$index} {
+    border-bottom-style: solid;
+    border-bottom-width: var(--#{$border-width-prefix}-#{$index});
+  }
+  .bwl-#{$index},
+  .bwx-#{$index},
+  .bwa-#{$index} {
+    border-left-style: solid;
+    border-left-width: var(--#{$border-width-prefix}-#{$index});
+  }
+}
+
+/**
+ * Border Styles
+ */
+@each $label, $style in $border-styles {
+  .bs-#{$label} {
+    border-style: #{$style};
+  }
+}
+
+/**
+ * Border Colors
+ */
+@each $theme, $junk in $colors {
+  .bc-#{$theme},
+  .ct-#{$theme} {
+    border-color: var(
+      --#{$colors-prefix}-#{$colors-background-prefix}-#{$theme}
+    );
+  }
+
+  .bcr-#{$theme},
+  .ctr-#{$theme} {
+    border-color: var(
+      --#{$colors-prefix}-#{$colors-foreground-prefix}-#{$theme}
+    );
+  }
+}
+
+/**
+ * Border Colors on Psuedo Modifiers
+ */
+@each $theme, $junk in $colors {
+  @each $label, $psuedo in $border-psuedo-styles {
+    .bc-#{$theme}-#{$label}:#{$psuedo},
+    .ct-#{$theme}-#{$label}:#{$psuedo} {
+      border-color: var(
+        --#{$colors-prefix}-#{$colors-foreground-prefix}-#{theme}
+      );
+    }
+
+    .bcr-#{$theme}-#{$label}:#{$psuedo},
+    .ctr-#{$theme}-#{$label}:#{$psuedo} {
+      border-color: var(
+        --#{$colors-prefix}-#{$colors-background-prefix}-#{theme}
+      );
+    }
+  }
+}
+
+/**
+ * Border Radius For Circle
+ */
+.bra-c {
+  border-radius: var(--#{$border-radius-prefix}-circle);
+}
+.brtl-c,
+.brt-c,
+.brl-c {
+  border-top-left-radius: var(--#{$border-radius-prefix}-circle);
+}
+.brtr-c,
+.brt-c,
+.brr-c {
+  border-top-right-radius: var(--#{$border-radius-prefix}-circle);
+}
+.brbl-c,
+.brb-c,
+.brl-c {
+  border-bottom-left-radius: var(--#{$border-radius-prefix}-circle);
+}
+.brbr-c,
+.brb-c,
+.brr-c {
+  border-bottom-right-radius: var(--#{$border-radius-prefix}-circle);
+}
+
+@each $index, $radius in $border-radius-multipliers {
+  .bra-#{$index} {
+    border-radius: var(--#{$border-radius-prefix}-#{$index});
+  }
+  .brtl-#{$index},
+  .brt-#{$index},
+  .brl-#{$index} {
+    border-top-left-radius: var(--#{$border-radius-prefix}-#{$index});
+  }
+  .brtr-#{$index},
+  .brt-#{$index},
+  .brr-#{$index} {
+    border-top-right-radius: var(--#{$border-radius-prefix}-#{$index});
+  }
+  .brbl-#{$index},
+  .brb-#{$index},
+  .brl-#{$index} {
+    border-bottom-left-radius: var(--#{$border-radius-prefix}-#{$index});
+  }
+  .brbr-#{$index},
+  .brb-#{$index},
+  .brr-#{$index} {
+    border-bottom-right-radius: var(--#{$border-radius-prefix}-#{$index});
+  }
+}
