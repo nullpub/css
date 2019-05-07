@@ -1,0 +1,39 @@
+$border-width-var-prefix: 'border-width' !default;
+$border-width-class-prefix: 'bw' !default;
+$border-width-multipliers: (
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 4,
+  '4': 8,
+  '5': 16,
+  '6': 32,
+  '7': 64,
+) !default;
+
+$border-radius-var-prefix: 'border-radius' !default;
+$border-radius-class-prefix: 'br' !default;
+$border-radius-multipliers: (
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 4,
+) !default;
+
+$border-color-class-prefix: 'bc' !default;
+
+$border-styles-class-prefix: 'bs' !default;
+$border-styles: (
+  'none': none,
+  'dotted': dotted,
+  'dashed': dashed,
+  'solid': solid,
+) !default;
+
+$border-psuedo-styles: (
+  'hover': hover,
+  'required': required,
+  'invalid': invalid,
+  'focus': focus,
+  'disabled': disabled,
+) !default;

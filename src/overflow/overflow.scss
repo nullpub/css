@@ -1,0 +1,35 @@
+@import './overflow.variables.scss';
+
+/*
+Overflow
+
+Classes for setting the overflow of an element.
+
+Styleguide Overflow
+*/
+
+@each $label, $style in $overflow-styles {
+  /*
+  .#{$overflow-class-prefix}*-#{$label}
+
+  Sets the overflow of an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$overflow-class-prefix}a-#{$label} - Sets overflow to #{$style}
+  .#{$overflow-class-prefix}x-#{$label} - Sets x-overflow to #{$style}
+  .#{$overflow-class-prefix}y-#{$label} - Sets y-overflow to #{$style}
+
+  Styleguide Overflow - #{$label}
+  */
+  .#{$overflow-class-prefix}a-#{$label} {
+    overflow: #{$style};
+  }
+  .#{$overflow-class-prefix}x-#{$label} {
+    overflow-x: #{$style};
+  }
+  .#{$overflow-class-prefix}y-#{$label} {
+    overflow-y: #{$style};
+  }
+}

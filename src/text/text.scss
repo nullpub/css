@@ -1,0 +1,34 @@
+@import './text-variables.scss';
+
+/*
+Text
+
+Classes for setting text properties of an element.
+
+Styleguide Text
+*/
+
+/*
+Text Align
+
+Classes for setting text-align of an element.
+
+Styleguide Text - Align
+*/
+@each $label, $style in $text-align-styles {
+  /*
+  .#{$text-align-class-prefix}-#{$label}
+
+  Classes for setting text-align of an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$text-align-class-prefix}-#{$label} - Sets text-align to #{$style}
+
+  Styleguide Text - Align - #{$label}
+  */
+  .#{$text-align-class-prefix}-#{$label} {
+    text-align: #{$style};
+  }
+}

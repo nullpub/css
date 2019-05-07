@@ -1,0 +1,11 @@
+@import '../variables/sizes.scss';
+
+@import './padding-variables.scss';
+
+:root {
+  @each $index, $multiplier in $padding-width-multipliers {
+    --#{$padding-width-var-prefix}-#{$index}: calc(
+      var(--#{$fill-size-prefix}) * #{$multiplier}
+    );
+  }
+}

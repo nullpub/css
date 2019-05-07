@@ -1,0 +1,7 @@
+@import './width-variables.scss';
+
+:root {
+  @each $label, $value in $width-styles {
+    --#{$width-var-prefix}-#{$label}: #{$value};
+  }
+}

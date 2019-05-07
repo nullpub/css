@@ -1,0 +1,35 @@
+$width-var-prefix: 'width' !default;
+
+$width-class-prefix: 'wh' !default;
+$min-width-class-prefix: 'whmn' !default;
+$max-width-class-prefix: 'whmx' !default;
+
+$width-children-class-prefix: 'wc' !default;
+$min-width-children-class-prefix: 'wcmn' !default;
+$max-width-children-class-prefix: 'wcmx' !default;
+$width-styles: (
+  'p10': 10%,
+  'p20': 20%,
+  'p25': 25%,
+  'p30': 30%,
+  'p40': 40%,
+  'p50': 50%,
+  'p60': 60%,
+  'p70': 70%,
+  'p75': 75%,
+  'p80': 80%,
+  'p90': 90%,
+  'p100': 100%,
+  'ch0': 30ch,
+  'ch1': 50ch,
+  'ch2': 70ch,
+  'ch3': 90ch,
+  'ch4': 120ch,
+  'px0': 400px,
+  'px1': 600px,
+  'px2': 960px,
+  'px3': 1200px,
+  'em0': 50em,
+  'em1': 75em,
+  'em2': 90em,
+) !default;

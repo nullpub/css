@@ -1,0 +1,27 @@
+@import './cursor.variables.scss';
+
+/*
+Cursor
+
+Classes for setting the mouse cursor while over an element.
+
+Styleguide Cursor
+*/
+
+@each $label, $style in $cursor-styles {
+  /*
+  .#{$cursor-class-prefix}-#{$label}
+
+  Sets the of cursor over an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$cursor-class-prefix}-#{$label} - Sets cursor to #{$style}
+
+  Styleguide Cursor - #{$label}
+  */
+  .#{$cursor-class-prefix}-#{$label} {
+    cursor: #{$style};
+  }
+}

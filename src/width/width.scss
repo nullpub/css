@@ -1,0 +1,64 @@
+@import './width-variables.scss';
+
+/*
+Width
+
+Classes for setting the width, max-width, an min-width of an element (or its children).
+
+Styleguide Width
+*/
+
+/*
+Child Width
+
+Classes for setting the width, max-width, an min-width of an element's immediate Children.
+
+Styleguide Child Width
+*/
+
+@each $label, $_ in $width-styles {
+  // Fix these documentation names to properly nest prefix variables
+  /*
+  .#{$width-class-prefix}[mx,mn]-#{$label}
+
+  Sets the width, max-width, or min-width of element to css var for #{$label}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$width-class-prefix}-#{$label} - Sets width to #{$label}
+  .#{$min-width-class-prefix}-#{$label} - Sets min-width to #{$label}
+  .#{$max-width-class-prefix}-#{$label} - Sets max-width to #{$label}
+
+  Styleguide Width - #{$label}
+  */
+
+  /*
+  .#{$width-children-class-prefix}[mx,mn]-#{$label}
+
+  Sets the width, max-width, or min-width of an elements immediate children to css var for #{$label}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+  .#{$width-children-class-prefix}-#{$label} - Sets width of immediate children to #{$label}
+  .#{$min-width-children-class-prefix}-#{$label} - Sets min-width of immediate children to #{$label}
+  .#{$max-width-children-class-prefix}-#{$label} - Sets max-width of immediate children to #{$label}
+
+  Styleguide Child Width - #{$label}
+  */
+  .#{$width-class-prefix}-#{$label},
+  .#{$width-children-class-prefix}-#{$label} > * {
+    width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$min-width-class-prefix}-#{$label},
+  .#{$min-width-children-class-prefix}-#{$label} > * {
+    min-width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$max-width-class-prefix}-#{$label},
+  .#{$max-width-children-class-prefix}-#{$label} > * {
+    max-width: var(--#{$width-var-prefix}-#{$label});
+  }
+}

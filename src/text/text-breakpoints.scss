@@ -1,0 +1,25 @@
+@import '../variables/breakpoints.scss';
+
+@import './text-variables.scss';
+
+@each $breakLabel, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    @each $label, $style in $text-align-styles {
+      /*
+      .#{$text-align-class-prefix}-#{$breakLabel}-#{$label}
+
+      Classes for setting text-align of an element to #{$style} on #{$breakLabel}.
+
+      Markup:
+      <div class="{{modifier_class}}">A div</div>
+
+      .#{$text-align-class-prefix}-#{$breakLabel}-#{$label} - Sets text-align to #{$style} on #{$breakLabel}
+
+      Styleguide Cursor - #{$label} - #{$breakLabel}
+      */
+      .#{$text-align-class-prefix}-#{$breakLabel}-#{$label} {
+        text-align: #{$style};
+      }
+    }
+  }
+}

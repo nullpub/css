@@ -1,0 +1,20 @@
+@import '../variables/sizes.scss';
+
+@import './border-variables.scss';
+
+:root {
+  @each $index, $multiplier in $border-width-multipliers {
+    --#{$border-width-var-prefix}-#{$index}: calc(
+      var(--#{$fill-size-prefix}) * #{$multiplier}
+    );
+  }
+}
+
+:root {
+  --border-radius-circle: 50%;
+  @each $index, $multiplier in $border-radius-multipliers {
+    --#{$border-radius-var-prefix}-#{$index}: calc(
+      var(--#{$radius-size-prefix}) * #{$multiplier}
+    );
+  }
+}

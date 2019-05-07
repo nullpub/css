@@ -1,0 +1,53 @@
+@import '../variables/breakpoints.scss';
+
+@import './width-variables.scss';
+
+@each $break, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @each $label, $style in $width-styles {
+      /*
+      .#{$width-class-prefix}[mn,mx]-#{$break}-#{$label}
+
+      Sets the width, max-width, or min-width of element to css var for #{$label} on #{$break}.
+
+      Markup:
+      <div class="bwa-1 {{modifier_class}}">A div</div>
+
+      .#{$width-class-prefix}-#{$break}-#{$label} - Sets width to #{$label} on #{$break}
+      .#{$min-width-class-prefix}-#{$break}-#{$label} - Sets min-width to #{$label} on #{$break}
+      .#{$max-width-class-prefix}-#{$break}-#{$label} - Sets max-width to #{$label} on #{$break}
+
+      Styleguide Width - #{$label} - #{$break}
+      */
+
+      /*
+      .#{$width-children-class-prefix}[mn,mx]-#{$break}-#{$label}
+
+      Sets the width, max-width, or min-width of an elements immediate children to css var for #{$label} on #{$break}.
+
+      Markup:
+      <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+      .#{$width-children-class-prefix}-#{$break}-#{$label} - Sets width of immediate children to #{$label} on #{$break}
+      .#{$min-width-children-class-prefix}-#{$break}-#{$label} - Sets min-width of immediate children to #{$label} on #{$break}
+      .#{$max-width-children-class-prefix}-#{$break}-#{$label} - Sets max-width of immediate children to #{$label} on #{$break}
+
+      Styleguide Child Width - #{$label} - #{$break}
+      */
+      .#{$width-class-prefix}-#{$break}-#{$label},
+      .#{$width-children-class-prefix}-#{$break}-#{$label} > * {
+        width: var(--#{$width-var-prefix}-#{$label});
+      }
+
+      .#{$min-width-class-prefix}-#{$break}-#{$label},
+      .#{$min-width-children-class-prefix}-#{$break}-#{$label} > * {
+        min-width: var(--#{$width-var-prefix}-#{$label});
+      }
+
+      .#{$max-width-class-prefix}-#{$break}-#{$label},
+      .#{$max-width-children-class-prefix}-#{$break}-#{$label} > * {
+        max-width: var(--#{$width-var-prefix}-#{$label});
+      }
+    }
+  }
+}

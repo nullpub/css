@@ -1,0 +1,14 @@
+@import '../variables/sizes.scss';
+
+:root {
+  --#{$base-size-prefix}: #{$base-size};
+  --#{$font-size-prefix}: calc(
+    var(--#{$base-size-prefix}) / #{$font-size-divisor}
+  );
+  --#{$fill-size-prefix}: calc(
+    var(--#{$base-size-prefix}) / #{$fill-size-divisor}
+  );
+  --#{$radius-size-prefix}: calc(
+    var(--#{$base-size-prefix}) / #{$radius-size-divisor}
+  );
+}
