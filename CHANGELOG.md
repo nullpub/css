@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.7.1](https://github.com/nullpub/css/compare/v6.7.0...v6.7.1) (2019-05-09)
+
+
+### Bug Fixes
+
+* **flex:** add missing margin resets to flex breakpoints ([6f8979a](https://github.com/nullpub/css/commit/6f8979a)), closes [#1](https://github.com/nullpub/css/issues/1)
+
+
+
 # [6.7.0](https://github.com/nullpub/css/compare/v6.6.1...v6.7.0) (2019-05-03)
 
 
