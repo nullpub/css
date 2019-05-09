@@ -49,6 +49,28 @@
     }
 
     /**
+    * Flex direction gaps
+    */
+    @for $size from 0 to 7 {
+      .fld-row.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
+        margin-right: var(--margin-size-$(size));
+      }
+      .fld-column.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
+        margin-bottom: var(--margin-size-$(size));
+      }
+      .fld-row-reverse.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
+        margin-left: var(--margin-size-$(size));
+      }
+      .fld-column-reverse.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
+        margin-top: var(--margin-size-$(size));
+      }
+    }
+
+    /**
     * Flex direction gaps on breakpoint
     */
     @for $size from 0 to 7 {
@@ -74,34 +96,20 @@
     * Flex direction gaps
     */
     @for $size from 0 to 7 {
-      .fld-row.flg-$(break)-$(size) > *:not(:last-child) {
-        margin-right: var(--margin-size-$(size));
-      }
-      .fld-column.flg-$(break)-$(size) > *:not(:last-child) {
-        margin-bottom: var(--margin-size-$(size));
-      }
-      .fld-row-reverse.flg-$(break)-$(size) > *:not(:last-child) {
-        margin-left: var(--margin-size-$(size));
-      }
-      .fld-column-reverse.flg-$(break)-$(size) > *:not(:last-child) {
-        margin-top: var(--margin-size-$(size));
-      }
-    }
-
-    /**
-    * Flex direction gaps
-    */
-    @for $size from 0 to 7 {
       .fld-$(break)-row.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
         margin-right: var(--margin-size-$(size));
       }
       .fld-$(break)-column.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
         margin-bottom: var(--margin-size-$(size));
       }
       .fld-$(break)-row-reverse.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
         margin-left: var(--margin-size-$(size));
       }
       .fld-$(break)-column-reverse.flg-$(break)-$(size) > *:not(:last-child) {
+        margin: 0;
         margin-top: var(--margin-size-$(size));
       }
     }
