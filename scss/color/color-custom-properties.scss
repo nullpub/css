@@ -1,0 +1,13 @@
+@import './color-variables.scss';
+
+/**
+ * Color CSS Variables
+ */
+:root {
+  @each $theme, $values in $themes {
+    $colors: map-get($values, 'colors');
+    @each $position, $color in $colors {
+      --#{$theme-var-prefix}-#{$position}-#{$theme}: #{$color};
+    }
+  }
+}

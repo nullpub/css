@@ -1,10 +1,10 @@
 /* Custom Properties */
 @import './custom-properties/breakpoints.scss';
-@import './custom-properties/colors.scss';
 @import './custom-properties/sizes.scss';
 @import './custom-properties/transitions.scss';
 
 @import './border/border-custom-properties.scss';
 
 /* Borders */
+@import './color/color.scss';
 @import './border/border.scss';

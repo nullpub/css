@@ -7,16 +7,19 @@
 */
 :root {
   @each $index, $multiplier in $border-width-multipliers {
-    --#{$border-width-prefix}-#{$index}: calc(
+    --#{$border-width-var-prefix}-#{$index}: calc(
       var(--#{$fill-size-prefix}) * #{$multiplier}
     );
   }
 }
 
+/**
+* Border Radius CSS Variables
+*/
 :root {
   --border-radius-circle: 50%;
   @each $index, $multiplier in $border-radius-multipliers {
-    --#{$border-radius-prefix}-#{$index}: calc(
+    --#{$border-radius-var-prefix}-#{$index}: calc(
       var(--#{$radius-size-prefix}) * #{$multiplier}
     );
   }

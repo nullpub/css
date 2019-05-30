@@ -1,0 +1,97 @@
+/**
+ * Color SCSS Variables
+ */
+$theme-var-prefix: 'color' !default;
+$theme-foreground-var-prefix: 'fore' !default;
+$theme-background-var-prefix: 'back' !default;
+
+$theme-class-prefix: 'ct' !default;
+$theme-foreground-class-prefix: 'cf' !default;
+$theme-background-class-prefix: 'cb' !default;
+
+$themes: (
+  'base-0': (
+    'prefix': 'b0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #111111,
+      #{$theme-background-var-prefix}: #ffffff,
+    ),
+  ),
+  'base-1': (
+    'prefix': 'b1',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #111111,
+      #{$theme-background-var-prefix}: #f4f4f4,
+    ),
+  ),
+  'base-2': (
+    'prefix': 'b2',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #f4f4f4,
+      #{$theme-background-var-prefix}: #111111,
+    ),
+  ),
+  'accent-0': (
+    'prefix': 'a0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #ffffff,
+      #{$theme-background-var-prefix}: #357edd,
+    ),
+  ),
+  'accent-1': (
+    'prefix': 'a1',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #555555,
+      #{$theme-background-var-prefix}: #96ccff,
+    ),
+  ),
+  'link-0': (
+    'prefix': 'l0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #357edd,
+      #{$theme-background-var-prefix}: #ffffff,
+    ),
+  ),
+  'visited-0': (
+    'prefix': 'v0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #a463f2,
+      #{$theme-background-var-prefix}: #ffffff,
+    ),
+  ),
+  'focus-0': (
+    'prefix': 'f0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #555555,
+      #{$theme-background-var-prefix}: #ffb700,
+    ),
+  ),
+  'required-0': (
+    'prefix': 'r0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #f4f4f4,
+      #{$theme-background-var-prefix}: #357edd,
+    ),
+  ),
+  'invalid-0': (
+    'prefix': 'i0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #ff4136,
+      #{$theme-background-var-prefix}: #ffd700,
+    ),
+  ),
+  'disabled-0': (
+    'prefix': 'd0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #777777,
+      #{$theme-background-var-prefix}: #eeeeee,
+    ),
+  ),
+  'error-0': (
+    'prefix': 'e0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #ff4136,
+      #{$theme-background-var-prefix}: #ffdfdf,
+    ),
+  ),
+) !default;

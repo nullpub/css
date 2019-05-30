@@ -1,0 +1,41 @@
+@import './color-custom-properties.scss';
+@import './color-variables.css';
+
+/**
+ * Themes
+ */
+@each $theme, $values in $themes {
+  $prefix: map-get($values, 'prefix');
+
+  /* Theme Foreground and Theme Classes */
+  .#{$theme-foreground-class-prefix}-#{$prefix},
+  .#{$theme-class-prefix}-#{$prefix} {
+    color: var(
+      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$theme}
+    );
+  }
+
+  /* Theme Background and Theme Classes */
+  .#{$theme-background-class-prefix}-#{$prefix},
+  .#{$theme-class-prefix}-#{$prefix} {
+    background-color: var(
+      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$theme}
+    );
+  }
+
+  /* Reverse: Theme Foreground and Theme Classes */
+  .#{$theme-foreground-class-prefix}r-#{$prefix},
+  .#{$theme-class-prefix}r-#{$prefix} {
+    color: var(
+      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$theme}
+    );
+  }
+
+  /* Reverse: Theme Background and Theme Classes */
+  .#{$theme-background-class-prefix}r-#{$prefix},
+  .#{$theme-class-prefix}r-#{$prefix} {
+    background-color: var(
+      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$theme}
+    );
+  }
+}

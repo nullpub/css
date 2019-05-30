@@ -1,7 +1,8 @@
 /**
 * Border Width SCSS Variables
 */
-$border-width-prefix: 'border-width' !default;
+$border-width-var-prefix: 'border-width' !default;
+$border-width-class-prefix: 'bw' !default;
 $border-width-multipliers: (
   '0': 0,
   '1': 1,
@@ -16,7 +17,8 @@ $border-width-multipliers: (
 /**
 * Border Radius SCSS Variables
 */
-$border-radius-prefix: 'border-radius' !default;
+$border-radius-var-prefix: 'border-radius' !default;
+$border-radius-class-prefix: 'br' !default;
 $border-radius-multipliers: (
   '0': 0,
   '1': 1,
@@ -25,8 +27,14 @@ $border-radius-multipliers: (
 ) !default;
 
 /**
+ * Border Radius SCSS Variables
+ */
+$border-color-class-prefix: 'bc' !default;
+
+/**
  * Border Style SCSS Variables
  */
+$border-styles-class-prefix: 'bs' !default;
 $border-styles: (
   'none': none,
   'dotted': dotted,
