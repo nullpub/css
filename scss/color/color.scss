@@ -5,37 +5,81 @@
  * Themes
  */
 @each $theme, $values in $themes {
-  $prefix: map-get($values, 'prefix');
+  $varLabel: map-get($values, 'var-label');
+  $classLabel: map-get($values, 'class-label');
 
   /* Theme Foreground and Theme Classes */
-  .#{$theme-foreground-class-prefix}-#{$prefix},
-  .#{$theme-class-prefix}-#{$prefix} {
+  .#{$theme-foreground-class-prefix}-#{$classLabel},
+  .#{$theme-class-prefix}-#{$classLabel} {
     color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$theme}
+      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
     );
   }
 
   /* Theme Background and Theme Classes */
-  .#{$theme-background-class-prefix}-#{$prefix},
-  .#{$theme-class-prefix}-#{$prefix} {
+  .#{$theme-background-class-prefix}-#{$classLabel},
+  .#{$theme-class-prefix}-#{$classLabel} {
     background-color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$theme}
+      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
     );
   }
 
   /* Reverse: Theme Foreground and Theme Classes */
-  .#{$theme-foreground-class-prefix}r-#{$prefix},
-  .#{$theme-class-prefix}r-#{$prefix} {
+  .#{$theme-foreground-class-prefix}r-#{$classLabel},
+  .#{$theme-class-prefix}r-#{$classLabel} {
     color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$theme}
+      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
     );
   }
 
   /* Reverse: Theme Background and Theme Classes */
-  .#{$theme-background-class-prefix}r-#{$prefix},
-  .#{$theme-class-prefix}r-#{$prefix} {
+  .#{$theme-background-class-prefix}r-#{$classLabel},
+  .#{$theme-class-prefix}r-#{$classLabel} {
     background-color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$theme}
+      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
     );
+  }
+}
+
+/**
+ * Color Themes Psuedo Classes
+ */
+@each $theme, $values in $themes {
+  $varLabel: map-get($values, 'var-label');
+  $classLabel: map-get($values, 'class-label');
+  $psuedoBinding: map-get($values, 'psuedo-binding');
+
+  @if $psuedoBinding {
+    /* Theme Foreground and Theme Classes */
+    .#{$theme-foreground-class-prefix}-#{$classLabel}:#{$psuedoBinding},
+    .#{$theme-class-prefix}-#{$classLabel}:#{$psuedoBinding} {
+      color: var(
+        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
+      );
+    }
+
+    /* Theme Background and Theme Classes */
+    .#{$theme-background-class-prefix}-#{$classLabel}:#{$psuedoBinding},
+    .#{$theme-class-prefix}-#{$classLabel}:#{$psuedoBinding} {
+      background-color: var(
+        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
+      );
+    }
+
+    /* Reverse: Theme Foreground and Theme Classes */
+    .#{$theme-foreground-class-prefix}r-#{$classLabel}:#{$psuedoBinding},
+    .#{$theme-class-prefix}r-#{$classLabel}:#{$psuedoBinding} {
+      color: var(
+        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
+      );
+    }
+
+    /* Reverse: Theme Background and Theme Classes */
+    .#{$theme-background-class-prefix}r-#{$classLabel}:#{$psuedoBinding},
+    .#{$theme-class-prefix}r-#{$classLabel}:#{$psuedoBinding} {
+      background-color: var(
+        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
+      );
+    }
   }
 }

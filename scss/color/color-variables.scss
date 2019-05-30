@@ -9,89 +9,109 @@ $theme-class-prefix: 'ct' !default;
 $theme-foreground-class-prefix: 'cf' !default;
 $theme-background-class-prefix: 'cb' !default;
 
+/**
+ * Color Themes
+ */
 $themes: (
   'base-0': (
-    'prefix': 'b0',
+    'class-label': 'b0',
+    'var-label': 'base-0',
     'colors': (
       #{$theme-foreground-var-prefix}: #111111,
       #{$theme-background-var-prefix}: #ffffff,
     ),
   ),
   'base-1': (
-    'prefix': 'b1',
+    'class-label': 'b1',
+    'var-label': 'base-1',
     'colors': (
       #{$theme-foreground-var-prefix}: #111111,
       #{$theme-background-var-prefix}: #f4f4f4,
     ),
   ),
   'base-2': (
-    'prefix': 'b2',
+    'class-label': 'b2',
+    'var-label': 'base-2',
     'colors': (
       #{$theme-foreground-var-prefix}: #f4f4f4,
       #{$theme-background-var-prefix}: #111111,
     ),
   ),
   'accent-0': (
-    'prefix': 'a0',
+    'class-label': 'a0',
+    'var-label': 'accent-0',
     'colors': (
       #{$theme-foreground-var-prefix}: #ffffff,
       #{$theme-background-var-prefix}: #357edd,
     ),
   ),
   'accent-1': (
-    'prefix': 'a1',
+    'class-label': 'a1',
+    'var-label': 'accent-1',
     'colors': (
       #{$theme-foreground-var-prefix}: #555555,
       #{$theme-background-var-prefix}: #96ccff,
     ),
   ),
+  'error-0': (
+    'class-label': 'e0',
+    'var-label': 'error-0',
+    'colors': (
+      #{$theme-foreground-var-prefix}: #ff4136,
+      #{$theme-background-var-prefix}: #ffdfdf,
+    ),
+  ),
   'link-0': (
-    'prefix': 'l0',
+    'class-label': 'l0',
+    'var-label': 'link-0',
     'colors': (
       #{$theme-foreground-var-prefix}: #357edd,
       #{$theme-background-var-prefix}: #ffffff,
     ),
   ),
   'visited-0': (
-    'prefix': 'v0',
+    'class-label': 'v0',
+    'var-label': 'visited-0',
+    'psuedo-binding': 'visited',
     'colors': (
       #{$theme-foreground-var-prefix}: #a463f2,
       #{$theme-background-var-prefix}: #ffffff,
     ),
   ),
   'focus-0': (
-    'prefix': 'f0',
+    'class-label': 'f0',
+    'var-label': 'focus-0',
+    'psuedo-binding': 'focus',
     'colors': (
       #{$theme-foreground-var-prefix}: #555555,
       #{$theme-background-var-prefix}: #ffb700,
     ),
   ),
   'required-0': (
-    'prefix': 'r0',
+    'class-label': 'r0',
+    'var-label': 'required-0',
+    'psuedo-binding': 'required',
     'colors': (
       #{$theme-foreground-var-prefix}: #f4f4f4,
       #{$theme-background-var-prefix}: #357edd,
     ),
   ),
   'invalid-0': (
-    'prefix': 'i0',
+    'class-label': 'i0',
+    'var-label': 'invalid-0',
+    'psuedo-binding': 'invalid',
     'colors': (
       #{$theme-foreground-var-prefix}: #ff4136,
       #{$theme-background-var-prefix}: #ffd700,
     ),
   ),
   'disabled-0': (
-    'prefix': 'd0',
+    'class-label': 'd0',
+    'var-label': 'disabled-0',
+    'psuedo-binding': 'disabled',
     'colors': (
       #{$theme-foreground-var-prefix}: #777777,
       #{$theme-background-var-prefix}: #eeeeee,
-    ),
-  ),
-  'error-0': (
-    'prefix': 'e0',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #ff4136,
-      #{$theme-background-var-prefix}: #ffdfdf,
     ),
   ),
 ) !default;

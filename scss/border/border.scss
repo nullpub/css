@@ -46,22 +46,23 @@
 /**
  * Border Colors
  */
-@each $theme, $values in $themes {
-  $prefix: map-get($values, 'prefix');
+@each $key, $theme in $themes {
+  $varLabel: map-get($theme, 'var-label');
+  $classLabel: map-get($theme, 'class-label');
 
   /* Border Colors and Border Color On Theme */
-  .#{$border-color-class-prefix}-#{$prefix},
-  .#{$theme-class-prefix}-#{$prefix} {
+  .#{$border-color-class-prefix}-#{$classLabel},
+  .#{$theme-class-prefix}-#{$classLabel} {
     border-color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$theme}
+      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
     );
   }
 
   /* Reverse Border Colors and Reverse Border Color On Reverse Theme */
-  .#{$border-color-class-prefix}r-#{$prefix},
-  .#{$theme-class-prefix}r-#{$prefix} {
+  .#{$border-color-class-prefix}r-#{$classLabel},
+  .#{$theme-class-prefix}r-#{$classLabel} {
     border-color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$theme}
+      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
     );
   }
 }
@@ -69,23 +70,25 @@
 /**
  * Border Colors on Psuedo Modifiers
  */
-@each $theme, $values in $themes {
-  $prefix: map-get($values, 'prefix');
+@each $key, $theme in $themes {
+  $varLabel: map-get($theme, 'var-label');
+  $classLabel: map-get($theme, 'class-label');
+  $psuedoBinding: map-get($theme, 'psuedo-binding');
 
-  @each $label, $psuedo in $border-psuedo-styles {
+  @if $psuedoBinding {
     /* Psuedo: Border Colors and Border Color On Theme */
-    .#{$border-color-class-prefix}-#{$prefix}-#{$label}:#{$psuedo},
-    .#{$theme-class-prefix}-#{$prefix}-#{$label}:#{$psuedo} {
+    .#{$border-color-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
+    .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       border-color: var(
-        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$theme}
+        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
       );
     }
 
     /* Psuedo: Reverse Border Colors and Reverse Border Color On Reverse Theme */
-    .#{$border-color-class-prefix}r-#{$prefix}-#{$label}:#{$psuedo},
-    .#{$theme-class-prefix}r-#{$prefix}-#{$label}:#{$psuedo} {
+    .#{$border-color-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
+    .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       border-color: var(
-        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$theme}
+        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
       );
     }
   }
