@@ -1,0 +1,30 @@
+@import './width-variables.scss';
+
+/**
+ * Width
+ */
+@each $label, $_ in $width-styles {
+  .#{$width-class-prefix}-#{$label} {
+    width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$min-width-class-prefix}-#{$label} {
+    min-width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$max-width-class-prefix}-#{$label} {
+    max-width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$width-children-class-prefix}-#{$label} > * {
+    width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$min-width-children-class-prefix}-#{$label} > * {
+    min-width: var(--#{$width-var-prefix}-#{$label});
+  }
+
+  .#{$max-width-children-class-prefix}-#{$label} > * {
+    max-width: var(--#{$width-var-prefix}-#{$label});
+  }
+}

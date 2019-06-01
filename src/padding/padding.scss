@@ -1,4 +1,3 @@
-@import './padding-custom-properties.scss';
 @import './padding-variables.scss';
 
 @each $index, $width in $padding-width-multipliers {

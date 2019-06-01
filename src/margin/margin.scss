@@ -1,4 +1,3 @@
-@import './margin-custom-properties.scss';
 @import './margin-variables.scss';
 
 @each $index, $width in $margin-width-multipliers {

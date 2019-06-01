@@ -1,6 +1,5 @@
 @import '../variables/breakpoints.scss';
 
-@import './margin-custom-properties.scss';
 @import './margin-variables.scss';
 
 @each $label, $value in $breakpoints {

@@ -7,12 +7,12 @@
     "dist"
   ],
   "scripts": {
-    "start": "npx sass --watch src/full.scss dist/full.css",
+    "start": "npx sass --watch src/full.scss dist/full/full.css",
     "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
-    "build:full": "npx sass src/full.scss dist/full.css",
-    "build:minimal": "npx sass src/minimal.scss dist/minimal.css",
+    "build:full": "npx sass src/full.scss dist/full/full.css",
+    "build:minimal": "npx sass src/minimal.scss dist/minimal/minimal.css",
     "clean": "rm -rf dist",
-    "gzip": "gzip -k -f dist/*.css",
+    "gzip": "gzip -k -f dist/*/*.css",
     "release": "npx standard-version",
     "prepublishOnly": "npm run build"
   },
@@ -33,16 +33,7 @@
   "homepage": "https://github.com/nullpub/css#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^6.1.2",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-each": "^0.10.0",
-    "postcss-extend-rule": "^2.0.0",
-    "postcss-for": "^2.1.1",
-    "postcss-import": "^12.0.1",
-    "postcss-simple-vars": "^5.0.2",
-    "postcss-style-guide": "^0.14.0",
+    "sass": "^1.20.3",
     "standard-version": "^5.0.2"
   }
 }

@@ -1,31 +1,39 @@
 @import '../color/color-variables.scss';
 
-@import './border-custom-properties.scss';
 @import './border-variables.scss';
 
 @each $index, $width in $border-width-multipliers {
-  /*! Border Width Top with Y and All - Size #{$index} */
+  /*!
+  * Border Width #{$index}:
+  * `#{$border-width-class-prefix}a-#{$index}` - Border Width #{$index} All Sides
+  *
+  *     @example
+  *     div.#{$border-width-class-prefix}a-#{$index}
+  *       a div
+  *
+*/
+
   .#{$border-width-class-prefix}t-#{$index},
   .#{$border-width-class-prefix}y-#{$index},
   .#{$border-width-class-prefix}a-#{$index} {
     border-top-style: solid;
     border-top-width: var(--#{$border-width-var-prefix}-#{$index});
   }
-  /*! Border Width Right with X and All - Size #{$index} */
+
   .#{$border-width-class-prefix}r-#{$index},
   .#{$border-width-class-prefix}x-#{$index},
   .#{$border-width-class-prefix}a-#{$index} {
     border-right-style: solid;
     border-right-width: var(--#{$border-width-var-prefix}-#{$index});
   }
-  /*! Border Width Bottom with Y and All - Size #{$index} */
+
   .#{$border-width-class-prefix}b-#{$index},
   .#{$border-width-class-prefix}y-#{$index},
   .#{$border-width-class-prefix}a-#{$index} {
     border-bottom-style: solid;
     border-bottom-width: var(--#{$border-width-var-prefix}-#{$index});
   }
-  /*! Border Width Left with X and All - Size #{$index} */
+
   .#{$border-width-class-prefix}l-#{$index},
   .#{$border-width-class-prefix}x-#{$index},
   .#{$border-width-class-prefix}a-#{$index} {
@@ -34,24 +42,16 @@
   }
 }
 
-/**
- * Border Styles
- */
 @each $label, $style in $border-styles {
-  /* Border Styles From Map */
   .#{$border-styles-class-prefix}-#{$label} {
     border-style: #{$style};
   }
 }
 
-/**
- * Border Colors
- */
 @each $key, $theme in $themes {
   $varLabel: map-get($theme, 'var-label');
   $classLabel: map-get($theme, 'class-label');
 
-  /* Border Colors and Border Color On Theme */
   .#{$border-color-class-prefix}-#{$classLabel},
   .#{$theme-class-prefix}-#{$classLabel} {
     border-color: var(
@@ -59,7 +59,6 @@
     );
   }
 
-  /* Reverse Border Colors and Reverse Border Color On Reverse Theme */
   .#{$border-color-class-prefix}r-#{$classLabel},
   .#{$theme-class-prefix}r-#{$classLabel} {
     border-color: var(
@@ -68,16 +67,12 @@
   }
 }
 
-/**
- * Border Colors on Psuedo Modifiers
- */
 @each $key, $theme in $themes {
   $varLabel: map-get($theme, 'var-label');
   $classLabel: map-get($theme, 'class-label');
   $psuedoBinding: map-get($theme, 'psuedo-binding');
 
   @if $psuedoBinding {
-    /* Psuedo: Border Colors and Border Color On Theme */
     .#{$border-color-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
     .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       border-color: var(
@@ -85,7 +80,6 @@
       );
     }
 
-    /* Psuedo: Reverse Border Colors and Reverse Border Color On Reverse Theme */
     .#{$border-color-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
     .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       border-color: var(
@@ -95,9 +89,6 @@
   }
 }
 
-/**
- * Border Radius For Circle
- */
 .#{$border-radius-class-prefix}a-c {
   border-radius: var(--#{$border-radius-var-prefix}-circle);
 }

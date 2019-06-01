@@ -1,6 +1,5 @@
 @import '../variables/breakpoints.scss';
 
-@import './border-custom-properties.scss';
 @import './border-variables.scss';
 
 @each $label, $value in $breakpoints {

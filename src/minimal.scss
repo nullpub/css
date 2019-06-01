@@ -1,25 +1,6 @@
-/* Minified Names */
-$breakpoint-prefix: 'bp';
+/* Minimal Modifications */
+$breakpoints: (
+  'sm': 50em,
+);
 
-$colors-prefix: 'c';
-$colors-foreground-prefix: 'f';
-$colors-background-prefix: 'b';
-
-$base-size-prefix: 'szb';
-$font-size-prefix: 'szfn';
-$fill-size-prefix: 'szfl';
-$radius-size-prefix: 'szrd';
-
-$border-width-prefix: 'bsw';
-$border-radius-prefix: 'bsr';
-
-/* Custom Properties */
-@import './custom-properties/breakpoints.scss';
-@import './custom-properties/colors.scss';
-@import './custom-properties/sizes.scss';
-@import './custom-properties/transitions.scss';
-
-@import './border/border-custom-properties.scss';
-
-/* Borders */
-@import './border/border.scss';
+@import './full.scss';

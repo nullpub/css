@@ -1,0 +1,33 @@
+@import '../variables/breakpoints.scss';
+
+@import './width-variables.scss';
+
+@each $break, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @each $label, $style in $width-styles {
+      .#{$width-class-prefix}-#{$break}-#{$label} {
+        width: var(--#{$width-var-prefix}-#{label});
+      }
+
+      .#{$min-width-class-prefix}-#{$break}-#{$label} {
+        min-width: var(--#{$width-var-prefix}-#{label});
+      }
+
+      .#{$max-width-class-prefix}-#{$break}-#{$label} {
+        max-width: var(--#{$width-var-prefix}-#{label});
+      }
+
+      .#{$width-children-class-prefix}-#{$break}-#{$label} > * {
+        width: var(--#{$width-var-prefix}-#{label});
+      }
+
+      .#{$min-width-children-class-prefix}-#{$break}-#{$label} > * {
+        min-width: var(--#{$width-var-prefix}-#{label});
+      }
+
+      .#{$max-width-children-class-prefix}-#{$break}-#{$label} > * {
+        max-width: var(--#{$width-var-prefix}-#{label});
+      }
+    }
+  }
+}

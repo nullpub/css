@@ -1,6 +1,5 @@
 @import '../variables/breakpoints.scss';
 
-@import './padding-custom-properties.scss';
 @import './padding-variables.scss';
 
 @each $label, $value in $breakpoints {
