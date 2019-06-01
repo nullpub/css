@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.0.0-2](https://github.com/nullpub/css/compare/v7.0.0-1...v7.0.0-2) (2019-06-01)
+
+
+### Bug Fixes
+
+* **flex:** add display: flex to flex direction classes ([0c5b215](https://github.com/nullpub/css/commit/0c5b215))
+
+
+
 # [7.0.0-1](https://github.com/nullpub/css/compare/v7.0.0-0...v7.0.0-1) (2019-06-01)
 
 
