@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.0.0-0](https://github.com/nullpub/css/compare/v6.7.0...v7.0.0-0) (2019-06-01)
+
+
+### Features
+
+* added width and width children classes, prerelease of 7 ([548cccf](https://github.com/nullpub/css/commit/548cccf))
+* multiple classes rewritten in scss ([0b5946e](https://github.com/nullpub/css/commit/0b5946e))
+* psuedo binding for themes and border themes ([5477046](https://github.com/nullpub/css/commit/5477046))
+* working initial scss build with color and border ([6f3a48c](https://github.com/nullpub/css/commit/6f3a48c))
+
+
+### BREAKING CHANGES
+
+* This is a new approach to generating util classes
+
+
+
 # [6.7.0](https://github.com/nullpub/css/compare/v6.6.1...v6.7.0) (2019-05-03)
 
 
