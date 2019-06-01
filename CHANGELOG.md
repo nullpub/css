@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.0.0-1](https://github.com/nullpub/css/compare/v7.0.0-0...v7.0.0-1) (2019-06-01)
+
+
+### Bug Fixes
+
+* **color:** color.scss had an incorrect import of color-variables.css ([777c6a6](https://github.com/nullpub/css/commit/777c6a6))
+
+
+
 # [7.0.0-0](https://github.com/nullpub/css/compare/v6.7.0...v7.0.0-0) (2019-06-01)
 
 
