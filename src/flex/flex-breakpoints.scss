@@ -11,6 +11,7 @@
     */
     @each $label, $style in $flex-directions {
       .#{$flex-direction-class-prefix}-#{$breakLabel}-#{$label} {
+        display: flex;
         flex-direction: #{$style};
       }
     }
