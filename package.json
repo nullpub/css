@@ -7,17 +7,12 @@
     "dist"
   ],
   "scripts": {
-    "start": "postcss src/full.css -o dist/full.css -w",
+    "start": "npx sass --watch src/full.scss dist/full.css",
     "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
-    "build:full": "postcss src/full.css -o dist/full.css",
-    "build:minimal": "postcss src/minimal.css -o dist/minimal.css",
-    "build:full-no-reset": "postcss src/full-no-reset.css -o dist/full-no-reset.css",
-    "build:minimal-no-reset": "postcss src/minimal-no-reset.css -o dist/minimal-no-reset.css",
-    "build:tools:flex": "postcss src/tools/flex.css -o dist/tools/flex.css",
-    "build:tools:fluid": "postcss src/tools/fluid.css -o dist/tools/fluid.css",
+    "build:full": "npx sass src/full.scss dist/full.css",
+    "build:minimal": "npx sass src/minimal.scss dist/minimal.css",
     "clean": "rm -rf dist",
     "gzip": "gzip -k -f dist/*.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npx standard-version",
     "prepublishOnly": "npm run build"
   },

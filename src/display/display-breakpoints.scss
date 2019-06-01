@@ -1,0 +1,13 @@
+@import '../variables/breakpoints.scss';
+
+@import './display-variables.scss';
+
+@each $breakLabel, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @each $displayLabel, $style in $display-styles {
+      .#{$display-class-prefix}-#{$breakLabel}-#{$displayLabel} {
+        display: #{$style};
+      }
+    }
+  }
+}

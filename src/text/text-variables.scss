@@ -1,0 +1,11 @@
+/**
+ * Text Alignment SCSS Variables
+ */
+$text-align-var-prefix: 'text-align' !default;
+$text-align-class-prefix: 'ta' !default;
+$text-align-styles: (
+  'l': left,
+  'r': right,
+  'c': center,
+  'j': justify,
+) !default;

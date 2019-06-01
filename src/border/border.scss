@@ -1,5 +1,6 @@
 @import '../color/color-variables.scss';
 
+@import './border-custom-properties.scss';
 @import './border-variables.scss';
 
 @each $index, $width in $border-width-multipliers {

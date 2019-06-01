@@ -1,0 +1,29 @@
+@import './padding-custom-properties.scss';
+@import './padding-variables.scss';
+
+@each $index, $width in $padding-width-multipliers {
+  /*! Padding Width Top with Y and All - Size #{$index} */
+  .#{$padding-width-class-prefix}t-#{$index},
+  .#{$padding-width-class-prefix}y-#{$index},
+  .#{$padding-width-class-prefix}a-#{$index} {
+    padding-top: var(--#{$padding-width-var-prefix}-#{$index});
+  }
+  /*! Padding Width Right with X and All - Size #{$index} */
+  .#{$padding-width-class-prefix}r-#{$index},
+  .#{$padding-width-class-prefix}x-#{$index},
+  .#{$padding-width-class-prefix}a-#{$index} {
+    padding-right: var(--#{$padding-width-var-prefix}-#{$index});
+  }
+  /*! Padding Width Bottom with Y and All - Size #{$index} */
+  .#{$padding-width-class-prefix}b-#{$index},
+  .#{$padding-width-class-prefix}y-#{$index},
+  .#{$padding-width-class-prefix}a-#{$index} {
+    padding-bottom: var(--#{$padding-width-var-prefix}-#{$index});
+  }
+  /*! Padding Width Left with X and All - Size #{$index} */
+  .#{$padding-width-class-prefix}l-#{$index},
+  .#{$padding-width-class-prefix}x-#{$index},
+  .#{$padding-width-class-prefix}a-#{$index} {
+    padding-left: var(--#{$padding-width-var-prefix}-#{$index});
+  }
+}

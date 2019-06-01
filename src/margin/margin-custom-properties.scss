@@ -1,0 +1,14 @@
+@import '../variables/sizes.scss';
+
+@import './margin-variables.scss';
+
+/**
+* Margin Width CSS Variables
+*/
+:root {
+  @each $index, $multiplier in $margin-width-multipliers {
+    --#{$margin-width-var-prefix}-#{$index}: calc(
+      var(--#{$fill-size-prefix}) * #{$multiplier}
+    );
+  }
+}

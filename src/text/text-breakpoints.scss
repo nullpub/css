@@ -1,0 +1,13 @@
+@import '../variables/breakpoints.scss';
+
+@import './text-variables.scss';
+
+@each $break, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    @each $label, $value in $text-align-styles {
+      .#{$text-align-class-prefix}-#{$break}-#{$label} {
+        text-align: #{$value};
+      }
+    }
+  }
+}

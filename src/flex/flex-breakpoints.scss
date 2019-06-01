@@ -1,0 +1,109 @@
+@import '../variables/breakpoints.scss';
+
+@import '../margin/margin-custom-properties.scss';
+
+@import './flex-variables.scss';
+
+@each $breakLabel, $breakWidth in $breakpoints {
+  @media (min-width: #{$breakWidth}) {
+    /**
+    * Flex Directions
+    */
+    @each $label, $style in $flex-directions {
+      .#{$flex-direction-class-prefix}-#{$breakLabel}-#{$label} {
+        flex-direction: #{$style};
+      }
+    }
+
+    /**
+    * Flex Direction Break Gaps with Normal Flex Size
+    */
+    @each $index, $width in $margin-width-multipliers {
+      @each $label, $style in $flex-directions {
+        .#{$flex-direction-class-prefix}-#{$breakLabel}-#{$label}.#{$flex-gap-class-prefix}-#{$index}
+          > *:not(:last-child) {
+          margin: 0;
+          #{map-get($flex-gap-properties, #{$label})}: var(
+            --#{$margin-width-var-prefix}-#{$index}
+          );
+        }
+      }
+    }
+
+    /**
+    * Flex Direction Gaps with Break Flex Size
+    */
+    @each $index, $width in $margin-width-multipliers {
+      @each $label, $style in $flex-directions {
+        .#{$flex-direction-class-prefix}-#{$label}.#{$flex-gap-class-prefix}-#{$breakLabel}-#{$index}
+          > *:not(:last-child) {
+          #{map-get($flex-gap-properties, #{$label})}: var(
+            --#{$margin-width-var-prefix}-#{$index}
+          );
+        }
+      }
+    }
+
+    /**
+    * Flex Direction Break Gaps with Break Flex Size
+    */
+    @each $index, $width in $margin-width-multipliers {
+      @each $label, $style in $flex-directions {
+        .#{$flex-direction-class-prefix}-#{$breakLabel}-#{$label}.#{$flex-gap-class-prefix}-#{$breakLabel}-#{$index}
+          > *:not(:last-child) {
+          #{map-get($flex-gap-properties, #{$label})}: var(
+            --#{$margin-width-var-prefix}-#{$index}
+          );
+        }
+      }
+    }
+
+    /**
+    * Flex Sizes
+    */
+    @each $growLabel, $growStyle in $flex-sizes {
+      @each $shrinkLabel, $shrinkStyle in $flex-sizes {
+        .#{$flex-size-class-prefix}-#{$breakLabel}-#{$growLabel}-#{$shrinkLabel} {
+          flex-grow: #{$growStyle};
+          flex-shrink: #{$shrinkStyle};
+        }
+      }
+    }
+
+    /**
+    * Flex Basis
+    */
+    @each $label, $style in $flex-basis-styles {
+      .#{$flex-basis-class-prefix}-#{$breakLabel}-#{$label} {
+        flex-basis: #{$style};
+      }
+    }
+
+    /**
+    * Align Items
+    */
+    @each $label, $style in $align-items {
+      .#{$align-items-class-prefix}-#{$breakLabel}-#{$label} {
+        align-items: #{$style};
+      }
+    }
+
+    /**
+    * Justify Content
+    */
+    @each $label, $style in $justify-contents {
+      .#{$justify-content-class-prefix}-#{$breakLabel}-#{$label} {
+        justify-content: #{$style};
+      }
+    }
+
+    /**
+    * Align Self
+    */
+    @each $label, $style in $align-selfs {
+      .#{$align-self-class-prefix}-#{$breakLabel}-#{$label} {
+        align-self: #{$style};
+      }
+    }
+  }
+}

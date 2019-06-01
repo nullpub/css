@@ -1,0 +1,34 @@
+@import './display-variables.scss';
+
+/**
+ * Displays
+ */
+@each $label, $style in $display-styles {
+  .#{$display-class-prefix}-#{$label} {
+    display: #{$style};
+  }
+}
+
+/**
+* Overflow
+*/
+@each $label, $style in $overflow-styles {
+  .#{$overflow-class-prefix}a-#{$label} {
+    overflow: #{$style};
+  }
+  .#{$overflow-class-prefix}x-#{$label} {
+    overflow-x: #{$style};
+  }
+  .#{$overflow-class-prefix}y-#{$label} {
+    overflow-y: #{$style};
+  }
+}
+
+/**
+* Cursor
+*/
+@each $label, $style in $cursor-styles {
+  .#{$cursor-class-prefix}-#{$label} {
+    cursor: #{$style};
+  }
+}

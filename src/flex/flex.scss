@@ -1,0 +1,83 @@
+@import '../margin/margin-custom-properties.scss';
+
+@import './flex-variables.scss';
+
+/**
+ * Flex Directions
+ */
+@each $label, $style in $flex-directions {
+  .#{$flex-direction-class-prefix}-#{$label} {
+    flex-direction: #{$style};
+  }
+}
+
+/**
+ * Flex Direction Gaps
+ */
+@each $index, $width in $margin-width-multipliers {
+  @each $label, $style in $flex-directions {
+    .#{$flex-direction-class-prefix}-#{$label}.#{$flex-gap-class-prefix}-#{$index}
+      > *:not(:last-child) {
+      #{map-get($flex-gap-properties, #{$label})}: var(
+        --#{$margin-width-var-prefix}-#{$index}
+      );
+    }
+  }
+}
+
+/**
+ * Flex Sizes
+ */
+@each $growLabel, $growStyle in $flex-sizes {
+  @each $shrinkLabel, $shrinkStyle in $flex-sizes {
+    .#{$flex-size-class-prefix}-#{$growLabel}-#{$shrinkLabel} {
+      flex-grow: #{$growStyle};
+      flex-shrink: #{$shrinkStyle};
+    }
+  }
+}
+
+/**
+ * Flex Basis
+ */
+@each $label, $style in $flex-basis-styles {
+  .#{$flex-basis-class-prefix}-#{$label} {
+    flex-basis: #{$style};
+  }
+}
+
+/**
+ * Flex Wrap
+ */
+@each $label, $style in $flex-wraps {
+  .#{$flex-wrap-class-prefix}-#{$label} {
+    flex-wrap: #{$style};
+  }
+}
+
+/**
+ * Align Items
+ */
+@each $label, $style in $align-items {
+  .#{$align-items-class-prefix}-#{$label} {
+    align-items: #{$style};
+  }
+}
+
+/**
+ * Justify Content
+ */
+@each $label, $style in $justify-contents {
+  .#{$justify-content-class-prefix}-#{$label} {
+    justify-content: #{$style};
+  }
+}
+
+/**
+ * Align Self
+ */
+@each $label, $style in $align-selfs {
+  .#{$align-self-class-prefix}-#{$label} {
+    align-self: #{$style};
+  }
+}

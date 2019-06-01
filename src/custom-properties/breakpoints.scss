@@ -2,6 +2,9 @@
 
 /**
  * Breakpoint CSS Variables
+ *
+ * While not used in this library at the moment, these
+ * breakpoints will be useful once env() makes it into edge
  */
 :root {
   @each $label, $value in $breakpoints {

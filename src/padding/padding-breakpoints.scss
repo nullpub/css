@@ -1,0 +1,35 @@
+@import '../variables/breakpoints.scss';
+
+@import './padding-custom-properties.scss';
+@import './padding-variables.scss';
+
+@each $label, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @each $index, $width in $padding-width-multipliers {
+      /*! Padding Width Top with Y and All - Size #{$index} */
+      .#{$padding-width-class-prefix}t-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}y-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}a-#{$label}-#{$index} {
+        padding-top: var(--#{$padding-width-var-prefix}-#{$index});
+      }
+      /*! Padding Width Right with X and All - Size #{$index} */
+      .#{$padding-width-class-prefix}r-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}x-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}a-#{$label}-#{$index} {
+        padding-right: var(--#{$padding-width-var-prefix}-#{$index});
+      }
+      /*! Padding Width Bottom with Y and All - Size #{$index} */
+      .#{$padding-width-class-prefix}b-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}y-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}a-#{$label}-#{$index} {
+        padding-bottom: var(--#{$padding-width-var-prefix}-#{$index});
+      }
+      /*! Padding Width Left with X and All - Size #{$index} */
+      .#{$padding-width-class-prefix}l-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}x-#{$label}-#{$index},
+      .#{$padding-width-class-prefix}a-#{$label}-#{$index} {
+        padding-left: var(--#{$padding-width-var-prefix}-#{$index});
+      }
+    }
+  }
+}

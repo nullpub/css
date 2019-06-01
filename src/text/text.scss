@@ -1,0 +1,10 @@
+@import './text-variables.scss';
+
+/**
+ * Text Align
+ */
+@each $label, $value in $text-align-styles {
+  .#{$text-align-class-prefix}-#{$label} {
+    text-align: #{$value};
+  }
+}

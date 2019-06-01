@@ -1,0 +1,15 @@
+/**
+* Padding Width SCSS Variables
+*/
+$padding-width-var-prefix: 'padding-width' !default;
+$padding-width-class-prefix: 'pw' !default;
+$padding-width-multipliers: (
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 4,
+  '4': 8,
+  '5': 16,
+  '6': 32,
+  '7': 64,
+) !default;

@@ -1,0 +1,15 @@
+@import './shadow-custom-properties.scss';
+
+/*
+ * Box Shadows
+ */
+@each $label, $_ in $shadow-multipliers {
+  @each $color, $__ in $shadow-colors {
+    .#{$shadow-class-prefix}-#{$color}-#{$label} {
+      box-shadow: 0
+        var(--#{$shadow-var-prefix}-#{$label})
+        calc(var(--#{$shadow-var-prefix}-#{$label}) * 2)
+        var(--#{$shadow-var-prefix}-#{$color});
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import './margin-custom-properties.scss';
+@import './margin-variables.scss';
+
+@each $index, $width in $margin-width-multipliers {
+  /*! Margin Width Top with Y and All - Size #{$index} */
+  .#{$margin-width-class-prefix}t-#{$index},
+  .#{$margin-width-class-prefix}y-#{$index},
+  .#{$margin-width-class-prefix}a-#{$index} {
+    margin-top: var(--#{$margin-width-var-prefix}-#{$index});
+  }
+  /*! Margin Width Right with X and All - Size #{$index} */
+  .#{$margin-width-class-prefix}r-#{$index},
+  .#{$margin-width-class-prefix}x-#{$index},
+  .#{$margin-width-class-prefix}a-#{$index} {
+    margin-right: var(--#{$margin-width-var-prefix}-#{$index});
+  }
+  /*! Margin Width Bottom with Y and All - Size #{$index} */
+  .#{$margin-width-class-prefix}b-#{$index},
+  .#{$margin-width-class-prefix}y-#{$index},
+  .#{$margin-width-class-prefix}a-#{$index} {
+    margin-bottom: var(--#{$margin-width-var-prefix}-#{$index});
+  }
+  /*! Margin Width Left with X and All - Size #{$index} */
+  .#{$margin-width-class-prefix}l-#{$index},
+  .#{$margin-width-class-prefix}x-#{$index},
+  .#{$margin-width-class-prefix}a-#{$index} {
+    margin-left: var(--#{$margin-width-var-prefix}-#{$index});
+  }
+}

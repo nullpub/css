@@ -1,0 +1,19 @@
+@import './font-custom-properties.scss';
+
+/**
+ * Font Sizes
+ */
+@each $label, $_ in $font-size-styles {
+  .#{$font-size-class-prefix}-#{$label} {
+    font-size: var(--#{$font-size-var-prefix}-#{$label});
+  }
+}
+
+/**
+ * Font Weight
+ */
+@each $label, $_ in $font-weight-styles {
+  .#{$font-weight-class-prefix}-#{$label} {
+    font-weight: var(--#{$font-weight-var-prefix}-#{$label});
+  }
+}
