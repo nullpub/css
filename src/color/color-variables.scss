@@ -1,6 +1,3 @@
-/**
- * Color SCSS Variables
- */
 $theme-var-prefix: 'color' !default;
 $theme-foreground-var-prefix: 'fore' !default;
 $theme-background-var-prefix: 'back' !default;
@@ -9,9 +6,6 @@ $theme-class-prefix: 'ct' !default;
 $theme-foreground-class-prefix: 'cf' !default;
 $theme-background-class-prefix: 'cb' !default;
 
-/**
- * Color Themes
- */
 $themes: (
   'base-0': (
     'class-label': 'b0',

@@ -1,10 +1,27 @@
 @import './shadow-variables.scss';
 
 /*
- * Box Shadows
- */
+Shadow
+
+Classes for setting the box-shadow an element.
+
+Styleguide Shadow
+*/
+
 @each $label, $_ in $shadow-multipliers {
   @each $color, $__ in $shadow-colors {
+    /*
+    .#{$shadow-class-prefix}-#{$color}-#{$label}
+
+    Sets the shadow of element to css var for #{$label} with #{$color}.
+
+    Markup:
+    <div class="{{modifier_class}}">A div</div>
+
+    .#{$shadow-class-prefix}-#{$color}-#{$label} - Sets the shadow of element to css var for #{$label} with #{$color}
+
+    Styleguide Shadow - #{$label}:#{$color}
+    */
     .#{$shadow-class-prefix}-#{$color}-#{$label} {
       box-shadow: 0
         var(--#{$shadow-var-prefix}-#{$label})

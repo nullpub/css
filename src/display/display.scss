@@ -1,34 +1,27 @@
 @import './display-variables.scss';
 
-/**
- * Displays
- */
+/*
+Display
+
+Classes for setting the display property of an element.
+
+Styleguide Display
+*/
+
 @each $label, $style in $display-styles {
+  /*
+  .#{$display-class-prefix}-#{$label}
+
+  Sets the display property of an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$display-class-prefix}-#{$label} - Sets diplay to #{$style}
+
+  Styleguide Display - #{$label}
+  */
   .#{$display-class-prefix}-#{$label} {
     display: #{$style};
-  }
-}
-
-/**
-* Overflow
-*/
-@each $label, $style in $overflow-styles {
-  .#{$overflow-class-prefix}a-#{$label} {
-    overflow: #{$style};
-  }
-  .#{$overflow-class-prefix}x-#{$label} {
-    overflow-x: #{$style};
-  }
-  .#{$overflow-class-prefix}y-#{$label} {
-    overflow-y: #{$style};
-  }
-}
-
-/**
-* Cursor
-*/
-@each $label, $style in $cursor-styles {
-  .#{$cursor-class-prefix}-#{$label} {
-    cursor: #{$style};
   }
 }

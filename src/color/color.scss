@@ -1,13 +1,83 @@
 @import './color-variables.scss';
 
-/**
- * Themes
- */
+/*
+Color
+
+Classes for setting the foreground and background color of an element.
+
+Styleguide Color
+*/
+
+/*
+Color Foreground
+
+Classes for setting the color an element.
+
+Styleguide Color - Foreground
+*/
+
+/*
+Color Background
+
+Classes for setting the background-color an element.
+
+Styleguide Color - Background
+*/
+
+/*
+Color Theme
+
+Classes for setting the theme an element.
+
+Styleguide Color - Theme
+*/
+
 @each $theme, $values in $themes {
   $varLabel: map-get($values, 'var-label');
   $classLabel: map-get($values, 'class-label');
 
-  /* Theme Foreground and Theme Classes */
+  /*
+  .#{$theme-foreground-class-prefix}[r]-#{$classLabel}
+
+  Sets the of color an element using theme #{$theme}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$theme-foreground-class-prefix}-#{$classLabel} - Sets color to var(--#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel})
+  .#{$theme-foreground-class-prefix}r-#{$classLabel} - Sets color to var(--#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel})
+
+  Styleguide Color - Foreground - #{$classLabel}
+  */
+
+  /*
+  .#{$theme-background-class-prefix}[r]-#{$classLabel}
+
+  Sets the of background-color an element using theme #{$theme}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$theme-background-class-prefix}-#{$classLabel} - Sets background-color to var(--#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel})
+  .#{$theme-background-class-prefix}r-#{$classLabel} - Sets background-color to var(--#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel})
+
+  Styleguide Color - Background - #{$classLabel}
+  */
+
+  /*
+  .#{$theme-class-prefix}[r]-#{$classLabel}
+
+  Sets the of color, background-color, and border-color an element using theme #{$theme}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$theme-class-prefix}-#{$classLabel} - Sets color, background-color, and border-color of element from theme #{$theme}
+  .#{$theme-class-prefix}r-#{$classLabel} - Sets color, background-color, and border-color of element from reversing theme #{$theme}
+
+  Styleguide Color - Theme - #{$classLabel}
+  */
+
   .#{$theme-foreground-class-prefix}-#{$classLabel},
   .#{$theme-class-prefix}-#{$classLabel} {
     color: var(
@@ -15,7 +85,6 @@
     );
   }
 
-  /* Theme Background and Theme Classes */
   .#{$theme-background-class-prefix}-#{$classLabel},
   .#{$theme-class-prefix}-#{$classLabel} {
     background-color: var(
@@ -23,7 +92,6 @@
     );
   }
 
-  /* Reverse: Theme Foreground and Theme Classes */
   .#{$theme-foreground-class-prefix}r-#{$classLabel},
   .#{$theme-class-prefix}r-#{$classLabel} {
     color: var(
@@ -31,7 +99,6 @@
     );
   }
 
-  /* Reverse: Theme Background and Theme Classes */
   .#{$theme-background-class-prefix}r-#{$classLabel},
   .#{$theme-class-prefix}r-#{$classLabel} {
     background-color: var(
@@ -40,42 +107,36 @@
   }
 }
 
-/**
- * Color Themes Psuedo Classes
- */
 @each $theme, $values in $themes {
   $varLabel: map-get($values, 'var-label');
   $classLabel: map-get($values, 'class-label');
   $psuedoBinding: map-get($values, 'psuedo-binding');
 
   @if $psuedoBinding {
-    /* Theme Foreground and Theme Classes */
-    .#{$theme-foreground-class-prefix}-#{$classLabel}:#{$psuedoBinding},
-    .#{$theme-class-prefix}-#{$classLabel}:#{$psuedoBinding} {
+    .#{$theme-foreground-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
+    .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       color: var(
         --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
       );
     }
 
-    /* Theme Background and Theme Classes */
-    .#{$theme-background-class-prefix}-#{$classLabel}:#{$psuedoBinding},
-    .#{$theme-class-prefix}-#{$classLabel}:#{$psuedoBinding} {
+    .#{$theme-background-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
+    .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       background-color: var(
         --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
       );
     }
 
-    /* Reverse: Theme Foreground and Theme Classes */
-    .#{$theme-foreground-class-prefix}r-#{$classLabel}:#{$psuedoBinding},
-    .#{$theme-class-prefix}r-#{$classLabel}:#{$psuedoBinding} {
+    .#{$theme-foreground-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
+    .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       color: var(
         --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
       );
     }
 
     /* Reverse: Theme Background and Theme Classes */
-    .#{$theme-background-class-prefix}r-#{$classLabel}:#{$psuedoBinding},
-    .#{$theme-class-prefix}r-#{$classLabel}:#{$psuedoBinding} {
+    .#{$theme-background-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
+    .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
       background-color: var(
         --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
       );

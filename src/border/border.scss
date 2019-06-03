@@ -2,71 +2,134 @@
 
 @import './border-variables.scss';
 
-@each $index, $width in $border-width-multipliers {
-  /*!
-  * Border Width #{$index}:
-  * `#{$border-width-class-prefix}a-#{$index}` - Border Width #{$index} All Sides
-  *
-  *     @example
-  *     div.#{$border-width-class-prefix}a-#{$index}
-  *       a div
-  *
+/*
+Border
+
+Classes for setting the border an element.
+
+Styleguide Border
 */
 
-  .#{$border-width-class-prefix}t-#{$index},
-  .#{$border-width-class-prefix}y-#{$index},
-  .#{$border-width-class-prefix}a-#{$index} {
+/*
+Border Width
+
+Classes for setting the border width of an element.
+
+Styleguide Border - Width
+*/
+@each $label, $width in $border-width-multipliers {
+  /*
+  .#{$border-width-class-prefix}*-#{$label}
+
+  Sets the border of element to css var for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$border-width-class-prefix}a-#{$label} - Sets all borders to #{$label}
+  .#{$border-width-class-prefix}x-#{$label} - Sets left and right borders to #{$label}
+  .#{$border-width-class-prefix}y-#{$label} - Sets top and bottom borders to #{$label}
+  .#{$border-width-class-prefix}t-#{$label} - Sets top border to #{$label}
+  .#{$border-width-class-prefix}r-#{$label} - Sets right border to #{$label}
+  .#{$border-width-class-prefix}b-#{$label} - Sets bottom border to #{$label}
+  .#{$border-width-class-prefix}l-#{$label} - Sets left border to #{$label}
+
+  Styleguide Border - Width - #{$label}
+  */
+  .#{$border-width-class-prefix}t-#{$label},
+  .#{$border-width-class-prefix}y-#{$label},
+  .#{$border-width-class-prefix}a-#{$label} {
     border-top-style: solid;
-    border-top-width: var(--#{$border-width-var-prefix}-#{$index});
+    border-top-width: var(--#{$border-width-var-prefix}-#{$label});
   }
 
-  .#{$border-width-class-prefix}r-#{$index},
-  .#{$border-width-class-prefix}x-#{$index},
-  .#{$border-width-class-prefix}a-#{$index} {
+  .#{$border-width-class-prefix}r-#{$label},
+  .#{$border-width-class-prefix}x-#{$label},
+  .#{$border-width-class-prefix}a-#{$label} {
     border-right-style: solid;
-    border-right-width: var(--#{$border-width-var-prefix}-#{$index});
+    border-right-width: var(--#{$border-width-var-prefix}-#{$label});
   }
 
-  .#{$border-width-class-prefix}b-#{$index},
-  .#{$border-width-class-prefix}y-#{$index},
-  .#{$border-width-class-prefix}a-#{$index} {
+  .#{$border-width-class-prefix}b-#{$label},
+  .#{$border-width-class-prefix}y-#{$label},
+  .#{$border-width-class-prefix}a-#{$label} {
     border-bottom-style: solid;
-    border-bottom-width: var(--#{$border-width-var-prefix}-#{$index});
+    border-bottom-width: var(--#{$border-width-var-prefix}-#{$label});
   }
 
-  .#{$border-width-class-prefix}l-#{$index},
-  .#{$border-width-class-prefix}x-#{$index},
-  .#{$border-width-class-prefix}a-#{$index} {
+  .#{$border-width-class-prefix}l-#{$label},
+  .#{$border-width-class-prefix}x-#{$label},
+  .#{$border-width-class-prefix}a-#{$label} {
     border-left-style: solid;
-    border-left-width: var(--#{$border-width-var-prefix}-#{$index});
+    border-left-width: var(--#{$border-width-var-prefix}-#{$label});
   }
 }
 
+/*
+Border Style
+
+Classes for setting the border style of an element.
+
+Styleguide Border - Style
+*/
 @each $label, $style in $border-styles {
+  /*
+  .#{$border-styles-class-prefix}-#{$label}
+
+  Sets the border style of an element to #{$style}
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$border-styles-class-prefix}-#{$label} - Sets border-style to #{$style}
+
+  Styleguide Border - Style - #{$label}
+  */
   .#{$border-styles-class-prefix}-#{$label} {
     border-style: #{$style};
   }
 }
 
+/*
+Border Color
+
+Classes for setting the border color of an element.
+
+Styleguide Border - Color
+*/
 @each $key, $theme in $themes {
   $varLabel: map-get($theme, 'var-label');
   $classLabel: map-get($theme, 'class-label');
 
+  /*
+  .#{$border-color-class-prefix}[r]-#{$classLabel}
+
+  Sets the border color of an element to css var #{$varLabel}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$border-color-class-prefix}-#{$classLabel} - Sets border-color to var(--#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel})
+  .#{$border-color-class-prefix}r-#{$classLabel} - Sets border-color to var(--#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel})
+
+  Styleguide Border - Color - #{$classLabel}
+  */
   .#{$border-color-class-prefix}-#{$classLabel},
   .#{$theme-class-prefix}-#{$classLabel} {
     border-color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
+      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
     );
   }
 
   .#{$border-color-class-prefix}r-#{$classLabel},
   .#{$theme-class-prefix}r-#{$classLabel} {
     border-color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
+      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
     );
   }
 }
 
+// Figure out a nice way to document psuedo class classes
 @each $key, $theme in $themes {
   $varLabel: map-get($theme, 'var-label');
   $classLabel: map-get($theme, 'class-label');
@@ -89,6 +152,34 @@
   }
 }
 
+/*
+Border Radius
+
+Classes for setting the border radius of an element.
+
+Styleguide Border - Radius
+*/
+
+/*
+.#{$border-radius-class-prefix}*-c
+
+Sets the border radius of an element to 50%
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.#{$border-radius-class-prefix}a-c - Sets border radius for all corners to 50%
+.#{$border-radius-class-prefix}t-c - Sets border radius for top corners to 50%
+.#{$border-radius-class-prefix}r-c - Sets border radius for right corners to 50%
+.#{$border-radius-class-prefix}b-c - Sets border radius for bottom corners to 50%
+.#{$border-radius-class-prefix}l-c - Sets border radius for left corners to 50%
+.#{$border-radius-class-prefix}tl-c - Sets border radius for top left corner to 50%
+.#{$border-radius-class-prefix}tr-c - Sets border radius for top right corner to 50%
+.#{$border-radius-class-prefix}br-c - Sets border radius for bottom right corner to 50%
+.#{$border-radius-class-prefix}bl-c - Sets border radius for bottom left corners to 50%
+
+Styleguide Border - Radius - Circle
+*/
 .#{$border-radius-class-prefix}a-c {
   border-radius: var(--#{$border-radius-var-prefix}-circle);
 }
@@ -114,6 +205,27 @@
 }
 
 @each $index, $radius in $border-radius-multipliers {
+  /*
+  .#{$border-radius-class-prefix}*-#{$index}
+
+  Sets the border style of an element to #{$index}
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$border-radius-class-prefix}a-#{$index} - Sets border radius for all corners to #{$index}
+  .#{$border-radius-class-prefix}t-#{$index} - Sets border radius for top corners to #{$index}
+  .#{$border-radius-class-prefix}r-#{$index} - Sets border radius for right corners to #{$index}
+  .#{$border-radius-class-prefix}b-#{$index} - Sets border radius for bottom corners to #{$index}
+  .#{$border-radius-class-prefix}l-#{$index} - Sets border radius for left corners to #{$index}
+  .#{$border-radius-class-prefix}tl-#{$index} - Sets border radius for top left corner to #{$index}
+  .#{$border-radius-class-prefix}tr-#{$index} - Sets border radius for top right corner to #{$index}
+  .#{$border-radius-class-prefix}br-#{$index} - Sets border radius for bottom right corner to #{$index}
+  .#{$border-radius-class-prefix}bl-#{$index} - Sets border radius for bottom left corners to #{$index}
+
+  Styleguide Border - Radius - Circle
+  */
+
   .#{$border-radius-class-prefix}a-#{$index} {
     border-radius: var(--#{$border-radius-var-prefix}-#{$index});
   }

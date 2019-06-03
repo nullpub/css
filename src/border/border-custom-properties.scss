@@ -2,9 +2,6 @@
 
 @import './border-variables.scss';
 
-/**
-* Border Width CSS Variables
-*/
 :root {
   @each $index, $multiplier in $border-width-multipliers {
     --#{$border-width-var-prefix}-#{$index}: calc(
@@ -13,9 +10,6 @@
   }
 }
 
-/**
-* Border Radius CSS Variables
-*/
 :root {
   --border-radius-circle: 50%;
   @each $index, $multiplier in $border-radius-multipliers {

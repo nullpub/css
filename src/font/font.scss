@@ -1,18 +1,58 @@
 @import './font-variables.scss';
 
-/**
- * Font Sizes
- */
+/*
+Font
+
+Classes for setting the font properties of an element.
+
+Styleguide Font
+*/
+
+/*
+Font Size
+
+Classes for setting the font-size of an element.
+
+Styleguide Font - Size
+*/
 @each $label, $_ in $font-size-styles {
+  /*
+  .#{$font-size-class-prefix}-#{$label}
+
+  Sets the font-size an element to the variable for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$font-size-class-prefix}-#{$label} - Sets the font-size an element to the variable for #{$label}
+
+  Styleguide Font - Size - #{$label}
+  */
   .#{$font-size-class-prefix}-#{$label} {
     font-size: var(--#{$font-size-var-prefix}-#{$label});
   }
 }
 
-/**
- * Font Weight
- */
+/*
+Font Weith
+
+Classes for setting the font-weight of an element.
+
+Styleguide Font - Weith
+*/
 @each $label, $_ in $font-weight-styles {
+  /*
+  .#{$font-weight-class-prefix}-#{$label}
+
+  Sets the font-weight an element to the variable for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$font-weight-class-prefix}-#{$label} - Sets the font-weight an element to the variable for #{$label}
+
+  Styleguide Font - Weight - #{$label}
+  */
   .#{$font-weight-class-prefix}-#{$label} {
     font-weight: var(--#{$font-weight-var-prefix}-#{$label});
   }

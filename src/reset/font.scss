@@ -1,0 +1,85 @@
+@import '../variables/colors.css';
+@import '../utilities/font/font-sizes.css';
+@import '../utilities/margin/margin-sizes.css';
+
+/**
+ * Header tag styling
+ */
+h1 {
+  font-size: var(--font-size-u5);
+  font-weight: var(--font-weight-u1);
+}
+
+h2 {
+  font-size: var(--font-size-u4);
+  font-weight: var(--font-weight-u1);
+}
+
+h3 {
+  font-size: var(--font-size-u3);
+  font-weight: var(--font-weight-u1);
+}
+
+h4 {
+  font-size: var(--font-size-u2);
+  font-weight: var(--font-weight-u1);
+}
+
+h5 {
+  font-size: var(--font-size-u1);
+  font-weight: var(--font-weight-u1);
+}
+
+h6 {
+  font-size: var(--font-size-u1);
+}
+
+/**
+ * Paragraph and small tag styling
+ */
+span {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p,
+li {
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-d1);
+}
+
+small {
+  font-size: var(--font-size-d2);
+  font-weight: var(--font-weight-d1);
+}
+
+/**
+ * Input and button styling
+ */
+input,
+button,
+select {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input {
+  border: 0;
+}
+
+/**
+ * Anchor tag styling
+ */
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+/* Bold and Italics */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: var(--font-weight-u2);
+}

@@ -1,8 +1,5 @@
 @import '../variables/sizes.scss';
 
-/**
- * CSS Size Variables
- */
 :root {
   --#{$base-size-prefix}: #{$base-size};
   --#{$font-size-prefix}: calc(

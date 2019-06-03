@@ -1,28 +1,57 @@
 @import './margin-variables.scss';
 
-@each $index, $width in $margin-width-multipliers {
-  /*! Margin Width Top with Y and All - Size #{$index} */
-  .#{$margin-width-class-prefix}t-#{$index},
-  .#{$margin-width-class-prefix}y-#{$index},
-  .#{$margin-width-class-prefix}a-#{$index} {
-    margin-top: var(--#{$margin-width-var-prefix}-#{$index});
+/*
+Margin
+
+Classes for setting the margin an element.
+
+Styleguide Margin
+*/
+
+/*
+Margin Width
+
+Classes for setting the margin width of an element.
+
+Styleguide Margin - Width
+*/
+@each $label, $width in $margin-width-multipliers {
+  /*
+  .#{$margin-width-class-prefix}*-#{$label}
+
+  Sets the margin of element to css var for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$margin-width-class-prefix}a-#{$label} - Sets all margins to #{$label}
+  .#{$margin-width-class-prefix}x-#{$label} - Sets left and right margins to #{$label}
+  .#{$margin-width-class-prefix}y-#{$label} - Sets top and bottom margins to #{$label}
+  .#{$margin-width-class-prefix}t-#{$label} - Sets top margin to #{$label}
+  .#{$margin-width-class-prefix}r-#{$label} - Sets right margin to #{$label}
+  .#{$margin-width-class-prefix}b-#{$label} - Sets bottom margin to #{$label}
+  .#{$margin-width-class-prefix}l-#{$label} - Sets left margin to #{$label}
+
+  Styleguide Margin - Width - #{$label}
+  */
+  .#{$margin-width-class-prefix}t-#{$label},
+  .#{$margin-width-class-prefix}y-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-top: var(--#{$margin-width-var-prefix}-#{$label});
   }
-  /*! Margin Width Right with X and All - Size #{$index} */
-  .#{$margin-width-class-prefix}r-#{$index},
-  .#{$margin-width-class-prefix}x-#{$index},
-  .#{$margin-width-class-prefix}a-#{$index} {
-    margin-right: var(--#{$margin-width-var-prefix}-#{$index});
+  .#{$margin-width-class-prefix}r-#{$label},
+  .#{$margin-width-class-prefix}x-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-right: var(--#{$margin-width-var-prefix}-#{$label});
   }
-  /*! Margin Width Bottom with Y and All - Size #{$index} */
-  .#{$margin-width-class-prefix}b-#{$index},
-  .#{$margin-width-class-prefix}y-#{$index},
-  .#{$margin-width-class-prefix}a-#{$index} {
-    margin-bottom: var(--#{$margin-width-var-prefix}-#{$index});
+  .#{$margin-width-class-prefix}b-#{$label},
+  .#{$margin-width-class-prefix}y-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-bottom: var(--#{$margin-width-var-prefix}-#{$label});
   }
-  /*! Margin Width Left with X and All - Size #{$index} */
-  .#{$margin-width-class-prefix}l-#{$index},
-  .#{$margin-width-class-prefix}x-#{$index},
-  .#{$margin-width-class-prefix}a-#{$index} {
-    margin-left: var(--#{$margin-width-var-prefix}-#{$index});
+  .#{$margin-width-class-prefix}l-#{$label},
+  .#{$margin-width-class-prefix}x-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-left: var(--#{$margin-width-var-prefix}-#{$label});
   }
 }

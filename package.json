@@ -8,10 +8,17 @@
   ],
   "scripts": {
     "start": "npx sass --watch src/full.scss dist/full/full.css",
-    "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
+    "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip && npm run docs",
     "build:full": "npx sass src/full.scss dist/full/full.css",
+    "build:full.min": "npx sass --style=compressed src/full.scss dist/full/full.min.css",
     "build:minimal": "npx sass src/minimal.scss dist/minimal/minimal.css",
-    "clean": "rm -rf dist",
+    "build:minimal.min": "npx sass --style=compressed src/minimal.scss dist/minimal/minimal.min.css",
+    "build:reset": "npx sass src/reset.scss dist/reset/reset.css",
+    "build:reset.min": "npx sass --style=compressed src/reset.scss dist/reset/reset.min.css",
+    "docs": "concurrently --no-color \"npm:docs:*\" && cp -R dist/* docs/ && cp static/index.html docs/",
+    "docs:full": "npx kss --source dist/full/ --destination docs/full --css ./full.min.css --homepage ./static/home-full.md",
+    "docs:minimal": "npx kss --source dist/minimal/ --destination docs/minimal --css ./minimal.min.css --homepage ./static/home-minimal.md",
+    "clean": "rm -rf dist && rm -rf docs",
     "gzip": "gzip -k -f dist/*/*.css",
     "release": "npx standard-version",
     "prepublishOnly": "npm run build"
@@ -33,6 +40,7 @@
   "homepage": "https://github.com/nullpub/css#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
+    "kss": "^3.0.0-beta.25",
     "sass": "^1.20.3",
     "standard-version": "^5.0.2"
   }

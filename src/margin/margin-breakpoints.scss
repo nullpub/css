@@ -2,32 +2,49 @@
 
 @import './margin-variables.scss';
 
-@each $label, $value in $breakpoints {
-  @media (min-width: #{$value}) {
-    @each $index, $width in $margin-width-multipliers {
-      /*! Margin Width Top with Y and All - Size #{$index} */
-      .#{$margin-width-class-prefix}t-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}y-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}a-#{$label}-#{$index} {
-        margin-top: var(--#{$margin-width-var-prefix}-#{$index});
+@each $breakLabel, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    @each $label, $value in $margin-width-multipliers {
+      /*
+      .#{$margin-width-class-prefix}*-#{$breakLabel}-#{$label}
+
+      Sets the margin of element to css var for #{$label} on #{$breakLabel}.
+
+      Markup:
+      <div class="{{modifier_class}}">A div</div>
+
+      .#{$margin-width-class-prefix}a-#{$breakLabel}-#{$label} - Sets all margins to #{$label} on #{$breakLabel}
+      .#{$margin-width-class-prefix}x-#{$breakLabel}-#{$label} - Sets left and right margins to #{$label} on #{$breakLabel}
+      .#{$margin-width-class-prefix}y-#{$breakLabel}-#{$label} - Sets top and bottom margins to #{$label} on #{$breakLabel}
+      .#{$margin-width-class-prefix}t-#{$breakLabel}-#{$label} - Sets top margin to #{$label} on #{$breakLabel}
+      .#{$margin-width-class-prefix}r-#{$breakLabel}-#{$label} - Sets right margin to #{$label} on #{$breakLabel}
+      .#{$margin-width-class-prefix}b-#{$breakLabel}-#{$label} - Sets bottom margin to #{$label} on #{$breakLabel}
+      .#{$margin-width-class-prefix}l-#{$breakLabel}-#{$label} - Sets left margin to #{$label} on #{$breakLabel}
+
+      Styleguide Margin - Width - #{$label}
+      */
+      .#{$margin-width-class-prefix}t-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}y-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        margin-top: var(--#{$margin-width-var-prefix}-#{$label});
       }
-      /*! Margin Width Right with X and All - Size #{$index} */
-      .#{$margin-width-class-prefix}r-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}x-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}a-#{$label}-#{$index} {
-        margin-right: var(--#{$margin-width-var-prefix}-#{$index});
+
+      .#{$margin-width-class-prefix}r-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}x-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        margin-right: var(--#{$margin-width-var-prefix}-#{$label});
       }
-      /*! Margin Width Bottom with Y and All - Size #{$index} */
-      .#{$margin-width-class-prefix}b-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}y-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}a-#{$label}-#{$index} {
-        margin-bottom: var(--#{$margin-width-var-prefix}-#{$index});
+
+      .#{$margin-width-class-prefix}b-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}y-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        margin-bottom: var(--#{$margin-width-var-prefix}-#{$label});
       }
-      /*! Margin Width Left with X and All - Size #{$index} */
-      .#{$margin-width-class-prefix}l-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}x-#{$label}-#{$index},
-      .#{$margin-width-class-prefix}a-#{$label}-#{$index} {
-        margin-left: var(--#{$margin-width-var-prefix}-#{$index});
+
+      .#{$margin-width-class-prefix}l-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}x-#{$breakLabel}-#{$label},
+      .#{$margin-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        margin-left: var(--#{$margin-width-var-prefix}-#{$label});
       }
     }
   }

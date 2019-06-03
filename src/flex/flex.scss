@@ -1,22 +1,61 @@
+/*
+Flex
+
+Classes for setting the flex properties of an element.
+
+Styleguide Flex
+*/
 @import '../margin/margin-variables.scss';
 
 @import './flex-variables.scss';
 
-/**
- * Flex Directions
- */
+/*
+Flex Direction
+
+Classes for turning on flex and setting the flex direction of an element.
+
+Styleguide Flex - Direction
+*/
 @each $label, $style in $flex-directions {
+  /*
+  .#{$flex-direction-class-prefix}-#{$label}
+
+  Sets display: flex and sets flex-direction of an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}"><div>A div</div><div>B div</div></div>
+
+  .#{$flex-direction-class-prefix}-#{$label} - Sets flex-direction to #{$style}
+
+  Styleguide Flex - Direction - #{$label}
+  */
   .#{$flex-direction-class-prefix}-#{$label} {
     display: flex;
     flex-direction: #{$style};
   }
 }
 
-/**
- * Flex Direction Gaps
- */
+/*
+Flex Gaps
+
+Classes for creating gaps between flex children based on margin sizes.
+
+Styleguide Flex - Gaps
+*/
 @each $index, $width in $margin-width-multipliers {
   @each $label, $style in $flex-directions {
+    /*
+    .#{$flex-gap-class-prefix}-#{$index}
+
+    Sets the margin of all children except last to margin var for #{$index}.
+
+    Markup:
+    <div class="#{$flex-direction-class-prefix}-#{$label} {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+    .#{$flex-gap-class-prefix}-#{$index} - Sets gaps to margin var for #{$index}
+
+    Styleguide Flex - Gaps - #{$label}
+    */
     .#{$flex-direction-class-prefix}-#{$label}.#{$flex-gap-class-prefix}-#{$index}
       > *:not(:last-child) {
       #{map-get($flex-gap-properties, #{$label})}: var(
@@ -26,11 +65,27 @@
   }
 }
 
-/**
- * Flex Sizes
- */
+/*
+Flex Size
+
+Classes for setting flex-grow and flex-shrink properties on an element.
+
+Styleguide Flex - Size
+*/
 @each $growLabel, $growStyle in $flex-sizes {
   @each $shrinkLabel, $shrinkStyle in $flex-sizes {
+    /*
+    .#{$flex-size-class-prefix}-#{$growLabel}-#{$shrinkLabel}
+
+    Sets flex-grow to #{$growStyle} and flex-shrink to #{$shrinkStyle}.
+
+    Markup:
+    <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
+
+    .#{$flex-size-class-prefix}-#{$growLabel}-#{$shrinkLabel} - Sets flex-grow to #{$growStyle} and flex-shrink to #{$shrinkStyle}
+
+    Styleguide Flex - Size - #{$growLabel}:#{$shrinkLabel}
+    */
     .#{$flex-size-class-prefix}-#{$growLabel}-#{$shrinkLabel} {
       flex-grow: #{$growStyle};
       flex-shrink: #{$shrinkStyle};
@@ -38,46 +93,129 @@
   }
 }
 
-/**
- * Flex Basis
- */
+/*
+Flex Basis
+
+Classes for setting the flex-basis property on an element.
+
+Styleguide Flex - Basis
+*/
 @each $label, $style in $flex-basis-styles {
+  /*
+  .#{$flex-basis-class-prefix}-#{$label}
+
+  Sets flex-basis to #{$style}.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .#{$flex-basis-class-prefix}-#{$label} - Sets flex-basis to #{$style}
+
+  Styleguide Flex - Basis - #{$label}
+  */
   .#{$flex-basis-class-prefix}-#{$label} {
     flex-basis: #{$style};
   }
 }
 
-/**
- * Flex Wrap
- */
+/*
+Flex Wrap
+
+Classes for setting the flex-wrap property on an element. Use of this with flex gaps is not recommended.
+
+Styleguide Flex - Wrap
+*/
 @each $label, $style in $flex-wraps {
+  /*
+  .#{$flex-wrap-class-prefix}-#{$label}
+
+  Sets flex-wrap to #{$style}.
+
+  Markup:
+  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .#{$flex-wrap-class-prefix}-#{$label} - Sets flex-wrap to #{$style}
+
+  Styleguide Flex - Wrap - #{$label}
+  */
   .#{$flex-wrap-class-prefix}-#{$label} {
     flex-wrap: #{$style};
   }
 }
 
-/**
- * Align Items
- */
+/*
+Align Items
+
+Classes for setting the align-items property on an element. Can also be used with css grid.
+
+Styleguide Flex - Align Items
+*/
 @each $label, $style in $align-items {
+  /*
+  .#{$align-items-class-prefix}-#{$label}
+
+  Sets align-items to #{$style}.
+
+  Markup:
+  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .#{$align-items-class-prefix}-#{$label} - Sets align-items to #{$style}
+
+  Styleguide Flex - Align Items - #{$label}
+  */
   .#{$align-items-class-prefix}-#{$label} {
     align-items: #{$style};
   }
 }
 
-/**
- * Justify Content
- */
+/*
+Justify Content
+
+Classes for setting the justify-content property on an element. Can also be used with css grid.
+
+Styleguide Flex - Justify Content
+*/
 @each $label, $style in $justify-contents {
+  /*
+  .#{$justify-content-class-prefix}-#{$label}
+
+  Sets justify-content to #{$style}.
+
+  Markup:
+  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .#{$justify-content-class-prefix}-#{$label} - Sets justify-content to #{$style}
+
+  Styleguide Flex - Justify Content - #{$label}
+  */
   .#{$justify-content-class-prefix}-#{$label} {
     justify-content: #{$style};
   }
 }
 
-/**
- * Align Self
- */
+/*
+Align Self
+
+Classes for setting the align-self property on an element. Can also be used with css grid.
+
+Styleguide Flex - Align Self
+*/
 @each $label, $style in $align-selfs {
+  /*
+  .#{$align-self-class-prefix}-#{$label}
+
+  Sets align-self to #{$style}.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .#{$align-self-class-prefix}-#{$label} - Sets align-self to #{$style}
+
+  Styleguide Flex - Align Self - #{$label}
+  */
   .#{$align-self-class-prefix}-#{$label} {
     align-self: #{$style};
   }
