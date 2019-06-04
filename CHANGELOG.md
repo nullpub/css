@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.0.0](https://github.com/nullpub/css/compare/v6.7.1...v7.0.0) (2019-06-04)
+
+
+### Features
+
+* **scss:** rewrite library in scss and add autodocumentation ([1fce2f8](https://github.com/nullpub/css/commit/1fce2f8))
+
+
+### BREAKING CHANGES
+
+* **scss:** Many class names have been changed, consider this a new lib
+
+
+
 # [7.0.0-3](https://github.com/nullpub/css/compare/v7.0.0-2...v7.0.0-3) (2019-06-04)
 
 
