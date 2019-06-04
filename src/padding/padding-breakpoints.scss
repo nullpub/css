@@ -1,0 +1,48 @@
+@import '../variables/breakpoints.scss';
+
+@import './padding-variables.scss';
+
+@each $breakLabel, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    @each $label, $value in $padding-width-multipliers {
+      /*
+      .#{$padding-width-class-prefix}*-#{$breakLabel}-#{$label}
+
+      Sets the padding of element to css var for #{$label} on #{$breakLabel}.
+
+      Markup:
+      <div class="{{modifier_class}}">A div</div>
+
+      .#{$padding-width-class-prefix}a-#{$breakLabel}-#{$label} - Sets all paddings to #{$label} on #{$breakLabel}
+      .#{$padding-width-class-prefix}x-#{$breakLabel}-#{$label} - Sets left and right paddings to #{$label} on #{$breakLabel}
+      .#{$padding-width-class-prefix}y-#{$breakLabel}-#{$label} - Sets top and bottom paddings to #{$label} on #{$breakLabel}
+      .#{$padding-width-class-prefix}t-#{$breakLabel}-#{$label} - Sets top padding to #{$label} on #{$breakLabel}
+      .#{$padding-width-class-prefix}r-#{$breakLabel}-#{$label} - Sets right padding to #{$label} on #{$breakLabel}
+      .#{$padding-width-class-prefix}b-#{$breakLabel}-#{$label} - Sets bottom padding to #{$label} on #{$breakLabel}
+      .#{$padding-width-class-prefix}l-#{$breakLabel}-#{$label} - Sets left padding to #{$label} on #{$breakLabel}
+
+      Styleguide Padding - Width - #{$label} - #{$breakLabel}
+      */
+      .#{$padding-width-class-prefix}t-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}y-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        padding-top: var(--#{$padding-width-var-prefix}-#{$label});
+      }
+      .#{$padding-width-class-prefix}r-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}x-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        padding-right: var(--#{$padding-width-var-prefix}-#{$label});
+      }
+      .#{$padding-width-class-prefix}b-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}y-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        padding-bottom: var(--#{$padding-width-var-prefix}-#{$label});
+      }
+      .#{$padding-width-class-prefix}l-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}x-#{$breakLabel}-#{$label},
+      .#{$padding-width-class-prefix}a-#{$breakLabel}-#{$label} {
+        padding-left: var(--#{$padding-width-var-prefix}-#{$label});
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../variables/sizes.scss';
+
+@import './shadow-variables.scss';
+
+:root {
+  @each $index, $multiplier in $shadow-multipliers {
+    --#{$shadow-var-prefix}-#{$index}: calc(
+      var(--#{$fill-size-prefix}) * #{$multiplier}
+    );
+  }
+}
+
+:root {
+  @each $label, $value in $shadow-colors {
+    --#{$shadow-var-prefix}-#{$label}: #{$value};
+  }
+}

@@ -1,0 +1,57 @@
+@import './padding-variables.scss';
+
+/*
+Padding
+
+Classes for setting the padding of an element.
+
+Styleguide Padding
+*/
+
+/*
+Padding Width
+
+Classes for setting the padding width of an element.
+
+Styleguide Padding - Width
+*/
+@each $label, $value in $padding-width-multipliers {
+  /*
+  .#{$padding-width-class-prefix}*-#{$label}
+
+  Sets the padding of element to css var for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$padding-width-class-prefix}a-#{$label} - Sets all paddings to #{$label}
+  .#{$padding-width-class-prefix}x-#{$label} - Sets left and right paddings to #{$label}
+  .#{$padding-width-class-prefix}y-#{$label} - Sets top and bottom paddings to #{$label}
+  .#{$padding-width-class-prefix}t-#{$label} - Sets top padding to #{$label}
+  .#{$padding-width-class-prefix}r-#{$label} - Sets right padding to #{$label}
+  .#{$padding-width-class-prefix}b-#{$label} - Sets bottom padding to #{$label}
+  .#{$padding-width-class-prefix}l-#{$label} - Sets left padding to #{$label}
+
+  Styleguide Padding - Width - #{$label}
+  */
+  .#{$padding-width-class-prefix}t-#{$label},
+  .#{$padding-width-class-prefix}y-#{$label},
+  .#{$padding-width-class-prefix}a-#{$label} {
+    padding-top: var(--#{$padding-width-var-prefix}-#{$label});
+  }
+  .#{$padding-width-class-prefix}r-#{$label},
+  .#{$padding-width-class-prefix}x-#{$label},
+  .#{$padding-width-class-prefix}a-#{$label} {
+    padding-right: var(--#{$padding-width-var-prefix}-#{$label});
+  }
+  .#{$padding-width-class-prefix}b-#{$label},
+  .#{$padding-width-class-prefix}y-#{$label},
+  .#{$padding-width-class-prefix}a-#{$label} {
+    padding-bottom: var(--#{$padding-width-var-prefix}-#{$label});
+  }
+  .#{$padding-width-class-prefix}l-#{$label},
+  .#{$padding-width-class-prefix}x-#{$label},
+  .#{$padding-width-class-prefix}a-#{$label} {
+    padding-left: var(--#{$padding-width-var-prefix}-#{$label});
+  }
+}

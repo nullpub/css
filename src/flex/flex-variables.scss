@@ -1,0 +1,75 @@
+$flex-direction-class-prefix: 'fld' !default;
+$flex-directions: (
+  'row': row,
+  'col': column,
+  'rowr': row-reverse,
+  'colr': column-reverse,
+) !default;
+
+$flex-gap-class-prefix: 'flg' !default;
+$flex-gap-properties: (
+  'row': margin-right,
+  'col': margin-bottom,
+  'rowr': margin-left,
+  'colr': margin-top,
+) !default;
+
+$flex-size-class-prefix: 'fls' !default;
+$flex-sizes: (
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 3,
+  '4': 4,
+) !default;
+
+$flex-basis-class-prefix: 'flb' !default;
+$flex-basis-styles: (
+  'auto': auto,
+  'fill': fill,
+  'max-content': max-content,
+  'min-content': min-content,
+  'fit-content': fit-content,
+  'content': content,
+  'unset': unset,
+  '0p': 0,
+  '25p': 25,
+  '50p': 50,
+) !default;
+
+$flex-wrap-class-prefix: 'flw' !default;
+$flex-wraps: (
+  'nowrap': nowrap,
+  'wrap': wrap,
+  'wrap-reverse': wrap-reverse,
+  'unset': unset,
+) !default;
+
+$align-items-class-prefix: 'ai' !default;
+$align-items: (
+  'stc': stretch,
+  'ctr': center,
+  'str': flex-start,
+  'end': flex-end,
+) !default;
+
+$justify-content-class-prefix: 'jc' !default;
+$justify-contents: (
+  'ctr': center,
+  'str': flex-start,
+  'end': flex-end,
+  'spb': space-between,
+  'spa': space-around,
+  'spe': space-evenly,
+  'stc': stretch,
+) !default;
+
+$align-self-class-prefix: 'as' !default;
+$align-selfs: (
+  'stc': stretch,
+  'ctr': center,
+  'str': flex-start,
+  'end': flex-end,
+  'sst': self-start,
+  'sse': self-end,
+) !default;

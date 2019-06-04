@@ -1,0 +1,35 @@
+/**
+ * Font Size Scale
+ * Based on https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 
+ */
+$font-size-var-prefix: 'font-size' !default;
+$font-size-class-prefix: 'fs' !default;
+$font-size-styles: (
+  'u5': 2em,
+  'u4': 1.7511em,
+  'u3': 1.5157em,
+  'u2': 1.3195em,
+  'u1': 1.1487em,
+  '0': 1em,
+  'd1': 0.8706em,
+  'd2': 0.7579em,
+  'd3': 0.6599em,
+  'd4': 0.5745em,
+  'd5': 0.5em,
+) !default;
+
+/**
+ * Font Weight Scale
+ * Requires associated font weights to be included
+ */
+$font-weight-var-prefix: 'font-weight' !default;
+$font-weight-class-prefix: 'fw' !default;
+$font-weight-styles: (
+  'u3': 700,
+  'u2': 600,
+  'u1': 500,
+  '0': 400,
+  'd1': 300,
+  'd2': 200,
+  'd3': 100,
+) !default;

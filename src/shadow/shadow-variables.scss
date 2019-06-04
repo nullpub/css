@@ -1,0 +1,16 @@
+$shadow-var-prefix: 'shadow' !default;
+$shadow-class-prefix: 'sh' !default;
+$shadow-multipliers: (
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 4,
+  '4': 8,
+  '5': 16,
+  '6': 32,
+  '7': 64,
+) !default;
+
+$shadow-colors: (
+  'blk': hsla(0, 0, 0, 20%),
+) !default;

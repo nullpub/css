@@ -1,0 +1,27 @@
+@import './display-variables.scss';
+
+/*
+Display
+
+Classes for setting the display property of an element.
+
+Styleguide Display
+*/
+
+@each $label, $style in $display-styles {
+  /*
+  .#{$display-class-prefix}-#{$label}
+
+  Sets the display property of an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$display-class-prefix}-#{$label} - Sets diplay to #{$style}
+
+  Styleguide Display - #{$label}
+  */
+  .#{$display-class-prefix}-#{$label} {
+    display: #{$style};
+  }
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="./minimal.min.css">
+
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-border.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Border</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-child-width.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Child Width</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-color.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-cursor.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Cursor</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-alias">
+                  <span class="kss-nav__ref ">4.1</span
+                  ><span class="kss-nav__name">.crsr-alias</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-all-scroll">
+                  <span class="kss-nav__ref ">4.2</span
+                  ><span class="kss-nav__name">.crsr-all-scroll</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-auto">
+                  <span class="kss-nav__ref ">4.3</span
+                  ><span class="kss-nav__name">.crsr-auto</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-c">
+                  <span class="kss-nav__ref ">4.4</span
+                  ><span class="kss-nav__name">Cursor - c</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-c-sm">
+                  <span class="kss-nav__ref kss-nav__ref-child">4.4.1</span
+                  ><span class="kss-nav__name">.ta-sm-c</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-cell">
+                  <span class="kss-nav__ref ">4.5</span
+                  ><span class="kss-nav__name">.crsr-cell</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-col-resize">
+                  <span class="kss-nav__ref ">4.6</span
+                  ><span class="kss-nav__name">.crsr-col-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-context-menu">
+                  <span class="kss-nav__ref ">4.7</span
+                  ><span class="kss-nav__name">.crsr-context-menu</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-copy">
+                  <span class="kss-nav__ref ">4.8</span
+                  ><span class="kss-nav__name">.crsr-copy</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-crosshair">
+                  <span class="kss-nav__ref ">4.9</span
+                  ><span class="kss-nav__name">.crsr-crosshair</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-default">
+                  <span class="kss-nav__ref ">4.10</span
+                  ><span class="kss-nav__name">.crsr-default</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-e-resize">
+                  <span class="kss-nav__ref ">4.11</span
+                  ><span class="kss-nav__name">.crsr-e-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-ew-resize">
+                  <span class="kss-nav__ref ">4.12</span
+                  ><span class="kss-nav__name">.crsr-ew-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-grab">
+                  <span class="kss-nav__ref ">4.13</span
+                  ><span class="kss-nav__name">.crsr-grab</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-grabbing">
+                  <span class="kss-nav__ref ">4.14</span
+                  ><span class="kss-nav__name">.crsr-grabbing</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-help">
+                  <span class="kss-nav__ref ">4.15</span
+                  ><span class="kss-nav__name">.crsr-help</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-j">
+                  <span class="kss-nav__ref ">4.16</span
+                  ><span class="kss-nav__name">Cursor - j</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-j-sm">
+                  <span class="kss-nav__ref kss-nav__ref-child">4.16.1</span
+                  ><span class="kss-nav__name">.ta-sm-j</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-l">
+                  <span class="kss-nav__ref ">4.17</span
+                  ><span class="kss-nav__name">Cursor - l</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-l-sm">
+                  <span class="kss-nav__ref kss-nav__ref-child">4.17.1</span
+                  ><span class="kss-nav__name">.ta-sm-l</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-move">
+                  <span class="kss-nav__ref ">4.18</span
+                  ><span class="kss-nav__name">.crsr-move</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-n-resize">
+                  <span class="kss-nav__ref ">4.19</span
+                  ><span class="kss-nav__name">.crsr-n-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-ne-resize">
+                  <span class="kss-nav__ref ">4.20</span
+                  ><span class="kss-nav__name">.crsr-ne-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-nesw-resize">
+                  <span class="kss-nav__ref ">4.21</span
+                  ><span class="kss-nav__name">.crsr-nesw-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-no-drop">
+                  <span class="kss-nav__ref ">4.22</span
+                  ><span class="kss-nav__name">.crsr-no-drop</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-none">
+                  <span class="kss-nav__ref ">4.23</span
+                  ><span class="kss-nav__name">.crsr-none</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-not-allowed">
+                  <span class="kss-nav__ref ">4.24</span
+                  ><span class="kss-nav__name">.crsr-not-allowed</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-ns-resize">
+                  <span class="kss-nav__ref ">4.25</span
+                  ><span class="kss-nav__name">.crsr-ns-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-nw-resize">
+                  <span class="kss-nav__ref ">4.26</span
+                  ><span class="kss-nav__name">.crsr-nw-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-nwse-resize">
+                  <span class="kss-nav__ref ">4.27</span
+                  ><span class="kss-nav__name">.crsr-nwse-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-pointer">
+                  <span class="kss-nav__ref ">4.28</span
+                  ><span class="kss-nav__name">.crsr-pointer</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-progress">
+                  <span class="kss-nav__ref ">4.29</span
+                  ><span class="kss-nav__name">.crsr-progress</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-r">
+                  <span class="kss-nav__ref ">4.30</span
+                  ><span class="kss-nav__name">Cursor - r</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-r-sm">
+                  <span class="kss-nav__ref kss-nav__ref-child">4.30.1</span
+                  ><span class="kss-nav__name">.ta-sm-r</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-row-resize">
+                  <span class="kss-nav__ref ">4.31</span
+                  ><span class="kss-nav__name">.crsr-row-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-s-resize">
+                  <span class="kss-nav__ref ">4.32</span
+                  ><span class="kss-nav__name">.crsr-s-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-se-resize">
+                  <span class="kss-nav__ref ">4.33</span
+                  ><span class="kss-nav__name">.crsr-se-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-sw-resize">
+                  <span class="kss-nav__ref ">4.34</span
+                  ><span class="kss-nav__name">.crsr-sw-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-text">
+                  <span class="kss-nav__ref ">4.35</span
+                  ><span class="kss-nav__name">.crsr-text</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-vertical-text">
+                  <span class="kss-nav__ref ">4.36</span
+                  ><span class="kss-nav__name">.crsr-vertical-text</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-w-resize">
+                  <span class="kss-nav__ref ">4.37</span
+                  ><span class="kss-nav__name">.crsr-w-resize</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-wait">
+                  <span class="kss-nav__ref ">4.38</span
+                  ><span class="kss-nav__name">.crsr-wait</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-zoom-in">
+                  <span class="kss-nav__ref ">4.39</span
+                  ><span class="kss-nav__name">.crsr-zoom-in</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-cursor.html#kssref-cursor-zoom-out">
+                  <span class="kss-nav__ref ">4.40</span
+                  ><span class="kss-nav__name">.crsr-zoom-out</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-display.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-flex.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Flex</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-font.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Font</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-margin.html">
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Margin</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-overflow.html">
+          <span class="kss-nav__ref">9</span><span class="kss-nav__name">Overflow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-padding.html">
+          <span class="kss-nav__ref">10</span><span class="kss-nav__name">Padding</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-shadow.html">
+          <span class="kss-nav__ref">11</span><span class="kss-nav__name">Shadow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-text.html">
+          <span class="kss-nav__ref">12</span><span class="kss-nav__name">Text</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-width.html">
+          <span class="kss-nav__ref">13</span><span class="kss-nav__name">Width</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-cursor" class="kss-section kss-section--depth-1 is-fullscreen">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-cursor">
+            <span class="kss-title__ref">
+              4
+              <span class="kss-title__permalink-hash">
+                  #Cursor
+              </span>
+            </span>
+            Cursor
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <p>Classes for setting the mouse cursor while over an element.</p>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>minimal.css</code>, line 1945
+        </div>
+
+    </div>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

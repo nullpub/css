@@ -1,0 +1,13 @@
+@import './font-variables.scss';
+
+:root {
+  @each $label, $value in $font-size-styles {
+    --#{$font-size-var-prefix}-#{$label}: #{$value};
+  }
+}
+
+:root {
+  @each $label, $value in $font-weight-styles {
+    --#{$font-weight-var-prefix}-#{$label}: #{$value};
+  }
+}

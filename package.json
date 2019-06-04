@@ -1,23 +1,25 @@
 {
   "name": "@nll/css",
-  "version": "6.7.1",
+  "version": "7.0.0-3",
   "description": "A bunch of css utility classes",
   "files": [
     "src",
     "dist"
   ],
   "scripts": {
-    "start": "postcss src/full.css -o dist/full.css -w",
-    "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip",
-    "build:full": "postcss src/full.css -o dist/full.css",
-    "build:minimal": "postcss src/minimal.css -o dist/minimal.css",
-    "build:full-no-reset": "postcss src/full-no-reset.css -o dist/full-no-reset.css",
-    "build:minimal-no-reset": "postcss src/minimal-no-reset.css -o dist/minimal-no-reset.css",
-    "build:tools:flex": "postcss src/tools/flex.css -o dist/tools/flex.css",
-    "build:tools:fluid": "postcss src/tools/fluid.css -o dist/tools/fluid.css",
-    "clean": "rm -rf dist",
-    "gzip": "gzip -k -f dist/*.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx sass --watch src/full.scss dist/full/full.css",
+    "build": "npm run clean && concurrently --no-color \"npm:build:*\" && npm run gzip && npm run docs",
+    "build:full": "npx sass src/full.scss dist/full/full.css",
+    "build:full.min": "npx sass --style=compressed src/full.scss dist/full/full.min.css",
+    "build:minimal": "npx sass src/minimal.scss dist/minimal/minimal.css",
+    "build:minimal.min": "npx sass --style=compressed src/minimal.scss dist/minimal/minimal.min.css",
+    "build:reset": "npx sass src/reset.scss dist/reset/reset.css",
+    "build:reset.min": "npx sass --style=compressed src/reset.scss dist/reset/reset.min.css",
+    "docs": "concurrently --no-color \"npm:docs:*\" && cp -R dist/* docs/ && cp static/index.html docs/",
+    "docs:full": "npx kss --source dist/full/ --destination docs/full --css ./full.min.css --homepage ./static/home-full.md",
+    "docs:minimal": "npx kss --source dist/minimal/ --destination docs/minimal --css ./minimal.min.css --homepage ./static/home-minimal.md",
+    "clean": "rm -rf dist && rm -rf docs",
+    "gzip": "gzip -k -f dist/*/*.css",
     "release": "npx standard-version",
     "prepublishOnly": "npm run build"
   },
@@ -38,16 +40,8 @@
   "homepage": "https://github.com/nullpub/css#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^6.1.2",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-each": "^0.10.0",
-    "postcss-extend-rule": "^2.0.0",
-    "postcss-for": "^2.1.1",
-    "postcss-import": "^12.0.1",
-    "postcss-simple-vars": "^5.0.2",
-    "postcss-style-guide": "^0.14.0",
+    "kss": "^3.0.0-beta.25",
+    "sass": "^1.20.3",
     "standard-version": "^5.0.2"
   }
 }

@@ -1,0 +1,26 @@
+@import '../variables/breakpoints.scss';
+
+@import './display-variables.scss';
+
+@each $breakLabel, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @each $displayLabel, $style in $display-styles {
+      /*
+      .#{$display-class-prefix}-#{$breakLabel}-#{$displayLabel}
+
+      Sets the display property of an element to #{$style} on #{$breakLabel}.
+
+      Markup:
+      <div class="{{modifier_class}}">A div</div>
+
+      .#{$display-class-prefix}-#{$breakLabel}-#{$displayLabel} - Sets diplay to #{$style} on #{$breakLabel}
+
+      Styleguide Display - #{$displayLabel} - #{$breakLabel}
+      */
+
+      .#{$display-class-prefix}-#{$breakLabel}-#{$displayLabel} {
+        display: #{$style};
+      }
+    }
+  }
+}

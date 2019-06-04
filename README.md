@@ -1,7 +1,5 @@
 # @nll/css
 
-## [Documentation](https://css.null.pub)
-
 Another CSS utility library.
 
 - CSS variables for everything
