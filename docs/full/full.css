@@ -10225,6 +10225,117 @@ Styleguide Font - Weight - d3
   font-weight: var(--font-weight-d3);
 }
 
+/*
+Height
+
+Classes for setting the height, max-height, an min-height of an element (or its children).
+
+Styleguide Height
+*/
+/*
+.vh[mx,mn]-p25
+
+Sets the height, max-height, or min-height of element to css var for p25.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-p25 - Sets height to p25
+.vhmn-p25 - Sets min-height to p25
+.vhmx-p25 - Sets max-height to p25
+
+Styleguide Height - p25
+*/
+.vh-p25 {
+  height: var(--height-p25);
+}
+
+.vhmn-p25 {
+  min-height: var(--height-p25);
+}
+
+.vhmx-p25 {
+  max-height: var(--height-p25);
+}
+
+/*
+.vh[mx,mn]-p50
+
+Sets the height, max-height, or min-height of element to css var for p50.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-p50 - Sets height to p50
+.vhmn-p50 - Sets min-height to p50
+.vhmx-p50 - Sets max-height to p50
+
+Styleguide Height - p50
+*/
+.vh-p50 {
+  height: var(--height-p50);
+}
+
+.vhmn-p50 {
+  min-height: var(--height-p50);
+}
+
+.vhmx-p50 {
+  max-height: var(--height-p50);
+}
+
+/*
+.vh[mx,mn]-p100
+
+Sets the height, max-height, or min-height of element to css var for p100.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-p100 - Sets height to p100
+.vhmn-p100 - Sets min-height to p100
+.vhmx-p100 - Sets max-height to p100
+
+Styleguide Height - p100
+*/
+.vh-p100 {
+  height: var(--height-p100);
+}
+
+.vhmn-p100 {
+  min-height: var(--height-p100);
+}
+
+.vhmx-p100 {
+  max-height: var(--height-p100);
+}
+
+/*
+.vh[mx,mn]-vh100
+
+Sets the height, max-height, or min-height of element to css var for vh100.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-vh100 - Sets height to vh100
+.vhmn-vh100 - Sets min-height to vh100
+.vhmx-vh100 - Sets max-height to vh100
+
+Styleguide Height - vh100
+*/
+.vh-vh100 {
+  height: var(--height-vh100);
+}
+
+.vhmn-vh100 {
+  min-height: var(--height-vh100);
+}
+
+.vhmx-vh100 {
+  max-height: var(--height-vh100);
+}
+
 :root {
   --margin-width-0: calc(
     var(--fill-size) * 0
@@ -13619,4133 +13730,4133 @@ Classes for setting the width, max-width, an min-width of an element's immediate
 Styleguide Child Width
 */
 /*
-.wh[mx,mn]-p10
+.vw[mx,mn]-p10
 
 Sets the width, max-width, or min-width of element to css var for p10.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p10 - Sets width to p10
-.whmn-p10 - Sets min-width to p10
-.whmx-p10 - Sets max-width to p10
+.vw-p10 - Sets width to p10
+.vwmn-p10 - Sets min-width to p10
+.vwmx-p10 - Sets max-width to p10
 
 Styleguide Width - p10
 */
 /*
-.wc[mx,mn]-p10
+.vwc[mx,mn]-p10
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p10.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p10 - Sets width of immediate children to p10
-.wcmn-p10 - Sets min-width of immediate children to p10
-.wcmx-p10 - Sets max-width of immediate children to p10
+.vwc-p10 - Sets width of immediate children to p10
+.vwcmn-p10 - Sets min-width of immediate children to p10
+.vwcmx-p10 - Sets max-width of immediate children to p10
 
 Styleguide Child Width - p10
 */
-.wh-p10,
-.wc-p10 > * {
+.vw-p10,
+.vwc-p10 > * {
   width: var(--width-p10);
 }
 
-.whmn-p10,
-.wcmn-p10 > * {
+.vwmn-p10,
+.vwcmn-p10 > * {
   min-width: var(--width-p10);
 }
 
-.whmx-p10,
-.wcmx-p10 > * {
+.vwmx-p10,
+.vwcmx-p10 > * {
   max-width: var(--width-p10);
 }
 
 /*
-.wh[mx,mn]-p20
+.vw[mx,mn]-p20
 
 Sets the width, max-width, or min-width of element to css var for p20.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p20 - Sets width to p20
-.whmn-p20 - Sets min-width to p20
-.whmx-p20 - Sets max-width to p20
+.vw-p20 - Sets width to p20
+.vwmn-p20 - Sets min-width to p20
+.vwmx-p20 - Sets max-width to p20
 
 Styleguide Width - p20
 */
 /*
-.wc[mx,mn]-p20
+.vwc[mx,mn]-p20
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p20.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p20 - Sets width of immediate children to p20
-.wcmn-p20 - Sets min-width of immediate children to p20
-.wcmx-p20 - Sets max-width of immediate children to p20
+.vwc-p20 - Sets width of immediate children to p20
+.vwcmn-p20 - Sets min-width of immediate children to p20
+.vwcmx-p20 - Sets max-width of immediate children to p20
 
 Styleguide Child Width - p20
 */
-.wh-p20,
-.wc-p20 > * {
+.vw-p20,
+.vwc-p20 > * {
   width: var(--width-p20);
 }
 
-.whmn-p20,
-.wcmn-p20 > * {
+.vwmn-p20,
+.vwcmn-p20 > * {
   min-width: var(--width-p20);
 }
 
-.whmx-p20,
-.wcmx-p20 > * {
+.vwmx-p20,
+.vwcmx-p20 > * {
   max-width: var(--width-p20);
 }
 
 /*
-.wh[mx,mn]-p25
+.vw[mx,mn]-p25
 
 Sets the width, max-width, or min-width of element to css var for p25.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p25 - Sets width to p25
-.whmn-p25 - Sets min-width to p25
-.whmx-p25 - Sets max-width to p25
+.vw-p25 - Sets width to p25
+.vwmn-p25 - Sets min-width to p25
+.vwmx-p25 - Sets max-width to p25
 
 Styleguide Width - p25
 */
 /*
-.wc[mx,mn]-p25
+.vwc[mx,mn]-p25
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p25.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p25 - Sets width of immediate children to p25
-.wcmn-p25 - Sets min-width of immediate children to p25
-.wcmx-p25 - Sets max-width of immediate children to p25
+.vwc-p25 - Sets width of immediate children to p25
+.vwcmn-p25 - Sets min-width of immediate children to p25
+.vwcmx-p25 - Sets max-width of immediate children to p25
 
 Styleguide Child Width - p25
 */
-.wh-p25,
-.wc-p25 > * {
+.vw-p25,
+.vwc-p25 > * {
   width: var(--width-p25);
 }
 
-.whmn-p25,
-.wcmn-p25 > * {
+.vwmn-p25,
+.vwcmn-p25 > * {
   min-width: var(--width-p25);
 }
 
-.whmx-p25,
-.wcmx-p25 > * {
+.vwmx-p25,
+.vwcmx-p25 > * {
   max-width: var(--width-p25);
 }
 
 /*
-.wh[mx,mn]-p30
+.vw[mx,mn]-p30
 
 Sets the width, max-width, or min-width of element to css var for p30.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p30 - Sets width to p30
-.whmn-p30 - Sets min-width to p30
-.whmx-p30 - Sets max-width to p30
+.vw-p30 - Sets width to p30
+.vwmn-p30 - Sets min-width to p30
+.vwmx-p30 - Sets max-width to p30
 
 Styleguide Width - p30
 */
 /*
-.wc[mx,mn]-p30
+.vwc[mx,mn]-p30
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p30.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p30 - Sets width of immediate children to p30
-.wcmn-p30 - Sets min-width of immediate children to p30
-.wcmx-p30 - Sets max-width of immediate children to p30
+.vwc-p30 - Sets width of immediate children to p30
+.vwcmn-p30 - Sets min-width of immediate children to p30
+.vwcmx-p30 - Sets max-width of immediate children to p30
 
 Styleguide Child Width - p30
 */
-.wh-p30,
-.wc-p30 > * {
+.vw-p30,
+.vwc-p30 > * {
   width: var(--width-p30);
 }
 
-.whmn-p30,
-.wcmn-p30 > * {
+.vwmn-p30,
+.vwcmn-p30 > * {
   min-width: var(--width-p30);
 }
 
-.whmx-p30,
-.wcmx-p30 > * {
+.vwmx-p30,
+.vwcmx-p30 > * {
   max-width: var(--width-p30);
 }
 
 /*
-.wh[mx,mn]-p40
+.vw[mx,mn]-p40
 
 Sets the width, max-width, or min-width of element to css var for p40.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p40 - Sets width to p40
-.whmn-p40 - Sets min-width to p40
-.whmx-p40 - Sets max-width to p40
+.vw-p40 - Sets width to p40
+.vwmn-p40 - Sets min-width to p40
+.vwmx-p40 - Sets max-width to p40
 
 Styleguide Width - p40
 */
 /*
-.wc[mx,mn]-p40
+.vwc[mx,mn]-p40
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p40.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p40 - Sets width of immediate children to p40
-.wcmn-p40 - Sets min-width of immediate children to p40
-.wcmx-p40 - Sets max-width of immediate children to p40
+.vwc-p40 - Sets width of immediate children to p40
+.vwcmn-p40 - Sets min-width of immediate children to p40
+.vwcmx-p40 - Sets max-width of immediate children to p40
 
 Styleguide Child Width - p40
 */
-.wh-p40,
-.wc-p40 > * {
+.vw-p40,
+.vwc-p40 > * {
   width: var(--width-p40);
 }
 
-.whmn-p40,
-.wcmn-p40 > * {
+.vwmn-p40,
+.vwcmn-p40 > * {
   min-width: var(--width-p40);
 }
 
-.whmx-p40,
-.wcmx-p40 > * {
+.vwmx-p40,
+.vwcmx-p40 > * {
   max-width: var(--width-p40);
 }
 
 /*
-.wh[mx,mn]-p50
+.vw[mx,mn]-p50
 
 Sets the width, max-width, or min-width of element to css var for p50.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p50 - Sets width to p50
-.whmn-p50 - Sets min-width to p50
-.whmx-p50 - Sets max-width to p50
+.vw-p50 - Sets width to p50
+.vwmn-p50 - Sets min-width to p50
+.vwmx-p50 - Sets max-width to p50
 
 Styleguide Width - p50
 */
 /*
-.wc[mx,mn]-p50
+.vwc[mx,mn]-p50
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p50.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p50 - Sets width of immediate children to p50
-.wcmn-p50 - Sets min-width of immediate children to p50
-.wcmx-p50 - Sets max-width of immediate children to p50
+.vwc-p50 - Sets width of immediate children to p50
+.vwcmn-p50 - Sets min-width of immediate children to p50
+.vwcmx-p50 - Sets max-width of immediate children to p50
 
 Styleguide Child Width - p50
 */
-.wh-p50,
-.wc-p50 > * {
+.vw-p50,
+.vwc-p50 > * {
   width: var(--width-p50);
 }
 
-.whmn-p50,
-.wcmn-p50 > * {
+.vwmn-p50,
+.vwcmn-p50 > * {
   min-width: var(--width-p50);
 }
 
-.whmx-p50,
-.wcmx-p50 > * {
+.vwmx-p50,
+.vwcmx-p50 > * {
   max-width: var(--width-p50);
 }
 
 /*
-.wh[mx,mn]-p60
+.vw[mx,mn]-p60
 
 Sets the width, max-width, or min-width of element to css var for p60.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p60 - Sets width to p60
-.whmn-p60 - Sets min-width to p60
-.whmx-p60 - Sets max-width to p60
+.vw-p60 - Sets width to p60
+.vwmn-p60 - Sets min-width to p60
+.vwmx-p60 - Sets max-width to p60
 
 Styleguide Width - p60
 */
 /*
-.wc[mx,mn]-p60
+.vwc[mx,mn]-p60
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p60.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p60 - Sets width of immediate children to p60
-.wcmn-p60 - Sets min-width of immediate children to p60
-.wcmx-p60 - Sets max-width of immediate children to p60
+.vwc-p60 - Sets width of immediate children to p60
+.vwcmn-p60 - Sets min-width of immediate children to p60
+.vwcmx-p60 - Sets max-width of immediate children to p60
 
 Styleguide Child Width - p60
 */
-.wh-p60,
-.wc-p60 > * {
+.vw-p60,
+.vwc-p60 > * {
   width: var(--width-p60);
 }
 
-.whmn-p60,
-.wcmn-p60 > * {
+.vwmn-p60,
+.vwcmn-p60 > * {
   min-width: var(--width-p60);
 }
 
-.whmx-p60,
-.wcmx-p60 > * {
+.vwmx-p60,
+.vwcmx-p60 > * {
   max-width: var(--width-p60);
 }
 
 /*
-.wh[mx,mn]-p70
+.vw[mx,mn]-p70
 
 Sets the width, max-width, or min-width of element to css var for p70.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p70 - Sets width to p70
-.whmn-p70 - Sets min-width to p70
-.whmx-p70 - Sets max-width to p70
+.vw-p70 - Sets width to p70
+.vwmn-p70 - Sets min-width to p70
+.vwmx-p70 - Sets max-width to p70
 
 Styleguide Width - p70
 */
 /*
-.wc[mx,mn]-p70
+.vwc[mx,mn]-p70
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p70.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p70 - Sets width of immediate children to p70
-.wcmn-p70 - Sets min-width of immediate children to p70
-.wcmx-p70 - Sets max-width of immediate children to p70
+.vwc-p70 - Sets width of immediate children to p70
+.vwcmn-p70 - Sets min-width of immediate children to p70
+.vwcmx-p70 - Sets max-width of immediate children to p70
 
 Styleguide Child Width - p70
 */
-.wh-p70,
-.wc-p70 > * {
+.vw-p70,
+.vwc-p70 > * {
   width: var(--width-p70);
 }
 
-.whmn-p70,
-.wcmn-p70 > * {
+.vwmn-p70,
+.vwcmn-p70 > * {
   min-width: var(--width-p70);
 }
 
-.whmx-p70,
-.wcmx-p70 > * {
+.vwmx-p70,
+.vwcmx-p70 > * {
   max-width: var(--width-p70);
 }
 
 /*
-.wh[mx,mn]-p75
+.vw[mx,mn]-p75
 
 Sets the width, max-width, or min-width of element to css var for p75.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p75 - Sets width to p75
-.whmn-p75 - Sets min-width to p75
-.whmx-p75 - Sets max-width to p75
+.vw-p75 - Sets width to p75
+.vwmn-p75 - Sets min-width to p75
+.vwmx-p75 - Sets max-width to p75
 
 Styleguide Width - p75
 */
 /*
-.wc[mx,mn]-p75
+.vwc[mx,mn]-p75
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p75.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p75 - Sets width of immediate children to p75
-.wcmn-p75 - Sets min-width of immediate children to p75
-.wcmx-p75 - Sets max-width of immediate children to p75
+.vwc-p75 - Sets width of immediate children to p75
+.vwcmn-p75 - Sets min-width of immediate children to p75
+.vwcmx-p75 - Sets max-width of immediate children to p75
 
 Styleguide Child Width - p75
 */
-.wh-p75,
-.wc-p75 > * {
+.vw-p75,
+.vwc-p75 > * {
   width: var(--width-p75);
 }
 
-.whmn-p75,
-.wcmn-p75 > * {
+.vwmn-p75,
+.vwcmn-p75 > * {
   min-width: var(--width-p75);
 }
 
-.whmx-p75,
-.wcmx-p75 > * {
+.vwmx-p75,
+.vwcmx-p75 > * {
   max-width: var(--width-p75);
 }
 
 /*
-.wh[mx,mn]-p80
+.vw[mx,mn]-p80
 
 Sets the width, max-width, or min-width of element to css var for p80.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p80 - Sets width to p80
-.whmn-p80 - Sets min-width to p80
-.whmx-p80 - Sets max-width to p80
+.vw-p80 - Sets width to p80
+.vwmn-p80 - Sets min-width to p80
+.vwmx-p80 - Sets max-width to p80
 
 Styleguide Width - p80
 */
 /*
-.wc[mx,mn]-p80
+.vwc[mx,mn]-p80
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p80.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p80 - Sets width of immediate children to p80
-.wcmn-p80 - Sets min-width of immediate children to p80
-.wcmx-p80 - Sets max-width of immediate children to p80
+.vwc-p80 - Sets width of immediate children to p80
+.vwcmn-p80 - Sets min-width of immediate children to p80
+.vwcmx-p80 - Sets max-width of immediate children to p80
 
 Styleguide Child Width - p80
 */
-.wh-p80,
-.wc-p80 > * {
+.vw-p80,
+.vwc-p80 > * {
   width: var(--width-p80);
 }
 
-.whmn-p80,
-.wcmn-p80 > * {
+.vwmn-p80,
+.vwcmn-p80 > * {
   min-width: var(--width-p80);
 }
 
-.whmx-p80,
-.wcmx-p80 > * {
+.vwmx-p80,
+.vwcmx-p80 > * {
   max-width: var(--width-p80);
 }
 
 /*
-.wh[mx,mn]-p90
+.vw[mx,mn]-p90
 
 Sets the width, max-width, or min-width of element to css var for p90.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p90 - Sets width to p90
-.whmn-p90 - Sets min-width to p90
-.whmx-p90 - Sets max-width to p90
+.vw-p90 - Sets width to p90
+.vwmn-p90 - Sets min-width to p90
+.vwmx-p90 - Sets max-width to p90
 
 Styleguide Width - p90
 */
 /*
-.wc[mx,mn]-p90
+.vwc[mx,mn]-p90
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p90.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p90 - Sets width of immediate children to p90
-.wcmn-p90 - Sets min-width of immediate children to p90
-.wcmx-p90 - Sets max-width of immediate children to p90
+.vwc-p90 - Sets width of immediate children to p90
+.vwcmn-p90 - Sets min-width of immediate children to p90
+.vwcmx-p90 - Sets max-width of immediate children to p90
 
 Styleguide Child Width - p90
 */
-.wh-p90,
-.wc-p90 > * {
+.vw-p90,
+.vwc-p90 > * {
   width: var(--width-p90);
 }
 
-.whmn-p90,
-.wcmn-p90 > * {
+.vwmn-p90,
+.vwcmn-p90 > * {
   min-width: var(--width-p90);
 }
 
-.whmx-p90,
-.wcmx-p90 > * {
+.vwmx-p90,
+.vwcmx-p90 > * {
   max-width: var(--width-p90);
 }
 
 /*
-.wh[mx,mn]-p100
+.vw[mx,mn]-p100
 
 Sets the width, max-width, or min-width of element to css var for p100.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-p100 - Sets width to p100
-.whmn-p100 - Sets min-width to p100
-.whmx-p100 - Sets max-width to p100
+.vw-p100 - Sets width to p100
+.vwmn-p100 - Sets min-width to p100
+.vwmx-p100 - Sets max-width to p100
 
 Styleguide Width - p100
 */
 /*
-.wc[mx,mn]-p100
+.vwc[mx,mn]-p100
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for p100.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-p100 - Sets width of immediate children to p100
-.wcmn-p100 - Sets min-width of immediate children to p100
-.wcmx-p100 - Sets max-width of immediate children to p100
+.vwc-p100 - Sets width of immediate children to p100
+.vwcmn-p100 - Sets min-width of immediate children to p100
+.vwcmx-p100 - Sets max-width of immediate children to p100
 
 Styleguide Child Width - p100
 */
-.wh-p100,
-.wc-p100 > * {
+.vw-p100,
+.vwc-p100 > * {
   width: var(--width-p100);
 }
 
-.whmn-p100,
-.wcmn-p100 > * {
+.vwmn-p100,
+.vwcmn-p100 > * {
   min-width: var(--width-p100);
 }
 
-.whmx-p100,
-.wcmx-p100 > * {
+.vwmx-p100,
+.vwcmx-p100 > * {
   max-width: var(--width-p100);
 }
 
 /*
-.wh[mx,mn]-ch0
+.vw[mx,mn]-ch0
 
 Sets the width, max-width, or min-width of element to css var for ch0.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-ch0 - Sets width to ch0
-.whmn-ch0 - Sets min-width to ch0
-.whmx-ch0 - Sets max-width to ch0
+.vw-ch0 - Sets width to ch0
+.vwmn-ch0 - Sets min-width to ch0
+.vwmx-ch0 - Sets max-width to ch0
 
 Styleguide Width - ch0
 */
 /*
-.wc[mx,mn]-ch0
+.vwc[mx,mn]-ch0
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for ch0.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-ch0 - Sets width of immediate children to ch0
-.wcmn-ch0 - Sets min-width of immediate children to ch0
-.wcmx-ch0 - Sets max-width of immediate children to ch0
+.vwc-ch0 - Sets width of immediate children to ch0
+.vwcmn-ch0 - Sets min-width of immediate children to ch0
+.vwcmx-ch0 - Sets max-width of immediate children to ch0
 
 Styleguide Child Width - ch0
 */
-.wh-ch0,
-.wc-ch0 > * {
+.vw-ch0,
+.vwc-ch0 > * {
   width: var(--width-ch0);
 }
 
-.whmn-ch0,
-.wcmn-ch0 > * {
+.vwmn-ch0,
+.vwcmn-ch0 > * {
   min-width: var(--width-ch0);
 }
 
-.whmx-ch0,
-.wcmx-ch0 > * {
+.vwmx-ch0,
+.vwcmx-ch0 > * {
   max-width: var(--width-ch0);
 }
 
 /*
-.wh[mx,mn]-ch1
+.vw[mx,mn]-ch1
 
 Sets the width, max-width, or min-width of element to css var for ch1.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-ch1 - Sets width to ch1
-.whmn-ch1 - Sets min-width to ch1
-.whmx-ch1 - Sets max-width to ch1
+.vw-ch1 - Sets width to ch1
+.vwmn-ch1 - Sets min-width to ch1
+.vwmx-ch1 - Sets max-width to ch1
 
 Styleguide Width - ch1
 */
 /*
-.wc[mx,mn]-ch1
+.vwc[mx,mn]-ch1
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for ch1.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-ch1 - Sets width of immediate children to ch1
-.wcmn-ch1 - Sets min-width of immediate children to ch1
-.wcmx-ch1 - Sets max-width of immediate children to ch1
+.vwc-ch1 - Sets width of immediate children to ch1
+.vwcmn-ch1 - Sets min-width of immediate children to ch1
+.vwcmx-ch1 - Sets max-width of immediate children to ch1
 
 Styleguide Child Width - ch1
 */
-.wh-ch1,
-.wc-ch1 > * {
+.vw-ch1,
+.vwc-ch1 > * {
   width: var(--width-ch1);
 }
 
-.whmn-ch1,
-.wcmn-ch1 > * {
+.vwmn-ch1,
+.vwcmn-ch1 > * {
   min-width: var(--width-ch1);
 }
 
-.whmx-ch1,
-.wcmx-ch1 > * {
+.vwmx-ch1,
+.vwcmx-ch1 > * {
   max-width: var(--width-ch1);
 }
 
 /*
-.wh[mx,mn]-ch2
+.vw[mx,mn]-ch2
 
 Sets the width, max-width, or min-width of element to css var for ch2.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-ch2 - Sets width to ch2
-.whmn-ch2 - Sets min-width to ch2
-.whmx-ch2 - Sets max-width to ch2
+.vw-ch2 - Sets width to ch2
+.vwmn-ch2 - Sets min-width to ch2
+.vwmx-ch2 - Sets max-width to ch2
 
 Styleguide Width - ch2
 */
 /*
-.wc[mx,mn]-ch2
+.vwc[mx,mn]-ch2
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for ch2.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-ch2 - Sets width of immediate children to ch2
-.wcmn-ch2 - Sets min-width of immediate children to ch2
-.wcmx-ch2 - Sets max-width of immediate children to ch2
+.vwc-ch2 - Sets width of immediate children to ch2
+.vwcmn-ch2 - Sets min-width of immediate children to ch2
+.vwcmx-ch2 - Sets max-width of immediate children to ch2
 
 Styleguide Child Width - ch2
 */
-.wh-ch2,
-.wc-ch2 > * {
+.vw-ch2,
+.vwc-ch2 > * {
   width: var(--width-ch2);
 }
 
-.whmn-ch2,
-.wcmn-ch2 > * {
+.vwmn-ch2,
+.vwcmn-ch2 > * {
   min-width: var(--width-ch2);
 }
 
-.whmx-ch2,
-.wcmx-ch2 > * {
+.vwmx-ch2,
+.vwcmx-ch2 > * {
   max-width: var(--width-ch2);
 }
 
 /*
-.wh[mx,mn]-ch3
+.vw[mx,mn]-ch3
 
 Sets the width, max-width, or min-width of element to css var for ch3.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-ch3 - Sets width to ch3
-.whmn-ch3 - Sets min-width to ch3
-.whmx-ch3 - Sets max-width to ch3
+.vw-ch3 - Sets width to ch3
+.vwmn-ch3 - Sets min-width to ch3
+.vwmx-ch3 - Sets max-width to ch3
 
 Styleguide Width - ch3
 */
 /*
-.wc[mx,mn]-ch3
+.vwc[mx,mn]-ch3
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for ch3.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-ch3 - Sets width of immediate children to ch3
-.wcmn-ch3 - Sets min-width of immediate children to ch3
-.wcmx-ch3 - Sets max-width of immediate children to ch3
+.vwc-ch3 - Sets width of immediate children to ch3
+.vwcmn-ch3 - Sets min-width of immediate children to ch3
+.vwcmx-ch3 - Sets max-width of immediate children to ch3
 
 Styleguide Child Width - ch3
 */
-.wh-ch3,
-.wc-ch3 > * {
+.vw-ch3,
+.vwc-ch3 > * {
   width: var(--width-ch3);
 }
 
-.whmn-ch3,
-.wcmn-ch3 > * {
+.vwmn-ch3,
+.vwcmn-ch3 > * {
   min-width: var(--width-ch3);
 }
 
-.whmx-ch3,
-.wcmx-ch3 > * {
+.vwmx-ch3,
+.vwcmx-ch3 > * {
   max-width: var(--width-ch3);
 }
 
 /*
-.wh[mx,mn]-ch4
+.vw[mx,mn]-ch4
 
 Sets the width, max-width, or min-width of element to css var for ch4.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-ch4 - Sets width to ch4
-.whmn-ch4 - Sets min-width to ch4
-.whmx-ch4 - Sets max-width to ch4
+.vw-ch4 - Sets width to ch4
+.vwmn-ch4 - Sets min-width to ch4
+.vwmx-ch4 - Sets max-width to ch4
 
 Styleguide Width - ch4
 */
 /*
-.wc[mx,mn]-ch4
+.vwc[mx,mn]-ch4
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for ch4.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-ch4 - Sets width of immediate children to ch4
-.wcmn-ch4 - Sets min-width of immediate children to ch4
-.wcmx-ch4 - Sets max-width of immediate children to ch4
+.vwc-ch4 - Sets width of immediate children to ch4
+.vwcmn-ch4 - Sets min-width of immediate children to ch4
+.vwcmx-ch4 - Sets max-width of immediate children to ch4
 
 Styleguide Child Width - ch4
 */
-.wh-ch4,
-.wc-ch4 > * {
+.vw-ch4,
+.vwc-ch4 > * {
   width: var(--width-ch4);
 }
 
-.whmn-ch4,
-.wcmn-ch4 > * {
+.vwmn-ch4,
+.vwcmn-ch4 > * {
   min-width: var(--width-ch4);
 }
 
-.whmx-ch4,
-.wcmx-ch4 > * {
+.vwmx-ch4,
+.vwcmx-ch4 > * {
   max-width: var(--width-ch4);
 }
 
 /*
-.wh[mx,mn]-px0
+.vw[mx,mn]-px0
 
 Sets the width, max-width, or min-width of element to css var for px0.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-px0 - Sets width to px0
-.whmn-px0 - Sets min-width to px0
-.whmx-px0 - Sets max-width to px0
+.vw-px0 - Sets width to px0
+.vwmn-px0 - Sets min-width to px0
+.vwmx-px0 - Sets max-width to px0
 
 Styleguide Width - px0
 */
 /*
-.wc[mx,mn]-px0
+.vwc[mx,mn]-px0
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for px0.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-px0 - Sets width of immediate children to px0
-.wcmn-px0 - Sets min-width of immediate children to px0
-.wcmx-px0 - Sets max-width of immediate children to px0
+.vwc-px0 - Sets width of immediate children to px0
+.vwcmn-px0 - Sets min-width of immediate children to px0
+.vwcmx-px0 - Sets max-width of immediate children to px0
 
 Styleguide Child Width - px0
 */
-.wh-px0,
-.wc-px0 > * {
+.vw-px0,
+.vwc-px0 > * {
   width: var(--width-px0);
 }
 
-.whmn-px0,
-.wcmn-px0 > * {
+.vwmn-px0,
+.vwcmn-px0 > * {
   min-width: var(--width-px0);
 }
 
-.whmx-px0,
-.wcmx-px0 > * {
+.vwmx-px0,
+.vwcmx-px0 > * {
   max-width: var(--width-px0);
 }
 
 /*
-.wh[mx,mn]-px1
+.vw[mx,mn]-px1
 
 Sets the width, max-width, or min-width of element to css var for px1.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-px1 - Sets width to px1
-.whmn-px1 - Sets min-width to px1
-.whmx-px1 - Sets max-width to px1
+.vw-px1 - Sets width to px1
+.vwmn-px1 - Sets min-width to px1
+.vwmx-px1 - Sets max-width to px1
 
 Styleguide Width - px1
 */
 /*
-.wc[mx,mn]-px1
+.vwc[mx,mn]-px1
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for px1.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-px1 - Sets width of immediate children to px1
-.wcmn-px1 - Sets min-width of immediate children to px1
-.wcmx-px1 - Sets max-width of immediate children to px1
+.vwc-px1 - Sets width of immediate children to px1
+.vwcmn-px1 - Sets min-width of immediate children to px1
+.vwcmx-px1 - Sets max-width of immediate children to px1
 
 Styleguide Child Width - px1
 */
-.wh-px1,
-.wc-px1 > * {
+.vw-px1,
+.vwc-px1 > * {
   width: var(--width-px1);
 }
 
-.whmn-px1,
-.wcmn-px1 > * {
+.vwmn-px1,
+.vwcmn-px1 > * {
   min-width: var(--width-px1);
 }
 
-.whmx-px1,
-.wcmx-px1 > * {
+.vwmx-px1,
+.vwcmx-px1 > * {
   max-width: var(--width-px1);
 }
 
 /*
-.wh[mx,mn]-px2
+.vw[mx,mn]-px2
 
 Sets the width, max-width, or min-width of element to css var for px2.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-px2 - Sets width to px2
-.whmn-px2 - Sets min-width to px2
-.whmx-px2 - Sets max-width to px2
+.vw-px2 - Sets width to px2
+.vwmn-px2 - Sets min-width to px2
+.vwmx-px2 - Sets max-width to px2
 
 Styleguide Width - px2
 */
 /*
-.wc[mx,mn]-px2
+.vwc[mx,mn]-px2
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for px2.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-px2 - Sets width of immediate children to px2
-.wcmn-px2 - Sets min-width of immediate children to px2
-.wcmx-px2 - Sets max-width of immediate children to px2
+.vwc-px2 - Sets width of immediate children to px2
+.vwcmn-px2 - Sets min-width of immediate children to px2
+.vwcmx-px2 - Sets max-width of immediate children to px2
 
 Styleguide Child Width - px2
 */
-.wh-px2,
-.wc-px2 > * {
+.vw-px2,
+.vwc-px2 > * {
   width: var(--width-px2);
 }
 
-.whmn-px2,
-.wcmn-px2 > * {
+.vwmn-px2,
+.vwcmn-px2 > * {
   min-width: var(--width-px2);
 }
 
-.whmx-px2,
-.wcmx-px2 > * {
+.vwmx-px2,
+.vwcmx-px2 > * {
   max-width: var(--width-px2);
 }
 
 /*
-.wh[mx,mn]-px3
+.vw[mx,mn]-px3
 
 Sets the width, max-width, or min-width of element to css var for px3.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-px3 - Sets width to px3
-.whmn-px3 - Sets min-width to px3
-.whmx-px3 - Sets max-width to px3
+.vw-px3 - Sets width to px3
+.vwmn-px3 - Sets min-width to px3
+.vwmx-px3 - Sets max-width to px3
 
 Styleguide Width - px3
 */
 /*
-.wc[mx,mn]-px3
+.vwc[mx,mn]-px3
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for px3.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-px3 - Sets width of immediate children to px3
-.wcmn-px3 - Sets min-width of immediate children to px3
-.wcmx-px3 - Sets max-width of immediate children to px3
+.vwc-px3 - Sets width of immediate children to px3
+.vwcmn-px3 - Sets min-width of immediate children to px3
+.vwcmx-px3 - Sets max-width of immediate children to px3
 
 Styleguide Child Width - px3
 */
-.wh-px3,
-.wc-px3 > * {
+.vw-px3,
+.vwc-px3 > * {
   width: var(--width-px3);
 }
 
-.whmn-px3,
-.wcmn-px3 > * {
+.vwmn-px3,
+.vwcmn-px3 > * {
   min-width: var(--width-px3);
 }
 
-.whmx-px3,
-.wcmx-px3 > * {
+.vwmx-px3,
+.vwcmx-px3 > * {
   max-width: var(--width-px3);
 }
 
 /*
-.wh[mx,mn]-em0
+.vw[mx,mn]-em0
 
 Sets the width, max-width, or min-width of element to css var for em0.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-em0 - Sets width to em0
-.whmn-em0 - Sets min-width to em0
-.whmx-em0 - Sets max-width to em0
+.vw-em0 - Sets width to em0
+.vwmn-em0 - Sets min-width to em0
+.vwmx-em0 - Sets max-width to em0
 
 Styleguide Width - em0
 */
 /*
-.wc[mx,mn]-em0
+.vwc[mx,mn]-em0
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for em0.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-em0 - Sets width of immediate children to em0
-.wcmn-em0 - Sets min-width of immediate children to em0
-.wcmx-em0 - Sets max-width of immediate children to em0
+.vwc-em0 - Sets width of immediate children to em0
+.vwcmn-em0 - Sets min-width of immediate children to em0
+.vwcmx-em0 - Sets max-width of immediate children to em0
 
 Styleguide Child Width - em0
 */
-.wh-em0,
-.wc-em0 > * {
+.vw-em0,
+.vwc-em0 > * {
   width: var(--width-em0);
 }
 
-.whmn-em0,
-.wcmn-em0 > * {
+.vwmn-em0,
+.vwcmn-em0 > * {
   min-width: var(--width-em0);
 }
 
-.whmx-em0,
-.wcmx-em0 > * {
+.vwmx-em0,
+.vwcmx-em0 > * {
   max-width: var(--width-em0);
 }
 
 /*
-.wh[mx,mn]-em1
+.vw[mx,mn]-em1
 
 Sets the width, max-width, or min-width of element to css var for em1.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-em1 - Sets width to em1
-.whmn-em1 - Sets min-width to em1
-.whmx-em1 - Sets max-width to em1
+.vw-em1 - Sets width to em1
+.vwmn-em1 - Sets min-width to em1
+.vwmx-em1 - Sets max-width to em1
 
 Styleguide Width - em1
 */
 /*
-.wc[mx,mn]-em1
+.vwc[mx,mn]-em1
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for em1.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-em1 - Sets width of immediate children to em1
-.wcmn-em1 - Sets min-width of immediate children to em1
-.wcmx-em1 - Sets max-width of immediate children to em1
+.vwc-em1 - Sets width of immediate children to em1
+.vwcmn-em1 - Sets min-width of immediate children to em1
+.vwcmx-em1 - Sets max-width of immediate children to em1
 
 Styleguide Child Width - em1
 */
-.wh-em1,
-.wc-em1 > * {
+.vw-em1,
+.vwc-em1 > * {
   width: var(--width-em1);
 }
 
-.whmn-em1,
-.wcmn-em1 > * {
+.vwmn-em1,
+.vwcmn-em1 > * {
   min-width: var(--width-em1);
 }
 
-.whmx-em1,
-.wcmx-em1 > * {
+.vwmx-em1,
+.vwcmx-em1 > * {
   max-width: var(--width-em1);
 }
 
 /*
-.wh[mx,mn]-em2
+.vw[mx,mn]-em2
 
 Sets the width, max-width, or min-width of element to css var for em2.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}">A div</div>
 
-.wh-em2 - Sets width to em2
-.whmn-em2 - Sets min-width to em2
-.whmx-em2 - Sets max-width to em2
+.vw-em2 - Sets width to em2
+.vwmn-em2 - Sets min-width to em2
+.vwmx-em2 - Sets max-width to em2
 
 Styleguide Width - em2
 */
 /*
-.wc[mx,mn]-em2
+.vwc[mx,mn]-em2
 
 Sets the width, max-width, or min-width of an elements immediate children to css var for em2.
 
 Markup:
 <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-.wc-em2 - Sets width of immediate children to em2
-.wcmn-em2 - Sets min-width of immediate children to em2
-.wcmx-em2 - Sets max-width of immediate children to em2
+.vwc-em2 - Sets width of immediate children to em2
+.vwcmn-em2 - Sets min-width of immediate children to em2
+.vwcmx-em2 - Sets max-width of immediate children to em2
 
 Styleguide Child Width - em2
 */
-.wh-em2,
-.wc-em2 > * {
+.vw-em2,
+.vwc-em2 > * {
   width: var(--width-em2);
 }
 
-.whmn-em2,
-.wcmn-em2 > * {
+.vwmn-em2,
+.vwcmn-em2 > * {
   min-width: var(--width-em2);
 }
 
-.whmx-em2,
-.wcmx-em2 > * {
+.vwmx-em2,
+.vwcmx-em2 > * {
   max-width: var(--width-em2);
 }
 
 @media (min-width: 50em) {
   /*
-  .wh[mn,mx]-sm-p10
+  .vw[mn,mx]-sm-p10
 
   Sets the width, max-width, or min-width of element to css var for p10 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p10 - Sets width to p10 on sm
-  .whmn-sm-p10 - Sets min-width to p10 on sm
-  .whmx-sm-p10 - Sets max-width to p10 on sm
+  .vw-sm-p10 - Sets width to p10 on sm
+  .vwmn-sm-p10 - Sets min-width to p10 on sm
+  .vwmx-sm-p10 - Sets max-width to p10 on sm
 
   Styleguide Width - p10 - sm
   */
   /*
-  .wc[mn,mx]-sm-p10
+  .vwc[mn,mx]-sm-p10
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p10 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p10 - Sets width of immediate children to p10 on sm
-  .wcmn-sm-p10 - Sets min-width of immediate children to p10 on sm
-  .wcmx-sm-p10 - Sets max-width of immediate children to p10 on sm
+  .vwc-sm-p10 - Sets width of immediate children to p10 on sm
+  .vwcmn-sm-p10 - Sets min-width of immediate children to p10 on sm
+  .vwcmx-sm-p10 - Sets max-width of immediate children to p10 on sm
 
   Styleguide Child Width - p10 - sm
   */
-  .wh-sm-p10,
-.wc-sm-p10 > * {
+  .vw-sm-p10,
+.vwc-sm-p10 > * {
     width: var(--width-p10);
   }
 
-  .whmn-sm-p10,
-.wcmn-sm-p10 > * {
+  .vwmn-sm-p10,
+.vwcmn-sm-p10 > * {
     min-width: var(--width-p10);
   }
 
-  .whmx-sm-p10,
-.wcmx-sm-p10 > * {
+  .vwmx-sm-p10,
+.vwcmx-sm-p10 > * {
     max-width: var(--width-p10);
   }
 
   /*
-  .wh[mn,mx]-sm-p20
+  .vw[mn,mx]-sm-p20
 
   Sets the width, max-width, or min-width of element to css var for p20 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p20 - Sets width to p20 on sm
-  .whmn-sm-p20 - Sets min-width to p20 on sm
-  .whmx-sm-p20 - Sets max-width to p20 on sm
+  .vw-sm-p20 - Sets width to p20 on sm
+  .vwmn-sm-p20 - Sets min-width to p20 on sm
+  .vwmx-sm-p20 - Sets max-width to p20 on sm
 
   Styleguide Width - p20 - sm
   */
   /*
-  .wc[mn,mx]-sm-p20
+  .vwc[mn,mx]-sm-p20
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p20 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p20 - Sets width of immediate children to p20 on sm
-  .wcmn-sm-p20 - Sets min-width of immediate children to p20 on sm
-  .wcmx-sm-p20 - Sets max-width of immediate children to p20 on sm
+  .vwc-sm-p20 - Sets width of immediate children to p20 on sm
+  .vwcmn-sm-p20 - Sets min-width of immediate children to p20 on sm
+  .vwcmx-sm-p20 - Sets max-width of immediate children to p20 on sm
 
   Styleguide Child Width - p20 - sm
   */
-  .wh-sm-p20,
-.wc-sm-p20 > * {
+  .vw-sm-p20,
+.vwc-sm-p20 > * {
     width: var(--width-p20);
   }
 
-  .whmn-sm-p20,
-.wcmn-sm-p20 > * {
+  .vwmn-sm-p20,
+.vwcmn-sm-p20 > * {
     min-width: var(--width-p20);
   }
 
-  .whmx-sm-p20,
-.wcmx-sm-p20 > * {
+  .vwmx-sm-p20,
+.vwcmx-sm-p20 > * {
     max-width: var(--width-p20);
   }
 
   /*
-  .wh[mn,mx]-sm-p25
+  .vw[mn,mx]-sm-p25
 
   Sets the width, max-width, or min-width of element to css var for p25 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p25 - Sets width to p25 on sm
-  .whmn-sm-p25 - Sets min-width to p25 on sm
-  .whmx-sm-p25 - Sets max-width to p25 on sm
+  .vw-sm-p25 - Sets width to p25 on sm
+  .vwmn-sm-p25 - Sets min-width to p25 on sm
+  .vwmx-sm-p25 - Sets max-width to p25 on sm
 
   Styleguide Width - p25 - sm
   */
   /*
-  .wc[mn,mx]-sm-p25
+  .vwc[mn,mx]-sm-p25
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p25 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p25 - Sets width of immediate children to p25 on sm
-  .wcmn-sm-p25 - Sets min-width of immediate children to p25 on sm
-  .wcmx-sm-p25 - Sets max-width of immediate children to p25 on sm
+  .vwc-sm-p25 - Sets width of immediate children to p25 on sm
+  .vwcmn-sm-p25 - Sets min-width of immediate children to p25 on sm
+  .vwcmx-sm-p25 - Sets max-width of immediate children to p25 on sm
 
   Styleguide Child Width - p25 - sm
   */
-  .wh-sm-p25,
-.wc-sm-p25 > * {
+  .vw-sm-p25,
+.vwc-sm-p25 > * {
     width: var(--width-p25);
   }
 
-  .whmn-sm-p25,
-.wcmn-sm-p25 > * {
+  .vwmn-sm-p25,
+.vwcmn-sm-p25 > * {
     min-width: var(--width-p25);
   }
 
-  .whmx-sm-p25,
-.wcmx-sm-p25 > * {
+  .vwmx-sm-p25,
+.vwcmx-sm-p25 > * {
     max-width: var(--width-p25);
   }
 
   /*
-  .wh[mn,mx]-sm-p30
+  .vw[mn,mx]-sm-p30
 
   Sets the width, max-width, or min-width of element to css var for p30 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p30 - Sets width to p30 on sm
-  .whmn-sm-p30 - Sets min-width to p30 on sm
-  .whmx-sm-p30 - Sets max-width to p30 on sm
+  .vw-sm-p30 - Sets width to p30 on sm
+  .vwmn-sm-p30 - Sets min-width to p30 on sm
+  .vwmx-sm-p30 - Sets max-width to p30 on sm
 
   Styleguide Width - p30 - sm
   */
   /*
-  .wc[mn,mx]-sm-p30
+  .vwc[mn,mx]-sm-p30
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p30 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p30 - Sets width of immediate children to p30 on sm
-  .wcmn-sm-p30 - Sets min-width of immediate children to p30 on sm
-  .wcmx-sm-p30 - Sets max-width of immediate children to p30 on sm
+  .vwc-sm-p30 - Sets width of immediate children to p30 on sm
+  .vwcmn-sm-p30 - Sets min-width of immediate children to p30 on sm
+  .vwcmx-sm-p30 - Sets max-width of immediate children to p30 on sm
 
   Styleguide Child Width - p30 - sm
   */
-  .wh-sm-p30,
-.wc-sm-p30 > * {
+  .vw-sm-p30,
+.vwc-sm-p30 > * {
     width: var(--width-p30);
   }
 
-  .whmn-sm-p30,
-.wcmn-sm-p30 > * {
+  .vwmn-sm-p30,
+.vwcmn-sm-p30 > * {
     min-width: var(--width-p30);
   }
 
-  .whmx-sm-p30,
-.wcmx-sm-p30 > * {
+  .vwmx-sm-p30,
+.vwcmx-sm-p30 > * {
     max-width: var(--width-p30);
   }
 
   /*
-  .wh[mn,mx]-sm-p40
+  .vw[mn,mx]-sm-p40
 
   Sets the width, max-width, or min-width of element to css var for p40 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p40 - Sets width to p40 on sm
-  .whmn-sm-p40 - Sets min-width to p40 on sm
-  .whmx-sm-p40 - Sets max-width to p40 on sm
+  .vw-sm-p40 - Sets width to p40 on sm
+  .vwmn-sm-p40 - Sets min-width to p40 on sm
+  .vwmx-sm-p40 - Sets max-width to p40 on sm
 
   Styleguide Width - p40 - sm
   */
   /*
-  .wc[mn,mx]-sm-p40
+  .vwc[mn,mx]-sm-p40
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p40 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p40 - Sets width of immediate children to p40 on sm
-  .wcmn-sm-p40 - Sets min-width of immediate children to p40 on sm
-  .wcmx-sm-p40 - Sets max-width of immediate children to p40 on sm
+  .vwc-sm-p40 - Sets width of immediate children to p40 on sm
+  .vwcmn-sm-p40 - Sets min-width of immediate children to p40 on sm
+  .vwcmx-sm-p40 - Sets max-width of immediate children to p40 on sm
 
   Styleguide Child Width - p40 - sm
   */
-  .wh-sm-p40,
-.wc-sm-p40 > * {
+  .vw-sm-p40,
+.vwc-sm-p40 > * {
     width: var(--width-p40);
   }
 
-  .whmn-sm-p40,
-.wcmn-sm-p40 > * {
+  .vwmn-sm-p40,
+.vwcmn-sm-p40 > * {
     min-width: var(--width-p40);
   }
 
-  .whmx-sm-p40,
-.wcmx-sm-p40 > * {
+  .vwmx-sm-p40,
+.vwcmx-sm-p40 > * {
     max-width: var(--width-p40);
   }
 
   /*
-  .wh[mn,mx]-sm-p50
+  .vw[mn,mx]-sm-p50
 
   Sets the width, max-width, or min-width of element to css var for p50 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p50 - Sets width to p50 on sm
-  .whmn-sm-p50 - Sets min-width to p50 on sm
-  .whmx-sm-p50 - Sets max-width to p50 on sm
+  .vw-sm-p50 - Sets width to p50 on sm
+  .vwmn-sm-p50 - Sets min-width to p50 on sm
+  .vwmx-sm-p50 - Sets max-width to p50 on sm
 
   Styleguide Width - p50 - sm
   */
   /*
-  .wc[mn,mx]-sm-p50
+  .vwc[mn,mx]-sm-p50
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p50 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p50 - Sets width of immediate children to p50 on sm
-  .wcmn-sm-p50 - Sets min-width of immediate children to p50 on sm
-  .wcmx-sm-p50 - Sets max-width of immediate children to p50 on sm
+  .vwc-sm-p50 - Sets width of immediate children to p50 on sm
+  .vwcmn-sm-p50 - Sets min-width of immediate children to p50 on sm
+  .vwcmx-sm-p50 - Sets max-width of immediate children to p50 on sm
 
   Styleguide Child Width - p50 - sm
   */
-  .wh-sm-p50,
-.wc-sm-p50 > * {
+  .vw-sm-p50,
+.vwc-sm-p50 > * {
     width: var(--width-p50);
   }
 
-  .whmn-sm-p50,
-.wcmn-sm-p50 > * {
+  .vwmn-sm-p50,
+.vwcmn-sm-p50 > * {
     min-width: var(--width-p50);
   }
 
-  .whmx-sm-p50,
-.wcmx-sm-p50 > * {
+  .vwmx-sm-p50,
+.vwcmx-sm-p50 > * {
     max-width: var(--width-p50);
   }
 
   /*
-  .wh[mn,mx]-sm-p60
+  .vw[mn,mx]-sm-p60
 
   Sets the width, max-width, or min-width of element to css var for p60 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p60 - Sets width to p60 on sm
-  .whmn-sm-p60 - Sets min-width to p60 on sm
-  .whmx-sm-p60 - Sets max-width to p60 on sm
+  .vw-sm-p60 - Sets width to p60 on sm
+  .vwmn-sm-p60 - Sets min-width to p60 on sm
+  .vwmx-sm-p60 - Sets max-width to p60 on sm
 
   Styleguide Width - p60 - sm
   */
   /*
-  .wc[mn,mx]-sm-p60
+  .vwc[mn,mx]-sm-p60
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p60 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p60 - Sets width of immediate children to p60 on sm
-  .wcmn-sm-p60 - Sets min-width of immediate children to p60 on sm
-  .wcmx-sm-p60 - Sets max-width of immediate children to p60 on sm
+  .vwc-sm-p60 - Sets width of immediate children to p60 on sm
+  .vwcmn-sm-p60 - Sets min-width of immediate children to p60 on sm
+  .vwcmx-sm-p60 - Sets max-width of immediate children to p60 on sm
 
   Styleguide Child Width - p60 - sm
   */
-  .wh-sm-p60,
-.wc-sm-p60 > * {
+  .vw-sm-p60,
+.vwc-sm-p60 > * {
     width: var(--width-p60);
   }
 
-  .whmn-sm-p60,
-.wcmn-sm-p60 > * {
+  .vwmn-sm-p60,
+.vwcmn-sm-p60 > * {
     min-width: var(--width-p60);
   }
 
-  .whmx-sm-p60,
-.wcmx-sm-p60 > * {
+  .vwmx-sm-p60,
+.vwcmx-sm-p60 > * {
     max-width: var(--width-p60);
   }
 
   /*
-  .wh[mn,mx]-sm-p70
+  .vw[mn,mx]-sm-p70
 
   Sets the width, max-width, or min-width of element to css var for p70 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p70 - Sets width to p70 on sm
-  .whmn-sm-p70 - Sets min-width to p70 on sm
-  .whmx-sm-p70 - Sets max-width to p70 on sm
+  .vw-sm-p70 - Sets width to p70 on sm
+  .vwmn-sm-p70 - Sets min-width to p70 on sm
+  .vwmx-sm-p70 - Sets max-width to p70 on sm
 
   Styleguide Width - p70 - sm
   */
   /*
-  .wc[mn,mx]-sm-p70
+  .vwc[mn,mx]-sm-p70
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p70 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p70 - Sets width of immediate children to p70 on sm
-  .wcmn-sm-p70 - Sets min-width of immediate children to p70 on sm
-  .wcmx-sm-p70 - Sets max-width of immediate children to p70 on sm
+  .vwc-sm-p70 - Sets width of immediate children to p70 on sm
+  .vwcmn-sm-p70 - Sets min-width of immediate children to p70 on sm
+  .vwcmx-sm-p70 - Sets max-width of immediate children to p70 on sm
 
   Styleguide Child Width - p70 - sm
   */
-  .wh-sm-p70,
-.wc-sm-p70 > * {
+  .vw-sm-p70,
+.vwc-sm-p70 > * {
     width: var(--width-p70);
   }
 
-  .whmn-sm-p70,
-.wcmn-sm-p70 > * {
+  .vwmn-sm-p70,
+.vwcmn-sm-p70 > * {
     min-width: var(--width-p70);
   }
 
-  .whmx-sm-p70,
-.wcmx-sm-p70 > * {
+  .vwmx-sm-p70,
+.vwcmx-sm-p70 > * {
     max-width: var(--width-p70);
   }
 
   /*
-  .wh[mn,mx]-sm-p75
+  .vw[mn,mx]-sm-p75
 
   Sets the width, max-width, or min-width of element to css var for p75 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p75 - Sets width to p75 on sm
-  .whmn-sm-p75 - Sets min-width to p75 on sm
-  .whmx-sm-p75 - Sets max-width to p75 on sm
+  .vw-sm-p75 - Sets width to p75 on sm
+  .vwmn-sm-p75 - Sets min-width to p75 on sm
+  .vwmx-sm-p75 - Sets max-width to p75 on sm
 
   Styleguide Width - p75 - sm
   */
   /*
-  .wc[mn,mx]-sm-p75
+  .vwc[mn,mx]-sm-p75
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p75 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p75 - Sets width of immediate children to p75 on sm
-  .wcmn-sm-p75 - Sets min-width of immediate children to p75 on sm
-  .wcmx-sm-p75 - Sets max-width of immediate children to p75 on sm
+  .vwc-sm-p75 - Sets width of immediate children to p75 on sm
+  .vwcmn-sm-p75 - Sets min-width of immediate children to p75 on sm
+  .vwcmx-sm-p75 - Sets max-width of immediate children to p75 on sm
 
   Styleguide Child Width - p75 - sm
   */
-  .wh-sm-p75,
-.wc-sm-p75 > * {
+  .vw-sm-p75,
+.vwc-sm-p75 > * {
     width: var(--width-p75);
   }
 
-  .whmn-sm-p75,
-.wcmn-sm-p75 > * {
+  .vwmn-sm-p75,
+.vwcmn-sm-p75 > * {
     min-width: var(--width-p75);
   }
 
-  .whmx-sm-p75,
-.wcmx-sm-p75 > * {
+  .vwmx-sm-p75,
+.vwcmx-sm-p75 > * {
     max-width: var(--width-p75);
   }
 
   /*
-  .wh[mn,mx]-sm-p80
+  .vw[mn,mx]-sm-p80
 
   Sets the width, max-width, or min-width of element to css var for p80 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p80 - Sets width to p80 on sm
-  .whmn-sm-p80 - Sets min-width to p80 on sm
-  .whmx-sm-p80 - Sets max-width to p80 on sm
+  .vw-sm-p80 - Sets width to p80 on sm
+  .vwmn-sm-p80 - Sets min-width to p80 on sm
+  .vwmx-sm-p80 - Sets max-width to p80 on sm
 
   Styleguide Width - p80 - sm
   */
   /*
-  .wc[mn,mx]-sm-p80
+  .vwc[mn,mx]-sm-p80
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p80 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p80 - Sets width of immediate children to p80 on sm
-  .wcmn-sm-p80 - Sets min-width of immediate children to p80 on sm
-  .wcmx-sm-p80 - Sets max-width of immediate children to p80 on sm
+  .vwc-sm-p80 - Sets width of immediate children to p80 on sm
+  .vwcmn-sm-p80 - Sets min-width of immediate children to p80 on sm
+  .vwcmx-sm-p80 - Sets max-width of immediate children to p80 on sm
 
   Styleguide Child Width - p80 - sm
   */
-  .wh-sm-p80,
-.wc-sm-p80 > * {
+  .vw-sm-p80,
+.vwc-sm-p80 > * {
     width: var(--width-p80);
   }
 
-  .whmn-sm-p80,
-.wcmn-sm-p80 > * {
+  .vwmn-sm-p80,
+.vwcmn-sm-p80 > * {
     min-width: var(--width-p80);
   }
 
-  .whmx-sm-p80,
-.wcmx-sm-p80 > * {
+  .vwmx-sm-p80,
+.vwcmx-sm-p80 > * {
     max-width: var(--width-p80);
   }
 
   /*
-  .wh[mn,mx]-sm-p90
+  .vw[mn,mx]-sm-p90
 
   Sets the width, max-width, or min-width of element to css var for p90 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p90 - Sets width to p90 on sm
-  .whmn-sm-p90 - Sets min-width to p90 on sm
-  .whmx-sm-p90 - Sets max-width to p90 on sm
+  .vw-sm-p90 - Sets width to p90 on sm
+  .vwmn-sm-p90 - Sets min-width to p90 on sm
+  .vwmx-sm-p90 - Sets max-width to p90 on sm
 
   Styleguide Width - p90 - sm
   */
   /*
-  .wc[mn,mx]-sm-p90
+  .vwc[mn,mx]-sm-p90
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p90 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p90 - Sets width of immediate children to p90 on sm
-  .wcmn-sm-p90 - Sets min-width of immediate children to p90 on sm
-  .wcmx-sm-p90 - Sets max-width of immediate children to p90 on sm
+  .vwc-sm-p90 - Sets width of immediate children to p90 on sm
+  .vwcmn-sm-p90 - Sets min-width of immediate children to p90 on sm
+  .vwcmx-sm-p90 - Sets max-width of immediate children to p90 on sm
 
   Styleguide Child Width - p90 - sm
   */
-  .wh-sm-p90,
-.wc-sm-p90 > * {
+  .vw-sm-p90,
+.vwc-sm-p90 > * {
     width: var(--width-p90);
   }
 
-  .whmn-sm-p90,
-.wcmn-sm-p90 > * {
+  .vwmn-sm-p90,
+.vwcmn-sm-p90 > * {
     min-width: var(--width-p90);
   }
 
-  .whmx-sm-p90,
-.wcmx-sm-p90 > * {
+  .vwmx-sm-p90,
+.vwcmx-sm-p90 > * {
     max-width: var(--width-p90);
   }
 
   /*
-  .wh[mn,mx]-sm-p100
+  .vw[mn,mx]-sm-p100
 
   Sets the width, max-width, or min-width of element to css var for p100 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-p100 - Sets width to p100 on sm
-  .whmn-sm-p100 - Sets min-width to p100 on sm
-  .whmx-sm-p100 - Sets max-width to p100 on sm
+  .vw-sm-p100 - Sets width to p100 on sm
+  .vwmn-sm-p100 - Sets min-width to p100 on sm
+  .vwmx-sm-p100 - Sets max-width to p100 on sm
 
   Styleguide Width - p100 - sm
   */
   /*
-  .wc[mn,mx]-sm-p100
+  .vwc[mn,mx]-sm-p100
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p100 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-p100 - Sets width of immediate children to p100 on sm
-  .wcmn-sm-p100 - Sets min-width of immediate children to p100 on sm
-  .wcmx-sm-p100 - Sets max-width of immediate children to p100 on sm
+  .vwc-sm-p100 - Sets width of immediate children to p100 on sm
+  .vwcmn-sm-p100 - Sets min-width of immediate children to p100 on sm
+  .vwcmx-sm-p100 - Sets max-width of immediate children to p100 on sm
 
   Styleguide Child Width - p100 - sm
   */
-  .wh-sm-p100,
-.wc-sm-p100 > * {
+  .vw-sm-p100,
+.vwc-sm-p100 > * {
     width: var(--width-p100);
   }
 
-  .whmn-sm-p100,
-.wcmn-sm-p100 > * {
+  .vwmn-sm-p100,
+.vwcmn-sm-p100 > * {
     min-width: var(--width-p100);
   }
 
-  .whmx-sm-p100,
-.wcmx-sm-p100 > * {
+  .vwmx-sm-p100,
+.vwcmx-sm-p100 > * {
     max-width: var(--width-p100);
   }
 
   /*
-  .wh[mn,mx]-sm-ch0
+  .vw[mn,mx]-sm-ch0
 
   Sets the width, max-width, or min-width of element to css var for ch0 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-ch0 - Sets width to ch0 on sm
-  .whmn-sm-ch0 - Sets min-width to ch0 on sm
-  .whmx-sm-ch0 - Sets max-width to ch0 on sm
+  .vw-sm-ch0 - Sets width to ch0 on sm
+  .vwmn-sm-ch0 - Sets min-width to ch0 on sm
+  .vwmx-sm-ch0 - Sets max-width to ch0 on sm
 
   Styleguide Width - ch0 - sm
   */
   /*
-  .wc[mn,mx]-sm-ch0
+  .vwc[mn,mx]-sm-ch0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch0 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-ch0 - Sets width of immediate children to ch0 on sm
-  .wcmn-sm-ch0 - Sets min-width of immediate children to ch0 on sm
-  .wcmx-sm-ch0 - Sets max-width of immediate children to ch0 on sm
+  .vwc-sm-ch0 - Sets width of immediate children to ch0 on sm
+  .vwcmn-sm-ch0 - Sets min-width of immediate children to ch0 on sm
+  .vwcmx-sm-ch0 - Sets max-width of immediate children to ch0 on sm
 
   Styleguide Child Width - ch0 - sm
   */
-  .wh-sm-ch0,
-.wc-sm-ch0 > * {
+  .vw-sm-ch0,
+.vwc-sm-ch0 > * {
     width: var(--width-ch0);
   }
 
-  .whmn-sm-ch0,
-.wcmn-sm-ch0 > * {
+  .vwmn-sm-ch0,
+.vwcmn-sm-ch0 > * {
     min-width: var(--width-ch0);
   }
 
-  .whmx-sm-ch0,
-.wcmx-sm-ch0 > * {
+  .vwmx-sm-ch0,
+.vwcmx-sm-ch0 > * {
     max-width: var(--width-ch0);
   }
 
   /*
-  .wh[mn,mx]-sm-ch1
+  .vw[mn,mx]-sm-ch1
 
   Sets the width, max-width, or min-width of element to css var for ch1 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-ch1 - Sets width to ch1 on sm
-  .whmn-sm-ch1 - Sets min-width to ch1 on sm
-  .whmx-sm-ch1 - Sets max-width to ch1 on sm
+  .vw-sm-ch1 - Sets width to ch1 on sm
+  .vwmn-sm-ch1 - Sets min-width to ch1 on sm
+  .vwmx-sm-ch1 - Sets max-width to ch1 on sm
 
   Styleguide Width - ch1 - sm
   */
   /*
-  .wc[mn,mx]-sm-ch1
+  .vwc[mn,mx]-sm-ch1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch1 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-ch1 - Sets width of immediate children to ch1 on sm
-  .wcmn-sm-ch1 - Sets min-width of immediate children to ch1 on sm
-  .wcmx-sm-ch1 - Sets max-width of immediate children to ch1 on sm
+  .vwc-sm-ch1 - Sets width of immediate children to ch1 on sm
+  .vwcmn-sm-ch1 - Sets min-width of immediate children to ch1 on sm
+  .vwcmx-sm-ch1 - Sets max-width of immediate children to ch1 on sm
 
   Styleguide Child Width - ch1 - sm
   */
-  .wh-sm-ch1,
-.wc-sm-ch1 > * {
+  .vw-sm-ch1,
+.vwc-sm-ch1 > * {
     width: var(--width-ch1);
   }
 
-  .whmn-sm-ch1,
-.wcmn-sm-ch1 > * {
+  .vwmn-sm-ch1,
+.vwcmn-sm-ch1 > * {
     min-width: var(--width-ch1);
   }
 
-  .whmx-sm-ch1,
-.wcmx-sm-ch1 > * {
+  .vwmx-sm-ch1,
+.vwcmx-sm-ch1 > * {
     max-width: var(--width-ch1);
   }
 
   /*
-  .wh[mn,mx]-sm-ch2
+  .vw[mn,mx]-sm-ch2
 
   Sets the width, max-width, or min-width of element to css var for ch2 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-ch2 - Sets width to ch2 on sm
-  .whmn-sm-ch2 - Sets min-width to ch2 on sm
-  .whmx-sm-ch2 - Sets max-width to ch2 on sm
+  .vw-sm-ch2 - Sets width to ch2 on sm
+  .vwmn-sm-ch2 - Sets min-width to ch2 on sm
+  .vwmx-sm-ch2 - Sets max-width to ch2 on sm
 
   Styleguide Width - ch2 - sm
   */
   /*
-  .wc[mn,mx]-sm-ch2
+  .vwc[mn,mx]-sm-ch2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch2 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-ch2 - Sets width of immediate children to ch2 on sm
-  .wcmn-sm-ch2 - Sets min-width of immediate children to ch2 on sm
-  .wcmx-sm-ch2 - Sets max-width of immediate children to ch2 on sm
+  .vwc-sm-ch2 - Sets width of immediate children to ch2 on sm
+  .vwcmn-sm-ch2 - Sets min-width of immediate children to ch2 on sm
+  .vwcmx-sm-ch2 - Sets max-width of immediate children to ch2 on sm
 
   Styleguide Child Width - ch2 - sm
   */
-  .wh-sm-ch2,
-.wc-sm-ch2 > * {
+  .vw-sm-ch2,
+.vwc-sm-ch2 > * {
     width: var(--width-ch2);
   }
 
-  .whmn-sm-ch2,
-.wcmn-sm-ch2 > * {
+  .vwmn-sm-ch2,
+.vwcmn-sm-ch2 > * {
     min-width: var(--width-ch2);
   }
 
-  .whmx-sm-ch2,
-.wcmx-sm-ch2 > * {
+  .vwmx-sm-ch2,
+.vwcmx-sm-ch2 > * {
     max-width: var(--width-ch2);
   }
 
   /*
-  .wh[mn,mx]-sm-ch3
+  .vw[mn,mx]-sm-ch3
 
   Sets the width, max-width, or min-width of element to css var for ch3 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-ch3 - Sets width to ch3 on sm
-  .whmn-sm-ch3 - Sets min-width to ch3 on sm
-  .whmx-sm-ch3 - Sets max-width to ch3 on sm
+  .vw-sm-ch3 - Sets width to ch3 on sm
+  .vwmn-sm-ch3 - Sets min-width to ch3 on sm
+  .vwmx-sm-ch3 - Sets max-width to ch3 on sm
 
   Styleguide Width - ch3 - sm
   */
   /*
-  .wc[mn,mx]-sm-ch3
+  .vwc[mn,mx]-sm-ch3
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch3 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-ch3 - Sets width of immediate children to ch3 on sm
-  .wcmn-sm-ch3 - Sets min-width of immediate children to ch3 on sm
-  .wcmx-sm-ch3 - Sets max-width of immediate children to ch3 on sm
+  .vwc-sm-ch3 - Sets width of immediate children to ch3 on sm
+  .vwcmn-sm-ch3 - Sets min-width of immediate children to ch3 on sm
+  .vwcmx-sm-ch3 - Sets max-width of immediate children to ch3 on sm
 
   Styleguide Child Width - ch3 - sm
   */
-  .wh-sm-ch3,
-.wc-sm-ch3 > * {
+  .vw-sm-ch3,
+.vwc-sm-ch3 > * {
     width: var(--width-ch3);
   }
 
-  .whmn-sm-ch3,
-.wcmn-sm-ch3 > * {
+  .vwmn-sm-ch3,
+.vwcmn-sm-ch3 > * {
     min-width: var(--width-ch3);
   }
 
-  .whmx-sm-ch3,
-.wcmx-sm-ch3 > * {
+  .vwmx-sm-ch3,
+.vwcmx-sm-ch3 > * {
     max-width: var(--width-ch3);
   }
 
   /*
-  .wh[mn,mx]-sm-ch4
+  .vw[mn,mx]-sm-ch4
 
   Sets the width, max-width, or min-width of element to css var for ch4 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-ch4 - Sets width to ch4 on sm
-  .whmn-sm-ch4 - Sets min-width to ch4 on sm
-  .whmx-sm-ch4 - Sets max-width to ch4 on sm
+  .vw-sm-ch4 - Sets width to ch4 on sm
+  .vwmn-sm-ch4 - Sets min-width to ch4 on sm
+  .vwmx-sm-ch4 - Sets max-width to ch4 on sm
 
   Styleguide Width - ch4 - sm
   */
   /*
-  .wc[mn,mx]-sm-ch4
+  .vwc[mn,mx]-sm-ch4
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch4 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-ch4 - Sets width of immediate children to ch4 on sm
-  .wcmn-sm-ch4 - Sets min-width of immediate children to ch4 on sm
-  .wcmx-sm-ch4 - Sets max-width of immediate children to ch4 on sm
+  .vwc-sm-ch4 - Sets width of immediate children to ch4 on sm
+  .vwcmn-sm-ch4 - Sets min-width of immediate children to ch4 on sm
+  .vwcmx-sm-ch4 - Sets max-width of immediate children to ch4 on sm
 
   Styleguide Child Width - ch4 - sm
   */
-  .wh-sm-ch4,
-.wc-sm-ch4 > * {
+  .vw-sm-ch4,
+.vwc-sm-ch4 > * {
     width: var(--width-ch4);
   }
 
-  .whmn-sm-ch4,
-.wcmn-sm-ch4 > * {
+  .vwmn-sm-ch4,
+.vwcmn-sm-ch4 > * {
     min-width: var(--width-ch4);
   }
 
-  .whmx-sm-ch4,
-.wcmx-sm-ch4 > * {
+  .vwmx-sm-ch4,
+.vwcmx-sm-ch4 > * {
     max-width: var(--width-ch4);
   }
 
   /*
-  .wh[mn,mx]-sm-px0
+  .vw[mn,mx]-sm-px0
 
   Sets the width, max-width, or min-width of element to css var for px0 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-px0 - Sets width to px0 on sm
-  .whmn-sm-px0 - Sets min-width to px0 on sm
-  .whmx-sm-px0 - Sets max-width to px0 on sm
+  .vw-sm-px0 - Sets width to px0 on sm
+  .vwmn-sm-px0 - Sets min-width to px0 on sm
+  .vwmx-sm-px0 - Sets max-width to px0 on sm
 
   Styleguide Width - px0 - sm
   */
   /*
-  .wc[mn,mx]-sm-px0
+  .vwc[mn,mx]-sm-px0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px0 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-px0 - Sets width of immediate children to px0 on sm
-  .wcmn-sm-px0 - Sets min-width of immediate children to px0 on sm
-  .wcmx-sm-px0 - Sets max-width of immediate children to px0 on sm
+  .vwc-sm-px0 - Sets width of immediate children to px0 on sm
+  .vwcmn-sm-px0 - Sets min-width of immediate children to px0 on sm
+  .vwcmx-sm-px0 - Sets max-width of immediate children to px0 on sm
 
   Styleguide Child Width - px0 - sm
   */
-  .wh-sm-px0,
-.wc-sm-px0 > * {
+  .vw-sm-px0,
+.vwc-sm-px0 > * {
     width: var(--width-px0);
   }
 
-  .whmn-sm-px0,
-.wcmn-sm-px0 > * {
+  .vwmn-sm-px0,
+.vwcmn-sm-px0 > * {
     min-width: var(--width-px0);
   }
 
-  .whmx-sm-px0,
-.wcmx-sm-px0 > * {
+  .vwmx-sm-px0,
+.vwcmx-sm-px0 > * {
     max-width: var(--width-px0);
   }
 
   /*
-  .wh[mn,mx]-sm-px1
+  .vw[mn,mx]-sm-px1
 
   Sets the width, max-width, or min-width of element to css var for px1 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-px1 - Sets width to px1 on sm
-  .whmn-sm-px1 - Sets min-width to px1 on sm
-  .whmx-sm-px1 - Sets max-width to px1 on sm
+  .vw-sm-px1 - Sets width to px1 on sm
+  .vwmn-sm-px1 - Sets min-width to px1 on sm
+  .vwmx-sm-px1 - Sets max-width to px1 on sm
 
   Styleguide Width - px1 - sm
   */
   /*
-  .wc[mn,mx]-sm-px1
+  .vwc[mn,mx]-sm-px1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px1 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-px1 - Sets width of immediate children to px1 on sm
-  .wcmn-sm-px1 - Sets min-width of immediate children to px1 on sm
-  .wcmx-sm-px1 - Sets max-width of immediate children to px1 on sm
+  .vwc-sm-px1 - Sets width of immediate children to px1 on sm
+  .vwcmn-sm-px1 - Sets min-width of immediate children to px1 on sm
+  .vwcmx-sm-px1 - Sets max-width of immediate children to px1 on sm
 
   Styleguide Child Width - px1 - sm
   */
-  .wh-sm-px1,
-.wc-sm-px1 > * {
+  .vw-sm-px1,
+.vwc-sm-px1 > * {
     width: var(--width-px1);
   }
 
-  .whmn-sm-px1,
-.wcmn-sm-px1 > * {
+  .vwmn-sm-px1,
+.vwcmn-sm-px1 > * {
     min-width: var(--width-px1);
   }
 
-  .whmx-sm-px1,
-.wcmx-sm-px1 > * {
+  .vwmx-sm-px1,
+.vwcmx-sm-px1 > * {
     max-width: var(--width-px1);
   }
 
   /*
-  .wh[mn,mx]-sm-px2
+  .vw[mn,mx]-sm-px2
 
   Sets the width, max-width, or min-width of element to css var for px2 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-px2 - Sets width to px2 on sm
-  .whmn-sm-px2 - Sets min-width to px2 on sm
-  .whmx-sm-px2 - Sets max-width to px2 on sm
+  .vw-sm-px2 - Sets width to px2 on sm
+  .vwmn-sm-px2 - Sets min-width to px2 on sm
+  .vwmx-sm-px2 - Sets max-width to px2 on sm
 
   Styleguide Width - px2 - sm
   */
   /*
-  .wc[mn,mx]-sm-px2
+  .vwc[mn,mx]-sm-px2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px2 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-px2 - Sets width of immediate children to px2 on sm
-  .wcmn-sm-px2 - Sets min-width of immediate children to px2 on sm
-  .wcmx-sm-px2 - Sets max-width of immediate children to px2 on sm
+  .vwc-sm-px2 - Sets width of immediate children to px2 on sm
+  .vwcmn-sm-px2 - Sets min-width of immediate children to px2 on sm
+  .vwcmx-sm-px2 - Sets max-width of immediate children to px2 on sm
 
   Styleguide Child Width - px2 - sm
   */
-  .wh-sm-px2,
-.wc-sm-px2 > * {
+  .vw-sm-px2,
+.vwc-sm-px2 > * {
     width: var(--width-px2);
   }
 
-  .whmn-sm-px2,
-.wcmn-sm-px2 > * {
+  .vwmn-sm-px2,
+.vwcmn-sm-px2 > * {
     min-width: var(--width-px2);
   }
 
-  .whmx-sm-px2,
-.wcmx-sm-px2 > * {
+  .vwmx-sm-px2,
+.vwcmx-sm-px2 > * {
     max-width: var(--width-px2);
   }
 
   /*
-  .wh[mn,mx]-sm-px3
+  .vw[mn,mx]-sm-px3
 
   Sets the width, max-width, or min-width of element to css var for px3 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-px3 - Sets width to px3 on sm
-  .whmn-sm-px3 - Sets min-width to px3 on sm
-  .whmx-sm-px3 - Sets max-width to px3 on sm
+  .vw-sm-px3 - Sets width to px3 on sm
+  .vwmn-sm-px3 - Sets min-width to px3 on sm
+  .vwmx-sm-px3 - Sets max-width to px3 on sm
 
   Styleguide Width - px3 - sm
   */
   /*
-  .wc[mn,mx]-sm-px3
+  .vwc[mn,mx]-sm-px3
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px3 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-px3 - Sets width of immediate children to px3 on sm
-  .wcmn-sm-px3 - Sets min-width of immediate children to px3 on sm
-  .wcmx-sm-px3 - Sets max-width of immediate children to px3 on sm
+  .vwc-sm-px3 - Sets width of immediate children to px3 on sm
+  .vwcmn-sm-px3 - Sets min-width of immediate children to px3 on sm
+  .vwcmx-sm-px3 - Sets max-width of immediate children to px3 on sm
 
   Styleguide Child Width - px3 - sm
   */
-  .wh-sm-px3,
-.wc-sm-px3 > * {
+  .vw-sm-px3,
+.vwc-sm-px3 > * {
     width: var(--width-px3);
   }
 
-  .whmn-sm-px3,
-.wcmn-sm-px3 > * {
+  .vwmn-sm-px3,
+.vwcmn-sm-px3 > * {
     min-width: var(--width-px3);
   }
 
-  .whmx-sm-px3,
-.wcmx-sm-px3 > * {
+  .vwmx-sm-px3,
+.vwcmx-sm-px3 > * {
     max-width: var(--width-px3);
   }
 
   /*
-  .wh[mn,mx]-sm-em0
+  .vw[mn,mx]-sm-em0
 
   Sets the width, max-width, or min-width of element to css var for em0 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-em0 - Sets width to em0 on sm
-  .whmn-sm-em0 - Sets min-width to em0 on sm
-  .whmx-sm-em0 - Sets max-width to em0 on sm
+  .vw-sm-em0 - Sets width to em0 on sm
+  .vwmn-sm-em0 - Sets min-width to em0 on sm
+  .vwmx-sm-em0 - Sets max-width to em0 on sm
 
   Styleguide Width - em0 - sm
   */
   /*
-  .wc[mn,mx]-sm-em0
+  .vwc[mn,mx]-sm-em0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em0 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-em0 - Sets width of immediate children to em0 on sm
-  .wcmn-sm-em0 - Sets min-width of immediate children to em0 on sm
-  .wcmx-sm-em0 - Sets max-width of immediate children to em0 on sm
+  .vwc-sm-em0 - Sets width of immediate children to em0 on sm
+  .vwcmn-sm-em0 - Sets min-width of immediate children to em0 on sm
+  .vwcmx-sm-em0 - Sets max-width of immediate children to em0 on sm
 
   Styleguide Child Width - em0 - sm
   */
-  .wh-sm-em0,
-.wc-sm-em0 > * {
+  .vw-sm-em0,
+.vwc-sm-em0 > * {
     width: var(--width-em0);
   }
 
-  .whmn-sm-em0,
-.wcmn-sm-em0 > * {
+  .vwmn-sm-em0,
+.vwcmn-sm-em0 > * {
     min-width: var(--width-em0);
   }
 
-  .whmx-sm-em0,
-.wcmx-sm-em0 > * {
+  .vwmx-sm-em0,
+.vwcmx-sm-em0 > * {
     max-width: var(--width-em0);
   }
 
   /*
-  .wh[mn,mx]-sm-em1
+  .vw[mn,mx]-sm-em1
 
   Sets the width, max-width, or min-width of element to css var for em1 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-em1 - Sets width to em1 on sm
-  .whmn-sm-em1 - Sets min-width to em1 on sm
-  .whmx-sm-em1 - Sets max-width to em1 on sm
+  .vw-sm-em1 - Sets width to em1 on sm
+  .vwmn-sm-em1 - Sets min-width to em1 on sm
+  .vwmx-sm-em1 - Sets max-width to em1 on sm
 
   Styleguide Width - em1 - sm
   */
   /*
-  .wc[mn,mx]-sm-em1
+  .vwc[mn,mx]-sm-em1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em1 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-em1 - Sets width of immediate children to em1 on sm
-  .wcmn-sm-em1 - Sets min-width of immediate children to em1 on sm
-  .wcmx-sm-em1 - Sets max-width of immediate children to em1 on sm
+  .vwc-sm-em1 - Sets width of immediate children to em1 on sm
+  .vwcmn-sm-em1 - Sets min-width of immediate children to em1 on sm
+  .vwcmx-sm-em1 - Sets max-width of immediate children to em1 on sm
 
   Styleguide Child Width - em1 - sm
   */
-  .wh-sm-em1,
-.wc-sm-em1 > * {
+  .vw-sm-em1,
+.vwc-sm-em1 > * {
     width: var(--width-em1);
   }
 
-  .whmn-sm-em1,
-.wcmn-sm-em1 > * {
+  .vwmn-sm-em1,
+.vwcmn-sm-em1 > * {
     min-width: var(--width-em1);
   }
 
-  .whmx-sm-em1,
-.wcmx-sm-em1 > * {
+  .vwmx-sm-em1,
+.vwcmx-sm-em1 > * {
     max-width: var(--width-em1);
   }
 
   /*
-  .wh[mn,mx]-sm-em2
+  .vw[mn,mx]-sm-em2
 
   Sets the width, max-width, or min-width of element to css var for em2 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-sm-em2 - Sets width to em2 on sm
-  .whmn-sm-em2 - Sets min-width to em2 on sm
-  .whmx-sm-em2 - Sets max-width to em2 on sm
+  .vw-sm-em2 - Sets width to em2 on sm
+  .vwmn-sm-em2 - Sets min-width to em2 on sm
+  .vwmx-sm-em2 - Sets max-width to em2 on sm
 
   Styleguide Width - em2 - sm
   */
   /*
-  .wc[mn,mx]-sm-em2
+  .vwc[mn,mx]-sm-em2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em2 on sm.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-sm-em2 - Sets width of immediate children to em2 on sm
-  .wcmn-sm-em2 - Sets min-width of immediate children to em2 on sm
-  .wcmx-sm-em2 - Sets max-width of immediate children to em2 on sm
+  .vwc-sm-em2 - Sets width of immediate children to em2 on sm
+  .vwcmn-sm-em2 - Sets min-width of immediate children to em2 on sm
+  .vwcmx-sm-em2 - Sets max-width of immediate children to em2 on sm
 
   Styleguide Child Width - em2 - sm
   */
-  .wh-sm-em2,
-.wc-sm-em2 > * {
+  .vw-sm-em2,
+.vwc-sm-em2 > * {
     width: var(--width-em2);
   }
 
-  .whmn-sm-em2,
-.wcmn-sm-em2 > * {
+  .vwmn-sm-em2,
+.vwcmn-sm-em2 > * {
     min-width: var(--width-em2);
   }
 
-  .whmx-sm-em2,
-.wcmx-sm-em2 > * {
+  .vwmx-sm-em2,
+.vwcmx-sm-em2 > * {
     max-width: var(--width-em2);
   }
 }
 @media (min-width: 75em) {
   /*
-  .wh[mn,mx]-md-p10
+  .vw[mn,mx]-md-p10
 
   Sets the width, max-width, or min-width of element to css var for p10 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p10 - Sets width to p10 on md
-  .whmn-md-p10 - Sets min-width to p10 on md
-  .whmx-md-p10 - Sets max-width to p10 on md
+  .vw-md-p10 - Sets width to p10 on md
+  .vwmn-md-p10 - Sets min-width to p10 on md
+  .vwmx-md-p10 - Sets max-width to p10 on md
 
   Styleguide Width - p10 - md
   */
   /*
-  .wc[mn,mx]-md-p10
+  .vwc[mn,mx]-md-p10
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p10 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p10 - Sets width of immediate children to p10 on md
-  .wcmn-md-p10 - Sets min-width of immediate children to p10 on md
-  .wcmx-md-p10 - Sets max-width of immediate children to p10 on md
+  .vwc-md-p10 - Sets width of immediate children to p10 on md
+  .vwcmn-md-p10 - Sets min-width of immediate children to p10 on md
+  .vwcmx-md-p10 - Sets max-width of immediate children to p10 on md
 
   Styleguide Child Width - p10 - md
   */
-  .wh-md-p10,
-.wc-md-p10 > * {
+  .vw-md-p10,
+.vwc-md-p10 > * {
     width: var(--width-p10);
   }
 
-  .whmn-md-p10,
-.wcmn-md-p10 > * {
+  .vwmn-md-p10,
+.vwcmn-md-p10 > * {
     min-width: var(--width-p10);
   }
 
-  .whmx-md-p10,
-.wcmx-md-p10 > * {
+  .vwmx-md-p10,
+.vwcmx-md-p10 > * {
     max-width: var(--width-p10);
   }
 
   /*
-  .wh[mn,mx]-md-p20
+  .vw[mn,mx]-md-p20
 
   Sets the width, max-width, or min-width of element to css var for p20 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p20 - Sets width to p20 on md
-  .whmn-md-p20 - Sets min-width to p20 on md
-  .whmx-md-p20 - Sets max-width to p20 on md
+  .vw-md-p20 - Sets width to p20 on md
+  .vwmn-md-p20 - Sets min-width to p20 on md
+  .vwmx-md-p20 - Sets max-width to p20 on md
 
   Styleguide Width - p20 - md
   */
   /*
-  .wc[mn,mx]-md-p20
+  .vwc[mn,mx]-md-p20
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p20 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p20 - Sets width of immediate children to p20 on md
-  .wcmn-md-p20 - Sets min-width of immediate children to p20 on md
-  .wcmx-md-p20 - Sets max-width of immediate children to p20 on md
+  .vwc-md-p20 - Sets width of immediate children to p20 on md
+  .vwcmn-md-p20 - Sets min-width of immediate children to p20 on md
+  .vwcmx-md-p20 - Sets max-width of immediate children to p20 on md
 
   Styleguide Child Width - p20 - md
   */
-  .wh-md-p20,
-.wc-md-p20 > * {
+  .vw-md-p20,
+.vwc-md-p20 > * {
     width: var(--width-p20);
   }
 
-  .whmn-md-p20,
-.wcmn-md-p20 > * {
+  .vwmn-md-p20,
+.vwcmn-md-p20 > * {
     min-width: var(--width-p20);
   }
 
-  .whmx-md-p20,
-.wcmx-md-p20 > * {
+  .vwmx-md-p20,
+.vwcmx-md-p20 > * {
     max-width: var(--width-p20);
   }
 
   /*
-  .wh[mn,mx]-md-p25
+  .vw[mn,mx]-md-p25
 
   Sets the width, max-width, or min-width of element to css var for p25 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p25 - Sets width to p25 on md
-  .whmn-md-p25 - Sets min-width to p25 on md
-  .whmx-md-p25 - Sets max-width to p25 on md
+  .vw-md-p25 - Sets width to p25 on md
+  .vwmn-md-p25 - Sets min-width to p25 on md
+  .vwmx-md-p25 - Sets max-width to p25 on md
 
   Styleguide Width - p25 - md
   */
   /*
-  .wc[mn,mx]-md-p25
+  .vwc[mn,mx]-md-p25
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p25 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p25 - Sets width of immediate children to p25 on md
-  .wcmn-md-p25 - Sets min-width of immediate children to p25 on md
-  .wcmx-md-p25 - Sets max-width of immediate children to p25 on md
+  .vwc-md-p25 - Sets width of immediate children to p25 on md
+  .vwcmn-md-p25 - Sets min-width of immediate children to p25 on md
+  .vwcmx-md-p25 - Sets max-width of immediate children to p25 on md
 
   Styleguide Child Width - p25 - md
   */
-  .wh-md-p25,
-.wc-md-p25 > * {
+  .vw-md-p25,
+.vwc-md-p25 > * {
     width: var(--width-p25);
   }
 
-  .whmn-md-p25,
-.wcmn-md-p25 > * {
+  .vwmn-md-p25,
+.vwcmn-md-p25 > * {
     min-width: var(--width-p25);
   }
 
-  .whmx-md-p25,
-.wcmx-md-p25 > * {
+  .vwmx-md-p25,
+.vwcmx-md-p25 > * {
     max-width: var(--width-p25);
   }
 
   /*
-  .wh[mn,mx]-md-p30
+  .vw[mn,mx]-md-p30
 
   Sets the width, max-width, or min-width of element to css var for p30 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p30 - Sets width to p30 on md
-  .whmn-md-p30 - Sets min-width to p30 on md
-  .whmx-md-p30 - Sets max-width to p30 on md
+  .vw-md-p30 - Sets width to p30 on md
+  .vwmn-md-p30 - Sets min-width to p30 on md
+  .vwmx-md-p30 - Sets max-width to p30 on md
 
   Styleguide Width - p30 - md
   */
   /*
-  .wc[mn,mx]-md-p30
+  .vwc[mn,mx]-md-p30
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p30 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p30 - Sets width of immediate children to p30 on md
-  .wcmn-md-p30 - Sets min-width of immediate children to p30 on md
-  .wcmx-md-p30 - Sets max-width of immediate children to p30 on md
+  .vwc-md-p30 - Sets width of immediate children to p30 on md
+  .vwcmn-md-p30 - Sets min-width of immediate children to p30 on md
+  .vwcmx-md-p30 - Sets max-width of immediate children to p30 on md
 
   Styleguide Child Width - p30 - md
   */
-  .wh-md-p30,
-.wc-md-p30 > * {
+  .vw-md-p30,
+.vwc-md-p30 > * {
     width: var(--width-p30);
   }
 
-  .whmn-md-p30,
-.wcmn-md-p30 > * {
+  .vwmn-md-p30,
+.vwcmn-md-p30 > * {
     min-width: var(--width-p30);
   }
 
-  .whmx-md-p30,
-.wcmx-md-p30 > * {
+  .vwmx-md-p30,
+.vwcmx-md-p30 > * {
     max-width: var(--width-p30);
   }
 
   /*
-  .wh[mn,mx]-md-p40
+  .vw[mn,mx]-md-p40
 
   Sets the width, max-width, or min-width of element to css var for p40 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p40 - Sets width to p40 on md
-  .whmn-md-p40 - Sets min-width to p40 on md
-  .whmx-md-p40 - Sets max-width to p40 on md
+  .vw-md-p40 - Sets width to p40 on md
+  .vwmn-md-p40 - Sets min-width to p40 on md
+  .vwmx-md-p40 - Sets max-width to p40 on md
 
   Styleguide Width - p40 - md
   */
   /*
-  .wc[mn,mx]-md-p40
+  .vwc[mn,mx]-md-p40
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p40 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p40 - Sets width of immediate children to p40 on md
-  .wcmn-md-p40 - Sets min-width of immediate children to p40 on md
-  .wcmx-md-p40 - Sets max-width of immediate children to p40 on md
+  .vwc-md-p40 - Sets width of immediate children to p40 on md
+  .vwcmn-md-p40 - Sets min-width of immediate children to p40 on md
+  .vwcmx-md-p40 - Sets max-width of immediate children to p40 on md
 
   Styleguide Child Width - p40 - md
   */
-  .wh-md-p40,
-.wc-md-p40 > * {
+  .vw-md-p40,
+.vwc-md-p40 > * {
     width: var(--width-p40);
   }
 
-  .whmn-md-p40,
-.wcmn-md-p40 > * {
+  .vwmn-md-p40,
+.vwcmn-md-p40 > * {
     min-width: var(--width-p40);
   }
 
-  .whmx-md-p40,
-.wcmx-md-p40 > * {
+  .vwmx-md-p40,
+.vwcmx-md-p40 > * {
     max-width: var(--width-p40);
   }
 
   /*
-  .wh[mn,mx]-md-p50
+  .vw[mn,mx]-md-p50
 
   Sets the width, max-width, or min-width of element to css var for p50 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p50 - Sets width to p50 on md
-  .whmn-md-p50 - Sets min-width to p50 on md
-  .whmx-md-p50 - Sets max-width to p50 on md
+  .vw-md-p50 - Sets width to p50 on md
+  .vwmn-md-p50 - Sets min-width to p50 on md
+  .vwmx-md-p50 - Sets max-width to p50 on md
 
   Styleguide Width - p50 - md
   */
   /*
-  .wc[mn,mx]-md-p50
+  .vwc[mn,mx]-md-p50
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p50 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p50 - Sets width of immediate children to p50 on md
-  .wcmn-md-p50 - Sets min-width of immediate children to p50 on md
-  .wcmx-md-p50 - Sets max-width of immediate children to p50 on md
+  .vwc-md-p50 - Sets width of immediate children to p50 on md
+  .vwcmn-md-p50 - Sets min-width of immediate children to p50 on md
+  .vwcmx-md-p50 - Sets max-width of immediate children to p50 on md
 
   Styleguide Child Width - p50 - md
   */
-  .wh-md-p50,
-.wc-md-p50 > * {
+  .vw-md-p50,
+.vwc-md-p50 > * {
     width: var(--width-p50);
   }
 
-  .whmn-md-p50,
-.wcmn-md-p50 > * {
+  .vwmn-md-p50,
+.vwcmn-md-p50 > * {
     min-width: var(--width-p50);
   }
 
-  .whmx-md-p50,
-.wcmx-md-p50 > * {
+  .vwmx-md-p50,
+.vwcmx-md-p50 > * {
     max-width: var(--width-p50);
   }
 
   /*
-  .wh[mn,mx]-md-p60
+  .vw[mn,mx]-md-p60
 
   Sets the width, max-width, or min-width of element to css var for p60 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p60 - Sets width to p60 on md
-  .whmn-md-p60 - Sets min-width to p60 on md
-  .whmx-md-p60 - Sets max-width to p60 on md
+  .vw-md-p60 - Sets width to p60 on md
+  .vwmn-md-p60 - Sets min-width to p60 on md
+  .vwmx-md-p60 - Sets max-width to p60 on md
 
   Styleguide Width - p60 - md
   */
   /*
-  .wc[mn,mx]-md-p60
+  .vwc[mn,mx]-md-p60
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p60 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p60 - Sets width of immediate children to p60 on md
-  .wcmn-md-p60 - Sets min-width of immediate children to p60 on md
-  .wcmx-md-p60 - Sets max-width of immediate children to p60 on md
+  .vwc-md-p60 - Sets width of immediate children to p60 on md
+  .vwcmn-md-p60 - Sets min-width of immediate children to p60 on md
+  .vwcmx-md-p60 - Sets max-width of immediate children to p60 on md
 
   Styleguide Child Width - p60 - md
   */
-  .wh-md-p60,
-.wc-md-p60 > * {
+  .vw-md-p60,
+.vwc-md-p60 > * {
     width: var(--width-p60);
   }
 
-  .whmn-md-p60,
-.wcmn-md-p60 > * {
+  .vwmn-md-p60,
+.vwcmn-md-p60 > * {
     min-width: var(--width-p60);
   }
 
-  .whmx-md-p60,
-.wcmx-md-p60 > * {
+  .vwmx-md-p60,
+.vwcmx-md-p60 > * {
     max-width: var(--width-p60);
   }
 
   /*
-  .wh[mn,mx]-md-p70
+  .vw[mn,mx]-md-p70
 
   Sets the width, max-width, or min-width of element to css var for p70 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p70 - Sets width to p70 on md
-  .whmn-md-p70 - Sets min-width to p70 on md
-  .whmx-md-p70 - Sets max-width to p70 on md
+  .vw-md-p70 - Sets width to p70 on md
+  .vwmn-md-p70 - Sets min-width to p70 on md
+  .vwmx-md-p70 - Sets max-width to p70 on md
 
   Styleguide Width - p70 - md
   */
   /*
-  .wc[mn,mx]-md-p70
+  .vwc[mn,mx]-md-p70
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p70 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p70 - Sets width of immediate children to p70 on md
-  .wcmn-md-p70 - Sets min-width of immediate children to p70 on md
-  .wcmx-md-p70 - Sets max-width of immediate children to p70 on md
+  .vwc-md-p70 - Sets width of immediate children to p70 on md
+  .vwcmn-md-p70 - Sets min-width of immediate children to p70 on md
+  .vwcmx-md-p70 - Sets max-width of immediate children to p70 on md
 
   Styleguide Child Width - p70 - md
   */
-  .wh-md-p70,
-.wc-md-p70 > * {
+  .vw-md-p70,
+.vwc-md-p70 > * {
     width: var(--width-p70);
   }
 
-  .whmn-md-p70,
-.wcmn-md-p70 > * {
+  .vwmn-md-p70,
+.vwcmn-md-p70 > * {
     min-width: var(--width-p70);
   }
 
-  .whmx-md-p70,
-.wcmx-md-p70 > * {
+  .vwmx-md-p70,
+.vwcmx-md-p70 > * {
     max-width: var(--width-p70);
   }
 
   /*
-  .wh[mn,mx]-md-p75
+  .vw[mn,mx]-md-p75
 
   Sets the width, max-width, or min-width of element to css var for p75 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p75 - Sets width to p75 on md
-  .whmn-md-p75 - Sets min-width to p75 on md
-  .whmx-md-p75 - Sets max-width to p75 on md
+  .vw-md-p75 - Sets width to p75 on md
+  .vwmn-md-p75 - Sets min-width to p75 on md
+  .vwmx-md-p75 - Sets max-width to p75 on md
 
   Styleguide Width - p75 - md
   */
   /*
-  .wc[mn,mx]-md-p75
+  .vwc[mn,mx]-md-p75
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p75 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p75 - Sets width of immediate children to p75 on md
-  .wcmn-md-p75 - Sets min-width of immediate children to p75 on md
-  .wcmx-md-p75 - Sets max-width of immediate children to p75 on md
+  .vwc-md-p75 - Sets width of immediate children to p75 on md
+  .vwcmn-md-p75 - Sets min-width of immediate children to p75 on md
+  .vwcmx-md-p75 - Sets max-width of immediate children to p75 on md
 
   Styleguide Child Width - p75 - md
   */
-  .wh-md-p75,
-.wc-md-p75 > * {
+  .vw-md-p75,
+.vwc-md-p75 > * {
     width: var(--width-p75);
   }
 
-  .whmn-md-p75,
-.wcmn-md-p75 > * {
+  .vwmn-md-p75,
+.vwcmn-md-p75 > * {
     min-width: var(--width-p75);
   }
 
-  .whmx-md-p75,
-.wcmx-md-p75 > * {
+  .vwmx-md-p75,
+.vwcmx-md-p75 > * {
     max-width: var(--width-p75);
   }
 
   /*
-  .wh[mn,mx]-md-p80
+  .vw[mn,mx]-md-p80
 
   Sets the width, max-width, or min-width of element to css var for p80 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p80 - Sets width to p80 on md
-  .whmn-md-p80 - Sets min-width to p80 on md
-  .whmx-md-p80 - Sets max-width to p80 on md
+  .vw-md-p80 - Sets width to p80 on md
+  .vwmn-md-p80 - Sets min-width to p80 on md
+  .vwmx-md-p80 - Sets max-width to p80 on md
 
   Styleguide Width - p80 - md
   */
   /*
-  .wc[mn,mx]-md-p80
+  .vwc[mn,mx]-md-p80
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p80 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p80 - Sets width of immediate children to p80 on md
-  .wcmn-md-p80 - Sets min-width of immediate children to p80 on md
-  .wcmx-md-p80 - Sets max-width of immediate children to p80 on md
+  .vwc-md-p80 - Sets width of immediate children to p80 on md
+  .vwcmn-md-p80 - Sets min-width of immediate children to p80 on md
+  .vwcmx-md-p80 - Sets max-width of immediate children to p80 on md
 
   Styleguide Child Width - p80 - md
   */
-  .wh-md-p80,
-.wc-md-p80 > * {
+  .vw-md-p80,
+.vwc-md-p80 > * {
     width: var(--width-p80);
   }
 
-  .whmn-md-p80,
-.wcmn-md-p80 > * {
+  .vwmn-md-p80,
+.vwcmn-md-p80 > * {
     min-width: var(--width-p80);
   }
 
-  .whmx-md-p80,
-.wcmx-md-p80 > * {
+  .vwmx-md-p80,
+.vwcmx-md-p80 > * {
     max-width: var(--width-p80);
   }
 
   /*
-  .wh[mn,mx]-md-p90
+  .vw[mn,mx]-md-p90
 
   Sets the width, max-width, or min-width of element to css var for p90 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p90 - Sets width to p90 on md
-  .whmn-md-p90 - Sets min-width to p90 on md
-  .whmx-md-p90 - Sets max-width to p90 on md
+  .vw-md-p90 - Sets width to p90 on md
+  .vwmn-md-p90 - Sets min-width to p90 on md
+  .vwmx-md-p90 - Sets max-width to p90 on md
 
   Styleguide Width - p90 - md
   */
   /*
-  .wc[mn,mx]-md-p90
+  .vwc[mn,mx]-md-p90
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p90 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p90 - Sets width of immediate children to p90 on md
-  .wcmn-md-p90 - Sets min-width of immediate children to p90 on md
-  .wcmx-md-p90 - Sets max-width of immediate children to p90 on md
+  .vwc-md-p90 - Sets width of immediate children to p90 on md
+  .vwcmn-md-p90 - Sets min-width of immediate children to p90 on md
+  .vwcmx-md-p90 - Sets max-width of immediate children to p90 on md
 
   Styleguide Child Width - p90 - md
   */
-  .wh-md-p90,
-.wc-md-p90 > * {
+  .vw-md-p90,
+.vwc-md-p90 > * {
     width: var(--width-p90);
   }
 
-  .whmn-md-p90,
-.wcmn-md-p90 > * {
+  .vwmn-md-p90,
+.vwcmn-md-p90 > * {
     min-width: var(--width-p90);
   }
 
-  .whmx-md-p90,
-.wcmx-md-p90 > * {
+  .vwmx-md-p90,
+.vwcmx-md-p90 > * {
     max-width: var(--width-p90);
   }
 
   /*
-  .wh[mn,mx]-md-p100
+  .vw[mn,mx]-md-p100
 
   Sets the width, max-width, or min-width of element to css var for p100 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-p100 - Sets width to p100 on md
-  .whmn-md-p100 - Sets min-width to p100 on md
-  .whmx-md-p100 - Sets max-width to p100 on md
+  .vw-md-p100 - Sets width to p100 on md
+  .vwmn-md-p100 - Sets min-width to p100 on md
+  .vwmx-md-p100 - Sets max-width to p100 on md
 
   Styleguide Width - p100 - md
   */
   /*
-  .wc[mn,mx]-md-p100
+  .vwc[mn,mx]-md-p100
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p100 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-p100 - Sets width of immediate children to p100 on md
-  .wcmn-md-p100 - Sets min-width of immediate children to p100 on md
-  .wcmx-md-p100 - Sets max-width of immediate children to p100 on md
+  .vwc-md-p100 - Sets width of immediate children to p100 on md
+  .vwcmn-md-p100 - Sets min-width of immediate children to p100 on md
+  .vwcmx-md-p100 - Sets max-width of immediate children to p100 on md
 
   Styleguide Child Width - p100 - md
   */
-  .wh-md-p100,
-.wc-md-p100 > * {
+  .vw-md-p100,
+.vwc-md-p100 > * {
     width: var(--width-p100);
   }
 
-  .whmn-md-p100,
-.wcmn-md-p100 > * {
+  .vwmn-md-p100,
+.vwcmn-md-p100 > * {
     min-width: var(--width-p100);
   }
 
-  .whmx-md-p100,
-.wcmx-md-p100 > * {
+  .vwmx-md-p100,
+.vwcmx-md-p100 > * {
     max-width: var(--width-p100);
   }
 
   /*
-  .wh[mn,mx]-md-ch0
+  .vw[mn,mx]-md-ch0
 
   Sets the width, max-width, or min-width of element to css var for ch0 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-ch0 - Sets width to ch0 on md
-  .whmn-md-ch0 - Sets min-width to ch0 on md
-  .whmx-md-ch0 - Sets max-width to ch0 on md
+  .vw-md-ch0 - Sets width to ch0 on md
+  .vwmn-md-ch0 - Sets min-width to ch0 on md
+  .vwmx-md-ch0 - Sets max-width to ch0 on md
 
   Styleguide Width - ch0 - md
   */
   /*
-  .wc[mn,mx]-md-ch0
+  .vwc[mn,mx]-md-ch0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch0 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-ch0 - Sets width of immediate children to ch0 on md
-  .wcmn-md-ch0 - Sets min-width of immediate children to ch0 on md
-  .wcmx-md-ch0 - Sets max-width of immediate children to ch0 on md
+  .vwc-md-ch0 - Sets width of immediate children to ch0 on md
+  .vwcmn-md-ch0 - Sets min-width of immediate children to ch0 on md
+  .vwcmx-md-ch0 - Sets max-width of immediate children to ch0 on md
 
   Styleguide Child Width - ch0 - md
   */
-  .wh-md-ch0,
-.wc-md-ch0 > * {
+  .vw-md-ch0,
+.vwc-md-ch0 > * {
     width: var(--width-ch0);
   }
 
-  .whmn-md-ch0,
-.wcmn-md-ch0 > * {
+  .vwmn-md-ch0,
+.vwcmn-md-ch0 > * {
     min-width: var(--width-ch0);
   }
 
-  .whmx-md-ch0,
-.wcmx-md-ch0 > * {
+  .vwmx-md-ch0,
+.vwcmx-md-ch0 > * {
     max-width: var(--width-ch0);
   }
 
   /*
-  .wh[mn,mx]-md-ch1
+  .vw[mn,mx]-md-ch1
 
   Sets the width, max-width, or min-width of element to css var for ch1 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-ch1 - Sets width to ch1 on md
-  .whmn-md-ch1 - Sets min-width to ch1 on md
-  .whmx-md-ch1 - Sets max-width to ch1 on md
+  .vw-md-ch1 - Sets width to ch1 on md
+  .vwmn-md-ch1 - Sets min-width to ch1 on md
+  .vwmx-md-ch1 - Sets max-width to ch1 on md
 
   Styleguide Width - ch1 - md
   */
   /*
-  .wc[mn,mx]-md-ch1
+  .vwc[mn,mx]-md-ch1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch1 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-ch1 - Sets width of immediate children to ch1 on md
-  .wcmn-md-ch1 - Sets min-width of immediate children to ch1 on md
-  .wcmx-md-ch1 - Sets max-width of immediate children to ch1 on md
+  .vwc-md-ch1 - Sets width of immediate children to ch1 on md
+  .vwcmn-md-ch1 - Sets min-width of immediate children to ch1 on md
+  .vwcmx-md-ch1 - Sets max-width of immediate children to ch1 on md
 
   Styleguide Child Width - ch1 - md
   */
-  .wh-md-ch1,
-.wc-md-ch1 > * {
+  .vw-md-ch1,
+.vwc-md-ch1 > * {
     width: var(--width-ch1);
   }
 
-  .whmn-md-ch1,
-.wcmn-md-ch1 > * {
+  .vwmn-md-ch1,
+.vwcmn-md-ch1 > * {
     min-width: var(--width-ch1);
   }
 
-  .whmx-md-ch1,
-.wcmx-md-ch1 > * {
+  .vwmx-md-ch1,
+.vwcmx-md-ch1 > * {
     max-width: var(--width-ch1);
   }
 
   /*
-  .wh[mn,mx]-md-ch2
+  .vw[mn,mx]-md-ch2
 
   Sets the width, max-width, or min-width of element to css var for ch2 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-ch2 - Sets width to ch2 on md
-  .whmn-md-ch2 - Sets min-width to ch2 on md
-  .whmx-md-ch2 - Sets max-width to ch2 on md
+  .vw-md-ch2 - Sets width to ch2 on md
+  .vwmn-md-ch2 - Sets min-width to ch2 on md
+  .vwmx-md-ch2 - Sets max-width to ch2 on md
 
   Styleguide Width - ch2 - md
   */
   /*
-  .wc[mn,mx]-md-ch2
+  .vwc[mn,mx]-md-ch2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch2 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-ch2 - Sets width of immediate children to ch2 on md
-  .wcmn-md-ch2 - Sets min-width of immediate children to ch2 on md
-  .wcmx-md-ch2 - Sets max-width of immediate children to ch2 on md
+  .vwc-md-ch2 - Sets width of immediate children to ch2 on md
+  .vwcmn-md-ch2 - Sets min-width of immediate children to ch2 on md
+  .vwcmx-md-ch2 - Sets max-width of immediate children to ch2 on md
 
   Styleguide Child Width - ch2 - md
   */
-  .wh-md-ch2,
-.wc-md-ch2 > * {
+  .vw-md-ch2,
+.vwc-md-ch2 > * {
     width: var(--width-ch2);
   }
 
-  .whmn-md-ch2,
-.wcmn-md-ch2 > * {
+  .vwmn-md-ch2,
+.vwcmn-md-ch2 > * {
     min-width: var(--width-ch2);
   }
 
-  .whmx-md-ch2,
-.wcmx-md-ch2 > * {
+  .vwmx-md-ch2,
+.vwcmx-md-ch2 > * {
     max-width: var(--width-ch2);
   }
 
   /*
-  .wh[mn,mx]-md-ch3
+  .vw[mn,mx]-md-ch3
 
   Sets the width, max-width, or min-width of element to css var for ch3 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-ch3 - Sets width to ch3 on md
-  .whmn-md-ch3 - Sets min-width to ch3 on md
-  .whmx-md-ch3 - Sets max-width to ch3 on md
+  .vw-md-ch3 - Sets width to ch3 on md
+  .vwmn-md-ch3 - Sets min-width to ch3 on md
+  .vwmx-md-ch3 - Sets max-width to ch3 on md
 
   Styleguide Width - ch3 - md
   */
   /*
-  .wc[mn,mx]-md-ch3
+  .vwc[mn,mx]-md-ch3
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch3 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-ch3 - Sets width of immediate children to ch3 on md
-  .wcmn-md-ch3 - Sets min-width of immediate children to ch3 on md
-  .wcmx-md-ch3 - Sets max-width of immediate children to ch3 on md
+  .vwc-md-ch3 - Sets width of immediate children to ch3 on md
+  .vwcmn-md-ch3 - Sets min-width of immediate children to ch3 on md
+  .vwcmx-md-ch3 - Sets max-width of immediate children to ch3 on md
 
   Styleguide Child Width - ch3 - md
   */
-  .wh-md-ch3,
-.wc-md-ch3 > * {
+  .vw-md-ch3,
+.vwc-md-ch3 > * {
     width: var(--width-ch3);
   }
 
-  .whmn-md-ch3,
-.wcmn-md-ch3 > * {
+  .vwmn-md-ch3,
+.vwcmn-md-ch3 > * {
     min-width: var(--width-ch3);
   }
 
-  .whmx-md-ch3,
-.wcmx-md-ch3 > * {
+  .vwmx-md-ch3,
+.vwcmx-md-ch3 > * {
     max-width: var(--width-ch3);
   }
 
   /*
-  .wh[mn,mx]-md-ch4
+  .vw[mn,mx]-md-ch4
 
   Sets the width, max-width, or min-width of element to css var for ch4 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-ch4 - Sets width to ch4 on md
-  .whmn-md-ch4 - Sets min-width to ch4 on md
-  .whmx-md-ch4 - Sets max-width to ch4 on md
+  .vw-md-ch4 - Sets width to ch4 on md
+  .vwmn-md-ch4 - Sets min-width to ch4 on md
+  .vwmx-md-ch4 - Sets max-width to ch4 on md
 
   Styleguide Width - ch4 - md
   */
   /*
-  .wc[mn,mx]-md-ch4
+  .vwc[mn,mx]-md-ch4
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch4 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-ch4 - Sets width of immediate children to ch4 on md
-  .wcmn-md-ch4 - Sets min-width of immediate children to ch4 on md
-  .wcmx-md-ch4 - Sets max-width of immediate children to ch4 on md
+  .vwc-md-ch4 - Sets width of immediate children to ch4 on md
+  .vwcmn-md-ch4 - Sets min-width of immediate children to ch4 on md
+  .vwcmx-md-ch4 - Sets max-width of immediate children to ch4 on md
 
   Styleguide Child Width - ch4 - md
   */
-  .wh-md-ch4,
-.wc-md-ch4 > * {
+  .vw-md-ch4,
+.vwc-md-ch4 > * {
     width: var(--width-ch4);
   }
 
-  .whmn-md-ch4,
-.wcmn-md-ch4 > * {
+  .vwmn-md-ch4,
+.vwcmn-md-ch4 > * {
     min-width: var(--width-ch4);
   }
 
-  .whmx-md-ch4,
-.wcmx-md-ch4 > * {
+  .vwmx-md-ch4,
+.vwcmx-md-ch4 > * {
     max-width: var(--width-ch4);
   }
 
   /*
-  .wh[mn,mx]-md-px0
+  .vw[mn,mx]-md-px0
 
   Sets the width, max-width, or min-width of element to css var for px0 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-px0 - Sets width to px0 on md
-  .whmn-md-px0 - Sets min-width to px0 on md
-  .whmx-md-px0 - Sets max-width to px0 on md
+  .vw-md-px0 - Sets width to px0 on md
+  .vwmn-md-px0 - Sets min-width to px0 on md
+  .vwmx-md-px0 - Sets max-width to px0 on md
 
   Styleguide Width - px0 - md
   */
   /*
-  .wc[mn,mx]-md-px0
+  .vwc[mn,mx]-md-px0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px0 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-px0 - Sets width of immediate children to px0 on md
-  .wcmn-md-px0 - Sets min-width of immediate children to px0 on md
-  .wcmx-md-px0 - Sets max-width of immediate children to px0 on md
+  .vwc-md-px0 - Sets width of immediate children to px0 on md
+  .vwcmn-md-px0 - Sets min-width of immediate children to px0 on md
+  .vwcmx-md-px0 - Sets max-width of immediate children to px0 on md
 
   Styleguide Child Width - px0 - md
   */
-  .wh-md-px0,
-.wc-md-px0 > * {
+  .vw-md-px0,
+.vwc-md-px0 > * {
     width: var(--width-px0);
   }
 
-  .whmn-md-px0,
-.wcmn-md-px0 > * {
+  .vwmn-md-px0,
+.vwcmn-md-px0 > * {
     min-width: var(--width-px0);
   }
 
-  .whmx-md-px0,
-.wcmx-md-px0 > * {
+  .vwmx-md-px0,
+.vwcmx-md-px0 > * {
     max-width: var(--width-px0);
   }
 
   /*
-  .wh[mn,mx]-md-px1
+  .vw[mn,mx]-md-px1
 
   Sets the width, max-width, or min-width of element to css var for px1 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-px1 - Sets width to px1 on md
-  .whmn-md-px1 - Sets min-width to px1 on md
-  .whmx-md-px1 - Sets max-width to px1 on md
+  .vw-md-px1 - Sets width to px1 on md
+  .vwmn-md-px1 - Sets min-width to px1 on md
+  .vwmx-md-px1 - Sets max-width to px1 on md
 
   Styleguide Width - px1 - md
   */
   /*
-  .wc[mn,mx]-md-px1
+  .vwc[mn,mx]-md-px1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px1 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-px1 - Sets width of immediate children to px1 on md
-  .wcmn-md-px1 - Sets min-width of immediate children to px1 on md
-  .wcmx-md-px1 - Sets max-width of immediate children to px1 on md
+  .vwc-md-px1 - Sets width of immediate children to px1 on md
+  .vwcmn-md-px1 - Sets min-width of immediate children to px1 on md
+  .vwcmx-md-px1 - Sets max-width of immediate children to px1 on md
 
   Styleguide Child Width - px1 - md
   */
-  .wh-md-px1,
-.wc-md-px1 > * {
+  .vw-md-px1,
+.vwc-md-px1 > * {
     width: var(--width-px1);
   }
 
-  .whmn-md-px1,
-.wcmn-md-px1 > * {
+  .vwmn-md-px1,
+.vwcmn-md-px1 > * {
     min-width: var(--width-px1);
   }
 
-  .whmx-md-px1,
-.wcmx-md-px1 > * {
+  .vwmx-md-px1,
+.vwcmx-md-px1 > * {
     max-width: var(--width-px1);
   }
 
   /*
-  .wh[mn,mx]-md-px2
+  .vw[mn,mx]-md-px2
 
   Sets the width, max-width, or min-width of element to css var for px2 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-px2 - Sets width to px2 on md
-  .whmn-md-px2 - Sets min-width to px2 on md
-  .whmx-md-px2 - Sets max-width to px2 on md
+  .vw-md-px2 - Sets width to px2 on md
+  .vwmn-md-px2 - Sets min-width to px2 on md
+  .vwmx-md-px2 - Sets max-width to px2 on md
 
   Styleguide Width - px2 - md
   */
   /*
-  .wc[mn,mx]-md-px2
+  .vwc[mn,mx]-md-px2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px2 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-px2 - Sets width of immediate children to px2 on md
-  .wcmn-md-px2 - Sets min-width of immediate children to px2 on md
-  .wcmx-md-px2 - Sets max-width of immediate children to px2 on md
+  .vwc-md-px2 - Sets width of immediate children to px2 on md
+  .vwcmn-md-px2 - Sets min-width of immediate children to px2 on md
+  .vwcmx-md-px2 - Sets max-width of immediate children to px2 on md
 
   Styleguide Child Width - px2 - md
   */
-  .wh-md-px2,
-.wc-md-px2 > * {
+  .vw-md-px2,
+.vwc-md-px2 > * {
     width: var(--width-px2);
   }
 
-  .whmn-md-px2,
-.wcmn-md-px2 > * {
+  .vwmn-md-px2,
+.vwcmn-md-px2 > * {
     min-width: var(--width-px2);
   }
 
-  .whmx-md-px2,
-.wcmx-md-px2 > * {
+  .vwmx-md-px2,
+.vwcmx-md-px2 > * {
     max-width: var(--width-px2);
   }
 
   /*
-  .wh[mn,mx]-md-px3
+  .vw[mn,mx]-md-px3
 
   Sets the width, max-width, or min-width of element to css var for px3 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-px3 - Sets width to px3 on md
-  .whmn-md-px3 - Sets min-width to px3 on md
-  .whmx-md-px3 - Sets max-width to px3 on md
+  .vw-md-px3 - Sets width to px3 on md
+  .vwmn-md-px3 - Sets min-width to px3 on md
+  .vwmx-md-px3 - Sets max-width to px3 on md
 
   Styleguide Width - px3 - md
   */
   /*
-  .wc[mn,mx]-md-px3
+  .vwc[mn,mx]-md-px3
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px3 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-px3 - Sets width of immediate children to px3 on md
-  .wcmn-md-px3 - Sets min-width of immediate children to px3 on md
-  .wcmx-md-px3 - Sets max-width of immediate children to px3 on md
+  .vwc-md-px3 - Sets width of immediate children to px3 on md
+  .vwcmn-md-px3 - Sets min-width of immediate children to px3 on md
+  .vwcmx-md-px3 - Sets max-width of immediate children to px3 on md
 
   Styleguide Child Width - px3 - md
   */
-  .wh-md-px3,
-.wc-md-px3 > * {
+  .vw-md-px3,
+.vwc-md-px3 > * {
     width: var(--width-px3);
   }
 
-  .whmn-md-px3,
-.wcmn-md-px3 > * {
+  .vwmn-md-px3,
+.vwcmn-md-px3 > * {
     min-width: var(--width-px3);
   }
 
-  .whmx-md-px3,
-.wcmx-md-px3 > * {
+  .vwmx-md-px3,
+.vwcmx-md-px3 > * {
     max-width: var(--width-px3);
   }
 
   /*
-  .wh[mn,mx]-md-em0
+  .vw[mn,mx]-md-em0
 
   Sets the width, max-width, or min-width of element to css var for em0 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-em0 - Sets width to em0 on md
-  .whmn-md-em0 - Sets min-width to em0 on md
-  .whmx-md-em0 - Sets max-width to em0 on md
+  .vw-md-em0 - Sets width to em0 on md
+  .vwmn-md-em0 - Sets min-width to em0 on md
+  .vwmx-md-em0 - Sets max-width to em0 on md
 
   Styleguide Width - em0 - md
   */
   /*
-  .wc[mn,mx]-md-em0
+  .vwc[mn,mx]-md-em0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em0 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-em0 - Sets width of immediate children to em0 on md
-  .wcmn-md-em0 - Sets min-width of immediate children to em0 on md
-  .wcmx-md-em0 - Sets max-width of immediate children to em0 on md
+  .vwc-md-em0 - Sets width of immediate children to em0 on md
+  .vwcmn-md-em0 - Sets min-width of immediate children to em0 on md
+  .vwcmx-md-em0 - Sets max-width of immediate children to em0 on md
 
   Styleguide Child Width - em0 - md
   */
-  .wh-md-em0,
-.wc-md-em0 > * {
+  .vw-md-em0,
+.vwc-md-em0 > * {
     width: var(--width-em0);
   }
 
-  .whmn-md-em0,
-.wcmn-md-em0 > * {
+  .vwmn-md-em0,
+.vwcmn-md-em0 > * {
     min-width: var(--width-em0);
   }
 
-  .whmx-md-em0,
-.wcmx-md-em0 > * {
+  .vwmx-md-em0,
+.vwcmx-md-em0 > * {
     max-width: var(--width-em0);
   }
 
   /*
-  .wh[mn,mx]-md-em1
+  .vw[mn,mx]-md-em1
 
   Sets the width, max-width, or min-width of element to css var for em1 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-em1 - Sets width to em1 on md
-  .whmn-md-em1 - Sets min-width to em1 on md
-  .whmx-md-em1 - Sets max-width to em1 on md
+  .vw-md-em1 - Sets width to em1 on md
+  .vwmn-md-em1 - Sets min-width to em1 on md
+  .vwmx-md-em1 - Sets max-width to em1 on md
 
   Styleguide Width - em1 - md
   */
   /*
-  .wc[mn,mx]-md-em1
+  .vwc[mn,mx]-md-em1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em1 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-em1 - Sets width of immediate children to em1 on md
-  .wcmn-md-em1 - Sets min-width of immediate children to em1 on md
-  .wcmx-md-em1 - Sets max-width of immediate children to em1 on md
+  .vwc-md-em1 - Sets width of immediate children to em1 on md
+  .vwcmn-md-em1 - Sets min-width of immediate children to em1 on md
+  .vwcmx-md-em1 - Sets max-width of immediate children to em1 on md
 
   Styleguide Child Width - em1 - md
   */
-  .wh-md-em1,
-.wc-md-em1 > * {
+  .vw-md-em1,
+.vwc-md-em1 > * {
     width: var(--width-em1);
   }
 
-  .whmn-md-em1,
-.wcmn-md-em1 > * {
+  .vwmn-md-em1,
+.vwcmn-md-em1 > * {
     min-width: var(--width-em1);
   }
 
-  .whmx-md-em1,
-.wcmx-md-em1 > * {
+  .vwmx-md-em1,
+.vwcmx-md-em1 > * {
     max-width: var(--width-em1);
   }
 
   /*
-  .wh[mn,mx]-md-em2
+  .vw[mn,mx]-md-em2
 
   Sets the width, max-width, or min-width of element to css var for em2 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-md-em2 - Sets width to em2 on md
-  .whmn-md-em2 - Sets min-width to em2 on md
-  .whmx-md-em2 - Sets max-width to em2 on md
+  .vw-md-em2 - Sets width to em2 on md
+  .vwmn-md-em2 - Sets min-width to em2 on md
+  .vwmx-md-em2 - Sets max-width to em2 on md
 
   Styleguide Width - em2 - md
   */
   /*
-  .wc[mn,mx]-md-em2
+  .vwc[mn,mx]-md-em2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em2 on md.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-md-em2 - Sets width of immediate children to em2 on md
-  .wcmn-md-em2 - Sets min-width of immediate children to em2 on md
-  .wcmx-md-em2 - Sets max-width of immediate children to em2 on md
+  .vwc-md-em2 - Sets width of immediate children to em2 on md
+  .vwcmn-md-em2 - Sets min-width of immediate children to em2 on md
+  .vwcmx-md-em2 - Sets max-width of immediate children to em2 on md
 
   Styleguide Child Width - em2 - md
   */
-  .wh-md-em2,
-.wc-md-em2 > * {
+  .vw-md-em2,
+.vwc-md-em2 > * {
     width: var(--width-em2);
   }
 
-  .whmn-md-em2,
-.wcmn-md-em2 > * {
+  .vwmn-md-em2,
+.vwcmn-md-em2 > * {
     min-width: var(--width-em2);
   }
 
-  .whmx-md-em2,
-.wcmx-md-em2 > * {
+  .vwmx-md-em2,
+.vwcmx-md-em2 > * {
     max-width: var(--width-em2);
   }
 }
 @media (min-width: 90em) {
   /*
-  .wh[mn,mx]-lg-p10
+  .vw[mn,mx]-lg-p10
 
   Sets the width, max-width, or min-width of element to css var for p10 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p10 - Sets width to p10 on lg
-  .whmn-lg-p10 - Sets min-width to p10 on lg
-  .whmx-lg-p10 - Sets max-width to p10 on lg
+  .vw-lg-p10 - Sets width to p10 on lg
+  .vwmn-lg-p10 - Sets min-width to p10 on lg
+  .vwmx-lg-p10 - Sets max-width to p10 on lg
 
   Styleguide Width - p10 - lg
   */
   /*
-  .wc[mn,mx]-lg-p10
+  .vwc[mn,mx]-lg-p10
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p10 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p10 - Sets width of immediate children to p10 on lg
-  .wcmn-lg-p10 - Sets min-width of immediate children to p10 on lg
-  .wcmx-lg-p10 - Sets max-width of immediate children to p10 on lg
+  .vwc-lg-p10 - Sets width of immediate children to p10 on lg
+  .vwcmn-lg-p10 - Sets min-width of immediate children to p10 on lg
+  .vwcmx-lg-p10 - Sets max-width of immediate children to p10 on lg
 
   Styleguide Child Width - p10 - lg
   */
-  .wh-lg-p10,
-.wc-lg-p10 > * {
+  .vw-lg-p10,
+.vwc-lg-p10 > * {
     width: var(--width-p10);
   }
 
-  .whmn-lg-p10,
-.wcmn-lg-p10 > * {
+  .vwmn-lg-p10,
+.vwcmn-lg-p10 > * {
     min-width: var(--width-p10);
   }
 
-  .whmx-lg-p10,
-.wcmx-lg-p10 > * {
+  .vwmx-lg-p10,
+.vwcmx-lg-p10 > * {
     max-width: var(--width-p10);
   }
 
   /*
-  .wh[mn,mx]-lg-p20
+  .vw[mn,mx]-lg-p20
 
   Sets the width, max-width, or min-width of element to css var for p20 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p20 - Sets width to p20 on lg
-  .whmn-lg-p20 - Sets min-width to p20 on lg
-  .whmx-lg-p20 - Sets max-width to p20 on lg
+  .vw-lg-p20 - Sets width to p20 on lg
+  .vwmn-lg-p20 - Sets min-width to p20 on lg
+  .vwmx-lg-p20 - Sets max-width to p20 on lg
 
   Styleguide Width - p20 - lg
   */
   /*
-  .wc[mn,mx]-lg-p20
+  .vwc[mn,mx]-lg-p20
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p20 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p20 - Sets width of immediate children to p20 on lg
-  .wcmn-lg-p20 - Sets min-width of immediate children to p20 on lg
-  .wcmx-lg-p20 - Sets max-width of immediate children to p20 on lg
+  .vwc-lg-p20 - Sets width of immediate children to p20 on lg
+  .vwcmn-lg-p20 - Sets min-width of immediate children to p20 on lg
+  .vwcmx-lg-p20 - Sets max-width of immediate children to p20 on lg
 
   Styleguide Child Width - p20 - lg
   */
-  .wh-lg-p20,
-.wc-lg-p20 > * {
+  .vw-lg-p20,
+.vwc-lg-p20 > * {
     width: var(--width-p20);
   }
 
-  .whmn-lg-p20,
-.wcmn-lg-p20 > * {
+  .vwmn-lg-p20,
+.vwcmn-lg-p20 > * {
     min-width: var(--width-p20);
   }
 
-  .whmx-lg-p20,
-.wcmx-lg-p20 > * {
+  .vwmx-lg-p20,
+.vwcmx-lg-p20 > * {
     max-width: var(--width-p20);
   }
 
   /*
-  .wh[mn,mx]-lg-p25
+  .vw[mn,mx]-lg-p25
 
   Sets the width, max-width, or min-width of element to css var for p25 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p25 - Sets width to p25 on lg
-  .whmn-lg-p25 - Sets min-width to p25 on lg
-  .whmx-lg-p25 - Sets max-width to p25 on lg
+  .vw-lg-p25 - Sets width to p25 on lg
+  .vwmn-lg-p25 - Sets min-width to p25 on lg
+  .vwmx-lg-p25 - Sets max-width to p25 on lg
 
   Styleguide Width - p25 - lg
   */
   /*
-  .wc[mn,mx]-lg-p25
+  .vwc[mn,mx]-lg-p25
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p25 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p25 - Sets width of immediate children to p25 on lg
-  .wcmn-lg-p25 - Sets min-width of immediate children to p25 on lg
-  .wcmx-lg-p25 - Sets max-width of immediate children to p25 on lg
+  .vwc-lg-p25 - Sets width of immediate children to p25 on lg
+  .vwcmn-lg-p25 - Sets min-width of immediate children to p25 on lg
+  .vwcmx-lg-p25 - Sets max-width of immediate children to p25 on lg
 
   Styleguide Child Width - p25 - lg
   */
-  .wh-lg-p25,
-.wc-lg-p25 > * {
+  .vw-lg-p25,
+.vwc-lg-p25 > * {
     width: var(--width-p25);
   }
 
-  .whmn-lg-p25,
-.wcmn-lg-p25 > * {
+  .vwmn-lg-p25,
+.vwcmn-lg-p25 > * {
     min-width: var(--width-p25);
   }
 
-  .whmx-lg-p25,
-.wcmx-lg-p25 > * {
+  .vwmx-lg-p25,
+.vwcmx-lg-p25 > * {
     max-width: var(--width-p25);
   }
 
   /*
-  .wh[mn,mx]-lg-p30
+  .vw[mn,mx]-lg-p30
 
   Sets the width, max-width, or min-width of element to css var for p30 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p30 - Sets width to p30 on lg
-  .whmn-lg-p30 - Sets min-width to p30 on lg
-  .whmx-lg-p30 - Sets max-width to p30 on lg
+  .vw-lg-p30 - Sets width to p30 on lg
+  .vwmn-lg-p30 - Sets min-width to p30 on lg
+  .vwmx-lg-p30 - Sets max-width to p30 on lg
 
   Styleguide Width - p30 - lg
   */
   /*
-  .wc[mn,mx]-lg-p30
+  .vwc[mn,mx]-lg-p30
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p30 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p30 - Sets width of immediate children to p30 on lg
-  .wcmn-lg-p30 - Sets min-width of immediate children to p30 on lg
-  .wcmx-lg-p30 - Sets max-width of immediate children to p30 on lg
+  .vwc-lg-p30 - Sets width of immediate children to p30 on lg
+  .vwcmn-lg-p30 - Sets min-width of immediate children to p30 on lg
+  .vwcmx-lg-p30 - Sets max-width of immediate children to p30 on lg
 
   Styleguide Child Width - p30 - lg
   */
-  .wh-lg-p30,
-.wc-lg-p30 > * {
+  .vw-lg-p30,
+.vwc-lg-p30 > * {
     width: var(--width-p30);
   }
 
-  .whmn-lg-p30,
-.wcmn-lg-p30 > * {
+  .vwmn-lg-p30,
+.vwcmn-lg-p30 > * {
     min-width: var(--width-p30);
   }
 
-  .whmx-lg-p30,
-.wcmx-lg-p30 > * {
+  .vwmx-lg-p30,
+.vwcmx-lg-p30 > * {
     max-width: var(--width-p30);
   }
 
   /*
-  .wh[mn,mx]-lg-p40
+  .vw[mn,mx]-lg-p40
 
   Sets the width, max-width, or min-width of element to css var for p40 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p40 - Sets width to p40 on lg
-  .whmn-lg-p40 - Sets min-width to p40 on lg
-  .whmx-lg-p40 - Sets max-width to p40 on lg
+  .vw-lg-p40 - Sets width to p40 on lg
+  .vwmn-lg-p40 - Sets min-width to p40 on lg
+  .vwmx-lg-p40 - Sets max-width to p40 on lg
 
   Styleguide Width - p40 - lg
   */
   /*
-  .wc[mn,mx]-lg-p40
+  .vwc[mn,mx]-lg-p40
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p40 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p40 - Sets width of immediate children to p40 on lg
-  .wcmn-lg-p40 - Sets min-width of immediate children to p40 on lg
-  .wcmx-lg-p40 - Sets max-width of immediate children to p40 on lg
+  .vwc-lg-p40 - Sets width of immediate children to p40 on lg
+  .vwcmn-lg-p40 - Sets min-width of immediate children to p40 on lg
+  .vwcmx-lg-p40 - Sets max-width of immediate children to p40 on lg
 
   Styleguide Child Width - p40 - lg
   */
-  .wh-lg-p40,
-.wc-lg-p40 > * {
+  .vw-lg-p40,
+.vwc-lg-p40 > * {
     width: var(--width-p40);
   }
 
-  .whmn-lg-p40,
-.wcmn-lg-p40 > * {
+  .vwmn-lg-p40,
+.vwcmn-lg-p40 > * {
     min-width: var(--width-p40);
   }
 
-  .whmx-lg-p40,
-.wcmx-lg-p40 > * {
+  .vwmx-lg-p40,
+.vwcmx-lg-p40 > * {
     max-width: var(--width-p40);
   }
 
   /*
-  .wh[mn,mx]-lg-p50
+  .vw[mn,mx]-lg-p50
 
   Sets the width, max-width, or min-width of element to css var for p50 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p50 - Sets width to p50 on lg
-  .whmn-lg-p50 - Sets min-width to p50 on lg
-  .whmx-lg-p50 - Sets max-width to p50 on lg
+  .vw-lg-p50 - Sets width to p50 on lg
+  .vwmn-lg-p50 - Sets min-width to p50 on lg
+  .vwmx-lg-p50 - Sets max-width to p50 on lg
 
   Styleguide Width - p50 - lg
   */
   /*
-  .wc[mn,mx]-lg-p50
+  .vwc[mn,mx]-lg-p50
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p50 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p50 - Sets width of immediate children to p50 on lg
-  .wcmn-lg-p50 - Sets min-width of immediate children to p50 on lg
-  .wcmx-lg-p50 - Sets max-width of immediate children to p50 on lg
+  .vwc-lg-p50 - Sets width of immediate children to p50 on lg
+  .vwcmn-lg-p50 - Sets min-width of immediate children to p50 on lg
+  .vwcmx-lg-p50 - Sets max-width of immediate children to p50 on lg
 
   Styleguide Child Width - p50 - lg
   */
-  .wh-lg-p50,
-.wc-lg-p50 > * {
+  .vw-lg-p50,
+.vwc-lg-p50 > * {
     width: var(--width-p50);
   }
 
-  .whmn-lg-p50,
-.wcmn-lg-p50 > * {
+  .vwmn-lg-p50,
+.vwcmn-lg-p50 > * {
     min-width: var(--width-p50);
   }
 
-  .whmx-lg-p50,
-.wcmx-lg-p50 > * {
+  .vwmx-lg-p50,
+.vwcmx-lg-p50 > * {
     max-width: var(--width-p50);
   }
 
   /*
-  .wh[mn,mx]-lg-p60
+  .vw[mn,mx]-lg-p60
 
   Sets the width, max-width, or min-width of element to css var for p60 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p60 - Sets width to p60 on lg
-  .whmn-lg-p60 - Sets min-width to p60 on lg
-  .whmx-lg-p60 - Sets max-width to p60 on lg
+  .vw-lg-p60 - Sets width to p60 on lg
+  .vwmn-lg-p60 - Sets min-width to p60 on lg
+  .vwmx-lg-p60 - Sets max-width to p60 on lg
 
   Styleguide Width - p60 - lg
   */
   /*
-  .wc[mn,mx]-lg-p60
+  .vwc[mn,mx]-lg-p60
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p60 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p60 - Sets width of immediate children to p60 on lg
-  .wcmn-lg-p60 - Sets min-width of immediate children to p60 on lg
-  .wcmx-lg-p60 - Sets max-width of immediate children to p60 on lg
+  .vwc-lg-p60 - Sets width of immediate children to p60 on lg
+  .vwcmn-lg-p60 - Sets min-width of immediate children to p60 on lg
+  .vwcmx-lg-p60 - Sets max-width of immediate children to p60 on lg
 
   Styleguide Child Width - p60 - lg
   */
-  .wh-lg-p60,
-.wc-lg-p60 > * {
+  .vw-lg-p60,
+.vwc-lg-p60 > * {
     width: var(--width-p60);
   }
 
-  .whmn-lg-p60,
-.wcmn-lg-p60 > * {
+  .vwmn-lg-p60,
+.vwcmn-lg-p60 > * {
     min-width: var(--width-p60);
   }
 
-  .whmx-lg-p60,
-.wcmx-lg-p60 > * {
+  .vwmx-lg-p60,
+.vwcmx-lg-p60 > * {
     max-width: var(--width-p60);
   }
 
   /*
-  .wh[mn,mx]-lg-p70
+  .vw[mn,mx]-lg-p70
 
   Sets the width, max-width, or min-width of element to css var for p70 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p70 - Sets width to p70 on lg
-  .whmn-lg-p70 - Sets min-width to p70 on lg
-  .whmx-lg-p70 - Sets max-width to p70 on lg
+  .vw-lg-p70 - Sets width to p70 on lg
+  .vwmn-lg-p70 - Sets min-width to p70 on lg
+  .vwmx-lg-p70 - Sets max-width to p70 on lg
 
   Styleguide Width - p70 - lg
   */
   /*
-  .wc[mn,mx]-lg-p70
+  .vwc[mn,mx]-lg-p70
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p70 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p70 - Sets width of immediate children to p70 on lg
-  .wcmn-lg-p70 - Sets min-width of immediate children to p70 on lg
-  .wcmx-lg-p70 - Sets max-width of immediate children to p70 on lg
+  .vwc-lg-p70 - Sets width of immediate children to p70 on lg
+  .vwcmn-lg-p70 - Sets min-width of immediate children to p70 on lg
+  .vwcmx-lg-p70 - Sets max-width of immediate children to p70 on lg
 
   Styleguide Child Width - p70 - lg
   */
-  .wh-lg-p70,
-.wc-lg-p70 > * {
+  .vw-lg-p70,
+.vwc-lg-p70 > * {
     width: var(--width-p70);
   }
 
-  .whmn-lg-p70,
-.wcmn-lg-p70 > * {
+  .vwmn-lg-p70,
+.vwcmn-lg-p70 > * {
     min-width: var(--width-p70);
   }
 
-  .whmx-lg-p70,
-.wcmx-lg-p70 > * {
+  .vwmx-lg-p70,
+.vwcmx-lg-p70 > * {
     max-width: var(--width-p70);
   }
 
   /*
-  .wh[mn,mx]-lg-p75
+  .vw[mn,mx]-lg-p75
 
   Sets the width, max-width, or min-width of element to css var for p75 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p75 - Sets width to p75 on lg
-  .whmn-lg-p75 - Sets min-width to p75 on lg
-  .whmx-lg-p75 - Sets max-width to p75 on lg
+  .vw-lg-p75 - Sets width to p75 on lg
+  .vwmn-lg-p75 - Sets min-width to p75 on lg
+  .vwmx-lg-p75 - Sets max-width to p75 on lg
 
   Styleguide Width - p75 - lg
   */
   /*
-  .wc[mn,mx]-lg-p75
+  .vwc[mn,mx]-lg-p75
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p75 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p75 - Sets width of immediate children to p75 on lg
-  .wcmn-lg-p75 - Sets min-width of immediate children to p75 on lg
-  .wcmx-lg-p75 - Sets max-width of immediate children to p75 on lg
+  .vwc-lg-p75 - Sets width of immediate children to p75 on lg
+  .vwcmn-lg-p75 - Sets min-width of immediate children to p75 on lg
+  .vwcmx-lg-p75 - Sets max-width of immediate children to p75 on lg
 
   Styleguide Child Width - p75 - lg
   */
-  .wh-lg-p75,
-.wc-lg-p75 > * {
+  .vw-lg-p75,
+.vwc-lg-p75 > * {
     width: var(--width-p75);
   }
 
-  .whmn-lg-p75,
-.wcmn-lg-p75 > * {
+  .vwmn-lg-p75,
+.vwcmn-lg-p75 > * {
     min-width: var(--width-p75);
   }
 
-  .whmx-lg-p75,
-.wcmx-lg-p75 > * {
+  .vwmx-lg-p75,
+.vwcmx-lg-p75 > * {
     max-width: var(--width-p75);
   }
 
   /*
-  .wh[mn,mx]-lg-p80
+  .vw[mn,mx]-lg-p80
 
   Sets the width, max-width, or min-width of element to css var for p80 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p80 - Sets width to p80 on lg
-  .whmn-lg-p80 - Sets min-width to p80 on lg
-  .whmx-lg-p80 - Sets max-width to p80 on lg
+  .vw-lg-p80 - Sets width to p80 on lg
+  .vwmn-lg-p80 - Sets min-width to p80 on lg
+  .vwmx-lg-p80 - Sets max-width to p80 on lg
 
   Styleguide Width - p80 - lg
   */
   /*
-  .wc[mn,mx]-lg-p80
+  .vwc[mn,mx]-lg-p80
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p80 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p80 - Sets width of immediate children to p80 on lg
-  .wcmn-lg-p80 - Sets min-width of immediate children to p80 on lg
-  .wcmx-lg-p80 - Sets max-width of immediate children to p80 on lg
+  .vwc-lg-p80 - Sets width of immediate children to p80 on lg
+  .vwcmn-lg-p80 - Sets min-width of immediate children to p80 on lg
+  .vwcmx-lg-p80 - Sets max-width of immediate children to p80 on lg
 
   Styleguide Child Width - p80 - lg
   */
-  .wh-lg-p80,
-.wc-lg-p80 > * {
+  .vw-lg-p80,
+.vwc-lg-p80 > * {
     width: var(--width-p80);
   }
 
-  .whmn-lg-p80,
-.wcmn-lg-p80 > * {
+  .vwmn-lg-p80,
+.vwcmn-lg-p80 > * {
     min-width: var(--width-p80);
   }
 
-  .whmx-lg-p80,
-.wcmx-lg-p80 > * {
+  .vwmx-lg-p80,
+.vwcmx-lg-p80 > * {
     max-width: var(--width-p80);
   }
 
   /*
-  .wh[mn,mx]-lg-p90
+  .vw[mn,mx]-lg-p90
 
   Sets the width, max-width, or min-width of element to css var for p90 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p90 - Sets width to p90 on lg
-  .whmn-lg-p90 - Sets min-width to p90 on lg
-  .whmx-lg-p90 - Sets max-width to p90 on lg
+  .vw-lg-p90 - Sets width to p90 on lg
+  .vwmn-lg-p90 - Sets min-width to p90 on lg
+  .vwmx-lg-p90 - Sets max-width to p90 on lg
 
   Styleguide Width - p90 - lg
   */
   /*
-  .wc[mn,mx]-lg-p90
+  .vwc[mn,mx]-lg-p90
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p90 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p90 - Sets width of immediate children to p90 on lg
-  .wcmn-lg-p90 - Sets min-width of immediate children to p90 on lg
-  .wcmx-lg-p90 - Sets max-width of immediate children to p90 on lg
+  .vwc-lg-p90 - Sets width of immediate children to p90 on lg
+  .vwcmn-lg-p90 - Sets min-width of immediate children to p90 on lg
+  .vwcmx-lg-p90 - Sets max-width of immediate children to p90 on lg
 
   Styleguide Child Width - p90 - lg
   */
-  .wh-lg-p90,
-.wc-lg-p90 > * {
+  .vw-lg-p90,
+.vwc-lg-p90 > * {
     width: var(--width-p90);
   }
 
-  .whmn-lg-p90,
-.wcmn-lg-p90 > * {
+  .vwmn-lg-p90,
+.vwcmn-lg-p90 > * {
     min-width: var(--width-p90);
   }
 
-  .whmx-lg-p90,
-.wcmx-lg-p90 > * {
+  .vwmx-lg-p90,
+.vwcmx-lg-p90 > * {
     max-width: var(--width-p90);
   }
 
   /*
-  .wh[mn,mx]-lg-p100
+  .vw[mn,mx]-lg-p100
 
   Sets the width, max-width, or min-width of element to css var for p100 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-p100 - Sets width to p100 on lg
-  .whmn-lg-p100 - Sets min-width to p100 on lg
-  .whmx-lg-p100 - Sets max-width to p100 on lg
+  .vw-lg-p100 - Sets width to p100 on lg
+  .vwmn-lg-p100 - Sets min-width to p100 on lg
+  .vwmx-lg-p100 - Sets max-width to p100 on lg
 
   Styleguide Width - p100 - lg
   */
   /*
-  .wc[mn,mx]-lg-p100
+  .vwc[mn,mx]-lg-p100
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for p100 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-p100 - Sets width of immediate children to p100 on lg
-  .wcmn-lg-p100 - Sets min-width of immediate children to p100 on lg
-  .wcmx-lg-p100 - Sets max-width of immediate children to p100 on lg
+  .vwc-lg-p100 - Sets width of immediate children to p100 on lg
+  .vwcmn-lg-p100 - Sets min-width of immediate children to p100 on lg
+  .vwcmx-lg-p100 - Sets max-width of immediate children to p100 on lg
 
   Styleguide Child Width - p100 - lg
   */
-  .wh-lg-p100,
-.wc-lg-p100 > * {
+  .vw-lg-p100,
+.vwc-lg-p100 > * {
     width: var(--width-p100);
   }
 
-  .whmn-lg-p100,
-.wcmn-lg-p100 > * {
+  .vwmn-lg-p100,
+.vwcmn-lg-p100 > * {
     min-width: var(--width-p100);
   }
 
-  .whmx-lg-p100,
-.wcmx-lg-p100 > * {
+  .vwmx-lg-p100,
+.vwcmx-lg-p100 > * {
     max-width: var(--width-p100);
   }
 
   /*
-  .wh[mn,mx]-lg-ch0
+  .vw[mn,mx]-lg-ch0
 
   Sets the width, max-width, or min-width of element to css var for ch0 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-ch0 - Sets width to ch0 on lg
-  .whmn-lg-ch0 - Sets min-width to ch0 on lg
-  .whmx-lg-ch0 - Sets max-width to ch0 on lg
+  .vw-lg-ch0 - Sets width to ch0 on lg
+  .vwmn-lg-ch0 - Sets min-width to ch0 on lg
+  .vwmx-lg-ch0 - Sets max-width to ch0 on lg
 
   Styleguide Width - ch0 - lg
   */
   /*
-  .wc[mn,mx]-lg-ch0
+  .vwc[mn,mx]-lg-ch0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch0 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-ch0 - Sets width of immediate children to ch0 on lg
-  .wcmn-lg-ch0 - Sets min-width of immediate children to ch0 on lg
-  .wcmx-lg-ch0 - Sets max-width of immediate children to ch0 on lg
+  .vwc-lg-ch0 - Sets width of immediate children to ch0 on lg
+  .vwcmn-lg-ch0 - Sets min-width of immediate children to ch0 on lg
+  .vwcmx-lg-ch0 - Sets max-width of immediate children to ch0 on lg
 
   Styleguide Child Width - ch0 - lg
   */
-  .wh-lg-ch0,
-.wc-lg-ch0 > * {
+  .vw-lg-ch0,
+.vwc-lg-ch0 > * {
     width: var(--width-ch0);
   }
 
-  .whmn-lg-ch0,
-.wcmn-lg-ch0 > * {
+  .vwmn-lg-ch0,
+.vwcmn-lg-ch0 > * {
     min-width: var(--width-ch0);
   }
 
-  .whmx-lg-ch0,
-.wcmx-lg-ch0 > * {
+  .vwmx-lg-ch0,
+.vwcmx-lg-ch0 > * {
     max-width: var(--width-ch0);
   }
 
   /*
-  .wh[mn,mx]-lg-ch1
+  .vw[mn,mx]-lg-ch1
 
   Sets the width, max-width, or min-width of element to css var for ch1 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-ch1 - Sets width to ch1 on lg
-  .whmn-lg-ch1 - Sets min-width to ch1 on lg
-  .whmx-lg-ch1 - Sets max-width to ch1 on lg
+  .vw-lg-ch1 - Sets width to ch1 on lg
+  .vwmn-lg-ch1 - Sets min-width to ch1 on lg
+  .vwmx-lg-ch1 - Sets max-width to ch1 on lg
 
   Styleguide Width - ch1 - lg
   */
   /*
-  .wc[mn,mx]-lg-ch1
+  .vwc[mn,mx]-lg-ch1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch1 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-ch1 - Sets width of immediate children to ch1 on lg
-  .wcmn-lg-ch1 - Sets min-width of immediate children to ch1 on lg
-  .wcmx-lg-ch1 - Sets max-width of immediate children to ch1 on lg
+  .vwc-lg-ch1 - Sets width of immediate children to ch1 on lg
+  .vwcmn-lg-ch1 - Sets min-width of immediate children to ch1 on lg
+  .vwcmx-lg-ch1 - Sets max-width of immediate children to ch1 on lg
 
   Styleguide Child Width - ch1 - lg
   */
-  .wh-lg-ch1,
-.wc-lg-ch1 > * {
+  .vw-lg-ch1,
+.vwc-lg-ch1 > * {
     width: var(--width-ch1);
   }
 
-  .whmn-lg-ch1,
-.wcmn-lg-ch1 > * {
+  .vwmn-lg-ch1,
+.vwcmn-lg-ch1 > * {
     min-width: var(--width-ch1);
   }
 
-  .whmx-lg-ch1,
-.wcmx-lg-ch1 > * {
+  .vwmx-lg-ch1,
+.vwcmx-lg-ch1 > * {
     max-width: var(--width-ch1);
   }
 
   /*
-  .wh[mn,mx]-lg-ch2
+  .vw[mn,mx]-lg-ch2
 
   Sets the width, max-width, or min-width of element to css var for ch2 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-ch2 - Sets width to ch2 on lg
-  .whmn-lg-ch2 - Sets min-width to ch2 on lg
-  .whmx-lg-ch2 - Sets max-width to ch2 on lg
+  .vw-lg-ch2 - Sets width to ch2 on lg
+  .vwmn-lg-ch2 - Sets min-width to ch2 on lg
+  .vwmx-lg-ch2 - Sets max-width to ch2 on lg
 
   Styleguide Width - ch2 - lg
   */
   /*
-  .wc[mn,mx]-lg-ch2
+  .vwc[mn,mx]-lg-ch2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch2 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-ch2 - Sets width of immediate children to ch2 on lg
-  .wcmn-lg-ch2 - Sets min-width of immediate children to ch2 on lg
-  .wcmx-lg-ch2 - Sets max-width of immediate children to ch2 on lg
+  .vwc-lg-ch2 - Sets width of immediate children to ch2 on lg
+  .vwcmn-lg-ch2 - Sets min-width of immediate children to ch2 on lg
+  .vwcmx-lg-ch2 - Sets max-width of immediate children to ch2 on lg
 
   Styleguide Child Width - ch2 - lg
   */
-  .wh-lg-ch2,
-.wc-lg-ch2 > * {
+  .vw-lg-ch2,
+.vwc-lg-ch2 > * {
     width: var(--width-ch2);
   }
 
-  .whmn-lg-ch2,
-.wcmn-lg-ch2 > * {
+  .vwmn-lg-ch2,
+.vwcmn-lg-ch2 > * {
     min-width: var(--width-ch2);
   }
 
-  .whmx-lg-ch2,
-.wcmx-lg-ch2 > * {
+  .vwmx-lg-ch2,
+.vwcmx-lg-ch2 > * {
     max-width: var(--width-ch2);
   }
 
   /*
-  .wh[mn,mx]-lg-ch3
+  .vw[mn,mx]-lg-ch3
 
   Sets the width, max-width, or min-width of element to css var for ch3 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-ch3 - Sets width to ch3 on lg
-  .whmn-lg-ch3 - Sets min-width to ch3 on lg
-  .whmx-lg-ch3 - Sets max-width to ch3 on lg
+  .vw-lg-ch3 - Sets width to ch3 on lg
+  .vwmn-lg-ch3 - Sets min-width to ch3 on lg
+  .vwmx-lg-ch3 - Sets max-width to ch3 on lg
 
   Styleguide Width - ch3 - lg
   */
   /*
-  .wc[mn,mx]-lg-ch3
+  .vwc[mn,mx]-lg-ch3
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch3 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-ch3 - Sets width of immediate children to ch3 on lg
-  .wcmn-lg-ch3 - Sets min-width of immediate children to ch3 on lg
-  .wcmx-lg-ch3 - Sets max-width of immediate children to ch3 on lg
+  .vwc-lg-ch3 - Sets width of immediate children to ch3 on lg
+  .vwcmn-lg-ch3 - Sets min-width of immediate children to ch3 on lg
+  .vwcmx-lg-ch3 - Sets max-width of immediate children to ch3 on lg
 
   Styleguide Child Width - ch3 - lg
   */
-  .wh-lg-ch3,
-.wc-lg-ch3 > * {
+  .vw-lg-ch3,
+.vwc-lg-ch3 > * {
     width: var(--width-ch3);
   }
 
-  .whmn-lg-ch3,
-.wcmn-lg-ch3 > * {
+  .vwmn-lg-ch3,
+.vwcmn-lg-ch3 > * {
     min-width: var(--width-ch3);
   }
 
-  .whmx-lg-ch3,
-.wcmx-lg-ch3 > * {
+  .vwmx-lg-ch3,
+.vwcmx-lg-ch3 > * {
     max-width: var(--width-ch3);
   }
 
   /*
-  .wh[mn,mx]-lg-ch4
+  .vw[mn,mx]-lg-ch4
 
   Sets the width, max-width, or min-width of element to css var for ch4 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-ch4 - Sets width to ch4 on lg
-  .whmn-lg-ch4 - Sets min-width to ch4 on lg
-  .whmx-lg-ch4 - Sets max-width to ch4 on lg
+  .vw-lg-ch4 - Sets width to ch4 on lg
+  .vwmn-lg-ch4 - Sets min-width to ch4 on lg
+  .vwmx-lg-ch4 - Sets max-width to ch4 on lg
 
   Styleguide Width - ch4 - lg
   */
   /*
-  .wc[mn,mx]-lg-ch4
+  .vwc[mn,mx]-lg-ch4
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for ch4 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-ch4 - Sets width of immediate children to ch4 on lg
-  .wcmn-lg-ch4 - Sets min-width of immediate children to ch4 on lg
-  .wcmx-lg-ch4 - Sets max-width of immediate children to ch4 on lg
+  .vwc-lg-ch4 - Sets width of immediate children to ch4 on lg
+  .vwcmn-lg-ch4 - Sets min-width of immediate children to ch4 on lg
+  .vwcmx-lg-ch4 - Sets max-width of immediate children to ch4 on lg
 
   Styleguide Child Width - ch4 - lg
   */
-  .wh-lg-ch4,
-.wc-lg-ch4 > * {
+  .vw-lg-ch4,
+.vwc-lg-ch4 > * {
     width: var(--width-ch4);
   }
 
-  .whmn-lg-ch4,
-.wcmn-lg-ch4 > * {
+  .vwmn-lg-ch4,
+.vwcmn-lg-ch4 > * {
     min-width: var(--width-ch4);
   }
 
-  .whmx-lg-ch4,
-.wcmx-lg-ch4 > * {
+  .vwmx-lg-ch4,
+.vwcmx-lg-ch4 > * {
     max-width: var(--width-ch4);
   }
 
   /*
-  .wh[mn,mx]-lg-px0
+  .vw[mn,mx]-lg-px0
 
   Sets the width, max-width, or min-width of element to css var for px0 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-px0 - Sets width to px0 on lg
-  .whmn-lg-px0 - Sets min-width to px0 on lg
-  .whmx-lg-px0 - Sets max-width to px0 on lg
+  .vw-lg-px0 - Sets width to px0 on lg
+  .vwmn-lg-px0 - Sets min-width to px0 on lg
+  .vwmx-lg-px0 - Sets max-width to px0 on lg
 
   Styleguide Width - px0 - lg
   */
   /*
-  .wc[mn,mx]-lg-px0
+  .vwc[mn,mx]-lg-px0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px0 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-px0 - Sets width of immediate children to px0 on lg
-  .wcmn-lg-px0 - Sets min-width of immediate children to px0 on lg
-  .wcmx-lg-px0 - Sets max-width of immediate children to px0 on lg
+  .vwc-lg-px0 - Sets width of immediate children to px0 on lg
+  .vwcmn-lg-px0 - Sets min-width of immediate children to px0 on lg
+  .vwcmx-lg-px0 - Sets max-width of immediate children to px0 on lg
 
   Styleguide Child Width - px0 - lg
   */
-  .wh-lg-px0,
-.wc-lg-px0 > * {
+  .vw-lg-px0,
+.vwc-lg-px0 > * {
     width: var(--width-px0);
   }
 
-  .whmn-lg-px0,
-.wcmn-lg-px0 > * {
+  .vwmn-lg-px0,
+.vwcmn-lg-px0 > * {
     min-width: var(--width-px0);
   }
 
-  .whmx-lg-px0,
-.wcmx-lg-px0 > * {
+  .vwmx-lg-px0,
+.vwcmx-lg-px0 > * {
     max-width: var(--width-px0);
   }
 
   /*
-  .wh[mn,mx]-lg-px1
+  .vw[mn,mx]-lg-px1
 
   Sets the width, max-width, or min-width of element to css var for px1 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-px1 - Sets width to px1 on lg
-  .whmn-lg-px1 - Sets min-width to px1 on lg
-  .whmx-lg-px1 - Sets max-width to px1 on lg
+  .vw-lg-px1 - Sets width to px1 on lg
+  .vwmn-lg-px1 - Sets min-width to px1 on lg
+  .vwmx-lg-px1 - Sets max-width to px1 on lg
 
   Styleguide Width - px1 - lg
   */
   /*
-  .wc[mn,mx]-lg-px1
+  .vwc[mn,mx]-lg-px1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px1 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-px1 - Sets width of immediate children to px1 on lg
-  .wcmn-lg-px1 - Sets min-width of immediate children to px1 on lg
-  .wcmx-lg-px1 - Sets max-width of immediate children to px1 on lg
+  .vwc-lg-px1 - Sets width of immediate children to px1 on lg
+  .vwcmn-lg-px1 - Sets min-width of immediate children to px1 on lg
+  .vwcmx-lg-px1 - Sets max-width of immediate children to px1 on lg
 
   Styleguide Child Width - px1 - lg
   */
-  .wh-lg-px1,
-.wc-lg-px1 > * {
+  .vw-lg-px1,
+.vwc-lg-px1 > * {
     width: var(--width-px1);
   }
 
-  .whmn-lg-px1,
-.wcmn-lg-px1 > * {
+  .vwmn-lg-px1,
+.vwcmn-lg-px1 > * {
     min-width: var(--width-px1);
   }
 
-  .whmx-lg-px1,
-.wcmx-lg-px1 > * {
+  .vwmx-lg-px1,
+.vwcmx-lg-px1 > * {
     max-width: var(--width-px1);
   }
 
   /*
-  .wh[mn,mx]-lg-px2
+  .vw[mn,mx]-lg-px2
 
   Sets the width, max-width, or min-width of element to css var for px2 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-px2 - Sets width to px2 on lg
-  .whmn-lg-px2 - Sets min-width to px2 on lg
-  .whmx-lg-px2 - Sets max-width to px2 on lg
+  .vw-lg-px2 - Sets width to px2 on lg
+  .vwmn-lg-px2 - Sets min-width to px2 on lg
+  .vwmx-lg-px2 - Sets max-width to px2 on lg
 
   Styleguide Width - px2 - lg
   */
   /*
-  .wc[mn,mx]-lg-px2
+  .vwc[mn,mx]-lg-px2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px2 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-px2 - Sets width of immediate children to px2 on lg
-  .wcmn-lg-px2 - Sets min-width of immediate children to px2 on lg
-  .wcmx-lg-px2 - Sets max-width of immediate children to px2 on lg
+  .vwc-lg-px2 - Sets width of immediate children to px2 on lg
+  .vwcmn-lg-px2 - Sets min-width of immediate children to px2 on lg
+  .vwcmx-lg-px2 - Sets max-width of immediate children to px2 on lg
 
   Styleguide Child Width - px2 - lg
   */
-  .wh-lg-px2,
-.wc-lg-px2 > * {
+  .vw-lg-px2,
+.vwc-lg-px2 > * {
     width: var(--width-px2);
   }
 
-  .whmn-lg-px2,
-.wcmn-lg-px2 > * {
+  .vwmn-lg-px2,
+.vwcmn-lg-px2 > * {
     min-width: var(--width-px2);
   }
 
-  .whmx-lg-px2,
-.wcmx-lg-px2 > * {
+  .vwmx-lg-px2,
+.vwcmx-lg-px2 > * {
     max-width: var(--width-px2);
   }
 
   /*
-  .wh[mn,mx]-lg-px3
+  .vw[mn,mx]-lg-px3
 
   Sets the width, max-width, or min-width of element to css var for px3 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-px3 - Sets width to px3 on lg
-  .whmn-lg-px3 - Sets min-width to px3 on lg
-  .whmx-lg-px3 - Sets max-width to px3 on lg
+  .vw-lg-px3 - Sets width to px3 on lg
+  .vwmn-lg-px3 - Sets min-width to px3 on lg
+  .vwmx-lg-px3 - Sets max-width to px3 on lg
 
   Styleguide Width - px3 - lg
   */
   /*
-  .wc[mn,mx]-lg-px3
+  .vwc[mn,mx]-lg-px3
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for px3 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-px3 - Sets width of immediate children to px3 on lg
-  .wcmn-lg-px3 - Sets min-width of immediate children to px3 on lg
-  .wcmx-lg-px3 - Sets max-width of immediate children to px3 on lg
+  .vwc-lg-px3 - Sets width of immediate children to px3 on lg
+  .vwcmn-lg-px3 - Sets min-width of immediate children to px3 on lg
+  .vwcmx-lg-px3 - Sets max-width of immediate children to px3 on lg
 
   Styleguide Child Width - px3 - lg
   */
-  .wh-lg-px3,
-.wc-lg-px3 > * {
+  .vw-lg-px3,
+.vwc-lg-px3 > * {
     width: var(--width-px3);
   }
 
-  .whmn-lg-px3,
-.wcmn-lg-px3 > * {
+  .vwmn-lg-px3,
+.vwcmn-lg-px3 > * {
     min-width: var(--width-px3);
   }
 
-  .whmx-lg-px3,
-.wcmx-lg-px3 > * {
+  .vwmx-lg-px3,
+.vwcmx-lg-px3 > * {
     max-width: var(--width-px3);
   }
 
   /*
-  .wh[mn,mx]-lg-em0
+  .vw[mn,mx]-lg-em0
 
   Sets the width, max-width, or min-width of element to css var for em0 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-em0 - Sets width to em0 on lg
-  .whmn-lg-em0 - Sets min-width to em0 on lg
-  .whmx-lg-em0 - Sets max-width to em0 on lg
+  .vw-lg-em0 - Sets width to em0 on lg
+  .vwmn-lg-em0 - Sets min-width to em0 on lg
+  .vwmx-lg-em0 - Sets max-width to em0 on lg
 
   Styleguide Width - em0 - lg
   */
   /*
-  .wc[mn,mx]-lg-em0
+  .vwc[mn,mx]-lg-em0
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em0 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-em0 - Sets width of immediate children to em0 on lg
-  .wcmn-lg-em0 - Sets min-width of immediate children to em0 on lg
-  .wcmx-lg-em0 - Sets max-width of immediate children to em0 on lg
+  .vwc-lg-em0 - Sets width of immediate children to em0 on lg
+  .vwcmn-lg-em0 - Sets min-width of immediate children to em0 on lg
+  .vwcmx-lg-em0 - Sets max-width of immediate children to em0 on lg
 
   Styleguide Child Width - em0 - lg
   */
-  .wh-lg-em0,
-.wc-lg-em0 > * {
+  .vw-lg-em0,
+.vwc-lg-em0 > * {
     width: var(--width-em0);
   }
 
-  .whmn-lg-em0,
-.wcmn-lg-em0 > * {
+  .vwmn-lg-em0,
+.vwcmn-lg-em0 > * {
     min-width: var(--width-em0);
   }
 
-  .whmx-lg-em0,
-.wcmx-lg-em0 > * {
+  .vwmx-lg-em0,
+.vwcmx-lg-em0 > * {
     max-width: var(--width-em0);
   }
 
   /*
-  .wh[mn,mx]-lg-em1
+  .vw[mn,mx]-lg-em1
 
   Sets the width, max-width, or min-width of element to css var for em1 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-em1 - Sets width to em1 on lg
-  .whmn-lg-em1 - Sets min-width to em1 on lg
-  .whmx-lg-em1 - Sets max-width to em1 on lg
+  .vw-lg-em1 - Sets width to em1 on lg
+  .vwmn-lg-em1 - Sets min-width to em1 on lg
+  .vwmx-lg-em1 - Sets max-width to em1 on lg
 
   Styleguide Width - em1 - lg
   */
   /*
-  .wc[mn,mx]-lg-em1
+  .vwc[mn,mx]-lg-em1
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em1 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-em1 - Sets width of immediate children to em1 on lg
-  .wcmn-lg-em1 - Sets min-width of immediate children to em1 on lg
-  .wcmx-lg-em1 - Sets max-width of immediate children to em1 on lg
+  .vwc-lg-em1 - Sets width of immediate children to em1 on lg
+  .vwcmn-lg-em1 - Sets min-width of immediate children to em1 on lg
+  .vwcmx-lg-em1 - Sets max-width of immediate children to em1 on lg
 
   Styleguide Child Width - em1 - lg
   */
-  .wh-lg-em1,
-.wc-lg-em1 > * {
+  .vw-lg-em1,
+.vwc-lg-em1 > * {
     width: var(--width-em1);
   }
 
-  .whmn-lg-em1,
-.wcmn-lg-em1 > * {
+  .vwmn-lg-em1,
+.vwcmn-lg-em1 > * {
     min-width: var(--width-em1);
   }
 
-  .whmx-lg-em1,
-.wcmx-lg-em1 > * {
+  .vwmx-lg-em1,
+.vwcmx-lg-em1 > * {
     max-width: var(--width-em1);
   }
 
   /*
-  .wh[mn,mx]-lg-em2
+  .vw[mn,mx]-lg-em2
 
   Sets the width, max-width, or min-width of element to css var for em2 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}">A div</div>
 
-  .wh-lg-em2 - Sets width to em2 on lg
-  .whmn-lg-em2 - Sets min-width to em2 on lg
-  .whmx-lg-em2 - Sets max-width to em2 on lg
+  .vw-lg-em2 - Sets width to em2 on lg
+  .vwmn-lg-em2 - Sets min-width to em2 on lg
+  .vwmx-lg-em2 - Sets max-width to em2 on lg
 
   Styleguide Width - em2 - lg
   */
   /*
-  .wc[mn,mx]-lg-em2
+  .vwc[mn,mx]-lg-em2
 
   Sets the width, max-width, or min-width of an elements immediate children to css var for em2 on lg.
 
   Markup:
   <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
 
-  .wc-lg-em2 - Sets width of immediate children to em2 on lg
-  .wcmn-lg-em2 - Sets min-width of immediate children to em2 on lg
-  .wcmx-lg-em2 - Sets max-width of immediate children to em2 on lg
+  .vwc-lg-em2 - Sets width of immediate children to em2 on lg
+  .vwcmn-lg-em2 - Sets min-width of immediate children to em2 on lg
+  .vwcmx-lg-em2 - Sets max-width of immediate children to em2 on lg
 
   Styleguide Child Width - em2 - lg
   */
-  .wh-lg-em2,
-.wc-lg-em2 > * {
+  .vw-lg-em2,
+.vwc-lg-em2 > * {
     width: var(--width-em2);
   }
 
-  .whmn-lg-em2,
-.wcmn-lg-em2 > * {
+  .vwmn-lg-em2,
+.vwcmn-lg-em2 > * {
     min-width: var(--width-em2);
   }
 
-  .whmx-lg-em2,
-.wcmx-lg-em2 > * {
+  .vwmx-lg-em2,
+.vwcmx-lg-em2 > * {
     max-width: var(--width-em2);
   }
 }

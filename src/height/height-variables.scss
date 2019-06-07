@@ -1,0 +1,12 @@
+$height-var-prefix: 'height' !default;
+
+$height-class-prefix: 'vh' !default;
+$min-height-class-prefix: 'vhmn' !default;
+$max-height-class-prefix: 'vhmx' !default;
+
+$height-styles: (
+  'p25': 25%,
+  'p50': 50%,
+  'p100': 100%,
+  'vh100': 100vh,
+) !default;

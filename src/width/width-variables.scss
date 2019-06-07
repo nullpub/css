@@ -1,12 +1,12 @@
 $width-var-prefix: 'width' !default;
 
-$width-class-prefix: 'wh' !default;
-$min-width-class-prefix: 'whmn' !default;
-$max-width-class-prefix: 'whmx' !default;
+$width-class-prefix: 'vw' !default;
+$min-width-class-prefix: 'vwmn' !default;
+$max-width-class-prefix: 'vwmx' !default;
 
-$width-children-class-prefix: 'wc' !default;
-$min-width-children-class-prefix: 'wcmn' !default;
-$max-width-children-class-prefix: 'wcmx' !default;
+$width-children-class-prefix: 'vwc' !default;
+$min-width-children-class-prefix: 'vwcmn' !default;
+$max-width-children-class-prefix: 'vwcmx' !default;
 $width-styles: (
   'p10': 10%,
   'p20': 20%,

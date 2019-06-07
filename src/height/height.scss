@@ -1,0 +1,39 @@
+@import './height-variables.scss';
+
+/*
+Height
+
+Classes for setting the height, max-height, an min-height of an element (or its children).
+
+Styleguide Height
+*/
+
+@each $label, $_ in $height-styles {
+  // Fix these documentation names to properly nest prefix variables
+  /*
+  .#{$height-class-prefix}[mx,mn]-#{$label}
+
+  Sets the height, max-height, or min-height of element to css var for #{$label}.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .#{$height-class-prefix}-#{$label} - Sets height to #{$label}
+  .#{$min-height-class-prefix}-#{$label} - Sets min-height to #{$label}
+  .#{$max-height-class-prefix}-#{$label} - Sets max-height to #{$label}
+
+  Styleguide Height - #{$label}
+  */
+
+  .#{$height-class-prefix}-#{$label} {
+    height: var(--#{$height-var-prefix}-#{$label});
+  }
+
+  .#{$min-height-class-prefix}-#{$label} {
+    min-height: var(--#{$height-var-prefix}-#{$label});
+  }
+
+  .#{$max-height-class-prefix}-#{$label} {
+    max-height: var(--#{$height-var-prefix}-#{$label});
+  }
+}
