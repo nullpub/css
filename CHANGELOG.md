@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [8.0.0](https://github.com/nullpub/css/compare/v6.7.1...v8.0.0) (2019-06-20)
+
+
+### Features
+
+* **height:** added custom properties for height ([a46fee5](https://github.com/nullpub/css/commit/a46fee5))
+* **height:** added height classes, changed width prefix ([87f0b0e](https://github.com/nullpub/css/commit/87f0b0e))
+* **scss:** rewrite library in scss and add autodocumentation ([1fce2f8](https://github.com/nullpub/css/commit/1fce2f8))
+
+
+### BREAKING CHANGES
+
+* **scss:** Many class names have been changed, consider this a new lib
+
+
+
 # [7.2.0](https://github.com/nullpub/css/compare/v7.1.0...v7.2.0) (2019-06-20)
 
 
