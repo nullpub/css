@@ -10,3 +10,11 @@ $height-styles: (
   'p100': 100%,
   'vh100': 100vh,
 ) !default;
+
+$height-multipliers: (
+  '0': 0,
+  '1': 32,
+  '2': 48,
+  '3': 64,
+  '4': 128,
+) !default;

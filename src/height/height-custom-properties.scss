@@ -1,0 +1,15 @@
+@import './height-variables.scss';
+
+:root {
+  @each $label, $value in $height-styles {
+    --#{$height-var-prefix}-#{$label}: #{$value};
+  }
+}
+
+:root {
+  @each $index, $multiplier in $height-multipliers {
+    --#{$height-var-prefix}-#{$index}: calc(
+      var(--#{$fill-size-prefix}) * #{$multiplier}
+    );
+  }
+}

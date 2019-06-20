@@ -10225,6 +10225,31 @@ Styleguide Font - Weight - d3
   font-weight: var(--font-weight-d3);
 }
 
+:root {
+  --height-p25: 25%;
+  --height-p50: 50%;
+  --height-p100: 100%;
+  --height-vh100: 100vh;
+}
+
+:root {
+  --height-0: calc(
+    var(--fill-size) * 0
+  );
+  --height-1: calc(
+    var(--fill-size) * 32
+  );
+  --height-2: calc(
+    var(--fill-size) * 48
+  );
+  --height-3: calc(
+    var(--fill-size) * 64
+  );
+  --height-4: calc(
+    var(--fill-size) * 128
+  );
+}
+
 /*
 Height
 
@@ -10334,6 +10359,136 @@ Styleguide Height - vh100
 
 .vhmx-vh100 {
   max-height: var(--height-vh100);
+}
+
+/*
+.vh[mx,mn]-0
+
+Sets the height, max-height, or min-height of element to css var for 0.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-0 - Sets height to 0
+.vhmn-0 - Sets min-height to 0
+.vhmx-0 - Sets max-height to 0
+
+Styleguide Height - 0
+*/
+.vh-0 {
+  height: var(--height-0);
+}
+
+.vhmn-0 {
+  min-height: var(--height-0);
+}
+
+.vhmx-0 {
+  max-height: var(--height-0);
+}
+
+/*
+.vh[mx,mn]-1
+
+Sets the height, max-height, or min-height of element to css var for 1.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-1 - Sets height to 1
+.vhmn-1 - Sets min-height to 1
+.vhmx-1 - Sets max-height to 1
+
+Styleguide Height - 1
+*/
+.vh-1 {
+  height: var(--height-1);
+}
+
+.vhmn-1 {
+  min-height: var(--height-1);
+}
+
+.vhmx-1 {
+  max-height: var(--height-1);
+}
+
+/*
+.vh[mx,mn]-2
+
+Sets the height, max-height, or min-height of element to css var for 2.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-2 - Sets height to 2
+.vhmn-2 - Sets min-height to 2
+.vhmx-2 - Sets max-height to 2
+
+Styleguide Height - 2
+*/
+.vh-2 {
+  height: var(--height-2);
+}
+
+.vhmn-2 {
+  min-height: var(--height-2);
+}
+
+.vhmx-2 {
+  max-height: var(--height-2);
+}
+
+/*
+.vh[mx,mn]-3
+
+Sets the height, max-height, or min-height of element to css var for 3.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-3 - Sets height to 3
+.vhmn-3 - Sets min-height to 3
+.vhmx-3 - Sets max-height to 3
+
+Styleguide Height - 3
+*/
+.vh-3 {
+  height: var(--height-3);
+}
+
+.vhmn-3 {
+  min-height: var(--height-3);
+}
+
+.vhmx-3 {
+  max-height: var(--height-3);
+}
+
+/*
+.vh[mx,mn]-4
+
+Sets the height, max-height, or min-height of element to css var for 4.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-4 - Sets height to 4
+.vhmn-4 - Sets min-height to 4
+.vhmx-4 - Sets max-height to 4
+
+Styleguide Height - 4
+*/
+.vh-4 {
+  height: var(--height-4);
+}
+
+.vhmn-4 {
+  min-height: var(--height-4);
+}
+
+.vhmx-4 {
+  max-height: var(--height-4);
 }
 
 :root {
