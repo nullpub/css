@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [7.2.0](https://github.com/nullpub/css/compare/v7.1.0...v7.2.0) (2019-06-20)
+
+
+### Features
+
+* **height:** added custom properties for height ([38bc97e](https://github.com/nullpub/css/commit/38bc97e))
+
+
+
 # [7.1.0](https://github.com/nullpub/css/compare/v7.0.0...v7.1.0) (2019-06-07)
 
 
