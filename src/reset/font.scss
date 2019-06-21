@@ -1,37 +1,39 @@
-@import '../variables/colors.css';
-@import '../utilities/font/font-sizes.css';
-@import '../utilities/margin/margin-sizes.css';
+/**
+ * Font Resets rely on the default build naming
+ * If you customize the naming it is recommended
+ * that you don't use the reset.
+ */
 
 /**
  * Header tag styling
  */
 h1 {
   font-size: var(--font-size-u5);
-  font-weight: var(--font-weight-u1);
+  font-weight: var(--font-weight-u2);
 }
 
 h2 {
   font-size: var(--font-size-u4);
-  font-weight: var(--font-weight-u1);
+  font-weight: var(--font-weight-u2);
 }
 
 h3 {
   font-size: var(--font-size-u3);
-  font-weight: var(--font-weight-u1);
+  font-weight: var(--font-weight-u2);
 }
 
 h4 {
   font-size: var(--font-size-u2);
-  font-weight: var(--font-weight-u1);
+  font-weight: var(--font-weight-u2);
 }
 
 h5 {
   font-size: var(--font-size-u1);
-  font-weight: var(--font-weight-u1);
+  font-weight: var(--font-weight-u2);
 }
 
 h6 {
-  font-size: var(--font-size-u1);
+  font-size: var(--font-size-u2);
 }
 
 /**
@@ -45,12 +47,10 @@ span {
 p,
 li {
   font-size: var(--font-size-0);
-  font-weight: var(--font-weight-d1);
 }
 
 small {
   font-size: var(--font-size-d2);
-  font-weight: var(--font-weight-d1);
 }
 
 /**
@@ -72,7 +72,7 @@ input {
  */
 a {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-fore-link0);
 }
 
 /* Bold and Italics */
