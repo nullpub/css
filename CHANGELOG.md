@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.1](https://github.com/nullpub/css/compare/v8.0.0...v8.0.1) (2019-06-21)
+
+
+### Bug Fixes
+
+* fixed the reset scss to actually work, hardcoded custom props ([a257b30](https://github.com/nullpub/css/commit/a257b30))
+
+
+
 # [8.0.0](https://github.com/nullpub/css/compare/v6.7.1...v8.0.0) (2019-06-20)
 
 
