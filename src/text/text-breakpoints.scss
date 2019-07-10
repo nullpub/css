@@ -15,7 +15,7 @@
 
       .#{$text-align-class-prefix}-#{$breakLabel}-#{$label} - Sets text-align to #{$style} on #{$breakLabel}
 
-      Styleguide Cursor - #{$label} - #{$breakLabel}
+      Styleguide Text - Align - #{$label} - #{$breakLabel}
       */
       .#{$text-align-class-prefix}-#{$breakLabel}-#{$label} {
         text-align: #{$style};

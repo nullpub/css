@@ -8533,7 +8533,7 @@ Styleguide Text - Align - j
 
   .ta-sm-l - Sets text-align to left on sm
 
-  Styleguide Cursor - l - sm
+  Styleguide Text - Align - l - sm
   */
   .ta-sm-l {
     text-align: left;
@@ -8549,7 +8549,7 @@ Styleguide Text - Align - j
 
   .ta-sm-r - Sets text-align to right on sm
 
-  Styleguide Cursor - r - sm
+  Styleguide Text - Align - r - sm
   */
   .ta-sm-r {
     text-align: right;
@@ -8565,7 +8565,7 @@ Styleguide Text - Align - j
 
   .ta-sm-c - Sets text-align to center on sm
 
-  Styleguide Cursor - c - sm
+  Styleguide Text - Align - c - sm
   */
   .ta-sm-c {
     text-align: center;
@@ -8581,7 +8581,7 @@ Styleguide Text - Align - j
 
   .ta-sm-j - Sets text-align to justify on sm
 
-  Styleguide Cursor - j - sm
+  Styleguide Text - Align - j - sm
   */
   .ta-sm-j {
     text-align: justify;
