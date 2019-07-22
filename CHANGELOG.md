@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [8.1.0](https://github.com/nullpub/css/compare/v8.0.3...v8.1.0) (2019-07-22)
+
+
+### Features
+
+* added inline-block to display classes ([b5a0ce5](https://github.com/nullpub/css/commit/b5a0ce5))
+
+
+
 ## [8.0.3](https://github.com/nullpub/css/compare/v8.0.2...v8.0.3) (2019-07-10)
 
 
