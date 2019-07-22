@@ -2566,6 +2566,22 @@ Styleguide Display - in
 }
 
 /*
+.ds-ib
+
+Sets the display property of an element to inline-block.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.ds-ib - Sets diplay to inline-block
+
+Styleguide Display - ib
+*/
+.ds-ib {
+  display: inline-block;
+}
+
+/*
 .ds-bl
 
 Sets the display property of an element to block.
@@ -2644,6 +2660,22 @@ Styleguide Display - no
   */
   .ds-sm-in {
     display: inline;
+  }
+
+  /*
+  .ds-sm-ib
+
+  Sets the display property of an element to inline-block on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .ds-sm-ib - Sets diplay to inline-block on sm
+
+  Styleguide Display - ib - sm
+  */
+  .ds-sm-ib {
+    display: inline-block;
   }
 
   /*

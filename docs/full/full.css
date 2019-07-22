@@ -2568,6 +2568,22 @@ Styleguide Display - in
 }
 
 /*
+.ds-ib
+
+Sets the display property of an element to inline-block.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.ds-ib - Sets diplay to inline-block
+
+Styleguide Display - ib
+*/
+.ds-ib {
+  display: inline-block;
+}
+
+/*
 .ds-bl
 
 Sets the display property of an element to block.
@@ -2646,6 +2662,22 @@ Styleguide Display - no
   */
   .ds-sm-in {
     display: inline;
+  }
+
+  /*
+  .ds-sm-ib
+
+  Sets the display property of an element to inline-block on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .ds-sm-ib - Sets diplay to inline-block on sm
+
+  Styleguide Display - ib - sm
+  */
+  .ds-sm-ib {
+    display: inline-block;
   }
 
   /*
@@ -2730,6 +2762,22 @@ Styleguide Display - no
   }
 
   /*
+  .ds-md-ib
+
+  Sets the display property of an element to inline-block on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .ds-md-ib - Sets diplay to inline-block on md
+
+  Styleguide Display - ib - md
+  */
+  .ds-md-ib {
+    display: inline-block;
+  }
+
+  /*
   .ds-md-bl
 
   Sets the display property of an element to block on md.
@@ -2808,6 +2856,22 @@ Styleguide Display - no
   */
   .ds-lg-in {
     display: inline;
+  }
+
+  /*
+  .ds-lg-ib
+
+  Sets the display property of an element to inline-block on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .ds-lg-ib - Sets diplay to inline-block on lg
+
+  Styleguide Display - ib - lg
+  */
+  .ds-lg-ib {
+    display: inline-block;
   }
 
   /*
