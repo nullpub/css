@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [8.2.0](https://github.com/nullpub/css/compare/v8.1.1...v8.2.0) (2019-07-30)
+
+
+### Features
+
+* experimental margin percentages ([e0c1534](https://github.com/nullpub/css/commit/e0c1534))
+
+
+
 ## [8.1.1](https://github.com/nullpub/css/compare/v8.1.0...v8.1.1) (2019-07-22)
 
 
