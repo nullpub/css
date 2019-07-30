@@ -55,3 +55,27 @@ Styleguide Margin - Width
     margin-left: var(--#{$margin-width-var-prefix}-#{$label});
   }
 }
+
+// TODO Document this new interface
+@each $label, $width in $margin-width-styles {
+  .#{$margin-width-class-prefix}t-#{$label},
+  .#{$margin-width-class-prefix}y-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-top: #{$width};
+  }
+  .#{$margin-width-class-prefix}r-#{$label},
+  .#{$margin-width-class-prefix}x-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-right: #{$width};
+  }
+  .#{$margin-width-class-prefix}b-#{$label},
+  .#{$margin-width-class-prefix}y-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-bottom: #{$width};
+  }
+  .#{$margin-width-class-prefix}l-#{$label},
+  .#{$margin-width-class-prefix}x-#{$label},
+  .#{$margin-width-class-prefix}a-#{$label} {
+    margin-left: #{$width};
+  }
+}

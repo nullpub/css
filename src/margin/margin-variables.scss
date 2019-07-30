@@ -10,3 +10,9 @@ $margin-width-multipliers: (
   '6': 32,
   '7': 64,
 ) !default;
+
+// TODO Add this to custom properties def
+$margin-width-styles: (
+  'm10': 10%,
+  'pm10': -10%,
+) !default;

@@ -10932,6 +10932,54 @@ Styleguide Margin - Width - 7
   margin-left: var(--margin-width-7);
 }
 
+.mwt-m10,
+.mwy-m10,
+.mwa-m10 {
+  margin-top: 10%;
+}
+
+.mwr-m10,
+.mwx-m10,
+.mwa-m10 {
+  margin-right: 10%;
+}
+
+.mwb-m10,
+.mwy-m10,
+.mwa-m10 {
+  margin-bottom: 10%;
+}
+
+.mwl-m10,
+.mwx-m10,
+.mwa-m10 {
+  margin-left: 10%;
+}
+
+.mwt-pm10,
+.mwy-pm10,
+.mwa-pm10 {
+  margin-top: -10%;
+}
+
+.mwr-pm10,
+.mwx-pm10,
+.mwa-pm10 {
+  margin-right: -10%;
+}
+
+.mwb-pm10,
+.mwy-pm10,
+.mwa-pm10 {
+  margin-bottom: -10%;
+}
+
+.mwl-pm10,
+.mwx-pm10,
+.mwa-pm10 {
+  margin-left: -10%;
+}
+
 @media (min-width: 50em) {
   /*
   .mw*-sm-0
