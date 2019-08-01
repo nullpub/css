@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [8.3.0](https://github.com/nullpub/css/compare/v8.2.0...v8.3.0) (2019-08-01)
+
+
+### Features
+
+* added justify self breakpoint classes ([9dcab24](https://github.com/nullpub/css/commit/9dcab24))
+* added justify self classes ([7cb38f8](https://github.com/nullpub/css/commit/7cb38f8))
+
+
+
 # [8.2.0](https://github.com/nullpub/css/compare/v8.1.1...v8.2.0) (2019-07-30)
 
 
