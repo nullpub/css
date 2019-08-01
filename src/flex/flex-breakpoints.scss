@@ -160,5 +160,24 @@
         align-self: #{$style};
       }
     }
+
+    @each $label, $style in $justify-selfs {
+      /*
+      .#{$justify-self-class-prefix}-#{$breakLabel}-#{$label}
+
+      Sets justify-self to #{$style} on #{$breakLabel}.
+
+      Markup:
+      <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+      <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+      .#{$justify-self-class-prefix}-#{$breakLabel}-#{$label} - Sets justify-self to #{$style} on #{$breakLabel}
+
+      Styleguide Flex - Justify Self - #{$label} - #{$breakLabel}
+      */
+      .#{$justify-self-class-prefix}-#{$breakLabel}-#{$label} {
+        justify-self: #{$style};
+      }
+    }
   }
 }

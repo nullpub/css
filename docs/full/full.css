@@ -6434,6 +6434,108 @@ Styleguide Flex - Justify Self - sse
   .as-sm-sse {
     align-self: self-end;
   }
+
+  /*
+  .js-sm-stc
+
+  Sets justify-self to stretch on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-sm-stc - Sets justify-self to stretch on sm
+
+  Styleguide Flex - Justify Self - stc - sm
+  */
+  .js-sm-stc {
+    justify-self: stretch;
+  }
+
+  /*
+  .js-sm-ctr
+
+  Sets justify-self to center on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-sm-ctr - Sets justify-self to center on sm
+
+  Styleguide Flex - Justify Self - ctr - sm
+  */
+  .js-sm-ctr {
+    justify-self: center;
+  }
+
+  /*
+  .js-sm-str
+
+  Sets justify-self to flex-start on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-sm-str - Sets justify-self to flex-start on sm
+
+  Styleguide Flex - Justify Self - str - sm
+  */
+  .js-sm-str {
+    justify-self: flex-start;
+  }
+
+  /*
+  .js-sm-end
+
+  Sets justify-self to flex-end on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-sm-end - Sets justify-self to flex-end on sm
+
+  Styleguide Flex - Justify Self - end - sm
+  */
+  .js-sm-end {
+    justify-self: flex-end;
+  }
+
+  /*
+  .js-sm-sst
+
+  Sets justify-self to self-start on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-sm-sst - Sets justify-self to self-start on sm
+
+  Styleguide Flex - Justify Self - sst - sm
+  */
+  .js-sm-sst {
+    justify-self: self-start;
+  }
+
+  /*
+  .js-sm-sse
+
+  Sets justify-self to self-end on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-sm-sse - Sets justify-self to self-end on sm
+
+  Styleguide Flex - Justify Self - sse - sm
+  */
+  .js-sm-sse {
+    justify-self: self-end;
+  }
 }
 @media (min-width: 75em) {
   /*
@@ -8241,6 +8343,108 @@ Styleguide Flex - Justify Self - sse
   .as-md-sse {
     align-self: self-end;
   }
+
+  /*
+  .js-md-stc
+
+  Sets justify-self to stretch on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-md-stc - Sets justify-self to stretch on md
+
+  Styleguide Flex - Justify Self - stc - md
+  */
+  .js-md-stc {
+    justify-self: stretch;
+  }
+
+  /*
+  .js-md-ctr
+
+  Sets justify-self to center on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-md-ctr - Sets justify-self to center on md
+
+  Styleguide Flex - Justify Self - ctr - md
+  */
+  .js-md-ctr {
+    justify-self: center;
+  }
+
+  /*
+  .js-md-str
+
+  Sets justify-self to flex-start on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-md-str - Sets justify-self to flex-start on md
+
+  Styleguide Flex - Justify Self - str - md
+  */
+  .js-md-str {
+    justify-self: flex-start;
+  }
+
+  /*
+  .js-md-end
+
+  Sets justify-self to flex-end on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-md-end - Sets justify-self to flex-end on md
+
+  Styleguide Flex - Justify Self - end - md
+  */
+  .js-md-end {
+    justify-self: flex-end;
+  }
+
+  /*
+  .js-md-sst
+
+  Sets justify-self to self-start on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-md-sst - Sets justify-self to self-start on md
+
+  Styleguide Flex - Justify Self - sst - md
+  */
+  .js-md-sst {
+    justify-self: self-start;
+  }
+
+  /*
+  .js-md-sse
+
+  Sets justify-self to self-end on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-md-sse - Sets justify-self to self-end on md
+
+  Styleguide Flex - Justify Self - sse - md
+  */
+  .js-md-sse {
+    justify-self: self-end;
+  }
 }
 @media (min-width: 90em) {
   /*
@@ -10047,6 +10251,108 @@ Styleguide Flex - Justify Self - sse
   */
   .as-lg-sse {
     align-self: self-end;
+  }
+
+  /*
+  .js-lg-stc
+
+  Sets justify-self to stretch on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-lg-stc - Sets justify-self to stretch on lg
+
+  Styleguide Flex - Justify Self - stc - lg
+  */
+  .js-lg-stc {
+    justify-self: stretch;
+  }
+
+  /*
+  .js-lg-ctr
+
+  Sets justify-self to center on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-lg-ctr - Sets justify-self to center on lg
+
+  Styleguide Flex - Justify Self - ctr - lg
+  */
+  .js-lg-ctr {
+    justify-self: center;
+  }
+
+  /*
+  .js-lg-str
+
+  Sets justify-self to flex-start on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-lg-str - Sets justify-self to flex-start on lg
+
+  Styleguide Flex - Justify Self - str - lg
+  */
+  .js-lg-str {
+    justify-self: flex-start;
+  }
+
+  /*
+  .js-lg-end
+
+  Sets justify-self to flex-end on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-lg-end - Sets justify-self to flex-end on lg
+
+  Styleguide Flex - Justify Self - end - lg
+  */
+  .js-lg-end {
+    justify-self: flex-end;
+  }
+
+  /*
+  .js-lg-sst
+
+  Sets justify-self to self-start on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-lg-sst - Sets justify-self to self-start on lg
+
+  Styleguide Flex - Justify Self - sst - lg
+  */
+  .js-lg-sst {
+    justify-self: self-start;
+  }
+
+  /*
+  .js-lg-sse
+
+  Sets justify-self to self-end on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .js-lg-sse - Sets justify-self to self-end on lg
+
+  Styleguide Flex - Justify Self - sse - lg
+  */
+  .js-lg-sse {
+    justify-self: self-end;
   }
 }
 /**
