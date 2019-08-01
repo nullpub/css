@@ -73,3 +73,13 @@ $align-selfs: (
   'sst': self-start,
   'sse': self-end,
 ) !default;
+
+$justify-self-class-prefix: 'js' !default;
+$justify-selfs: (
+  'stc': stretch,
+  'ctr': center,
+  'str': flex-start,
+  'end': flex-end,
+  'sst': self-start,
+  'sse': self-end,
+) !default;

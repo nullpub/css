@@ -4323,6 +4323,115 @@ Styleguide Flex - Align Self - sse
   align-self: self-end;
 }
 
+/*
+Justify Self
+
+Classes for setting the justify-self property on an element. Can also be used with css grid.
+
+Styleguide Flex - Justify Self
+*/
+/*
+.js-stc
+
+Sets justify-self to stretch.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+<div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+.js-stc - Sets justify-self to stretch
+
+Styleguide Flex - Justify Self - stc
+*/
+.js-stc {
+  justify-self: stretch;
+}
+
+/*
+.js-ctr
+
+Sets justify-self to center.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+<div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+.js-ctr - Sets justify-self to center
+
+Styleguide Flex - Justify Self - ctr
+*/
+.js-ctr {
+  justify-self: center;
+}
+
+/*
+.js-str
+
+Sets justify-self to flex-start.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+<div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+.js-str - Sets justify-self to flex-start
+
+Styleguide Flex - Justify Self - str
+*/
+.js-str {
+  justify-self: flex-start;
+}
+
+/*
+.js-end
+
+Sets justify-self to flex-end.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+<div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+.js-end - Sets justify-self to flex-end
+
+Styleguide Flex - Justify Self - end
+*/
+.js-end {
+  justify-self: flex-end;
+}
+
+/*
+.js-sst
+
+Sets justify-self to self-start.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+<div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+.js-sst - Sets justify-self to self-start
+
+Styleguide Flex - Justify Self - sst
+*/
+.js-sst {
+  justify-self: self-start;
+}
+
+/*
+.js-sse
+
+Sets justify-self to self-end.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+<div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+.js-sse - Sets justify-self to self-end
+
+Styleguide Flex - Justify Self - sse
+*/
+.js-sse {
+  justify-self: self-end;
+}
+
 @media (min-width: 50em) {
   /*
   .fld-sm-row

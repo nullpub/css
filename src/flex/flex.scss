@@ -220,3 +220,29 @@ Styleguide Flex - Align Self
     align-self: #{$style};
   }
 }
+
+/*
+Justify Self
+
+Classes for setting the justify-self property on an element. Can also be used with css grid.
+
+Styleguide Flex - Justify Self
+*/
+@each $label, $style in $justify-selfs {
+  /*
+  .#{$justify-self-class-prefix}-#{$label}
+
+  Sets justify-self to #{$style}.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
+
+  .#{$justify-self-class-prefix}-#{$label} - Sets justify-self to #{$style}
+
+  Styleguide Flex - Justify Self - #{$label}
+  */
+  .#{$justify-self-class-prefix}-#{$label} {
+    justify-self: #{$style};
+  }
+}
