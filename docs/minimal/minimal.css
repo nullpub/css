@@ -8903,6 +8903,9 @@ Styleguide Text - Align - j
   --width-em0: 50em;
   --width-em1: 75em;
   --width-em2: 90em;
+  --width-rem0: 50rem;
+  --width-rem1: 75rem;
+  --width-rem2: 90rem;
 }
 
 /*
@@ -9951,6 +9954,135 @@ Styleguide Child Width - em2
   max-width: var(--width-em2);
 }
 
+/*
+.vw[mx,mn]-rem0
+
+Sets the width, max-width, or min-width of element to css var for rem0.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vw-rem0 - Sets width to rem0
+.vwmn-rem0 - Sets min-width to rem0
+.vwmx-rem0 - Sets max-width to rem0
+
+Styleguide Width - rem0
+*/
+/*
+.vwc[mx,mn]-rem0
+
+Sets the width, max-width, or min-width of an elements immediate children to css var for rem0.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+.vwc-rem0 - Sets width of immediate children to rem0
+.vwcmn-rem0 - Sets min-width of immediate children to rem0
+.vwcmx-rem0 - Sets max-width of immediate children to rem0
+
+Styleguide Child Width - rem0
+*/
+.vw-rem0,
+.vwc-rem0 > * {
+  width: var(--width-rem0);
+}
+
+.vwmn-rem0,
+.vwcmn-rem0 > * {
+  min-width: var(--width-rem0);
+}
+
+.vwmx-rem0,
+.vwcmx-rem0 > * {
+  max-width: var(--width-rem0);
+}
+
+/*
+.vw[mx,mn]-rem1
+
+Sets the width, max-width, or min-width of element to css var for rem1.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vw-rem1 - Sets width to rem1
+.vwmn-rem1 - Sets min-width to rem1
+.vwmx-rem1 - Sets max-width to rem1
+
+Styleguide Width - rem1
+*/
+/*
+.vwc[mx,mn]-rem1
+
+Sets the width, max-width, or min-width of an elements immediate children to css var for rem1.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+.vwc-rem1 - Sets width of immediate children to rem1
+.vwcmn-rem1 - Sets min-width of immediate children to rem1
+.vwcmx-rem1 - Sets max-width of immediate children to rem1
+
+Styleguide Child Width - rem1
+*/
+.vw-rem1,
+.vwc-rem1 > * {
+  width: var(--width-rem1);
+}
+
+.vwmn-rem1,
+.vwcmn-rem1 > * {
+  min-width: var(--width-rem1);
+}
+
+.vwmx-rem1,
+.vwcmx-rem1 > * {
+  max-width: var(--width-rem1);
+}
+
+/*
+.vw[mx,mn]-rem2
+
+Sets the width, max-width, or min-width of element to css var for rem2.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vw-rem2 - Sets width to rem2
+.vwmn-rem2 - Sets min-width to rem2
+.vwmx-rem2 - Sets max-width to rem2
+
+Styleguide Width - rem2
+*/
+/*
+.vwc[mx,mn]-rem2
+
+Sets the width, max-width, or min-width of an elements immediate children to css var for rem2.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+.vwc-rem2 - Sets width of immediate children to rem2
+.vwcmn-rem2 - Sets min-width of immediate children to rem2
+.vwcmx-rem2 - Sets max-width of immediate children to rem2
+
+Styleguide Child Width - rem2
+*/
+.vw-rem2,
+.vwc-rem2 > * {
+  width: var(--width-rem2);
+}
+
+.vwmn-rem2,
+.vwcmn-rem2 > * {
+  min-width: var(--width-rem2);
+}
+
+.vwmx-rem2,
+.vwcmx-rem2 > * {
+  max-width: var(--width-rem2);
+}
+
 @media (min-width: 50em) {
   /*
   .vw[mn,mx]-sm-p10
@@ -10982,6 +11114,135 @@ Styleguide Child Width - em2
   .vwmx-sm-em2,
 .vwcmx-sm-em2 > * {
     max-width: var(--width-em2);
+  }
+
+  /*
+  .vw[mn,mx]-sm-rem0
+
+  Sets the width, max-width, or min-width of element to css var for rem0 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vw-sm-rem0 - Sets width to rem0 on sm
+  .vwmn-sm-rem0 - Sets min-width to rem0 on sm
+  .vwmx-sm-rem0 - Sets max-width to rem0 on sm
+
+  Styleguide Width - rem0 - sm
+  */
+  /*
+  .vwc[mn,mx]-sm-rem0
+
+  Sets the width, max-width, or min-width of an elements immediate children to css var for rem0 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+  .vwc-sm-rem0 - Sets width of immediate children to rem0 on sm
+  .vwcmn-sm-rem0 - Sets min-width of immediate children to rem0 on sm
+  .vwcmx-sm-rem0 - Sets max-width of immediate children to rem0 on sm
+
+  Styleguide Child Width - rem0 - sm
+  */
+  .vw-sm-rem0,
+.vwc-sm-rem0 > * {
+    width: var(--width-rem0);
+  }
+
+  .vwmn-sm-rem0,
+.vwcmn-sm-rem0 > * {
+    min-width: var(--width-rem0);
+  }
+
+  .vwmx-sm-rem0,
+.vwcmx-sm-rem0 > * {
+    max-width: var(--width-rem0);
+  }
+
+  /*
+  .vw[mn,mx]-sm-rem1
+
+  Sets the width, max-width, or min-width of element to css var for rem1 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vw-sm-rem1 - Sets width to rem1 on sm
+  .vwmn-sm-rem1 - Sets min-width to rem1 on sm
+  .vwmx-sm-rem1 - Sets max-width to rem1 on sm
+
+  Styleguide Width - rem1 - sm
+  */
+  /*
+  .vwc[mn,mx]-sm-rem1
+
+  Sets the width, max-width, or min-width of an elements immediate children to css var for rem1 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+  .vwc-sm-rem1 - Sets width of immediate children to rem1 on sm
+  .vwcmn-sm-rem1 - Sets min-width of immediate children to rem1 on sm
+  .vwcmx-sm-rem1 - Sets max-width of immediate children to rem1 on sm
+
+  Styleguide Child Width - rem1 - sm
+  */
+  .vw-sm-rem1,
+.vwc-sm-rem1 > * {
+    width: var(--width-rem1);
+  }
+
+  .vwmn-sm-rem1,
+.vwcmn-sm-rem1 > * {
+    min-width: var(--width-rem1);
+  }
+
+  .vwmx-sm-rem1,
+.vwcmx-sm-rem1 > * {
+    max-width: var(--width-rem1);
+  }
+
+  /*
+  .vw[mn,mx]-sm-rem2
+
+  Sets the width, max-width, or min-width of element to css var for rem2 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vw-sm-rem2 - Sets width to rem2 on sm
+  .vwmn-sm-rem2 - Sets min-width to rem2 on sm
+  .vwmx-sm-rem2 - Sets max-width to rem2 on sm
+
+  Styleguide Width - rem2 - sm
+  */
+  /*
+  .vwc[mn,mx]-sm-rem2
+
+  Sets the width, max-width, or min-width of an elements immediate children to css var for rem2 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
+
+  .vwc-sm-rem2 - Sets width of immediate children to rem2 on sm
+  .vwcmn-sm-rem2 - Sets min-width of immediate children to rem2 on sm
+  .vwcmx-sm-rem2 - Sets max-width of immediate children to rem2 on sm
+
+  Styleguide Child Width - rem2 - sm
+  */
+  .vw-sm-rem2,
+.vwc-sm-rem2 > * {
+    width: var(--width-rem2);
+  }
+
+  .vwmn-sm-rem2,
+.vwcmn-sm-rem2 > * {
+    min-width: var(--width-rem2);
+  }
+
+  .vwmx-sm-rem2,
+.vwcmx-sm-rem2 > * {
+    max-width: var(--width-rem2);
   }
 }
 
