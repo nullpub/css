@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [8.4.0](https://github.com/nullpub/css/compare/v8.3.0...v8.4.0) (2019-08-13)
+
+
+### Features
+
+* added rem widths that match em widths ([47578c9](https://github.com/nullpub/css/commit/47578c9))
+
+
+
 # [8.3.0](https://github.com/nullpub/css/compare/v8.2.0...v8.3.0) (2019-08-01)
 
 
