@@ -10,6 +10,6 @@
   }
 
   @each $label, $style in $margin-width-styles {
-    --#{$margin-width-var-prefix}-#{$label}: $style;
+    --#{$margin-width-var-prefix}-#{$label}: #{$style};
   }
 }

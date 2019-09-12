@@ -117,22 +117,22 @@ Styleguide Margin - Width
   .#{$margin-width-class-prefix}t-#{$label},
   .#{$margin-width-class-prefix}y-#{$label},
   .#{$margin-width-class-prefix}a-#{$label} {
-    margin-top: #{$width};
+    margin-top: var(--#{$margin-width-var-prefix}-#{$label});
   }
   .#{$margin-width-class-prefix}r-#{$label},
   .#{$margin-width-class-prefix}x-#{$label},
   .#{$margin-width-class-prefix}a-#{$label} {
-    margin-right: #{$width};
+    margin-right: var(--#{$margin-width-var-prefix}-#{$label});
   }
   .#{$margin-width-class-prefix}b-#{$label},
   .#{$margin-width-class-prefix}y-#{$label},
   .#{$margin-width-class-prefix}a-#{$label} {
-    margin-bottom: #{$width};
+    margin-bottom: var(--#{$margin-width-var-prefix}-#{$label});
   }
   .#{$margin-width-class-prefix}l-#{$label},
   .#{$margin-width-class-prefix}x-#{$label},
   .#{$margin-width-class-prefix}a-#{$label} {
-    margin-left: #{$width};
+    margin-left: var(--#{$margin-width-var-prefix}-#{$label});
   }
 
   /*
