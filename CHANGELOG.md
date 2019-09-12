@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [8.5.0](https://github.com/nullpub/css/compare/v8.4.0...v8.5.0) (2019-09-12)
+
+
+### Features
+
+* added standard build and reduced minimal build ([39b98df](https://github.com/nullpub/css/commit/39b98df))
+
+
+
 # [8.4.0](https://github.com/nullpub/css/compare/v8.3.0...v8.4.0) (2019-08-13)
 
 
