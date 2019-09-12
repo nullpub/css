@@ -1,42 +1,32 @@
 <html>
-  <head>
-    <title>@nll/css</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="./reset/reset.min.css" />
-    <link rel="stylesheet" type="text/css" href="./full/full.min.css" />
-    <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-      }
-      .ts-all {
-        transition: all 0.3s ease-in-out;
-      }
-      .ctr-a0-hover:hover {
-        color: var(--color-back-accent-0);
-        background-color: var(--color-fore-accent-0);
-        border-color: var(--color-back-accent-0);
-      }
-    </style>
-  </head>
-  <body>
-    <main class="fld-col ai-ctr jc-ctr" style="height: 100vh">
-      <section class="fld-col fld-sm-row flg-4 fs-u3 fw-u2">
-        <a
-          class="fls-1-1 bwa-1 bra-2 pwa-6 ct-a0 ctr-a0-hover ts-all ta-c whmn-px0 sh-blk-4"
-          href="./full/"
-        >
-          Full Build
-        </a>
-        <a
-          class="fls-1-1 bwa-1 bra-2 pwa-6 ct-a0 ctr-a0-hover ts-all ta-c whmn-px0 sh-blk-4"
-          href="./minimal/"
-        >
-          Minimal Build
-        </a>
-      </section>
-    </main>
-  </body>
+
+<head>
+  <title>@nll/css</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./reset/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="./full/full.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="fld-col ai-ctr jc-ctr vhmn-vh100">
+    <section class="fld-col flg-4 jc-stc fs-u3 fw-u2">
+      <a class="bwa-1 bra-1 pwa-6 whmn-px0 sh-blk-4" href="./minimal/">
+        Minimal Build
+      </a>
+      <a class="bwa-1 bra-1 pwa-6 whmn-px0 sh-blk-4" href="./standard/">
+        Standard Build
+      </a>
+      <a class="bwa-1 bra-1 pwa-6 whmn-px0 sh-blk-4" href="./full/">
+        Full Build
+      </a>
+    </section>
+  </main>
+</body>
+
 </html>

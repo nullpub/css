@@ -54,10 +54,66 @@ Styleguide Margin - Width
   .#{$margin-width-class-prefix}a-#{$label} {
     margin-left: var(--#{$margin-width-var-prefix}-#{$label});
   }
+
+  /*
+  .#{$margin-width-class-prefix}*r-#{$label}
+
+  Sets the margin of element to the negative value of the css var for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$margin-width-class-prefix}ar-#{$label} - Sets all margins to m#{$label}
+  .#{$margin-width-class-prefix}xr-#{$label} - Sets left and right margins to m#{$label}
+  .#{$margin-width-class-prefix}yr-#{$label} - Sets top and bottom margins to m#{$label}
+  .#{$margin-width-class-prefix}tr-#{$label} - Sets top margin to m#{$label}
+  .#{$margin-width-class-prefix}rr-#{$label} - Sets right margin to m#{$label}
+  .#{$margin-width-class-prefix}br-#{$label} - Sets bottom margin to m#{$label}
+  .#{$margin-width-class-prefix}lr-#{$label} - Sets left margin to m#{$label}
+
+  Styleguide Margin - Width - #{$label}
+  */
+  .#{$margin-width-class-prefix}tr-#{$label},
+  .#{$margin-width-class-prefix}yr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-top: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
+  .#{$margin-width-class-prefix}rr-#{$label},
+  .#{$margin-width-class-prefix}xr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-right: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
+  .#{$margin-width-class-prefix}br-#{$label},
+  .#{$margin-width-class-prefix}yr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-bottom: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
+  .#{$margin-width-class-prefix}lr-#{$label},
+  .#{$margin-width-class-prefix}xr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-left: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
 }
 
-// TODO Document this new interface
 @each $label, $width in $margin-width-styles {
+  /*
+  .#{$margin-width-class-prefix}*-#{$label}
+  
+  Sets the margin of element to css var for #{$label}.
+  
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+  
+  .#{$margin-width-class-prefix}a-#{$label} - Sets all margins to #{$label}
+  .#{$margin-width-class-prefix}x-#{$label} - Sets left and right margins to #{$label}
+  .#{$margin-width-class-prefix}y-#{$label} - Sets top and bottom margins to #{$label}
+  .#{$margin-width-class-prefix}t-#{$label} - Sets top margin to #{$label}
+  .#{$margin-width-class-prefix}r-#{$label} - Sets right margin to #{$label}
+  .#{$margin-width-class-prefix}b-#{$label} - Sets bottom margin to #{$label}
+  .#{$margin-width-class-prefix}l-#{$label} - Sets left margin to #{$label}
+  
+  Styleguide Margin - Width - #{$label}
+  */
   .#{$margin-width-class-prefix}t-#{$label},
   .#{$margin-width-class-prefix}y-#{$label},
   .#{$margin-width-class-prefix}a-#{$label} {
@@ -77,5 +133,44 @@ Styleguide Margin - Width
   .#{$margin-width-class-prefix}x-#{$label},
   .#{$margin-width-class-prefix}a-#{$label} {
     margin-left: #{$width};
+  }
+
+  /*
+  .#{$margin-width-class-prefix}*r-#{$label}
+
+  Sets the margin of element to the negative value of the css var for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$margin-width-class-prefix}ar-#{$label} - Sets all margins to m#{$label}
+  .#{$margin-width-class-prefix}xr-#{$label} - Sets left and right margins to m#{$label}
+  .#{$margin-width-class-prefix}yr-#{$label} - Sets top and bottom margins to m#{$label}
+  .#{$margin-width-class-prefix}tr-#{$label} - Sets top margin to m#{$label}
+  .#{$margin-width-class-prefix}rr-#{$label} - Sets right margin to m#{$label}
+  .#{$margin-width-class-prefix}br-#{$label} - Sets bottom margin to m#{$label}
+  .#{$margin-width-class-prefix}lr-#{$label} - Sets left margin to m#{$label}
+
+  Styleguide Margin - Width - #{$label}
+  */
+  .#{$margin-width-class-prefix}tr-#{$label},
+  .#{$margin-width-class-prefix}yr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-top: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
+  .#{$margin-width-class-prefix}rr-#{$label},
+  .#{$margin-width-class-prefix}xr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-right: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
+  .#{$margin-width-class-prefix}br-#{$label},
+  .#{$margin-width-class-prefix}yr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-bottom: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
+  }
+  .#{$margin-width-class-prefix}lr-#{$label},
+  .#{$margin-width-class-prefix}xr-#{$label},
+  .#{$margin-width-class-prefix}ar-#{$label} {
+    margin-left: calc(-1 * var(--#{$margin-width-var-prefix}-#{$label}));
   }
 }

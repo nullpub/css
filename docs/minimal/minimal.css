@@ -2526,10 +2526,6 @@ Styleguide Cursor - grabbing
 }
 
 :root {
-  --breakpoint-sm: 50em;
-}
-
-:root {
   --base-size: 16px;
   --font-size: calc(
     var(--base-size) / 1
@@ -2645,103 +2641,6 @@ Styleguide Display - no
   display: none;
 }
 
-@media (min-width: 50em) {
-  /*
-  .ds-sm-in
-
-  Sets the display property of an element to inline on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ds-sm-in - Sets diplay to inline on sm
-
-  Styleguide Display - in - sm
-  */
-  .ds-sm-in {
-    display: inline;
-  }
-
-  /*
-  .ds-sm-ib
-
-  Sets the display property of an element to inline-block on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ds-sm-ib - Sets diplay to inline-block on sm
-
-  Styleguide Display - ib - sm
-  */
-  .ds-sm-ib {
-    display: inline-block;
-  }
-
-  /*
-  .ds-sm-bl
-
-  Sets the display property of an element to block on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ds-sm-bl - Sets diplay to block on sm
-
-  Styleguide Display - bl - sm
-  */
-  .ds-sm-bl {
-    display: block;
-  }
-
-  /*
-  .ds-sm-fl
-
-  Sets the display property of an element to flex on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ds-sm-fl - Sets diplay to flex on sm
-
-  Styleguide Display - fl - sm
-  */
-  .ds-sm-fl {
-    display: flex;
-  }
-
-  /*
-  .ds-sm-gr
-
-  Sets the display property of an element to grid on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ds-sm-gr - Sets diplay to grid on sm
-
-  Styleguide Display - gr - sm
-  */
-  .ds-sm-gr {
-    display: grid;
-  }
-
-  /*
-  .ds-sm-no
-
-  Sets the display property of an element to none on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ds-sm-no - Sets diplay to none on sm
-
-  Styleguide Display - no - sm
-  */
-  .ds-sm-no {
-    display: none;
-  }
-}
 /*
 Flex
 
@@ -4432,1915 +4331,6 @@ Styleguide Flex - Justify Self - sse
   justify-self: self-end;
 }
 
-@media (min-width: 50em) {
-  /*
-  .fld-sm-row
-
-  Sets display: flex and sets flex-direction of an element to row on sm.
-
-  Markup:
-  <div class="{{modifier_class}}"><div>A div</div><div>B div</div></div>
-
-  .fld-sm-row - Sets flex-direction to row on sm
-
-  Styleguide Flex - Direction - row - sm
-  */
-  .fld-sm-row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  /*
-  .fld-sm-col
-
-  Sets display: flex and sets flex-direction of an element to column on sm.
-
-  Markup:
-  <div class="{{modifier_class}}"><div>A div</div><div>B div</div></div>
-
-  .fld-sm-col - Sets flex-direction to column on sm
-
-  Styleguide Flex - Direction - col - sm
-  */
-  .fld-sm-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /*
-  .fld-sm-rowr
-
-  Sets display: flex and sets flex-direction of an element to row-reverse on sm.
-
-  Markup:
-  <div class="{{modifier_class}}"><div>A div</div><div>B div</div></div>
-
-  .fld-sm-rowr - Sets flex-direction to row-reverse on sm
-
-  Styleguide Flex - Direction - rowr - sm
-  */
-  .fld-sm-rowr {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  /*
-  .fld-sm-colr
-
-  Sets display: flex and sets flex-direction of an element to column-reverse on sm.
-
-  Markup:
-  <div class="{{modifier_class}}"><div>A div</div><div>B div</div></div>
-
-  .fld-sm-colr - Sets flex-direction to column-reverse on sm
-
-  Styleguide Flex - Direction - colr - sm
-  */
-  .fld-sm-colr {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  /*
-  .flg-sm-0
-
-  Sets the margin of all children except last to margin var for 0 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-0 - Sets gaps to margin var for 0 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-0 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-0);
-  }
-
-  .fld-row.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-0);
-  }
-
-  .fld-sm-row.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-0);
-  }
-
-  /*
-  .flg-sm-0
-
-  Sets the margin of all children except last to margin var for 0 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-0 - Sets gaps to margin var for 0 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-0 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-0);
-  }
-
-  .fld-col.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-0);
-  }
-
-  .fld-sm-col.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-0);
-  }
-
-  /*
-  .flg-sm-0
-
-  Sets the margin of all children except last to margin var for 0 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-0 - Sets gaps to margin var for 0 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-0 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-0);
-  }
-
-  .fld-rowr.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-0);
-  }
-
-  .fld-sm-rowr.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-0);
-  }
-
-  /*
-  .flg-sm-0
-
-  Sets the margin of all children except last to margin var for 0 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-0 - Sets gaps to margin var for 0 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-0 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-0);
-  }
-
-  .fld-colr.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-0);
-  }
-
-  .fld-sm-colr.flg-sm-0 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-0);
-  }
-
-  /*
-  .flg-sm-1
-
-  Sets the margin of all children except last to margin var for 1 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-1 - Sets gaps to margin var for 1 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-1 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-1);
-  }
-
-  .fld-row.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-1);
-  }
-
-  .fld-sm-row.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-1);
-  }
-
-  /*
-  .flg-sm-1
-
-  Sets the margin of all children except last to margin var for 1 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-1 - Sets gaps to margin var for 1 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-1 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-1);
-  }
-
-  .fld-col.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-1);
-  }
-
-  .fld-sm-col.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-1);
-  }
-
-  /*
-  .flg-sm-1
-
-  Sets the margin of all children except last to margin var for 1 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-1 - Sets gaps to margin var for 1 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-1 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-1);
-  }
-
-  .fld-rowr.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-1);
-  }
-
-  .fld-sm-rowr.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-1);
-  }
-
-  /*
-  .flg-sm-1
-
-  Sets the margin of all children except last to margin var for 1 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-1 - Sets gaps to margin var for 1 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-1 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-1);
-  }
-
-  .fld-colr.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-1);
-  }
-
-  .fld-sm-colr.flg-sm-1 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-1);
-  }
-
-  /*
-  .flg-sm-2
-
-  Sets the margin of all children except last to margin var for 2 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-2 - Sets gaps to margin var for 2 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-2 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-2);
-  }
-
-  .fld-row.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-2);
-  }
-
-  .fld-sm-row.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-2);
-  }
-
-  /*
-  .flg-sm-2
-
-  Sets the margin of all children except last to margin var for 2 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-2 - Sets gaps to margin var for 2 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-2 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-2);
-  }
-
-  .fld-col.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-2);
-  }
-
-  .fld-sm-col.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-2);
-  }
-
-  /*
-  .flg-sm-2
-
-  Sets the margin of all children except last to margin var for 2 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-2 - Sets gaps to margin var for 2 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-2 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-2);
-  }
-
-  .fld-rowr.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-2);
-  }
-
-  .fld-sm-rowr.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-2);
-  }
-
-  /*
-  .flg-sm-2
-
-  Sets the margin of all children except last to margin var for 2 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-2 - Sets gaps to margin var for 2 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-2 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-2);
-  }
-
-  .fld-colr.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-2);
-  }
-
-  .fld-sm-colr.flg-sm-2 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-2);
-  }
-
-  /*
-  .flg-sm-3
-
-  Sets the margin of all children except last to margin var for 3 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-3 - Sets gaps to margin var for 3 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-3 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-3);
-  }
-
-  .fld-row.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-3);
-  }
-
-  .fld-sm-row.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-3);
-  }
-
-  /*
-  .flg-sm-3
-
-  Sets the margin of all children except last to margin var for 3 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-3 - Sets gaps to margin var for 3 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-3 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-3);
-  }
-
-  .fld-col.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-3);
-  }
-
-  .fld-sm-col.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-3);
-  }
-
-  /*
-  .flg-sm-3
-
-  Sets the margin of all children except last to margin var for 3 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-3 - Sets gaps to margin var for 3 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-3 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-3);
-  }
-
-  .fld-rowr.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-3);
-  }
-
-  .fld-sm-rowr.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-3);
-  }
-
-  /*
-  .flg-sm-3
-
-  Sets the margin of all children except last to margin var for 3 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-3 - Sets gaps to margin var for 3 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-3 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-3);
-  }
-
-  .fld-colr.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-3);
-  }
-
-  .fld-sm-colr.flg-sm-3 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-3);
-  }
-
-  /*
-  .flg-sm-4
-
-  Sets the margin of all children except last to margin var for 4 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-4 - Sets gaps to margin var for 4 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-4 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-4);
-  }
-
-  .fld-row.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-4);
-  }
-
-  .fld-sm-row.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-4);
-  }
-
-  /*
-  .flg-sm-4
-
-  Sets the margin of all children except last to margin var for 4 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-4 - Sets gaps to margin var for 4 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-4 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-4);
-  }
-
-  .fld-col.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-4);
-  }
-
-  .fld-sm-col.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-4);
-  }
-
-  /*
-  .flg-sm-4
-
-  Sets the margin of all children except last to margin var for 4 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-4 - Sets gaps to margin var for 4 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-4 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-4);
-  }
-
-  .fld-rowr.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-4);
-  }
-
-  .fld-sm-rowr.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-4);
-  }
-
-  /*
-  .flg-sm-4
-
-  Sets the margin of all children except last to margin var for 4 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-4 - Sets gaps to margin var for 4 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-4 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-4);
-  }
-
-  .fld-colr.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-4);
-  }
-
-  .fld-sm-colr.flg-sm-4 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-4);
-  }
-
-  /*
-  .flg-sm-5
-
-  Sets the margin of all children except last to margin var for 5 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-5 - Sets gaps to margin var for 5 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-5 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-5);
-  }
-
-  .fld-row.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-5);
-  }
-
-  .fld-sm-row.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-5);
-  }
-
-  /*
-  .flg-sm-5
-
-  Sets the margin of all children except last to margin var for 5 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-5 - Sets gaps to margin var for 5 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-5 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-5);
-  }
-
-  .fld-col.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-5);
-  }
-
-  .fld-sm-col.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-5);
-  }
-
-  /*
-  .flg-sm-5
-
-  Sets the margin of all children except last to margin var for 5 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-5 - Sets gaps to margin var for 5 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-5 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-5);
-  }
-
-  .fld-rowr.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-5);
-  }
-
-  .fld-sm-rowr.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-5);
-  }
-
-  /*
-  .flg-sm-5
-
-  Sets the margin of all children except last to margin var for 5 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-5 - Sets gaps to margin var for 5 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-5 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-5);
-  }
-
-  .fld-colr.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-5);
-  }
-
-  .fld-sm-colr.flg-sm-5 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-5);
-  }
-
-  /*
-  .flg-sm-6
-
-  Sets the margin of all children except last to margin var for 6 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-6 - Sets gaps to margin var for 6 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-6 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-6);
-  }
-
-  .fld-row.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-6);
-  }
-
-  .fld-sm-row.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-6);
-  }
-
-  /*
-  .flg-sm-6
-
-  Sets the margin of all children except last to margin var for 6 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-6 - Sets gaps to margin var for 6 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-6 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-6);
-  }
-
-  .fld-col.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-6);
-  }
-
-  .fld-sm-col.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-6);
-  }
-
-  /*
-  .flg-sm-6
-
-  Sets the margin of all children except last to margin var for 6 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-6 - Sets gaps to margin var for 6 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-6 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-6);
-  }
-
-  .fld-rowr.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-6);
-  }
-
-  .fld-sm-rowr.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-6);
-  }
-
-  /*
-  .flg-sm-6
-
-  Sets the margin of all children except last to margin var for 6 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-6 - Sets gaps to margin var for 6 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-6 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-6);
-  }
-
-  .fld-colr.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-6);
-  }
-
-  .fld-sm-colr.flg-sm-6 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-6);
-  }
-
-  /*
-  .flg-sm-7
-
-  Sets the margin of all children except last to margin var for 7 on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-7 - Sets gaps to margin var for 7 on sm
-
-  Styleguide Flex - Gaps - row - sm
-  */
-  .fld-sm-row.flg-7 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-7);
-  }
-
-  .fld-row.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-7);
-  }
-
-  .fld-sm-row.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-right: var(--margin-width-7);
-  }
-
-  /*
-  .flg-sm-7
-
-  Sets the margin of all children except last to margin var for 7 on sm.
-
-  Markup:
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-7 - Sets gaps to margin var for 7 on sm
-
-  Styleguide Flex - Gaps - col - sm
-  */
-  .fld-sm-col.flg-7 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-7);
-  }
-
-  .fld-col.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-7);
-  }
-
-  .fld-sm-col.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-bottom: var(--margin-width-7);
-  }
-
-  /*
-  .flg-sm-7
-
-  Sets the margin of all children except last to margin var for 7 on sm.
-
-  Markup:
-  <div class="fld-rowr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-7 - Sets gaps to margin var for 7 on sm
-
-  Styleguide Flex - Gaps - rowr - sm
-  */
-  .fld-sm-rowr.flg-7 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-7);
-  }
-
-  .fld-rowr.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-7);
-  }
-
-  .fld-sm-rowr.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-left: var(--margin-width-7);
-  }
-
-  /*
-  .flg-sm-7
-
-  Sets the margin of all children except last to margin var for 7 on sm.
-
-  Markup:
-  <div class="fld-colr {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .flg-sm-7 - Sets gaps to margin var for 7 on sm
-
-  Styleguide Flex - Gaps - colr - sm
-  */
-  .fld-sm-colr.flg-7 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-7);
-  }
-
-  .fld-colr.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-7);
-  }
-
-  .fld-sm-colr.flg-sm-7 > *:not(:last-child) {
-    margin: 0;
-    margin-top: var(--margin-width-7);
-  }
-
-  /*
-  .fls-sm-0-0
-
-  Sets flex-grow to 0 and flex-shrink to 0 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-0-0 - Sets flex-grow to 0 and flex-shrink to 0 on sm
-
-  Styleguide Flex - Size - 0:0 - sm
-  */
-  .fls-sm-0-0 {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
-  /*
-  .fls-sm-0-1
-
-  Sets flex-grow to 0 and flex-shrink to 1 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-0-1 - Sets flex-grow to 0 and flex-shrink to 1 on sm
-
-  Styleguide Flex - Size - 0:1 - sm
-  */
-  .fls-sm-0-1 {
-    flex-grow: 0;
-    flex-shrink: 1;
-  }
-
-  /*
-  .fls-sm-0-2
-
-  Sets flex-grow to 0 and flex-shrink to 2 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-0-2 - Sets flex-grow to 0 and flex-shrink to 2 on sm
-
-  Styleguide Flex - Size - 0:2 - sm
-  */
-  .fls-sm-0-2 {
-    flex-grow: 0;
-    flex-shrink: 2;
-  }
-
-  /*
-  .fls-sm-0-3
-
-  Sets flex-grow to 0 and flex-shrink to 3 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-0-3 - Sets flex-grow to 0 and flex-shrink to 3 on sm
-
-  Styleguide Flex - Size - 0:3 - sm
-  */
-  .fls-sm-0-3 {
-    flex-grow: 0;
-    flex-shrink: 3;
-  }
-
-  /*
-  .fls-sm-0-4
-
-  Sets flex-grow to 0 and flex-shrink to 4 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-0-4 - Sets flex-grow to 0 and flex-shrink to 4 on sm
-
-  Styleguide Flex - Size - 0:4 - sm
-  */
-  .fls-sm-0-4 {
-    flex-grow: 0;
-    flex-shrink: 4;
-  }
-
-  /*
-  .fls-sm-1-0
-
-  Sets flex-grow to 1 and flex-shrink to 0 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-1-0 - Sets flex-grow to 1 and flex-shrink to 0 on sm
-
-  Styleguide Flex - Size - 1:0 - sm
-  */
-  .fls-sm-1-0 {
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-
-  /*
-  .fls-sm-1-1
-
-  Sets flex-grow to 1 and flex-shrink to 1 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-1-1 - Sets flex-grow to 1 and flex-shrink to 1 on sm
-
-  Styleguide Flex - Size - 1:1 - sm
-  */
-  .fls-sm-1-1 {
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
-  /*
-  .fls-sm-1-2
-
-  Sets flex-grow to 1 and flex-shrink to 2 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-1-2 - Sets flex-grow to 1 and flex-shrink to 2 on sm
-
-  Styleguide Flex - Size - 1:2 - sm
-  */
-  .fls-sm-1-2 {
-    flex-grow: 1;
-    flex-shrink: 2;
-  }
-
-  /*
-  .fls-sm-1-3
-
-  Sets flex-grow to 1 and flex-shrink to 3 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-1-3 - Sets flex-grow to 1 and flex-shrink to 3 on sm
-
-  Styleguide Flex - Size - 1:3 - sm
-  */
-  .fls-sm-1-3 {
-    flex-grow: 1;
-    flex-shrink: 3;
-  }
-
-  /*
-  .fls-sm-1-4
-
-  Sets flex-grow to 1 and flex-shrink to 4 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-1-4 - Sets flex-grow to 1 and flex-shrink to 4 on sm
-
-  Styleguide Flex - Size - 1:4 - sm
-  */
-  .fls-sm-1-4 {
-    flex-grow: 1;
-    flex-shrink: 4;
-  }
-
-  /*
-  .fls-sm-2-0
-
-  Sets flex-grow to 2 and flex-shrink to 0 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-2-0 - Sets flex-grow to 2 and flex-shrink to 0 on sm
-
-  Styleguide Flex - Size - 2:0 - sm
-  */
-  .fls-sm-2-0 {
-    flex-grow: 2;
-    flex-shrink: 0;
-  }
-
-  /*
-  .fls-sm-2-1
-
-  Sets flex-grow to 2 and flex-shrink to 1 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-2-1 - Sets flex-grow to 2 and flex-shrink to 1 on sm
-
-  Styleguide Flex - Size - 2:1 - sm
-  */
-  .fls-sm-2-1 {
-    flex-grow: 2;
-    flex-shrink: 1;
-  }
-
-  /*
-  .fls-sm-2-2
-
-  Sets flex-grow to 2 and flex-shrink to 2 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-2-2 - Sets flex-grow to 2 and flex-shrink to 2 on sm
-
-  Styleguide Flex - Size - 2:2 - sm
-  */
-  .fls-sm-2-2 {
-    flex-grow: 2;
-    flex-shrink: 2;
-  }
-
-  /*
-  .fls-sm-2-3
-
-  Sets flex-grow to 2 and flex-shrink to 3 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-2-3 - Sets flex-grow to 2 and flex-shrink to 3 on sm
-
-  Styleguide Flex - Size - 2:3 - sm
-  */
-  .fls-sm-2-3 {
-    flex-grow: 2;
-    flex-shrink: 3;
-  }
-
-  /*
-  .fls-sm-2-4
-
-  Sets flex-grow to 2 and flex-shrink to 4 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-2-4 - Sets flex-grow to 2 and flex-shrink to 4 on sm
-
-  Styleguide Flex - Size - 2:4 - sm
-  */
-  .fls-sm-2-4 {
-    flex-grow: 2;
-    flex-shrink: 4;
-  }
-
-  /*
-  .fls-sm-3-0
-
-  Sets flex-grow to 3 and flex-shrink to 0 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-3-0 - Sets flex-grow to 3 and flex-shrink to 0 on sm
-
-  Styleguide Flex - Size - 3:0 - sm
-  */
-  .fls-sm-3-0 {
-    flex-grow: 3;
-    flex-shrink: 0;
-  }
-
-  /*
-  .fls-sm-3-1
-
-  Sets flex-grow to 3 and flex-shrink to 1 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-3-1 - Sets flex-grow to 3 and flex-shrink to 1 on sm
-
-  Styleguide Flex - Size - 3:1 - sm
-  */
-  .fls-sm-3-1 {
-    flex-grow: 3;
-    flex-shrink: 1;
-  }
-
-  /*
-  .fls-sm-3-2
-
-  Sets flex-grow to 3 and flex-shrink to 2 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-3-2 - Sets flex-grow to 3 and flex-shrink to 2 on sm
-
-  Styleguide Flex - Size - 3:2 - sm
-  */
-  .fls-sm-3-2 {
-    flex-grow: 3;
-    flex-shrink: 2;
-  }
-
-  /*
-  .fls-sm-3-3
-
-  Sets flex-grow to 3 and flex-shrink to 3 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-3-3 - Sets flex-grow to 3 and flex-shrink to 3 on sm
-
-  Styleguide Flex - Size - 3:3 - sm
-  */
-  .fls-sm-3-3 {
-    flex-grow: 3;
-    flex-shrink: 3;
-  }
-
-  /*
-  .fls-sm-3-4
-
-  Sets flex-grow to 3 and flex-shrink to 4 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-3-4 - Sets flex-grow to 3 and flex-shrink to 4 on sm
-
-  Styleguide Flex - Size - 3:4 - sm
-  */
-  .fls-sm-3-4 {
-    flex-grow: 3;
-    flex-shrink: 4;
-  }
-
-  /*
-  .fls-sm-4-0
-
-  Sets flex-grow to 4 and flex-shrink to 0 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-4-0 - Sets flex-grow to 4 and flex-shrink to 0 on sm
-
-  Styleguide Flex - Size - 4:0 - sm
-  */
-  .fls-sm-4-0 {
-    flex-grow: 4;
-    flex-shrink: 0;
-  }
-
-  /*
-  .fls-sm-4-1
-
-  Sets flex-grow to 4 and flex-shrink to 1 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-4-1 - Sets flex-grow to 4 and flex-shrink to 1 on sm
-
-  Styleguide Flex - Size - 4:1 - sm
-  */
-  .fls-sm-4-1 {
-    flex-grow: 4;
-    flex-shrink: 1;
-  }
-
-  /*
-  .fls-sm-4-2
-
-  Sets flex-grow to 4 and flex-shrink to 2 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-4-2 - Sets flex-grow to 4 and flex-shrink to 2 on sm
-
-  Styleguide Flex - Size - 4:2 - sm
-  */
-  .fls-sm-4-2 {
-    flex-grow: 4;
-    flex-shrink: 2;
-  }
-
-  /*
-  .fls-sm-4-3
-
-  Sets flex-grow to 4 and flex-shrink to 3 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-4-3 - Sets flex-grow to 4 and flex-shrink to 3 on sm
-
-  Styleguide Flex - Size - 4:3 - sm
-  */
-  .fls-sm-4-3 {
-    flex-grow: 4;
-    flex-shrink: 3;
-  }
-
-  /*
-  .fls-sm-4-4
-
-  Sets flex-grow to 4 and flex-shrink to 4 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="{{modifier_class}}">A div</div><div class="{{modifier_class}}">B div</div><div class="{{modifier_class}}">C div</div></div>
-
-  .fls-sm-4-4 - Sets flex-grow to 4 and flex-shrink to 4 on sm
-
-  Styleguide Flex - Size - 4:4 - sm
-  */
-  .fls-sm-4-4 {
-    flex-grow: 4;
-    flex-shrink: 4;
-  }
-
-  /*
-  .flb-sm-auto
-
-  Sets flex-basis to auto on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-auto - Sets flex-basis to auto on sm
-
-  Styleguide Flex - Basis - auto - sm
-  */
-  .flb-sm-auto {
-    flex-basis: auto;
-  }
-
-  /*
-  .flb-sm-fill
-
-  Sets flex-basis to fill on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-fill - Sets flex-basis to fill on sm
-
-  Styleguide Flex - Basis - fill - sm
-  */
-  .flb-sm-fill {
-    flex-basis: fill;
-  }
-
-  /*
-  .flb-sm-max-content
-
-  Sets flex-basis to max-content on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-max-content - Sets flex-basis to max-content on sm
-
-  Styleguide Flex - Basis - max-content - sm
-  */
-  .flb-sm-max-content {
-    flex-basis: max-content;
-  }
-
-  /*
-  .flb-sm-min-content
-
-  Sets flex-basis to min-content on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-min-content - Sets flex-basis to min-content on sm
-
-  Styleguide Flex - Basis - min-content - sm
-  */
-  .flb-sm-min-content {
-    flex-basis: min-content;
-  }
-
-  /*
-  .flb-sm-fit-content
-
-  Sets flex-basis to fit-content on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-fit-content - Sets flex-basis to fit-content on sm
-
-  Styleguide Flex - Basis - fit-content - sm
-  */
-  .flb-sm-fit-content {
-    flex-basis: fit-content;
-  }
-
-  /*
-  .flb-sm-content
-
-  Sets flex-basis to content on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-content - Sets flex-basis to content on sm
-
-  Styleguide Flex - Basis - content - sm
-  */
-  .flb-sm-content {
-    flex-basis: content;
-  }
-
-  /*
-  .flb-sm-unset
-
-  Sets flex-basis to unset on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-unset - Sets flex-basis to unset on sm
-
-  Styleguide Flex - Basis - unset - sm
-  */
-  .flb-sm-unset {
-    flex-basis: unset;
-  }
-
-  /*
-  .flb-sm-0p
-
-  Sets flex-basis to 0 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-0p - Sets flex-basis to 0 on sm
-
-  Styleguide Flex - Basis - 0p - sm
-  */
-  .flb-sm-0p {
-    flex-basis: 0;
-  }
-
-  /*
-  .flb-sm-25p
-
-  Sets flex-basis to 25 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-25p - Sets flex-basis to 25 on sm
-
-  Styleguide Flex - Basis - 25p - sm
-  */
-  .flb-sm-25p {
-    flex-basis: 25;
-  }
-
-  /*
-  .flb-sm-50p
-
-  Sets flex-basis to 50 on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
-
-  .flb-sm-50p - Sets flex-basis to 50 on sm
-
-  Styleguide Flex - Basis - 50p - sm
-  */
-  .flb-sm-50p {
-    flex-basis: 50;
-  }
-
-  /*
-  .ai-sm-stc
-
-  Sets align-items to stretch on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .ai-sm-stc - Sets align-items to stretch on sm
-
-  Styleguide Flex - Align Items - stc - sm
-  */
-  .ai-sm-stc {
-    align-items: stretch;
-  }
-
-  /*
-  .ai-sm-ctr
-
-  Sets align-items to center on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .ai-sm-ctr - Sets align-items to center on sm
-
-  Styleguide Flex - Align Items - ctr - sm
-  */
-  .ai-sm-ctr {
-    align-items: center;
-  }
-
-  /*
-  .ai-sm-str
-
-  Sets align-items to flex-start on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .ai-sm-str - Sets align-items to flex-start on sm
-
-  Styleguide Flex - Align Items - str - sm
-  */
-  .ai-sm-str {
-    align-items: flex-start;
-  }
-
-  /*
-  .ai-sm-end
-
-  Sets align-items to flex-end on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .ai-sm-end - Sets align-items to flex-end on sm
-
-  Styleguide Flex - Align Items - end - sm
-  */
-  .ai-sm-end {
-    align-items: flex-end;
-  }
-
-  /*
-  .jc-sm-ctr
-
-  Sets justify-content to center on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-ctr - Sets justify-content to center on sm
-
-  Styleguide Flex - Justify Content - ctr - sm
-  */
-  .jc-sm-ctr {
-    justify-content: center;
-  }
-
-  /*
-  .jc-sm-str
-
-  Sets justify-content to flex-start on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-str - Sets justify-content to flex-start on sm
-
-  Styleguide Flex - Justify Content - str - sm
-  */
-  .jc-sm-str {
-    justify-content: flex-start;
-  }
-
-  /*
-  .jc-sm-end
-
-  Sets justify-content to flex-end on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-end - Sets justify-content to flex-end on sm
-
-  Styleguide Flex - Justify Content - end - sm
-  */
-  .jc-sm-end {
-    justify-content: flex-end;
-  }
-
-  /*
-  .jc-sm-spb
-
-  Sets justify-content to space-between on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-spb - Sets justify-content to space-between on sm
-
-  Styleguide Flex - Justify Content - spb - sm
-  */
-  .jc-sm-spb {
-    justify-content: space-between;
-  }
-
-  /*
-  .jc-sm-spa
-
-  Sets justify-content to space-around on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-spa - Sets justify-content to space-around on sm
-
-  Styleguide Flex - Justify Content - spa - sm
-  */
-  .jc-sm-spa {
-    justify-content: space-around;
-  }
-
-  /*
-  .jc-sm-spe
-
-  Sets justify-content to space-evenly on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-spe - Sets justify-content to space-evenly on sm
-
-  Styleguide Flex - Justify Content - spe - sm
-  */
-  .jc-sm-spe {
-    justify-content: space-evenly;
-  }
-
-  /*
-  .jc-sm-stc
-
-  Sets justify-content to stretch on sm.
-
-  Markup:
-  <div class="fld-row {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col {{modifier_class}}"><div class="fls-1-1">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .jc-sm-stc - Sets justify-content to stretch on sm
-
-  Styleguide Flex - Justify Content - stc - sm
-  */
-  .jc-sm-stc {
-    justify-content: stretch;
-  }
-
-  /*
-  .as-sm-stc
-
-  Sets align-self to stretch on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .as-sm-stc - Sets align-self to stretch on sm
-
-  Styleguide Flex - Align Self - stc - sm
-  */
-  .as-sm-stc {
-    align-self: stretch;
-  }
-
-  /*
-  .as-sm-ctr
-
-  Sets align-self to center on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .as-sm-ctr - Sets align-self to center on sm
-
-  Styleguide Flex - Align Self - ctr - sm
-  */
-  .as-sm-ctr {
-    align-self: center;
-  }
-
-  /*
-  .as-sm-str
-
-  Sets align-self to flex-start on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .as-sm-str - Sets align-self to flex-start on sm
-
-  Styleguide Flex - Align Self - str - sm
-  */
-  .as-sm-str {
-    align-self: flex-start;
-  }
-
-  /*
-  .as-sm-end
-
-  Sets align-self to flex-end on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .as-sm-end - Sets align-self to flex-end on sm
-
-  Styleguide Flex - Align Self - end - sm
-  */
-  .as-sm-end {
-    align-self: flex-end;
-  }
-
-  /*
-  .as-sm-sst
-
-  Sets align-self to self-start on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .as-sm-sst - Sets align-self to self-start on sm
-
-  Styleguide Flex - Align Self - sst - sm
-  */
-  .as-sm-sst {
-    align-self: self-start;
-  }
-
-  /*
-  .as-sm-sse
-
-  Sets align-self to self-end on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .as-sm-sse - Sets align-self to self-end on sm
-
-  Styleguide Flex - Align Self - sse - sm
-  */
-  .as-sm-sse {
-    align-self: self-end;
-  }
-
-  /*
-  .js-sm-stc
-
-  Sets justify-self to stretch on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .js-sm-stc - Sets justify-self to stretch on sm
-
-  Styleguide Flex - Justify Self - stc - sm
-  */
-  .js-sm-stc {
-    justify-self: stretch;
-  }
-
-  /*
-  .js-sm-ctr
-
-  Sets justify-self to center on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .js-sm-ctr - Sets justify-self to center on sm
-
-  Styleguide Flex - Justify Self - ctr - sm
-  */
-  .js-sm-ctr {
-    justify-self: center;
-  }
-
-  /*
-  .js-sm-str
-
-  Sets justify-self to flex-start on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .js-sm-str - Sets justify-self to flex-start on sm
-
-  Styleguide Flex - Justify Self - str - sm
-  */
-  .js-sm-str {
-    justify-self: flex-start;
-  }
-
-  /*
-  .js-sm-end
-
-  Sets justify-self to flex-end on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .js-sm-end - Sets justify-self to flex-end on sm
-
-  Styleguide Flex - Justify Self - end - sm
-  */
-  .js-sm-end {
-    justify-self: flex-end;
-  }
-
-  /*
-  .js-sm-sst
-
-  Sets justify-self to self-start on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .js-sm-sst - Sets justify-self to self-start on sm
-
-  Styleguide Flex - Justify Self - sst - sm
-  */
-  .js-sm-sst {
-    justify-self: self-start;
-  }
-
-  /*
-  .js-sm-sse
-
-  Sets justify-self to self-end on sm.
-
-  Markup:
-  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-  <div class="fld-col"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1">B div</div><div class="fls-1-1">C div</div></div>
-
-  .js-sm-sse - Sets justify-self to self-end on sm
-
-  Styleguide Flex - Justify Self - sse - sm
-  */
-  .js-sm-sse {
-    justify-self: self-end;
-  }
-}
 /**
  * Font Size Scale
  * Based on https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 
@@ -6981,6 +4971,18 @@ Styleguide Height - 4
   --margin-width-7: calc(
     var(--fill-size) * 64
   );
+  --margin-width-p10: $style;
+  --margin-width-p20: $style;
+  --margin-width-p25: $style;
+  --margin-width-p30: $style;
+  --margin-width-p40: $style;
+  --margin-width-p50: $style;
+  --margin-width-p60: $style;
+  --margin-width-p70: $style;
+  --margin-width-p75: $style;
+  --margin-width-p80: $style;
+  --margin-width-p90: $style;
+  --margin-width-p100: $style;
 }
 
 /*
@@ -7040,6 +5042,48 @@ Styleguide Margin - Width - 0
 }
 
 /*
+.mw*r-0
+
+Sets the margin of element to the negative value of the css var for 0.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-0 - Sets all margins to m0
+.mwxr-0 - Sets left and right margins to m0
+.mwyr-0 - Sets top and bottom margins to m0
+.mwtr-0 - Sets top margin to m0
+.mwrr-0 - Sets right margin to m0
+.mwbr-0 - Sets bottom margin to m0
+.mwlr-0 - Sets left margin to m0
+
+Styleguide Margin - Width - 0
+*/
+.mwtr-0,
+.mwyr-0,
+.mwar-0 {
+  margin-top: calc(-1 * var(--margin-width-0));
+}
+
+.mwrr-0,
+.mwxr-0,
+.mwar-0 {
+  margin-right: calc(-1 * var(--margin-width-0));
+}
+
+.mwbr-0,
+.mwyr-0,
+.mwar-0 {
+  margin-bottom: calc(-1 * var(--margin-width-0));
+}
+
+.mwlr-0,
+.mwxr-0,
+.mwar-0 {
+  margin-left: calc(-1 * var(--margin-width-0));
+}
+
+/*
 .mw*-1
 
 Sets the margin of element to css var for 1.
@@ -7079,6 +5123,48 @@ Styleguide Margin - Width - 1
 .mwx-1,
 .mwa-1 {
   margin-left: var(--margin-width-1);
+}
+
+/*
+.mw*r-1
+
+Sets the margin of element to the negative value of the css var for 1.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-1 - Sets all margins to m1
+.mwxr-1 - Sets left and right margins to m1
+.mwyr-1 - Sets top and bottom margins to m1
+.mwtr-1 - Sets top margin to m1
+.mwrr-1 - Sets right margin to m1
+.mwbr-1 - Sets bottom margin to m1
+.mwlr-1 - Sets left margin to m1
+
+Styleguide Margin - Width - 1
+*/
+.mwtr-1,
+.mwyr-1,
+.mwar-1 {
+  margin-top: calc(-1 * var(--margin-width-1));
+}
+
+.mwrr-1,
+.mwxr-1,
+.mwar-1 {
+  margin-right: calc(-1 * var(--margin-width-1));
+}
+
+.mwbr-1,
+.mwyr-1,
+.mwar-1 {
+  margin-bottom: calc(-1 * var(--margin-width-1));
+}
+
+.mwlr-1,
+.mwxr-1,
+.mwar-1 {
+  margin-left: calc(-1 * var(--margin-width-1));
 }
 
 /*
@@ -7124,6 +5210,48 @@ Styleguide Margin - Width - 2
 }
 
 /*
+.mw*r-2
+
+Sets the margin of element to the negative value of the css var for 2.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-2 - Sets all margins to m2
+.mwxr-2 - Sets left and right margins to m2
+.mwyr-2 - Sets top and bottom margins to m2
+.mwtr-2 - Sets top margin to m2
+.mwrr-2 - Sets right margin to m2
+.mwbr-2 - Sets bottom margin to m2
+.mwlr-2 - Sets left margin to m2
+
+Styleguide Margin - Width - 2
+*/
+.mwtr-2,
+.mwyr-2,
+.mwar-2 {
+  margin-top: calc(-1 * var(--margin-width-2));
+}
+
+.mwrr-2,
+.mwxr-2,
+.mwar-2 {
+  margin-right: calc(-1 * var(--margin-width-2));
+}
+
+.mwbr-2,
+.mwyr-2,
+.mwar-2 {
+  margin-bottom: calc(-1 * var(--margin-width-2));
+}
+
+.mwlr-2,
+.mwxr-2,
+.mwar-2 {
+  margin-left: calc(-1 * var(--margin-width-2));
+}
+
+/*
 .mw*-3
 
 Sets the margin of element to css var for 3.
@@ -7163,6 +5291,48 @@ Styleguide Margin - Width - 3
 .mwx-3,
 .mwa-3 {
   margin-left: var(--margin-width-3);
+}
+
+/*
+.mw*r-3
+
+Sets the margin of element to the negative value of the css var for 3.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-3 - Sets all margins to m3
+.mwxr-3 - Sets left and right margins to m3
+.mwyr-3 - Sets top and bottom margins to m3
+.mwtr-3 - Sets top margin to m3
+.mwrr-3 - Sets right margin to m3
+.mwbr-3 - Sets bottom margin to m3
+.mwlr-3 - Sets left margin to m3
+
+Styleguide Margin - Width - 3
+*/
+.mwtr-3,
+.mwyr-3,
+.mwar-3 {
+  margin-top: calc(-1 * var(--margin-width-3));
+}
+
+.mwrr-3,
+.mwxr-3,
+.mwar-3 {
+  margin-right: calc(-1 * var(--margin-width-3));
+}
+
+.mwbr-3,
+.mwyr-3,
+.mwar-3 {
+  margin-bottom: calc(-1 * var(--margin-width-3));
+}
+
+.mwlr-3,
+.mwxr-3,
+.mwar-3 {
+  margin-left: calc(-1 * var(--margin-width-3));
 }
 
 /*
@@ -7208,6 +5378,48 @@ Styleguide Margin - Width - 4
 }
 
 /*
+.mw*r-4
+
+Sets the margin of element to the negative value of the css var for 4.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-4 - Sets all margins to m4
+.mwxr-4 - Sets left and right margins to m4
+.mwyr-4 - Sets top and bottom margins to m4
+.mwtr-4 - Sets top margin to m4
+.mwrr-4 - Sets right margin to m4
+.mwbr-4 - Sets bottom margin to m4
+.mwlr-4 - Sets left margin to m4
+
+Styleguide Margin - Width - 4
+*/
+.mwtr-4,
+.mwyr-4,
+.mwar-4 {
+  margin-top: calc(-1 * var(--margin-width-4));
+}
+
+.mwrr-4,
+.mwxr-4,
+.mwar-4 {
+  margin-right: calc(-1 * var(--margin-width-4));
+}
+
+.mwbr-4,
+.mwyr-4,
+.mwar-4 {
+  margin-bottom: calc(-1 * var(--margin-width-4));
+}
+
+.mwlr-4,
+.mwxr-4,
+.mwar-4 {
+  margin-left: calc(-1 * var(--margin-width-4));
+}
+
+/*
 .mw*-5
 
 Sets the margin of element to css var for 5.
@@ -7247,6 +5459,48 @@ Styleguide Margin - Width - 5
 .mwx-5,
 .mwa-5 {
   margin-left: var(--margin-width-5);
+}
+
+/*
+.mw*r-5
+
+Sets the margin of element to the negative value of the css var for 5.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-5 - Sets all margins to m5
+.mwxr-5 - Sets left and right margins to m5
+.mwyr-5 - Sets top and bottom margins to m5
+.mwtr-5 - Sets top margin to m5
+.mwrr-5 - Sets right margin to m5
+.mwbr-5 - Sets bottom margin to m5
+.mwlr-5 - Sets left margin to m5
+
+Styleguide Margin - Width - 5
+*/
+.mwtr-5,
+.mwyr-5,
+.mwar-5 {
+  margin-top: calc(-1 * var(--margin-width-5));
+}
+
+.mwrr-5,
+.mwxr-5,
+.mwar-5 {
+  margin-right: calc(-1 * var(--margin-width-5));
+}
+
+.mwbr-5,
+.mwyr-5,
+.mwar-5 {
+  margin-bottom: calc(-1 * var(--margin-width-5));
+}
+
+.mwlr-5,
+.mwxr-5,
+.mwar-5 {
+  margin-left: calc(-1 * var(--margin-width-5));
 }
 
 /*
@@ -7292,6 +5546,48 @@ Styleguide Margin - Width - 6
 }
 
 /*
+.mw*r-6
+
+Sets the margin of element to the negative value of the css var for 6.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-6 - Sets all margins to m6
+.mwxr-6 - Sets left and right margins to m6
+.mwyr-6 - Sets top and bottom margins to m6
+.mwtr-6 - Sets top margin to m6
+.mwrr-6 - Sets right margin to m6
+.mwbr-6 - Sets bottom margin to m6
+.mwlr-6 - Sets left margin to m6
+
+Styleguide Margin - Width - 6
+*/
+.mwtr-6,
+.mwyr-6,
+.mwar-6 {
+  margin-top: calc(-1 * var(--margin-width-6));
+}
+
+.mwrr-6,
+.mwxr-6,
+.mwar-6 {
+  margin-right: calc(-1 * var(--margin-width-6));
+}
+
+.mwbr-6,
+.mwyr-6,
+.mwar-6 {
+  margin-bottom: calc(-1 * var(--margin-width-6));
+}
+
+.mwlr-6,
+.mwxr-6,
+.mwar-6 {
+  margin-left: calc(-1 * var(--margin-width-6));
+}
+
+/*
 .mw*-7
 
 Sets the margin of element to css var for 7.
@@ -7333,391 +5629,1056 @@ Styleguide Margin - Width - 7
   margin-left: var(--margin-width-7);
 }
 
-.mwt-m10,
-.mwy-m10,
-.mwa-m10 {
+/*
+.mw*r-7
+
+Sets the margin of element to the negative value of the css var for 7.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-7 - Sets all margins to m7
+.mwxr-7 - Sets left and right margins to m7
+.mwyr-7 - Sets top and bottom margins to m7
+.mwtr-7 - Sets top margin to m7
+.mwrr-7 - Sets right margin to m7
+.mwbr-7 - Sets bottom margin to m7
+.mwlr-7 - Sets left margin to m7
+
+Styleguide Margin - Width - 7
+*/
+.mwtr-7,
+.mwyr-7,
+.mwar-7 {
+  margin-top: calc(-1 * var(--margin-width-7));
+}
+
+.mwrr-7,
+.mwxr-7,
+.mwar-7 {
+  margin-right: calc(-1 * var(--margin-width-7));
+}
+
+.mwbr-7,
+.mwyr-7,
+.mwar-7 {
+  margin-bottom: calc(-1 * var(--margin-width-7));
+}
+
+.mwlr-7,
+.mwxr-7,
+.mwar-7 {
+  margin-left: calc(-1 * var(--margin-width-7));
+}
+
+/*
+.mw*-p10
+
+Sets the margin of element to css var for p10.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p10 - Sets all margins to p10
+.mwx-p10 - Sets left and right margins to p10
+.mwy-p10 - Sets top and bottom margins to p10
+.mwt-p10 - Sets top margin to p10
+.mwr-p10 - Sets right margin to p10
+.mwb-p10 - Sets bottom margin to p10
+.mwl-p10 - Sets left margin to p10
+
+Styleguide Margin - Width - p10
+*/
+.mwt-p10,
+.mwy-p10,
+.mwa-p10 {
   margin-top: 10%;
 }
 
-.mwr-m10,
-.mwx-m10,
-.mwa-m10 {
+.mwr-p10,
+.mwx-p10,
+.mwa-p10 {
   margin-right: 10%;
 }
 
-.mwb-m10,
-.mwy-m10,
-.mwa-m10 {
+.mwb-p10,
+.mwy-p10,
+.mwa-p10 {
   margin-bottom: 10%;
 }
 
-.mwl-m10,
-.mwx-m10,
-.mwa-m10 {
+.mwl-p10,
+.mwx-p10,
+.mwa-p10 {
   margin-left: 10%;
 }
 
-.mwt-pm10,
-.mwy-pm10,
-.mwa-pm10 {
-  margin-top: -10%;
+/*
+.mw*r-p10
+
+Sets the margin of element to the negative value of the css var for p10.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p10 - Sets all margins to mp10
+.mwxr-p10 - Sets left and right margins to mp10
+.mwyr-p10 - Sets top and bottom margins to mp10
+.mwtr-p10 - Sets top margin to mp10
+.mwrr-p10 - Sets right margin to mp10
+.mwbr-p10 - Sets bottom margin to mp10
+.mwlr-p10 - Sets left margin to mp10
+
+Styleguide Margin - Width - p10
+*/
+.mwtr-p10,
+.mwyr-p10,
+.mwar-p10 {
+  margin-top: calc(-1 * var(--margin-width-p10));
 }
 
-.mwr-pm10,
-.mwx-pm10,
-.mwa-pm10 {
-  margin-right: -10%;
+.mwrr-p10,
+.mwxr-p10,
+.mwar-p10 {
+  margin-right: calc(-1 * var(--margin-width-p10));
 }
 
-.mwb-pm10,
-.mwy-pm10,
-.mwa-pm10 {
-  margin-bottom: -10%;
+.mwbr-p10,
+.mwyr-p10,
+.mwar-p10 {
+  margin-bottom: calc(-1 * var(--margin-width-p10));
 }
 
-.mwl-pm10,
-.mwx-pm10,
-.mwa-pm10 {
-  margin-left: -10%;
+.mwlr-p10,
+.mwxr-p10,
+.mwar-p10 {
+  margin-left: calc(-1 * var(--margin-width-p10));
 }
 
-@media (min-width: 50em) {
-  /*
-  .mw*-sm-0
+/*
+.mw*-p20
 
-  Sets the margin of element to css var for 0 on sm.
+Sets the margin of element to css var for p20.
 
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
+Markup:
+<div class="{{modifier_class}}">A div</div>
 
-  .mwa-sm-0 - Sets all margins to 0 on sm
-  .mwx-sm-0 - Sets left and right margins to 0 on sm
-  .mwy-sm-0 - Sets top and bottom margins to 0 on sm
-  .mwt-sm-0 - Sets top margin to 0 on sm
-  .mwr-sm-0 - Sets right margin to 0 on sm
-  .mwb-sm-0 - Sets bottom margin to 0 on sm
-  .mwl-sm-0 - Sets left margin to 0 on sm
+.mwa-p20 - Sets all margins to p20
+.mwx-p20 - Sets left and right margins to p20
+.mwy-p20 - Sets top and bottom margins to p20
+.mwt-p20 - Sets top margin to p20
+.mwr-p20 - Sets right margin to p20
+.mwb-p20 - Sets bottom margin to p20
+.mwl-p20 - Sets left margin to p20
 
-  Styleguide Margin - Width - 0
-  */
-  .mwt-sm-0,
-.mwy-sm-0,
-.mwa-sm-0 {
-    margin-top: var(--margin-width-0);
-  }
-
-  .mwr-sm-0,
-.mwx-sm-0,
-.mwa-sm-0 {
-    margin-right: var(--margin-width-0);
-  }
-
-  .mwb-sm-0,
-.mwy-sm-0,
-.mwa-sm-0 {
-    margin-bottom: var(--margin-width-0);
-  }
-
-  .mwl-sm-0,
-.mwx-sm-0,
-.mwa-sm-0 {
-    margin-left: var(--margin-width-0);
-  }
-
-  /*
-  .mw*-sm-1
-
-  Sets the margin of element to css var for 1 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-1 - Sets all margins to 1 on sm
-  .mwx-sm-1 - Sets left and right margins to 1 on sm
-  .mwy-sm-1 - Sets top and bottom margins to 1 on sm
-  .mwt-sm-1 - Sets top margin to 1 on sm
-  .mwr-sm-1 - Sets right margin to 1 on sm
-  .mwb-sm-1 - Sets bottom margin to 1 on sm
-  .mwl-sm-1 - Sets left margin to 1 on sm
-
-  Styleguide Margin - Width - 1
-  */
-  .mwt-sm-1,
-.mwy-sm-1,
-.mwa-sm-1 {
-    margin-top: var(--margin-width-1);
-  }
-
-  .mwr-sm-1,
-.mwx-sm-1,
-.mwa-sm-1 {
-    margin-right: var(--margin-width-1);
-  }
-
-  .mwb-sm-1,
-.mwy-sm-1,
-.mwa-sm-1 {
-    margin-bottom: var(--margin-width-1);
-  }
-
-  .mwl-sm-1,
-.mwx-sm-1,
-.mwa-sm-1 {
-    margin-left: var(--margin-width-1);
-  }
-
-  /*
-  .mw*-sm-2
-
-  Sets the margin of element to css var for 2 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-2 - Sets all margins to 2 on sm
-  .mwx-sm-2 - Sets left and right margins to 2 on sm
-  .mwy-sm-2 - Sets top and bottom margins to 2 on sm
-  .mwt-sm-2 - Sets top margin to 2 on sm
-  .mwr-sm-2 - Sets right margin to 2 on sm
-  .mwb-sm-2 - Sets bottom margin to 2 on sm
-  .mwl-sm-2 - Sets left margin to 2 on sm
-
-  Styleguide Margin - Width - 2
-  */
-  .mwt-sm-2,
-.mwy-sm-2,
-.mwa-sm-2 {
-    margin-top: var(--margin-width-2);
-  }
-
-  .mwr-sm-2,
-.mwx-sm-2,
-.mwa-sm-2 {
-    margin-right: var(--margin-width-2);
-  }
-
-  .mwb-sm-2,
-.mwy-sm-2,
-.mwa-sm-2 {
-    margin-bottom: var(--margin-width-2);
-  }
-
-  .mwl-sm-2,
-.mwx-sm-2,
-.mwa-sm-2 {
-    margin-left: var(--margin-width-2);
-  }
-
-  /*
-  .mw*-sm-3
-
-  Sets the margin of element to css var for 3 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-3 - Sets all margins to 3 on sm
-  .mwx-sm-3 - Sets left and right margins to 3 on sm
-  .mwy-sm-3 - Sets top and bottom margins to 3 on sm
-  .mwt-sm-3 - Sets top margin to 3 on sm
-  .mwr-sm-3 - Sets right margin to 3 on sm
-  .mwb-sm-3 - Sets bottom margin to 3 on sm
-  .mwl-sm-3 - Sets left margin to 3 on sm
-
-  Styleguide Margin - Width - 3
-  */
-  .mwt-sm-3,
-.mwy-sm-3,
-.mwa-sm-3 {
-    margin-top: var(--margin-width-3);
-  }
-
-  .mwr-sm-3,
-.mwx-sm-3,
-.mwa-sm-3 {
-    margin-right: var(--margin-width-3);
-  }
-
-  .mwb-sm-3,
-.mwy-sm-3,
-.mwa-sm-3 {
-    margin-bottom: var(--margin-width-3);
-  }
-
-  .mwl-sm-3,
-.mwx-sm-3,
-.mwa-sm-3 {
-    margin-left: var(--margin-width-3);
-  }
-
-  /*
-  .mw*-sm-4
-
-  Sets the margin of element to css var for 4 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-4 - Sets all margins to 4 on sm
-  .mwx-sm-4 - Sets left and right margins to 4 on sm
-  .mwy-sm-4 - Sets top and bottom margins to 4 on sm
-  .mwt-sm-4 - Sets top margin to 4 on sm
-  .mwr-sm-4 - Sets right margin to 4 on sm
-  .mwb-sm-4 - Sets bottom margin to 4 on sm
-  .mwl-sm-4 - Sets left margin to 4 on sm
-
-  Styleguide Margin - Width - 4
-  */
-  .mwt-sm-4,
-.mwy-sm-4,
-.mwa-sm-4 {
-    margin-top: var(--margin-width-4);
-  }
-
-  .mwr-sm-4,
-.mwx-sm-4,
-.mwa-sm-4 {
-    margin-right: var(--margin-width-4);
-  }
-
-  .mwb-sm-4,
-.mwy-sm-4,
-.mwa-sm-4 {
-    margin-bottom: var(--margin-width-4);
-  }
-
-  .mwl-sm-4,
-.mwx-sm-4,
-.mwa-sm-4 {
-    margin-left: var(--margin-width-4);
-  }
-
-  /*
-  .mw*-sm-5
-
-  Sets the margin of element to css var for 5 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-5 - Sets all margins to 5 on sm
-  .mwx-sm-5 - Sets left and right margins to 5 on sm
-  .mwy-sm-5 - Sets top and bottom margins to 5 on sm
-  .mwt-sm-5 - Sets top margin to 5 on sm
-  .mwr-sm-5 - Sets right margin to 5 on sm
-  .mwb-sm-5 - Sets bottom margin to 5 on sm
-  .mwl-sm-5 - Sets left margin to 5 on sm
-
-  Styleguide Margin - Width - 5
-  */
-  .mwt-sm-5,
-.mwy-sm-5,
-.mwa-sm-5 {
-    margin-top: var(--margin-width-5);
-  }
-
-  .mwr-sm-5,
-.mwx-sm-5,
-.mwa-sm-5 {
-    margin-right: var(--margin-width-5);
-  }
-
-  .mwb-sm-5,
-.mwy-sm-5,
-.mwa-sm-5 {
-    margin-bottom: var(--margin-width-5);
-  }
-
-  .mwl-sm-5,
-.mwx-sm-5,
-.mwa-sm-5 {
-    margin-left: var(--margin-width-5);
-  }
-
-  /*
-  .mw*-sm-6
-
-  Sets the margin of element to css var for 6 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-6 - Sets all margins to 6 on sm
-  .mwx-sm-6 - Sets left and right margins to 6 on sm
-  .mwy-sm-6 - Sets top and bottom margins to 6 on sm
-  .mwt-sm-6 - Sets top margin to 6 on sm
-  .mwr-sm-6 - Sets right margin to 6 on sm
-  .mwb-sm-6 - Sets bottom margin to 6 on sm
-  .mwl-sm-6 - Sets left margin to 6 on sm
-
-  Styleguide Margin - Width - 6
-  */
-  .mwt-sm-6,
-.mwy-sm-6,
-.mwa-sm-6 {
-    margin-top: var(--margin-width-6);
-  }
-
-  .mwr-sm-6,
-.mwx-sm-6,
-.mwa-sm-6 {
-    margin-right: var(--margin-width-6);
-  }
-
-  .mwb-sm-6,
-.mwy-sm-6,
-.mwa-sm-6 {
-    margin-bottom: var(--margin-width-6);
-  }
-
-  .mwl-sm-6,
-.mwx-sm-6,
-.mwa-sm-6 {
-    margin-left: var(--margin-width-6);
-  }
-
-  /*
-  .mw*-sm-7
-
-  Sets the margin of element to css var for 7 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .mwa-sm-7 - Sets all margins to 7 on sm
-  .mwx-sm-7 - Sets left and right margins to 7 on sm
-  .mwy-sm-7 - Sets top and bottom margins to 7 on sm
-  .mwt-sm-7 - Sets top margin to 7 on sm
-  .mwr-sm-7 - Sets right margin to 7 on sm
-  .mwb-sm-7 - Sets bottom margin to 7 on sm
-  .mwl-sm-7 - Sets left margin to 7 on sm
-
-  Styleguide Margin - Width - 7
-  */
-  .mwt-sm-7,
-.mwy-sm-7,
-.mwa-sm-7 {
-    margin-top: var(--margin-width-7);
-  }
-
-  .mwr-sm-7,
-.mwx-sm-7,
-.mwa-sm-7 {
-    margin-right: var(--margin-width-7);
-  }
-
-  .mwb-sm-7,
-.mwy-sm-7,
-.mwa-sm-7 {
-    margin-bottom: var(--margin-width-7);
-  }
-
-  .mwl-sm-7,
-.mwx-sm-7,
-.mwa-sm-7 {
-    margin-left: var(--margin-width-7);
-  }
+Styleguide Margin - Width - p20
+*/
+.mwt-p20,
+.mwy-p20,
+.mwa-p20 {
+  margin-top: 20%;
 }
+
+.mwr-p20,
+.mwx-p20,
+.mwa-p20 {
+  margin-right: 20%;
+}
+
+.mwb-p20,
+.mwy-p20,
+.mwa-p20 {
+  margin-bottom: 20%;
+}
+
+.mwl-p20,
+.mwx-p20,
+.mwa-p20 {
+  margin-left: 20%;
+}
+
+/*
+.mw*r-p20
+
+Sets the margin of element to the negative value of the css var for p20.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p20 - Sets all margins to mp20
+.mwxr-p20 - Sets left and right margins to mp20
+.mwyr-p20 - Sets top and bottom margins to mp20
+.mwtr-p20 - Sets top margin to mp20
+.mwrr-p20 - Sets right margin to mp20
+.mwbr-p20 - Sets bottom margin to mp20
+.mwlr-p20 - Sets left margin to mp20
+
+Styleguide Margin - Width - p20
+*/
+.mwtr-p20,
+.mwyr-p20,
+.mwar-p20 {
+  margin-top: calc(-1 * var(--margin-width-p20));
+}
+
+.mwrr-p20,
+.mwxr-p20,
+.mwar-p20 {
+  margin-right: calc(-1 * var(--margin-width-p20));
+}
+
+.mwbr-p20,
+.mwyr-p20,
+.mwar-p20 {
+  margin-bottom: calc(-1 * var(--margin-width-p20));
+}
+
+.mwlr-p20,
+.mwxr-p20,
+.mwar-p20 {
+  margin-left: calc(-1 * var(--margin-width-p20));
+}
+
+/*
+.mw*-p25
+
+Sets the margin of element to css var for p25.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p25 - Sets all margins to p25
+.mwx-p25 - Sets left and right margins to p25
+.mwy-p25 - Sets top and bottom margins to p25
+.mwt-p25 - Sets top margin to p25
+.mwr-p25 - Sets right margin to p25
+.mwb-p25 - Sets bottom margin to p25
+.mwl-p25 - Sets left margin to p25
+
+Styleguide Margin - Width - p25
+*/
+.mwt-p25,
+.mwy-p25,
+.mwa-p25 {
+  margin-top: 25%;
+}
+
+.mwr-p25,
+.mwx-p25,
+.mwa-p25 {
+  margin-right: 25%;
+}
+
+.mwb-p25,
+.mwy-p25,
+.mwa-p25 {
+  margin-bottom: 25%;
+}
+
+.mwl-p25,
+.mwx-p25,
+.mwa-p25 {
+  margin-left: 25%;
+}
+
+/*
+.mw*r-p25
+
+Sets the margin of element to the negative value of the css var for p25.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p25 - Sets all margins to mp25
+.mwxr-p25 - Sets left and right margins to mp25
+.mwyr-p25 - Sets top and bottom margins to mp25
+.mwtr-p25 - Sets top margin to mp25
+.mwrr-p25 - Sets right margin to mp25
+.mwbr-p25 - Sets bottom margin to mp25
+.mwlr-p25 - Sets left margin to mp25
+
+Styleguide Margin - Width - p25
+*/
+.mwtr-p25,
+.mwyr-p25,
+.mwar-p25 {
+  margin-top: calc(-1 * var(--margin-width-p25));
+}
+
+.mwrr-p25,
+.mwxr-p25,
+.mwar-p25 {
+  margin-right: calc(-1 * var(--margin-width-p25));
+}
+
+.mwbr-p25,
+.mwyr-p25,
+.mwar-p25 {
+  margin-bottom: calc(-1 * var(--margin-width-p25));
+}
+
+.mwlr-p25,
+.mwxr-p25,
+.mwar-p25 {
+  margin-left: calc(-1 * var(--margin-width-p25));
+}
+
+/*
+.mw*-p30
+
+Sets the margin of element to css var for p30.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p30 - Sets all margins to p30
+.mwx-p30 - Sets left and right margins to p30
+.mwy-p30 - Sets top and bottom margins to p30
+.mwt-p30 - Sets top margin to p30
+.mwr-p30 - Sets right margin to p30
+.mwb-p30 - Sets bottom margin to p30
+.mwl-p30 - Sets left margin to p30
+
+Styleguide Margin - Width - p30
+*/
+.mwt-p30,
+.mwy-p30,
+.mwa-p30 {
+  margin-top: 30%;
+}
+
+.mwr-p30,
+.mwx-p30,
+.mwa-p30 {
+  margin-right: 30%;
+}
+
+.mwb-p30,
+.mwy-p30,
+.mwa-p30 {
+  margin-bottom: 30%;
+}
+
+.mwl-p30,
+.mwx-p30,
+.mwa-p30 {
+  margin-left: 30%;
+}
+
+/*
+.mw*r-p30
+
+Sets the margin of element to the negative value of the css var for p30.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p30 - Sets all margins to mp30
+.mwxr-p30 - Sets left and right margins to mp30
+.mwyr-p30 - Sets top and bottom margins to mp30
+.mwtr-p30 - Sets top margin to mp30
+.mwrr-p30 - Sets right margin to mp30
+.mwbr-p30 - Sets bottom margin to mp30
+.mwlr-p30 - Sets left margin to mp30
+
+Styleguide Margin - Width - p30
+*/
+.mwtr-p30,
+.mwyr-p30,
+.mwar-p30 {
+  margin-top: calc(-1 * var(--margin-width-p30));
+}
+
+.mwrr-p30,
+.mwxr-p30,
+.mwar-p30 {
+  margin-right: calc(-1 * var(--margin-width-p30));
+}
+
+.mwbr-p30,
+.mwyr-p30,
+.mwar-p30 {
+  margin-bottom: calc(-1 * var(--margin-width-p30));
+}
+
+.mwlr-p30,
+.mwxr-p30,
+.mwar-p30 {
+  margin-left: calc(-1 * var(--margin-width-p30));
+}
+
+/*
+.mw*-p40
+
+Sets the margin of element to css var for p40.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p40 - Sets all margins to p40
+.mwx-p40 - Sets left and right margins to p40
+.mwy-p40 - Sets top and bottom margins to p40
+.mwt-p40 - Sets top margin to p40
+.mwr-p40 - Sets right margin to p40
+.mwb-p40 - Sets bottom margin to p40
+.mwl-p40 - Sets left margin to p40
+
+Styleguide Margin - Width - p40
+*/
+.mwt-p40,
+.mwy-p40,
+.mwa-p40 {
+  margin-top: 40%;
+}
+
+.mwr-p40,
+.mwx-p40,
+.mwa-p40 {
+  margin-right: 40%;
+}
+
+.mwb-p40,
+.mwy-p40,
+.mwa-p40 {
+  margin-bottom: 40%;
+}
+
+.mwl-p40,
+.mwx-p40,
+.mwa-p40 {
+  margin-left: 40%;
+}
+
+/*
+.mw*r-p40
+
+Sets the margin of element to the negative value of the css var for p40.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p40 - Sets all margins to mp40
+.mwxr-p40 - Sets left and right margins to mp40
+.mwyr-p40 - Sets top and bottom margins to mp40
+.mwtr-p40 - Sets top margin to mp40
+.mwrr-p40 - Sets right margin to mp40
+.mwbr-p40 - Sets bottom margin to mp40
+.mwlr-p40 - Sets left margin to mp40
+
+Styleguide Margin - Width - p40
+*/
+.mwtr-p40,
+.mwyr-p40,
+.mwar-p40 {
+  margin-top: calc(-1 * var(--margin-width-p40));
+}
+
+.mwrr-p40,
+.mwxr-p40,
+.mwar-p40 {
+  margin-right: calc(-1 * var(--margin-width-p40));
+}
+
+.mwbr-p40,
+.mwyr-p40,
+.mwar-p40 {
+  margin-bottom: calc(-1 * var(--margin-width-p40));
+}
+
+.mwlr-p40,
+.mwxr-p40,
+.mwar-p40 {
+  margin-left: calc(-1 * var(--margin-width-p40));
+}
+
+/*
+.mw*-p50
+
+Sets the margin of element to css var for p50.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p50 - Sets all margins to p50
+.mwx-p50 - Sets left and right margins to p50
+.mwy-p50 - Sets top and bottom margins to p50
+.mwt-p50 - Sets top margin to p50
+.mwr-p50 - Sets right margin to p50
+.mwb-p50 - Sets bottom margin to p50
+.mwl-p50 - Sets left margin to p50
+
+Styleguide Margin - Width - p50
+*/
+.mwt-p50,
+.mwy-p50,
+.mwa-p50 {
+  margin-top: 50%;
+}
+
+.mwr-p50,
+.mwx-p50,
+.mwa-p50 {
+  margin-right: 50%;
+}
+
+.mwb-p50,
+.mwy-p50,
+.mwa-p50 {
+  margin-bottom: 50%;
+}
+
+.mwl-p50,
+.mwx-p50,
+.mwa-p50 {
+  margin-left: 50%;
+}
+
+/*
+.mw*r-p50
+
+Sets the margin of element to the negative value of the css var for p50.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p50 - Sets all margins to mp50
+.mwxr-p50 - Sets left and right margins to mp50
+.mwyr-p50 - Sets top and bottom margins to mp50
+.mwtr-p50 - Sets top margin to mp50
+.mwrr-p50 - Sets right margin to mp50
+.mwbr-p50 - Sets bottom margin to mp50
+.mwlr-p50 - Sets left margin to mp50
+
+Styleguide Margin - Width - p50
+*/
+.mwtr-p50,
+.mwyr-p50,
+.mwar-p50 {
+  margin-top: calc(-1 * var(--margin-width-p50));
+}
+
+.mwrr-p50,
+.mwxr-p50,
+.mwar-p50 {
+  margin-right: calc(-1 * var(--margin-width-p50));
+}
+
+.mwbr-p50,
+.mwyr-p50,
+.mwar-p50 {
+  margin-bottom: calc(-1 * var(--margin-width-p50));
+}
+
+.mwlr-p50,
+.mwxr-p50,
+.mwar-p50 {
+  margin-left: calc(-1 * var(--margin-width-p50));
+}
+
+/*
+.mw*-p60
+
+Sets the margin of element to css var for p60.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p60 - Sets all margins to p60
+.mwx-p60 - Sets left and right margins to p60
+.mwy-p60 - Sets top and bottom margins to p60
+.mwt-p60 - Sets top margin to p60
+.mwr-p60 - Sets right margin to p60
+.mwb-p60 - Sets bottom margin to p60
+.mwl-p60 - Sets left margin to p60
+
+Styleguide Margin - Width - p60
+*/
+.mwt-p60,
+.mwy-p60,
+.mwa-p60 {
+  margin-top: 60%;
+}
+
+.mwr-p60,
+.mwx-p60,
+.mwa-p60 {
+  margin-right: 60%;
+}
+
+.mwb-p60,
+.mwy-p60,
+.mwa-p60 {
+  margin-bottom: 60%;
+}
+
+.mwl-p60,
+.mwx-p60,
+.mwa-p60 {
+  margin-left: 60%;
+}
+
+/*
+.mw*r-p60
+
+Sets the margin of element to the negative value of the css var for p60.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p60 - Sets all margins to mp60
+.mwxr-p60 - Sets left and right margins to mp60
+.mwyr-p60 - Sets top and bottom margins to mp60
+.mwtr-p60 - Sets top margin to mp60
+.mwrr-p60 - Sets right margin to mp60
+.mwbr-p60 - Sets bottom margin to mp60
+.mwlr-p60 - Sets left margin to mp60
+
+Styleguide Margin - Width - p60
+*/
+.mwtr-p60,
+.mwyr-p60,
+.mwar-p60 {
+  margin-top: calc(-1 * var(--margin-width-p60));
+}
+
+.mwrr-p60,
+.mwxr-p60,
+.mwar-p60 {
+  margin-right: calc(-1 * var(--margin-width-p60));
+}
+
+.mwbr-p60,
+.mwyr-p60,
+.mwar-p60 {
+  margin-bottom: calc(-1 * var(--margin-width-p60));
+}
+
+.mwlr-p60,
+.mwxr-p60,
+.mwar-p60 {
+  margin-left: calc(-1 * var(--margin-width-p60));
+}
+
+/*
+.mw*-p70
+
+Sets the margin of element to css var for p70.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p70 - Sets all margins to p70
+.mwx-p70 - Sets left and right margins to p70
+.mwy-p70 - Sets top and bottom margins to p70
+.mwt-p70 - Sets top margin to p70
+.mwr-p70 - Sets right margin to p70
+.mwb-p70 - Sets bottom margin to p70
+.mwl-p70 - Sets left margin to p70
+
+Styleguide Margin - Width - p70
+*/
+.mwt-p70,
+.mwy-p70,
+.mwa-p70 {
+  margin-top: 70%;
+}
+
+.mwr-p70,
+.mwx-p70,
+.mwa-p70 {
+  margin-right: 70%;
+}
+
+.mwb-p70,
+.mwy-p70,
+.mwa-p70 {
+  margin-bottom: 70%;
+}
+
+.mwl-p70,
+.mwx-p70,
+.mwa-p70 {
+  margin-left: 70%;
+}
+
+/*
+.mw*r-p70
+
+Sets the margin of element to the negative value of the css var for p70.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p70 - Sets all margins to mp70
+.mwxr-p70 - Sets left and right margins to mp70
+.mwyr-p70 - Sets top and bottom margins to mp70
+.mwtr-p70 - Sets top margin to mp70
+.mwrr-p70 - Sets right margin to mp70
+.mwbr-p70 - Sets bottom margin to mp70
+.mwlr-p70 - Sets left margin to mp70
+
+Styleguide Margin - Width - p70
+*/
+.mwtr-p70,
+.mwyr-p70,
+.mwar-p70 {
+  margin-top: calc(-1 * var(--margin-width-p70));
+}
+
+.mwrr-p70,
+.mwxr-p70,
+.mwar-p70 {
+  margin-right: calc(-1 * var(--margin-width-p70));
+}
+
+.mwbr-p70,
+.mwyr-p70,
+.mwar-p70 {
+  margin-bottom: calc(-1 * var(--margin-width-p70));
+}
+
+.mwlr-p70,
+.mwxr-p70,
+.mwar-p70 {
+  margin-left: calc(-1 * var(--margin-width-p70));
+}
+
+/*
+.mw*-p75
+
+Sets the margin of element to css var for p75.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p75 - Sets all margins to p75
+.mwx-p75 - Sets left and right margins to p75
+.mwy-p75 - Sets top and bottom margins to p75
+.mwt-p75 - Sets top margin to p75
+.mwr-p75 - Sets right margin to p75
+.mwb-p75 - Sets bottom margin to p75
+.mwl-p75 - Sets left margin to p75
+
+Styleguide Margin - Width - p75
+*/
+.mwt-p75,
+.mwy-p75,
+.mwa-p75 {
+  margin-top: 75%;
+}
+
+.mwr-p75,
+.mwx-p75,
+.mwa-p75 {
+  margin-right: 75%;
+}
+
+.mwb-p75,
+.mwy-p75,
+.mwa-p75 {
+  margin-bottom: 75%;
+}
+
+.mwl-p75,
+.mwx-p75,
+.mwa-p75 {
+  margin-left: 75%;
+}
+
+/*
+.mw*r-p75
+
+Sets the margin of element to the negative value of the css var for p75.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p75 - Sets all margins to mp75
+.mwxr-p75 - Sets left and right margins to mp75
+.mwyr-p75 - Sets top and bottom margins to mp75
+.mwtr-p75 - Sets top margin to mp75
+.mwrr-p75 - Sets right margin to mp75
+.mwbr-p75 - Sets bottom margin to mp75
+.mwlr-p75 - Sets left margin to mp75
+
+Styleguide Margin - Width - p75
+*/
+.mwtr-p75,
+.mwyr-p75,
+.mwar-p75 {
+  margin-top: calc(-1 * var(--margin-width-p75));
+}
+
+.mwrr-p75,
+.mwxr-p75,
+.mwar-p75 {
+  margin-right: calc(-1 * var(--margin-width-p75));
+}
+
+.mwbr-p75,
+.mwyr-p75,
+.mwar-p75 {
+  margin-bottom: calc(-1 * var(--margin-width-p75));
+}
+
+.mwlr-p75,
+.mwxr-p75,
+.mwar-p75 {
+  margin-left: calc(-1 * var(--margin-width-p75));
+}
+
+/*
+.mw*-p80
+
+Sets the margin of element to css var for p80.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p80 - Sets all margins to p80
+.mwx-p80 - Sets left and right margins to p80
+.mwy-p80 - Sets top and bottom margins to p80
+.mwt-p80 - Sets top margin to p80
+.mwr-p80 - Sets right margin to p80
+.mwb-p80 - Sets bottom margin to p80
+.mwl-p80 - Sets left margin to p80
+
+Styleguide Margin - Width - p80
+*/
+.mwt-p80,
+.mwy-p80,
+.mwa-p80 {
+  margin-top: 80%;
+}
+
+.mwr-p80,
+.mwx-p80,
+.mwa-p80 {
+  margin-right: 80%;
+}
+
+.mwb-p80,
+.mwy-p80,
+.mwa-p80 {
+  margin-bottom: 80%;
+}
+
+.mwl-p80,
+.mwx-p80,
+.mwa-p80 {
+  margin-left: 80%;
+}
+
+/*
+.mw*r-p80
+
+Sets the margin of element to the negative value of the css var for p80.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p80 - Sets all margins to mp80
+.mwxr-p80 - Sets left and right margins to mp80
+.mwyr-p80 - Sets top and bottom margins to mp80
+.mwtr-p80 - Sets top margin to mp80
+.mwrr-p80 - Sets right margin to mp80
+.mwbr-p80 - Sets bottom margin to mp80
+.mwlr-p80 - Sets left margin to mp80
+
+Styleguide Margin - Width - p80
+*/
+.mwtr-p80,
+.mwyr-p80,
+.mwar-p80 {
+  margin-top: calc(-1 * var(--margin-width-p80));
+}
+
+.mwrr-p80,
+.mwxr-p80,
+.mwar-p80 {
+  margin-right: calc(-1 * var(--margin-width-p80));
+}
+
+.mwbr-p80,
+.mwyr-p80,
+.mwar-p80 {
+  margin-bottom: calc(-1 * var(--margin-width-p80));
+}
+
+.mwlr-p80,
+.mwxr-p80,
+.mwar-p80 {
+  margin-left: calc(-1 * var(--margin-width-p80));
+}
+
+/*
+.mw*-p90
+
+Sets the margin of element to css var for p90.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p90 - Sets all margins to p90
+.mwx-p90 - Sets left and right margins to p90
+.mwy-p90 - Sets top and bottom margins to p90
+.mwt-p90 - Sets top margin to p90
+.mwr-p90 - Sets right margin to p90
+.mwb-p90 - Sets bottom margin to p90
+.mwl-p90 - Sets left margin to p90
+
+Styleguide Margin - Width - p90
+*/
+.mwt-p90,
+.mwy-p90,
+.mwa-p90 {
+  margin-top: 90%;
+}
+
+.mwr-p90,
+.mwx-p90,
+.mwa-p90 {
+  margin-right: 90%;
+}
+
+.mwb-p90,
+.mwy-p90,
+.mwa-p90 {
+  margin-bottom: 90%;
+}
+
+.mwl-p90,
+.mwx-p90,
+.mwa-p90 {
+  margin-left: 90%;
+}
+
+/*
+.mw*r-p90
+
+Sets the margin of element to the negative value of the css var for p90.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p90 - Sets all margins to mp90
+.mwxr-p90 - Sets left and right margins to mp90
+.mwyr-p90 - Sets top and bottom margins to mp90
+.mwtr-p90 - Sets top margin to mp90
+.mwrr-p90 - Sets right margin to mp90
+.mwbr-p90 - Sets bottom margin to mp90
+.mwlr-p90 - Sets left margin to mp90
+
+Styleguide Margin - Width - p90
+*/
+.mwtr-p90,
+.mwyr-p90,
+.mwar-p90 {
+  margin-top: calc(-1 * var(--margin-width-p90));
+}
+
+.mwrr-p90,
+.mwxr-p90,
+.mwar-p90 {
+  margin-right: calc(-1 * var(--margin-width-p90));
+}
+
+.mwbr-p90,
+.mwyr-p90,
+.mwar-p90 {
+  margin-bottom: calc(-1 * var(--margin-width-p90));
+}
+
+.mwlr-p90,
+.mwxr-p90,
+.mwar-p90 {
+  margin-left: calc(-1 * var(--margin-width-p90));
+}
+
+/*
+.mw*-p100
+
+Sets the margin of element to css var for p100.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p100 - Sets all margins to p100
+.mwx-p100 - Sets left and right margins to p100
+.mwy-p100 - Sets top and bottom margins to p100
+.mwt-p100 - Sets top margin to p100
+.mwr-p100 - Sets right margin to p100
+.mwb-p100 - Sets bottom margin to p100
+.mwl-p100 - Sets left margin to p100
+
+Styleguide Margin - Width - p100
+*/
+.mwt-p100,
+.mwy-p100,
+.mwa-p100 {
+  margin-top: 100%;
+}
+
+.mwr-p100,
+.mwx-p100,
+.mwa-p100 {
+  margin-right: 100%;
+}
+
+.mwb-p100,
+.mwy-p100,
+.mwa-p100 {
+  margin-bottom: 100%;
+}
+
+.mwl-p100,
+.mwx-p100,
+.mwa-p100 {
+  margin-left: 100%;
+}
+
+/*
+.mw*r-p100
+
+Sets the margin of element to the negative value of the css var for p100.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p100 - Sets all margins to mp100
+.mwxr-p100 - Sets left and right margins to mp100
+.mwyr-p100 - Sets top and bottom margins to mp100
+.mwtr-p100 - Sets top margin to mp100
+.mwrr-p100 - Sets right margin to mp100
+.mwbr-p100 - Sets bottom margin to mp100
+.mwlr-p100 - Sets left margin to mp100
+
+Styleguide Margin - Width - p100
+*/
+.mwtr-p100,
+.mwyr-p100,
+.mwar-p100 {
+  margin-top: calc(-1 * var(--margin-width-p100));
+}
+
+.mwrr-p100,
+.mwxr-p100,
+.mwar-p100 {
+  margin-right: calc(-1 * var(--margin-width-p100));
+}
+
+.mwbr-p100,
+.mwyr-p100,
+.mwar-p100 {
+  margin-bottom: calc(-1 * var(--margin-width-p100));
+}
+
+.mwlr-p100,
+.mwxr-p100,
+.mwar-p100 {
+  margin-left: calc(-1 * var(--margin-width-p100));
+}
+
 /*
 Overflow
 
@@ -8232,343 +7193,6 @@ Styleguide Padding - Width - 7
   padding-left: var(--padding-width-7);
 }
 
-@media (min-width: 50em) {
-  /*
-  .pw*-sm-0
-
-  Sets the padding of element to css var for 0 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-0 - Sets all paddings to 0 on sm
-  .pwx-sm-0 - Sets left and right paddings to 0 on sm
-  .pwy-sm-0 - Sets top and bottom paddings to 0 on sm
-  .pwt-sm-0 - Sets top padding to 0 on sm
-  .pwr-sm-0 - Sets right padding to 0 on sm
-  .pwb-sm-0 - Sets bottom padding to 0 on sm
-  .pwl-sm-0 - Sets left padding to 0 on sm
-
-  Styleguide Padding - Width - 0 - sm
-  */
-  .pwt-sm-0,
-.pwy-sm-0,
-.pwa-sm-0 {
-    padding-top: var(--padding-width-0);
-  }
-
-  .pwr-sm-0,
-.pwx-sm-0,
-.pwa-sm-0 {
-    padding-right: var(--padding-width-0);
-  }
-
-  .pwb-sm-0,
-.pwy-sm-0,
-.pwa-sm-0 {
-    padding-bottom: var(--padding-width-0);
-  }
-
-  .pwl-sm-0,
-.pwx-sm-0,
-.pwa-sm-0 {
-    padding-left: var(--padding-width-0);
-  }
-
-  /*
-  .pw*-sm-1
-
-  Sets the padding of element to css var for 1 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-1 - Sets all paddings to 1 on sm
-  .pwx-sm-1 - Sets left and right paddings to 1 on sm
-  .pwy-sm-1 - Sets top and bottom paddings to 1 on sm
-  .pwt-sm-1 - Sets top padding to 1 on sm
-  .pwr-sm-1 - Sets right padding to 1 on sm
-  .pwb-sm-1 - Sets bottom padding to 1 on sm
-  .pwl-sm-1 - Sets left padding to 1 on sm
-
-  Styleguide Padding - Width - 1 - sm
-  */
-  .pwt-sm-1,
-.pwy-sm-1,
-.pwa-sm-1 {
-    padding-top: var(--padding-width-1);
-  }
-
-  .pwr-sm-1,
-.pwx-sm-1,
-.pwa-sm-1 {
-    padding-right: var(--padding-width-1);
-  }
-
-  .pwb-sm-1,
-.pwy-sm-1,
-.pwa-sm-1 {
-    padding-bottom: var(--padding-width-1);
-  }
-
-  .pwl-sm-1,
-.pwx-sm-1,
-.pwa-sm-1 {
-    padding-left: var(--padding-width-1);
-  }
-
-  /*
-  .pw*-sm-2
-
-  Sets the padding of element to css var for 2 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-2 - Sets all paddings to 2 on sm
-  .pwx-sm-2 - Sets left and right paddings to 2 on sm
-  .pwy-sm-2 - Sets top and bottom paddings to 2 on sm
-  .pwt-sm-2 - Sets top padding to 2 on sm
-  .pwr-sm-2 - Sets right padding to 2 on sm
-  .pwb-sm-2 - Sets bottom padding to 2 on sm
-  .pwl-sm-2 - Sets left padding to 2 on sm
-
-  Styleguide Padding - Width - 2 - sm
-  */
-  .pwt-sm-2,
-.pwy-sm-2,
-.pwa-sm-2 {
-    padding-top: var(--padding-width-2);
-  }
-
-  .pwr-sm-2,
-.pwx-sm-2,
-.pwa-sm-2 {
-    padding-right: var(--padding-width-2);
-  }
-
-  .pwb-sm-2,
-.pwy-sm-2,
-.pwa-sm-2 {
-    padding-bottom: var(--padding-width-2);
-  }
-
-  .pwl-sm-2,
-.pwx-sm-2,
-.pwa-sm-2 {
-    padding-left: var(--padding-width-2);
-  }
-
-  /*
-  .pw*-sm-3
-
-  Sets the padding of element to css var for 3 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-3 - Sets all paddings to 3 on sm
-  .pwx-sm-3 - Sets left and right paddings to 3 on sm
-  .pwy-sm-3 - Sets top and bottom paddings to 3 on sm
-  .pwt-sm-3 - Sets top padding to 3 on sm
-  .pwr-sm-3 - Sets right padding to 3 on sm
-  .pwb-sm-3 - Sets bottom padding to 3 on sm
-  .pwl-sm-3 - Sets left padding to 3 on sm
-
-  Styleguide Padding - Width - 3 - sm
-  */
-  .pwt-sm-3,
-.pwy-sm-3,
-.pwa-sm-3 {
-    padding-top: var(--padding-width-3);
-  }
-
-  .pwr-sm-3,
-.pwx-sm-3,
-.pwa-sm-3 {
-    padding-right: var(--padding-width-3);
-  }
-
-  .pwb-sm-3,
-.pwy-sm-3,
-.pwa-sm-3 {
-    padding-bottom: var(--padding-width-3);
-  }
-
-  .pwl-sm-3,
-.pwx-sm-3,
-.pwa-sm-3 {
-    padding-left: var(--padding-width-3);
-  }
-
-  /*
-  .pw*-sm-4
-
-  Sets the padding of element to css var for 4 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-4 - Sets all paddings to 4 on sm
-  .pwx-sm-4 - Sets left and right paddings to 4 on sm
-  .pwy-sm-4 - Sets top and bottom paddings to 4 on sm
-  .pwt-sm-4 - Sets top padding to 4 on sm
-  .pwr-sm-4 - Sets right padding to 4 on sm
-  .pwb-sm-4 - Sets bottom padding to 4 on sm
-  .pwl-sm-4 - Sets left padding to 4 on sm
-
-  Styleguide Padding - Width - 4 - sm
-  */
-  .pwt-sm-4,
-.pwy-sm-4,
-.pwa-sm-4 {
-    padding-top: var(--padding-width-4);
-  }
-
-  .pwr-sm-4,
-.pwx-sm-4,
-.pwa-sm-4 {
-    padding-right: var(--padding-width-4);
-  }
-
-  .pwb-sm-4,
-.pwy-sm-4,
-.pwa-sm-4 {
-    padding-bottom: var(--padding-width-4);
-  }
-
-  .pwl-sm-4,
-.pwx-sm-4,
-.pwa-sm-4 {
-    padding-left: var(--padding-width-4);
-  }
-
-  /*
-  .pw*-sm-5
-
-  Sets the padding of element to css var for 5 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-5 - Sets all paddings to 5 on sm
-  .pwx-sm-5 - Sets left and right paddings to 5 on sm
-  .pwy-sm-5 - Sets top and bottom paddings to 5 on sm
-  .pwt-sm-5 - Sets top padding to 5 on sm
-  .pwr-sm-5 - Sets right padding to 5 on sm
-  .pwb-sm-5 - Sets bottom padding to 5 on sm
-  .pwl-sm-5 - Sets left padding to 5 on sm
-
-  Styleguide Padding - Width - 5 - sm
-  */
-  .pwt-sm-5,
-.pwy-sm-5,
-.pwa-sm-5 {
-    padding-top: var(--padding-width-5);
-  }
-
-  .pwr-sm-5,
-.pwx-sm-5,
-.pwa-sm-5 {
-    padding-right: var(--padding-width-5);
-  }
-
-  .pwb-sm-5,
-.pwy-sm-5,
-.pwa-sm-5 {
-    padding-bottom: var(--padding-width-5);
-  }
-
-  .pwl-sm-5,
-.pwx-sm-5,
-.pwa-sm-5 {
-    padding-left: var(--padding-width-5);
-  }
-
-  /*
-  .pw*-sm-6
-
-  Sets the padding of element to css var for 6 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-6 - Sets all paddings to 6 on sm
-  .pwx-sm-6 - Sets left and right paddings to 6 on sm
-  .pwy-sm-6 - Sets top and bottom paddings to 6 on sm
-  .pwt-sm-6 - Sets top padding to 6 on sm
-  .pwr-sm-6 - Sets right padding to 6 on sm
-  .pwb-sm-6 - Sets bottom padding to 6 on sm
-  .pwl-sm-6 - Sets left padding to 6 on sm
-
-  Styleguide Padding - Width - 6 - sm
-  */
-  .pwt-sm-6,
-.pwy-sm-6,
-.pwa-sm-6 {
-    padding-top: var(--padding-width-6);
-  }
-
-  .pwr-sm-6,
-.pwx-sm-6,
-.pwa-sm-6 {
-    padding-right: var(--padding-width-6);
-  }
-
-  .pwb-sm-6,
-.pwy-sm-6,
-.pwa-sm-6 {
-    padding-bottom: var(--padding-width-6);
-  }
-
-  .pwl-sm-6,
-.pwx-sm-6,
-.pwa-sm-6 {
-    padding-left: var(--padding-width-6);
-  }
-
-  /*
-  .pw*-sm-7
-
-  Sets the padding of element to css var for 7 on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .pwa-sm-7 - Sets all paddings to 7 on sm
-  .pwx-sm-7 - Sets left and right paddings to 7 on sm
-  .pwy-sm-7 - Sets top and bottom paddings to 7 on sm
-  .pwt-sm-7 - Sets top padding to 7 on sm
-  .pwr-sm-7 - Sets right padding to 7 on sm
-  .pwb-sm-7 - Sets bottom padding to 7 on sm
-  .pwl-sm-7 - Sets left padding to 7 on sm
-
-  Styleguide Padding - Width - 7 - sm
-  */
-  .pwt-sm-7,
-.pwy-sm-7,
-.pwa-sm-7 {
-    padding-top: var(--padding-width-7);
-  }
-
-  .pwr-sm-7,
-.pwx-sm-7,
-.pwa-sm-7 {
-    padding-right: var(--padding-width-7);
-  }
-
-  .pwb-sm-7,
-.pwy-sm-7,
-.pwa-sm-7 {
-    padding-bottom: var(--padding-width-7);
-  }
-
-  .pwl-sm-7,
-.pwx-sm-7,
-.pwa-sm-7 {
-    padding-left: var(--padding-width-7);
-  }
-}
 :root {
   --shadow-0: calc(
     var(--fill-size) * 0
@@ -8813,71 +7437,6 @@ Styleguide Text - Align - j
   text-align: justify;
 }
 
-@media (min-width: 50em) {
-  /*
-  .ta-sm-l
-
-  Classes for setting text-align of an element to left on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ta-sm-l - Sets text-align to left on sm
-
-  Styleguide Text - Align - l - sm
-  */
-  .ta-sm-l {
-    text-align: left;
-  }
-
-  /*
-  .ta-sm-r
-
-  Classes for setting text-align of an element to right on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ta-sm-r - Sets text-align to right on sm
-
-  Styleguide Text - Align - r - sm
-  */
-  .ta-sm-r {
-    text-align: right;
-  }
-
-  /*
-  .ta-sm-c
-
-  Classes for setting text-align of an element to center on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ta-sm-c - Sets text-align to center on sm
-
-  Styleguide Text - Align - c - sm
-  */
-  .ta-sm-c {
-    text-align: center;
-  }
-
-  /*
-  .ta-sm-j
-
-  Classes for setting text-align of an element to justify on sm.
-
-  Markup:
-  <div class="{{modifier_class}}">A div</div>
-
-  .ta-sm-j - Sets text-align to justify on sm
-
-  Styleguide Text - Align - j - sm
-  */
-  .ta-sm-j {
-    text-align: justify;
-  }
-}
 :root {
   --width-p10: 10%;
   --width-p20: 20%;
@@ -10081,1169 +8640,6 @@ Styleguide Child Width - rem2
 .vwmx-rem2,
 .vwcmx-rem2 > * {
   max-width: var(--width-rem2);
-}
-
-@media (min-width: 50em) {
-  /*
-  .vw[mn,mx]-sm-p10
-
-  Sets the width, max-width, or min-width of element to css var for p10 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p10 - Sets width to p10 on sm
-  .vwmn-sm-p10 - Sets min-width to p10 on sm
-  .vwmx-sm-p10 - Sets max-width to p10 on sm
-
-  Styleguide Width - p10 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p10
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p10 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p10 - Sets width of immediate children to p10 on sm
-  .vwcmn-sm-p10 - Sets min-width of immediate children to p10 on sm
-  .vwcmx-sm-p10 - Sets max-width of immediate children to p10 on sm
-
-  Styleguide Child Width - p10 - sm
-  */
-  .vw-sm-p10,
-.vwc-sm-p10 > * {
-    width: var(--width-p10);
-  }
-
-  .vwmn-sm-p10,
-.vwcmn-sm-p10 > * {
-    min-width: var(--width-p10);
-  }
-
-  .vwmx-sm-p10,
-.vwcmx-sm-p10 > * {
-    max-width: var(--width-p10);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p20
-
-  Sets the width, max-width, or min-width of element to css var for p20 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p20 - Sets width to p20 on sm
-  .vwmn-sm-p20 - Sets min-width to p20 on sm
-  .vwmx-sm-p20 - Sets max-width to p20 on sm
-
-  Styleguide Width - p20 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p20
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p20 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p20 - Sets width of immediate children to p20 on sm
-  .vwcmn-sm-p20 - Sets min-width of immediate children to p20 on sm
-  .vwcmx-sm-p20 - Sets max-width of immediate children to p20 on sm
-
-  Styleguide Child Width - p20 - sm
-  */
-  .vw-sm-p20,
-.vwc-sm-p20 > * {
-    width: var(--width-p20);
-  }
-
-  .vwmn-sm-p20,
-.vwcmn-sm-p20 > * {
-    min-width: var(--width-p20);
-  }
-
-  .vwmx-sm-p20,
-.vwcmx-sm-p20 > * {
-    max-width: var(--width-p20);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p25
-
-  Sets the width, max-width, or min-width of element to css var for p25 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p25 - Sets width to p25 on sm
-  .vwmn-sm-p25 - Sets min-width to p25 on sm
-  .vwmx-sm-p25 - Sets max-width to p25 on sm
-
-  Styleguide Width - p25 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p25
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p25 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p25 - Sets width of immediate children to p25 on sm
-  .vwcmn-sm-p25 - Sets min-width of immediate children to p25 on sm
-  .vwcmx-sm-p25 - Sets max-width of immediate children to p25 on sm
-
-  Styleguide Child Width - p25 - sm
-  */
-  .vw-sm-p25,
-.vwc-sm-p25 > * {
-    width: var(--width-p25);
-  }
-
-  .vwmn-sm-p25,
-.vwcmn-sm-p25 > * {
-    min-width: var(--width-p25);
-  }
-
-  .vwmx-sm-p25,
-.vwcmx-sm-p25 > * {
-    max-width: var(--width-p25);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p30
-
-  Sets the width, max-width, or min-width of element to css var for p30 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p30 - Sets width to p30 on sm
-  .vwmn-sm-p30 - Sets min-width to p30 on sm
-  .vwmx-sm-p30 - Sets max-width to p30 on sm
-
-  Styleguide Width - p30 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p30
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p30 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p30 - Sets width of immediate children to p30 on sm
-  .vwcmn-sm-p30 - Sets min-width of immediate children to p30 on sm
-  .vwcmx-sm-p30 - Sets max-width of immediate children to p30 on sm
-
-  Styleguide Child Width - p30 - sm
-  */
-  .vw-sm-p30,
-.vwc-sm-p30 > * {
-    width: var(--width-p30);
-  }
-
-  .vwmn-sm-p30,
-.vwcmn-sm-p30 > * {
-    min-width: var(--width-p30);
-  }
-
-  .vwmx-sm-p30,
-.vwcmx-sm-p30 > * {
-    max-width: var(--width-p30);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p40
-
-  Sets the width, max-width, or min-width of element to css var for p40 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p40 - Sets width to p40 on sm
-  .vwmn-sm-p40 - Sets min-width to p40 on sm
-  .vwmx-sm-p40 - Sets max-width to p40 on sm
-
-  Styleguide Width - p40 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p40
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p40 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p40 - Sets width of immediate children to p40 on sm
-  .vwcmn-sm-p40 - Sets min-width of immediate children to p40 on sm
-  .vwcmx-sm-p40 - Sets max-width of immediate children to p40 on sm
-
-  Styleguide Child Width - p40 - sm
-  */
-  .vw-sm-p40,
-.vwc-sm-p40 > * {
-    width: var(--width-p40);
-  }
-
-  .vwmn-sm-p40,
-.vwcmn-sm-p40 > * {
-    min-width: var(--width-p40);
-  }
-
-  .vwmx-sm-p40,
-.vwcmx-sm-p40 > * {
-    max-width: var(--width-p40);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p50
-
-  Sets the width, max-width, or min-width of element to css var for p50 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p50 - Sets width to p50 on sm
-  .vwmn-sm-p50 - Sets min-width to p50 on sm
-  .vwmx-sm-p50 - Sets max-width to p50 on sm
-
-  Styleguide Width - p50 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p50
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p50 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p50 - Sets width of immediate children to p50 on sm
-  .vwcmn-sm-p50 - Sets min-width of immediate children to p50 on sm
-  .vwcmx-sm-p50 - Sets max-width of immediate children to p50 on sm
-
-  Styleguide Child Width - p50 - sm
-  */
-  .vw-sm-p50,
-.vwc-sm-p50 > * {
-    width: var(--width-p50);
-  }
-
-  .vwmn-sm-p50,
-.vwcmn-sm-p50 > * {
-    min-width: var(--width-p50);
-  }
-
-  .vwmx-sm-p50,
-.vwcmx-sm-p50 > * {
-    max-width: var(--width-p50);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p60
-
-  Sets the width, max-width, or min-width of element to css var for p60 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p60 - Sets width to p60 on sm
-  .vwmn-sm-p60 - Sets min-width to p60 on sm
-  .vwmx-sm-p60 - Sets max-width to p60 on sm
-
-  Styleguide Width - p60 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p60
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p60 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p60 - Sets width of immediate children to p60 on sm
-  .vwcmn-sm-p60 - Sets min-width of immediate children to p60 on sm
-  .vwcmx-sm-p60 - Sets max-width of immediate children to p60 on sm
-
-  Styleguide Child Width - p60 - sm
-  */
-  .vw-sm-p60,
-.vwc-sm-p60 > * {
-    width: var(--width-p60);
-  }
-
-  .vwmn-sm-p60,
-.vwcmn-sm-p60 > * {
-    min-width: var(--width-p60);
-  }
-
-  .vwmx-sm-p60,
-.vwcmx-sm-p60 > * {
-    max-width: var(--width-p60);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p70
-
-  Sets the width, max-width, or min-width of element to css var for p70 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p70 - Sets width to p70 on sm
-  .vwmn-sm-p70 - Sets min-width to p70 on sm
-  .vwmx-sm-p70 - Sets max-width to p70 on sm
-
-  Styleguide Width - p70 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p70
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p70 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p70 - Sets width of immediate children to p70 on sm
-  .vwcmn-sm-p70 - Sets min-width of immediate children to p70 on sm
-  .vwcmx-sm-p70 - Sets max-width of immediate children to p70 on sm
-
-  Styleguide Child Width - p70 - sm
-  */
-  .vw-sm-p70,
-.vwc-sm-p70 > * {
-    width: var(--width-p70);
-  }
-
-  .vwmn-sm-p70,
-.vwcmn-sm-p70 > * {
-    min-width: var(--width-p70);
-  }
-
-  .vwmx-sm-p70,
-.vwcmx-sm-p70 > * {
-    max-width: var(--width-p70);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p75
-
-  Sets the width, max-width, or min-width of element to css var for p75 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p75 - Sets width to p75 on sm
-  .vwmn-sm-p75 - Sets min-width to p75 on sm
-  .vwmx-sm-p75 - Sets max-width to p75 on sm
-
-  Styleguide Width - p75 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p75
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p75 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p75 - Sets width of immediate children to p75 on sm
-  .vwcmn-sm-p75 - Sets min-width of immediate children to p75 on sm
-  .vwcmx-sm-p75 - Sets max-width of immediate children to p75 on sm
-
-  Styleguide Child Width - p75 - sm
-  */
-  .vw-sm-p75,
-.vwc-sm-p75 > * {
-    width: var(--width-p75);
-  }
-
-  .vwmn-sm-p75,
-.vwcmn-sm-p75 > * {
-    min-width: var(--width-p75);
-  }
-
-  .vwmx-sm-p75,
-.vwcmx-sm-p75 > * {
-    max-width: var(--width-p75);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p80
-
-  Sets the width, max-width, or min-width of element to css var for p80 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p80 - Sets width to p80 on sm
-  .vwmn-sm-p80 - Sets min-width to p80 on sm
-  .vwmx-sm-p80 - Sets max-width to p80 on sm
-
-  Styleguide Width - p80 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p80
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p80 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p80 - Sets width of immediate children to p80 on sm
-  .vwcmn-sm-p80 - Sets min-width of immediate children to p80 on sm
-  .vwcmx-sm-p80 - Sets max-width of immediate children to p80 on sm
-
-  Styleguide Child Width - p80 - sm
-  */
-  .vw-sm-p80,
-.vwc-sm-p80 > * {
-    width: var(--width-p80);
-  }
-
-  .vwmn-sm-p80,
-.vwcmn-sm-p80 > * {
-    min-width: var(--width-p80);
-  }
-
-  .vwmx-sm-p80,
-.vwcmx-sm-p80 > * {
-    max-width: var(--width-p80);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p90
-
-  Sets the width, max-width, or min-width of element to css var for p90 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p90 - Sets width to p90 on sm
-  .vwmn-sm-p90 - Sets min-width to p90 on sm
-  .vwmx-sm-p90 - Sets max-width to p90 on sm
-
-  Styleguide Width - p90 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p90
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p90 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p90 - Sets width of immediate children to p90 on sm
-  .vwcmn-sm-p90 - Sets min-width of immediate children to p90 on sm
-  .vwcmx-sm-p90 - Sets max-width of immediate children to p90 on sm
-
-  Styleguide Child Width - p90 - sm
-  */
-  .vw-sm-p90,
-.vwc-sm-p90 > * {
-    width: var(--width-p90);
-  }
-
-  .vwmn-sm-p90,
-.vwcmn-sm-p90 > * {
-    min-width: var(--width-p90);
-  }
-
-  .vwmx-sm-p90,
-.vwcmx-sm-p90 > * {
-    max-width: var(--width-p90);
-  }
-
-  /*
-  .vw[mn,mx]-sm-p100
-
-  Sets the width, max-width, or min-width of element to css var for p100 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-p100 - Sets width to p100 on sm
-  .vwmn-sm-p100 - Sets min-width to p100 on sm
-  .vwmx-sm-p100 - Sets max-width to p100 on sm
-
-  Styleguide Width - p100 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-p100
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for p100 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-p100 - Sets width of immediate children to p100 on sm
-  .vwcmn-sm-p100 - Sets min-width of immediate children to p100 on sm
-  .vwcmx-sm-p100 - Sets max-width of immediate children to p100 on sm
-
-  Styleguide Child Width - p100 - sm
-  */
-  .vw-sm-p100,
-.vwc-sm-p100 > * {
-    width: var(--width-p100);
-  }
-
-  .vwmn-sm-p100,
-.vwcmn-sm-p100 > * {
-    min-width: var(--width-p100);
-  }
-
-  .vwmx-sm-p100,
-.vwcmx-sm-p100 > * {
-    max-width: var(--width-p100);
-  }
-
-  /*
-  .vw[mn,mx]-sm-ch0
-
-  Sets the width, max-width, or min-width of element to css var for ch0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-ch0 - Sets width to ch0 on sm
-  .vwmn-sm-ch0 - Sets min-width to ch0 on sm
-  .vwmx-sm-ch0 - Sets max-width to ch0 on sm
-
-  Styleguide Width - ch0 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-ch0
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for ch0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-ch0 - Sets width of immediate children to ch0 on sm
-  .vwcmn-sm-ch0 - Sets min-width of immediate children to ch0 on sm
-  .vwcmx-sm-ch0 - Sets max-width of immediate children to ch0 on sm
-
-  Styleguide Child Width - ch0 - sm
-  */
-  .vw-sm-ch0,
-.vwc-sm-ch0 > * {
-    width: var(--width-ch0);
-  }
-
-  .vwmn-sm-ch0,
-.vwcmn-sm-ch0 > * {
-    min-width: var(--width-ch0);
-  }
-
-  .vwmx-sm-ch0,
-.vwcmx-sm-ch0 > * {
-    max-width: var(--width-ch0);
-  }
-
-  /*
-  .vw[mn,mx]-sm-ch1
-
-  Sets the width, max-width, or min-width of element to css var for ch1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-ch1 - Sets width to ch1 on sm
-  .vwmn-sm-ch1 - Sets min-width to ch1 on sm
-  .vwmx-sm-ch1 - Sets max-width to ch1 on sm
-
-  Styleguide Width - ch1 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-ch1
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for ch1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-ch1 - Sets width of immediate children to ch1 on sm
-  .vwcmn-sm-ch1 - Sets min-width of immediate children to ch1 on sm
-  .vwcmx-sm-ch1 - Sets max-width of immediate children to ch1 on sm
-
-  Styleguide Child Width - ch1 - sm
-  */
-  .vw-sm-ch1,
-.vwc-sm-ch1 > * {
-    width: var(--width-ch1);
-  }
-
-  .vwmn-sm-ch1,
-.vwcmn-sm-ch1 > * {
-    min-width: var(--width-ch1);
-  }
-
-  .vwmx-sm-ch1,
-.vwcmx-sm-ch1 > * {
-    max-width: var(--width-ch1);
-  }
-
-  /*
-  .vw[mn,mx]-sm-ch2
-
-  Sets the width, max-width, or min-width of element to css var for ch2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-ch2 - Sets width to ch2 on sm
-  .vwmn-sm-ch2 - Sets min-width to ch2 on sm
-  .vwmx-sm-ch2 - Sets max-width to ch2 on sm
-
-  Styleguide Width - ch2 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-ch2
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for ch2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-ch2 - Sets width of immediate children to ch2 on sm
-  .vwcmn-sm-ch2 - Sets min-width of immediate children to ch2 on sm
-  .vwcmx-sm-ch2 - Sets max-width of immediate children to ch2 on sm
-
-  Styleguide Child Width - ch2 - sm
-  */
-  .vw-sm-ch2,
-.vwc-sm-ch2 > * {
-    width: var(--width-ch2);
-  }
-
-  .vwmn-sm-ch2,
-.vwcmn-sm-ch2 > * {
-    min-width: var(--width-ch2);
-  }
-
-  .vwmx-sm-ch2,
-.vwcmx-sm-ch2 > * {
-    max-width: var(--width-ch2);
-  }
-
-  /*
-  .vw[mn,mx]-sm-ch3
-
-  Sets the width, max-width, or min-width of element to css var for ch3 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-ch3 - Sets width to ch3 on sm
-  .vwmn-sm-ch3 - Sets min-width to ch3 on sm
-  .vwmx-sm-ch3 - Sets max-width to ch3 on sm
-
-  Styleguide Width - ch3 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-ch3
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for ch3 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-ch3 - Sets width of immediate children to ch3 on sm
-  .vwcmn-sm-ch3 - Sets min-width of immediate children to ch3 on sm
-  .vwcmx-sm-ch3 - Sets max-width of immediate children to ch3 on sm
-
-  Styleguide Child Width - ch3 - sm
-  */
-  .vw-sm-ch3,
-.vwc-sm-ch3 > * {
-    width: var(--width-ch3);
-  }
-
-  .vwmn-sm-ch3,
-.vwcmn-sm-ch3 > * {
-    min-width: var(--width-ch3);
-  }
-
-  .vwmx-sm-ch3,
-.vwcmx-sm-ch3 > * {
-    max-width: var(--width-ch3);
-  }
-
-  /*
-  .vw[mn,mx]-sm-ch4
-
-  Sets the width, max-width, or min-width of element to css var for ch4 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-ch4 - Sets width to ch4 on sm
-  .vwmn-sm-ch4 - Sets min-width to ch4 on sm
-  .vwmx-sm-ch4 - Sets max-width to ch4 on sm
-
-  Styleguide Width - ch4 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-ch4
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for ch4 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-ch4 - Sets width of immediate children to ch4 on sm
-  .vwcmn-sm-ch4 - Sets min-width of immediate children to ch4 on sm
-  .vwcmx-sm-ch4 - Sets max-width of immediate children to ch4 on sm
-
-  Styleguide Child Width - ch4 - sm
-  */
-  .vw-sm-ch4,
-.vwc-sm-ch4 > * {
-    width: var(--width-ch4);
-  }
-
-  .vwmn-sm-ch4,
-.vwcmn-sm-ch4 > * {
-    min-width: var(--width-ch4);
-  }
-
-  .vwmx-sm-ch4,
-.vwcmx-sm-ch4 > * {
-    max-width: var(--width-ch4);
-  }
-
-  /*
-  .vw[mn,mx]-sm-px0
-
-  Sets the width, max-width, or min-width of element to css var for px0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-px0 - Sets width to px0 on sm
-  .vwmn-sm-px0 - Sets min-width to px0 on sm
-  .vwmx-sm-px0 - Sets max-width to px0 on sm
-
-  Styleguide Width - px0 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-px0
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for px0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-px0 - Sets width of immediate children to px0 on sm
-  .vwcmn-sm-px0 - Sets min-width of immediate children to px0 on sm
-  .vwcmx-sm-px0 - Sets max-width of immediate children to px0 on sm
-
-  Styleguide Child Width - px0 - sm
-  */
-  .vw-sm-px0,
-.vwc-sm-px0 > * {
-    width: var(--width-px0);
-  }
-
-  .vwmn-sm-px0,
-.vwcmn-sm-px0 > * {
-    min-width: var(--width-px0);
-  }
-
-  .vwmx-sm-px0,
-.vwcmx-sm-px0 > * {
-    max-width: var(--width-px0);
-  }
-
-  /*
-  .vw[mn,mx]-sm-px1
-
-  Sets the width, max-width, or min-width of element to css var for px1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-px1 - Sets width to px1 on sm
-  .vwmn-sm-px1 - Sets min-width to px1 on sm
-  .vwmx-sm-px1 - Sets max-width to px1 on sm
-
-  Styleguide Width - px1 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-px1
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for px1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-px1 - Sets width of immediate children to px1 on sm
-  .vwcmn-sm-px1 - Sets min-width of immediate children to px1 on sm
-  .vwcmx-sm-px1 - Sets max-width of immediate children to px1 on sm
-
-  Styleguide Child Width - px1 - sm
-  */
-  .vw-sm-px1,
-.vwc-sm-px1 > * {
-    width: var(--width-px1);
-  }
-
-  .vwmn-sm-px1,
-.vwcmn-sm-px1 > * {
-    min-width: var(--width-px1);
-  }
-
-  .vwmx-sm-px1,
-.vwcmx-sm-px1 > * {
-    max-width: var(--width-px1);
-  }
-
-  /*
-  .vw[mn,mx]-sm-px2
-
-  Sets the width, max-width, or min-width of element to css var for px2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-px2 - Sets width to px2 on sm
-  .vwmn-sm-px2 - Sets min-width to px2 on sm
-  .vwmx-sm-px2 - Sets max-width to px2 on sm
-
-  Styleguide Width - px2 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-px2
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for px2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-px2 - Sets width of immediate children to px2 on sm
-  .vwcmn-sm-px2 - Sets min-width of immediate children to px2 on sm
-  .vwcmx-sm-px2 - Sets max-width of immediate children to px2 on sm
-
-  Styleguide Child Width - px2 - sm
-  */
-  .vw-sm-px2,
-.vwc-sm-px2 > * {
-    width: var(--width-px2);
-  }
-
-  .vwmn-sm-px2,
-.vwcmn-sm-px2 > * {
-    min-width: var(--width-px2);
-  }
-
-  .vwmx-sm-px2,
-.vwcmx-sm-px2 > * {
-    max-width: var(--width-px2);
-  }
-
-  /*
-  .vw[mn,mx]-sm-px3
-
-  Sets the width, max-width, or min-width of element to css var for px3 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-px3 - Sets width to px3 on sm
-  .vwmn-sm-px3 - Sets min-width to px3 on sm
-  .vwmx-sm-px3 - Sets max-width to px3 on sm
-
-  Styleguide Width - px3 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-px3
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for px3 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-px3 - Sets width of immediate children to px3 on sm
-  .vwcmn-sm-px3 - Sets min-width of immediate children to px3 on sm
-  .vwcmx-sm-px3 - Sets max-width of immediate children to px3 on sm
-
-  Styleguide Child Width - px3 - sm
-  */
-  .vw-sm-px3,
-.vwc-sm-px3 > * {
-    width: var(--width-px3);
-  }
-
-  .vwmn-sm-px3,
-.vwcmn-sm-px3 > * {
-    min-width: var(--width-px3);
-  }
-
-  .vwmx-sm-px3,
-.vwcmx-sm-px3 > * {
-    max-width: var(--width-px3);
-  }
-
-  /*
-  .vw[mn,mx]-sm-em0
-
-  Sets the width, max-width, or min-width of element to css var for em0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-em0 - Sets width to em0 on sm
-  .vwmn-sm-em0 - Sets min-width to em0 on sm
-  .vwmx-sm-em0 - Sets max-width to em0 on sm
-
-  Styleguide Width - em0 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-em0
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for em0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-em0 - Sets width of immediate children to em0 on sm
-  .vwcmn-sm-em0 - Sets min-width of immediate children to em0 on sm
-  .vwcmx-sm-em0 - Sets max-width of immediate children to em0 on sm
-
-  Styleguide Child Width - em0 - sm
-  */
-  .vw-sm-em0,
-.vwc-sm-em0 > * {
-    width: var(--width-em0);
-  }
-
-  .vwmn-sm-em0,
-.vwcmn-sm-em0 > * {
-    min-width: var(--width-em0);
-  }
-
-  .vwmx-sm-em0,
-.vwcmx-sm-em0 > * {
-    max-width: var(--width-em0);
-  }
-
-  /*
-  .vw[mn,mx]-sm-em1
-
-  Sets the width, max-width, or min-width of element to css var for em1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-em1 - Sets width to em1 on sm
-  .vwmn-sm-em1 - Sets min-width to em1 on sm
-  .vwmx-sm-em1 - Sets max-width to em1 on sm
-
-  Styleguide Width - em1 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-em1
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for em1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-em1 - Sets width of immediate children to em1 on sm
-  .vwcmn-sm-em1 - Sets min-width of immediate children to em1 on sm
-  .vwcmx-sm-em1 - Sets max-width of immediate children to em1 on sm
-
-  Styleguide Child Width - em1 - sm
-  */
-  .vw-sm-em1,
-.vwc-sm-em1 > * {
-    width: var(--width-em1);
-  }
-
-  .vwmn-sm-em1,
-.vwcmn-sm-em1 > * {
-    min-width: var(--width-em1);
-  }
-
-  .vwmx-sm-em1,
-.vwcmx-sm-em1 > * {
-    max-width: var(--width-em1);
-  }
-
-  /*
-  .vw[mn,mx]-sm-em2
-
-  Sets the width, max-width, or min-width of element to css var for em2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-em2 - Sets width to em2 on sm
-  .vwmn-sm-em2 - Sets min-width to em2 on sm
-  .vwmx-sm-em2 - Sets max-width to em2 on sm
-
-  Styleguide Width - em2 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-em2
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for em2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-em2 - Sets width of immediate children to em2 on sm
-  .vwcmn-sm-em2 - Sets min-width of immediate children to em2 on sm
-  .vwcmx-sm-em2 - Sets max-width of immediate children to em2 on sm
-
-  Styleguide Child Width - em2 - sm
-  */
-  .vw-sm-em2,
-.vwc-sm-em2 > * {
-    width: var(--width-em2);
-  }
-
-  .vwmn-sm-em2,
-.vwcmn-sm-em2 > * {
-    min-width: var(--width-em2);
-  }
-
-  .vwmx-sm-em2,
-.vwcmx-sm-em2 > * {
-    max-width: var(--width-em2);
-  }
-
-  /*
-  .vw[mn,mx]-sm-rem0
-
-  Sets the width, max-width, or min-width of element to css var for rem0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-rem0 - Sets width to rem0 on sm
-  .vwmn-sm-rem0 - Sets min-width to rem0 on sm
-  .vwmx-sm-rem0 - Sets max-width to rem0 on sm
-
-  Styleguide Width - rem0 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-rem0
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for rem0 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-rem0 - Sets width of immediate children to rem0 on sm
-  .vwcmn-sm-rem0 - Sets min-width of immediate children to rem0 on sm
-  .vwcmx-sm-rem0 - Sets max-width of immediate children to rem0 on sm
-
-  Styleguide Child Width - rem0 - sm
-  */
-  .vw-sm-rem0,
-.vwc-sm-rem0 > * {
-    width: var(--width-rem0);
-  }
-
-  .vwmn-sm-rem0,
-.vwcmn-sm-rem0 > * {
-    min-width: var(--width-rem0);
-  }
-
-  .vwmx-sm-rem0,
-.vwcmx-sm-rem0 > * {
-    max-width: var(--width-rem0);
-  }
-
-  /*
-  .vw[mn,mx]-sm-rem1
-
-  Sets the width, max-width, or min-width of element to css var for rem1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-rem1 - Sets width to rem1 on sm
-  .vwmn-sm-rem1 - Sets min-width to rem1 on sm
-  .vwmx-sm-rem1 - Sets max-width to rem1 on sm
-
-  Styleguide Width - rem1 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-rem1
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for rem1 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-rem1 - Sets width of immediate children to rem1 on sm
-  .vwcmn-sm-rem1 - Sets min-width of immediate children to rem1 on sm
-  .vwcmx-sm-rem1 - Sets max-width of immediate children to rem1 on sm
-
-  Styleguide Child Width - rem1 - sm
-  */
-  .vw-sm-rem1,
-.vwc-sm-rem1 > * {
-    width: var(--width-rem1);
-  }
-
-  .vwmn-sm-rem1,
-.vwcmn-sm-rem1 > * {
-    min-width: var(--width-rem1);
-  }
-
-  .vwmx-sm-rem1,
-.vwcmx-sm-rem1 > * {
-    max-width: var(--width-rem1);
-  }
-
-  /*
-  .vw[mn,mx]-sm-rem2
-
-  Sets the width, max-width, or min-width of element to css var for rem2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .vw-sm-rem2 - Sets width to rem2 on sm
-  .vwmn-sm-rem2 - Sets min-width to rem2 on sm
-  .vwmx-sm-rem2 - Sets max-width to rem2 on sm
-
-  Styleguide Width - rem2 - sm
-  */
-  /*
-  .vwc[mn,mx]-sm-rem2
-
-  Sets the width, max-width, or min-width of an elements immediate children to css var for rem2 on sm.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}"><div class="bwa-1">A div</div><div class="bwa-1">B div</div></div>
-
-  .vwc-sm-rem2 - Sets width of immediate children to rem2 on sm
-  .vwcmn-sm-rem2 - Sets min-width of immediate children to rem2 on sm
-  .vwcmx-sm-rem2 - Sets max-width of immediate children to rem2 on sm
-
-  Styleguide Child Width - rem2 - sm
-  */
-  .vw-sm-rem2,
-.vwc-sm-rem2 > * {
-    width: var(--width-rem2);
-  }
-
-  .vwmn-sm-rem2,
-.vwcmn-sm-rem2 > * {
-    min-width: var(--width-rem2);
-  }
-
-  .vwmx-sm-rem2,
-.vwcmx-sm-rem2 > * {
-    max-width: var(--width-rem2);
-  }
 }
 
 /*# sourceMappingURL=minimal.css.map */

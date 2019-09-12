@@ -10995,6 +10995,18 @@ Styleguide Height - 4
   --margin-width-7: calc(
     var(--fill-size) * 64
   );
+  --margin-width-p10: $style;
+  --margin-width-p20: $style;
+  --margin-width-p25: $style;
+  --margin-width-p30: $style;
+  --margin-width-p40: $style;
+  --margin-width-p50: $style;
+  --margin-width-p60: $style;
+  --margin-width-p70: $style;
+  --margin-width-p75: $style;
+  --margin-width-p80: $style;
+  --margin-width-p90: $style;
+  --margin-width-p100: $style;
 }
 
 /*
@@ -11054,6 +11066,48 @@ Styleguide Margin - Width - 0
 }
 
 /*
+.mw*r-0
+
+Sets the margin of element to the negative value of the css var for 0.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-0 - Sets all margins to m0
+.mwxr-0 - Sets left and right margins to m0
+.mwyr-0 - Sets top and bottom margins to m0
+.mwtr-0 - Sets top margin to m0
+.mwrr-0 - Sets right margin to m0
+.mwbr-0 - Sets bottom margin to m0
+.mwlr-0 - Sets left margin to m0
+
+Styleguide Margin - Width - 0
+*/
+.mwtr-0,
+.mwyr-0,
+.mwar-0 {
+  margin-top: calc(-1 * var(--margin-width-0));
+}
+
+.mwrr-0,
+.mwxr-0,
+.mwar-0 {
+  margin-right: calc(-1 * var(--margin-width-0));
+}
+
+.mwbr-0,
+.mwyr-0,
+.mwar-0 {
+  margin-bottom: calc(-1 * var(--margin-width-0));
+}
+
+.mwlr-0,
+.mwxr-0,
+.mwar-0 {
+  margin-left: calc(-1 * var(--margin-width-0));
+}
+
+/*
 .mw*-1
 
 Sets the margin of element to css var for 1.
@@ -11093,6 +11147,48 @@ Styleguide Margin - Width - 1
 .mwx-1,
 .mwa-1 {
   margin-left: var(--margin-width-1);
+}
+
+/*
+.mw*r-1
+
+Sets the margin of element to the negative value of the css var for 1.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-1 - Sets all margins to m1
+.mwxr-1 - Sets left and right margins to m1
+.mwyr-1 - Sets top and bottom margins to m1
+.mwtr-1 - Sets top margin to m1
+.mwrr-1 - Sets right margin to m1
+.mwbr-1 - Sets bottom margin to m1
+.mwlr-1 - Sets left margin to m1
+
+Styleguide Margin - Width - 1
+*/
+.mwtr-1,
+.mwyr-1,
+.mwar-1 {
+  margin-top: calc(-1 * var(--margin-width-1));
+}
+
+.mwrr-1,
+.mwxr-1,
+.mwar-1 {
+  margin-right: calc(-1 * var(--margin-width-1));
+}
+
+.mwbr-1,
+.mwyr-1,
+.mwar-1 {
+  margin-bottom: calc(-1 * var(--margin-width-1));
+}
+
+.mwlr-1,
+.mwxr-1,
+.mwar-1 {
+  margin-left: calc(-1 * var(--margin-width-1));
 }
 
 /*
@@ -11138,6 +11234,48 @@ Styleguide Margin - Width - 2
 }
 
 /*
+.mw*r-2
+
+Sets the margin of element to the negative value of the css var for 2.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-2 - Sets all margins to m2
+.mwxr-2 - Sets left and right margins to m2
+.mwyr-2 - Sets top and bottom margins to m2
+.mwtr-2 - Sets top margin to m2
+.mwrr-2 - Sets right margin to m2
+.mwbr-2 - Sets bottom margin to m2
+.mwlr-2 - Sets left margin to m2
+
+Styleguide Margin - Width - 2
+*/
+.mwtr-2,
+.mwyr-2,
+.mwar-2 {
+  margin-top: calc(-1 * var(--margin-width-2));
+}
+
+.mwrr-2,
+.mwxr-2,
+.mwar-2 {
+  margin-right: calc(-1 * var(--margin-width-2));
+}
+
+.mwbr-2,
+.mwyr-2,
+.mwar-2 {
+  margin-bottom: calc(-1 * var(--margin-width-2));
+}
+
+.mwlr-2,
+.mwxr-2,
+.mwar-2 {
+  margin-left: calc(-1 * var(--margin-width-2));
+}
+
+/*
 .mw*-3
 
 Sets the margin of element to css var for 3.
@@ -11177,6 +11315,48 @@ Styleguide Margin - Width - 3
 .mwx-3,
 .mwa-3 {
   margin-left: var(--margin-width-3);
+}
+
+/*
+.mw*r-3
+
+Sets the margin of element to the negative value of the css var for 3.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-3 - Sets all margins to m3
+.mwxr-3 - Sets left and right margins to m3
+.mwyr-3 - Sets top and bottom margins to m3
+.mwtr-3 - Sets top margin to m3
+.mwrr-3 - Sets right margin to m3
+.mwbr-3 - Sets bottom margin to m3
+.mwlr-3 - Sets left margin to m3
+
+Styleguide Margin - Width - 3
+*/
+.mwtr-3,
+.mwyr-3,
+.mwar-3 {
+  margin-top: calc(-1 * var(--margin-width-3));
+}
+
+.mwrr-3,
+.mwxr-3,
+.mwar-3 {
+  margin-right: calc(-1 * var(--margin-width-3));
+}
+
+.mwbr-3,
+.mwyr-3,
+.mwar-3 {
+  margin-bottom: calc(-1 * var(--margin-width-3));
+}
+
+.mwlr-3,
+.mwxr-3,
+.mwar-3 {
+  margin-left: calc(-1 * var(--margin-width-3));
 }
 
 /*
@@ -11222,6 +11402,48 @@ Styleguide Margin - Width - 4
 }
 
 /*
+.mw*r-4
+
+Sets the margin of element to the negative value of the css var for 4.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-4 - Sets all margins to m4
+.mwxr-4 - Sets left and right margins to m4
+.mwyr-4 - Sets top and bottom margins to m4
+.mwtr-4 - Sets top margin to m4
+.mwrr-4 - Sets right margin to m4
+.mwbr-4 - Sets bottom margin to m4
+.mwlr-4 - Sets left margin to m4
+
+Styleguide Margin - Width - 4
+*/
+.mwtr-4,
+.mwyr-4,
+.mwar-4 {
+  margin-top: calc(-1 * var(--margin-width-4));
+}
+
+.mwrr-4,
+.mwxr-4,
+.mwar-4 {
+  margin-right: calc(-1 * var(--margin-width-4));
+}
+
+.mwbr-4,
+.mwyr-4,
+.mwar-4 {
+  margin-bottom: calc(-1 * var(--margin-width-4));
+}
+
+.mwlr-4,
+.mwxr-4,
+.mwar-4 {
+  margin-left: calc(-1 * var(--margin-width-4));
+}
+
+/*
 .mw*-5
 
 Sets the margin of element to css var for 5.
@@ -11261,6 +11483,48 @@ Styleguide Margin - Width - 5
 .mwx-5,
 .mwa-5 {
   margin-left: var(--margin-width-5);
+}
+
+/*
+.mw*r-5
+
+Sets the margin of element to the negative value of the css var for 5.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-5 - Sets all margins to m5
+.mwxr-5 - Sets left and right margins to m5
+.mwyr-5 - Sets top and bottom margins to m5
+.mwtr-5 - Sets top margin to m5
+.mwrr-5 - Sets right margin to m5
+.mwbr-5 - Sets bottom margin to m5
+.mwlr-5 - Sets left margin to m5
+
+Styleguide Margin - Width - 5
+*/
+.mwtr-5,
+.mwyr-5,
+.mwar-5 {
+  margin-top: calc(-1 * var(--margin-width-5));
+}
+
+.mwrr-5,
+.mwxr-5,
+.mwar-5 {
+  margin-right: calc(-1 * var(--margin-width-5));
+}
+
+.mwbr-5,
+.mwyr-5,
+.mwar-5 {
+  margin-bottom: calc(-1 * var(--margin-width-5));
+}
+
+.mwlr-5,
+.mwxr-5,
+.mwar-5 {
+  margin-left: calc(-1 * var(--margin-width-5));
 }
 
 /*
@@ -11306,6 +11570,48 @@ Styleguide Margin - Width - 6
 }
 
 /*
+.mw*r-6
+
+Sets the margin of element to the negative value of the css var for 6.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-6 - Sets all margins to m6
+.mwxr-6 - Sets left and right margins to m6
+.mwyr-6 - Sets top and bottom margins to m6
+.mwtr-6 - Sets top margin to m6
+.mwrr-6 - Sets right margin to m6
+.mwbr-6 - Sets bottom margin to m6
+.mwlr-6 - Sets left margin to m6
+
+Styleguide Margin - Width - 6
+*/
+.mwtr-6,
+.mwyr-6,
+.mwar-6 {
+  margin-top: calc(-1 * var(--margin-width-6));
+}
+
+.mwrr-6,
+.mwxr-6,
+.mwar-6 {
+  margin-right: calc(-1 * var(--margin-width-6));
+}
+
+.mwbr-6,
+.mwyr-6,
+.mwar-6 {
+  margin-bottom: calc(-1 * var(--margin-width-6));
+}
+
+.mwlr-6,
+.mwxr-6,
+.mwar-6 {
+  margin-left: calc(-1 * var(--margin-width-6));
+}
+
+/*
 .mw*-7
 
 Sets the margin of element to css var for 7.
@@ -11347,52 +11653,1054 @@ Styleguide Margin - Width - 7
   margin-left: var(--margin-width-7);
 }
 
-.mwt-m10,
-.mwy-m10,
-.mwa-m10 {
+/*
+.mw*r-7
+
+Sets the margin of element to the negative value of the css var for 7.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-7 - Sets all margins to m7
+.mwxr-7 - Sets left and right margins to m7
+.mwyr-7 - Sets top and bottom margins to m7
+.mwtr-7 - Sets top margin to m7
+.mwrr-7 - Sets right margin to m7
+.mwbr-7 - Sets bottom margin to m7
+.mwlr-7 - Sets left margin to m7
+
+Styleguide Margin - Width - 7
+*/
+.mwtr-7,
+.mwyr-7,
+.mwar-7 {
+  margin-top: calc(-1 * var(--margin-width-7));
+}
+
+.mwrr-7,
+.mwxr-7,
+.mwar-7 {
+  margin-right: calc(-1 * var(--margin-width-7));
+}
+
+.mwbr-7,
+.mwyr-7,
+.mwar-7 {
+  margin-bottom: calc(-1 * var(--margin-width-7));
+}
+
+.mwlr-7,
+.mwxr-7,
+.mwar-7 {
+  margin-left: calc(-1 * var(--margin-width-7));
+}
+
+/*
+.mw*-p10
+
+Sets the margin of element to css var for p10.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p10 - Sets all margins to p10
+.mwx-p10 - Sets left and right margins to p10
+.mwy-p10 - Sets top and bottom margins to p10
+.mwt-p10 - Sets top margin to p10
+.mwr-p10 - Sets right margin to p10
+.mwb-p10 - Sets bottom margin to p10
+.mwl-p10 - Sets left margin to p10
+
+Styleguide Margin - Width - p10
+*/
+.mwt-p10,
+.mwy-p10,
+.mwa-p10 {
   margin-top: 10%;
 }
 
-.mwr-m10,
-.mwx-m10,
-.mwa-m10 {
+.mwr-p10,
+.mwx-p10,
+.mwa-p10 {
   margin-right: 10%;
 }
 
-.mwb-m10,
-.mwy-m10,
-.mwa-m10 {
+.mwb-p10,
+.mwy-p10,
+.mwa-p10 {
   margin-bottom: 10%;
 }
 
-.mwl-m10,
-.mwx-m10,
-.mwa-m10 {
+.mwl-p10,
+.mwx-p10,
+.mwa-p10 {
   margin-left: 10%;
 }
 
-.mwt-pm10,
-.mwy-pm10,
-.mwa-pm10 {
-  margin-top: -10%;
+/*
+.mw*r-p10
+
+Sets the margin of element to the negative value of the css var for p10.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p10 - Sets all margins to mp10
+.mwxr-p10 - Sets left and right margins to mp10
+.mwyr-p10 - Sets top and bottom margins to mp10
+.mwtr-p10 - Sets top margin to mp10
+.mwrr-p10 - Sets right margin to mp10
+.mwbr-p10 - Sets bottom margin to mp10
+.mwlr-p10 - Sets left margin to mp10
+
+Styleguide Margin - Width - p10
+*/
+.mwtr-p10,
+.mwyr-p10,
+.mwar-p10 {
+  margin-top: calc(-1 * var(--margin-width-p10));
 }
 
-.mwr-pm10,
-.mwx-pm10,
-.mwa-pm10 {
-  margin-right: -10%;
+.mwrr-p10,
+.mwxr-p10,
+.mwar-p10 {
+  margin-right: calc(-1 * var(--margin-width-p10));
 }
 
-.mwb-pm10,
-.mwy-pm10,
-.mwa-pm10 {
-  margin-bottom: -10%;
+.mwbr-p10,
+.mwyr-p10,
+.mwar-p10 {
+  margin-bottom: calc(-1 * var(--margin-width-p10));
 }
 
-.mwl-pm10,
-.mwx-pm10,
-.mwa-pm10 {
-  margin-left: -10%;
+.mwlr-p10,
+.mwxr-p10,
+.mwar-p10 {
+  margin-left: calc(-1 * var(--margin-width-p10));
+}
+
+/*
+.mw*-p20
+
+Sets the margin of element to css var for p20.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p20 - Sets all margins to p20
+.mwx-p20 - Sets left and right margins to p20
+.mwy-p20 - Sets top and bottom margins to p20
+.mwt-p20 - Sets top margin to p20
+.mwr-p20 - Sets right margin to p20
+.mwb-p20 - Sets bottom margin to p20
+.mwl-p20 - Sets left margin to p20
+
+Styleguide Margin - Width - p20
+*/
+.mwt-p20,
+.mwy-p20,
+.mwa-p20 {
+  margin-top: 20%;
+}
+
+.mwr-p20,
+.mwx-p20,
+.mwa-p20 {
+  margin-right: 20%;
+}
+
+.mwb-p20,
+.mwy-p20,
+.mwa-p20 {
+  margin-bottom: 20%;
+}
+
+.mwl-p20,
+.mwx-p20,
+.mwa-p20 {
+  margin-left: 20%;
+}
+
+/*
+.mw*r-p20
+
+Sets the margin of element to the negative value of the css var for p20.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p20 - Sets all margins to mp20
+.mwxr-p20 - Sets left and right margins to mp20
+.mwyr-p20 - Sets top and bottom margins to mp20
+.mwtr-p20 - Sets top margin to mp20
+.mwrr-p20 - Sets right margin to mp20
+.mwbr-p20 - Sets bottom margin to mp20
+.mwlr-p20 - Sets left margin to mp20
+
+Styleguide Margin - Width - p20
+*/
+.mwtr-p20,
+.mwyr-p20,
+.mwar-p20 {
+  margin-top: calc(-1 * var(--margin-width-p20));
+}
+
+.mwrr-p20,
+.mwxr-p20,
+.mwar-p20 {
+  margin-right: calc(-1 * var(--margin-width-p20));
+}
+
+.mwbr-p20,
+.mwyr-p20,
+.mwar-p20 {
+  margin-bottom: calc(-1 * var(--margin-width-p20));
+}
+
+.mwlr-p20,
+.mwxr-p20,
+.mwar-p20 {
+  margin-left: calc(-1 * var(--margin-width-p20));
+}
+
+/*
+.mw*-p25
+
+Sets the margin of element to css var for p25.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p25 - Sets all margins to p25
+.mwx-p25 - Sets left and right margins to p25
+.mwy-p25 - Sets top and bottom margins to p25
+.mwt-p25 - Sets top margin to p25
+.mwr-p25 - Sets right margin to p25
+.mwb-p25 - Sets bottom margin to p25
+.mwl-p25 - Sets left margin to p25
+
+Styleguide Margin - Width - p25
+*/
+.mwt-p25,
+.mwy-p25,
+.mwa-p25 {
+  margin-top: 25%;
+}
+
+.mwr-p25,
+.mwx-p25,
+.mwa-p25 {
+  margin-right: 25%;
+}
+
+.mwb-p25,
+.mwy-p25,
+.mwa-p25 {
+  margin-bottom: 25%;
+}
+
+.mwl-p25,
+.mwx-p25,
+.mwa-p25 {
+  margin-left: 25%;
+}
+
+/*
+.mw*r-p25
+
+Sets the margin of element to the negative value of the css var for p25.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p25 - Sets all margins to mp25
+.mwxr-p25 - Sets left and right margins to mp25
+.mwyr-p25 - Sets top and bottom margins to mp25
+.mwtr-p25 - Sets top margin to mp25
+.mwrr-p25 - Sets right margin to mp25
+.mwbr-p25 - Sets bottom margin to mp25
+.mwlr-p25 - Sets left margin to mp25
+
+Styleguide Margin - Width - p25
+*/
+.mwtr-p25,
+.mwyr-p25,
+.mwar-p25 {
+  margin-top: calc(-1 * var(--margin-width-p25));
+}
+
+.mwrr-p25,
+.mwxr-p25,
+.mwar-p25 {
+  margin-right: calc(-1 * var(--margin-width-p25));
+}
+
+.mwbr-p25,
+.mwyr-p25,
+.mwar-p25 {
+  margin-bottom: calc(-1 * var(--margin-width-p25));
+}
+
+.mwlr-p25,
+.mwxr-p25,
+.mwar-p25 {
+  margin-left: calc(-1 * var(--margin-width-p25));
+}
+
+/*
+.mw*-p30
+
+Sets the margin of element to css var for p30.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p30 - Sets all margins to p30
+.mwx-p30 - Sets left and right margins to p30
+.mwy-p30 - Sets top and bottom margins to p30
+.mwt-p30 - Sets top margin to p30
+.mwr-p30 - Sets right margin to p30
+.mwb-p30 - Sets bottom margin to p30
+.mwl-p30 - Sets left margin to p30
+
+Styleguide Margin - Width - p30
+*/
+.mwt-p30,
+.mwy-p30,
+.mwa-p30 {
+  margin-top: 30%;
+}
+
+.mwr-p30,
+.mwx-p30,
+.mwa-p30 {
+  margin-right: 30%;
+}
+
+.mwb-p30,
+.mwy-p30,
+.mwa-p30 {
+  margin-bottom: 30%;
+}
+
+.mwl-p30,
+.mwx-p30,
+.mwa-p30 {
+  margin-left: 30%;
+}
+
+/*
+.mw*r-p30
+
+Sets the margin of element to the negative value of the css var for p30.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p30 - Sets all margins to mp30
+.mwxr-p30 - Sets left and right margins to mp30
+.mwyr-p30 - Sets top and bottom margins to mp30
+.mwtr-p30 - Sets top margin to mp30
+.mwrr-p30 - Sets right margin to mp30
+.mwbr-p30 - Sets bottom margin to mp30
+.mwlr-p30 - Sets left margin to mp30
+
+Styleguide Margin - Width - p30
+*/
+.mwtr-p30,
+.mwyr-p30,
+.mwar-p30 {
+  margin-top: calc(-1 * var(--margin-width-p30));
+}
+
+.mwrr-p30,
+.mwxr-p30,
+.mwar-p30 {
+  margin-right: calc(-1 * var(--margin-width-p30));
+}
+
+.mwbr-p30,
+.mwyr-p30,
+.mwar-p30 {
+  margin-bottom: calc(-1 * var(--margin-width-p30));
+}
+
+.mwlr-p30,
+.mwxr-p30,
+.mwar-p30 {
+  margin-left: calc(-1 * var(--margin-width-p30));
+}
+
+/*
+.mw*-p40
+
+Sets the margin of element to css var for p40.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p40 - Sets all margins to p40
+.mwx-p40 - Sets left and right margins to p40
+.mwy-p40 - Sets top and bottom margins to p40
+.mwt-p40 - Sets top margin to p40
+.mwr-p40 - Sets right margin to p40
+.mwb-p40 - Sets bottom margin to p40
+.mwl-p40 - Sets left margin to p40
+
+Styleguide Margin - Width - p40
+*/
+.mwt-p40,
+.mwy-p40,
+.mwa-p40 {
+  margin-top: 40%;
+}
+
+.mwr-p40,
+.mwx-p40,
+.mwa-p40 {
+  margin-right: 40%;
+}
+
+.mwb-p40,
+.mwy-p40,
+.mwa-p40 {
+  margin-bottom: 40%;
+}
+
+.mwl-p40,
+.mwx-p40,
+.mwa-p40 {
+  margin-left: 40%;
+}
+
+/*
+.mw*r-p40
+
+Sets the margin of element to the negative value of the css var for p40.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p40 - Sets all margins to mp40
+.mwxr-p40 - Sets left and right margins to mp40
+.mwyr-p40 - Sets top and bottom margins to mp40
+.mwtr-p40 - Sets top margin to mp40
+.mwrr-p40 - Sets right margin to mp40
+.mwbr-p40 - Sets bottom margin to mp40
+.mwlr-p40 - Sets left margin to mp40
+
+Styleguide Margin - Width - p40
+*/
+.mwtr-p40,
+.mwyr-p40,
+.mwar-p40 {
+  margin-top: calc(-1 * var(--margin-width-p40));
+}
+
+.mwrr-p40,
+.mwxr-p40,
+.mwar-p40 {
+  margin-right: calc(-1 * var(--margin-width-p40));
+}
+
+.mwbr-p40,
+.mwyr-p40,
+.mwar-p40 {
+  margin-bottom: calc(-1 * var(--margin-width-p40));
+}
+
+.mwlr-p40,
+.mwxr-p40,
+.mwar-p40 {
+  margin-left: calc(-1 * var(--margin-width-p40));
+}
+
+/*
+.mw*-p50
+
+Sets the margin of element to css var for p50.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p50 - Sets all margins to p50
+.mwx-p50 - Sets left and right margins to p50
+.mwy-p50 - Sets top and bottom margins to p50
+.mwt-p50 - Sets top margin to p50
+.mwr-p50 - Sets right margin to p50
+.mwb-p50 - Sets bottom margin to p50
+.mwl-p50 - Sets left margin to p50
+
+Styleguide Margin - Width - p50
+*/
+.mwt-p50,
+.mwy-p50,
+.mwa-p50 {
+  margin-top: 50%;
+}
+
+.mwr-p50,
+.mwx-p50,
+.mwa-p50 {
+  margin-right: 50%;
+}
+
+.mwb-p50,
+.mwy-p50,
+.mwa-p50 {
+  margin-bottom: 50%;
+}
+
+.mwl-p50,
+.mwx-p50,
+.mwa-p50 {
+  margin-left: 50%;
+}
+
+/*
+.mw*r-p50
+
+Sets the margin of element to the negative value of the css var for p50.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p50 - Sets all margins to mp50
+.mwxr-p50 - Sets left and right margins to mp50
+.mwyr-p50 - Sets top and bottom margins to mp50
+.mwtr-p50 - Sets top margin to mp50
+.mwrr-p50 - Sets right margin to mp50
+.mwbr-p50 - Sets bottom margin to mp50
+.mwlr-p50 - Sets left margin to mp50
+
+Styleguide Margin - Width - p50
+*/
+.mwtr-p50,
+.mwyr-p50,
+.mwar-p50 {
+  margin-top: calc(-1 * var(--margin-width-p50));
+}
+
+.mwrr-p50,
+.mwxr-p50,
+.mwar-p50 {
+  margin-right: calc(-1 * var(--margin-width-p50));
+}
+
+.mwbr-p50,
+.mwyr-p50,
+.mwar-p50 {
+  margin-bottom: calc(-1 * var(--margin-width-p50));
+}
+
+.mwlr-p50,
+.mwxr-p50,
+.mwar-p50 {
+  margin-left: calc(-1 * var(--margin-width-p50));
+}
+
+/*
+.mw*-p60
+
+Sets the margin of element to css var for p60.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p60 - Sets all margins to p60
+.mwx-p60 - Sets left and right margins to p60
+.mwy-p60 - Sets top and bottom margins to p60
+.mwt-p60 - Sets top margin to p60
+.mwr-p60 - Sets right margin to p60
+.mwb-p60 - Sets bottom margin to p60
+.mwl-p60 - Sets left margin to p60
+
+Styleguide Margin - Width - p60
+*/
+.mwt-p60,
+.mwy-p60,
+.mwa-p60 {
+  margin-top: 60%;
+}
+
+.mwr-p60,
+.mwx-p60,
+.mwa-p60 {
+  margin-right: 60%;
+}
+
+.mwb-p60,
+.mwy-p60,
+.mwa-p60 {
+  margin-bottom: 60%;
+}
+
+.mwl-p60,
+.mwx-p60,
+.mwa-p60 {
+  margin-left: 60%;
+}
+
+/*
+.mw*r-p60
+
+Sets the margin of element to the negative value of the css var for p60.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p60 - Sets all margins to mp60
+.mwxr-p60 - Sets left and right margins to mp60
+.mwyr-p60 - Sets top and bottom margins to mp60
+.mwtr-p60 - Sets top margin to mp60
+.mwrr-p60 - Sets right margin to mp60
+.mwbr-p60 - Sets bottom margin to mp60
+.mwlr-p60 - Sets left margin to mp60
+
+Styleguide Margin - Width - p60
+*/
+.mwtr-p60,
+.mwyr-p60,
+.mwar-p60 {
+  margin-top: calc(-1 * var(--margin-width-p60));
+}
+
+.mwrr-p60,
+.mwxr-p60,
+.mwar-p60 {
+  margin-right: calc(-1 * var(--margin-width-p60));
+}
+
+.mwbr-p60,
+.mwyr-p60,
+.mwar-p60 {
+  margin-bottom: calc(-1 * var(--margin-width-p60));
+}
+
+.mwlr-p60,
+.mwxr-p60,
+.mwar-p60 {
+  margin-left: calc(-1 * var(--margin-width-p60));
+}
+
+/*
+.mw*-p70
+
+Sets the margin of element to css var for p70.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p70 - Sets all margins to p70
+.mwx-p70 - Sets left and right margins to p70
+.mwy-p70 - Sets top and bottom margins to p70
+.mwt-p70 - Sets top margin to p70
+.mwr-p70 - Sets right margin to p70
+.mwb-p70 - Sets bottom margin to p70
+.mwl-p70 - Sets left margin to p70
+
+Styleguide Margin - Width - p70
+*/
+.mwt-p70,
+.mwy-p70,
+.mwa-p70 {
+  margin-top: 70%;
+}
+
+.mwr-p70,
+.mwx-p70,
+.mwa-p70 {
+  margin-right: 70%;
+}
+
+.mwb-p70,
+.mwy-p70,
+.mwa-p70 {
+  margin-bottom: 70%;
+}
+
+.mwl-p70,
+.mwx-p70,
+.mwa-p70 {
+  margin-left: 70%;
+}
+
+/*
+.mw*r-p70
+
+Sets the margin of element to the negative value of the css var for p70.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p70 - Sets all margins to mp70
+.mwxr-p70 - Sets left and right margins to mp70
+.mwyr-p70 - Sets top and bottom margins to mp70
+.mwtr-p70 - Sets top margin to mp70
+.mwrr-p70 - Sets right margin to mp70
+.mwbr-p70 - Sets bottom margin to mp70
+.mwlr-p70 - Sets left margin to mp70
+
+Styleguide Margin - Width - p70
+*/
+.mwtr-p70,
+.mwyr-p70,
+.mwar-p70 {
+  margin-top: calc(-1 * var(--margin-width-p70));
+}
+
+.mwrr-p70,
+.mwxr-p70,
+.mwar-p70 {
+  margin-right: calc(-1 * var(--margin-width-p70));
+}
+
+.mwbr-p70,
+.mwyr-p70,
+.mwar-p70 {
+  margin-bottom: calc(-1 * var(--margin-width-p70));
+}
+
+.mwlr-p70,
+.mwxr-p70,
+.mwar-p70 {
+  margin-left: calc(-1 * var(--margin-width-p70));
+}
+
+/*
+.mw*-p75
+
+Sets the margin of element to css var for p75.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p75 - Sets all margins to p75
+.mwx-p75 - Sets left and right margins to p75
+.mwy-p75 - Sets top and bottom margins to p75
+.mwt-p75 - Sets top margin to p75
+.mwr-p75 - Sets right margin to p75
+.mwb-p75 - Sets bottom margin to p75
+.mwl-p75 - Sets left margin to p75
+
+Styleguide Margin - Width - p75
+*/
+.mwt-p75,
+.mwy-p75,
+.mwa-p75 {
+  margin-top: 75%;
+}
+
+.mwr-p75,
+.mwx-p75,
+.mwa-p75 {
+  margin-right: 75%;
+}
+
+.mwb-p75,
+.mwy-p75,
+.mwa-p75 {
+  margin-bottom: 75%;
+}
+
+.mwl-p75,
+.mwx-p75,
+.mwa-p75 {
+  margin-left: 75%;
+}
+
+/*
+.mw*r-p75
+
+Sets the margin of element to the negative value of the css var for p75.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p75 - Sets all margins to mp75
+.mwxr-p75 - Sets left and right margins to mp75
+.mwyr-p75 - Sets top and bottom margins to mp75
+.mwtr-p75 - Sets top margin to mp75
+.mwrr-p75 - Sets right margin to mp75
+.mwbr-p75 - Sets bottom margin to mp75
+.mwlr-p75 - Sets left margin to mp75
+
+Styleguide Margin - Width - p75
+*/
+.mwtr-p75,
+.mwyr-p75,
+.mwar-p75 {
+  margin-top: calc(-1 * var(--margin-width-p75));
+}
+
+.mwrr-p75,
+.mwxr-p75,
+.mwar-p75 {
+  margin-right: calc(-1 * var(--margin-width-p75));
+}
+
+.mwbr-p75,
+.mwyr-p75,
+.mwar-p75 {
+  margin-bottom: calc(-1 * var(--margin-width-p75));
+}
+
+.mwlr-p75,
+.mwxr-p75,
+.mwar-p75 {
+  margin-left: calc(-1 * var(--margin-width-p75));
+}
+
+/*
+.mw*-p80
+
+Sets the margin of element to css var for p80.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p80 - Sets all margins to p80
+.mwx-p80 - Sets left and right margins to p80
+.mwy-p80 - Sets top and bottom margins to p80
+.mwt-p80 - Sets top margin to p80
+.mwr-p80 - Sets right margin to p80
+.mwb-p80 - Sets bottom margin to p80
+.mwl-p80 - Sets left margin to p80
+
+Styleguide Margin - Width - p80
+*/
+.mwt-p80,
+.mwy-p80,
+.mwa-p80 {
+  margin-top: 80%;
+}
+
+.mwr-p80,
+.mwx-p80,
+.mwa-p80 {
+  margin-right: 80%;
+}
+
+.mwb-p80,
+.mwy-p80,
+.mwa-p80 {
+  margin-bottom: 80%;
+}
+
+.mwl-p80,
+.mwx-p80,
+.mwa-p80 {
+  margin-left: 80%;
+}
+
+/*
+.mw*r-p80
+
+Sets the margin of element to the negative value of the css var for p80.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p80 - Sets all margins to mp80
+.mwxr-p80 - Sets left and right margins to mp80
+.mwyr-p80 - Sets top and bottom margins to mp80
+.mwtr-p80 - Sets top margin to mp80
+.mwrr-p80 - Sets right margin to mp80
+.mwbr-p80 - Sets bottom margin to mp80
+.mwlr-p80 - Sets left margin to mp80
+
+Styleguide Margin - Width - p80
+*/
+.mwtr-p80,
+.mwyr-p80,
+.mwar-p80 {
+  margin-top: calc(-1 * var(--margin-width-p80));
+}
+
+.mwrr-p80,
+.mwxr-p80,
+.mwar-p80 {
+  margin-right: calc(-1 * var(--margin-width-p80));
+}
+
+.mwbr-p80,
+.mwyr-p80,
+.mwar-p80 {
+  margin-bottom: calc(-1 * var(--margin-width-p80));
+}
+
+.mwlr-p80,
+.mwxr-p80,
+.mwar-p80 {
+  margin-left: calc(-1 * var(--margin-width-p80));
+}
+
+/*
+.mw*-p90
+
+Sets the margin of element to css var for p90.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p90 - Sets all margins to p90
+.mwx-p90 - Sets left and right margins to p90
+.mwy-p90 - Sets top and bottom margins to p90
+.mwt-p90 - Sets top margin to p90
+.mwr-p90 - Sets right margin to p90
+.mwb-p90 - Sets bottom margin to p90
+.mwl-p90 - Sets left margin to p90
+
+Styleguide Margin - Width - p90
+*/
+.mwt-p90,
+.mwy-p90,
+.mwa-p90 {
+  margin-top: 90%;
+}
+
+.mwr-p90,
+.mwx-p90,
+.mwa-p90 {
+  margin-right: 90%;
+}
+
+.mwb-p90,
+.mwy-p90,
+.mwa-p90 {
+  margin-bottom: 90%;
+}
+
+.mwl-p90,
+.mwx-p90,
+.mwa-p90 {
+  margin-left: 90%;
+}
+
+/*
+.mw*r-p90
+
+Sets the margin of element to the negative value of the css var for p90.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p90 - Sets all margins to mp90
+.mwxr-p90 - Sets left and right margins to mp90
+.mwyr-p90 - Sets top and bottom margins to mp90
+.mwtr-p90 - Sets top margin to mp90
+.mwrr-p90 - Sets right margin to mp90
+.mwbr-p90 - Sets bottom margin to mp90
+.mwlr-p90 - Sets left margin to mp90
+
+Styleguide Margin - Width - p90
+*/
+.mwtr-p90,
+.mwyr-p90,
+.mwar-p90 {
+  margin-top: calc(-1 * var(--margin-width-p90));
+}
+
+.mwrr-p90,
+.mwxr-p90,
+.mwar-p90 {
+  margin-right: calc(-1 * var(--margin-width-p90));
+}
+
+.mwbr-p90,
+.mwyr-p90,
+.mwar-p90 {
+  margin-bottom: calc(-1 * var(--margin-width-p90));
+}
+
+.mwlr-p90,
+.mwxr-p90,
+.mwar-p90 {
+  margin-left: calc(-1 * var(--margin-width-p90));
+}
+
+/*
+.mw*-p100
+
+Sets the margin of element to css var for p100.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwa-p100 - Sets all margins to p100
+.mwx-p100 - Sets left and right margins to p100
+.mwy-p100 - Sets top and bottom margins to p100
+.mwt-p100 - Sets top margin to p100
+.mwr-p100 - Sets right margin to p100
+.mwb-p100 - Sets bottom margin to p100
+.mwl-p100 - Sets left margin to p100
+
+Styleguide Margin - Width - p100
+*/
+.mwt-p100,
+.mwy-p100,
+.mwa-p100 {
+  margin-top: 100%;
+}
+
+.mwr-p100,
+.mwx-p100,
+.mwa-p100 {
+  margin-right: 100%;
+}
+
+.mwb-p100,
+.mwy-p100,
+.mwa-p100 {
+  margin-bottom: 100%;
+}
+
+.mwl-p100,
+.mwx-p100,
+.mwa-p100 {
+  margin-left: 100%;
+}
+
+/*
+.mw*r-p100
+
+Sets the margin of element to the negative value of the css var for p100.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.mwar-p100 - Sets all margins to mp100
+.mwxr-p100 - Sets left and right margins to mp100
+.mwyr-p100 - Sets top and bottom margins to mp100
+.mwtr-p100 - Sets top margin to mp100
+.mwrr-p100 - Sets right margin to mp100
+.mwbr-p100 - Sets bottom margin to mp100
+.mwlr-p100 - Sets left margin to mp100
+
+Styleguide Margin - Width - p100
+*/
+.mwtr-p100,
+.mwyr-p100,
+.mwar-p100 {
+  margin-top: calc(-1 * var(--margin-width-p100));
+}
+
+.mwrr-p100,
+.mwxr-p100,
+.mwar-p100 {
+  margin-right: calc(-1 * var(--margin-width-p100));
+}
+
+.mwbr-p100,
+.mwyr-p100,
+.mwar-p100 {
+  margin-bottom: calc(-1 * var(--margin-width-p100));
+}
+
+.mwlr-p100,
+.mwxr-p100,
+.mwar-p100 {
+  margin-left: calc(-1 * var(--margin-width-p100));
 }
 
 @media (min-width: 50em) {
@@ -11439,6 +12747,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-sm-0
+
+  Sets the margin of element to negative value of the css var for 0 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-0 - Sets all margins to m0 on sm
+  .mwxr-sm-0 - Sets left and right margins to m0 on sm
+  .mwyr-sm-0 - Sets top and bottom margins to m0 on sm
+  .mwtr-sm-0 - Sets top margin to m0 on sm
+  .mwrr-sm-0 - Sets right margin to m0 on sm
+  .mwbr-sm-0 - Sets bottom margin to m0 on sm
+  .mwlr-sm-0 - Sets left margin to m0 on sm
+
+  Styleguide Margin - Width - m0
+  */
+  .mwtr-sm-0,
+.mwyr-sm-0,
+.mwar-sm-0 {
+    margin-top: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwrr-sm-0,
+.mwxr-sm-0,
+.mwar-sm-0 {
+    margin-right: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwbr-sm-0,
+.mwyr-sm-0,
+.mwar-sm-0 {
+    margin-bottom: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwlr-sm-0,
+.mwxr-sm-0,
+.mwar-sm-0 {
+    margin-left: calc(-1 * var(--margin-width-0));
+  }
+
+  /*
   .mw*-sm-1
 
   Sets the margin of element to css var for 1 on sm.
@@ -11478,6 +12828,48 @@ Styleguide Margin - Width - 7
 .mwx-sm-1,
 .mwa-sm-1 {
     margin-left: var(--margin-width-1);
+  }
+
+  /*
+  .mw*r-sm-1
+
+  Sets the margin of element to negative value of the css var for 1 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-1 - Sets all margins to m1 on sm
+  .mwxr-sm-1 - Sets left and right margins to m1 on sm
+  .mwyr-sm-1 - Sets top and bottom margins to m1 on sm
+  .mwtr-sm-1 - Sets top margin to m1 on sm
+  .mwrr-sm-1 - Sets right margin to m1 on sm
+  .mwbr-sm-1 - Sets bottom margin to m1 on sm
+  .mwlr-sm-1 - Sets left margin to m1 on sm
+
+  Styleguide Margin - Width - m1
+  */
+  .mwtr-sm-1,
+.mwyr-sm-1,
+.mwar-sm-1 {
+    margin-top: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwrr-sm-1,
+.mwxr-sm-1,
+.mwar-sm-1 {
+    margin-right: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwbr-sm-1,
+.mwyr-sm-1,
+.mwar-sm-1 {
+    margin-bottom: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwlr-sm-1,
+.mwxr-sm-1,
+.mwar-sm-1 {
+    margin-left: calc(-1 * var(--margin-width-1));
   }
 
   /*
@@ -11523,6 +12915,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-sm-2
+
+  Sets the margin of element to negative value of the css var for 2 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-2 - Sets all margins to m2 on sm
+  .mwxr-sm-2 - Sets left and right margins to m2 on sm
+  .mwyr-sm-2 - Sets top and bottom margins to m2 on sm
+  .mwtr-sm-2 - Sets top margin to m2 on sm
+  .mwrr-sm-2 - Sets right margin to m2 on sm
+  .mwbr-sm-2 - Sets bottom margin to m2 on sm
+  .mwlr-sm-2 - Sets left margin to m2 on sm
+
+  Styleguide Margin - Width - m2
+  */
+  .mwtr-sm-2,
+.mwyr-sm-2,
+.mwar-sm-2 {
+    margin-top: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwrr-sm-2,
+.mwxr-sm-2,
+.mwar-sm-2 {
+    margin-right: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwbr-sm-2,
+.mwyr-sm-2,
+.mwar-sm-2 {
+    margin-bottom: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwlr-sm-2,
+.mwxr-sm-2,
+.mwar-sm-2 {
+    margin-left: calc(-1 * var(--margin-width-2));
+  }
+
+  /*
   .mw*-sm-3
 
   Sets the margin of element to css var for 3 on sm.
@@ -11562,6 +12996,48 @@ Styleguide Margin - Width - 7
 .mwx-sm-3,
 .mwa-sm-3 {
     margin-left: var(--margin-width-3);
+  }
+
+  /*
+  .mw*r-sm-3
+
+  Sets the margin of element to negative value of the css var for 3 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-3 - Sets all margins to m3 on sm
+  .mwxr-sm-3 - Sets left and right margins to m3 on sm
+  .mwyr-sm-3 - Sets top and bottom margins to m3 on sm
+  .mwtr-sm-3 - Sets top margin to m3 on sm
+  .mwrr-sm-3 - Sets right margin to m3 on sm
+  .mwbr-sm-3 - Sets bottom margin to m3 on sm
+  .mwlr-sm-3 - Sets left margin to m3 on sm
+
+  Styleguide Margin - Width - m3
+  */
+  .mwtr-sm-3,
+.mwyr-sm-3,
+.mwar-sm-3 {
+    margin-top: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwrr-sm-3,
+.mwxr-sm-3,
+.mwar-sm-3 {
+    margin-right: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwbr-sm-3,
+.mwyr-sm-3,
+.mwar-sm-3 {
+    margin-bottom: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwlr-sm-3,
+.mwxr-sm-3,
+.mwar-sm-3 {
+    margin-left: calc(-1 * var(--margin-width-3));
   }
 
   /*
@@ -11607,6 +13083,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-sm-4
+
+  Sets the margin of element to negative value of the css var for 4 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-4 - Sets all margins to m4 on sm
+  .mwxr-sm-4 - Sets left and right margins to m4 on sm
+  .mwyr-sm-4 - Sets top and bottom margins to m4 on sm
+  .mwtr-sm-4 - Sets top margin to m4 on sm
+  .mwrr-sm-4 - Sets right margin to m4 on sm
+  .mwbr-sm-4 - Sets bottom margin to m4 on sm
+  .mwlr-sm-4 - Sets left margin to m4 on sm
+
+  Styleguide Margin - Width - m4
+  */
+  .mwtr-sm-4,
+.mwyr-sm-4,
+.mwar-sm-4 {
+    margin-top: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwrr-sm-4,
+.mwxr-sm-4,
+.mwar-sm-4 {
+    margin-right: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwbr-sm-4,
+.mwyr-sm-4,
+.mwar-sm-4 {
+    margin-bottom: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwlr-sm-4,
+.mwxr-sm-4,
+.mwar-sm-4 {
+    margin-left: calc(-1 * var(--margin-width-4));
+  }
+
+  /*
   .mw*-sm-5
 
   Sets the margin of element to css var for 5 on sm.
@@ -11646,6 +13164,48 @@ Styleguide Margin - Width - 7
 .mwx-sm-5,
 .mwa-sm-5 {
     margin-left: var(--margin-width-5);
+  }
+
+  /*
+  .mw*r-sm-5
+
+  Sets the margin of element to negative value of the css var for 5 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-5 - Sets all margins to m5 on sm
+  .mwxr-sm-5 - Sets left and right margins to m5 on sm
+  .mwyr-sm-5 - Sets top and bottom margins to m5 on sm
+  .mwtr-sm-5 - Sets top margin to m5 on sm
+  .mwrr-sm-5 - Sets right margin to m5 on sm
+  .mwbr-sm-5 - Sets bottom margin to m5 on sm
+  .mwlr-sm-5 - Sets left margin to m5 on sm
+
+  Styleguide Margin - Width - m5
+  */
+  .mwtr-sm-5,
+.mwyr-sm-5,
+.mwar-sm-5 {
+    margin-top: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwrr-sm-5,
+.mwxr-sm-5,
+.mwar-sm-5 {
+    margin-right: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwbr-sm-5,
+.mwyr-sm-5,
+.mwar-sm-5 {
+    margin-bottom: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwlr-sm-5,
+.mwxr-sm-5,
+.mwar-sm-5 {
+    margin-left: calc(-1 * var(--margin-width-5));
   }
 
   /*
@@ -11691,6 +13251,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-sm-6
+
+  Sets the margin of element to negative value of the css var for 6 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-6 - Sets all margins to m6 on sm
+  .mwxr-sm-6 - Sets left and right margins to m6 on sm
+  .mwyr-sm-6 - Sets top and bottom margins to m6 on sm
+  .mwtr-sm-6 - Sets top margin to m6 on sm
+  .mwrr-sm-6 - Sets right margin to m6 on sm
+  .mwbr-sm-6 - Sets bottom margin to m6 on sm
+  .mwlr-sm-6 - Sets left margin to m6 on sm
+
+  Styleguide Margin - Width - m6
+  */
+  .mwtr-sm-6,
+.mwyr-sm-6,
+.mwar-sm-6 {
+    margin-top: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwrr-sm-6,
+.mwxr-sm-6,
+.mwar-sm-6 {
+    margin-right: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwbr-sm-6,
+.mwyr-sm-6,
+.mwar-sm-6 {
+    margin-bottom: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwlr-sm-6,
+.mwxr-sm-6,
+.mwar-sm-6 {
+    margin-left: calc(-1 * var(--margin-width-6));
+  }
+
+  /*
   .mw*-sm-7
 
   Sets the margin of element to css var for 7 on sm.
@@ -11730,6 +13332,1056 @@ Styleguide Margin - Width - 7
 .mwx-sm-7,
 .mwa-sm-7 {
     margin-left: var(--margin-width-7);
+  }
+
+  /*
+  .mw*r-sm-7
+
+  Sets the margin of element to negative value of the css var for 7 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-7 - Sets all margins to m7 on sm
+  .mwxr-sm-7 - Sets left and right margins to m7 on sm
+  .mwyr-sm-7 - Sets top and bottom margins to m7 on sm
+  .mwtr-sm-7 - Sets top margin to m7 on sm
+  .mwrr-sm-7 - Sets right margin to m7 on sm
+  .mwbr-sm-7 - Sets bottom margin to m7 on sm
+  .mwlr-sm-7 - Sets left margin to m7 on sm
+
+  Styleguide Margin - Width - m7
+  */
+  .mwtr-sm-7,
+.mwyr-sm-7,
+.mwar-sm-7 {
+    margin-top: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwrr-sm-7,
+.mwxr-sm-7,
+.mwar-sm-7 {
+    margin-right: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwbr-sm-7,
+.mwyr-sm-7,
+.mwar-sm-7 {
+    margin-bottom: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwlr-sm-7,
+.mwxr-sm-7,
+.mwar-sm-7 {
+    margin-left: calc(-1 * var(--margin-width-7));
+  }
+
+  /*
+  .mw*-sm-p10
+
+  Sets the margin of element to css var for p10 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p10 - Sets all margins to p10 on sm
+  .mwx-sm-p10 - Sets left and right margins to p10 on sm
+  .mwy-sm-p10 - Sets top and bottom margins to p10 on sm
+  .mwt-sm-p10 - Sets top margin to p10 on sm
+  .mwr-sm-p10 - Sets right margin to p10 on sm
+  .mwb-sm-p10 - Sets bottom margin to p10 on sm
+  .mwl-sm-p10 - Sets left margin to p10 on sm
+
+  Styleguide Margin - Width - p10
+  */
+  .mwt-sm-p10,
+.mwy-sm-p10,
+.mwa-sm-p10 {
+    margin-top: var(--margin-width-p10);
+  }
+
+  .mwr-sm-p10,
+.mwx-sm-p10,
+.mwa-sm-p10 {
+    margin-right: var(--margin-width-p10);
+  }
+
+  .mwb-sm-p10,
+.mwy-sm-p10,
+.mwa-sm-p10 {
+    margin-bottom: var(--margin-width-p10);
+  }
+
+  .mwl-sm-p10,
+.mwx-sm-p10,
+.mwa-sm-p10 {
+    margin-left: var(--margin-width-p10);
+  }
+
+  /*
+  .mw*r-sm-p10
+
+  Sets the margin of element to negative value of the css var for p10 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p10 - Sets all margins to mp10 on sm
+  .mwxr-sm-p10 - Sets left and right margins to mp10 on sm
+  .mwyr-sm-p10 - Sets top and bottom margins to mp10 on sm
+  .mwtr-sm-p10 - Sets top margin to mp10 on sm
+  .mwrr-sm-p10 - Sets right margin to mp10 on sm
+  .mwbr-sm-p10 - Sets bottom margin to mp10 on sm
+  .mwlr-sm-p10 - Sets left margin to mp10 on sm
+
+  Styleguide Margin - Width - mp10
+  */
+  .mwtr-sm-p10,
+.mwyr-sm-p10,
+.mwar-sm-p10 {
+    margin-top: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwrr-sm-p10,
+.mwxr-sm-p10,
+.mwar-sm-p10 {
+    margin-right: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwbr-sm-p10,
+.mwyr-sm-p10,
+.mwar-sm-p10 {
+    margin-bottom: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwlr-sm-p10,
+.mwxr-sm-p10,
+.mwar-sm-p10 {
+    margin-left: calc(-1 * var(--margin-width-p10));
+  }
+
+  /*
+  .mw*-sm-p20
+
+  Sets the margin of element to css var for p20 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p20 - Sets all margins to p20 on sm
+  .mwx-sm-p20 - Sets left and right margins to p20 on sm
+  .mwy-sm-p20 - Sets top and bottom margins to p20 on sm
+  .mwt-sm-p20 - Sets top margin to p20 on sm
+  .mwr-sm-p20 - Sets right margin to p20 on sm
+  .mwb-sm-p20 - Sets bottom margin to p20 on sm
+  .mwl-sm-p20 - Sets left margin to p20 on sm
+
+  Styleguide Margin - Width - p20
+  */
+  .mwt-sm-p20,
+.mwy-sm-p20,
+.mwa-sm-p20 {
+    margin-top: var(--margin-width-p20);
+  }
+
+  .mwr-sm-p20,
+.mwx-sm-p20,
+.mwa-sm-p20 {
+    margin-right: var(--margin-width-p20);
+  }
+
+  .mwb-sm-p20,
+.mwy-sm-p20,
+.mwa-sm-p20 {
+    margin-bottom: var(--margin-width-p20);
+  }
+
+  .mwl-sm-p20,
+.mwx-sm-p20,
+.mwa-sm-p20 {
+    margin-left: var(--margin-width-p20);
+  }
+
+  /*
+  .mw*r-sm-p20
+
+  Sets the margin of element to negative value of the css var for p20 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p20 - Sets all margins to mp20 on sm
+  .mwxr-sm-p20 - Sets left and right margins to mp20 on sm
+  .mwyr-sm-p20 - Sets top and bottom margins to mp20 on sm
+  .mwtr-sm-p20 - Sets top margin to mp20 on sm
+  .mwrr-sm-p20 - Sets right margin to mp20 on sm
+  .mwbr-sm-p20 - Sets bottom margin to mp20 on sm
+  .mwlr-sm-p20 - Sets left margin to mp20 on sm
+
+  Styleguide Margin - Width - mp20
+  */
+  .mwtr-sm-p20,
+.mwyr-sm-p20,
+.mwar-sm-p20 {
+    margin-top: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwrr-sm-p20,
+.mwxr-sm-p20,
+.mwar-sm-p20 {
+    margin-right: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwbr-sm-p20,
+.mwyr-sm-p20,
+.mwar-sm-p20 {
+    margin-bottom: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwlr-sm-p20,
+.mwxr-sm-p20,
+.mwar-sm-p20 {
+    margin-left: calc(-1 * var(--margin-width-p20));
+  }
+
+  /*
+  .mw*-sm-p25
+
+  Sets the margin of element to css var for p25 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p25 - Sets all margins to p25 on sm
+  .mwx-sm-p25 - Sets left and right margins to p25 on sm
+  .mwy-sm-p25 - Sets top and bottom margins to p25 on sm
+  .mwt-sm-p25 - Sets top margin to p25 on sm
+  .mwr-sm-p25 - Sets right margin to p25 on sm
+  .mwb-sm-p25 - Sets bottom margin to p25 on sm
+  .mwl-sm-p25 - Sets left margin to p25 on sm
+
+  Styleguide Margin - Width - p25
+  */
+  .mwt-sm-p25,
+.mwy-sm-p25,
+.mwa-sm-p25 {
+    margin-top: var(--margin-width-p25);
+  }
+
+  .mwr-sm-p25,
+.mwx-sm-p25,
+.mwa-sm-p25 {
+    margin-right: var(--margin-width-p25);
+  }
+
+  .mwb-sm-p25,
+.mwy-sm-p25,
+.mwa-sm-p25 {
+    margin-bottom: var(--margin-width-p25);
+  }
+
+  .mwl-sm-p25,
+.mwx-sm-p25,
+.mwa-sm-p25 {
+    margin-left: var(--margin-width-p25);
+  }
+
+  /*
+  .mw*r-sm-p25
+
+  Sets the margin of element to negative value of the css var for p25 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p25 - Sets all margins to mp25 on sm
+  .mwxr-sm-p25 - Sets left and right margins to mp25 on sm
+  .mwyr-sm-p25 - Sets top and bottom margins to mp25 on sm
+  .mwtr-sm-p25 - Sets top margin to mp25 on sm
+  .mwrr-sm-p25 - Sets right margin to mp25 on sm
+  .mwbr-sm-p25 - Sets bottom margin to mp25 on sm
+  .mwlr-sm-p25 - Sets left margin to mp25 on sm
+
+  Styleguide Margin - Width - mp25
+  */
+  .mwtr-sm-p25,
+.mwyr-sm-p25,
+.mwar-sm-p25 {
+    margin-top: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwrr-sm-p25,
+.mwxr-sm-p25,
+.mwar-sm-p25 {
+    margin-right: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwbr-sm-p25,
+.mwyr-sm-p25,
+.mwar-sm-p25 {
+    margin-bottom: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwlr-sm-p25,
+.mwxr-sm-p25,
+.mwar-sm-p25 {
+    margin-left: calc(-1 * var(--margin-width-p25));
+  }
+
+  /*
+  .mw*-sm-p30
+
+  Sets the margin of element to css var for p30 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p30 - Sets all margins to p30 on sm
+  .mwx-sm-p30 - Sets left and right margins to p30 on sm
+  .mwy-sm-p30 - Sets top and bottom margins to p30 on sm
+  .mwt-sm-p30 - Sets top margin to p30 on sm
+  .mwr-sm-p30 - Sets right margin to p30 on sm
+  .mwb-sm-p30 - Sets bottom margin to p30 on sm
+  .mwl-sm-p30 - Sets left margin to p30 on sm
+
+  Styleguide Margin - Width - p30
+  */
+  .mwt-sm-p30,
+.mwy-sm-p30,
+.mwa-sm-p30 {
+    margin-top: var(--margin-width-p30);
+  }
+
+  .mwr-sm-p30,
+.mwx-sm-p30,
+.mwa-sm-p30 {
+    margin-right: var(--margin-width-p30);
+  }
+
+  .mwb-sm-p30,
+.mwy-sm-p30,
+.mwa-sm-p30 {
+    margin-bottom: var(--margin-width-p30);
+  }
+
+  .mwl-sm-p30,
+.mwx-sm-p30,
+.mwa-sm-p30 {
+    margin-left: var(--margin-width-p30);
+  }
+
+  /*
+  .mw*r-sm-p30
+
+  Sets the margin of element to negative value of the css var for p30 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p30 - Sets all margins to mp30 on sm
+  .mwxr-sm-p30 - Sets left and right margins to mp30 on sm
+  .mwyr-sm-p30 - Sets top and bottom margins to mp30 on sm
+  .mwtr-sm-p30 - Sets top margin to mp30 on sm
+  .mwrr-sm-p30 - Sets right margin to mp30 on sm
+  .mwbr-sm-p30 - Sets bottom margin to mp30 on sm
+  .mwlr-sm-p30 - Sets left margin to mp30 on sm
+
+  Styleguide Margin - Width - mp30
+  */
+  .mwtr-sm-p30,
+.mwyr-sm-p30,
+.mwar-sm-p30 {
+    margin-top: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwrr-sm-p30,
+.mwxr-sm-p30,
+.mwar-sm-p30 {
+    margin-right: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwbr-sm-p30,
+.mwyr-sm-p30,
+.mwar-sm-p30 {
+    margin-bottom: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwlr-sm-p30,
+.mwxr-sm-p30,
+.mwar-sm-p30 {
+    margin-left: calc(-1 * var(--margin-width-p30));
+  }
+
+  /*
+  .mw*-sm-p40
+
+  Sets the margin of element to css var for p40 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p40 - Sets all margins to p40 on sm
+  .mwx-sm-p40 - Sets left and right margins to p40 on sm
+  .mwy-sm-p40 - Sets top and bottom margins to p40 on sm
+  .mwt-sm-p40 - Sets top margin to p40 on sm
+  .mwr-sm-p40 - Sets right margin to p40 on sm
+  .mwb-sm-p40 - Sets bottom margin to p40 on sm
+  .mwl-sm-p40 - Sets left margin to p40 on sm
+
+  Styleguide Margin - Width - p40
+  */
+  .mwt-sm-p40,
+.mwy-sm-p40,
+.mwa-sm-p40 {
+    margin-top: var(--margin-width-p40);
+  }
+
+  .mwr-sm-p40,
+.mwx-sm-p40,
+.mwa-sm-p40 {
+    margin-right: var(--margin-width-p40);
+  }
+
+  .mwb-sm-p40,
+.mwy-sm-p40,
+.mwa-sm-p40 {
+    margin-bottom: var(--margin-width-p40);
+  }
+
+  .mwl-sm-p40,
+.mwx-sm-p40,
+.mwa-sm-p40 {
+    margin-left: var(--margin-width-p40);
+  }
+
+  /*
+  .mw*r-sm-p40
+
+  Sets the margin of element to negative value of the css var for p40 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p40 - Sets all margins to mp40 on sm
+  .mwxr-sm-p40 - Sets left and right margins to mp40 on sm
+  .mwyr-sm-p40 - Sets top and bottom margins to mp40 on sm
+  .mwtr-sm-p40 - Sets top margin to mp40 on sm
+  .mwrr-sm-p40 - Sets right margin to mp40 on sm
+  .mwbr-sm-p40 - Sets bottom margin to mp40 on sm
+  .mwlr-sm-p40 - Sets left margin to mp40 on sm
+
+  Styleguide Margin - Width - mp40
+  */
+  .mwtr-sm-p40,
+.mwyr-sm-p40,
+.mwar-sm-p40 {
+    margin-top: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwrr-sm-p40,
+.mwxr-sm-p40,
+.mwar-sm-p40 {
+    margin-right: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwbr-sm-p40,
+.mwyr-sm-p40,
+.mwar-sm-p40 {
+    margin-bottom: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwlr-sm-p40,
+.mwxr-sm-p40,
+.mwar-sm-p40 {
+    margin-left: calc(-1 * var(--margin-width-p40));
+  }
+
+  /*
+  .mw*-sm-p50
+
+  Sets the margin of element to css var for p50 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p50 - Sets all margins to p50 on sm
+  .mwx-sm-p50 - Sets left and right margins to p50 on sm
+  .mwy-sm-p50 - Sets top and bottom margins to p50 on sm
+  .mwt-sm-p50 - Sets top margin to p50 on sm
+  .mwr-sm-p50 - Sets right margin to p50 on sm
+  .mwb-sm-p50 - Sets bottom margin to p50 on sm
+  .mwl-sm-p50 - Sets left margin to p50 on sm
+
+  Styleguide Margin - Width - p50
+  */
+  .mwt-sm-p50,
+.mwy-sm-p50,
+.mwa-sm-p50 {
+    margin-top: var(--margin-width-p50);
+  }
+
+  .mwr-sm-p50,
+.mwx-sm-p50,
+.mwa-sm-p50 {
+    margin-right: var(--margin-width-p50);
+  }
+
+  .mwb-sm-p50,
+.mwy-sm-p50,
+.mwa-sm-p50 {
+    margin-bottom: var(--margin-width-p50);
+  }
+
+  .mwl-sm-p50,
+.mwx-sm-p50,
+.mwa-sm-p50 {
+    margin-left: var(--margin-width-p50);
+  }
+
+  /*
+  .mw*r-sm-p50
+
+  Sets the margin of element to negative value of the css var for p50 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p50 - Sets all margins to mp50 on sm
+  .mwxr-sm-p50 - Sets left and right margins to mp50 on sm
+  .mwyr-sm-p50 - Sets top and bottom margins to mp50 on sm
+  .mwtr-sm-p50 - Sets top margin to mp50 on sm
+  .mwrr-sm-p50 - Sets right margin to mp50 on sm
+  .mwbr-sm-p50 - Sets bottom margin to mp50 on sm
+  .mwlr-sm-p50 - Sets left margin to mp50 on sm
+
+  Styleguide Margin - Width - mp50
+  */
+  .mwtr-sm-p50,
+.mwyr-sm-p50,
+.mwar-sm-p50 {
+    margin-top: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwrr-sm-p50,
+.mwxr-sm-p50,
+.mwar-sm-p50 {
+    margin-right: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwbr-sm-p50,
+.mwyr-sm-p50,
+.mwar-sm-p50 {
+    margin-bottom: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwlr-sm-p50,
+.mwxr-sm-p50,
+.mwar-sm-p50 {
+    margin-left: calc(-1 * var(--margin-width-p50));
+  }
+
+  /*
+  .mw*-sm-p60
+
+  Sets the margin of element to css var for p60 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p60 - Sets all margins to p60 on sm
+  .mwx-sm-p60 - Sets left and right margins to p60 on sm
+  .mwy-sm-p60 - Sets top and bottom margins to p60 on sm
+  .mwt-sm-p60 - Sets top margin to p60 on sm
+  .mwr-sm-p60 - Sets right margin to p60 on sm
+  .mwb-sm-p60 - Sets bottom margin to p60 on sm
+  .mwl-sm-p60 - Sets left margin to p60 on sm
+
+  Styleguide Margin - Width - p60
+  */
+  .mwt-sm-p60,
+.mwy-sm-p60,
+.mwa-sm-p60 {
+    margin-top: var(--margin-width-p60);
+  }
+
+  .mwr-sm-p60,
+.mwx-sm-p60,
+.mwa-sm-p60 {
+    margin-right: var(--margin-width-p60);
+  }
+
+  .mwb-sm-p60,
+.mwy-sm-p60,
+.mwa-sm-p60 {
+    margin-bottom: var(--margin-width-p60);
+  }
+
+  .mwl-sm-p60,
+.mwx-sm-p60,
+.mwa-sm-p60 {
+    margin-left: var(--margin-width-p60);
+  }
+
+  /*
+  .mw*r-sm-p60
+
+  Sets the margin of element to negative value of the css var for p60 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p60 - Sets all margins to mp60 on sm
+  .mwxr-sm-p60 - Sets left and right margins to mp60 on sm
+  .mwyr-sm-p60 - Sets top and bottom margins to mp60 on sm
+  .mwtr-sm-p60 - Sets top margin to mp60 on sm
+  .mwrr-sm-p60 - Sets right margin to mp60 on sm
+  .mwbr-sm-p60 - Sets bottom margin to mp60 on sm
+  .mwlr-sm-p60 - Sets left margin to mp60 on sm
+
+  Styleguide Margin - Width - mp60
+  */
+  .mwtr-sm-p60,
+.mwyr-sm-p60,
+.mwar-sm-p60 {
+    margin-top: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwrr-sm-p60,
+.mwxr-sm-p60,
+.mwar-sm-p60 {
+    margin-right: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwbr-sm-p60,
+.mwyr-sm-p60,
+.mwar-sm-p60 {
+    margin-bottom: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwlr-sm-p60,
+.mwxr-sm-p60,
+.mwar-sm-p60 {
+    margin-left: calc(-1 * var(--margin-width-p60));
+  }
+
+  /*
+  .mw*-sm-p70
+
+  Sets the margin of element to css var for p70 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p70 - Sets all margins to p70 on sm
+  .mwx-sm-p70 - Sets left and right margins to p70 on sm
+  .mwy-sm-p70 - Sets top and bottom margins to p70 on sm
+  .mwt-sm-p70 - Sets top margin to p70 on sm
+  .mwr-sm-p70 - Sets right margin to p70 on sm
+  .mwb-sm-p70 - Sets bottom margin to p70 on sm
+  .mwl-sm-p70 - Sets left margin to p70 on sm
+
+  Styleguide Margin - Width - p70
+  */
+  .mwt-sm-p70,
+.mwy-sm-p70,
+.mwa-sm-p70 {
+    margin-top: var(--margin-width-p70);
+  }
+
+  .mwr-sm-p70,
+.mwx-sm-p70,
+.mwa-sm-p70 {
+    margin-right: var(--margin-width-p70);
+  }
+
+  .mwb-sm-p70,
+.mwy-sm-p70,
+.mwa-sm-p70 {
+    margin-bottom: var(--margin-width-p70);
+  }
+
+  .mwl-sm-p70,
+.mwx-sm-p70,
+.mwa-sm-p70 {
+    margin-left: var(--margin-width-p70);
+  }
+
+  /*
+  .mw*r-sm-p70
+
+  Sets the margin of element to negative value of the css var for p70 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p70 - Sets all margins to mp70 on sm
+  .mwxr-sm-p70 - Sets left and right margins to mp70 on sm
+  .mwyr-sm-p70 - Sets top and bottom margins to mp70 on sm
+  .mwtr-sm-p70 - Sets top margin to mp70 on sm
+  .mwrr-sm-p70 - Sets right margin to mp70 on sm
+  .mwbr-sm-p70 - Sets bottom margin to mp70 on sm
+  .mwlr-sm-p70 - Sets left margin to mp70 on sm
+
+  Styleguide Margin - Width - mp70
+  */
+  .mwtr-sm-p70,
+.mwyr-sm-p70,
+.mwar-sm-p70 {
+    margin-top: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwrr-sm-p70,
+.mwxr-sm-p70,
+.mwar-sm-p70 {
+    margin-right: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwbr-sm-p70,
+.mwyr-sm-p70,
+.mwar-sm-p70 {
+    margin-bottom: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwlr-sm-p70,
+.mwxr-sm-p70,
+.mwar-sm-p70 {
+    margin-left: calc(-1 * var(--margin-width-p70));
+  }
+
+  /*
+  .mw*-sm-p75
+
+  Sets the margin of element to css var for p75 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p75 - Sets all margins to p75 on sm
+  .mwx-sm-p75 - Sets left and right margins to p75 on sm
+  .mwy-sm-p75 - Sets top and bottom margins to p75 on sm
+  .mwt-sm-p75 - Sets top margin to p75 on sm
+  .mwr-sm-p75 - Sets right margin to p75 on sm
+  .mwb-sm-p75 - Sets bottom margin to p75 on sm
+  .mwl-sm-p75 - Sets left margin to p75 on sm
+
+  Styleguide Margin - Width - p75
+  */
+  .mwt-sm-p75,
+.mwy-sm-p75,
+.mwa-sm-p75 {
+    margin-top: var(--margin-width-p75);
+  }
+
+  .mwr-sm-p75,
+.mwx-sm-p75,
+.mwa-sm-p75 {
+    margin-right: var(--margin-width-p75);
+  }
+
+  .mwb-sm-p75,
+.mwy-sm-p75,
+.mwa-sm-p75 {
+    margin-bottom: var(--margin-width-p75);
+  }
+
+  .mwl-sm-p75,
+.mwx-sm-p75,
+.mwa-sm-p75 {
+    margin-left: var(--margin-width-p75);
+  }
+
+  /*
+  .mw*r-sm-p75
+
+  Sets the margin of element to negative value of the css var for p75 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p75 - Sets all margins to mp75 on sm
+  .mwxr-sm-p75 - Sets left and right margins to mp75 on sm
+  .mwyr-sm-p75 - Sets top and bottom margins to mp75 on sm
+  .mwtr-sm-p75 - Sets top margin to mp75 on sm
+  .mwrr-sm-p75 - Sets right margin to mp75 on sm
+  .mwbr-sm-p75 - Sets bottom margin to mp75 on sm
+  .mwlr-sm-p75 - Sets left margin to mp75 on sm
+
+  Styleguide Margin - Width - mp75
+  */
+  .mwtr-sm-p75,
+.mwyr-sm-p75,
+.mwar-sm-p75 {
+    margin-top: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwrr-sm-p75,
+.mwxr-sm-p75,
+.mwar-sm-p75 {
+    margin-right: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwbr-sm-p75,
+.mwyr-sm-p75,
+.mwar-sm-p75 {
+    margin-bottom: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwlr-sm-p75,
+.mwxr-sm-p75,
+.mwar-sm-p75 {
+    margin-left: calc(-1 * var(--margin-width-p75));
+  }
+
+  /*
+  .mw*-sm-p80
+
+  Sets the margin of element to css var for p80 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p80 - Sets all margins to p80 on sm
+  .mwx-sm-p80 - Sets left and right margins to p80 on sm
+  .mwy-sm-p80 - Sets top and bottom margins to p80 on sm
+  .mwt-sm-p80 - Sets top margin to p80 on sm
+  .mwr-sm-p80 - Sets right margin to p80 on sm
+  .mwb-sm-p80 - Sets bottom margin to p80 on sm
+  .mwl-sm-p80 - Sets left margin to p80 on sm
+
+  Styleguide Margin - Width - p80
+  */
+  .mwt-sm-p80,
+.mwy-sm-p80,
+.mwa-sm-p80 {
+    margin-top: var(--margin-width-p80);
+  }
+
+  .mwr-sm-p80,
+.mwx-sm-p80,
+.mwa-sm-p80 {
+    margin-right: var(--margin-width-p80);
+  }
+
+  .mwb-sm-p80,
+.mwy-sm-p80,
+.mwa-sm-p80 {
+    margin-bottom: var(--margin-width-p80);
+  }
+
+  .mwl-sm-p80,
+.mwx-sm-p80,
+.mwa-sm-p80 {
+    margin-left: var(--margin-width-p80);
+  }
+
+  /*
+  .mw*r-sm-p80
+
+  Sets the margin of element to negative value of the css var for p80 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p80 - Sets all margins to mp80 on sm
+  .mwxr-sm-p80 - Sets left and right margins to mp80 on sm
+  .mwyr-sm-p80 - Sets top and bottom margins to mp80 on sm
+  .mwtr-sm-p80 - Sets top margin to mp80 on sm
+  .mwrr-sm-p80 - Sets right margin to mp80 on sm
+  .mwbr-sm-p80 - Sets bottom margin to mp80 on sm
+  .mwlr-sm-p80 - Sets left margin to mp80 on sm
+
+  Styleguide Margin - Width - mp80
+  */
+  .mwtr-sm-p80,
+.mwyr-sm-p80,
+.mwar-sm-p80 {
+    margin-top: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwrr-sm-p80,
+.mwxr-sm-p80,
+.mwar-sm-p80 {
+    margin-right: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwbr-sm-p80,
+.mwyr-sm-p80,
+.mwar-sm-p80 {
+    margin-bottom: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwlr-sm-p80,
+.mwxr-sm-p80,
+.mwar-sm-p80 {
+    margin-left: calc(-1 * var(--margin-width-p80));
+  }
+
+  /*
+  .mw*-sm-p90
+
+  Sets the margin of element to css var for p90 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p90 - Sets all margins to p90 on sm
+  .mwx-sm-p90 - Sets left and right margins to p90 on sm
+  .mwy-sm-p90 - Sets top and bottom margins to p90 on sm
+  .mwt-sm-p90 - Sets top margin to p90 on sm
+  .mwr-sm-p90 - Sets right margin to p90 on sm
+  .mwb-sm-p90 - Sets bottom margin to p90 on sm
+  .mwl-sm-p90 - Sets left margin to p90 on sm
+
+  Styleguide Margin - Width - p90
+  */
+  .mwt-sm-p90,
+.mwy-sm-p90,
+.mwa-sm-p90 {
+    margin-top: var(--margin-width-p90);
+  }
+
+  .mwr-sm-p90,
+.mwx-sm-p90,
+.mwa-sm-p90 {
+    margin-right: var(--margin-width-p90);
+  }
+
+  .mwb-sm-p90,
+.mwy-sm-p90,
+.mwa-sm-p90 {
+    margin-bottom: var(--margin-width-p90);
+  }
+
+  .mwl-sm-p90,
+.mwx-sm-p90,
+.mwa-sm-p90 {
+    margin-left: var(--margin-width-p90);
+  }
+
+  /*
+  .mw*r-sm-p90
+
+  Sets the margin of element to negative value of the css var for p90 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p90 - Sets all margins to mp90 on sm
+  .mwxr-sm-p90 - Sets left and right margins to mp90 on sm
+  .mwyr-sm-p90 - Sets top and bottom margins to mp90 on sm
+  .mwtr-sm-p90 - Sets top margin to mp90 on sm
+  .mwrr-sm-p90 - Sets right margin to mp90 on sm
+  .mwbr-sm-p90 - Sets bottom margin to mp90 on sm
+  .mwlr-sm-p90 - Sets left margin to mp90 on sm
+
+  Styleguide Margin - Width - mp90
+  */
+  .mwtr-sm-p90,
+.mwyr-sm-p90,
+.mwar-sm-p90 {
+    margin-top: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwrr-sm-p90,
+.mwxr-sm-p90,
+.mwar-sm-p90 {
+    margin-right: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwbr-sm-p90,
+.mwyr-sm-p90,
+.mwar-sm-p90 {
+    margin-bottom: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwlr-sm-p90,
+.mwxr-sm-p90,
+.mwar-sm-p90 {
+    margin-left: calc(-1 * var(--margin-width-p90));
+  }
+
+  /*
+  .mw*-sm-p100
+
+  Sets the margin of element to css var for p100 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-sm-p100 - Sets all margins to p100 on sm
+  .mwx-sm-p100 - Sets left and right margins to p100 on sm
+  .mwy-sm-p100 - Sets top and bottom margins to p100 on sm
+  .mwt-sm-p100 - Sets top margin to p100 on sm
+  .mwr-sm-p100 - Sets right margin to p100 on sm
+  .mwb-sm-p100 - Sets bottom margin to p100 on sm
+  .mwl-sm-p100 - Sets left margin to p100 on sm
+
+  Styleguide Margin - Width - p100
+  */
+  .mwt-sm-p100,
+.mwy-sm-p100,
+.mwa-sm-p100 {
+    margin-top: var(--margin-width-p100);
+  }
+
+  .mwr-sm-p100,
+.mwx-sm-p100,
+.mwa-sm-p100 {
+    margin-right: var(--margin-width-p100);
+  }
+
+  .mwb-sm-p100,
+.mwy-sm-p100,
+.mwa-sm-p100 {
+    margin-bottom: var(--margin-width-p100);
+  }
+
+  .mwl-sm-p100,
+.mwx-sm-p100,
+.mwa-sm-p100 {
+    margin-left: var(--margin-width-p100);
+  }
+
+  /*
+  .mw*r-sm-p100
+
+  Sets the margin of element to negative value of the css var for p100 on sm.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-sm-p100 - Sets all margins to mp100 on sm
+  .mwxr-sm-p100 - Sets left and right margins to mp100 on sm
+  .mwyr-sm-p100 - Sets top and bottom margins to mp100 on sm
+  .mwtr-sm-p100 - Sets top margin to mp100 on sm
+  .mwrr-sm-p100 - Sets right margin to mp100 on sm
+  .mwbr-sm-p100 - Sets bottom margin to mp100 on sm
+  .mwlr-sm-p100 - Sets left margin to mp100 on sm
+
+  Styleguide Margin - Width - mp100
+  */
+  .mwtr-sm-p100,
+.mwyr-sm-p100,
+.mwar-sm-p100 {
+    margin-top: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwrr-sm-p100,
+.mwxr-sm-p100,
+.mwar-sm-p100 {
+    margin-right: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwbr-sm-p100,
+.mwyr-sm-p100,
+.mwar-sm-p100 {
+    margin-bottom: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwlr-sm-p100,
+.mwxr-sm-p100,
+.mwar-sm-p100 {
+    margin-left: calc(-1 * var(--margin-width-p100));
   }
 }
 @media (min-width: 75em) {
@@ -11776,6 +14428,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-md-0
+
+  Sets the margin of element to negative value of the css var for 0 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-0 - Sets all margins to m0 on md
+  .mwxr-md-0 - Sets left and right margins to m0 on md
+  .mwyr-md-0 - Sets top and bottom margins to m0 on md
+  .mwtr-md-0 - Sets top margin to m0 on md
+  .mwrr-md-0 - Sets right margin to m0 on md
+  .mwbr-md-0 - Sets bottom margin to m0 on md
+  .mwlr-md-0 - Sets left margin to m0 on md
+
+  Styleguide Margin - Width - m0
+  */
+  .mwtr-md-0,
+.mwyr-md-0,
+.mwar-md-0 {
+    margin-top: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwrr-md-0,
+.mwxr-md-0,
+.mwar-md-0 {
+    margin-right: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwbr-md-0,
+.mwyr-md-0,
+.mwar-md-0 {
+    margin-bottom: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwlr-md-0,
+.mwxr-md-0,
+.mwar-md-0 {
+    margin-left: calc(-1 * var(--margin-width-0));
+  }
+
+  /*
   .mw*-md-1
 
   Sets the margin of element to css var for 1 on md.
@@ -11815,6 +14509,48 @@ Styleguide Margin - Width - 7
 .mwx-md-1,
 .mwa-md-1 {
     margin-left: var(--margin-width-1);
+  }
+
+  /*
+  .mw*r-md-1
+
+  Sets the margin of element to negative value of the css var for 1 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-1 - Sets all margins to m1 on md
+  .mwxr-md-1 - Sets left and right margins to m1 on md
+  .mwyr-md-1 - Sets top and bottom margins to m1 on md
+  .mwtr-md-1 - Sets top margin to m1 on md
+  .mwrr-md-1 - Sets right margin to m1 on md
+  .mwbr-md-1 - Sets bottom margin to m1 on md
+  .mwlr-md-1 - Sets left margin to m1 on md
+
+  Styleguide Margin - Width - m1
+  */
+  .mwtr-md-1,
+.mwyr-md-1,
+.mwar-md-1 {
+    margin-top: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwrr-md-1,
+.mwxr-md-1,
+.mwar-md-1 {
+    margin-right: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwbr-md-1,
+.mwyr-md-1,
+.mwar-md-1 {
+    margin-bottom: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwlr-md-1,
+.mwxr-md-1,
+.mwar-md-1 {
+    margin-left: calc(-1 * var(--margin-width-1));
   }
 
   /*
@@ -11860,6 +14596,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-md-2
+
+  Sets the margin of element to negative value of the css var for 2 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-2 - Sets all margins to m2 on md
+  .mwxr-md-2 - Sets left and right margins to m2 on md
+  .mwyr-md-2 - Sets top and bottom margins to m2 on md
+  .mwtr-md-2 - Sets top margin to m2 on md
+  .mwrr-md-2 - Sets right margin to m2 on md
+  .mwbr-md-2 - Sets bottom margin to m2 on md
+  .mwlr-md-2 - Sets left margin to m2 on md
+
+  Styleguide Margin - Width - m2
+  */
+  .mwtr-md-2,
+.mwyr-md-2,
+.mwar-md-2 {
+    margin-top: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwrr-md-2,
+.mwxr-md-2,
+.mwar-md-2 {
+    margin-right: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwbr-md-2,
+.mwyr-md-2,
+.mwar-md-2 {
+    margin-bottom: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwlr-md-2,
+.mwxr-md-2,
+.mwar-md-2 {
+    margin-left: calc(-1 * var(--margin-width-2));
+  }
+
+  /*
   .mw*-md-3
 
   Sets the margin of element to css var for 3 on md.
@@ -11899,6 +14677,48 @@ Styleguide Margin - Width - 7
 .mwx-md-3,
 .mwa-md-3 {
     margin-left: var(--margin-width-3);
+  }
+
+  /*
+  .mw*r-md-3
+
+  Sets the margin of element to negative value of the css var for 3 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-3 - Sets all margins to m3 on md
+  .mwxr-md-3 - Sets left and right margins to m3 on md
+  .mwyr-md-3 - Sets top and bottom margins to m3 on md
+  .mwtr-md-3 - Sets top margin to m3 on md
+  .mwrr-md-3 - Sets right margin to m3 on md
+  .mwbr-md-3 - Sets bottom margin to m3 on md
+  .mwlr-md-3 - Sets left margin to m3 on md
+
+  Styleguide Margin - Width - m3
+  */
+  .mwtr-md-3,
+.mwyr-md-3,
+.mwar-md-3 {
+    margin-top: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwrr-md-3,
+.mwxr-md-3,
+.mwar-md-3 {
+    margin-right: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwbr-md-3,
+.mwyr-md-3,
+.mwar-md-3 {
+    margin-bottom: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwlr-md-3,
+.mwxr-md-3,
+.mwar-md-3 {
+    margin-left: calc(-1 * var(--margin-width-3));
   }
 
   /*
@@ -11944,6 +14764,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-md-4
+
+  Sets the margin of element to negative value of the css var for 4 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-4 - Sets all margins to m4 on md
+  .mwxr-md-4 - Sets left and right margins to m4 on md
+  .mwyr-md-4 - Sets top and bottom margins to m4 on md
+  .mwtr-md-4 - Sets top margin to m4 on md
+  .mwrr-md-4 - Sets right margin to m4 on md
+  .mwbr-md-4 - Sets bottom margin to m4 on md
+  .mwlr-md-4 - Sets left margin to m4 on md
+
+  Styleguide Margin - Width - m4
+  */
+  .mwtr-md-4,
+.mwyr-md-4,
+.mwar-md-4 {
+    margin-top: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwrr-md-4,
+.mwxr-md-4,
+.mwar-md-4 {
+    margin-right: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwbr-md-4,
+.mwyr-md-4,
+.mwar-md-4 {
+    margin-bottom: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwlr-md-4,
+.mwxr-md-4,
+.mwar-md-4 {
+    margin-left: calc(-1 * var(--margin-width-4));
+  }
+
+  /*
   .mw*-md-5
 
   Sets the margin of element to css var for 5 on md.
@@ -11983,6 +14845,48 @@ Styleguide Margin - Width - 7
 .mwx-md-5,
 .mwa-md-5 {
     margin-left: var(--margin-width-5);
+  }
+
+  /*
+  .mw*r-md-5
+
+  Sets the margin of element to negative value of the css var for 5 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-5 - Sets all margins to m5 on md
+  .mwxr-md-5 - Sets left and right margins to m5 on md
+  .mwyr-md-5 - Sets top and bottom margins to m5 on md
+  .mwtr-md-5 - Sets top margin to m5 on md
+  .mwrr-md-5 - Sets right margin to m5 on md
+  .mwbr-md-5 - Sets bottom margin to m5 on md
+  .mwlr-md-5 - Sets left margin to m5 on md
+
+  Styleguide Margin - Width - m5
+  */
+  .mwtr-md-5,
+.mwyr-md-5,
+.mwar-md-5 {
+    margin-top: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwrr-md-5,
+.mwxr-md-5,
+.mwar-md-5 {
+    margin-right: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwbr-md-5,
+.mwyr-md-5,
+.mwar-md-5 {
+    margin-bottom: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwlr-md-5,
+.mwxr-md-5,
+.mwar-md-5 {
+    margin-left: calc(-1 * var(--margin-width-5));
   }
 
   /*
@@ -12028,6 +14932,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-md-6
+
+  Sets the margin of element to negative value of the css var for 6 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-6 - Sets all margins to m6 on md
+  .mwxr-md-6 - Sets left and right margins to m6 on md
+  .mwyr-md-6 - Sets top and bottom margins to m6 on md
+  .mwtr-md-6 - Sets top margin to m6 on md
+  .mwrr-md-6 - Sets right margin to m6 on md
+  .mwbr-md-6 - Sets bottom margin to m6 on md
+  .mwlr-md-6 - Sets left margin to m6 on md
+
+  Styleguide Margin - Width - m6
+  */
+  .mwtr-md-6,
+.mwyr-md-6,
+.mwar-md-6 {
+    margin-top: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwrr-md-6,
+.mwxr-md-6,
+.mwar-md-6 {
+    margin-right: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwbr-md-6,
+.mwyr-md-6,
+.mwar-md-6 {
+    margin-bottom: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwlr-md-6,
+.mwxr-md-6,
+.mwar-md-6 {
+    margin-left: calc(-1 * var(--margin-width-6));
+  }
+
+  /*
   .mw*-md-7
 
   Sets the margin of element to css var for 7 on md.
@@ -12067,6 +15013,1056 @@ Styleguide Margin - Width - 7
 .mwx-md-7,
 .mwa-md-7 {
     margin-left: var(--margin-width-7);
+  }
+
+  /*
+  .mw*r-md-7
+
+  Sets the margin of element to negative value of the css var for 7 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-7 - Sets all margins to m7 on md
+  .mwxr-md-7 - Sets left and right margins to m7 on md
+  .mwyr-md-7 - Sets top and bottom margins to m7 on md
+  .mwtr-md-7 - Sets top margin to m7 on md
+  .mwrr-md-7 - Sets right margin to m7 on md
+  .mwbr-md-7 - Sets bottom margin to m7 on md
+  .mwlr-md-7 - Sets left margin to m7 on md
+
+  Styleguide Margin - Width - m7
+  */
+  .mwtr-md-7,
+.mwyr-md-7,
+.mwar-md-7 {
+    margin-top: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwrr-md-7,
+.mwxr-md-7,
+.mwar-md-7 {
+    margin-right: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwbr-md-7,
+.mwyr-md-7,
+.mwar-md-7 {
+    margin-bottom: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwlr-md-7,
+.mwxr-md-7,
+.mwar-md-7 {
+    margin-left: calc(-1 * var(--margin-width-7));
+  }
+
+  /*
+  .mw*-md-p10
+
+  Sets the margin of element to css var for p10 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p10 - Sets all margins to p10 on md
+  .mwx-md-p10 - Sets left and right margins to p10 on md
+  .mwy-md-p10 - Sets top and bottom margins to p10 on md
+  .mwt-md-p10 - Sets top margin to p10 on md
+  .mwr-md-p10 - Sets right margin to p10 on md
+  .mwb-md-p10 - Sets bottom margin to p10 on md
+  .mwl-md-p10 - Sets left margin to p10 on md
+
+  Styleguide Margin - Width - p10
+  */
+  .mwt-md-p10,
+.mwy-md-p10,
+.mwa-md-p10 {
+    margin-top: var(--margin-width-p10);
+  }
+
+  .mwr-md-p10,
+.mwx-md-p10,
+.mwa-md-p10 {
+    margin-right: var(--margin-width-p10);
+  }
+
+  .mwb-md-p10,
+.mwy-md-p10,
+.mwa-md-p10 {
+    margin-bottom: var(--margin-width-p10);
+  }
+
+  .mwl-md-p10,
+.mwx-md-p10,
+.mwa-md-p10 {
+    margin-left: var(--margin-width-p10);
+  }
+
+  /*
+  .mw*r-md-p10
+
+  Sets the margin of element to negative value of the css var for p10 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p10 - Sets all margins to mp10 on md
+  .mwxr-md-p10 - Sets left and right margins to mp10 on md
+  .mwyr-md-p10 - Sets top and bottom margins to mp10 on md
+  .mwtr-md-p10 - Sets top margin to mp10 on md
+  .mwrr-md-p10 - Sets right margin to mp10 on md
+  .mwbr-md-p10 - Sets bottom margin to mp10 on md
+  .mwlr-md-p10 - Sets left margin to mp10 on md
+
+  Styleguide Margin - Width - mp10
+  */
+  .mwtr-md-p10,
+.mwyr-md-p10,
+.mwar-md-p10 {
+    margin-top: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwrr-md-p10,
+.mwxr-md-p10,
+.mwar-md-p10 {
+    margin-right: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwbr-md-p10,
+.mwyr-md-p10,
+.mwar-md-p10 {
+    margin-bottom: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwlr-md-p10,
+.mwxr-md-p10,
+.mwar-md-p10 {
+    margin-left: calc(-1 * var(--margin-width-p10));
+  }
+
+  /*
+  .mw*-md-p20
+
+  Sets the margin of element to css var for p20 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p20 - Sets all margins to p20 on md
+  .mwx-md-p20 - Sets left and right margins to p20 on md
+  .mwy-md-p20 - Sets top and bottom margins to p20 on md
+  .mwt-md-p20 - Sets top margin to p20 on md
+  .mwr-md-p20 - Sets right margin to p20 on md
+  .mwb-md-p20 - Sets bottom margin to p20 on md
+  .mwl-md-p20 - Sets left margin to p20 on md
+
+  Styleguide Margin - Width - p20
+  */
+  .mwt-md-p20,
+.mwy-md-p20,
+.mwa-md-p20 {
+    margin-top: var(--margin-width-p20);
+  }
+
+  .mwr-md-p20,
+.mwx-md-p20,
+.mwa-md-p20 {
+    margin-right: var(--margin-width-p20);
+  }
+
+  .mwb-md-p20,
+.mwy-md-p20,
+.mwa-md-p20 {
+    margin-bottom: var(--margin-width-p20);
+  }
+
+  .mwl-md-p20,
+.mwx-md-p20,
+.mwa-md-p20 {
+    margin-left: var(--margin-width-p20);
+  }
+
+  /*
+  .mw*r-md-p20
+
+  Sets the margin of element to negative value of the css var for p20 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p20 - Sets all margins to mp20 on md
+  .mwxr-md-p20 - Sets left and right margins to mp20 on md
+  .mwyr-md-p20 - Sets top and bottom margins to mp20 on md
+  .mwtr-md-p20 - Sets top margin to mp20 on md
+  .mwrr-md-p20 - Sets right margin to mp20 on md
+  .mwbr-md-p20 - Sets bottom margin to mp20 on md
+  .mwlr-md-p20 - Sets left margin to mp20 on md
+
+  Styleguide Margin - Width - mp20
+  */
+  .mwtr-md-p20,
+.mwyr-md-p20,
+.mwar-md-p20 {
+    margin-top: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwrr-md-p20,
+.mwxr-md-p20,
+.mwar-md-p20 {
+    margin-right: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwbr-md-p20,
+.mwyr-md-p20,
+.mwar-md-p20 {
+    margin-bottom: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwlr-md-p20,
+.mwxr-md-p20,
+.mwar-md-p20 {
+    margin-left: calc(-1 * var(--margin-width-p20));
+  }
+
+  /*
+  .mw*-md-p25
+
+  Sets the margin of element to css var for p25 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p25 - Sets all margins to p25 on md
+  .mwx-md-p25 - Sets left and right margins to p25 on md
+  .mwy-md-p25 - Sets top and bottom margins to p25 on md
+  .mwt-md-p25 - Sets top margin to p25 on md
+  .mwr-md-p25 - Sets right margin to p25 on md
+  .mwb-md-p25 - Sets bottom margin to p25 on md
+  .mwl-md-p25 - Sets left margin to p25 on md
+
+  Styleguide Margin - Width - p25
+  */
+  .mwt-md-p25,
+.mwy-md-p25,
+.mwa-md-p25 {
+    margin-top: var(--margin-width-p25);
+  }
+
+  .mwr-md-p25,
+.mwx-md-p25,
+.mwa-md-p25 {
+    margin-right: var(--margin-width-p25);
+  }
+
+  .mwb-md-p25,
+.mwy-md-p25,
+.mwa-md-p25 {
+    margin-bottom: var(--margin-width-p25);
+  }
+
+  .mwl-md-p25,
+.mwx-md-p25,
+.mwa-md-p25 {
+    margin-left: var(--margin-width-p25);
+  }
+
+  /*
+  .mw*r-md-p25
+
+  Sets the margin of element to negative value of the css var for p25 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p25 - Sets all margins to mp25 on md
+  .mwxr-md-p25 - Sets left and right margins to mp25 on md
+  .mwyr-md-p25 - Sets top and bottom margins to mp25 on md
+  .mwtr-md-p25 - Sets top margin to mp25 on md
+  .mwrr-md-p25 - Sets right margin to mp25 on md
+  .mwbr-md-p25 - Sets bottom margin to mp25 on md
+  .mwlr-md-p25 - Sets left margin to mp25 on md
+
+  Styleguide Margin - Width - mp25
+  */
+  .mwtr-md-p25,
+.mwyr-md-p25,
+.mwar-md-p25 {
+    margin-top: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwrr-md-p25,
+.mwxr-md-p25,
+.mwar-md-p25 {
+    margin-right: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwbr-md-p25,
+.mwyr-md-p25,
+.mwar-md-p25 {
+    margin-bottom: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwlr-md-p25,
+.mwxr-md-p25,
+.mwar-md-p25 {
+    margin-left: calc(-1 * var(--margin-width-p25));
+  }
+
+  /*
+  .mw*-md-p30
+
+  Sets the margin of element to css var for p30 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p30 - Sets all margins to p30 on md
+  .mwx-md-p30 - Sets left and right margins to p30 on md
+  .mwy-md-p30 - Sets top and bottom margins to p30 on md
+  .mwt-md-p30 - Sets top margin to p30 on md
+  .mwr-md-p30 - Sets right margin to p30 on md
+  .mwb-md-p30 - Sets bottom margin to p30 on md
+  .mwl-md-p30 - Sets left margin to p30 on md
+
+  Styleguide Margin - Width - p30
+  */
+  .mwt-md-p30,
+.mwy-md-p30,
+.mwa-md-p30 {
+    margin-top: var(--margin-width-p30);
+  }
+
+  .mwr-md-p30,
+.mwx-md-p30,
+.mwa-md-p30 {
+    margin-right: var(--margin-width-p30);
+  }
+
+  .mwb-md-p30,
+.mwy-md-p30,
+.mwa-md-p30 {
+    margin-bottom: var(--margin-width-p30);
+  }
+
+  .mwl-md-p30,
+.mwx-md-p30,
+.mwa-md-p30 {
+    margin-left: var(--margin-width-p30);
+  }
+
+  /*
+  .mw*r-md-p30
+
+  Sets the margin of element to negative value of the css var for p30 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p30 - Sets all margins to mp30 on md
+  .mwxr-md-p30 - Sets left and right margins to mp30 on md
+  .mwyr-md-p30 - Sets top and bottom margins to mp30 on md
+  .mwtr-md-p30 - Sets top margin to mp30 on md
+  .mwrr-md-p30 - Sets right margin to mp30 on md
+  .mwbr-md-p30 - Sets bottom margin to mp30 on md
+  .mwlr-md-p30 - Sets left margin to mp30 on md
+
+  Styleguide Margin - Width - mp30
+  */
+  .mwtr-md-p30,
+.mwyr-md-p30,
+.mwar-md-p30 {
+    margin-top: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwrr-md-p30,
+.mwxr-md-p30,
+.mwar-md-p30 {
+    margin-right: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwbr-md-p30,
+.mwyr-md-p30,
+.mwar-md-p30 {
+    margin-bottom: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwlr-md-p30,
+.mwxr-md-p30,
+.mwar-md-p30 {
+    margin-left: calc(-1 * var(--margin-width-p30));
+  }
+
+  /*
+  .mw*-md-p40
+
+  Sets the margin of element to css var for p40 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p40 - Sets all margins to p40 on md
+  .mwx-md-p40 - Sets left and right margins to p40 on md
+  .mwy-md-p40 - Sets top and bottom margins to p40 on md
+  .mwt-md-p40 - Sets top margin to p40 on md
+  .mwr-md-p40 - Sets right margin to p40 on md
+  .mwb-md-p40 - Sets bottom margin to p40 on md
+  .mwl-md-p40 - Sets left margin to p40 on md
+
+  Styleguide Margin - Width - p40
+  */
+  .mwt-md-p40,
+.mwy-md-p40,
+.mwa-md-p40 {
+    margin-top: var(--margin-width-p40);
+  }
+
+  .mwr-md-p40,
+.mwx-md-p40,
+.mwa-md-p40 {
+    margin-right: var(--margin-width-p40);
+  }
+
+  .mwb-md-p40,
+.mwy-md-p40,
+.mwa-md-p40 {
+    margin-bottom: var(--margin-width-p40);
+  }
+
+  .mwl-md-p40,
+.mwx-md-p40,
+.mwa-md-p40 {
+    margin-left: var(--margin-width-p40);
+  }
+
+  /*
+  .mw*r-md-p40
+
+  Sets the margin of element to negative value of the css var for p40 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p40 - Sets all margins to mp40 on md
+  .mwxr-md-p40 - Sets left and right margins to mp40 on md
+  .mwyr-md-p40 - Sets top and bottom margins to mp40 on md
+  .mwtr-md-p40 - Sets top margin to mp40 on md
+  .mwrr-md-p40 - Sets right margin to mp40 on md
+  .mwbr-md-p40 - Sets bottom margin to mp40 on md
+  .mwlr-md-p40 - Sets left margin to mp40 on md
+
+  Styleguide Margin - Width - mp40
+  */
+  .mwtr-md-p40,
+.mwyr-md-p40,
+.mwar-md-p40 {
+    margin-top: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwrr-md-p40,
+.mwxr-md-p40,
+.mwar-md-p40 {
+    margin-right: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwbr-md-p40,
+.mwyr-md-p40,
+.mwar-md-p40 {
+    margin-bottom: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwlr-md-p40,
+.mwxr-md-p40,
+.mwar-md-p40 {
+    margin-left: calc(-1 * var(--margin-width-p40));
+  }
+
+  /*
+  .mw*-md-p50
+
+  Sets the margin of element to css var for p50 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p50 - Sets all margins to p50 on md
+  .mwx-md-p50 - Sets left and right margins to p50 on md
+  .mwy-md-p50 - Sets top and bottom margins to p50 on md
+  .mwt-md-p50 - Sets top margin to p50 on md
+  .mwr-md-p50 - Sets right margin to p50 on md
+  .mwb-md-p50 - Sets bottom margin to p50 on md
+  .mwl-md-p50 - Sets left margin to p50 on md
+
+  Styleguide Margin - Width - p50
+  */
+  .mwt-md-p50,
+.mwy-md-p50,
+.mwa-md-p50 {
+    margin-top: var(--margin-width-p50);
+  }
+
+  .mwr-md-p50,
+.mwx-md-p50,
+.mwa-md-p50 {
+    margin-right: var(--margin-width-p50);
+  }
+
+  .mwb-md-p50,
+.mwy-md-p50,
+.mwa-md-p50 {
+    margin-bottom: var(--margin-width-p50);
+  }
+
+  .mwl-md-p50,
+.mwx-md-p50,
+.mwa-md-p50 {
+    margin-left: var(--margin-width-p50);
+  }
+
+  /*
+  .mw*r-md-p50
+
+  Sets the margin of element to negative value of the css var for p50 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p50 - Sets all margins to mp50 on md
+  .mwxr-md-p50 - Sets left and right margins to mp50 on md
+  .mwyr-md-p50 - Sets top and bottom margins to mp50 on md
+  .mwtr-md-p50 - Sets top margin to mp50 on md
+  .mwrr-md-p50 - Sets right margin to mp50 on md
+  .mwbr-md-p50 - Sets bottom margin to mp50 on md
+  .mwlr-md-p50 - Sets left margin to mp50 on md
+
+  Styleguide Margin - Width - mp50
+  */
+  .mwtr-md-p50,
+.mwyr-md-p50,
+.mwar-md-p50 {
+    margin-top: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwrr-md-p50,
+.mwxr-md-p50,
+.mwar-md-p50 {
+    margin-right: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwbr-md-p50,
+.mwyr-md-p50,
+.mwar-md-p50 {
+    margin-bottom: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwlr-md-p50,
+.mwxr-md-p50,
+.mwar-md-p50 {
+    margin-left: calc(-1 * var(--margin-width-p50));
+  }
+
+  /*
+  .mw*-md-p60
+
+  Sets the margin of element to css var for p60 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p60 - Sets all margins to p60 on md
+  .mwx-md-p60 - Sets left and right margins to p60 on md
+  .mwy-md-p60 - Sets top and bottom margins to p60 on md
+  .mwt-md-p60 - Sets top margin to p60 on md
+  .mwr-md-p60 - Sets right margin to p60 on md
+  .mwb-md-p60 - Sets bottom margin to p60 on md
+  .mwl-md-p60 - Sets left margin to p60 on md
+
+  Styleguide Margin - Width - p60
+  */
+  .mwt-md-p60,
+.mwy-md-p60,
+.mwa-md-p60 {
+    margin-top: var(--margin-width-p60);
+  }
+
+  .mwr-md-p60,
+.mwx-md-p60,
+.mwa-md-p60 {
+    margin-right: var(--margin-width-p60);
+  }
+
+  .mwb-md-p60,
+.mwy-md-p60,
+.mwa-md-p60 {
+    margin-bottom: var(--margin-width-p60);
+  }
+
+  .mwl-md-p60,
+.mwx-md-p60,
+.mwa-md-p60 {
+    margin-left: var(--margin-width-p60);
+  }
+
+  /*
+  .mw*r-md-p60
+
+  Sets the margin of element to negative value of the css var for p60 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p60 - Sets all margins to mp60 on md
+  .mwxr-md-p60 - Sets left and right margins to mp60 on md
+  .mwyr-md-p60 - Sets top and bottom margins to mp60 on md
+  .mwtr-md-p60 - Sets top margin to mp60 on md
+  .mwrr-md-p60 - Sets right margin to mp60 on md
+  .mwbr-md-p60 - Sets bottom margin to mp60 on md
+  .mwlr-md-p60 - Sets left margin to mp60 on md
+
+  Styleguide Margin - Width - mp60
+  */
+  .mwtr-md-p60,
+.mwyr-md-p60,
+.mwar-md-p60 {
+    margin-top: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwrr-md-p60,
+.mwxr-md-p60,
+.mwar-md-p60 {
+    margin-right: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwbr-md-p60,
+.mwyr-md-p60,
+.mwar-md-p60 {
+    margin-bottom: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwlr-md-p60,
+.mwxr-md-p60,
+.mwar-md-p60 {
+    margin-left: calc(-1 * var(--margin-width-p60));
+  }
+
+  /*
+  .mw*-md-p70
+
+  Sets the margin of element to css var for p70 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p70 - Sets all margins to p70 on md
+  .mwx-md-p70 - Sets left and right margins to p70 on md
+  .mwy-md-p70 - Sets top and bottom margins to p70 on md
+  .mwt-md-p70 - Sets top margin to p70 on md
+  .mwr-md-p70 - Sets right margin to p70 on md
+  .mwb-md-p70 - Sets bottom margin to p70 on md
+  .mwl-md-p70 - Sets left margin to p70 on md
+
+  Styleguide Margin - Width - p70
+  */
+  .mwt-md-p70,
+.mwy-md-p70,
+.mwa-md-p70 {
+    margin-top: var(--margin-width-p70);
+  }
+
+  .mwr-md-p70,
+.mwx-md-p70,
+.mwa-md-p70 {
+    margin-right: var(--margin-width-p70);
+  }
+
+  .mwb-md-p70,
+.mwy-md-p70,
+.mwa-md-p70 {
+    margin-bottom: var(--margin-width-p70);
+  }
+
+  .mwl-md-p70,
+.mwx-md-p70,
+.mwa-md-p70 {
+    margin-left: var(--margin-width-p70);
+  }
+
+  /*
+  .mw*r-md-p70
+
+  Sets the margin of element to negative value of the css var for p70 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p70 - Sets all margins to mp70 on md
+  .mwxr-md-p70 - Sets left and right margins to mp70 on md
+  .mwyr-md-p70 - Sets top and bottom margins to mp70 on md
+  .mwtr-md-p70 - Sets top margin to mp70 on md
+  .mwrr-md-p70 - Sets right margin to mp70 on md
+  .mwbr-md-p70 - Sets bottom margin to mp70 on md
+  .mwlr-md-p70 - Sets left margin to mp70 on md
+
+  Styleguide Margin - Width - mp70
+  */
+  .mwtr-md-p70,
+.mwyr-md-p70,
+.mwar-md-p70 {
+    margin-top: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwrr-md-p70,
+.mwxr-md-p70,
+.mwar-md-p70 {
+    margin-right: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwbr-md-p70,
+.mwyr-md-p70,
+.mwar-md-p70 {
+    margin-bottom: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwlr-md-p70,
+.mwxr-md-p70,
+.mwar-md-p70 {
+    margin-left: calc(-1 * var(--margin-width-p70));
+  }
+
+  /*
+  .mw*-md-p75
+
+  Sets the margin of element to css var for p75 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p75 - Sets all margins to p75 on md
+  .mwx-md-p75 - Sets left and right margins to p75 on md
+  .mwy-md-p75 - Sets top and bottom margins to p75 on md
+  .mwt-md-p75 - Sets top margin to p75 on md
+  .mwr-md-p75 - Sets right margin to p75 on md
+  .mwb-md-p75 - Sets bottom margin to p75 on md
+  .mwl-md-p75 - Sets left margin to p75 on md
+
+  Styleguide Margin - Width - p75
+  */
+  .mwt-md-p75,
+.mwy-md-p75,
+.mwa-md-p75 {
+    margin-top: var(--margin-width-p75);
+  }
+
+  .mwr-md-p75,
+.mwx-md-p75,
+.mwa-md-p75 {
+    margin-right: var(--margin-width-p75);
+  }
+
+  .mwb-md-p75,
+.mwy-md-p75,
+.mwa-md-p75 {
+    margin-bottom: var(--margin-width-p75);
+  }
+
+  .mwl-md-p75,
+.mwx-md-p75,
+.mwa-md-p75 {
+    margin-left: var(--margin-width-p75);
+  }
+
+  /*
+  .mw*r-md-p75
+
+  Sets the margin of element to negative value of the css var for p75 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p75 - Sets all margins to mp75 on md
+  .mwxr-md-p75 - Sets left and right margins to mp75 on md
+  .mwyr-md-p75 - Sets top and bottom margins to mp75 on md
+  .mwtr-md-p75 - Sets top margin to mp75 on md
+  .mwrr-md-p75 - Sets right margin to mp75 on md
+  .mwbr-md-p75 - Sets bottom margin to mp75 on md
+  .mwlr-md-p75 - Sets left margin to mp75 on md
+
+  Styleguide Margin - Width - mp75
+  */
+  .mwtr-md-p75,
+.mwyr-md-p75,
+.mwar-md-p75 {
+    margin-top: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwrr-md-p75,
+.mwxr-md-p75,
+.mwar-md-p75 {
+    margin-right: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwbr-md-p75,
+.mwyr-md-p75,
+.mwar-md-p75 {
+    margin-bottom: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwlr-md-p75,
+.mwxr-md-p75,
+.mwar-md-p75 {
+    margin-left: calc(-1 * var(--margin-width-p75));
+  }
+
+  /*
+  .mw*-md-p80
+
+  Sets the margin of element to css var for p80 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p80 - Sets all margins to p80 on md
+  .mwx-md-p80 - Sets left and right margins to p80 on md
+  .mwy-md-p80 - Sets top and bottom margins to p80 on md
+  .mwt-md-p80 - Sets top margin to p80 on md
+  .mwr-md-p80 - Sets right margin to p80 on md
+  .mwb-md-p80 - Sets bottom margin to p80 on md
+  .mwl-md-p80 - Sets left margin to p80 on md
+
+  Styleguide Margin - Width - p80
+  */
+  .mwt-md-p80,
+.mwy-md-p80,
+.mwa-md-p80 {
+    margin-top: var(--margin-width-p80);
+  }
+
+  .mwr-md-p80,
+.mwx-md-p80,
+.mwa-md-p80 {
+    margin-right: var(--margin-width-p80);
+  }
+
+  .mwb-md-p80,
+.mwy-md-p80,
+.mwa-md-p80 {
+    margin-bottom: var(--margin-width-p80);
+  }
+
+  .mwl-md-p80,
+.mwx-md-p80,
+.mwa-md-p80 {
+    margin-left: var(--margin-width-p80);
+  }
+
+  /*
+  .mw*r-md-p80
+
+  Sets the margin of element to negative value of the css var for p80 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p80 - Sets all margins to mp80 on md
+  .mwxr-md-p80 - Sets left and right margins to mp80 on md
+  .mwyr-md-p80 - Sets top and bottom margins to mp80 on md
+  .mwtr-md-p80 - Sets top margin to mp80 on md
+  .mwrr-md-p80 - Sets right margin to mp80 on md
+  .mwbr-md-p80 - Sets bottom margin to mp80 on md
+  .mwlr-md-p80 - Sets left margin to mp80 on md
+
+  Styleguide Margin - Width - mp80
+  */
+  .mwtr-md-p80,
+.mwyr-md-p80,
+.mwar-md-p80 {
+    margin-top: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwrr-md-p80,
+.mwxr-md-p80,
+.mwar-md-p80 {
+    margin-right: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwbr-md-p80,
+.mwyr-md-p80,
+.mwar-md-p80 {
+    margin-bottom: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwlr-md-p80,
+.mwxr-md-p80,
+.mwar-md-p80 {
+    margin-left: calc(-1 * var(--margin-width-p80));
+  }
+
+  /*
+  .mw*-md-p90
+
+  Sets the margin of element to css var for p90 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p90 - Sets all margins to p90 on md
+  .mwx-md-p90 - Sets left and right margins to p90 on md
+  .mwy-md-p90 - Sets top and bottom margins to p90 on md
+  .mwt-md-p90 - Sets top margin to p90 on md
+  .mwr-md-p90 - Sets right margin to p90 on md
+  .mwb-md-p90 - Sets bottom margin to p90 on md
+  .mwl-md-p90 - Sets left margin to p90 on md
+
+  Styleguide Margin - Width - p90
+  */
+  .mwt-md-p90,
+.mwy-md-p90,
+.mwa-md-p90 {
+    margin-top: var(--margin-width-p90);
+  }
+
+  .mwr-md-p90,
+.mwx-md-p90,
+.mwa-md-p90 {
+    margin-right: var(--margin-width-p90);
+  }
+
+  .mwb-md-p90,
+.mwy-md-p90,
+.mwa-md-p90 {
+    margin-bottom: var(--margin-width-p90);
+  }
+
+  .mwl-md-p90,
+.mwx-md-p90,
+.mwa-md-p90 {
+    margin-left: var(--margin-width-p90);
+  }
+
+  /*
+  .mw*r-md-p90
+
+  Sets the margin of element to negative value of the css var for p90 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p90 - Sets all margins to mp90 on md
+  .mwxr-md-p90 - Sets left and right margins to mp90 on md
+  .mwyr-md-p90 - Sets top and bottom margins to mp90 on md
+  .mwtr-md-p90 - Sets top margin to mp90 on md
+  .mwrr-md-p90 - Sets right margin to mp90 on md
+  .mwbr-md-p90 - Sets bottom margin to mp90 on md
+  .mwlr-md-p90 - Sets left margin to mp90 on md
+
+  Styleguide Margin - Width - mp90
+  */
+  .mwtr-md-p90,
+.mwyr-md-p90,
+.mwar-md-p90 {
+    margin-top: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwrr-md-p90,
+.mwxr-md-p90,
+.mwar-md-p90 {
+    margin-right: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwbr-md-p90,
+.mwyr-md-p90,
+.mwar-md-p90 {
+    margin-bottom: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwlr-md-p90,
+.mwxr-md-p90,
+.mwar-md-p90 {
+    margin-left: calc(-1 * var(--margin-width-p90));
+  }
+
+  /*
+  .mw*-md-p100
+
+  Sets the margin of element to css var for p100 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-md-p100 - Sets all margins to p100 on md
+  .mwx-md-p100 - Sets left and right margins to p100 on md
+  .mwy-md-p100 - Sets top and bottom margins to p100 on md
+  .mwt-md-p100 - Sets top margin to p100 on md
+  .mwr-md-p100 - Sets right margin to p100 on md
+  .mwb-md-p100 - Sets bottom margin to p100 on md
+  .mwl-md-p100 - Sets left margin to p100 on md
+
+  Styleguide Margin - Width - p100
+  */
+  .mwt-md-p100,
+.mwy-md-p100,
+.mwa-md-p100 {
+    margin-top: var(--margin-width-p100);
+  }
+
+  .mwr-md-p100,
+.mwx-md-p100,
+.mwa-md-p100 {
+    margin-right: var(--margin-width-p100);
+  }
+
+  .mwb-md-p100,
+.mwy-md-p100,
+.mwa-md-p100 {
+    margin-bottom: var(--margin-width-p100);
+  }
+
+  .mwl-md-p100,
+.mwx-md-p100,
+.mwa-md-p100 {
+    margin-left: var(--margin-width-p100);
+  }
+
+  /*
+  .mw*r-md-p100
+
+  Sets the margin of element to negative value of the css var for p100 on md.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-md-p100 - Sets all margins to mp100 on md
+  .mwxr-md-p100 - Sets left and right margins to mp100 on md
+  .mwyr-md-p100 - Sets top and bottom margins to mp100 on md
+  .mwtr-md-p100 - Sets top margin to mp100 on md
+  .mwrr-md-p100 - Sets right margin to mp100 on md
+  .mwbr-md-p100 - Sets bottom margin to mp100 on md
+  .mwlr-md-p100 - Sets left margin to mp100 on md
+
+  Styleguide Margin - Width - mp100
+  */
+  .mwtr-md-p100,
+.mwyr-md-p100,
+.mwar-md-p100 {
+    margin-top: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwrr-md-p100,
+.mwxr-md-p100,
+.mwar-md-p100 {
+    margin-right: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwbr-md-p100,
+.mwyr-md-p100,
+.mwar-md-p100 {
+    margin-bottom: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwlr-md-p100,
+.mwxr-md-p100,
+.mwar-md-p100 {
+    margin-left: calc(-1 * var(--margin-width-p100));
   }
 }
 @media (min-width: 90em) {
@@ -12113,6 +16109,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-lg-0
+
+  Sets the margin of element to negative value of the css var for 0 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-0 - Sets all margins to m0 on lg
+  .mwxr-lg-0 - Sets left and right margins to m0 on lg
+  .mwyr-lg-0 - Sets top and bottom margins to m0 on lg
+  .mwtr-lg-0 - Sets top margin to m0 on lg
+  .mwrr-lg-0 - Sets right margin to m0 on lg
+  .mwbr-lg-0 - Sets bottom margin to m0 on lg
+  .mwlr-lg-0 - Sets left margin to m0 on lg
+
+  Styleguide Margin - Width - m0
+  */
+  .mwtr-lg-0,
+.mwyr-lg-0,
+.mwar-lg-0 {
+    margin-top: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwrr-lg-0,
+.mwxr-lg-0,
+.mwar-lg-0 {
+    margin-right: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwbr-lg-0,
+.mwyr-lg-0,
+.mwar-lg-0 {
+    margin-bottom: calc(-1 * var(--margin-width-0));
+  }
+
+  .mwlr-lg-0,
+.mwxr-lg-0,
+.mwar-lg-0 {
+    margin-left: calc(-1 * var(--margin-width-0));
+  }
+
+  /*
   .mw*-lg-1
 
   Sets the margin of element to css var for 1 on lg.
@@ -12152,6 +16190,48 @@ Styleguide Margin - Width - 7
 .mwx-lg-1,
 .mwa-lg-1 {
     margin-left: var(--margin-width-1);
+  }
+
+  /*
+  .mw*r-lg-1
+
+  Sets the margin of element to negative value of the css var for 1 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-1 - Sets all margins to m1 on lg
+  .mwxr-lg-1 - Sets left and right margins to m1 on lg
+  .mwyr-lg-1 - Sets top and bottom margins to m1 on lg
+  .mwtr-lg-1 - Sets top margin to m1 on lg
+  .mwrr-lg-1 - Sets right margin to m1 on lg
+  .mwbr-lg-1 - Sets bottom margin to m1 on lg
+  .mwlr-lg-1 - Sets left margin to m1 on lg
+
+  Styleguide Margin - Width - m1
+  */
+  .mwtr-lg-1,
+.mwyr-lg-1,
+.mwar-lg-1 {
+    margin-top: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwrr-lg-1,
+.mwxr-lg-1,
+.mwar-lg-1 {
+    margin-right: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwbr-lg-1,
+.mwyr-lg-1,
+.mwar-lg-1 {
+    margin-bottom: calc(-1 * var(--margin-width-1));
+  }
+
+  .mwlr-lg-1,
+.mwxr-lg-1,
+.mwar-lg-1 {
+    margin-left: calc(-1 * var(--margin-width-1));
   }
 
   /*
@@ -12197,6 +16277,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-lg-2
+
+  Sets the margin of element to negative value of the css var for 2 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-2 - Sets all margins to m2 on lg
+  .mwxr-lg-2 - Sets left and right margins to m2 on lg
+  .mwyr-lg-2 - Sets top and bottom margins to m2 on lg
+  .mwtr-lg-2 - Sets top margin to m2 on lg
+  .mwrr-lg-2 - Sets right margin to m2 on lg
+  .mwbr-lg-2 - Sets bottom margin to m2 on lg
+  .mwlr-lg-2 - Sets left margin to m2 on lg
+
+  Styleguide Margin - Width - m2
+  */
+  .mwtr-lg-2,
+.mwyr-lg-2,
+.mwar-lg-2 {
+    margin-top: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwrr-lg-2,
+.mwxr-lg-2,
+.mwar-lg-2 {
+    margin-right: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwbr-lg-2,
+.mwyr-lg-2,
+.mwar-lg-2 {
+    margin-bottom: calc(-1 * var(--margin-width-2));
+  }
+
+  .mwlr-lg-2,
+.mwxr-lg-2,
+.mwar-lg-2 {
+    margin-left: calc(-1 * var(--margin-width-2));
+  }
+
+  /*
   .mw*-lg-3
 
   Sets the margin of element to css var for 3 on lg.
@@ -12236,6 +16358,48 @@ Styleguide Margin - Width - 7
 .mwx-lg-3,
 .mwa-lg-3 {
     margin-left: var(--margin-width-3);
+  }
+
+  /*
+  .mw*r-lg-3
+
+  Sets the margin of element to negative value of the css var for 3 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-3 - Sets all margins to m3 on lg
+  .mwxr-lg-3 - Sets left and right margins to m3 on lg
+  .mwyr-lg-3 - Sets top and bottom margins to m3 on lg
+  .mwtr-lg-3 - Sets top margin to m3 on lg
+  .mwrr-lg-3 - Sets right margin to m3 on lg
+  .mwbr-lg-3 - Sets bottom margin to m3 on lg
+  .mwlr-lg-3 - Sets left margin to m3 on lg
+
+  Styleguide Margin - Width - m3
+  */
+  .mwtr-lg-3,
+.mwyr-lg-3,
+.mwar-lg-3 {
+    margin-top: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwrr-lg-3,
+.mwxr-lg-3,
+.mwar-lg-3 {
+    margin-right: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwbr-lg-3,
+.mwyr-lg-3,
+.mwar-lg-3 {
+    margin-bottom: calc(-1 * var(--margin-width-3));
+  }
+
+  .mwlr-lg-3,
+.mwxr-lg-3,
+.mwar-lg-3 {
+    margin-left: calc(-1 * var(--margin-width-3));
   }
 
   /*
@@ -12281,6 +16445,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-lg-4
+
+  Sets the margin of element to negative value of the css var for 4 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-4 - Sets all margins to m4 on lg
+  .mwxr-lg-4 - Sets left and right margins to m4 on lg
+  .mwyr-lg-4 - Sets top and bottom margins to m4 on lg
+  .mwtr-lg-4 - Sets top margin to m4 on lg
+  .mwrr-lg-4 - Sets right margin to m4 on lg
+  .mwbr-lg-4 - Sets bottom margin to m4 on lg
+  .mwlr-lg-4 - Sets left margin to m4 on lg
+
+  Styleguide Margin - Width - m4
+  */
+  .mwtr-lg-4,
+.mwyr-lg-4,
+.mwar-lg-4 {
+    margin-top: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwrr-lg-4,
+.mwxr-lg-4,
+.mwar-lg-4 {
+    margin-right: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwbr-lg-4,
+.mwyr-lg-4,
+.mwar-lg-4 {
+    margin-bottom: calc(-1 * var(--margin-width-4));
+  }
+
+  .mwlr-lg-4,
+.mwxr-lg-4,
+.mwar-lg-4 {
+    margin-left: calc(-1 * var(--margin-width-4));
+  }
+
+  /*
   .mw*-lg-5
 
   Sets the margin of element to css var for 5 on lg.
@@ -12320,6 +16526,48 @@ Styleguide Margin - Width - 7
 .mwx-lg-5,
 .mwa-lg-5 {
     margin-left: var(--margin-width-5);
+  }
+
+  /*
+  .mw*r-lg-5
+
+  Sets the margin of element to negative value of the css var for 5 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-5 - Sets all margins to m5 on lg
+  .mwxr-lg-5 - Sets left and right margins to m5 on lg
+  .mwyr-lg-5 - Sets top and bottom margins to m5 on lg
+  .mwtr-lg-5 - Sets top margin to m5 on lg
+  .mwrr-lg-5 - Sets right margin to m5 on lg
+  .mwbr-lg-5 - Sets bottom margin to m5 on lg
+  .mwlr-lg-5 - Sets left margin to m5 on lg
+
+  Styleguide Margin - Width - m5
+  */
+  .mwtr-lg-5,
+.mwyr-lg-5,
+.mwar-lg-5 {
+    margin-top: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwrr-lg-5,
+.mwxr-lg-5,
+.mwar-lg-5 {
+    margin-right: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwbr-lg-5,
+.mwyr-lg-5,
+.mwar-lg-5 {
+    margin-bottom: calc(-1 * var(--margin-width-5));
+  }
+
+  .mwlr-lg-5,
+.mwxr-lg-5,
+.mwar-lg-5 {
+    margin-left: calc(-1 * var(--margin-width-5));
   }
 
   /*
@@ -12365,6 +16613,48 @@ Styleguide Margin - Width - 7
   }
 
   /*
+  .mw*r-lg-6
+
+  Sets the margin of element to negative value of the css var for 6 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-6 - Sets all margins to m6 on lg
+  .mwxr-lg-6 - Sets left and right margins to m6 on lg
+  .mwyr-lg-6 - Sets top and bottom margins to m6 on lg
+  .mwtr-lg-6 - Sets top margin to m6 on lg
+  .mwrr-lg-6 - Sets right margin to m6 on lg
+  .mwbr-lg-6 - Sets bottom margin to m6 on lg
+  .mwlr-lg-6 - Sets left margin to m6 on lg
+
+  Styleguide Margin - Width - m6
+  */
+  .mwtr-lg-6,
+.mwyr-lg-6,
+.mwar-lg-6 {
+    margin-top: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwrr-lg-6,
+.mwxr-lg-6,
+.mwar-lg-6 {
+    margin-right: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwbr-lg-6,
+.mwyr-lg-6,
+.mwar-lg-6 {
+    margin-bottom: calc(-1 * var(--margin-width-6));
+  }
+
+  .mwlr-lg-6,
+.mwxr-lg-6,
+.mwar-lg-6 {
+    margin-left: calc(-1 * var(--margin-width-6));
+  }
+
+  /*
   .mw*-lg-7
 
   Sets the margin of element to css var for 7 on lg.
@@ -12404,6 +16694,1056 @@ Styleguide Margin - Width - 7
 .mwx-lg-7,
 .mwa-lg-7 {
     margin-left: var(--margin-width-7);
+  }
+
+  /*
+  .mw*r-lg-7
+
+  Sets the margin of element to negative value of the css var for 7 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-7 - Sets all margins to m7 on lg
+  .mwxr-lg-7 - Sets left and right margins to m7 on lg
+  .mwyr-lg-7 - Sets top and bottom margins to m7 on lg
+  .mwtr-lg-7 - Sets top margin to m7 on lg
+  .mwrr-lg-7 - Sets right margin to m7 on lg
+  .mwbr-lg-7 - Sets bottom margin to m7 on lg
+  .mwlr-lg-7 - Sets left margin to m7 on lg
+
+  Styleguide Margin - Width - m7
+  */
+  .mwtr-lg-7,
+.mwyr-lg-7,
+.mwar-lg-7 {
+    margin-top: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwrr-lg-7,
+.mwxr-lg-7,
+.mwar-lg-7 {
+    margin-right: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwbr-lg-7,
+.mwyr-lg-7,
+.mwar-lg-7 {
+    margin-bottom: calc(-1 * var(--margin-width-7));
+  }
+
+  .mwlr-lg-7,
+.mwxr-lg-7,
+.mwar-lg-7 {
+    margin-left: calc(-1 * var(--margin-width-7));
+  }
+
+  /*
+  .mw*-lg-p10
+
+  Sets the margin of element to css var for p10 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p10 - Sets all margins to p10 on lg
+  .mwx-lg-p10 - Sets left and right margins to p10 on lg
+  .mwy-lg-p10 - Sets top and bottom margins to p10 on lg
+  .mwt-lg-p10 - Sets top margin to p10 on lg
+  .mwr-lg-p10 - Sets right margin to p10 on lg
+  .mwb-lg-p10 - Sets bottom margin to p10 on lg
+  .mwl-lg-p10 - Sets left margin to p10 on lg
+
+  Styleguide Margin - Width - p10
+  */
+  .mwt-lg-p10,
+.mwy-lg-p10,
+.mwa-lg-p10 {
+    margin-top: var(--margin-width-p10);
+  }
+
+  .mwr-lg-p10,
+.mwx-lg-p10,
+.mwa-lg-p10 {
+    margin-right: var(--margin-width-p10);
+  }
+
+  .mwb-lg-p10,
+.mwy-lg-p10,
+.mwa-lg-p10 {
+    margin-bottom: var(--margin-width-p10);
+  }
+
+  .mwl-lg-p10,
+.mwx-lg-p10,
+.mwa-lg-p10 {
+    margin-left: var(--margin-width-p10);
+  }
+
+  /*
+  .mw*r-lg-p10
+
+  Sets the margin of element to negative value of the css var for p10 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p10 - Sets all margins to mp10 on lg
+  .mwxr-lg-p10 - Sets left and right margins to mp10 on lg
+  .mwyr-lg-p10 - Sets top and bottom margins to mp10 on lg
+  .mwtr-lg-p10 - Sets top margin to mp10 on lg
+  .mwrr-lg-p10 - Sets right margin to mp10 on lg
+  .mwbr-lg-p10 - Sets bottom margin to mp10 on lg
+  .mwlr-lg-p10 - Sets left margin to mp10 on lg
+
+  Styleguide Margin - Width - mp10
+  */
+  .mwtr-lg-p10,
+.mwyr-lg-p10,
+.mwar-lg-p10 {
+    margin-top: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwrr-lg-p10,
+.mwxr-lg-p10,
+.mwar-lg-p10 {
+    margin-right: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwbr-lg-p10,
+.mwyr-lg-p10,
+.mwar-lg-p10 {
+    margin-bottom: calc(-1 * var(--margin-width-p10));
+  }
+
+  .mwlr-lg-p10,
+.mwxr-lg-p10,
+.mwar-lg-p10 {
+    margin-left: calc(-1 * var(--margin-width-p10));
+  }
+
+  /*
+  .mw*-lg-p20
+
+  Sets the margin of element to css var for p20 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p20 - Sets all margins to p20 on lg
+  .mwx-lg-p20 - Sets left and right margins to p20 on lg
+  .mwy-lg-p20 - Sets top and bottom margins to p20 on lg
+  .mwt-lg-p20 - Sets top margin to p20 on lg
+  .mwr-lg-p20 - Sets right margin to p20 on lg
+  .mwb-lg-p20 - Sets bottom margin to p20 on lg
+  .mwl-lg-p20 - Sets left margin to p20 on lg
+
+  Styleguide Margin - Width - p20
+  */
+  .mwt-lg-p20,
+.mwy-lg-p20,
+.mwa-lg-p20 {
+    margin-top: var(--margin-width-p20);
+  }
+
+  .mwr-lg-p20,
+.mwx-lg-p20,
+.mwa-lg-p20 {
+    margin-right: var(--margin-width-p20);
+  }
+
+  .mwb-lg-p20,
+.mwy-lg-p20,
+.mwa-lg-p20 {
+    margin-bottom: var(--margin-width-p20);
+  }
+
+  .mwl-lg-p20,
+.mwx-lg-p20,
+.mwa-lg-p20 {
+    margin-left: var(--margin-width-p20);
+  }
+
+  /*
+  .mw*r-lg-p20
+
+  Sets the margin of element to negative value of the css var for p20 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p20 - Sets all margins to mp20 on lg
+  .mwxr-lg-p20 - Sets left and right margins to mp20 on lg
+  .mwyr-lg-p20 - Sets top and bottom margins to mp20 on lg
+  .mwtr-lg-p20 - Sets top margin to mp20 on lg
+  .mwrr-lg-p20 - Sets right margin to mp20 on lg
+  .mwbr-lg-p20 - Sets bottom margin to mp20 on lg
+  .mwlr-lg-p20 - Sets left margin to mp20 on lg
+
+  Styleguide Margin - Width - mp20
+  */
+  .mwtr-lg-p20,
+.mwyr-lg-p20,
+.mwar-lg-p20 {
+    margin-top: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwrr-lg-p20,
+.mwxr-lg-p20,
+.mwar-lg-p20 {
+    margin-right: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwbr-lg-p20,
+.mwyr-lg-p20,
+.mwar-lg-p20 {
+    margin-bottom: calc(-1 * var(--margin-width-p20));
+  }
+
+  .mwlr-lg-p20,
+.mwxr-lg-p20,
+.mwar-lg-p20 {
+    margin-left: calc(-1 * var(--margin-width-p20));
+  }
+
+  /*
+  .mw*-lg-p25
+
+  Sets the margin of element to css var for p25 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p25 - Sets all margins to p25 on lg
+  .mwx-lg-p25 - Sets left and right margins to p25 on lg
+  .mwy-lg-p25 - Sets top and bottom margins to p25 on lg
+  .mwt-lg-p25 - Sets top margin to p25 on lg
+  .mwr-lg-p25 - Sets right margin to p25 on lg
+  .mwb-lg-p25 - Sets bottom margin to p25 on lg
+  .mwl-lg-p25 - Sets left margin to p25 on lg
+
+  Styleguide Margin - Width - p25
+  */
+  .mwt-lg-p25,
+.mwy-lg-p25,
+.mwa-lg-p25 {
+    margin-top: var(--margin-width-p25);
+  }
+
+  .mwr-lg-p25,
+.mwx-lg-p25,
+.mwa-lg-p25 {
+    margin-right: var(--margin-width-p25);
+  }
+
+  .mwb-lg-p25,
+.mwy-lg-p25,
+.mwa-lg-p25 {
+    margin-bottom: var(--margin-width-p25);
+  }
+
+  .mwl-lg-p25,
+.mwx-lg-p25,
+.mwa-lg-p25 {
+    margin-left: var(--margin-width-p25);
+  }
+
+  /*
+  .mw*r-lg-p25
+
+  Sets the margin of element to negative value of the css var for p25 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p25 - Sets all margins to mp25 on lg
+  .mwxr-lg-p25 - Sets left and right margins to mp25 on lg
+  .mwyr-lg-p25 - Sets top and bottom margins to mp25 on lg
+  .mwtr-lg-p25 - Sets top margin to mp25 on lg
+  .mwrr-lg-p25 - Sets right margin to mp25 on lg
+  .mwbr-lg-p25 - Sets bottom margin to mp25 on lg
+  .mwlr-lg-p25 - Sets left margin to mp25 on lg
+
+  Styleguide Margin - Width - mp25
+  */
+  .mwtr-lg-p25,
+.mwyr-lg-p25,
+.mwar-lg-p25 {
+    margin-top: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwrr-lg-p25,
+.mwxr-lg-p25,
+.mwar-lg-p25 {
+    margin-right: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwbr-lg-p25,
+.mwyr-lg-p25,
+.mwar-lg-p25 {
+    margin-bottom: calc(-1 * var(--margin-width-p25));
+  }
+
+  .mwlr-lg-p25,
+.mwxr-lg-p25,
+.mwar-lg-p25 {
+    margin-left: calc(-1 * var(--margin-width-p25));
+  }
+
+  /*
+  .mw*-lg-p30
+
+  Sets the margin of element to css var for p30 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p30 - Sets all margins to p30 on lg
+  .mwx-lg-p30 - Sets left and right margins to p30 on lg
+  .mwy-lg-p30 - Sets top and bottom margins to p30 on lg
+  .mwt-lg-p30 - Sets top margin to p30 on lg
+  .mwr-lg-p30 - Sets right margin to p30 on lg
+  .mwb-lg-p30 - Sets bottom margin to p30 on lg
+  .mwl-lg-p30 - Sets left margin to p30 on lg
+
+  Styleguide Margin - Width - p30
+  */
+  .mwt-lg-p30,
+.mwy-lg-p30,
+.mwa-lg-p30 {
+    margin-top: var(--margin-width-p30);
+  }
+
+  .mwr-lg-p30,
+.mwx-lg-p30,
+.mwa-lg-p30 {
+    margin-right: var(--margin-width-p30);
+  }
+
+  .mwb-lg-p30,
+.mwy-lg-p30,
+.mwa-lg-p30 {
+    margin-bottom: var(--margin-width-p30);
+  }
+
+  .mwl-lg-p30,
+.mwx-lg-p30,
+.mwa-lg-p30 {
+    margin-left: var(--margin-width-p30);
+  }
+
+  /*
+  .mw*r-lg-p30
+
+  Sets the margin of element to negative value of the css var for p30 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p30 - Sets all margins to mp30 on lg
+  .mwxr-lg-p30 - Sets left and right margins to mp30 on lg
+  .mwyr-lg-p30 - Sets top and bottom margins to mp30 on lg
+  .mwtr-lg-p30 - Sets top margin to mp30 on lg
+  .mwrr-lg-p30 - Sets right margin to mp30 on lg
+  .mwbr-lg-p30 - Sets bottom margin to mp30 on lg
+  .mwlr-lg-p30 - Sets left margin to mp30 on lg
+
+  Styleguide Margin - Width - mp30
+  */
+  .mwtr-lg-p30,
+.mwyr-lg-p30,
+.mwar-lg-p30 {
+    margin-top: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwrr-lg-p30,
+.mwxr-lg-p30,
+.mwar-lg-p30 {
+    margin-right: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwbr-lg-p30,
+.mwyr-lg-p30,
+.mwar-lg-p30 {
+    margin-bottom: calc(-1 * var(--margin-width-p30));
+  }
+
+  .mwlr-lg-p30,
+.mwxr-lg-p30,
+.mwar-lg-p30 {
+    margin-left: calc(-1 * var(--margin-width-p30));
+  }
+
+  /*
+  .mw*-lg-p40
+
+  Sets the margin of element to css var for p40 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p40 - Sets all margins to p40 on lg
+  .mwx-lg-p40 - Sets left and right margins to p40 on lg
+  .mwy-lg-p40 - Sets top and bottom margins to p40 on lg
+  .mwt-lg-p40 - Sets top margin to p40 on lg
+  .mwr-lg-p40 - Sets right margin to p40 on lg
+  .mwb-lg-p40 - Sets bottom margin to p40 on lg
+  .mwl-lg-p40 - Sets left margin to p40 on lg
+
+  Styleguide Margin - Width - p40
+  */
+  .mwt-lg-p40,
+.mwy-lg-p40,
+.mwa-lg-p40 {
+    margin-top: var(--margin-width-p40);
+  }
+
+  .mwr-lg-p40,
+.mwx-lg-p40,
+.mwa-lg-p40 {
+    margin-right: var(--margin-width-p40);
+  }
+
+  .mwb-lg-p40,
+.mwy-lg-p40,
+.mwa-lg-p40 {
+    margin-bottom: var(--margin-width-p40);
+  }
+
+  .mwl-lg-p40,
+.mwx-lg-p40,
+.mwa-lg-p40 {
+    margin-left: var(--margin-width-p40);
+  }
+
+  /*
+  .mw*r-lg-p40
+
+  Sets the margin of element to negative value of the css var for p40 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p40 - Sets all margins to mp40 on lg
+  .mwxr-lg-p40 - Sets left and right margins to mp40 on lg
+  .mwyr-lg-p40 - Sets top and bottom margins to mp40 on lg
+  .mwtr-lg-p40 - Sets top margin to mp40 on lg
+  .mwrr-lg-p40 - Sets right margin to mp40 on lg
+  .mwbr-lg-p40 - Sets bottom margin to mp40 on lg
+  .mwlr-lg-p40 - Sets left margin to mp40 on lg
+
+  Styleguide Margin - Width - mp40
+  */
+  .mwtr-lg-p40,
+.mwyr-lg-p40,
+.mwar-lg-p40 {
+    margin-top: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwrr-lg-p40,
+.mwxr-lg-p40,
+.mwar-lg-p40 {
+    margin-right: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwbr-lg-p40,
+.mwyr-lg-p40,
+.mwar-lg-p40 {
+    margin-bottom: calc(-1 * var(--margin-width-p40));
+  }
+
+  .mwlr-lg-p40,
+.mwxr-lg-p40,
+.mwar-lg-p40 {
+    margin-left: calc(-1 * var(--margin-width-p40));
+  }
+
+  /*
+  .mw*-lg-p50
+
+  Sets the margin of element to css var for p50 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p50 - Sets all margins to p50 on lg
+  .mwx-lg-p50 - Sets left and right margins to p50 on lg
+  .mwy-lg-p50 - Sets top and bottom margins to p50 on lg
+  .mwt-lg-p50 - Sets top margin to p50 on lg
+  .mwr-lg-p50 - Sets right margin to p50 on lg
+  .mwb-lg-p50 - Sets bottom margin to p50 on lg
+  .mwl-lg-p50 - Sets left margin to p50 on lg
+
+  Styleguide Margin - Width - p50
+  */
+  .mwt-lg-p50,
+.mwy-lg-p50,
+.mwa-lg-p50 {
+    margin-top: var(--margin-width-p50);
+  }
+
+  .mwr-lg-p50,
+.mwx-lg-p50,
+.mwa-lg-p50 {
+    margin-right: var(--margin-width-p50);
+  }
+
+  .mwb-lg-p50,
+.mwy-lg-p50,
+.mwa-lg-p50 {
+    margin-bottom: var(--margin-width-p50);
+  }
+
+  .mwl-lg-p50,
+.mwx-lg-p50,
+.mwa-lg-p50 {
+    margin-left: var(--margin-width-p50);
+  }
+
+  /*
+  .mw*r-lg-p50
+
+  Sets the margin of element to negative value of the css var for p50 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p50 - Sets all margins to mp50 on lg
+  .mwxr-lg-p50 - Sets left and right margins to mp50 on lg
+  .mwyr-lg-p50 - Sets top and bottom margins to mp50 on lg
+  .mwtr-lg-p50 - Sets top margin to mp50 on lg
+  .mwrr-lg-p50 - Sets right margin to mp50 on lg
+  .mwbr-lg-p50 - Sets bottom margin to mp50 on lg
+  .mwlr-lg-p50 - Sets left margin to mp50 on lg
+
+  Styleguide Margin - Width - mp50
+  */
+  .mwtr-lg-p50,
+.mwyr-lg-p50,
+.mwar-lg-p50 {
+    margin-top: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwrr-lg-p50,
+.mwxr-lg-p50,
+.mwar-lg-p50 {
+    margin-right: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwbr-lg-p50,
+.mwyr-lg-p50,
+.mwar-lg-p50 {
+    margin-bottom: calc(-1 * var(--margin-width-p50));
+  }
+
+  .mwlr-lg-p50,
+.mwxr-lg-p50,
+.mwar-lg-p50 {
+    margin-left: calc(-1 * var(--margin-width-p50));
+  }
+
+  /*
+  .mw*-lg-p60
+
+  Sets the margin of element to css var for p60 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p60 - Sets all margins to p60 on lg
+  .mwx-lg-p60 - Sets left and right margins to p60 on lg
+  .mwy-lg-p60 - Sets top and bottom margins to p60 on lg
+  .mwt-lg-p60 - Sets top margin to p60 on lg
+  .mwr-lg-p60 - Sets right margin to p60 on lg
+  .mwb-lg-p60 - Sets bottom margin to p60 on lg
+  .mwl-lg-p60 - Sets left margin to p60 on lg
+
+  Styleguide Margin - Width - p60
+  */
+  .mwt-lg-p60,
+.mwy-lg-p60,
+.mwa-lg-p60 {
+    margin-top: var(--margin-width-p60);
+  }
+
+  .mwr-lg-p60,
+.mwx-lg-p60,
+.mwa-lg-p60 {
+    margin-right: var(--margin-width-p60);
+  }
+
+  .mwb-lg-p60,
+.mwy-lg-p60,
+.mwa-lg-p60 {
+    margin-bottom: var(--margin-width-p60);
+  }
+
+  .mwl-lg-p60,
+.mwx-lg-p60,
+.mwa-lg-p60 {
+    margin-left: var(--margin-width-p60);
+  }
+
+  /*
+  .mw*r-lg-p60
+
+  Sets the margin of element to negative value of the css var for p60 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p60 - Sets all margins to mp60 on lg
+  .mwxr-lg-p60 - Sets left and right margins to mp60 on lg
+  .mwyr-lg-p60 - Sets top and bottom margins to mp60 on lg
+  .mwtr-lg-p60 - Sets top margin to mp60 on lg
+  .mwrr-lg-p60 - Sets right margin to mp60 on lg
+  .mwbr-lg-p60 - Sets bottom margin to mp60 on lg
+  .mwlr-lg-p60 - Sets left margin to mp60 on lg
+
+  Styleguide Margin - Width - mp60
+  */
+  .mwtr-lg-p60,
+.mwyr-lg-p60,
+.mwar-lg-p60 {
+    margin-top: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwrr-lg-p60,
+.mwxr-lg-p60,
+.mwar-lg-p60 {
+    margin-right: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwbr-lg-p60,
+.mwyr-lg-p60,
+.mwar-lg-p60 {
+    margin-bottom: calc(-1 * var(--margin-width-p60));
+  }
+
+  .mwlr-lg-p60,
+.mwxr-lg-p60,
+.mwar-lg-p60 {
+    margin-left: calc(-1 * var(--margin-width-p60));
+  }
+
+  /*
+  .mw*-lg-p70
+
+  Sets the margin of element to css var for p70 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p70 - Sets all margins to p70 on lg
+  .mwx-lg-p70 - Sets left and right margins to p70 on lg
+  .mwy-lg-p70 - Sets top and bottom margins to p70 on lg
+  .mwt-lg-p70 - Sets top margin to p70 on lg
+  .mwr-lg-p70 - Sets right margin to p70 on lg
+  .mwb-lg-p70 - Sets bottom margin to p70 on lg
+  .mwl-lg-p70 - Sets left margin to p70 on lg
+
+  Styleguide Margin - Width - p70
+  */
+  .mwt-lg-p70,
+.mwy-lg-p70,
+.mwa-lg-p70 {
+    margin-top: var(--margin-width-p70);
+  }
+
+  .mwr-lg-p70,
+.mwx-lg-p70,
+.mwa-lg-p70 {
+    margin-right: var(--margin-width-p70);
+  }
+
+  .mwb-lg-p70,
+.mwy-lg-p70,
+.mwa-lg-p70 {
+    margin-bottom: var(--margin-width-p70);
+  }
+
+  .mwl-lg-p70,
+.mwx-lg-p70,
+.mwa-lg-p70 {
+    margin-left: var(--margin-width-p70);
+  }
+
+  /*
+  .mw*r-lg-p70
+
+  Sets the margin of element to negative value of the css var for p70 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p70 - Sets all margins to mp70 on lg
+  .mwxr-lg-p70 - Sets left and right margins to mp70 on lg
+  .mwyr-lg-p70 - Sets top and bottom margins to mp70 on lg
+  .mwtr-lg-p70 - Sets top margin to mp70 on lg
+  .mwrr-lg-p70 - Sets right margin to mp70 on lg
+  .mwbr-lg-p70 - Sets bottom margin to mp70 on lg
+  .mwlr-lg-p70 - Sets left margin to mp70 on lg
+
+  Styleguide Margin - Width - mp70
+  */
+  .mwtr-lg-p70,
+.mwyr-lg-p70,
+.mwar-lg-p70 {
+    margin-top: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwrr-lg-p70,
+.mwxr-lg-p70,
+.mwar-lg-p70 {
+    margin-right: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwbr-lg-p70,
+.mwyr-lg-p70,
+.mwar-lg-p70 {
+    margin-bottom: calc(-1 * var(--margin-width-p70));
+  }
+
+  .mwlr-lg-p70,
+.mwxr-lg-p70,
+.mwar-lg-p70 {
+    margin-left: calc(-1 * var(--margin-width-p70));
+  }
+
+  /*
+  .mw*-lg-p75
+
+  Sets the margin of element to css var for p75 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p75 - Sets all margins to p75 on lg
+  .mwx-lg-p75 - Sets left and right margins to p75 on lg
+  .mwy-lg-p75 - Sets top and bottom margins to p75 on lg
+  .mwt-lg-p75 - Sets top margin to p75 on lg
+  .mwr-lg-p75 - Sets right margin to p75 on lg
+  .mwb-lg-p75 - Sets bottom margin to p75 on lg
+  .mwl-lg-p75 - Sets left margin to p75 on lg
+
+  Styleguide Margin - Width - p75
+  */
+  .mwt-lg-p75,
+.mwy-lg-p75,
+.mwa-lg-p75 {
+    margin-top: var(--margin-width-p75);
+  }
+
+  .mwr-lg-p75,
+.mwx-lg-p75,
+.mwa-lg-p75 {
+    margin-right: var(--margin-width-p75);
+  }
+
+  .mwb-lg-p75,
+.mwy-lg-p75,
+.mwa-lg-p75 {
+    margin-bottom: var(--margin-width-p75);
+  }
+
+  .mwl-lg-p75,
+.mwx-lg-p75,
+.mwa-lg-p75 {
+    margin-left: var(--margin-width-p75);
+  }
+
+  /*
+  .mw*r-lg-p75
+
+  Sets the margin of element to negative value of the css var for p75 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p75 - Sets all margins to mp75 on lg
+  .mwxr-lg-p75 - Sets left and right margins to mp75 on lg
+  .mwyr-lg-p75 - Sets top and bottom margins to mp75 on lg
+  .mwtr-lg-p75 - Sets top margin to mp75 on lg
+  .mwrr-lg-p75 - Sets right margin to mp75 on lg
+  .mwbr-lg-p75 - Sets bottom margin to mp75 on lg
+  .mwlr-lg-p75 - Sets left margin to mp75 on lg
+
+  Styleguide Margin - Width - mp75
+  */
+  .mwtr-lg-p75,
+.mwyr-lg-p75,
+.mwar-lg-p75 {
+    margin-top: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwrr-lg-p75,
+.mwxr-lg-p75,
+.mwar-lg-p75 {
+    margin-right: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwbr-lg-p75,
+.mwyr-lg-p75,
+.mwar-lg-p75 {
+    margin-bottom: calc(-1 * var(--margin-width-p75));
+  }
+
+  .mwlr-lg-p75,
+.mwxr-lg-p75,
+.mwar-lg-p75 {
+    margin-left: calc(-1 * var(--margin-width-p75));
+  }
+
+  /*
+  .mw*-lg-p80
+
+  Sets the margin of element to css var for p80 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p80 - Sets all margins to p80 on lg
+  .mwx-lg-p80 - Sets left and right margins to p80 on lg
+  .mwy-lg-p80 - Sets top and bottom margins to p80 on lg
+  .mwt-lg-p80 - Sets top margin to p80 on lg
+  .mwr-lg-p80 - Sets right margin to p80 on lg
+  .mwb-lg-p80 - Sets bottom margin to p80 on lg
+  .mwl-lg-p80 - Sets left margin to p80 on lg
+
+  Styleguide Margin - Width - p80
+  */
+  .mwt-lg-p80,
+.mwy-lg-p80,
+.mwa-lg-p80 {
+    margin-top: var(--margin-width-p80);
+  }
+
+  .mwr-lg-p80,
+.mwx-lg-p80,
+.mwa-lg-p80 {
+    margin-right: var(--margin-width-p80);
+  }
+
+  .mwb-lg-p80,
+.mwy-lg-p80,
+.mwa-lg-p80 {
+    margin-bottom: var(--margin-width-p80);
+  }
+
+  .mwl-lg-p80,
+.mwx-lg-p80,
+.mwa-lg-p80 {
+    margin-left: var(--margin-width-p80);
+  }
+
+  /*
+  .mw*r-lg-p80
+
+  Sets the margin of element to negative value of the css var for p80 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p80 - Sets all margins to mp80 on lg
+  .mwxr-lg-p80 - Sets left and right margins to mp80 on lg
+  .mwyr-lg-p80 - Sets top and bottom margins to mp80 on lg
+  .mwtr-lg-p80 - Sets top margin to mp80 on lg
+  .mwrr-lg-p80 - Sets right margin to mp80 on lg
+  .mwbr-lg-p80 - Sets bottom margin to mp80 on lg
+  .mwlr-lg-p80 - Sets left margin to mp80 on lg
+
+  Styleguide Margin - Width - mp80
+  */
+  .mwtr-lg-p80,
+.mwyr-lg-p80,
+.mwar-lg-p80 {
+    margin-top: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwrr-lg-p80,
+.mwxr-lg-p80,
+.mwar-lg-p80 {
+    margin-right: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwbr-lg-p80,
+.mwyr-lg-p80,
+.mwar-lg-p80 {
+    margin-bottom: calc(-1 * var(--margin-width-p80));
+  }
+
+  .mwlr-lg-p80,
+.mwxr-lg-p80,
+.mwar-lg-p80 {
+    margin-left: calc(-1 * var(--margin-width-p80));
+  }
+
+  /*
+  .mw*-lg-p90
+
+  Sets the margin of element to css var for p90 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p90 - Sets all margins to p90 on lg
+  .mwx-lg-p90 - Sets left and right margins to p90 on lg
+  .mwy-lg-p90 - Sets top and bottom margins to p90 on lg
+  .mwt-lg-p90 - Sets top margin to p90 on lg
+  .mwr-lg-p90 - Sets right margin to p90 on lg
+  .mwb-lg-p90 - Sets bottom margin to p90 on lg
+  .mwl-lg-p90 - Sets left margin to p90 on lg
+
+  Styleguide Margin - Width - p90
+  */
+  .mwt-lg-p90,
+.mwy-lg-p90,
+.mwa-lg-p90 {
+    margin-top: var(--margin-width-p90);
+  }
+
+  .mwr-lg-p90,
+.mwx-lg-p90,
+.mwa-lg-p90 {
+    margin-right: var(--margin-width-p90);
+  }
+
+  .mwb-lg-p90,
+.mwy-lg-p90,
+.mwa-lg-p90 {
+    margin-bottom: var(--margin-width-p90);
+  }
+
+  .mwl-lg-p90,
+.mwx-lg-p90,
+.mwa-lg-p90 {
+    margin-left: var(--margin-width-p90);
+  }
+
+  /*
+  .mw*r-lg-p90
+
+  Sets the margin of element to negative value of the css var for p90 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p90 - Sets all margins to mp90 on lg
+  .mwxr-lg-p90 - Sets left and right margins to mp90 on lg
+  .mwyr-lg-p90 - Sets top and bottom margins to mp90 on lg
+  .mwtr-lg-p90 - Sets top margin to mp90 on lg
+  .mwrr-lg-p90 - Sets right margin to mp90 on lg
+  .mwbr-lg-p90 - Sets bottom margin to mp90 on lg
+  .mwlr-lg-p90 - Sets left margin to mp90 on lg
+
+  Styleguide Margin - Width - mp90
+  */
+  .mwtr-lg-p90,
+.mwyr-lg-p90,
+.mwar-lg-p90 {
+    margin-top: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwrr-lg-p90,
+.mwxr-lg-p90,
+.mwar-lg-p90 {
+    margin-right: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwbr-lg-p90,
+.mwyr-lg-p90,
+.mwar-lg-p90 {
+    margin-bottom: calc(-1 * var(--margin-width-p90));
+  }
+
+  .mwlr-lg-p90,
+.mwxr-lg-p90,
+.mwar-lg-p90 {
+    margin-left: calc(-1 * var(--margin-width-p90));
+  }
+
+  /*
+  .mw*-lg-p100
+
+  Sets the margin of element to css var for p100 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwa-lg-p100 - Sets all margins to p100 on lg
+  .mwx-lg-p100 - Sets left and right margins to p100 on lg
+  .mwy-lg-p100 - Sets top and bottom margins to p100 on lg
+  .mwt-lg-p100 - Sets top margin to p100 on lg
+  .mwr-lg-p100 - Sets right margin to p100 on lg
+  .mwb-lg-p100 - Sets bottom margin to p100 on lg
+  .mwl-lg-p100 - Sets left margin to p100 on lg
+
+  Styleguide Margin - Width - p100
+  */
+  .mwt-lg-p100,
+.mwy-lg-p100,
+.mwa-lg-p100 {
+    margin-top: var(--margin-width-p100);
+  }
+
+  .mwr-lg-p100,
+.mwx-lg-p100,
+.mwa-lg-p100 {
+    margin-right: var(--margin-width-p100);
+  }
+
+  .mwb-lg-p100,
+.mwy-lg-p100,
+.mwa-lg-p100 {
+    margin-bottom: var(--margin-width-p100);
+  }
+
+  .mwl-lg-p100,
+.mwx-lg-p100,
+.mwa-lg-p100 {
+    margin-left: var(--margin-width-p100);
+  }
+
+  /*
+  .mw*r-lg-p100
+
+  Sets the margin of element to negative value of the css var for p100 on lg.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .mwar-lg-p100 - Sets all margins to mp100 on lg
+  .mwxr-lg-p100 - Sets left and right margins to mp100 on lg
+  .mwyr-lg-p100 - Sets top and bottom margins to mp100 on lg
+  .mwtr-lg-p100 - Sets top margin to mp100 on lg
+  .mwrr-lg-p100 - Sets right margin to mp100 on lg
+  .mwbr-lg-p100 - Sets bottom margin to mp100 on lg
+  .mwlr-lg-p100 - Sets left margin to mp100 on lg
+
+  Styleguide Margin - Width - mp100
+  */
+  .mwtr-lg-p100,
+.mwyr-lg-p100,
+.mwar-lg-p100 {
+    margin-top: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwrr-lg-p100,
+.mwxr-lg-p100,
+.mwar-lg-p100 {
+    margin-right: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwbr-lg-p100,
+.mwyr-lg-p100,
+.mwar-lg-p100 {
+    margin-bottom: calc(-1 * var(--margin-width-p100));
+  }
+
+  .mwlr-lg-p100,
+.mwxr-lg-p100,
+.mwar-lg-p100 {
+    margin-left: calc(-1 * var(--margin-width-p100));
   }
 }
 /*
