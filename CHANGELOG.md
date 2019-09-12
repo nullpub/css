@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.5.1](https://github.com/nullpub/css/compare/v8.5.0...v8.5.1) (2019-09-12)
+
+
+### Bug Fixes
+
+* fixed incorrect css variable value for margins ([daefdca](https://github.com/nullpub/css/commit/daefdca))
+
+
+
 # [8.5.0](https://github.com/nullpub/css/compare/v8.4.0...v8.5.0) (2019-09-12)
 
 
