@@ -32,9 +32,11 @@ $flex-basis-styles: (
   'fit-content': fit-content,
   'content': content,
   'unset': unset,
-  '0p': 0,
-  '25p': 25,
-  '50p': 50,
+  '0p': 0%,
+  '25p': 25%,
+  '50p': 50%,
+  '75p': 75%,
+  '100p': 100%,
 ) !default;
 
 $flex-wrap-class-prefix: 'flw' !default;

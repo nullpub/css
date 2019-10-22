@@ -4093,49 +4093,81 @@ Styleguide Flex - Basis - unset
 /*
 .flb-0p
 
-Sets flex-basis to 0.
+Sets flex-basis to 0%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-0p - Sets flex-basis to 0
+.flb-0p - Sets flex-basis to 0%
 
 Styleguide Flex - Basis - 0p
 */
 .flb-0p {
-  flex-basis: 0;
+  flex-basis: 0%;
 }
 
 /*
 .flb-25p
 
-Sets flex-basis to 25.
+Sets flex-basis to 25%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-25p - Sets flex-basis to 25
+.flb-25p - Sets flex-basis to 25%
 
 Styleguide Flex - Basis - 25p
 */
 .flb-25p {
-  flex-basis: 25;
+  flex-basis: 25%;
 }
 
 /*
 .flb-50p
 
-Sets flex-basis to 50.
+Sets flex-basis to 50%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-50p - Sets flex-basis to 50
+.flb-50p - Sets flex-basis to 50%
 
 Styleguide Flex - Basis - 50p
 */
 .flb-50p {
-  flex-basis: 50;
+  flex-basis: 50%;
+}
+
+/*
+.flb-75p
+
+Sets flex-basis to 75%.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+.flb-75p - Sets flex-basis to 75%
+
+Styleguide Flex - Basis - 75p
+*/
+.flb-75p {
+  flex-basis: 75%;
+}
+
+/*
+.flb-100p
+
+Sets flex-basis to 100%.
+
+Markup:
+<div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+.flb-100p - Sets flex-basis to 100%
+
+Styleguide Flex - Basis - 100p
+*/
+.flb-100p {
+  flex-basis: 100%;
 }
 
 /*
@@ -6101,49 +6133,81 @@ Styleguide Flex - Justify Self - sse
   /*
   .flb-sm-0p
 
-  Sets flex-basis to 0 on sm.
+  Sets flex-basis to 0% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-0p - Sets flex-basis to 0 on sm
+  .flb-sm-0p - Sets flex-basis to 0% on sm
 
   Styleguide Flex - Basis - 0p - sm
   */
   .flb-sm-0p {
-    flex-basis: 0;
+    flex-basis: 0%;
   }
 
   /*
   .flb-sm-25p
 
-  Sets flex-basis to 25 on sm.
+  Sets flex-basis to 25% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-25p - Sets flex-basis to 25 on sm
+  .flb-sm-25p - Sets flex-basis to 25% on sm
 
   Styleguide Flex - Basis - 25p - sm
   */
   .flb-sm-25p {
-    flex-basis: 25;
+    flex-basis: 25%;
   }
 
   /*
   .flb-sm-50p
 
-  Sets flex-basis to 50 on sm.
+  Sets flex-basis to 50% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-50p - Sets flex-basis to 50 on sm
+  .flb-sm-50p - Sets flex-basis to 50% on sm
 
   Styleguide Flex - Basis - 50p - sm
   */
   .flb-sm-50p {
-    flex-basis: 50;
+    flex-basis: 50%;
+  }
+
+  /*
+  .flb-sm-75p
+
+  Sets flex-basis to 75% on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .flb-sm-75p - Sets flex-basis to 75% on sm
+
+  Styleguide Flex - Basis - 75p - sm
+  */
+  .flb-sm-75p {
+    flex-basis: 75%;
+  }
+
+  /*
+  .flb-sm-100p
+
+  Sets flex-basis to 100% on sm.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .flb-sm-100p - Sets flex-basis to 100% on sm
+
+  Styleguide Flex - Basis - 100p - sm
+  */
+  .flb-sm-100p {
+    flex-basis: 100%;
   }
 
   /*
@@ -8010,49 +8074,81 @@ Styleguide Flex - Justify Self - sse
   /*
   .flb-md-0p
 
-  Sets flex-basis to 0 on md.
+  Sets flex-basis to 0% on md.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-md-0p - Sets flex-basis to 0 on md
+  .flb-md-0p - Sets flex-basis to 0% on md
 
   Styleguide Flex - Basis - 0p - md
   */
   .flb-md-0p {
-    flex-basis: 0;
+    flex-basis: 0%;
   }
 
   /*
   .flb-md-25p
 
-  Sets flex-basis to 25 on md.
+  Sets flex-basis to 25% on md.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-md-25p - Sets flex-basis to 25 on md
+  .flb-md-25p - Sets flex-basis to 25% on md
 
   Styleguide Flex - Basis - 25p - md
   */
   .flb-md-25p {
-    flex-basis: 25;
+    flex-basis: 25%;
   }
 
   /*
   .flb-md-50p
 
-  Sets flex-basis to 50 on md.
+  Sets flex-basis to 50% on md.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-md-50p - Sets flex-basis to 50 on md
+  .flb-md-50p - Sets flex-basis to 50% on md
 
   Styleguide Flex - Basis - 50p - md
   */
   .flb-md-50p {
-    flex-basis: 50;
+    flex-basis: 50%;
+  }
+
+  /*
+  .flb-md-75p
+
+  Sets flex-basis to 75% on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .flb-md-75p - Sets flex-basis to 75% on md
+
+  Styleguide Flex - Basis - 75p - md
+  */
+  .flb-md-75p {
+    flex-basis: 75%;
+  }
+
+  /*
+  .flb-md-100p
+
+  Sets flex-basis to 100% on md.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .flb-md-100p - Sets flex-basis to 100% on md
+
+  Styleguide Flex - Basis - 100p - md
+  */
+  .flb-md-100p {
+    flex-basis: 100%;
   }
 
   /*
@@ -9919,49 +10015,81 @@ Styleguide Flex - Justify Self - sse
   /*
   .flb-lg-0p
 
-  Sets flex-basis to 0 on lg.
+  Sets flex-basis to 0% on lg.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-lg-0p - Sets flex-basis to 0 on lg
+  .flb-lg-0p - Sets flex-basis to 0% on lg
 
   Styleguide Flex - Basis - 0p - lg
   */
   .flb-lg-0p {
-    flex-basis: 0;
+    flex-basis: 0%;
   }
 
   /*
   .flb-lg-25p
 
-  Sets flex-basis to 25 on lg.
+  Sets flex-basis to 25% on lg.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-lg-25p - Sets flex-basis to 25 on lg
+  .flb-lg-25p - Sets flex-basis to 25% on lg
 
   Styleguide Flex - Basis - 25p - lg
   */
   .flb-lg-25p {
-    flex-basis: 25;
+    flex-basis: 25%;
   }
 
   /*
   .flb-lg-50p
 
-  Sets flex-basis to 50 on lg.
+  Sets flex-basis to 50% on lg.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-lg-50p - Sets flex-basis to 50 on lg
+  .flb-lg-50p - Sets flex-basis to 50% on lg
 
   Styleguide Flex - Basis - 50p - lg
   */
   .flb-lg-50p {
-    flex-basis: 50;
+    flex-basis: 50%;
+  }
+
+  /*
+  .flb-lg-75p
+
+  Sets flex-basis to 75% on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .flb-lg-75p - Sets flex-basis to 75% on lg
+
+  Styleguide Flex - Basis - 75p - lg
+  */
+  .flb-lg-75p {
+    flex-basis: 75%;
+  }
+
+  /*
+  .flb-lg-100p
+
+  Sets flex-basis to 100% on lg.
+
+  Markup:
+  <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
+
+  .flb-lg-100p - Sets flex-basis to 100% on lg
+
+  Styleguide Flex - Basis - 100p - lg
+  */
+  .flb-lg-100p {
+    flex-basis: 100%;
   }
 
   /*
