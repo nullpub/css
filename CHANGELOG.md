@@ -1,6 +1,13 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [8.7.0](https://github.com/nullpub/css/compare/v8.5.1...v8.7.0) (2019-12-03)
+
+
+### Features
+
+* added working flex-bases percentages ([2a64bb9](https://github.com/nullpub/css/commit/2a64bb978ed80abcf1c4d7d107771f0457651516))
 
 # [8.6.0](https://github.com/nullpub/css/compare/v8.5.1...v8.6.0) (2019-10-22)
 
