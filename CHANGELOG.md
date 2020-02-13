@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/nullpub/css/compare/v8.7.0...v9.0.0) (2020-02-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* The changes in reset move from reset to normalize
+
+### Features
+
+* land normalize.css instead of meyer reset ([0847e2a](https://github.com/nullpub/css/commit/0847e2a9da0d1b077cd7948ba421b50fd3f4316c))
+
 ## [8.7.0](https://github.com/nullpub/css/compare/v8.5.1...v8.7.0) (2019-12-03)
 
 
