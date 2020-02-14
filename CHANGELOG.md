@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.1.0-0](https://github.com/nullpub/css/compare/v9.0.0...v9.1.0-0) (2020-02-14)
+
+
+### Features
+
+* added list-style-type and list-style-position classes ([28008aa](https://github.com/nullpub/css/commit/28008aa9ffec3135f15709728ef2d883538783a0))
+
 ## [9.0.0](https://github.com/nullpub/css/compare/v8.7.0...v9.0.0) (2020-02-13)
 
 
