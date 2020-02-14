@@ -4978,6 +4978,353 @@ Styleguide Height - 4
   max-height: var(--height-4);
 }
 
+/*
+List Style
+
+Classes for setting the list style properties of an element.
+
+Styleguide List Style
+*/
+/*
+.lst-disc
+
+Sets the list-style-type of an element to disc.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-disc - Sets list-style-type to disc
+
+Styleguide List Style - Type - disc
+*/
+.lst-disc {
+  list-style-type: disc;
+}
+
+/*
+.lst-circ
+
+Sets the list-style-type of an element to circle.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-circ - Sets list-style-type to circle
+
+Styleguide List Style - Type - circ
+*/
+.lst-circ {
+  list-style-type: circle;
+}
+
+/*
+.lst-squa
+
+Sets the list-style-type of an element to square.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-squa - Sets list-style-type to square
+
+Styleguide List Style - Type - squa
+*/
+.lst-squa {
+  list-style-type: square;
+}
+
+/*
+.lst-deci
+
+Sets the list-style-type of an element to decimal.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-deci - Sets list-style-type to decimal
+
+Styleguide List Style - Type - deci
+*/
+.lst-deci {
+  list-style-type: decimal;
+}
+
+/*
+.lst-decl
+
+Sets the list-style-type of an element to decimal-leading-zero.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-decl - Sets list-style-type to decimal-leading-zero
+
+Styleguide List Style - Type - decl
+*/
+.lst-decl {
+  list-style-type: decimal-leading-zero;
+}
+
+/*
+.lst-lrom
+
+Sets the list-style-type of an element to lower-roman.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-lrom - Sets list-style-type to lower-roman
+
+Styleguide List Style - Type - lrom
+*/
+.lst-lrom {
+  list-style-type: lower-roman;
+}
+
+/*
+.lst-urom
+
+Sets the list-style-type of an element to upper-roman.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-urom - Sets list-style-type to upper-roman
+
+Styleguide List Style - Type - urom
+*/
+.lst-urom {
+  list-style-type: upper-roman;
+}
+
+/*
+.lst-lgrk
+
+Sets the list-style-type of an element to lower-greek.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-lgrk - Sets list-style-type to lower-greek
+
+Styleguide List Style - Type - lgrk
+*/
+.lst-lgrk {
+  list-style-type: lower-greek;
+}
+
+/*
+.lst-llat
+
+Sets the list-style-type of an element to lower-latin.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-llat - Sets list-style-type to lower-latin
+
+Styleguide List Style - Type - llat
+*/
+.lst-llat {
+  list-style-type: lower-latin;
+}
+
+/*
+.lst-ulat
+
+Sets the list-style-type of an element to upper-latin.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-ulat - Sets list-style-type to upper-latin
+
+Styleguide List Style - Type - ulat
+*/
+.lst-ulat {
+  list-style-type: upper-latin;
+}
+
+/*
+.lst-arme
+
+Sets the list-style-type of an element to armenian.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-arme - Sets list-style-type to armenian
+
+Styleguide List Style - Type - arme
+*/
+.lst-arme {
+  list-style-type: armenian;
+}
+
+/*
+.lst-geor
+
+Sets the list-style-type of an element to georgian.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-geor - Sets list-style-type to georgian
+
+Styleguide List Style - Type - geor
+*/
+.lst-geor {
+  list-style-type: georgian;
+}
+
+/*
+.lst-lalp
+
+Sets the list-style-type of an element to lower-alpha.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-lalp - Sets list-style-type to lower-alpha
+
+Styleguide List Style - Type - lalp
+*/
+.lst-lalp {
+  list-style-type: lower-alpha;
+}
+
+/*
+.lst-ualp
+
+Sets the list-style-type of an element to upper-alpha.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-ualp - Sets list-style-type to upper-alpha
+
+Styleguide List Style - Type - ualp
+*/
+.lst-ualp {
+  list-style-type: upper-alpha;
+}
+
+/*
+.lst-none
+
+Sets the list-style-type of an element to none.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lst-none - Sets list-style-type to none
+
+Styleguide List Style - Type - none
+*/
+.lst-none {
+  list-style-type: none;
+}
+
+/*
+.lsp-in
+
+Sets the list-style-position property of an element to inside.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lsp-in - Sets list-style-position to inside
+
+Styleguide List Style - Position - in
+*/
+.lsp-in {
+  list-style-position: inside;
+}
+
+/*
+.lsp-out
+
+Sets the list-style-position property of an element to outside.
+
+Markup:
+<ul class="{{modifier_class}} lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+
+.lsp-out - Sets list-style-position to outside
+
+Styleguide List Style - Position - out
+*/
+.lsp-out {
+  list-style-position: outside;
+}
+
 :root {
   --margin-width-0: calc(
     var(--fill-size) * 0

@@ -1,0 +1,24 @@
+$list-style-type-class-prefix: 'lst' !default;
+$list-style-types: (
+  'disc': disc,
+  'circ': circle,
+  'squa': square,
+  'deci': decimal,
+  'decl': decimal-leading-zero,
+  'lrom': lower-roman,
+  'urom': upper-roman,
+  'lgrk': lower-greek,
+  'llat': lower-latin,
+  'ulat': upper-latin,
+  'arme': armenian,
+  'geor': georgian,
+  'lalp': lower-alpha,
+  'ualp': upper-alpha,
+  'none': none,
+) !default;
+
+$list-style-position-class-prefix: 'lsp' !default;
+$list-style-positions: (
+  'in': 'inside',
+  'out': 'outside',
+) !default;

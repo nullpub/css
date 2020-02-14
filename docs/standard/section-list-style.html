@@ -1,0 +1,2442 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="./standard.min.css">
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-border.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Border</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-child-width.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Child Width</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-color.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-cursor.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Cursor</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-display.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-flex.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Flex</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-font.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Font</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-height.html">
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Height</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-list-style.html">
+          <span class="kss-nav__ref">9</span><span class="kss-nav__name">List Style</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-position">
+                  <span class="kss-nav__ref ">9.1</span
+                  ><span class="kss-nav__name">List Style - Position</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-position-in">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.1.1</span
+                  ><span class="kss-nav__name">.lsp-in</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-position-out">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.1.2</span
+                  ><span class="kss-nav__name">.lsp-out</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type">
+                  <span class="kss-nav__ref ">9.2</span
+                  ><span class="kss-nav__name">List Style - Type</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-arme">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.1</span
+                  ><span class="kss-nav__name">.lst-arme</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-circ">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.2</span
+                  ><span class="kss-nav__name">.lst-circ</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-deci">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.3</span
+                  ><span class="kss-nav__name">.lst-deci</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-decl">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.4</span
+                  ><span class="kss-nav__name">.lst-decl</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-disc">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.5</span
+                  ><span class="kss-nav__name">.lst-disc</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-geor">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.6</span
+                  ><span class="kss-nav__name">.lst-geor</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-lalp">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.7</span
+                  ><span class="kss-nav__name">.lst-lalp</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-lgrk">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.8</span
+                  ><span class="kss-nav__name">.lst-lgrk</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-llat">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.9</span
+                  ><span class="kss-nav__name">.lst-llat</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-lrom">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.10</span
+                  ><span class="kss-nav__name">.lst-lrom</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-none">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.11</span
+                  ><span class="kss-nav__name">.lst-none</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-squa">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.12</span
+                  ><span class="kss-nav__name">.lst-squa</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-ualp">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.13</span
+                  ><span class="kss-nav__name">.lst-ualp</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-ulat">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.14</span
+                  ><span class="kss-nav__name">.lst-ulat</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-urom">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.15</span
+                  ><span class="kss-nav__name">.lst-urom</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-margin.html">
+          <span class="kss-nav__ref">10</span><span class="kss-nav__name">Margin</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-overflow.html">
+          <span class="kss-nav__ref">11</span><span class="kss-nav__name">Overflow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-padding.html">
+          <span class="kss-nav__ref">12</span><span class="kss-nav__name">Padding</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-shadow.html">
+          <span class="kss-nav__ref">13</span><span class="kss-nav__name">Shadow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-text.html">
+          <span class="kss-nav__ref">14</span><span class="kss-nav__name">Text</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-width.html">
+          <span class="kss-nav__ref">15</span><span class="kss-nav__name">Width</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-list-style" class="kss-section kss-section--depth-1 ">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-list-style">
+            <span class="kss-title__ref">
+              9
+              <span class="kss-title__permalink-hash">
+                  #List Style
+              </span>
+            </span>
+            List Style
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <p>Classes for setting the list style properties of an element.</p>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7023
+        </div>
+
+    </div>
+    <section id="kssref-list-style-position" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-list-style-position">
+            <span class="kss-title__ref">
+              9.1
+              <span class="kss-title__permalink-hash">
+                  #List Style - Position
+              </span>
+            </span>
+            List Style - Position
+          </a>
+        </h2>
+
+
+
+
+      </div>
+
+
+
+    </section>
+    <section id="kssref-list-style-position-in" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-position-in">
+            <span class="kss-title__ref">
+              9.1.1
+              <span class="kss-title__permalink-hash">
+                  #List Style - Position - in
+              </span>
+            </span>
+            .lsp-in
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-position-in" data-kss-fullscreen="kssref-list-style-position-in">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-position-in.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-position-in" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-position-in" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-position property of an element to inside.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lsp-in
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-position to inside
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lsp-in lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7330
+        </div>
+
+    </section>
+    <section id="kssref-list-style-position-out" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-position-out">
+            <span class="kss-title__ref">
+              9.1.2
+              <span class="kss-title__permalink-hash">
+                  #List Style - Position - out
+              </span>
+            </span>
+            .lsp-out
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-position-out" data-kss-fullscreen="kssref-list-style-position-out">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-position-out.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-position-out" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-position-out" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-position property of an element to outside.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lsp-out
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-position to outside
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lsp-out lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7350
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-list-style-type">
+            <span class="kss-title__ref">
+              9.2
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type
+              </span>
+            </span>
+            List Style - Type
+          </a>
+        </h2>
+
+
+
+
+      </div>
+
+
+
+    </section>
+    <section id="kssref-list-style-type-arme" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-arme">
+            <span class="kss-title__ref">
+              9.2.1
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - arme
+              </span>
+            </span>
+            .lst-arme
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-arme" data-kss-fullscreen="kssref-list-style-type-arme">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-arme.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-arme" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-arme" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to armenian.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-arme
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to armenian
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-arme lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7230
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-circ" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-circ">
+            <span class="kss-title__ref">
+              9.2.2
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - circ
+              </span>
+            </span>
+            .lst-circ
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-circ" data-kss-fullscreen="kssref-list-style-type-circ">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-circ.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-circ" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-circ" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to circle.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-circ
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to circle
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-circ lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7050
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-deci" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-deci">
+            <span class="kss-title__ref">
+              9.2.3
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - deci
+              </span>
+            </span>
+            .lst-deci
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-deci" data-kss-fullscreen="kssref-list-style-type-deci">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-deci.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-deci" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-deci" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to decimal.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-deci
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to decimal
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-deci lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7090
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-decl" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-decl">
+            <span class="kss-title__ref">
+              9.2.4
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - decl
+              </span>
+            </span>
+            .lst-decl
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-decl" data-kss-fullscreen="kssref-list-style-type-decl">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-decl.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-decl" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-decl" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to decimal-leading-zero.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-decl
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to decimal-leading-zero
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-decl lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7110
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-disc" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-disc">
+            <span class="kss-title__ref">
+              9.2.5
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - disc
+              </span>
+            </span>
+            .lst-disc
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-disc" data-kss-fullscreen="kssref-list-style-type-disc">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-disc.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-disc" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-disc" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to disc.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-disc
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to disc
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-disc lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7030
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-geor" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-geor">
+            <span class="kss-title__ref">
+              9.2.6
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - geor
+              </span>
+            </span>
+            .lst-geor
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-geor" data-kss-fullscreen="kssref-list-style-type-geor">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-geor.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-geor" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-geor" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to georgian.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-geor
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to georgian
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-geor lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7250
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-lalp" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-lalp">
+            <span class="kss-title__ref">
+              9.2.7
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - lalp
+              </span>
+            </span>
+            .lst-lalp
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-lalp" data-kss-fullscreen="kssref-list-style-type-lalp">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-lalp.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-lalp" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-lalp" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to lower-alpha.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-lalp
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to lower-alpha
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-lalp lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7270
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-lgrk" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-lgrk">
+            <span class="kss-title__ref">
+              9.2.8
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - lgrk
+              </span>
+            </span>
+            .lst-lgrk
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-lgrk" data-kss-fullscreen="kssref-list-style-type-lgrk">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-lgrk.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-lgrk" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-lgrk" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to lower-greek.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-lgrk
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to lower-greek
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-lgrk lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7170
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-llat" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-llat">
+            <span class="kss-title__ref">
+              9.2.9
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - llat
+              </span>
+            </span>
+            .lst-llat
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-llat" data-kss-fullscreen="kssref-list-style-type-llat">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-llat.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-llat" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-llat" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to lower-latin.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-llat
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to lower-latin
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-llat lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7190
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-lrom" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-lrom">
+            <span class="kss-title__ref">
+              9.2.10
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - lrom
+              </span>
+            </span>
+            .lst-lrom
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-lrom" data-kss-fullscreen="kssref-list-style-type-lrom">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-lrom.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-lrom" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-lrom" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to lower-roman.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-lrom
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to lower-roman
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-lrom lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7130
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-none" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-none">
+            <span class="kss-title__ref">
+              9.2.11
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - none
+              </span>
+            </span>
+            .lst-none
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-none" data-kss-fullscreen="kssref-list-style-type-none">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-none.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-none" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-none" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to none.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-none
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to none
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-none lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7310
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-squa" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-squa">
+            <span class="kss-title__ref">
+              9.2.12
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - squa
+              </span>
+            </span>
+            .lst-squa
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-squa" data-kss-fullscreen="kssref-list-style-type-squa">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-squa.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-squa" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-squa" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to square.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-squa
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to square
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-squa lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7070
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-ualp" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-ualp">
+            <span class="kss-title__ref">
+              9.2.13
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - ualp
+              </span>
+            </span>
+            .lst-ualp
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-ualp" data-kss-fullscreen="kssref-list-style-type-ualp">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-ualp.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-ualp" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-ualp" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to upper-alpha.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-ualp
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to upper-alpha
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-ualp lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7290
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-ulat" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-ulat">
+            <span class="kss-title__ref">
+              9.2.14
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - ulat
+              </span>
+            </span>
+            .lst-ulat
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-ulat" data-kss-fullscreen="kssref-list-style-type-ulat">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-ulat.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-ulat" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-ulat" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to upper-latin.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-ulat
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to upper-latin
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-ulat lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7210
+        </div>
+
+    </section>
+    <section id="kssref-list-style-type-urom" class="kss-section kss-section--depth-3 ">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-list-style-type-urom">
+            <span class="kss-title__ref">
+              9.2.15
+              <span class="kss-title__permalink-hash">
+                  #List Style - Type - urom
+              </span>
+            </span>
+            .lst-urom
+          </a>
+        </h3>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-list-style-type-urom" data-kss-fullscreen="kssref-list-style-type-urom">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-list-style-type-urom.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-list-style-type-urom" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-list-style-type-urom" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Sets the list-style-type of an element to upper-roman.</p>
+
+          </div>
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <ul class=" lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .lst-urom
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Sets list-style-type to upper-roman
+            </div>
+            <div class="kss-modifier__example">
+              <ul class="lst-urom lsp-in">
+    <li>Some</li>
+    <li>List</li>
+    <li>Items</li>
+</ul>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class] lsp-in"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Some<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Items<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7150
+        </div>
+
+    </section>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

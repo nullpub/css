@@ -1,0 +1,54 @@
+@import './list-variables.scss';
+
+/*
+List Style
+
+Classes for setting the list style properties of an element.
+
+Styleguide List Style
+*/
+
+@each $label, $style in $list-style-types {
+    /*
+    .#{$list-style-type-class-prefix}-#{$label}
+
+    Sets the list-style-type of an element to #{$style}.
+
+    Markup:
+    <ul class="{{modifier_class}} lsp-in">
+        <li>Some</li>
+        <li>List</li>
+        <li>Items</li>
+    </ul>
+
+    .#{$list-style-type-class-prefix}-#{$label} - Sets list-style-type to #{$style}
+
+    Styleguide List Style - Type - #{$label}
+    */
+    .#{$list-style-type-class-prefix}-#{$label} {
+        list-style-type: #{$style};
+    }
+}
+
+@each $label, $style in $list-style-positions {
+    /*
+    .#{$list-style-position-class-prefix}-#{$label}
+  
+    Sets the list-style-position property of an element to #{$style}.
+  
+    Markup:
+    <ul class="{{modifier_class}} lsp-in">
+        <li>Some</li>
+        <li>List</li>
+        <li>Items</li>
+    </ul>
+  
+    .#{$list-style-position-class-prefix}-#{$label} - Sets list-style-position to #{$style}
+  
+    Styleguide List Style - Position - #{$label}
+    */
+    .#{$list-style-position-class-prefix}-#{$label} {
+        list-style-position: #{$style};
+    }
+  }
+  

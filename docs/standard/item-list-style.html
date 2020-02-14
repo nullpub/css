@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="./standard.min.css">
+
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-border.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Border</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-child-width.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Child Width</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-color.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-cursor.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Cursor</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-display.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-flex.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Flex</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-font.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Font</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-height.html">
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Height</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-list-style.html">
+          <span class="kss-nav__ref">9</span><span class="kss-nav__name">List Style</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-position">
+                  <span class="kss-nav__ref ">9.1</span
+                  ><span class="kss-nav__name">List Style - Position</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-position-in">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.1.1</span
+                  ><span class="kss-nav__name">.lsp-in</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-position-out">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.1.2</span
+                  ><span class="kss-nav__name">.lsp-out</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type">
+                  <span class="kss-nav__ref ">9.2</span
+                  ><span class="kss-nav__name">List Style - Type</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-arme">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.1</span
+                  ><span class="kss-nav__name">.lst-arme</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-circ">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.2</span
+                  ><span class="kss-nav__name">.lst-circ</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-deci">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.3</span
+                  ><span class="kss-nav__name">.lst-deci</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-decl">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.4</span
+                  ><span class="kss-nav__name">.lst-decl</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-disc">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.5</span
+                  ><span class="kss-nav__name">.lst-disc</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-geor">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.6</span
+                  ><span class="kss-nav__name">.lst-geor</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-lalp">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.7</span
+                  ><span class="kss-nav__name">.lst-lalp</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-lgrk">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.8</span
+                  ><span class="kss-nav__name">.lst-lgrk</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-llat">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.9</span
+                  ><span class="kss-nav__name">.lst-llat</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-lrom">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.10</span
+                  ><span class="kss-nav__name">.lst-lrom</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-none">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.11</span
+                  ><span class="kss-nav__name">.lst-none</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-squa">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.12</span
+                  ><span class="kss-nav__name">.lst-squa</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-ualp">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.13</span
+                  ><span class="kss-nav__name">.lst-ualp</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-ulat">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.14</span
+                  ><span class="kss-nav__name">.lst-ulat</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-list-style.html#kssref-list-style-type-urom">
+                  <span class="kss-nav__ref kss-nav__ref-child">9.2.15</span
+                  ><span class="kss-nav__name">.lst-urom</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-margin.html">
+          <span class="kss-nav__ref">10</span><span class="kss-nav__name">Margin</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-overflow.html">
+          <span class="kss-nav__ref">11</span><span class="kss-nav__name">Overflow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-padding.html">
+          <span class="kss-nav__ref">12</span><span class="kss-nav__name">Padding</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-shadow.html">
+          <span class="kss-nav__ref">13</span><span class="kss-nav__name">Shadow</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-text.html">
+          <span class="kss-nav__ref">14</span><span class="kss-nav__name">Text</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-width.html">
+          <span class="kss-nav__ref">15</span><span class="kss-nav__name">Width</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-list-style" class="kss-section kss-section--depth-1 is-fullscreen">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-list-style">
+            <span class="kss-title__ref">
+              9
+              <span class="kss-title__permalink-hash">
+                  #List Style
+              </span>
+            </span>
+            List Style
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <p>Classes for setting the list style properties of an element.</p>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>standard.css</code>, line 7023
+        </div>
+
+    </div>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

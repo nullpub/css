@@ -17,7 +17,7 @@
     "build:standard.min": "npx sass --style=compressed src/standard.scss dist/standard/standard.min.css",
     "build:reset": "npx sass src/reset.scss dist/reset/reset.css",
     "build:reset.min": "npx sass --style=compressed src/reset.scss dist/reset/reset.min.css",
-    "docs": "concurrently --no-color \"npm:docs:*\" && cp -R dist/* docs/ && cp static/index.html docs/",
+    "docs": "concurrently --no-color \"npm:docs:*\" && cp -R dist/* docs/ && cp static/*.html docs/",
     "docs:full": "npx kss --source dist/full/ --destination docs/full --css ./full.min.css --homepage ./static/home-full.md",
     "docs:standard": "npx kss --source dist/standard/ --destination docs/standard --css ./standard.min.css --homepage ./static/home-standard.md",
     "docs:minimal": "npx kss --source dist/minimal/ --destination docs/minimal --css ./minimal.min.css --homepage ./static/home-minimal.md",
