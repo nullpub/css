@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.1.0-1](https://github.com/nullpub/css/compare/v9.1.0-0...v9.1.0-1) (2020-02-14)
+
+
+### Bug Fixes
+
+* remove margins on semantic tags in reset as conflicts with flg ([9c85485](https://github.com/nullpub/css/commit/9c854852a984daf3bf4d829bb3f065e8a24e7a07))
+
 ## [9.1.0-0](https://github.com/nullpub/css/compare/v9.0.0...v9.1.0-0) (2020-02-14)
 
 
