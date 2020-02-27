@@ -1,0 +1,22 @@
+$object-fit-class-prefix: 'of' !default;
+$object-fit-styles: (
+  'fil': fill,
+  'con': contain,
+  'cov': cover,
+  'non': none,
+  'scd': scale-down,
+) !default;
+
+
+$object-position-class-prefix: 'op' !default;
+$object-position-styles: (
+  'lt': left top,
+  'lc': left center,
+  'lb': left bottom,
+  'ct': center top,
+  'cc': center center,
+  'cb': center bottom,
+  'rt': right top,
+  'rc': right center,
+  'rb': right bottom,
+) !default;

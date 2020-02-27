@@ -1,0 +1,61 @@
+@import './object-variables.scss';
+
+/*
+Object
+
+Classes for setting the object properties of an element.
+
+Styleguide Object
+*/
+
+
+/*
+Object Fit
+
+Classes for setting the object-fit property of an element.
+
+Styleguide Object - Fit
+*/
+@each $label, $style in $object-fit-styles {
+  /*
+  .#{$object-fit-class-prefix}-#{$label}
+
+  Sets the object-fit property of an element to #{$style}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$object-fit-class-prefix}-#{$label} - Sets object-fit to #{$style}
+
+  Styleguide Object - Fit - #{$label}
+  */
+  .#{$object-fit-class-prefix}-#{$label} {
+    object-fit: #{$style};
+  }
+}
+
+/*
+Object Position
+
+Classes for setting the object-position property of an element.
+
+Styleguide Object - Position
+*/
+@each $label, $style in $object-position-styles {
+    /*
+    .#{$object-position-class-prefix}-#{$label}
+  
+    Sets the object-position property of an element to #{$style}.
+  
+    Markup:
+    <div class="{{modifier_class}}">A div</div>
+  
+    .#{$object-position-class-prefix}-#{$label} - Sets object-position to #{$style}
+  
+    Styleguide Object - Position - #{$label}
+    */
+    .#{$object-position-class-prefix}-#{$label} {
+      object-position: #{$style};
+    }
+  }
+  
