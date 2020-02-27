@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/nullpub/css/compare/v8.7.1-1...v9.0.0) (2020-02-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed extraneous reset css
+
+### Features
+
+* added classes for object-fit and object-position ([59fcf6f](https://github.com/nullpub/css/commit/59fcf6feca7e7d8989b209d4c2f7486dc5c560d1))
+* update reset to only include meyer reset. ([9adc127](https://github.com/nullpub/css/commit/9adc12709ec768cfd23bf17c88748211a7a551bd))
+
 ### [8.7.1-1](https://github.com/nullpub/css/compare/v8.7.1-0...v8.7.1-1) (2020-02-14)
 
 ### [8.7.1-0](https://github.com/nullpub/css/compare/v8.7.0...v8.7.1-0) (2020-02-14)
