@@ -1,11 +1,15 @@
 @import './color-variables.scss';
 
 :root {
-  @each $theme, $values in $themes {
-    $colors: map-get($values, 'colors');
-    $label: map-get($values, 'var-label');
-    @each $position, $color in $colors {
-      --#{$theme-var-prefix}-#{$position}-#{$label}: #{$color};
-    }
+  @each $theme in $themes {
+    $label: map-get($theme, 'label');
+    $foreground: map-get($theme, 'foreground');
+    $background: map-get($theme, 'background');
+    $edge: map-get($theme, 'edge');
+    $psuedo: map-get($theme, 'psuedo');
+    
+    --#{$theme-foreground-var-prefix}-#{$label}: #{$foreground};
+    --#{$theme-background-var-prefix}-#{$label}: #{$background};
+    --#{$theme-edge-var-prefix}-#{$label}: #{$edge};
   }
 }

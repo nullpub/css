@@ -495,339 +495,6 @@ Styleguide Border - Style - solid
 }
 
 /*
-Border Color
-
-Classes for setting the border color of an element.
-
-Styleguide Border - Color
-*/
-/*
-.bc[r]-b0
-
-Sets the border color of an element to css var base-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-b0 - Sets border-color to var(--color-back-base-0)
-.bcr-b0 - Sets border-color to var(--color-fore-base-0)
-
-Styleguide Border - Color - b0
-*/
-.bc-b0,
-.ct-b0 {
-  border-color: var(--color-fore-base-0);
-}
-
-.bcr-b0,
-.ctr-b0 {
-  border-color: var(--color-back-base-0);
-}
-
-/*
-.bc[r]-b1
-
-Sets the border color of an element to css var base-1.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-b1 - Sets border-color to var(--color-back-base-1)
-.bcr-b1 - Sets border-color to var(--color-fore-base-1)
-
-Styleguide Border - Color - b1
-*/
-.bc-b1,
-.ct-b1 {
-  border-color: var(--color-fore-base-1);
-}
-
-.bcr-b1,
-.ctr-b1 {
-  border-color: var(--color-back-base-1);
-}
-
-/*
-.bc[r]-b2
-
-Sets the border color of an element to css var base-2.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-b2 - Sets border-color to var(--color-back-base-2)
-.bcr-b2 - Sets border-color to var(--color-fore-base-2)
-
-Styleguide Border - Color - b2
-*/
-.bc-b2,
-.ct-b2 {
-  border-color: var(--color-fore-base-2);
-}
-
-.bcr-b2,
-.ctr-b2 {
-  border-color: var(--color-back-base-2);
-}
-
-/*
-.bc[r]-a0
-
-Sets the border color of an element to css var accent-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-a0 - Sets border-color to var(--color-back-accent-0)
-.bcr-a0 - Sets border-color to var(--color-fore-accent-0)
-
-Styleguide Border - Color - a0
-*/
-.bc-a0,
-.ct-a0 {
-  border-color: var(--color-fore-accent-0);
-}
-
-.bcr-a0,
-.ctr-a0 {
-  border-color: var(--color-back-accent-0);
-}
-
-/*
-.bc[r]-a1
-
-Sets the border color of an element to css var accent-1.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-a1 - Sets border-color to var(--color-back-accent-1)
-.bcr-a1 - Sets border-color to var(--color-fore-accent-1)
-
-Styleguide Border - Color - a1
-*/
-.bc-a1,
-.ct-a1 {
-  border-color: var(--color-fore-accent-1);
-}
-
-.bcr-a1,
-.ctr-a1 {
-  border-color: var(--color-back-accent-1);
-}
-
-/*
-.bc[r]-e0
-
-Sets the border color of an element to css var error-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-e0 - Sets border-color to var(--color-back-error-0)
-.bcr-e0 - Sets border-color to var(--color-fore-error-0)
-
-Styleguide Border - Color - e0
-*/
-.bc-e0,
-.ct-e0 {
-  border-color: var(--color-fore-error-0);
-}
-
-.bcr-e0,
-.ctr-e0 {
-  border-color: var(--color-back-error-0);
-}
-
-/*
-.bc[r]-l0
-
-Sets the border color of an element to css var link-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-l0 - Sets border-color to var(--color-back-link-0)
-.bcr-l0 - Sets border-color to var(--color-fore-link-0)
-
-Styleguide Border - Color - l0
-*/
-.bc-l0,
-.ct-l0 {
-  border-color: var(--color-fore-link-0);
-}
-
-.bcr-l0,
-.ctr-l0 {
-  border-color: var(--color-back-link-0);
-}
-
-/*
-.bc[r]-v0
-
-Sets the border color of an element to css var visited-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-v0 - Sets border-color to var(--color-back-visited-0)
-.bcr-v0 - Sets border-color to var(--color-fore-visited-0)
-
-Styleguide Border - Color - v0
-*/
-.bc-v0,
-.ct-v0 {
-  border-color: var(--color-fore-visited-0);
-}
-
-.bcr-v0,
-.ctr-v0 {
-  border-color: var(--color-back-visited-0);
-}
-
-/*
-.bc[r]-f0
-
-Sets the border color of an element to css var focus-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-f0 - Sets border-color to var(--color-back-focus-0)
-.bcr-f0 - Sets border-color to var(--color-fore-focus-0)
-
-Styleguide Border - Color - f0
-*/
-.bc-f0,
-.ct-f0 {
-  border-color: var(--color-fore-focus-0);
-}
-
-.bcr-f0,
-.ctr-f0 {
-  border-color: var(--color-back-focus-0);
-}
-
-/*
-.bc[r]-r0
-
-Sets the border color of an element to css var required-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-r0 - Sets border-color to var(--color-back-required-0)
-.bcr-r0 - Sets border-color to var(--color-fore-required-0)
-
-Styleguide Border - Color - r0
-*/
-.bc-r0,
-.ct-r0 {
-  border-color: var(--color-fore-required-0);
-}
-
-.bcr-r0,
-.ctr-r0 {
-  border-color: var(--color-back-required-0);
-}
-
-/*
-.bc[r]-i0
-
-Sets the border color of an element to css var invalid-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-i0 - Sets border-color to var(--color-back-invalid-0)
-.bcr-i0 - Sets border-color to var(--color-fore-invalid-0)
-
-Styleguide Border - Color - i0
-*/
-.bc-i0,
-.ct-i0 {
-  border-color: var(--color-fore-invalid-0);
-}
-
-.bcr-i0,
-.ctr-i0 {
-  border-color: var(--color-back-invalid-0);
-}
-
-/*
-.bc[r]-d0
-
-Sets the border color of an element to css var disabled-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.bc-d0 - Sets border-color to var(--color-back-disabled-0)
-.bcr-d0 - Sets border-color to var(--color-fore-disabled-0)
-
-Styleguide Border - Color - d0
-*/
-.bc-d0,
-.ct-d0 {
-  border-color: var(--color-fore-disabled-0);
-}
-
-.bcr-d0,
-.ctr-d0 {
-  border-color: var(--color-back-disabled-0);
-}
-
-.bc-v0-visited:visited,
-.ct-v0-visited:visited {
-  border-color: var(--color-fore-visited-0);
-}
-
-.bcr-v0-visited:visited,
-.ctr-v0-visited:visited {
-  border-color: var(--color-back-visited-0);
-}
-
-.bc-f0-focus:focus,
-.ct-f0-focus:focus {
-  border-color: var(--color-fore-focus-0);
-}
-
-.bcr-f0-focus:focus,
-.ctr-f0-focus:focus {
-  border-color: var(--color-back-focus-0);
-}
-
-.bc-r0-required:required,
-.ct-r0-required:required {
-  border-color: var(--color-fore-required-0);
-}
-
-.bcr-r0-required:required,
-.ctr-r0-required:required {
-  border-color: var(--color-back-required-0);
-}
-
-.bc-i0-invalid:invalid,
-.ct-i0-invalid:invalid {
-  border-color: var(--color-fore-invalid-0);
-}
-
-.bcr-i0-invalid:invalid,
-.ctr-i0-invalid:invalid {
-  border-color: var(--color-back-invalid-0);
-}
-
-.bc-d0-disabled:disabled,
-.ct-d0-disabled:disabled {
-  border-color: var(--color-fore-disabled-0);
-}
-
-.bcr-d0-disabled:disabled,
-.ctr-d0-disabled:disabled {
-  border-color: var(--color-back-disabled-0);
-}
-
-/*
 Border Radius
 
 Classes for setting the border radius of an element.
@@ -1074,33 +741,54 @@ Styleguide Border - Radius - Circle
   border-bottom-right-radius: var(--border-radius-3);
 }
 
+/**
+  Theme Structure
+  A color theme consists of 5 piece of information.
+    - A name
+    - A foreground color
+    - A background
+    - An edge color (border)
+    - A grouping of psuedo classes to render
+ */
 :root {
-  --color-fore-base-0: #111111;
-  --color-back-base-0: #ffffff;
-  --color-fore-base-1: #111111;
-  --color-back-base-1: #f4f4f4;
-  --color-fore-base-2: #f4f4f4;
-  --color-back-base-2: #111111;
-  --color-fore-accent-0: #ffffff;
-  --color-back-accent-0: #357edd;
-  --color-fore-accent-1: #555555;
-  --color-back-accent-1: #96ccff;
-  --color-fore-error-0: #ff4136;
-  --color-back-error-0: #ffdfdf;
-  --color-fore-link-0: #357edd;
-  --color-back-link-0: #ffffff;
-  --color-fore-visited-0: #a463f2;
-  --color-back-visited-0: #ffffff;
-  --color-fore-focus-0: #555555;
-  --color-back-focus-0: #ffb700;
-  --color-fore-required-0: #f4f4f4;
-  --color-back-required-0: #357edd;
-  --color-fore-invalid-0: #ff4136;
-  --color-back-invalid-0: #ffd700;
-  --color-fore-disabled-0: #777777;
-  --color-back-disabled-0: #eeeeee;
+  --cf-base: #111111;
+  --cb-base: #ffffff;
+  --ce-base: #111111;
+  --cf-primary: #ffffff;
+  --cb-primary: #357edd;
+  --ce-primary: #ffffff;
+  --cf-secondary: #555555;
+  --cb-secondary: #96ccff;
+  --ce-secondary: #555555;
+  --cf-link: #357edd;
+  --cb-link: #ffffff;
+  --ce-link: #357edd;
+  --cf-visited: #a463f2;
+  --cb-visited: #ffffff;
+  --ce-visited: #a463f2;
+  --cf-focus: #555555;
+  --cb-focus: #ffb700;
+  --ce-focus: #555555;
+  --cf-required: #357edd;
+  --cb-required: #ffffff;
+  --ce-required: #357edd;
+  --cf-error: #ff4136;
+  --cb-error: #ffdfdf;
+  --ce-error: #ff4136;
+  --cf-disabled: #777777;
+  --cb-disabled: #eeeeee;
+  --ce-disabled: #777777;
 }
 
+/**
+  Theme Structure
+  A color theme consists of 5 piece of information.
+    - A name
+    - A foreground color
+    - A background
+    - An edge color (border)
+    - A grouping of psuedo classes to render
+ */
 /*
 Color
 
@@ -1125,821 +813,536 @@ Styleguide Color - Background
 /*
 Color Theme
 
-Classes for setting the theme an element.
+Classes for setting the color theme an element.
 
 Styleguide Color - Theme
 */
 /*
-.cf[r]-b0
+.ct-base
 
-Sets the of color an element using theme base-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-b0 - Sets color to var(--color-fore-base-0)
-.cfr-b0 - Sets color to var(--color-back-base-0)
-
-Styleguide Color - Foreground - b0
-*/
-/*
-.cb[r]-b0
-
-Sets the of background-color an element using theme base-0.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-b0 - Sets background-color to var(--color-back-base-0)
-.cbr-b0 - Sets background-color to var(--color-fore-base-0)
+.ct-base - Sets color, background, and border-color
+.cf-base - Sets color to var(--cf-base)
+.cb-base - Sets background to var(--cb-base)
+.ce-base - Sets border-color to var(--ce-base)
 
-Styleguide Color - Background - b0
+Styleguide Border - Style - base
 */
-/*
-.ct[r]-b0
-
-Sets the of color, background-color, and border-color an element using theme base-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-b0 - Sets color, background-color, and border-color of element from theme base-0
-.ctr-b0 - Sets color, background-color, and border-color of element from reversing theme base-0
-
-Styleguide Color - Theme - b0
-*/
-.cf-b0,
-.ct-b0 {
-  color: var(--color-fore-base-0);
-}
-
-.cb-b0,
-.ct-b0 {
-  background-color: var(--color-back-base-0);
-}
-
-.cfr-b0,
-.ctr-b0 {
-  color: var(--color-back-base-0);
-}
-
-.cbr-b0,
-.ctr-b0 {
-  background-color: var(--color-fore-base-0);
+.ct-base {
+  color: var(--cf-base);
+  background: var(--cb-base);
+  border-color: var(--ce-base);
 }
 
 /*
-.cf[r]-b1
+.ct-primary
 
-Sets the of color an element using theme base-1.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-b1 - Sets color to var(--color-fore-base-1)
-.cfr-b1 - Sets color to var(--color-back-base-1)
-
-Styleguide Color - Foreground - b1
-*/
-/*
-.cb[r]-b1
-
-Sets the of background-color an element using theme base-1.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-b1 - Sets background-color to var(--color-back-base-1)
-.cbr-b1 - Sets background-color to var(--color-fore-base-1)
+.ct-primary - Sets color, background, and border-color
+.cf-primary - Sets color to var(--cf-primary)
+.cb-primary - Sets background to var(--cb-primary)
+.ce-primary - Sets border-color to var(--ce-primary)
 
-Styleguide Color - Background - b1
+Styleguide Border - Style - primary
 */
-/*
-.ct[r]-b1
-
-Sets the of color, background-color, and border-color an element using theme base-1.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-b1 - Sets color, background-color, and border-color of element from theme base-1
-.ctr-b1 - Sets color, background-color, and border-color of element from reversing theme base-1
-
-Styleguide Color - Theme - b1
-*/
-.cf-b1,
-.ct-b1 {
-  color: var(--color-fore-base-1);
-}
-
-.cb-b1,
-.ct-b1 {
-  background-color: var(--color-back-base-1);
-}
-
-.cfr-b1,
-.ctr-b1 {
-  color: var(--color-back-base-1);
-}
-
-.cbr-b1,
-.ctr-b1 {
-  background-color: var(--color-fore-base-1);
+.ct-primary {
+  color: var(--cf-primary);
+  background: var(--cb-primary);
+  border-color: var(--ce-primary);
 }
 
 /*
-.cf[r]-b2
+.ct-secondary
 
-Sets the of color an element using theme base-2.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-b2 - Sets color to var(--color-fore-base-2)
-.cfr-b2 - Sets color to var(--color-back-base-2)
-
-Styleguide Color - Foreground - b2
-*/
-/*
-.cb[r]-b2
-
-Sets the of background-color an element using theme base-2.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-b2 - Sets background-color to var(--color-back-base-2)
-.cbr-b2 - Sets background-color to var(--color-fore-base-2)
+.ct-secondary - Sets color, background, and border-color
+.cf-secondary - Sets color to var(--cf-secondary)
+.cb-secondary - Sets background to var(--cb-secondary)
+.ce-secondary - Sets border-color to var(--ce-secondary)
 
-Styleguide Color - Background - b2
+Styleguide Border - Style - secondary
 */
-/*
-.ct[r]-b2
-
-Sets the of color, background-color, and border-color an element using theme base-2.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-b2 - Sets color, background-color, and border-color of element from theme base-2
-.ctr-b2 - Sets color, background-color, and border-color of element from reversing theme base-2
-
-Styleguide Color - Theme - b2
-*/
-.cf-b2,
-.ct-b2 {
-  color: var(--color-fore-base-2);
-}
-
-.cb-b2,
-.ct-b2 {
-  background-color: var(--color-back-base-2);
-}
-
-.cfr-b2,
-.ctr-b2 {
-  color: var(--color-back-base-2);
-}
-
-.cbr-b2,
-.ctr-b2 {
-  background-color: var(--color-fore-base-2);
+.ct-secondary {
+  color: var(--cf-secondary);
+  background: var(--cb-secondary);
+  border-color: var(--ce-secondary);
 }
 
 /*
-.cf[r]-a0
+.ct-link
 
-Sets the of color an element using theme accent-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-a0 - Sets color to var(--color-fore-accent-0)
-.cfr-a0 - Sets color to var(--color-back-accent-0)
-
-Styleguide Color - Foreground - a0
-*/
-/*
-.cb[r]-a0
-
-Sets the of background-color an element using theme accent-0.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-a0 - Sets background-color to var(--color-back-accent-0)
-.cbr-a0 - Sets background-color to var(--color-fore-accent-0)
+.ct-link - Sets color, background, and border-color
+.cf-link - Sets color to var(--cf-link)
+.cb-link - Sets background to var(--cb-link)
+.ce-link - Sets border-color to var(--ce-link)
 
-Styleguide Color - Background - a0
+Styleguide Border - Style - link
 */
-/*
-.ct[r]-a0
-
-Sets the of color, background-color, and border-color an element using theme accent-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-a0 - Sets color, background-color, and border-color of element from theme accent-0
-.ctr-a0 - Sets color, background-color, and border-color of element from reversing theme accent-0
-
-Styleguide Color - Theme - a0
-*/
-.cf-a0,
-.ct-a0 {
-  color: var(--color-fore-accent-0);
-}
-
-.cb-a0,
-.ct-a0 {
-  background-color: var(--color-back-accent-0);
-}
-
-.cfr-a0,
-.ctr-a0 {
-  color: var(--color-back-accent-0);
-}
-
-.cbr-a0,
-.ctr-a0 {
-  background-color: var(--color-fore-accent-0);
+.ct-link {
+  color: var(--cf-link);
+  background: var(--cb-link);
+  border-color: var(--ce-link);
 }
 
 /*
-.cf[r]-a1
+.ct-visited
 
-Sets the of color an element using theme accent-1.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-a1 - Sets color to var(--color-fore-accent-1)
-.cfr-a1 - Sets color to var(--color-back-accent-1)
-
-Styleguide Color - Foreground - a1
-*/
-/*
-.cb[r]-a1
-
-Sets the of background-color an element using theme accent-1.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-a1 - Sets background-color to var(--color-back-accent-1)
-.cbr-a1 - Sets background-color to var(--color-fore-accent-1)
+.ct-visited - Sets color, background, and border-color
+.cf-visited - Sets color to var(--cf-visited)
+.cb-visited - Sets background to var(--cb-visited)
+.ce-visited - Sets border-color to var(--ce-visited)
 
-Styleguide Color - Background - a1
+Styleguide Border - Style - visited
 */
-/*
-.ct[r]-a1
-
-Sets the of color, background-color, and border-color an element using theme accent-1.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-a1 - Sets color, background-color, and border-color of element from theme accent-1
-.ctr-a1 - Sets color, background-color, and border-color of element from reversing theme accent-1
-
-Styleguide Color - Theme - a1
-*/
-.cf-a1,
-.ct-a1 {
-  color: var(--color-fore-accent-1);
-}
-
-.cb-a1,
-.ct-a1 {
-  background-color: var(--color-back-accent-1);
-}
-
-.cfr-a1,
-.ctr-a1 {
-  color: var(--color-back-accent-1);
-}
-
-.cbr-a1,
-.ctr-a1 {
-  background-color: var(--color-fore-accent-1);
+.ct-visited {
+  color: var(--cf-visited);
+  background: var(--cb-visited);
+  border-color: var(--ce-visited);
 }
 
 /*
-.cf[r]-e0
+.ct-visited-on-visited
 
-Sets the of color an element using theme error-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-e0 - Sets color to var(--color-fore-error-0)
-.cfr-e0 - Sets color to var(--color-back-error-0)
-
-Styleguide Color - Foreground - e0
-*/
-/*
-.cb[r]-e0
-
-Sets the of background-color an element using theme error-0.
+Sets the color theme of an element (color, background, border-color) on visited.
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-e0 - Sets background-color to var(--color-back-error-0)
-.cbr-e0 - Sets background-color to var(--color-fore-error-0)
+.ct-visited-on-visited - Sets color, background, and border-color on visited
+.cf-visited-on-visited - Sets color to var(--cf-visited) on visited
+.cb-visited-on-visited - Sets background to var(--cb-visited) on visited
+.ce-visited-on-visited - Sets border-color to var(--ce-visited) on visited
 
-Styleguide Color - Background - e0
+Styleguide Border - Style - visited - visited
 */
-/*
-.ct[r]-e0
-
-Sets the of color, background-color, and border-color an element using theme error-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-e0 - Sets color, background-color, and border-color of element from theme error-0
-.ctr-e0 - Sets color, background-color, and border-color of element from reversing theme error-0
-
-Styleguide Color - Theme - e0
-*/
-.cf-e0,
-.ct-e0 {
-  color: var(--color-fore-error-0);
-}
-
-.cb-e0,
-.ct-e0 {
-  background-color: var(--color-back-error-0);
-}
-
-.cfr-e0,
-.ctr-e0 {
-  color: var(--color-back-error-0);
-}
-
-.cbr-e0,
-.ctr-e0 {
-  background-color: var(--color-fore-error-0);
+.ct-visited-on-visited:visited {
+  color: var(--cf-visited);
+  background: var(--cb-visited);
+  border-color: var(--ce-visited);
 }
 
 /*
-.cf[r]-l0
+.ct-focus
 
-Sets the of color an element using theme link-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-l0 - Sets color to var(--color-fore-link-0)
-.cfr-l0 - Sets color to var(--color-back-link-0)
-
-Styleguide Color - Foreground - l0
-*/
-/*
-.cb[r]-l0
-
-Sets the of background-color an element using theme link-0.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-l0 - Sets background-color to var(--color-back-link-0)
-.cbr-l0 - Sets background-color to var(--color-fore-link-0)
+.ct-focus - Sets color, background, and border-color
+.cf-focus - Sets color to var(--cf-focus)
+.cb-focus - Sets background to var(--cb-focus)
+.ce-focus - Sets border-color to var(--ce-focus)
 
-Styleguide Color - Background - l0
+Styleguide Border - Style - focus
 */
-/*
-.ct[r]-l0
-
-Sets the of color, background-color, and border-color an element using theme link-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-l0 - Sets color, background-color, and border-color of element from theme link-0
-.ctr-l0 - Sets color, background-color, and border-color of element from reversing theme link-0
-
-Styleguide Color - Theme - l0
-*/
-.cf-l0,
-.ct-l0 {
-  color: var(--color-fore-link-0);
-}
-
-.cb-l0,
-.ct-l0 {
-  background-color: var(--color-back-link-0);
-}
-
-.cfr-l0,
-.ctr-l0 {
-  color: var(--color-back-link-0);
-}
-
-.cbr-l0,
-.ctr-l0 {
-  background-color: var(--color-fore-link-0);
+.ct-focus {
+  color: var(--cf-focus);
+  background: var(--cb-focus);
+  border-color: var(--ce-focus);
 }
 
 /*
-.cf[r]-v0
+.ct-focus-on-focus
 
-Sets the of color an element using theme visited-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-v0 - Sets color to var(--color-fore-visited-0)
-.cfr-v0 - Sets color to var(--color-back-visited-0)
-
-Styleguide Color - Foreground - v0
-*/
-/*
-.cb[r]-v0
-
-Sets the of background-color an element using theme visited-0.
+Sets the color theme of an element (color, background, border-color) on focus.
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-v0 - Sets background-color to var(--color-back-visited-0)
-.cbr-v0 - Sets background-color to var(--color-fore-visited-0)
+.ct-focus-on-focus - Sets color, background, and border-color on focus
+.cf-focus-on-focus - Sets color to var(--cf-focus) on focus
+.cb-focus-on-focus - Sets background to var(--cb-focus) on focus
+.ce-focus-on-focus - Sets border-color to var(--ce-focus) on focus
 
-Styleguide Color - Background - v0
+Styleguide Border - Style - focus - focus, focus-within
 */
-/*
-.ct[r]-v0
-
-Sets the of color, background-color, and border-color an element using theme visited-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-v0 - Sets color, background-color, and border-color of element from theme visited-0
-.ctr-v0 - Sets color, background-color, and border-color of element from reversing theme visited-0
-
-Styleguide Color - Theme - v0
-*/
-.cf-v0,
-.ct-v0 {
-  color: var(--color-fore-visited-0);
-}
-
-.cb-v0,
-.ct-v0 {
-  background-color: var(--color-back-visited-0);
-}
-
-.cfr-v0,
-.ctr-v0 {
-  color: var(--color-back-visited-0);
-}
-
-.cbr-v0,
-.ctr-v0 {
-  background-color: var(--color-fore-visited-0);
+.ct-focus-on-focus:focus {
+  color: var(--cf-focus);
+  background: var(--cb-focus);
+  border-color: var(--ce-focus);
 }
 
 /*
-.cf[r]-f0
+.ct-focus-on-focus-within
 
-Sets the of color an element using theme focus-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-f0 - Sets color to var(--color-fore-focus-0)
-.cfr-f0 - Sets color to var(--color-back-focus-0)
-
-Styleguide Color - Foreground - f0
-*/
-/*
-.cb[r]-f0
-
-Sets the of background-color an element using theme focus-0.
+Sets the color theme of an element (color, background, border-color) on focus-within.
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-f0 - Sets background-color to var(--color-back-focus-0)
-.cbr-f0 - Sets background-color to var(--color-fore-focus-0)
+.ct-focus-on-focus-within - Sets color, background, and border-color on focus-within
+.cf-focus-on-focus-within - Sets color to var(--cf-focus) on focus-within
+.cb-focus-on-focus-within - Sets background to var(--cb-focus) on focus-within
+.ce-focus-on-focus-within - Sets border-color to var(--ce-focus) on focus-within
 
-Styleguide Color - Background - f0
+Styleguide Border - Style - focus - focus, focus-within
 */
-/*
-.ct[r]-f0
-
-Sets the of color, background-color, and border-color an element using theme focus-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-f0 - Sets color, background-color, and border-color of element from theme focus-0
-.ctr-f0 - Sets color, background-color, and border-color of element from reversing theme focus-0
-
-Styleguide Color - Theme - f0
-*/
-.cf-f0,
-.ct-f0 {
-  color: var(--color-fore-focus-0);
-}
-
-.cb-f0,
-.ct-f0 {
-  background-color: var(--color-back-focus-0);
-}
-
-.cfr-f0,
-.ctr-f0 {
-  color: var(--color-back-focus-0);
-}
-
-.cbr-f0,
-.ctr-f0 {
-  background-color: var(--color-fore-focus-0);
+.ct-focus-on-focus-within:focus-within {
+  color: var(--cf-focus);
+  background: var(--cb-focus);
+  border-color: var(--ce-focus);
 }
 
 /*
-.cf[r]-r0
+.ct-required
 
-Sets the of color an element using theme required-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-r0 - Sets color to var(--color-fore-required-0)
-.cfr-r0 - Sets color to var(--color-back-required-0)
-
-Styleguide Color - Foreground - r0
-*/
-/*
-.cb[r]-r0
-
-Sets the of background-color an element using theme required-0.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-r0 - Sets background-color to var(--color-back-required-0)
-.cbr-r0 - Sets background-color to var(--color-fore-required-0)
+.ct-required - Sets color, background, and border-color
+.cf-required - Sets color to var(--cf-required)
+.cb-required - Sets background to var(--cb-required)
+.ce-required - Sets border-color to var(--ce-required)
 
-Styleguide Color - Background - r0
+Styleguide Border - Style - required
 */
-/*
-.ct[r]-r0
-
-Sets the of color, background-color, and border-color an element using theme required-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-r0 - Sets color, background-color, and border-color of element from theme required-0
-.ctr-r0 - Sets color, background-color, and border-color of element from reversing theme required-0
-
-Styleguide Color - Theme - r0
-*/
-.cf-r0,
-.ct-r0 {
-  color: var(--color-fore-required-0);
-}
-
-.cb-r0,
-.ct-r0 {
-  background-color: var(--color-back-required-0);
-}
-
-.cfr-r0,
-.ctr-r0 {
-  color: var(--color-back-required-0);
-}
-
-.cbr-r0,
-.ctr-r0 {
-  background-color: var(--color-fore-required-0);
+.ct-required {
+  color: var(--cf-required);
+  background: var(--cb-required);
+  border-color: var(--ce-required);
 }
 
 /*
-.cf[r]-i0
+.ct-required-on-required
 
-Sets the of color an element using theme invalid-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.cf-i0 - Sets color to var(--color-fore-invalid-0)
-.cfr-i0 - Sets color to var(--color-back-invalid-0)
-
-Styleguide Color - Foreground - i0
-*/
-/*
-.cb[r]-i0
-
-Sets the of background-color an element using theme invalid-0.
+Sets the color theme of an element (color, background, border-color) on required.
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-i0 - Sets background-color to var(--color-back-invalid-0)
-.cbr-i0 - Sets background-color to var(--color-fore-invalid-0)
+.ct-required-on-required - Sets color, background, and border-color on required
+.cf-required-on-required - Sets color to var(--cf-required) on required
+.cb-required-on-required - Sets background to var(--cb-required) on required
+.ce-required-on-required - Sets border-color to var(--ce-required) on required
 
-Styleguide Color - Background - i0
+Styleguide Border - Style - required - required
 */
-/*
-.ct[r]-i0
-
-Sets the of color, background-color, and border-color an element using theme invalid-0.
-
-Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
-
-.ct-i0 - Sets color, background-color, and border-color of element from theme invalid-0
-.ctr-i0 - Sets color, background-color, and border-color of element from reversing theme invalid-0
-
-Styleguide Color - Theme - i0
-*/
-.cf-i0,
-.ct-i0 {
-  color: var(--color-fore-invalid-0);
-}
-
-.cb-i0,
-.ct-i0 {
-  background-color: var(--color-back-invalid-0);
-}
-
-.cfr-i0,
-.ctr-i0 {
-  color: var(--color-back-invalid-0);
-}
-
-.cbr-i0,
-.ctr-i0 {
-  background-color: var(--color-fore-invalid-0);
+.ct-required-on-required:required {
+  color: var(--cf-required);
+  background: var(--cb-required);
+  border-color: var(--ce-required);
 }
 
 /*
-.cf[r]-d0
+.ct-error
 
-Sets the of color an element using theme disabled-0.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cf-d0 - Sets color to var(--color-fore-disabled-0)
-.cfr-d0 - Sets color to var(--color-back-disabled-0)
+.ct-error - Sets color, background, and border-color
+.cf-error - Sets color to var(--cf-error)
+.cb-error - Sets background to var(--cb-error)
+.ce-error - Sets border-color to var(--ce-error)
 
-Styleguide Color - Foreground - d0
+Styleguide Border - Style - error
 */
+.ct-error {
+  color: var(--cf-error);
+  background: var(--cb-error);
+  border-color: var(--ce-error);
+}
+
 /*
-.cb[r]-d0
+.ct-error-on-invalid
 
-Sets the of background-color an element using theme disabled-0.
+Sets the color theme of an element (color, background, border-color) on invalid.
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.cb-d0 - Sets background-color to var(--color-back-disabled-0)
-.cbr-d0 - Sets background-color to var(--color-fore-disabled-0)
+.ct-error-on-invalid - Sets color, background, and border-color on invalid
+.cf-error-on-invalid - Sets color to var(--cf-error) on invalid
+.cb-error-on-invalid - Sets background to var(--cb-error) on invalid
+.ce-error-on-invalid - Sets border-color to var(--ce-error) on invalid
 
-Styleguide Color - Background - d0
+Styleguide Border - Style - error - invalid
 */
+.ct-error-on-invalid:invalid {
+  color: var(--cf-error);
+  background: var(--cb-error);
+  border-color: var(--ce-error);
+}
+
 /*
-.ct[r]-d0
+.ct-disabled
 
-Sets the of color, background-color, and border-color an element using theme disabled-0.
+Sets the color theme of an element (color, background, border-color).
 
 Markup:
-<div class="bwa-1 {{modifier_class}}">A div</div>
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-.ct-d0 - Sets color, background-color, and border-color of element from theme disabled-0
-.ctr-d0 - Sets color, background-color, and border-color of element from reversing theme disabled-0
+.ct-disabled - Sets color, background, and border-color
+.cf-disabled - Sets color to var(--cf-disabled)
+.cb-disabled - Sets background to var(--cb-disabled)
+.ce-disabled - Sets border-color to var(--ce-disabled)
 
-Styleguide Color - Theme - d0
+Styleguide Border - Style - disabled
 */
-.cf-d0,
-.ct-d0 {
-  color: var(--color-fore-disabled-0);
+.ct-disabled {
+  color: var(--cf-disabled);
+  background: var(--cb-disabled);
+  border-color: var(--ce-disabled);
 }
 
-.cb-d0,
-.ct-d0 {
-  background-color: var(--color-back-disabled-0);
+/*
+.ct-disabled-on-disabled
+
+Sets the color theme of an element (color, background, border-color) on disabled.
+
+Markup:
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
+
+.ct-disabled-on-disabled - Sets color, background, and border-color on disabled
+.cf-disabled-on-disabled - Sets color to var(--cf-disabled) on disabled
+.cb-disabled-on-disabled - Sets background to var(--cb-disabled) on disabled
+.ce-disabled-on-disabled - Sets border-color to var(--ce-disabled) on disabled
+
+Styleguide Border - Style - disabled - disabled, focus-within
+*/
+.ct-disabled-on-disabled:disabled {
+  color: var(--cf-disabled);
+  background: var(--cb-disabled);
+  border-color: var(--ce-disabled);
 }
 
-.cfr-d0,
-.ctr-d0 {
-  color: var(--color-back-disabled-0);
+/*
+.ct-disabled-on-focus-within
+
+Sets the color theme of an element (color, background, border-color) on focus-within.
+
+Markup:
+<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
+
+.ct-disabled-on-focus-within - Sets color, background, and border-color on focus-within
+.cf-disabled-on-focus-within - Sets color to var(--cf-disabled) on focus-within
+.cb-disabled-on-focus-within - Sets background to var(--cb-disabled) on focus-within
+.ce-disabled-on-focus-within - Sets border-color to var(--ce-disabled) on focus-within
+
+Styleguide Border - Style - disabled - disabled, focus-within
+*/
+.ct-disabled-on-focus-within:focus-within {
+  color: var(--cf-disabled);
+  background: var(--cb-disabled);
+  border-color: var(--ce-disabled);
 }
 
-.cbr-d0,
-.ctr-d0 {
-  background-color: var(--color-fore-disabled-0);
+.cf-base {
+  color: var(--cf-base);
 }
 
-.cf-v0-visited:visited,
-.ct-v0-visited:visited {
-  color: var(--color-fore-visited-0);
+.cb-base {
+  background: var(--cb-base);
 }
 
-.cb-v0-visited:visited,
-.ct-v0-visited:visited {
-  background-color: var(--color-back-visited-0);
+.ce-base {
+  border-color: var(--ce-base);
 }
 
-.cfr-v0-visited:visited,
-.ctr-v0-visited:visited {
-  color: var(--color-back-visited-0);
+.cf-primary {
+  color: var(--cf-primary);
 }
 
-/* Reverse: Theme Background and Theme Classes */
-.cbr-v0-visited:visited,
-.ctr-v0-visited:visited {
-  background-color: var(--color-fore-visited-0);
+.cb-primary {
+  background: var(--cb-primary);
 }
 
-.cf-f0-focus:focus,
-.ct-f0-focus:focus {
-  color: var(--color-fore-focus-0);
+.ce-primary {
+  border-color: var(--ce-primary);
 }
 
-.cb-f0-focus:focus,
-.ct-f0-focus:focus {
-  background-color: var(--color-back-focus-0);
+.cf-secondary {
+  color: var(--cf-secondary);
 }
 
-.cfr-f0-focus:focus,
-.ctr-f0-focus:focus {
-  color: var(--color-back-focus-0);
+.cb-secondary {
+  background: var(--cb-secondary);
 }
 
-/* Reverse: Theme Background and Theme Classes */
-.cbr-f0-focus:focus,
-.ctr-f0-focus:focus {
-  background-color: var(--color-fore-focus-0);
+.ce-secondary {
+  border-color: var(--ce-secondary);
 }
 
-.cf-r0-required:required,
-.ct-r0-required:required {
-  color: var(--color-fore-required-0);
+.cf-link {
+  color: var(--cf-link);
 }
 
-.cb-r0-required:required,
-.ct-r0-required:required {
-  background-color: var(--color-back-required-0);
+.cb-link {
+  background: var(--cb-link);
 }
 
-.cfr-r0-required:required,
-.ctr-r0-required:required {
-  color: var(--color-back-required-0);
+.ce-link {
+  border-color: var(--ce-link);
 }
 
-/* Reverse: Theme Background and Theme Classes */
-.cbr-r0-required:required,
-.ctr-r0-required:required {
-  background-color: var(--color-fore-required-0);
+.cf-visited {
+  color: var(--cf-visited);
 }
 
-.cf-i0-invalid:invalid,
-.ct-i0-invalid:invalid {
-  color: var(--color-fore-invalid-0);
+.cb-visited {
+  background: var(--cb-visited);
 }
 
-.cb-i0-invalid:invalid,
-.ct-i0-invalid:invalid {
-  background-color: var(--color-back-invalid-0);
+.ce-visited {
+  border-color: var(--ce-visited);
 }
 
-.cfr-i0-invalid:invalid,
-.ctr-i0-invalid:invalid {
-  color: var(--color-back-invalid-0);
+.cf-visited-on-visited:visited {
+  color: var(--cf-visited);
 }
 
-/* Reverse: Theme Background and Theme Classes */
-.cbr-i0-invalid:invalid,
-.ctr-i0-invalid:invalid {
-  background-color: var(--color-fore-invalid-0);
+.cb-visited-on-visited:visited {
+  background: var(--cb-visited);
 }
 
-.cf-d0-disabled:disabled,
-.ct-d0-disabled:disabled {
-  color: var(--color-fore-disabled-0);
+.ce-visited-on-visited:visited {
+  border-color: var(--ce-visited);
 }
 
-.cb-d0-disabled:disabled,
-.ct-d0-disabled:disabled {
-  background-color: var(--color-back-disabled-0);
+.cf-focus {
+  color: var(--cf-focus);
 }
 
-.cfr-d0-disabled:disabled,
-.ctr-d0-disabled:disabled {
-  color: var(--color-back-disabled-0);
+.cb-focus {
+  background: var(--cb-focus);
 }
 
-/* Reverse: Theme Background and Theme Classes */
-.cbr-d0-disabled:disabled,
-.ctr-d0-disabled:disabled {
-  background-color: var(--color-fore-disabled-0);
+.ce-focus {
+  border-color: var(--ce-focus);
+}
+
+.cf-focus-on-focus:focus {
+  color: var(--cf-focus);
+}
+
+.cb-focus-on-focus:focus {
+  background: var(--cb-focus);
+}
+
+.ce-focus-on-focus:focus {
+  border-color: var(--ce-focus);
+}
+
+.cf-focus-on-focus-within:focus-within {
+  color: var(--cf-focus);
+}
+
+.cb-focus-on-focus-within:focus-within {
+  background: var(--cb-focus);
+}
+
+.ce-focus-on-focus-within:focus-within {
+  border-color: var(--ce-focus);
+}
+
+.cf-required {
+  color: var(--cf-required);
+}
+
+.cb-required {
+  background: var(--cb-required);
+}
+
+.ce-required {
+  border-color: var(--ce-required);
+}
+
+.cf-required-on-required:required {
+  color: var(--cf-required);
+}
+
+.cb-required-on-required:required {
+  background: var(--cb-required);
+}
+
+.ce-required-on-required:required {
+  border-color: var(--ce-required);
+}
+
+.cf-error {
+  color: var(--cf-error);
+}
+
+.cb-error {
+  background: var(--cb-error);
+}
+
+.ce-error {
+  border-color: var(--ce-error);
+}
+
+.cf-error-on-invalid:invalid {
+  color: var(--cf-error);
+}
+
+.cb-error-on-invalid:invalid {
+  background: var(--cb-error);
+}
+
+.ce-error-on-invalid:invalid {
+  border-color: var(--ce-error);
+}
+
+.cf-disabled {
+  color: var(--cf-disabled);
+}
+
+.cb-disabled {
+  background: var(--cb-disabled);
+}
+
+.ce-disabled {
+  border-color: var(--ce-disabled);
+}
+
+.cf-disabled-on-disabled:disabled {
+  color: var(--cf-disabled);
+}
+
+.cb-disabled-on-disabled:disabled {
+  background: var(--cb-disabled);
+}
+
+.ce-disabled-on-disabled:disabled {
+  border-color: var(--ce-disabled);
+}
+
+.cf-disabled-on-focus-within:focus-within {
+  color: var(--cf-disabled);
+}
+
+.cb-disabled-on-focus-within:focus-within {
+  background: var(--cb-disabled);
+}
+
+.ce-disabled-on-focus-within:focus-within {
+  border-color: var(--ce-disabled);
 }
 
 /*
@@ -10569,6 +9972,251 @@ Styleguide Overflow - un
 
 .ovy-un {
   overflow-y: unset;
+}
+
+/*
+Object
+
+Classes for setting the object properties of an element.
+
+Styleguide Object
+*/
+/*
+Object Fit
+
+Classes for setting the object-fit property of an element.
+
+Styleguide Object - Fit
+*/
+/*
+.of-fil
+
+Sets the object-fit property of an element to fill.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.of-fil - Sets object-fit to fill
+
+Styleguide Object - Fit - fil
+*/
+.of-fil {
+  object-fit: fill;
+}
+
+/*
+.of-con
+
+Sets the object-fit property of an element to contain.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.of-con - Sets object-fit to contain
+
+Styleguide Object - Fit - con
+*/
+.of-con {
+  object-fit: contain;
+}
+
+/*
+.of-cov
+
+Sets the object-fit property of an element to cover.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.of-cov - Sets object-fit to cover
+
+Styleguide Object - Fit - cov
+*/
+.of-cov {
+  object-fit: cover;
+}
+
+/*
+.of-non
+
+Sets the object-fit property of an element to none.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.of-non - Sets object-fit to none
+
+Styleguide Object - Fit - non
+*/
+.of-non {
+  object-fit: none;
+}
+
+/*
+.of-scd
+
+Sets the object-fit property of an element to scale-down.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.of-scd - Sets object-fit to scale-down
+
+Styleguide Object - Fit - scd
+*/
+.of-scd {
+  object-fit: scale-down;
+}
+
+/*
+Object Position
+
+Classes for setting the object-position property of an element.
+
+Styleguide Object - Position
+*/
+/*
+.op-lt
+
+Sets the object-position property of an element to left top.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-lt - Sets object-position to left top
+
+Styleguide Object - Position - lt
+*/
+.op-lt {
+  object-position: left top;
+}
+
+/*
+.op-lc
+
+Sets the object-position property of an element to left center.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-lc - Sets object-position to left center
+
+Styleguide Object - Position - lc
+*/
+.op-lc {
+  object-position: left center;
+}
+
+/*
+.op-lb
+
+Sets the object-position property of an element to left bottom.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-lb - Sets object-position to left bottom
+
+Styleguide Object - Position - lb
+*/
+.op-lb {
+  object-position: left bottom;
+}
+
+/*
+.op-ct
+
+Sets the object-position property of an element to center top.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-ct - Sets object-position to center top
+
+Styleguide Object - Position - ct
+*/
+.op-ct {
+  object-position: center top;
+}
+
+/*
+.op-cc
+
+Sets the object-position property of an element to center center.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-cc - Sets object-position to center center
+
+Styleguide Object - Position - cc
+*/
+.op-cc {
+  object-position: center center;
+}
+
+/*
+.op-cb
+
+Sets the object-position property of an element to center bottom.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-cb - Sets object-position to center bottom
+
+Styleguide Object - Position - cb
+*/
+.op-cb {
+  object-position: center bottom;
+}
+
+/*
+.op-rt
+
+Sets the object-position property of an element to right top.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-rt - Sets object-position to right top
+
+Styleguide Object - Position - rt
+*/
+.op-rt {
+  object-position: right top;
+}
+
+/*
+.op-rc
+
+Sets the object-position property of an element to right center.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-rc - Sets object-position to right center
+
+Styleguide Object - Position - rc
+*/
+.op-rc {
+  object-position: right center;
+}
+
+/*
+.op-rb
+
+Sets the object-position property of an element to right bottom.
+
+Markup:
+<div class="{{modifier_class}}">A div</div>
+
+.op-rb - Sets object-position to right bottom
+
+Styleguide Object - Position - rb
+*/
+.op-rb {
+  object-position: right bottom;
 }
 
 :root {

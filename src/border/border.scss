@@ -1,5 +1,3 @@
-@import '../color/color-variables.scss';
-
 @import './border-variables.scss';
 
 /*
@@ -87,68 +85,6 @@ Styleguide Border - Style
   */
   .#{$border-styles-class-prefix}-#{$label} {
     border-style: #{$style};
-  }
-}
-
-/*
-Border Color
-
-Classes for setting the border color of an element.
-
-Styleguide Border - Color
-*/
-@each $key, $theme in $themes {
-  $varLabel: map-get($theme, 'var-label');
-  $classLabel: map-get($theme, 'class-label');
-
-  /*
-  .#{$border-color-class-prefix}[r]-#{$classLabel}
-
-  Sets the border color of an element to css var #{$varLabel}.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .#{$border-color-class-prefix}-#{$classLabel} - Sets border-color to var(--#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel})
-  .#{$border-color-class-prefix}r-#{$classLabel} - Sets border-color to var(--#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel})
-
-  Styleguide Border - Color - #{$classLabel}
-  */
-  .#{$border-color-class-prefix}-#{$classLabel},
-  .#{$theme-class-prefix}-#{$classLabel} {
-    border-color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
-    );
-  }
-
-  .#{$border-color-class-prefix}r-#{$classLabel},
-  .#{$theme-class-prefix}r-#{$classLabel} {
-    border-color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
-    );
-  }
-}
-
-// Figure out a nice way to document psuedo class classes
-@each $key, $theme in $themes {
-  $varLabel: map-get($theme, 'var-label');
-  $classLabel: map-get($theme, 'class-label');
-  $psuedoBinding: map-get($theme, 'psuedo-binding');
-
-  @if $psuedoBinding {
-    .#{$border-color-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
-    .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
-      border-color: var(
-        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
-      );
-    }
-
-    .#{$border-color-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
-    .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
-      border-color: var(
-        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
-      );
-    }
   }
 }
 

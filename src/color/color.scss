@@ -27,119 +27,87 @@ Styleguide Color - Background
 /*
 Color Theme
 
-Classes for setting the theme an element.
+Classes for setting the color theme an element.
 
 Styleguide Color - Theme
 */
 
-@each $theme, $values in $themes {
-  $varLabel: map-get($values, 'var-label');
-  $classLabel: map-get($values, 'class-label');
+@each $theme in $themes {
+  $label: map-get($theme, 'label');
+  $psuedo: map-get($theme, 'psuedo');
 
   /*
-  .#{$theme-foreground-class-prefix}[r]-#{$classLabel}
+  .#{$theme-class-prefix}-#{$label}
 
-  Sets the of color an element using theme #{$theme}.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .#{$theme-foreground-class-prefix}-#{$classLabel} - Sets color to var(--#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel})
-  .#{$theme-foreground-class-prefix}r-#{$classLabel} - Sets color to var(--#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel})
-
-  Styleguide Color - Foreground - #{$classLabel}
-  */
-
-  /*
-  .#{$theme-background-class-prefix}[r]-#{$classLabel}
-
-  Sets the of background-color an element using theme #{$theme}.
+  Sets the color theme of an element (color, background, border-color).
 
   Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
+  <div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
 
-  .#{$theme-background-class-prefix}-#{$classLabel} - Sets background-color to var(--#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel})
-  .#{$theme-background-class-prefix}r-#{$classLabel} - Sets background-color to var(--#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel})
+  .#{$theme-class-prefix}-#{$label} - Sets color, background, and border-color
+  .#{$theme-foreground-class-prefix}-#{$label} - Sets color to var(--#{$theme-foreground-var-prefix}-#{$label})
+  .#{$theme-background-class-prefix}-#{$label} - Sets background to var(--#{$theme-background-var-prefix}-#{$label})
+  .#{$theme-edge-class-prefix}-#{$label} - Sets border-color to var(--#{$theme-edge-var-prefix}-#{$label})
 
-  Styleguide Color - Background - #{$classLabel}
+  Styleguide Border - Style - #{$label}
   */
-
-  /*
-  .#{$theme-class-prefix}[r]-#{$classLabel}
-
-  Sets the of color, background-color, and border-color an element using theme #{$theme}.
-
-  Markup:
-  <div class="bwa-1 {{modifier_class}}">A div</div>
-
-  .#{$theme-class-prefix}-#{$classLabel} - Sets color, background-color, and border-color of element from theme #{$theme}
-  .#{$theme-class-prefix}r-#{$classLabel} - Sets color, background-color, and border-color of element from reversing theme #{$theme}
-
-  Styleguide Color - Theme - #{$classLabel}
-  */
-
-  .#{$theme-foreground-class-prefix}-#{$classLabel},
-  .#{$theme-class-prefix}-#{$classLabel} {
-    color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
-    );
+  .#{$theme-class-prefix}-#{$label} {
+    color: var(--#{$theme-foreground-var-prefix}-#{$label});
+    background: var(--#{$theme-background-var-prefix}-#{$label});
+    border-color: var(--#{$theme-edge-var-prefix}-#{$label});
   }
 
-  .#{$theme-background-class-prefix}-#{$classLabel},
-  .#{$theme-class-prefix}-#{$classLabel} {
-    background-color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
-    );
-  }
+  @each $class in $psuedo {
+    /*
+    .#{$theme-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}
 
-  .#{$theme-foreground-class-prefix}r-#{$classLabel},
-  .#{$theme-class-prefix}r-#{$classLabel} {
-    color: var(
-      --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
-    );
-  }
+    Sets the color theme of an element (color, background, border-color) on #{$class}.
 
-  .#{$theme-background-class-prefix}r-#{$classLabel},
-  .#{$theme-class-prefix}r-#{$classLabel} {
-    background-color: var(
-      --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
-    );
+    Markup:
+    <div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
+
+    .#{$theme-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class} - Sets color, background, and border-color on #{$class}
+    .#{$theme-foreground-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class} - Sets color to var(--#{$theme-foreground-var-prefix}-#{$label}) on #{$class}
+    .#{$theme-background-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class} - Sets background to var(--#{$theme-background-var-prefix}-#{$label}) on #{$class}
+    .#{$theme-edge-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class} - Sets border-color to var(--#{$theme-edge-var-prefix}-#{$label}) on #{$class}
+
+    Styleguide Border - Style - #{$label} - #{$psuedo}
+    */
+    .#{$theme-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
+      color: var(--#{$theme-foreground-var-prefix}-#{$label});
+      background: var(--#{$theme-background-var-prefix}-#{$label});
+      border-color: var(--#{$theme-edge-var-prefix}-#{$label});
+    }
   }
 }
 
-@each $theme, $values in $themes {
-  $varLabel: map-get($values, 'var-label');
-  $classLabel: map-get($values, 'class-label');
-  $psuedoBinding: map-get($values, 'psuedo-binding');
+@each $theme in $themes {
+  $label: map-get($theme, 'label');
+  $psuedo: map-get($theme, 'psuedo');
 
-  @if $psuedoBinding {
-    .#{$theme-foreground-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
-    .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
-      color: var(
-        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
-      );
+  .#{$theme-foreground-class-prefix}-#{$label} {
+    color: var(--#{$theme-foreground-var-prefix}-#{$label});
+  }
+
+  .#{$theme-background-class-prefix}-#{$label} {
+    background: var(--#{$theme-background-var-prefix}-#{$label});
+  }
+
+  .#{$theme-edge-class-prefix}-#{$label} {
+    border-color: var(--#{$theme-edge-var-prefix}-#{$label});
+  }
+
+  @each $class in $psuedo {
+    .#{$theme-foreground-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
+      color: var(--#{$theme-foreground-var-prefix}-#{$label});
     }
-
-    .#{$theme-background-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
-    .#{$theme-class-prefix}-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
-      background-color: var(
-        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
-      );
+  
+    .#{$theme-background-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
+      background: var(--#{$theme-background-var-prefix}-#{$label});
     }
-
-    .#{$theme-foreground-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
-    .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
-      color: var(
-        --#{$theme-var-prefix}-#{$theme-background-var-prefix}-#{$varLabel}
-      );
-    }
-
-    /* Reverse: Theme Background and Theme Classes */
-    .#{$theme-background-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding},
-    .#{$theme-class-prefix}r-#{$classLabel}-#{$psuedoBinding}:#{$psuedoBinding} {
-      background-color: var(
-        --#{$theme-var-prefix}-#{$theme-foreground-var-prefix}-#{$varLabel}
-      );
+  
+    .#{$theme-edge-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
+      border-color: var(--#{$theme-edge-var-prefix}-#{$label});
     }
   }
 }

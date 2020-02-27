@@ -1,111 +1,85 @@
-$theme-var-prefix: 'color' !default;
-$theme-foreground-var-prefix: 'fore' !default;
-$theme-background-var-prefix: 'back' !default;
-
 $theme-class-prefix: 'ct' !default;
 $theme-foreground-class-prefix: 'cf' !default;
 $theme-background-class-prefix: 'cb' !default;
+$theme-edge-class-prefix: 'ce' !default;
+$theme-psuedo-class-verb: 'on' !default;
+
+$theme-foreground-var-prefix: 'cf' !default;
+$theme-background-var-prefix: 'cb' !default;
+$theme-edge-var-prefix: 'ce' !default;
+
+/**
+  Theme Structure
+  A color theme consists of 5 piece of information.
+    - A name
+    - A foreground color
+    - A background
+    - An edge color (border)
+    - A grouping of psuedo classes to render
+ */
 
 $themes: (
-  'base-0': (
-    'class-label': 'b0',
-    'var-label': 'base-0',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #111111,
-      #{$theme-background-var-prefix}: #ffffff,
-    ),
+  (
+    'label': 'base',
+    'foreground': #111111,
+    'background': #ffffff,
+    'edge': #111111,
+    'psuedo': (),
   ),
-  'base-1': (
-    'class-label': 'b1',
-    'var-label': 'base-1',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #111111,
-      #{$theme-background-var-prefix}: #f4f4f4,
-    ),
+  (
+    'label': 'primary',
+    'foreground': #ffffff,
+    'background': #357edd,
+    'edge': #ffffff,
+    'psuedo': (),
   ),
-  'base-2': (
-    'class-label': 'b2',
-    'var-label': 'base-2',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #f4f4f4,
-      #{$theme-background-var-prefix}: #111111,
-    ),
+  (
+    'label': 'secondary',
+    'foreground': #555555,
+    'background': #96ccff,
+    'edge': #555555,
+    'psuedo': (),
   ),
-  'accent-0': (
-    'class-label': 'a0',
-    'var-label': 'accent-0',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #ffffff,
-      #{$theme-background-var-prefix}: #357edd,
-    ),
+  (
+    'label': 'link',
+    'foreground': #357edd,
+    'background': #ffffff,
+    'edge': #357edd,
+    'psuedo': (),
   ),
-  'accent-1': (
-    'class-label': 'a1',
-    'var-label': 'accent-1',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #555555,
-      #{$theme-background-var-prefix}: #96ccff,
-    ),
+  (
+    'label': 'visited',
+    'foreground': #a463f2,
+    'background': #ffffff,
+    'edge': #a463f2,
+    'psuedo': ('visited'),
   ),
-  'error-0': (
-    'class-label': 'e0',
-    'var-label': 'error-0',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #ff4136,
-      #{$theme-background-var-prefix}: #ffdfdf,
-    ),
+  (
+    'label': 'focus',
+    'foreground': #555555,
+    'background': #ffb700,
+    'edge': #555555,
+    'psuedo': ('focus', 'focus-within'),
   ),
-  'link-0': (
-    'class-label': 'l0',
-    'var-label': 'link-0',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #357edd,
-      #{$theme-background-var-prefix}: #ffffff,
-    ),
+  (
+    'label': 'required',
+    'foreground': #357edd,
+    'background': #ffffff,
+    'edge': #357edd,
+    'psuedo': ('required'),
   ),
-  'visited-0': (
-    'class-label': 'v0',
-    'var-label': 'visited-0',
-    'psuedo-binding': 'visited',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #a463f2,
-      #{$theme-background-var-prefix}: #ffffff,
-    ),
+  (
+    'label': 'error',
+    'foreground': #ff4136,
+    'background': #ffdfdf,
+    'edge': #ff4136,
+    'psuedo': ('invalid'),
   ),
-  'focus-0': (
-    'class-label': 'f0',
-    'var-label': 'focus-0',
-    'psuedo-binding': 'focus',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #555555,
-      #{$theme-background-var-prefix}: #ffb700,
-    ),
-  ),
-  'required-0': (
-    'class-label': 'r0',
-    'var-label': 'required-0',
-    'psuedo-binding': 'required',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #f4f4f4,
-      #{$theme-background-var-prefix}: #357edd,
-    ),
-  ),
-  'invalid-0': (
-    'class-label': 'i0',
-    'var-label': 'invalid-0',
-    'psuedo-binding': 'invalid',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #ff4136,
-      #{$theme-background-var-prefix}: #ffd700,
-    ),
-  ),
-  'disabled-0': (
-    'class-label': 'd0',
-    'var-label': 'disabled-0',
-    'psuedo-binding': 'disabled',
-    'colors': (
-      #{$theme-foreground-var-prefix}: #777777,
-      #{$theme-background-var-prefix}: #eeeeee,
-    ),
+  (
+    'label': 'disabled',
+    'foreground': #777777,
+    'background': #eeeeee,
+    'edge': #777777,
+    'psuedo': ('disabled', 'focus-within'),
   ),
 ) !default;
