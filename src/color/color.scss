@@ -1,4 +1,4 @@
-@import './color-variables.scss';
+@import "./color-variables.scss";
 
 /*
 Color
@@ -33,8 +33,8 @@ Styleguide Color - Theme
 */
 
 @each $theme in $themes {
-  $label: map-get($theme, 'label');
-  $psuedo: map-get($theme, 'psuedo');
+  $label: map-get($theme, "label");
+  $psuedo: map-get($theme, "psuedo");
 
   /*
   .#{$theme-class-prefix}-#{$label}
@@ -82,8 +82,8 @@ Styleguide Color - Theme
 }
 
 @each $theme in $themes {
-  $label: map-get($theme, 'label');
-  $psuedo: map-get($theme, 'psuedo');
+  $label: map-get($theme, "label");
+  $psuedo: map-get($theme, "psuedo");
 
   .#{$theme-foreground-class-prefix}-#{$label} {
     color: var(--#{$theme-foreground-var-prefix}-#{$label});
@@ -101,13 +101,28 @@ Styleguide Color - Theme
     .#{$theme-foreground-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
       color: var(--#{$theme-foreground-var-prefix}-#{$label});
     }
-  
+
     .#{$theme-background-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
       background: var(--#{$theme-background-var-prefix}-#{$label});
     }
-  
+
     .#{$theme-edge-class-prefix}-#{$label}-#{$theme-psuedo-class-verb}-#{$class}:#{$class} {
       border-color: var(--#{$theme-edge-var-prefix}-#{$label});
     }
   }
+}
+
+.cf-inherit,
+.ct-inherit {
+  color: inherit;
+}
+
+.cb-inherit,
+.ct-inherit {
+  background: inherit;
+}
+
+.ce-inherit,
+.ct-inherit {
+  border-color: inherit;
 }
