@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.2.0](https://github.com/nullpub/css/compare/v9.1.0...v9.2.0) (2020-04-12)
+
+
+### Features
+
+* add color theme inherit ([12981cb](https://github.com/nullpub/css/commit/12981cb07f2d83f889262658f9efcbdaa3100b6a))
+
+
+### Bug Fixes
+
+* removed focus-within from disabled psuedo classes ([796a47e](https://github.com/nullpub/css/commit/796a47e9c905a73388900ee3e81fc6bb67f8a380))
+
 ## [9.1.0](https://github.com/nullpub/css/compare/v8.7.1-1...v9.1.0) (2020-02-27)
 
 
