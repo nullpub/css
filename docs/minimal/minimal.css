@@ -1124,30 +1124,9 @@ Markup:
 .cb-disabled-on-disabled - Sets background to var(--cb-disabled) on disabled
 .ce-disabled-on-disabled - Sets border-color to var(--ce-disabled) on disabled
 
-Styleguide Border - Style - disabled - disabled, focus-within
+Styleguide Border - Style - disabled - disabled
 */
 .ct-disabled-on-disabled:disabled {
-  color: var(--cf-disabled);
-  background: var(--cb-disabled);
-  border-color: var(--ce-disabled);
-}
-
-/*
-.ct-disabled-on-focus-within
-
-Sets the color theme of an element (color, background, border-color) on focus-within.
-
-Markup:
-<div class="bwa-1 pwa-1 {{modifier_class}}">A div</div>
-
-.ct-disabled-on-focus-within - Sets color, background, and border-color on focus-within
-.cf-disabled-on-focus-within - Sets color to var(--cf-disabled) on focus-within
-.cb-disabled-on-focus-within - Sets background to var(--cb-disabled) on focus-within
-.ce-disabled-on-focus-within - Sets border-color to var(--ce-disabled) on focus-within
-
-Styleguide Border - Style - disabled - disabled, focus-within
-*/
-.ct-disabled-on-focus-within:focus-within {
   color: var(--cf-disabled);
   background: var(--cb-disabled);
   border-color: var(--ce-disabled);
@@ -1333,16 +1312,19 @@ Styleguide Border - Style - disabled - disabled, focus-within
   border-color: var(--ce-disabled);
 }
 
-.cf-disabled-on-focus-within:focus-within {
-  color: var(--cf-disabled);
+.cf-inherit,
+.ct-inherit {
+  color: inherit;
 }
 
-.cb-disabled-on-focus-within:focus-within {
-  background: var(--cb-disabled);
+.cb-inherit,
+.ct-inherit {
+  background: inherit;
 }
 
-.ce-disabled-on-focus-within:focus-within {
-  border-color: var(--ce-disabled);
+.ce-inherit,
+.ct-inherit {
+  border-color: inherit;
 }
 
 /*
@@ -4119,6 +4101,11 @@ Styleguide Font - Weight - d3
   --height-p25: 25%;
   --height-p50: 50%;
   --height-p100: 100%;
+  --height-vh25: 25vh;
+  --height-vh40: 40vh;
+  --height-vh50: 50vh;
+  --height-vh60: 60vh;
+  --height-vh75: 75vh;
   --height-vh100: 100vh;
 }
 
@@ -4223,6 +4210,136 @@ Styleguide Height - p100
 
 .vhmx-p100 {
   max-height: var(--height-p100);
+}
+
+/*
+.vh[mx,mn]-vh25
+
+Sets the height, max-height, or min-height of element to css var for vh25.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-vh25 - Sets height to vh25
+.vhmn-vh25 - Sets min-height to vh25
+.vhmx-vh25 - Sets max-height to vh25
+
+Styleguide Height - vh25
+*/
+.vh-vh25 {
+  height: var(--height-vh25);
+}
+
+.vhmn-vh25 {
+  min-height: var(--height-vh25);
+}
+
+.vhmx-vh25 {
+  max-height: var(--height-vh25);
+}
+
+/*
+.vh[mx,mn]-vh40
+
+Sets the height, max-height, or min-height of element to css var for vh40.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-vh40 - Sets height to vh40
+.vhmn-vh40 - Sets min-height to vh40
+.vhmx-vh40 - Sets max-height to vh40
+
+Styleguide Height - vh40
+*/
+.vh-vh40 {
+  height: var(--height-vh40);
+}
+
+.vhmn-vh40 {
+  min-height: var(--height-vh40);
+}
+
+.vhmx-vh40 {
+  max-height: var(--height-vh40);
+}
+
+/*
+.vh[mx,mn]-vh50
+
+Sets the height, max-height, or min-height of element to css var for vh50.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-vh50 - Sets height to vh50
+.vhmn-vh50 - Sets min-height to vh50
+.vhmx-vh50 - Sets max-height to vh50
+
+Styleguide Height - vh50
+*/
+.vh-vh50 {
+  height: var(--height-vh50);
+}
+
+.vhmn-vh50 {
+  min-height: var(--height-vh50);
+}
+
+.vhmx-vh50 {
+  max-height: var(--height-vh50);
+}
+
+/*
+.vh[mx,mn]-vh60
+
+Sets the height, max-height, or min-height of element to css var for vh60.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-vh60 - Sets height to vh60
+.vhmn-vh60 - Sets min-height to vh60
+.vhmx-vh60 - Sets max-height to vh60
+
+Styleguide Height - vh60
+*/
+.vh-vh60 {
+  height: var(--height-vh60);
+}
+
+.vhmn-vh60 {
+  min-height: var(--height-vh60);
+}
+
+.vhmx-vh60 {
+  max-height: var(--height-vh60);
+}
+
+/*
+.vh[mx,mn]-vh75
+
+Sets the height, max-height, or min-height of element to css var for vh75.
+
+Markup:
+<div class="bwa-1 {{modifier_class}}">A div</div>
+
+.vh-vh75 - Sets height to vh75
+.vhmn-vh75 - Sets min-height to vh75
+.vhmx-vh75 - Sets max-height to vh75
+
+Styleguide Height - vh75
+*/
+.vh-vh75 {
+  height: var(--height-vh75);
+}
+
+.vhmn-vh75 {
+  min-height: var(--height-vh75);
+}
+
+.vhmx-vh75 {
+  max-height: var(--height-vh75);
 }
 
 /*

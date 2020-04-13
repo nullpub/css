@@ -1,20 +1,25 @@
-$height-var-prefix: 'height' !default;
+$height-var-prefix: "height" !default;
 
-$height-class-prefix: 'vh' !default;
-$min-height-class-prefix: 'vhmn' !default;
-$max-height-class-prefix: 'vhmx' !default;
+$height-class-prefix: "vh" !default;
+$min-height-class-prefix: "vhmn" !default;
+$max-height-class-prefix: "vhmx" !default;
 
 $height-styles: (
-  'p25': 25%,
-  'p50': 50%,
-  'p100': 100%,
-  'vh100': 100vh,
+  "p25": 25%,
+  "p50": 50%,
+  "p100": 100%,
+  "vh25": 25vh,
+  "vh40": 40vh,
+  "vh50": 50vh,
+  "vh60": 60vh,
+  "vh75": 75vh,
+  "vh100": 100vh,
 ) !default;
 
 $height-multipliers: (
-  '0': 0,
-  '1': 32,
-  '2': 48,
-  '3': 64,
-  '4': 128,
+  "0": 0,
+  "1": 32,
+  "2": 48,
+  "3": 64,
+  "4": 128,
 ) !default;
