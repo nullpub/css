@@ -10633,15 +10633,15 @@ Styleguide Height - 4
 
   Styleguide height - p25 - sm
   */
-  .vh-break-p25 {
+  .vh-sm-p25 {
     height: var(--height-p25);
   }
 
-  .vhmn-break-p25 {
+  .vhmn-sm-p25 {
     min-height: var(--height-p25);
   }
 
-  .vhmx-break-p25 {
+  .vhmx-sm-p25 {
     max-height: var(--height-p25);
   }
 
@@ -10659,15 +10659,15 @@ Styleguide Height - 4
 
   Styleguide height - p50 - sm
   */
-  .vh-break-p50 {
+  .vh-sm-p50 {
     height: var(--height-p50);
   }
 
-  .vhmn-break-p50 {
+  .vhmn-sm-p50 {
     min-height: var(--height-p50);
   }
 
-  .vhmx-break-p50 {
+  .vhmx-sm-p50 {
     max-height: var(--height-p50);
   }
 
@@ -10685,15 +10685,15 @@ Styleguide Height - 4
 
   Styleguide height - p100 - sm
   */
-  .vh-break-p100 {
+  .vh-sm-p100 {
     height: var(--height-p100);
   }
 
-  .vhmn-break-p100 {
+  .vhmn-sm-p100 {
     min-height: var(--height-p100);
   }
 
-  .vhmx-break-p100 {
+  .vhmx-sm-p100 {
     max-height: var(--height-p100);
   }
 
@@ -10711,15 +10711,15 @@ Styleguide Height - 4
 
   Styleguide height - vh25 - sm
   */
-  .vh-break-vh25 {
+  .vh-sm-vh25 {
     height: var(--height-vh25);
   }
 
-  .vhmn-break-vh25 {
+  .vhmn-sm-vh25 {
     min-height: var(--height-vh25);
   }
 
-  .vhmx-break-vh25 {
+  .vhmx-sm-vh25 {
     max-height: var(--height-vh25);
   }
 
@@ -10737,15 +10737,15 @@ Styleguide Height - 4
 
   Styleguide height - vh40 - sm
   */
-  .vh-break-vh40 {
+  .vh-sm-vh40 {
     height: var(--height-vh40);
   }
 
-  .vhmn-break-vh40 {
+  .vhmn-sm-vh40 {
     min-height: var(--height-vh40);
   }
 
-  .vhmx-break-vh40 {
+  .vhmx-sm-vh40 {
     max-height: var(--height-vh40);
   }
 
@@ -10763,15 +10763,15 @@ Styleguide Height - 4
 
   Styleguide height - vh50 - sm
   */
-  .vh-break-vh50 {
+  .vh-sm-vh50 {
     height: var(--height-vh50);
   }
 
-  .vhmn-break-vh50 {
+  .vhmn-sm-vh50 {
     min-height: var(--height-vh50);
   }
 
-  .vhmx-break-vh50 {
+  .vhmx-sm-vh50 {
     max-height: var(--height-vh50);
   }
 
@@ -10789,15 +10789,15 @@ Styleguide Height - 4
 
   Styleguide height - vh60 - sm
   */
-  .vh-break-vh60 {
+  .vh-sm-vh60 {
     height: var(--height-vh60);
   }
 
-  .vhmn-break-vh60 {
+  .vhmn-sm-vh60 {
     min-height: var(--height-vh60);
   }
 
-  .vhmx-break-vh60 {
+  .vhmx-sm-vh60 {
     max-height: var(--height-vh60);
   }
 
@@ -10815,15 +10815,15 @@ Styleguide Height - 4
 
   Styleguide height - vh75 - sm
   */
-  .vh-break-vh75 {
+  .vh-sm-vh75 {
     height: var(--height-vh75);
   }
 
-  .vhmn-break-vh75 {
+  .vhmn-sm-vh75 {
     min-height: var(--height-vh75);
   }
 
-  .vhmx-break-vh75 {
+  .vhmx-sm-vh75 {
     max-height: var(--height-vh75);
   }
 
@@ -10841,15 +10841,15 @@ Styleguide Height - 4
 
   Styleguide height - vh100 - sm
   */
-  .vh-break-vh100 {
+  .vh-sm-vh100 {
     height: var(--height-vh100);
   }
 
-  .vhmn-break-vh100 {
+  .vhmn-sm-vh100 {
     min-height: var(--height-vh100);
   }
 
-  .vhmx-break-vh100 {
+  .vhmx-sm-vh100 {
     max-height: var(--height-vh100);
   }
 
@@ -10865,17 +10865,17 @@ Styleguide Height - 4
     .vhmn-0 - Sets min-height to 0
     .vhmx-0 - Sets max-height to 0
 
-    Styleguide Height - 0 - break
+    Styleguide Height - 0 - sm
     */
-  .vh-break-0 {
+  .vh-sm-0 {
     height: var(--height-0);
   }
 
-  .vhmn-break-0 {
+  .vhmn-sm-0 {
     min-height: var(--height-0);
   }
 
-  .vhmx-break-0 {
+  .vhmx-sm-0 {
     max-height: var(--height-0);
   }
 
@@ -10891,17 +10891,17 @@ Styleguide Height - 4
     .vhmn-1 - Sets min-height to 1
     .vhmx-1 - Sets max-height to 1
 
-    Styleguide Height - 1 - break
+    Styleguide Height - 1 - sm
     */
-  .vh-break-1 {
+  .vh-sm-1 {
     height: var(--height-1);
   }
 
-  .vhmn-break-1 {
+  .vhmn-sm-1 {
     min-height: var(--height-1);
   }
 
-  .vhmx-break-1 {
+  .vhmx-sm-1 {
     max-height: var(--height-1);
   }
 
@@ -10917,17 +10917,17 @@ Styleguide Height - 4
     .vhmn-2 - Sets min-height to 2
     .vhmx-2 - Sets max-height to 2
 
-    Styleguide Height - 2 - break
+    Styleguide Height - 2 - sm
     */
-  .vh-break-2 {
+  .vh-sm-2 {
     height: var(--height-2);
   }
 
-  .vhmn-break-2 {
+  .vhmn-sm-2 {
     min-height: var(--height-2);
   }
 
-  .vhmx-break-2 {
+  .vhmx-sm-2 {
     max-height: var(--height-2);
   }
 
@@ -10943,17 +10943,17 @@ Styleguide Height - 4
     .vhmn-3 - Sets min-height to 3
     .vhmx-3 - Sets max-height to 3
 
-    Styleguide Height - 3 - break
+    Styleguide Height - 3 - sm
     */
-  .vh-break-3 {
+  .vh-sm-3 {
     height: var(--height-3);
   }
 
-  .vhmn-break-3 {
+  .vhmn-sm-3 {
     min-height: var(--height-3);
   }
 
-  .vhmx-break-3 {
+  .vhmx-sm-3 {
     max-height: var(--height-3);
   }
 
@@ -10969,17 +10969,17 @@ Styleguide Height - 4
     .vhmn-4 - Sets min-height to 4
     .vhmx-4 - Sets max-height to 4
 
-    Styleguide Height - 4 - break
+    Styleguide Height - 4 - sm
     */
-  .vh-break-4 {
+  .vh-sm-4 {
     height: var(--height-4);
   }
 
-  .vhmn-break-4 {
+  .vhmn-sm-4 {
     min-height: var(--height-4);
   }
 
-  .vhmx-break-4 {
+  .vhmx-sm-4 {
     max-height: var(--height-4);
   }
 }
@@ -10998,15 +10998,15 @@ Styleguide Height - 4
 
   Styleguide height - p25 - md
   */
-  .vh-break-p25 {
+  .vh-md-p25 {
     height: var(--height-p25);
   }
 
-  .vhmn-break-p25 {
+  .vhmn-md-p25 {
     min-height: var(--height-p25);
   }
 
-  .vhmx-break-p25 {
+  .vhmx-md-p25 {
     max-height: var(--height-p25);
   }
 
@@ -11024,15 +11024,15 @@ Styleguide Height - 4
 
   Styleguide height - p50 - md
   */
-  .vh-break-p50 {
+  .vh-md-p50 {
     height: var(--height-p50);
   }
 
-  .vhmn-break-p50 {
+  .vhmn-md-p50 {
     min-height: var(--height-p50);
   }
 
-  .vhmx-break-p50 {
+  .vhmx-md-p50 {
     max-height: var(--height-p50);
   }
 
@@ -11050,15 +11050,15 @@ Styleguide Height - 4
 
   Styleguide height - p100 - md
   */
-  .vh-break-p100 {
+  .vh-md-p100 {
     height: var(--height-p100);
   }
 
-  .vhmn-break-p100 {
+  .vhmn-md-p100 {
     min-height: var(--height-p100);
   }
 
-  .vhmx-break-p100 {
+  .vhmx-md-p100 {
     max-height: var(--height-p100);
   }
 
@@ -11076,15 +11076,15 @@ Styleguide Height - 4
 
   Styleguide height - vh25 - md
   */
-  .vh-break-vh25 {
+  .vh-md-vh25 {
     height: var(--height-vh25);
   }
 
-  .vhmn-break-vh25 {
+  .vhmn-md-vh25 {
     min-height: var(--height-vh25);
   }
 
-  .vhmx-break-vh25 {
+  .vhmx-md-vh25 {
     max-height: var(--height-vh25);
   }
 
@@ -11102,15 +11102,15 @@ Styleguide Height - 4
 
   Styleguide height - vh40 - md
   */
-  .vh-break-vh40 {
+  .vh-md-vh40 {
     height: var(--height-vh40);
   }
 
-  .vhmn-break-vh40 {
+  .vhmn-md-vh40 {
     min-height: var(--height-vh40);
   }
 
-  .vhmx-break-vh40 {
+  .vhmx-md-vh40 {
     max-height: var(--height-vh40);
   }
 
@@ -11128,15 +11128,15 @@ Styleguide Height - 4
 
   Styleguide height - vh50 - md
   */
-  .vh-break-vh50 {
+  .vh-md-vh50 {
     height: var(--height-vh50);
   }
 
-  .vhmn-break-vh50 {
+  .vhmn-md-vh50 {
     min-height: var(--height-vh50);
   }
 
-  .vhmx-break-vh50 {
+  .vhmx-md-vh50 {
     max-height: var(--height-vh50);
   }
 
@@ -11154,15 +11154,15 @@ Styleguide Height - 4
 
   Styleguide height - vh60 - md
   */
-  .vh-break-vh60 {
+  .vh-md-vh60 {
     height: var(--height-vh60);
   }
 
-  .vhmn-break-vh60 {
+  .vhmn-md-vh60 {
     min-height: var(--height-vh60);
   }
 
-  .vhmx-break-vh60 {
+  .vhmx-md-vh60 {
     max-height: var(--height-vh60);
   }
 
@@ -11180,15 +11180,15 @@ Styleguide Height - 4
 
   Styleguide height - vh75 - md
   */
-  .vh-break-vh75 {
+  .vh-md-vh75 {
     height: var(--height-vh75);
   }
 
-  .vhmn-break-vh75 {
+  .vhmn-md-vh75 {
     min-height: var(--height-vh75);
   }
 
-  .vhmx-break-vh75 {
+  .vhmx-md-vh75 {
     max-height: var(--height-vh75);
   }
 
@@ -11206,15 +11206,15 @@ Styleguide Height - 4
 
   Styleguide height - vh100 - md
   */
-  .vh-break-vh100 {
+  .vh-md-vh100 {
     height: var(--height-vh100);
   }
 
-  .vhmn-break-vh100 {
+  .vhmn-md-vh100 {
     min-height: var(--height-vh100);
   }
 
-  .vhmx-break-vh100 {
+  .vhmx-md-vh100 {
     max-height: var(--height-vh100);
   }
 
@@ -11230,17 +11230,17 @@ Styleguide Height - 4
     .vhmn-0 - Sets min-height to 0
     .vhmx-0 - Sets max-height to 0
 
-    Styleguide Height - 0 - break
+    Styleguide Height - 0 - md
     */
-  .vh-break-0 {
+  .vh-md-0 {
     height: var(--height-0);
   }
 
-  .vhmn-break-0 {
+  .vhmn-md-0 {
     min-height: var(--height-0);
   }
 
-  .vhmx-break-0 {
+  .vhmx-md-0 {
     max-height: var(--height-0);
   }
 
@@ -11256,17 +11256,17 @@ Styleguide Height - 4
     .vhmn-1 - Sets min-height to 1
     .vhmx-1 - Sets max-height to 1
 
-    Styleguide Height - 1 - break
+    Styleguide Height - 1 - md
     */
-  .vh-break-1 {
+  .vh-md-1 {
     height: var(--height-1);
   }
 
-  .vhmn-break-1 {
+  .vhmn-md-1 {
     min-height: var(--height-1);
   }
 
-  .vhmx-break-1 {
+  .vhmx-md-1 {
     max-height: var(--height-1);
   }
 
@@ -11282,17 +11282,17 @@ Styleguide Height - 4
     .vhmn-2 - Sets min-height to 2
     .vhmx-2 - Sets max-height to 2
 
-    Styleguide Height - 2 - break
+    Styleguide Height - 2 - md
     */
-  .vh-break-2 {
+  .vh-md-2 {
     height: var(--height-2);
   }
 
-  .vhmn-break-2 {
+  .vhmn-md-2 {
     min-height: var(--height-2);
   }
 
-  .vhmx-break-2 {
+  .vhmx-md-2 {
     max-height: var(--height-2);
   }
 
@@ -11308,17 +11308,17 @@ Styleguide Height - 4
     .vhmn-3 - Sets min-height to 3
     .vhmx-3 - Sets max-height to 3
 
-    Styleguide Height - 3 - break
+    Styleguide Height - 3 - md
     */
-  .vh-break-3 {
+  .vh-md-3 {
     height: var(--height-3);
   }
 
-  .vhmn-break-3 {
+  .vhmn-md-3 {
     min-height: var(--height-3);
   }
 
-  .vhmx-break-3 {
+  .vhmx-md-3 {
     max-height: var(--height-3);
   }
 
@@ -11334,17 +11334,17 @@ Styleguide Height - 4
     .vhmn-4 - Sets min-height to 4
     .vhmx-4 - Sets max-height to 4
 
-    Styleguide Height - 4 - break
+    Styleguide Height - 4 - md
     */
-  .vh-break-4 {
+  .vh-md-4 {
     height: var(--height-4);
   }
 
-  .vhmn-break-4 {
+  .vhmn-md-4 {
     min-height: var(--height-4);
   }
 
-  .vhmx-break-4 {
+  .vhmx-md-4 {
     max-height: var(--height-4);
   }
 }
@@ -11363,15 +11363,15 @@ Styleguide Height - 4
 
   Styleguide height - p25 - lg
   */
-  .vh-break-p25 {
+  .vh-lg-p25 {
     height: var(--height-p25);
   }
 
-  .vhmn-break-p25 {
+  .vhmn-lg-p25 {
     min-height: var(--height-p25);
   }
 
-  .vhmx-break-p25 {
+  .vhmx-lg-p25 {
     max-height: var(--height-p25);
   }
 
@@ -11389,15 +11389,15 @@ Styleguide Height - 4
 
   Styleguide height - p50 - lg
   */
-  .vh-break-p50 {
+  .vh-lg-p50 {
     height: var(--height-p50);
   }
 
-  .vhmn-break-p50 {
+  .vhmn-lg-p50 {
     min-height: var(--height-p50);
   }
 
-  .vhmx-break-p50 {
+  .vhmx-lg-p50 {
     max-height: var(--height-p50);
   }
 
@@ -11415,15 +11415,15 @@ Styleguide Height - 4
 
   Styleguide height - p100 - lg
   */
-  .vh-break-p100 {
+  .vh-lg-p100 {
     height: var(--height-p100);
   }
 
-  .vhmn-break-p100 {
+  .vhmn-lg-p100 {
     min-height: var(--height-p100);
   }
 
-  .vhmx-break-p100 {
+  .vhmx-lg-p100 {
     max-height: var(--height-p100);
   }
 
@@ -11441,15 +11441,15 @@ Styleguide Height - 4
 
   Styleguide height - vh25 - lg
   */
-  .vh-break-vh25 {
+  .vh-lg-vh25 {
     height: var(--height-vh25);
   }
 
-  .vhmn-break-vh25 {
+  .vhmn-lg-vh25 {
     min-height: var(--height-vh25);
   }
 
-  .vhmx-break-vh25 {
+  .vhmx-lg-vh25 {
     max-height: var(--height-vh25);
   }
 
@@ -11467,15 +11467,15 @@ Styleguide Height - 4
 
   Styleguide height - vh40 - lg
   */
-  .vh-break-vh40 {
+  .vh-lg-vh40 {
     height: var(--height-vh40);
   }
 
-  .vhmn-break-vh40 {
+  .vhmn-lg-vh40 {
     min-height: var(--height-vh40);
   }
 
-  .vhmx-break-vh40 {
+  .vhmx-lg-vh40 {
     max-height: var(--height-vh40);
   }
 
@@ -11493,15 +11493,15 @@ Styleguide Height - 4
 
   Styleguide height - vh50 - lg
   */
-  .vh-break-vh50 {
+  .vh-lg-vh50 {
     height: var(--height-vh50);
   }
 
-  .vhmn-break-vh50 {
+  .vhmn-lg-vh50 {
     min-height: var(--height-vh50);
   }
 
-  .vhmx-break-vh50 {
+  .vhmx-lg-vh50 {
     max-height: var(--height-vh50);
   }
 
@@ -11519,15 +11519,15 @@ Styleguide Height - 4
 
   Styleguide height - vh60 - lg
   */
-  .vh-break-vh60 {
+  .vh-lg-vh60 {
     height: var(--height-vh60);
   }
 
-  .vhmn-break-vh60 {
+  .vhmn-lg-vh60 {
     min-height: var(--height-vh60);
   }
 
-  .vhmx-break-vh60 {
+  .vhmx-lg-vh60 {
     max-height: var(--height-vh60);
   }
 
@@ -11545,15 +11545,15 @@ Styleguide Height - 4
 
   Styleguide height - vh75 - lg
   */
-  .vh-break-vh75 {
+  .vh-lg-vh75 {
     height: var(--height-vh75);
   }
 
-  .vhmn-break-vh75 {
+  .vhmn-lg-vh75 {
     min-height: var(--height-vh75);
   }
 
-  .vhmx-break-vh75 {
+  .vhmx-lg-vh75 {
     max-height: var(--height-vh75);
   }
 
@@ -11571,15 +11571,15 @@ Styleguide Height - 4
 
   Styleguide height - vh100 - lg
   */
-  .vh-break-vh100 {
+  .vh-lg-vh100 {
     height: var(--height-vh100);
   }
 
-  .vhmn-break-vh100 {
+  .vhmn-lg-vh100 {
     min-height: var(--height-vh100);
   }
 
-  .vhmx-break-vh100 {
+  .vhmx-lg-vh100 {
     max-height: var(--height-vh100);
   }
 
@@ -11595,17 +11595,17 @@ Styleguide Height - 4
     .vhmn-0 - Sets min-height to 0
     .vhmx-0 - Sets max-height to 0
 
-    Styleguide Height - 0 - break
+    Styleguide Height - 0 - lg
     */
-  .vh-break-0 {
+  .vh-lg-0 {
     height: var(--height-0);
   }
 
-  .vhmn-break-0 {
+  .vhmn-lg-0 {
     min-height: var(--height-0);
   }
 
-  .vhmx-break-0 {
+  .vhmx-lg-0 {
     max-height: var(--height-0);
   }
 
@@ -11621,17 +11621,17 @@ Styleguide Height - 4
     .vhmn-1 - Sets min-height to 1
     .vhmx-1 - Sets max-height to 1
 
-    Styleguide Height - 1 - break
+    Styleguide Height - 1 - lg
     */
-  .vh-break-1 {
+  .vh-lg-1 {
     height: var(--height-1);
   }
 
-  .vhmn-break-1 {
+  .vhmn-lg-1 {
     min-height: var(--height-1);
   }
 
-  .vhmx-break-1 {
+  .vhmx-lg-1 {
     max-height: var(--height-1);
   }
 
@@ -11647,17 +11647,17 @@ Styleguide Height - 4
     .vhmn-2 - Sets min-height to 2
     .vhmx-2 - Sets max-height to 2
 
-    Styleguide Height - 2 - break
+    Styleguide Height - 2 - lg
     */
-  .vh-break-2 {
+  .vh-lg-2 {
     height: var(--height-2);
   }
 
-  .vhmn-break-2 {
+  .vhmn-lg-2 {
     min-height: var(--height-2);
   }
 
-  .vhmx-break-2 {
+  .vhmx-lg-2 {
     max-height: var(--height-2);
   }
 
@@ -11673,17 +11673,17 @@ Styleguide Height - 4
     .vhmn-3 - Sets min-height to 3
     .vhmx-3 - Sets max-height to 3
 
-    Styleguide Height - 3 - break
+    Styleguide Height - 3 - lg
     */
-  .vh-break-3 {
+  .vh-lg-3 {
     height: var(--height-3);
   }
 
-  .vhmn-break-3 {
+  .vhmn-lg-3 {
     min-height: var(--height-3);
   }
 
-  .vhmx-break-3 {
+  .vhmx-lg-3 {
     max-height: var(--height-3);
   }
 
@@ -11699,17 +11699,17 @@ Styleguide Height - 4
     .vhmn-4 - Sets min-height to 4
     .vhmx-4 - Sets max-height to 4
 
-    Styleguide Height - 4 - break
+    Styleguide Height - 4 - lg
     */
-  .vh-break-4 {
+  .vh-lg-4 {
     height: var(--height-4);
   }
 
-  .vhmn-break-4 {
+  .vhmn-lg-4 {
     min-height: var(--height-4);
   }
 
-  .vhmx-break-4 {
+  .vhmx-lg-4 {
     max-height: var(--height-4);
   }
 }

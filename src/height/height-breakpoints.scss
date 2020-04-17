@@ -20,15 +20,15 @@
       Styleguide height - #{$label} - #{$break}
       */
 
-      .#{$height-class-prefix}-#{break}-#{$label} {
+      .#{$height-class-prefix}-#{$break}-#{$label} {
         height: var(--#{$height-var-prefix}-#{$label});
       }
 
-      .#{$min-height-class-prefix}-#{break}-#{$label} {
+      .#{$min-height-class-prefix}-#{$break}-#{$label} {
         min-height: var(--#{$height-var-prefix}-#{$label});
       }
 
-      .#{$max-height-class-prefix}-#{break}-#{$label} {
+      .#{$max-height-class-prefix}-#{$break}-#{$label} {
         max-height: var(--#{$height-var-prefix}-#{$label});
       }
     }
@@ -47,18 +47,18 @@
         .#{$min-height-class-prefix}-#{$label} - Sets min-height to #{$label}
         .#{$max-height-class-prefix}-#{$label} - Sets max-height to #{$label}
       
-        Styleguide Height - #{$label} - #{break}
+        Styleguide Height - #{$label} - #{$break}
         */
 
-      .#{$height-class-prefix}-#{break}-#{$label} {
+      .#{$height-class-prefix}-#{$break}-#{$label} {
         height: var(--#{$height-var-prefix}-#{$label});
       }
 
-      .#{$min-height-class-prefix}-#{break}-#{$label} {
+      .#{$min-height-class-prefix}-#{$break}-#{$label} {
         min-height: var(--#{$height-var-prefix}-#{$label});
       }
 
-      .#{$max-height-class-prefix}-#{break}-#{$label} {
+      .#{$max-height-class-prefix}-#{$break}-#{$label} {
         max-height: var(--#{$height-var-prefix}-#{$label});
       }
     }
