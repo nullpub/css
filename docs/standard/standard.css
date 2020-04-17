@@ -3280,82 +3280,82 @@ Styleguide Flex - Basis - unset
 }
 
 /*
-.flb-0p
+.flb-p0
 
 Sets flex-basis to 0%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-0p - Sets flex-basis to 0%
+.flb-p0 - Sets flex-basis to 0%
 
-Styleguide Flex - Basis - 0p
+Styleguide Flex - Basis - p0
 */
-.flb-0p {
+.flb-p0 {
   flex-basis: 0%;
 }
 
 /*
-.flb-25p
+.flb-p25
 
 Sets flex-basis to 25%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-25p - Sets flex-basis to 25%
+.flb-p25 - Sets flex-basis to 25%
 
-Styleguide Flex - Basis - 25p
+Styleguide Flex - Basis - p25
 */
-.flb-25p {
+.flb-p25 {
   flex-basis: 25%;
 }
 
 /*
-.flb-50p
+.flb-p50
 
 Sets flex-basis to 50%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-50p - Sets flex-basis to 50%
+.flb-p50 - Sets flex-basis to 50%
 
-Styleguide Flex - Basis - 50p
+Styleguide Flex - Basis - p50
 */
-.flb-50p {
+.flb-p50 {
   flex-basis: 50%;
 }
 
 /*
-.flb-75p
+.flb-p75
 
 Sets flex-basis to 75%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-75p - Sets flex-basis to 75%
+.flb-p75 - Sets flex-basis to 75%
 
-Styleguide Flex - Basis - 75p
+Styleguide Flex - Basis - p75
 */
-.flb-75p {
+.flb-p75 {
   flex-basis: 75%;
 }
 
 /*
-.flb-100p
+.flb-p100
 
 Sets flex-basis to 100%.
 
 Markup:
 <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-.flb-100p - Sets flex-basis to 100%
+.flb-p100 - Sets flex-basis to 100%
 
-Styleguide Flex - Basis - 100p
+Styleguide Flex - Basis - p100
 */
-.flb-100p {
+.flb-p100 {
   flex-basis: 100%;
 }
 
@@ -5320,82 +5320,82 @@ Styleguide Flex - Justify Self - sse
   }
 
   /*
-  .flb-sm-0p
+  .flb-sm-p0
 
   Sets flex-basis to 0% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-0p - Sets flex-basis to 0% on sm
+  .flb-sm-p0 - Sets flex-basis to 0% on sm
 
-  Styleguide Flex - Basis - 0p - sm
+  Styleguide Flex - Basis - p0 - sm
   */
-  .flb-sm-0p {
+  .flb-sm-p0 {
     flex-basis: 0%;
   }
 
   /*
-  .flb-sm-25p
+  .flb-sm-p25
 
   Sets flex-basis to 25% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-25p - Sets flex-basis to 25% on sm
+  .flb-sm-p25 - Sets flex-basis to 25% on sm
 
-  Styleguide Flex - Basis - 25p - sm
+  Styleguide Flex - Basis - p25 - sm
   */
-  .flb-sm-25p {
+  .flb-sm-p25 {
     flex-basis: 25%;
   }
 
   /*
-  .flb-sm-50p
+  .flb-sm-p50
 
   Sets flex-basis to 50% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-50p - Sets flex-basis to 50% on sm
+  .flb-sm-p50 - Sets flex-basis to 50% on sm
 
-  Styleguide Flex - Basis - 50p - sm
+  Styleguide Flex - Basis - p50 - sm
   */
-  .flb-sm-50p {
+  .flb-sm-p50 {
     flex-basis: 50%;
   }
 
   /*
-  .flb-sm-75p
+  .flb-sm-p75
 
   Sets flex-basis to 75% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-75p - Sets flex-basis to 75% on sm
+  .flb-sm-p75 - Sets flex-basis to 75% on sm
 
-  Styleguide Flex - Basis - 75p - sm
+  Styleguide Flex - Basis - p75 - sm
   */
-  .flb-sm-75p {
+  .flb-sm-p75 {
     flex-basis: 75%;
   }
 
   /*
-  .flb-sm-100p
+  .flb-sm-p100
 
   Sets flex-basis to 100% on sm.
 
   Markup:
   <div class="fld-row"><div class="fls-1-1 {{modifier_class}}">A div</div><div class="fls-1-1 {{modifier_class}}">B div</div><div class="fls-1-1 {{modifier_class}}">C div</div></div>
 
-  .flb-sm-100p - Sets flex-basis to 100% on sm
+  .flb-sm-p100 - Sets flex-basis to 100% on sm
 
-  Styleguide Flex - Basis - 100p - sm
+  Styleguide Flex - Basis - p100 - sm
   */
-  .flb-sm-100p {
+  .flb-sm-p100 {
     flex-basis: 100%;
   }
 
@@ -6540,6 +6540,371 @@ Styleguide Height - 4
   max-height: var(--height-4);
 }
 
+@media (min-width: 50em) {
+  /*
+  .vh[mn,mx]-sm-p25
+
+  Sets the height, max-height, or min-height of element to css var for p25 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-p25 - Sets height to p25 on sm
+  .vhmn-sm-p25 - Sets min-height to p25 on sm
+  .vhmx-sm-p25 - Sets max-height to p25 on sm
+
+  Styleguide height - p25 - sm
+  */
+  .vh-break-p25 {
+    height: var(--height-p25);
+  }
+
+  .vhmn-break-p25 {
+    min-height: var(--height-p25);
+  }
+
+  .vhmx-break-p25 {
+    max-height: var(--height-p25);
+  }
+
+  /*
+  .vh[mn,mx]-sm-p50
+
+  Sets the height, max-height, or min-height of element to css var for p50 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-p50 - Sets height to p50 on sm
+  .vhmn-sm-p50 - Sets min-height to p50 on sm
+  .vhmx-sm-p50 - Sets max-height to p50 on sm
+
+  Styleguide height - p50 - sm
+  */
+  .vh-break-p50 {
+    height: var(--height-p50);
+  }
+
+  .vhmn-break-p50 {
+    min-height: var(--height-p50);
+  }
+
+  .vhmx-break-p50 {
+    max-height: var(--height-p50);
+  }
+
+  /*
+  .vh[mn,mx]-sm-p100
+
+  Sets the height, max-height, or min-height of element to css var for p100 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-p100 - Sets height to p100 on sm
+  .vhmn-sm-p100 - Sets min-height to p100 on sm
+  .vhmx-sm-p100 - Sets max-height to p100 on sm
+
+  Styleguide height - p100 - sm
+  */
+  .vh-break-p100 {
+    height: var(--height-p100);
+  }
+
+  .vhmn-break-p100 {
+    min-height: var(--height-p100);
+  }
+
+  .vhmx-break-p100 {
+    max-height: var(--height-p100);
+  }
+
+  /*
+  .vh[mn,mx]-sm-vh25
+
+  Sets the height, max-height, or min-height of element to css var for vh25 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-vh25 - Sets height to vh25 on sm
+  .vhmn-sm-vh25 - Sets min-height to vh25 on sm
+  .vhmx-sm-vh25 - Sets max-height to vh25 on sm
+
+  Styleguide height - vh25 - sm
+  */
+  .vh-break-vh25 {
+    height: var(--height-vh25);
+  }
+
+  .vhmn-break-vh25 {
+    min-height: var(--height-vh25);
+  }
+
+  .vhmx-break-vh25 {
+    max-height: var(--height-vh25);
+  }
+
+  /*
+  .vh[mn,mx]-sm-vh40
+
+  Sets the height, max-height, or min-height of element to css var for vh40 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-vh40 - Sets height to vh40 on sm
+  .vhmn-sm-vh40 - Sets min-height to vh40 on sm
+  .vhmx-sm-vh40 - Sets max-height to vh40 on sm
+
+  Styleguide height - vh40 - sm
+  */
+  .vh-break-vh40 {
+    height: var(--height-vh40);
+  }
+
+  .vhmn-break-vh40 {
+    min-height: var(--height-vh40);
+  }
+
+  .vhmx-break-vh40 {
+    max-height: var(--height-vh40);
+  }
+
+  /*
+  .vh[mn,mx]-sm-vh50
+
+  Sets the height, max-height, or min-height of element to css var for vh50 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-vh50 - Sets height to vh50 on sm
+  .vhmn-sm-vh50 - Sets min-height to vh50 on sm
+  .vhmx-sm-vh50 - Sets max-height to vh50 on sm
+
+  Styleguide height - vh50 - sm
+  */
+  .vh-break-vh50 {
+    height: var(--height-vh50);
+  }
+
+  .vhmn-break-vh50 {
+    min-height: var(--height-vh50);
+  }
+
+  .vhmx-break-vh50 {
+    max-height: var(--height-vh50);
+  }
+
+  /*
+  .vh[mn,mx]-sm-vh60
+
+  Sets the height, max-height, or min-height of element to css var for vh60 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-vh60 - Sets height to vh60 on sm
+  .vhmn-sm-vh60 - Sets min-height to vh60 on sm
+  .vhmx-sm-vh60 - Sets max-height to vh60 on sm
+
+  Styleguide height - vh60 - sm
+  */
+  .vh-break-vh60 {
+    height: var(--height-vh60);
+  }
+
+  .vhmn-break-vh60 {
+    min-height: var(--height-vh60);
+  }
+
+  .vhmx-break-vh60 {
+    max-height: var(--height-vh60);
+  }
+
+  /*
+  .vh[mn,mx]-sm-vh75
+
+  Sets the height, max-height, or min-height of element to css var for vh75 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-vh75 - Sets height to vh75 on sm
+  .vhmn-sm-vh75 - Sets min-height to vh75 on sm
+  .vhmx-sm-vh75 - Sets max-height to vh75 on sm
+
+  Styleguide height - vh75 - sm
+  */
+  .vh-break-vh75 {
+    height: var(--height-vh75);
+  }
+
+  .vhmn-break-vh75 {
+    min-height: var(--height-vh75);
+  }
+
+  .vhmx-break-vh75 {
+    max-height: var(--height-vh75);
+  }
+
+  /*
+  .vh[mn,mx]-sm-vh100
+
+  Sets the height, max-height, or min-height of element to css var for vh100 on sm.
+
+  Markup:
+  <div class="bwa-1 {{modifier_class}}">A div</div>
+
+  .vh-sm-vh100 - Sets height to vh100 on sm
+  .vhmn-sm-vh100 - Sets min-height to vh100 on sm
+  .vhmx-sm-vh100 - Sets max-height to vh100 on sm
+
+  Styleguide height - vh100 - sm
+  */
+  .vh-break-vh100 {
+    height: var(--height-vh100);
+  }
+
+  .vhmn-break-vh100 {
+    min-height: var(--height-vh100);
+  }
+
+  .vhmx-break-vh100 {
+    max-height: var(--height-vh100);
+  }
+
+  /*
+    .vh[mx,mn]-0
+
+    Sets the height, max-height, or min-height of element to css var for 0.
+
+    Markup:
+    <div class="bwa-1 {{modifier_class}}">A div</div>
+
+    .vh-0 - Sets height to 0
+    .vhmn-0 - Sets min-height to 0
+    .vhmx-0 - Sets max-height to 0
+
+    Styleguide Height - 0 - break
+    */
+  .vh-break-0 {
+    height: var(--height-0);
+  }
+
+  .vhmn-break-0 {
+    min-height: var(--height-0);
+  }
+
+  .vhmx-break-0 {
+    max-height: var(--height-0);
+  }
+
+  /*
+    .vh[mx,mn]-1
+
+    Sets the height, max-height, or min-height of element to css var for 1.
+
+    Markup:
+    <div class="bwa-1 {{modifier_class}}">A div</div>
+
+    .vh-1 - Sets height to 1
+    .vhmn-1 - Sets min-height to 1
+    .vhmx-1 - Sets max-height to 1
+
+    Styleguide Height - 1 - break
+    */
+  .vh-break-1 {
+    height: var(--height-1);
+  }
+
+  .vhmn-break-1 {
+    min-height: var(--height-1);
+  }
+
+  .vhmx-break-1 {
+    max-height: var(--height-1);
+  }
+
+  /*
+    .vh[mx,mn]-2
+
+    Sets the height, max-height, or min-height of element to css var for 2.
+
+    Markup:
+    <div class="bwa-1 {{modifier_class}}">A div</div>
+
+    .vh-2 - Sets height to 2
+    .vhmn-2 - Sets min-height to 2
+    .vhmx-2 - Sets max-height to 2
+
+    Styleguide Height - 2 - break
+    */
+  .vh-break-2 {
+    height: var(--height-2);
+  }
+
+  .vhmn-break-2 {
+    min-height: var(--height-2);
+  }
+
+  .vhmx-break-2 {
+    max-height: var(--height-2);
+  }
+
+  /*
+    .vh[mx,mn]-3
+
+    Sets the height, max-height, or min-height of element to css var for 3.
+
+    Markup:
+    <div class="bwa-1 {{modifier_class}}">A div</div>
+
+    .vh-3 - Sets height to 3
+    .vhmn-3 - Sets min-height to 3
+    .vhmx-3 - Sets max-height to 3
+
+    Styleguide Height - 3 - break
+    */
+  .vh-break-3 {
+    height: var(--height-3);
+  }
+
+  .vhmn-break-3 {
+    min-height: var(--height-3);
+  }
+
+  .vhmx-break-3 {
+    max-height: var(--height-3);
+  }
+
+  /*
+    .vh[mx,mn]-4
+
+    Sets the height, max-height, or min-height of element to css var for 4.
+
+    Markup:
+    <div class="bwa-1 {{modifier_class}}">A div</div>
+
+    .vh-4 - Sets height to 4
+    .vhmn-4 - Sets min-height to 4
+    .vhmx-4 - Sets max-height to 4
+
+    Styleguide Height - 4 - break
+    */
+  .vh-break-4 {
+    height: var(--height-4);
+  }
+
+  .vhmn-break-4 {
+    min-height: var(--height-4);
+  }
+
+  .vhmx-break-4 {
+    max-height: var(--height-4);
+  }
+}
 :root {
   --margin-width-0: calc(
     var(--fill-size) * 0
