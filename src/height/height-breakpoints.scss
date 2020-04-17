@@ -1,0 +1,66 @@
+@import "../variables/breakpoints.scss";
+
+@import "./height-variables.scss";
+
+@each $break, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @each $label, $style in $height-styles {
+      /*
+      .#{$height-class-prefix}[mn,mx]-#{$break}-#{$label}
+
+      Sets the height, max-height, or min-height of element to css var for #{$label} on #{$break}.
+
+      Markup:
+      <div class="bwa-1 {{modifier_class}}">A div</div>
+
+      .#{$height-class-prefix}-#{$break}-#{$label} - Sets height to #{$label} on #{$break}
+      .#{$min-height-class-prefix}-#{$break}-#{$label} - Sets min-height to #{$label} on #{$break}
+      .#{$max-height-class-prefix}-#{$break}-#{$label} - Sets max-height to #{$label} on #{$break}
+
+      Styleguide height - #{$label} - #{$break}
+      */
+
+      .#{$height-class-prefix}-#{break}-#{$label} {
+        height: var(--#{$height-var-prefix}-#{$label});
+      }
+
+      .#{$min-height-class-prefix}-#{break}-#{$label} {
+        min-height: var(--#{$height-var-prefix}-#{$label});
+      }
+
+      .#{$max-height-class-prefix}-#{break}-#{$label} {
+        max-height: var(--#{$height-var-prefix}-#{$label});
+      }
+    }
+
+    @each $label, $_ in $height-multipliers {
+      // Fix these documentation names to properly nest prefix variables
+      /*
+        .#{$height-class-prefix}[mx,mn]-#{$label}
+      
+        Sets the height, max-height, or min-height of element to css var for #{$label}.
+      
+        Markup:
+        <div class="bwa-1 {{modifier_class}}">A div</div>
+      
+        .#{$height-class-prefix}-#{$label} - Sets height to #{$label}
+        .#{$min-height-class-prefix}-#{$label} - Sets min-height to #{$label}
+        .#{$max-height-class-prefix}-#{$label} - Sets max-height to #{$label}
+      
+        Styleguide Height - #{$label} - #{break}
+        */
+
+      .#{$height-class-prefix}-#{break}-#{$label} {
+        height: var(--#{$height-var-prefix}-#{$label});
+      }
+
+      .#{$min-height-class-prefix}-#{break}-#{$label} {
+        min-height: var(--#{$height-var-prefix}-#{$label});
+      }
+
+      .#{$max-height-class-prefix}-#{break}-#{$label} {
+        max-height: var(--#{$height-var-prefix}-#{$label});
+      }
+    }
+  }
+}
