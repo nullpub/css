@@ -6139,6 +6139,324 @@ Styleguide Font - Weight - d3
   font-weight: var(--font-weight-d3);
 }
 
+/**
+ * Font Size Scale
+ * Based on https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 
+ */
+/**
+ * Font Weight Scale
+ * Requires associated font weights to be included
+ */
+@media (min-width: 50em) {
+  /*
+  Font
+
+  Classes for setting the font properties of an element.
+
+  Styleguide Font
+  */
+  /*
+  Font Size
+
+  Classes for setting the font-size of an element.
+
+  Styleguide Font - Size - sm
+  */
+  /*
+  .fs-sm-u5
+
+  Sets the font-size an element to the variable for u5.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-u5 - Sets the font-size an element to the variable for u5
+
+  Styleguide Font - Size - u5 - sm
+  */
+  .fs-sm-u5 {
+    font-size: var(--font-size-u5);
+  }
+
+  /*
+  .fs-sm-u4
+
+  Sets the font-size an element to the variable for u4.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-u4 - Sets the font-size an element to the variable for u4
+
+  Styleguide Font - Size - u4 - sm
+  */
+  .fs-sm-u4 {
+    font-size: var(--font-size-u4);
+  }
+
+  /*
+  .fs-sm-u3
+
+  Sets the font-size an element to the variable for u3.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-u3 - Sets the font-size an element to the variable for u3
+
+  Styleguide Font - Size - u3 - sm
+  */
+  .fs-sm-u3 {
+    font-size: var(--font-size-u3);
+  }
+
+  /*
+  .fs-sm-u2
+
+  Sets the font-size an element to the variable for u2.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-u2 - Sets the font-size an element to the variable for u2
+
+  Styleguide Font - Size - u2 - sm
+  */
+  .fs-sm-u2 {
+    font-size: var(--font-size-u2);
+  }
+
+  /*
+  .fs-sm-u1
+
+  Sets the font-size an element to the variable for u1.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-u1 - Sets the font-size an element to the variable for u1
+
+  Styleguide Font - Size - u1 - sm
+  */
+  .fs-sm-u1 {
+    font-size: var(--font-size-u1);
+  }
+
+  /*
+  .fs-sm-0
+
+  Sets the font-size an element to the variable for 0.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-0 - Sets the font-size an element to the variable for 0
+
+  Styleguide Font - Size - 0 - sm
+  */
+  .fs-sm-0 {
+    font-size: var(--font-size-0);
+  }
+
+  /*
+  .fs-sm-d1
+
+  Sets the font-size an element to the variable for d1.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-d1 - Sets the font-size an element to the variable for d1
+
+  Styleguide Font - Size - d1 - sm
+  */
+  .fs-sm-d1 {
+    font-size: var(--font-size-d1);
+  }
+
+  /*
+  .fs-sm-d2
+
+  Sets the font-size an element to the variable for d2.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-d2 - Sets the font-size an element to the variable for d2
+
+  Styleguide Font - Size - d2 - sm
+  */
+  .fs-sm-d2 {
+    font-size: var(--font-size-d2);
+  }
+
+  /*
+  .fs-sm-d3
+
+  Sets the font-size an element to the variable for d3.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-d3 - Sets the font-size an element to the variable for d3
+
+  Styleguide Font - Size - d3 - sm
+  */
+  .fs-sm-d3 {
+    font-size: var(--font-size-d3);
+  }
+
+  /*
+  .fs-sm-d4
+
+  Sets the font-size an element to the variable for d4.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-d4 - Sets the font-size an element to the variable for d4
+
+  Styleguide Font - Size - d4 - sm
+  */
+  .fs-sm-d4 {
+    font-size: var(--font-size-d4);
+  }
+
+  /*
+  .fs-sm-d5
+
+  Sets the font-size an element to the variable for d5.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fs-sm-d5 - Sets the font-size an element to the variable for d5
+
+  Styleguide Font - Size - d5 - sm
+  */
+  .fs-sm-d5 {
+    font-size: var(--font-size-d5);
+  }
+
+  /*
+  Font Weight
+
+  Classes for setting the font-weight of an element.
+
+  Styleguide Font - Weight - sm
+  */
+  /*
+  .fw-sm-u3
+
+  Sets the font-weight an element to the variable for u3.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-u3 - Sets the font-weight an element to the variable for u3
+
+  Styleguide Font - Weight - u3 - sm
+  */
+  .fw-sm-u3 {
+    font-weight: var(--font-weight-u3);
+  }
+
+  /*
+  .fw-sm-u2
+
+  Sets the font-weight an element to the variable for u2.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-u2 - Sets the font-weight an element to the variable for u2
+
+  Styleguide Font - Weight - u2 - sm
+  */
+  .fw-sm-u2 {
+    font-weight: var(--font-weight-u2);
+  }
+
+  /*
+  .fw-sm-u1
+
+  Sets the font-weight an element to the variable for u1.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-u1 - Sets the font-weight an element to the variable for u1
+
+  Styleguide Font - Weight - u1 - sm
+  */
+  .fw-sm-u1 {
+    font-weight: var(--font-weight-u1);
+  }
+
+  /*
+  .fw-sm-0
+
+  Sets the font-weight an element to the variable for 0.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-0 - Sets the font-weight an element to the variable for 0
+
+  Styleguide Font - Weight - 0 - sm
+  */
+  .fw-sm-0 {
+    font-weight: var(--font-weight-0);
+  }
+
+  /*
+  .fw-sm-d1
+
+  Sets the font-weight an element to the variable for d1.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-d1 - Sets the font-weight an element to the variable for d1
+
+  Styleguide Font - Weight - d1 - sm
+  */
+  .fw-sm-d1 {
+    font-weight: var(--font-weight-d1);
+  }
+
+  /*
+  .fw-sm-d2
+
+  Sets the font-weight an element to the variable for d2.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-d2 - Sets the font-weight an element to the variable for d2
+
+  Styleguide Font - Weight - d2 - sm
+  */
+  .fw-sm-d2 {
+    font-weight: var(--font-weight-d2);
+  }
+
+  /*
+  .fw-sm-d3
+
+  Sets the font-weight an element to the variable for d3.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .fw-sm-d3 - Sets the font-weight an element to the variable for d3
+
+  Styleguide Font - Weight - d3 - sm
+  */
+  .fw-sm-d3 {
+    font-weight: var(--font-weight-d3);
+  }
+}
 :root {
   --height-p25: 25%;
   --height-p50: 50%;

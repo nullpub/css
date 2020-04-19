@@ -4097,6 +4097,14 @@ Styleguide Font - Weight - d3
   font-weight: var(--font-weight-d3);
 }
 
+/**
+ * Font Size Scale
+ * Based on https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 
+ */
+/**
+ * Font Weight Scale
+ * Requires associated font weights to be included
+ */
 :root {
   --height-p25: 25%;
   --height-p50: 50%;

@@ -1,0 +1,65 @@
+@import "../variables/breakpoints.scss";
+
+@import "./font-variables.scss";
+
+@each $break, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    /*
+Font
+
+Classes for setting the font properties of an element.
+
+Styleguide Font
+*/
+
+    /*
+Font Size
+
+Classes for setting the font-size of an element.
+
+Styleguide Font - Size - #{$break}
+*/
+    @each $label, $_ in $font-size-styles {
+      /*
+  .#{$font-size-class-prefix}-#{$break}-#{$label}
+
+  Sets the font-size an element to the variable for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$font-size-class-prefix}-#{$break}-#{$label} - Sets the font-size an element to the variable for #{$label}
+
+  Styleguide Font - Size - #{$label} - #{$break}
+  */
+      .#{$font-size-class-prefix}-#{$break}-#{$label} {
+        font-size: var(--#{$font-size-var-prefix}-#{$label});
+      }
+    }
+
+    /*
+Font Weight
+
+Classes for setting the font-weight of an element.
+
+Styleguide Font - Weight - #{$break}
+*/
+    @each $label, $_ in $font-weight-styles {
+      /*
+  .#{$font-weight-class-prefix}-#{$break}-#{$label}
+
+  Sets the font-weight an element to the variable for #{$label}.
+
+  Markup:
+  <div class="{{modifier_class}}">A div</div>
+
+  .#{$font-weight-class-prefix}-#{$break}-#{$label} - Sets the font-weight an element to the variable for #{$label}
+
+  Styleguide Font - Weight - #{$label} - #{$break}
+  */
+      .#{$font-weight-class-prefix}-#{$break}-#{$label} {
+        font-weight: var(--#{$font-weight-var-prefix}-#{$label});
+      }
+    }
+  }
+}
