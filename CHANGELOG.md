@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.7.0](https://github.com/nullpub/css/compare/v9.6.0...v9.7.0) (2020-04-19)
+
+
+### Features
+
+* added breakpoints on font size and weight ([94d9480](https://github.com/nullpub/css/commit/94d9480840b477e6be15c49793f1b78b125a53fd))
+
 ## [9.6.0](https://github.com/nullpub/css/compare/v9.3.0...v9.6.0) (2020-04-17)
 
 
